@@ -1,0 +1,39 @@
+{
+  "categories": {
+    "components": {
+      "name": "Components",
+      "description": "UI components and their usage guidelines",
+      "keywords": ["button", "form", "card", "modal", "dropdown", "navigation", "header", "footer", "list", "table"]
+    },
+    "tokens": {
+      "name": "Design Tokens",
+      "description": "Design tokens for colors, spacing, typography, and other design primitives",
+      "keywords": ["color", "spacing", "typography", "shadow", "border", "radius", "font", "size", "scale", "theme"]
+    },
+    "patterns": {
+      "name": "Patterns",
+      "description": "Common UI patterns and layout structures",
+      "keywords": ["layout", "grid", "flex", "responsive", "pattern", "composition", "structure", "template"]
+    },
+    "workflows": {
+      "name": "Workflows",
+      "description": "Design and development workflows, handoff processes",
+      "keywords": ["workflow", "process", "handoff", "collaboration", "review", "approval", "documentation"]
+    },
+    "guidelines": {
+      "name": "Guidelines",
+      "description": "Design principles, best practices, and standards",
+      "keywords": ["principle", "guideline", "standard", "accessibility", "a11y", "usability", "best practice"]
+    },
+    "general": {
+      "name": "General",
+      "description": "General design system information and resources",
+      "keywords": ["overview", "introduction", "getting started", "setup", "installation", "configuration"]
+    }
+  },
+  "confidenceLevels": {
+    "high": "Information from official design system documentation",
+    "medium": "Information from reputable sources or common practices",
+    "low": "Information that may need verification or is context-specific"
+  }
+}

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Systems MCP Chat Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #f5f5f5;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: #2563eb;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 1rem;
+        }
+
+        .messages {
+            flex: 1;
+            overflow-y: auto;
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            min-height: 400px;
+        }
+
+        .message {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border-radius: 8px;
+            max-width: 80%;
+        }
+
+        .message.user {
+            background: #2563eb;
+            color: white;
+            margin-left: auto;
+        }
+
+        .message.assistant {
+            background: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .message.error {
+            background: #fef2f2;
+            color: #dc2626;
+            border: 1px solid #fecaca;
+        }
+
+        .message.system {
+            background: #f0f9ff;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+            font-style: italic;
+        }
+
+        .input-container {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .input-container input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .input-container button {
+            padding: 0.75rem 1.5rem;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .input-container button:hover {
+            background: #1d4ed8;
+        }
+
+        .input-container button:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+
+        .examples {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .examples h3 {
+            margin-bottom: 0.5rem;
+            color: #374151;
+        }
+
+        .examples ul {
+            list-style: none;
+        }
+
+        .examples li {
+            margin-bottom: 0.25rem;
+            cursor: pointer;
+            padding: 0.25rem;
+            border-radius: 4px;
+            color: #2563eb;
+        }
+
+        .examples li:hover {
+            background: #f3f4f6;
+        }
+
+        .status {
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        .loader {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #f3f3f3;
+            border-radius: 50%;
+            border-top-color: #2563eb;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        pre {
+            white-space: pre-wrap;
+            font-family: 'SF Mono', Monaco, monospace;
+            background: #f8f9fa;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            overflow-x: auto;
+        }
+
+        /* Styles for HTML content in messages */
+        .message strong {
+            font-weight: 600;
+            color: inherit;
+        }
+
+        .message em {
+            font-style: italic;
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .message hr {
+            border: none;
+            border-top: 1px solid #e5e7eb;
+            margin: 16px 0;
+        }
+
+        .message blockquote {
+            border-left: 3px solid #2563eb;
+            padding-left: 16px;
+            margin: 16px 0;
+            color: #374151;
+            font-style: italic;
+            background: #f8fafc;
+            padding: 12px 16px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .message span[style*="background"] {
+            display: inline-block;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎨 Design Systems MCP Chat Test</h1>
+        <p>Test your design systems knowledge base</p>
+    </div>
+
+    <div class="chat-container">
+        <div class="examples">
+            <h3>💡 Try these example queries:</h3>
+            <ul>
+                <li onclick="askQuestion('What are design tokens?')">What are design tokens?</li>
+                <li onclick="askQuestion('How do components work in design systems?')">How do components work in design systems?</li>
+                <li onclick="askQuestion('What is design debt?')">What is design debt?</li>
+                <li onclick="askQuestion('Search for button accessibility guidelines')">Search for button accessibility guidelines</li>
+                <li onclick="askQuestion('What categories are available?')">What categories are available?</li>
+                <li onclick="testHtmlFormatting()" style="color: #dc2626; font-weight: bold;">🧪 Test HTML Formatting</li>
+            </ul>
+        </div>
+
+        <div class="messages" id="messages">
+            <div class="message system">
+                👋 Welcome! I can help you search through your design systems knowledge base. Try asking about design tokens, components, or button guidelines.
+            </div>
+        </div>
+
+        <div class="input-container">
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Ask about design systems, components, tokens, etc..."
+                onkeydown="handleKeyPress(event)"
+            >
+            <button onclick="sendMessage()" id="sendButton">Send</button>
+        </div>
+
+        <div class="status" id="status">
+            Ready to chat • MCP Server: <span id="serverStatus">Checking...</span>
+        </div>
+    </div>
+
+    <script>
+        let serverUrl = 'http://localhost:8787'; // Default Cloudflare Worker dev server
+
+        // Check server status on load
+        checkServerStatus();
+
+        function checkServerStatus() {
+            fetch(`${serverUrl}/health`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('serverStatus').textContent = '✅ Connected';
+                    addMessage('system', `Connected to ${data.service} v${data.version}`);
+                })
+                .catch(error => {
+                    document.getElementById('serverStatus').textContent = '❌ Disconnected';
+                    addMessage('error', 'Could not connect to MCP server. Make sure it\'s running on http://localhost:8787');
+                });
+        }
+
+        function addMessage(type, content) {
+            const messagesDiv = document.getElementById('messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}`;
+
+            if (typeof content === 'object') {
+                messageDiv.innerHTML = `<pre>${JSON.stringify(content, null, 2)}</pre>`;
+            } else {
+                // Always render assistant messages as HTML since they contain formatted content
+                if (type === 'assistant') {
+                    messageDiv.innerHTML = content;
+                } else {
+                    messageDiv.textContent = content;
+                }
+            }
+
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        function askQuestion(question) {
+            document.getElementById('messageInput').value = question;
+            sendMessage();
+        }
+
+        function testHtmlFormatting() {
+            addMessage('assistant', `<strong>🧪 HTML FORMATTING TEST</strong>
+
+<em>This should be italic text</em>
+<strong>This should be bold text</strong>
+
+<blockquote style="border-left: 3px solid #007acc; padding-left: 16px; margin: 16px 0; color: #333; font-style: italic;">
+This should be a formatted blockquote with a blue left border
+</blockquote>
+
+<hr style="border: 1px solid #ddd; margin: 20px 0;">
+
+<span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; margin: 2px;">🔖 tag1</span>
+<span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; margin: 2px;">🔖 tag2</span>`);
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const sendButton = document.getElementById('sendButton');
+            const message = input.value.trim();
+
+            if (!message) return;
+
+            // Add user message
+            addMessage('user', message);
+            input.value = '';
+
+            // Show loading state
+            sendButton.disabled = true;
+            sendButton.innerHTML = '<span class="loader"></span> Thinking...';
+
+            try {
+                // Simple keyword-based tool selection
+                let toolName = 'search_design_knowledge';
+                let params = { query: message, limit: 5 };
+
+                if (message.toLowerCase().includes('chunk') || message.toLowerCase().includes('specific')) {
+                    toolName = 'search_chunks';
+                    params = { query: message, limit: 5 };
+                } else if (message.toLowerCase().includes('category') || message.toLowerCase().includes('browse')) {
+                    if (message.toLowerCase().includes('component')) {
+                        toolName = 'browse_by_category';
+                        params = { category: 'components' };
+                    } else if (message.toLowerCase().includes('token')) {
+                        toolName = 'browse_by_category';
+                        params = { category: 'tokens' };
+                    } else if (message.toLowerCase().includes('guideline')) {
+                        toolName = 'browse_by_category';
+                        params = { category: 'guidelines' };
+                    }
+                } else if (message.toLowerCase().includes('tags') || message.toLowerCase().includes('tag')) {
+                    toolName = 'get_all_tags';
+                    params = {};
+                }
+
+                // Call the MCP server
+                const response = await fetch(`${serverUrl}/mcp`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        jsonrpc: '2.0',
+                        id: Date.now(),
+                        method: 'tools/call',
+                        params: {
+                            name: toolName,
+                            arguments: params
+                        }
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.error) {
+                    addMessage('error', `Error: ${data.error.message}`);
+                } else if (data.result && data.result.content && data.result.content[0]) {
+                    // Debug: log the response to console
+                    console.log('MCP Response:', data.result.content[0].text);
+                    addMessage('assistant', data.result.content[0].text);
+                } else {
+                    addMessage('error', 'I received a response but couldn\'t parse the content. Here\'s the raw response:');
+                    console.log('Unparsed response:', data);
+                    addMessage('assistant', JSON.stringify(data, null, 2));
+                }
+
+            } catch (error) {
+                addMessage('error', `Network error: ${error.message}. Make sure the MCP server is running.`);
+            } finally {
+                sendButton.disabled = false;
+                sendButton.textContent = 'Send';
+            }
+        }
+    </script>
+</body>
+</html>

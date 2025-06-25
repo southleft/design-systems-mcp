@@ -1,0 +1,61 @@
+{
+  "id": "xK9mP2qR5vN3bL7wE4aT1",
+  "title": "Button Component Design Guidelines",
+  "source": {
+    "type": "url",
+    "location": "https://material.io/components/buttons",
+    "ingested_at": "2024-01-20T10:00:00Z"
+  },
+  "content": "Buttons are fundamental interactive elements in any design system. They trigger actions and guide users through workflows. This comprehensive guide covers button design principles, types, states, and implementation guidelines.\n\nButton Types:\n1. Primary Buttons - Used for main actions like 'Save' or 'Submit'. Should be visually prominent.\n2. Secondary Buttons - For secondary actions. Less visual emphasis than primary buttons.\n3. Text Buttons - Minimal emphasis, used for less important actions.\n4. Icon Buttons - Compact buttons containing only an icon.\n\nButton States:\n- Default: The normal resting state\n- Hover: Visual feedback on mouse over\n- Active: When being clicked\n- Disabled: When action is unavailable\n- Loading: During async operations\n\nAccessibility Considerations:\n- Minimum touch target of 44x44px on mobile\n- Clear focus indicators for keyboard navigation\n- Sufficient color contrast (4.5:1 for normal text)\n- Descriptive labels or ARIA labels for icon buttons\n\nImplementation Best Practices:\n- Use semantic HTML button elements\n- Include type attribute (button, submit, reset)\n- Provide loading states for async actions\n- Ensure buttons are keyboard accessible\n- Test with screen readers",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "text": "Buttons are fundamental interactive elements in any design system. They trigger actions and guide users through workflows. This comprehensive guide covers button design principles, types, states, and implementation guidelines.",
+      "metadata": {
+        "section": "Introduction",
+        "chunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "Button Types:\n1. Primary Buttons - Used for main actions like 'Save' or 'Submit'. Should be visually prominent.\n2. Secondary Buttons - For secondary actions. Less visual emphasis than primary buttons.\n3. Text Buttons - Minimal emphasis, used for less important actions.\n4. Icon Buttons - Compact buttons containing only an icon.",
+      "metadata": {
+        "section": "Button Types",
+        "chunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "Button States:\n- Default: The normal resting state\n- Hover: Visual feedback on mouse over\n- Active: When being clicked\n- Disabled: When action is unavailable\n- Loading: During async operations",
+      "metadata": {
+        "section": "Button States",
+        "chunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "Accessibility Considerations:\n- Minimum touch target of 44x44px on mobile\n- Clear focus indicators for keyboard navigation\n- Sufficient color contrast (4.5:1 for normal text)\n- Descriptive labels or ARIA labels for icon buttons",
+      "metadata": {
+        "section": "Accessibility",
+        "chunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "Implementation Best Practices:\n- Use semantic HTML button elements\n- Include type attribute (button, submit, reset)\n- Provide loading states for async actions\n- Ensure buttons are keyboard accessible\n- Test with screen readers",
+      "metadata": {
+        "section": "Implementation",
+        "chunkIndex": 4
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": ["button", "interaction", "ui", "accessibility", "component", "primary", "secondary"],
+    "confidence": "high",
+    "last_updated": "2024-01-20T10:00:00Z",
+    "system": "Material Design",
+    "version": "3.0",
+    "author": "Material Design Team"
+  }
+}
