@@ -18,16 +18,18 @@ import { OpenAI } from "openai";
 console.log('🔄 Loading content from JSON files...');
 
 async function loadActualContent() {
-	try {
+		try {
 		// Use dynamic imports which work better in Cloudflare Workers
-		const [handbookModule, buttonModule] = await Promise.all([
+		const [handbookModule, buttonModule, primerButtonModule] = await Promise.all([
 			import('../content/entries/8zWJWrDK_bTOv3_KFo30V-pdf-designsystemshandbook-pdf.json'),
-			import('../content/entries/sample-button-guidelines.json')
+			import('../content/entries/sample-button-guidelines.json'),
+			import('../content/entries/oRdJezsZL3IrFVL8--U4d-url-github-primer-button.json')
 		]);
 
 		const actualEntries = [
 			handbookModule.default as ContentEntry,
-			buttonModule.default as ContentEntry
+			buttonModule.default as ContentEntry,
+			primerButtonModule.default as ContentEntry
 		];
 
 		loadEntries(actualEntries);

@@ -1,0 +1,213 @@
+{
+  "id": "oRdJezsZL3IrFVL8--U4d",
+  "title": "GitHub Primer Button",
+  "source": {
+    "type": "url",
+    "location": "https://primer.style/components/button",
+    "ingested_at": "2025-06-26T02:38:58.869Z"
+  },
+  "content": "Button | Primer Skip to main content [#skip-nav]Primer [/]/Product UI • Product UI [/product/] • Brand UI [https://primer.style/brand] • Octicons [/octicons/] • Accessibility [/accessibility/] • Brand Toolkit [https://brand.github.com/] Switch to dark modeGive feedback Navigation Product UIFilter navigation items • ### Getting Started [/product/getting-started/] • Component status [/product/getting-started/component-status/] • Figma libraries [/product/getting-started/figma/] • Foundations Overview [/product/getting-started/foundations/] • Color usage [/product/getting-started/foundations/color-usage/] • Content [/product/getting-started/foundations/content/] • Layout [/product/getting-started/foundations/layout/] • Responsive [/product/getting-started/foundations/responsive/] • Typography [/product/getting-started/foundations/typography/] • Rails Overview [/product/getting-started/rails/] • Migration guides [/product/getting-started/rails/migration-guides/] • Component list [/product/getting-started/rails/components/] • React Overview [/product/getting-started/react/] • Core Concepts [/product/getting-started/react/core-concepts/] • Migration guides [/product/getting-started/react/migration-guides/] • Linting [/product/getting-started/react/linting/] • Primer React Philosophy [/product/getting-started/react/philosophy/] • Theming [/product/getting-started/react/theming/] • Theme Reference [/product/getting-started/react/theme-reference/] • GitHub shared components [/product/getting-started/react/shared-components/] • ### Primitives [/product/primitives/] • Color [/product/primitives/color/] • Size [/product/primitives/size/] • Typography [/product/primitives/typography/] • Token names [/product/primitives/token-names/] • Migrating to CSS variables [/product/primitives/migrating/] • ### UI Patterns [/product/ui-patterns/] • Data visualization [/product/ui-patterns/data-visualization/] • Degraded experiences [/product/ui-patterns/degraded-experiences/] • Empty states [/product/ui-patterns/empty-states/] • Feature onboarding [/product/ui-patterns/feature-onboarding/] • Forms [/product/ui-patterns/forms/] • Loading [/product/ui-patterns/loading/] • Navigation [/product/ui-patterns/navigation/] • Notification messaging [/product/ui-patterns/notification-messaging/] • Progressive disclosure [/product/ui-patterns/progressive-disclosure/] • Saving [/product/ui-patterns/saving/] • ### Components [/product/components/] • ActionBar [/product/components/action-bar/] • ActionList [/product/components/action-list/] • ActionMenu [/product/components/action-menu/] • AnchoredOverlay [/product/components/anchored-overlay/] • Autocomplete [/product/components/autocomplete/] • Avatar [/product/components/avatar/] • AvatarPair [/product/components/avatar-pair/] • AvatarStack [/product/components/avatar-stack/] • Banner [/product/components/banner/] • Blankslate [/product/components/blankslate/] • Box [/product/components/box/] • BranchName [/product/components/branch-name/] • Breadcrumbs [/product/components/breadcrumbs/] • Button [/product/components/button/] • ButtonGroup [/product/components/button-group/] • Checkbox [/product/components/checkbox/] • CheckboxGroup [/product/components/checkbox-group/] • CircleBadge [/product/components/circle-badge/] • CircleOcticon [/product/components/circle-octicon/] • CounterLabel [/product/components/counter-label/] • DataTable [/product/components/data-table/] • Details [/product/components/details/] • Dialog [/product/components/dialog/] • FormControl [/product/components/form-control/] • Heading [/product/components/heading/] • IconButton [/product/components/icon-button/] • InlineMessage [/product/components/inline-message/] • Label [/product/components/label/] • LabelGroup [/product/components/label-group/] • Link [/product/components/link/] • NavList [/product/components/nav-list/] • Overlay [/product/components/overlay/] • PageHeader [/product/components/page-header/] • PageLayout [/product/components/page-layout/] • Pagination [/product/components/pagination/] • PointerBox [/product/components/pointer-box/] • Popover [/product/components/popover/] • ProgressBar [/product/components/progress-bar/] • Radio [/product/components/radio/] • RadioGroup [/product/components/radio-group/] • RelativeTime [/product/components/relative-time/] • SegmentedControl [/product/components/segmented-control/] • Select [/product/components/select/] • SelectPanel [/product/components/select-panel/] • Skeleton loaders [/product/components/skeleton-loaders/] • Spinner [/product/components/spinner/] • Stack [/product/components/stack/] • StateLabel [/product/components/state-label/] • Text [/product/components/text/] • TextInput [/product/components/text-input/] • TextInputWithTokens [/product/components/text-input-with-tokens/] • Textarea [/product/components/textarea/] • Timeline [/product/components/timeline/] • ToggleSwitch [/product/components/toggle-switch/] • Token [/product/components/token/] • Tooltip [/product/components/tooltip/] • TreeView [/product/components/tree-view/] • Truncate [/product/components/truncate/] • UnderlineNav [/product/components/underline-nav/] • UnderlinePanels [/product/components/underline-panels/] • ### React Hooks [/product/hooks/] • useColorSchemeVar [/product/hooks/useColorSchemeVar/] • useConfirm [/product/hooks/useConfirm/] • useDetails [/product/hooks/useDetails/] • useFocusTrap [/product/hooks/useFocusTrap/] • useFocusZone [/product/hooks/useFocusZone/] • useFormControlForwardedProps [/product/hooks/useFormControlForwardedProps/] • useOnEscapePress [/product/hooks/useOnEscapePress/] • useOnOutsideClick [/product/hooks/useOnOutsideClick/] • useOpenAndCloseFocus [/product/hooks/useOpenAndCloseFocus/] • useOverlay [/product/hooks/useOverlay/] • useProvidedRefOrCreate [/product/hooks/useProvidedRefOrCreate/] • useRefObjectAsForwardedRef [/product/hooks/useRefObjectAsForwardedRef/] • useResizeObserver [/product/hooks/useResizeObserver/] • useResponsiveValue [/product/hooks/useResponsiveValue/] • useSafeTimeout [/product/hooks/useSafeTimeout/] • useTheme [/product/hooks/useTheme/] • ### CSS Utilities [/product/css-utilities/] • Animations [/product/css-utilities/animations/] • Borders [/product/css-utilities/borders/] • Box shadow [/product/css-utilities/box-shadow/] • Colors [/product/css-utilities/colors/] • Details [/product/css-utilities/details/] • Flexbox [/product/css-utilities/flexbox/] • Grid [/product/css-utilities/grid/] • Layout [/product/css-utilities/layout/] • Margin [/product/css-utilities/margin/] • Padding [/product/css-utilities/padding/] • Typography [/product/css-utilities/typography/] • ### Contribute [/product/contribute/] • Adding new components [/product/contribute/adding-new-components/] • Contributing to Figma [/product/contribute/contributing-to-figma/] • Design [/product/contribute/design/] • Documentation [/product/contribute/documentation/] • Handling new patterns [/product/contribute/handling-new-patterns/] • How to contribute [/product/contribute/how-to-contribute/] • Product UI [/product/] • Components [/product/components/] • Button [/product/components/button/] # Button Button is used to initiate actions on a page or form. ## Page navigation navigation • Overview [/product/components/button/] • Guidelines [/product/components/button/guidelines/] • Accessibility [/product/components/button/accessibility/] React ready Storybook [https://primer.style/react/storybook/?path=/story/components-button--default]|Source [https://github.com/primer/react/tree/main/packages/react/src/Button] Rails ready Docs [/product/getting-started/rails/components/button]|Lookbook [https://primer.style/view-components/lookbook/inspect/primer/beta/button/default/]|Source [https://github.com/primer/view_components/tree/main/app/components/primer/beta/button.rb] Figma View in Figma [https://www.figma.com/file/GCvY3Qv8czRgZgvl1dG6lp/?node-id=30258%3A5582]| ## React examples [#react-examples] ### Default [#default] Activate Copy Reset Open in StackBlitzcode editor<Button>Activate</Button> <Button>Activate</Button> Show full code ### Style variants [#style-variants] • Primary: Highest-priority action; use sparingly. Never put more than one in a group of buttons, and rarely use more than one per page. • Default: Default style for general actions. They can be paired with a primary Button to perform a secondary action. • Invisible: Transparent for minimal UI or compound components like ActionList [/product/components/action-list/]. • Danger: Used sparingly for destructive actions, typically prompt a confirmation dialog. PrimaryDefaultInvisibleDanger Copy Reset Open in StackBlitzcode editor<Stack direction=\"horizontal\" align=\"center\"> <Button variant=\"primary\">Primary</Button> <Button variant=\"default\">Default</Button> <Button variant=\"invisible\">Invisible</Button> <Button variant=\"danger\">Danger</Button> </Stack> <Stack direction=\"horizontal\" align=\"center\"> <Button variant=\"primary\">Primary</Button> <Button variant=\"default\">Default</Button> <Button variant=\"invisible\">Invisible</Button> <Button variant=\"danger\">Danger</Button> </Stack> Show full code ### Full-width [#full-width] Activate Copy Reset Open in StackBlitzcode editor<Button block>Activate</Button> <Button block>Activate</Button> Show full code ### Size variants [#size-variants] • Medium (default): Best for most interfaces. • Small: For compact spaces or less prominent actions. • Large: Use sparingly to emphasize an action. More often than not a medium sized Button will be more appropriate. SmallMedium (default)Large Copy Reset Open in StackBlitzcode editor<Stack direction=\"horizontal\" align=\"center\"> <Button size=\"small\">Small</Button> <Button>Medium (default)</Button> <Button size=\"large\">Large</Button> </Stack> <Stack direction=\"horizontal\" align=\"center\"> <Button size=\"small\">Small</Button> <Button>Medium (default)</Button> <Button size=\"large\">Large</Button> </Stack> Show full code ### With a leading visual [#with-a-leading-visual] Leading visuals add context to Button labels. For example, a “search” icon next to the label for a search field submit. Activate Copy Reset Open in StackBlitzcode editor<Button leadingVisual={RocketIcon}>Activate</Button> <Button leadingVisual={RocketIcon}>Activate</Button> Show full code ### With a trailing visual [#with-a-trailing-visual] Trailing visuals such as counters display additional information about the action or task at hand. Download Copy Reset Open in StackBlitzcode editor<Button trailingVisual={DownloadIcon}>Download</Button> <Button trailingVisual={DownloadIcon}>Download</Button> Show full code ### With a trailing action [#with-a-trailing-action] Trailing actions (for example: a triangle icon to indicate a dropdown) are fixed at the Button&#x27;s end. The Button label and leading visual is center-aligned for calls-to-action and left-aligned for buttons that toggle a selection UI (for example: Weeks ▾, Iteration ▾, Sort ▾, etc). Activate Copy Reset Open in StackBlitzcode editor<Button trailingAction={TriangleDownIcon}>Activate</Button> <Button trailingAction={TriangleDownIcon}>Activate</Button> Show full code ### Loading [#loading] Use a loading state while waiting for action completion. See Button loading state [/product/components/button/accessibility/#button-loading-state] for accessibility details. LoadingActivateLoading Copy Reset Open in StackBlitzcode editor<Button loading={true}>Activate</Button> <Button loading={true}>Activate</Button> Show full code ### Inactive [#inactive] Inactive state guidelines [/product/components/button/guidelines/#inactive] Activate Copy Reset Open in StackBlitzcode editor<Button inactive>Activate</Button> <Button inactive>Activate</Button> Show full code ### More code examples [#more-code-examples] The previous examples are a curated subset of the full capabilities of the `Button` component. For more examples, see the Button Storybook stories [https://primer.style/react/storybook/?path=/story/components-button--default]. ## Props [#props] ### Button [#Button] NameDefaultDescriptionalignContent `&#x27;start&#x27; | &#x27;center&#x27;` Content alignment for when visuals are present. as `&#x27;button&#x27;` `React.ElementType` block `boolean` Allow button width to fill its container. children Required `React.ReactNode` The content of the button. count `number` For counter buttons, the number to display. inactive `boolean` Whether the button looks visually disabled, but can still accept all the same interactions as an enabled button. This is intended to be used when a system error such as an outage prevents the button from performing its usual action. Inactive styles are slightly different from disabled styles because inactive buttons need to have an accessible color contrast ratio. This is because inactive buttons can have tooltips or perform an action such as opening a dialog explaining why it&#x27;s inactive. If both `disabled` and `inactive` are true, `disabled` takes precedence. leadingIcon Deprecated `React.ComponentType<OcticonProps>` An icon to display before the button text. leadingVisual `React.ElementType` A visual to display before the button text. loading `boolean` When true, the button is in a loading state. loadingAnnouncement `string` The content to announce to screen readers when loading. This requires `loading` prop to be true ref `React.RefObject<HTMLButtonElement>` size `&#x27;medium&#x27;`&#x27;small&#x27; | &#x27;medium&#x27; | &#x27;large&#x27; sx `SystemStyleObject` trailingIcon Deprecated `React.ComponentType<OcticonProps>` An icon to display after the button text. trailingVisual `React.ElementType` A visual to display after the button text. trailingAction `React.ElementType` Trailing action appears to the right of the trailing visual and is always locked to the end variant `&#x27;default&#x27;`&#x27;default&#x27; | &#x27;primary&#x27; | &#x27;danger&#x27; | &#x27;invisible&#x27; | &#x27;link&#x27; Change the visual style of the button. labelWrap `false` `boolean` Whether the button label should wrap to multiple lines of it is longer than the button width. disabled `boolean` Avoid disabling buttons because it will make them inaccessible to users who rely on keyboard navigation. Buttons that are disabled can not be clicked, selected, or navigated through. See button [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attributes] for more prop options On this page • React examples [#react-examples] Default [#default] • Style variants [#style-variants] • Full-width [#full-width] • Size variants [#size-variants] • With a leading visual [#with-a-leading-visual] • With a trailing visual [#with-a-trailing-visual] • With a trailing action [#with-a-trailing-action] • Loading [#loading] • Inactive [#inactive] • More code examples [#more-code-examples] • Props [#props]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Button | Primer Skip to main content [#skip-nav]Primer [/]/Product UI • Product UI [/product/] • Brand UI [https://primer.style/brand] • Octicons [/octicons/] • Accessibility [/accessibility/] • Brand Toolkit [https://brand.github.com/] Switch to dark modeGive feedback Navigation Product UIFilter navigation items • ### Getting Started [/product/getting-started/] • Component status [/product/getting-started/component-status/] • Figma libraries [/product/getting-started/figma/] • Foundations Overview [/product/getting-started/foundations/] • Color usage [/product/getting-started/foundations/color-usage/] • Content [/product/getting-started/foundations/content/] • Layout [/product/getting-started/foundations/layout/] • Responsive [/product/getting-started/foundations/responsive/] • Typography [/product/getting-started/foundations/typography/] • Rails Overview [/product/getting-started/rails/] • Migration guides [/product/getting-started/rails/migration-guides/] • Component list",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 990,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "rted/rails/] • Migration guides [/product/getting-started/rails/migration-guides/] • Component list [/product/getting-started/rails/components/] • React Overview [/product/getting-started/react/] • Core Concepts [/product/getting-started/react/core-concepts/] • Migration guides [/product/getting-started/react/migration-guides/] • Linting [/product/getting-started/react/linting/] • Primer React Philosophy [/product/getting-started/react/philosophy/] • Theming [/product/getting-started/react/theming/] • Theme Reference [/product/getting-started/react/theme-reference/] • GitHub shared components [/product/getting-started/react/shared-components/] • ### Primitives [/product/primitives/] • Color [/product/primitives/color/] • Size [/product/primitives/size/] • Typography [/product/primitives/typography/] • Token names [/product/primitives/token-names/] • Migrating to CSS variables [/product/primitives/migrating/] • ### UI Patterns [/product/ui-patterns/] • Data visualization",
+      "metadata": {
+        "startIndex": 890,
+        "endIndex": 1875,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "les [/product/primitives/migrating/] • ### UI Patterns [/product/ui-patterns/] • Data visualization [/product/ui-patterns/data-visualization/] • Degraded experiences [/product/ui-patterns/degraded-experiences/] • Empty states [/product/ui-patterns/empty-states/] • Feature onboarding [/product/ui-patterns/feature-onboarding/] • Forms [/product/ui-patterns/forms/] • Loading [/product/ui-patterns/loading/] • Navigation [/product/ui-patterns/navigation/] • Notification messaging [/product/ui-patterns/notification-messaging/] • Progressive disclosure [/product/ui-patterns/progressive-disclosure/] • Saving [/product/ui-patterns/saving/] • ### Components [/product/components/] • ActionBar [/product/components/action-bar/] • ActionList [/product/components/action-list/] • ActionMenu [/product/components/action-menu/] • AnchoredOverlay [/product/components/anchored-overlay/] • Autocomplete [/product/components/autocomplete/] • Avatar [/product/components/avatar/] • AvatarPair",
+      "metadata": {
+        "startIndex": 1775,
+        "endIndex": 2757,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "utocomplete [/product/components/autocomplete/] • Avatar [/product/components/avatar/] • AvatarPair [/product/components/avatar-pair/] • AvatarStack [/product/components/avatar-stack/] • Banner [/product/components/banner/] • Blankslate [/product/components/blankslate/] • Box [/product/components/box/] • BranchName [/product/components/branch-name/] • Breadcrumbs [/product/components/breadcrumbs/] • Button [/product/components/button/] • ButtonGroup [/product/components/button-group/] • Checkbox [/product/components/checkbox/] • CheckboxGroup [/product/components/checkbox-group/] • CircleBadge [/product/components/circle-badge/] • CircleOcticon [/product/components/circle-octicon/] • CounterLabel [/product/components/counter-label/] • DataTable [/product/components/data-table/] • Details [/product/components/details/] • Dialog [/product/components/dialog/] • FormControl [/product/components/form-control/] • Heading [/product/components/heading/] • IconButton",
+      "metadata": {
+        "startIndex": 2657,
+        "endIndex": 3630,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "rmControl [/product/components/form-control/] • Heading [/product/components/heading/] • IconButton [/product/components/icon-button/] • InlineMessage [/product/components/inline-message/] • Label [/product/components/label/] • LabelGroup [/product/components/label-group/] • Link [/product/components/link/] • NavList [/product/components/nav-list/] • Overlay [/product/components/overlay/] • PageHeader [/product/components/page-header/] • PageLayout [/product/components/page-layout/] • Pagination [/product/components/pagination/] • PointerBox [/product/components/pointer-box/] • Popover [/product/components/popover/] • ProgressBar [/product/components/progress-bar/] • Radio [/product/components/radio/] • RadioGroup [/product/components/radio-group/] • RelativeTime [/product/components/relative-time/] • SegmentedControl [/product/components/segmented-control/] • Select [/product/components/select/] • SelectPanel [/product/components/select-panel/] • Skeleton loaders",
+      "metadata": {
+        "startIndex": 3530,
+        "endIndex": 4509,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "[/product/components/select/] • SelectPanel [/product/components/select-panel/] • Skeleton loaders [/product/components/skeleton-loaders/] • Spinner [/product/components/spinner/] • Stack [/product/components/stack/] • StateLabel [/product/components/state-label/] • Text [/product/components/text/] • TextInput [/product/components/text-input/] • TextInputWithTokens [/product/components/text-input-with-tokens/] • Textarea [/product/components/textarea/] • Timeline [/product/components/timeline/] • ToggleSwitch [/product/components/toggle-switch/] • Token [/product/components/token/] • Tooltip [/product/components/tooltip/] • TreeView [/product/components/tree-view/] • Truncate [/product/components/truncate/] • UnderlineNav [/product/components/underline-nav/] • UnderlinePanels [/product/components/underline-panels/] • ### React Hooks [/product/hooks/] • useColorSchemeVar [/product/hooks/useColorSchemeVar/] • useConfirm [/product/hooks/useConfirm/] • useDetails",
+      "metadata": {
+        "startIndex": 4409,
+        "endIndex": 5384,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "chemeVar [/product/hooks/useColorSchemeVar/] • useConfirm [/product/hooks/useConfirm/] • useDetails [/product/hooks/useDetails/] • useFocusTrap [/product/hooks/useFocusTrap/] • useFocusZone [/product/hooks/useFocusZone/] • useFormControlForwardedProps [/product/hooks/useFormControlForwardedProps/] • useOnEscapePress [/product/hooks/useOnEscapePress/] • useOnOutsideClick [/product/hooks/useOnOutsideClick/] • useOpenAndCloseFocus [/product/hooks/useOpenAndCloseFocus/] • useOverlay [/product/hooks/useOverlay/] • useProvidedRefOrCreate [/product/hooks/useProvidedRefOrCreate/] • useRefObjectAsForwardedRef [/product/hooks/useRefObjectAsForwardedRef/] • useResizeObserver [/product/hooks/useResizeObserver/] • useResponsiveValue [/product/hooks/useResponsiveValue/] • useSafeTimeout [/product/hooks/useSafeTimeout/] • useTheme [/product/hooks/useTheme/] • ### CSS Utilities [/product/css-utilities/] • Animations [/product/css-utilities/animations/] • Borders [/product/css-utilities/borders/] • Box",
+      "metadata": {
+        "startIndex": 5284,
+        "endIndex": 6285,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "• Animations [/product/css-utilities/animations/] • Borders [/product/css-utilities/borders/] • Box shadow [/product/css-utilities/box-shadow/] • Colors [/product/css-utilities/colors/] • Details [/product/css-utilities/details/] • Flexbox [/product/css-utilities/flexbox/] • Grid [/product/css-utilities/grid/] • Layout [/product/css-utilities/layout/] • Margin [/product/css-utilities/margin/] • Padding [/product/css-utilities/padding/] • Typography [/product/css-utilities/typography/] • ### Contribute [/product/contribute/] • Adding new components [/product/contribute/adding-new-components/] • Contributing to Figma [/product/contribute/contributing-to-figma/] • Design [/product/contribute/design/] • Documentation [/product/contribute/documentation/] • Handling new patterns [/product/contribute/handling-new-patterns/] • How to contribute [/product/contribute/how-to-contribute/] • Product UI [/product/] • Components [/product/components/] • Button [/product/components/button/] # Button",
+      "metadata": {
+        "startIndex": 6185,
+        "endIndex": 7184,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "UI [/product/] • Components [/product/components/] • Button [/product/components/button/] # Button Button is used to initiate actions on a page or form. ## Page navigation navigation • Overview [/product/components/button/] • Guidelines [/product/components/button/guidelines/] • Accessibility [/product/components/button/accessibility/] React ready Storybook [https://primer.style/react/storybook/?path=/story/components-button--default]|Source [https://github.com/primer/react/tree/main/packages/react/src/Button] Rails ready Docs [/product/getting-started/rails/components/button]|Lookbook [https://primer.style/view-components/lookbook/inspect/primer/beta/button/default/]|Source [https://github.com/primer/view_components/tree/main/app/components/primer/beta/button.rb] Figma View in Figma [https://www.figma.com/file/GCvY3Qv8czRgZgvl1dG6lp/?node-id=30258%3A5582]| ## React examples [#react-examples] ### Default [#default] Activate Copy Reset Open in StackBlitzcode",
+      "metadata": {
+        "startIndex": 7084,
+        "endIndex": 8057,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "React examples [#react-examples] ### Default [#default] Activate Copy Reset Open in StackBlitzcode editor<Button>Activate</Button> <Button>Activate</Button> Show full code ### Style variants [#style-variants] • Primary: Highest-priority action; use sparingly. Never put more than one in a group of buttons, and rarely use more than one per page. • Default: Default style for general actions. They can be paired with a primary Button to perform a secondary action. • Invisible: Transparent for minimal UI or compound components like ActionList [/product/components/action-list/]. • Danger: Used sparingly for destructive actions, typically prompt a confirmation dialog. PrimaryDefaultInvisibleDanger Copy Reset Open in StackBlitzcode editor<Stack direction=\"horizontal\" align=\"center\"> <Button variant=\"primary\">Primary</Button> <Button variant=\"default\">Default</Button> <Button variant=\"invisible\">Invisible</Button> <Button variant=\"danger\">Danger</Button> </Stack> <Stack direction=\"horizontal\"",
+      "metadata": {
+        "startIndex": 7957,
+        "endIndex": 8956,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": ">Invisible</Button> <Button variant=\"danger\">Danger</Button> </Stack> <Stack direction=\"horizontal\" align=\"center\"> <Button variant=\"primary\">Primary</Button> <Button variant=\"default\">Default</Button> <Button variant=\"invisible\">Invisible</Button> <Button variant=\"danger\">Danger</Button> </Stack> Show full code ### Full-width [#full-width] Activate Copy Reset Open in StackBlitzcode editor<Button block>Activate</Button> <Button block>Activate</Button> Show full code ### Size variants [#size-variants] • Medium (default): Best for most interfaces. • Small: For compact spaces or less prominent actions. • Large: Use sparingly to emphasize an action. More often than not a medium sized Button will be more appropriate. SmallMedium (default)Large Copy Reset Open in StackBlitzcode editor<Stack direction=\"horizontal\" align=\"center\"> <Button size=\"small\">Small</Button> <Button>Medium (default)</Button> <Button size=\"large\">Large</Button> </Stack> <Stack direction=\"horizontal\" align=\"center\">",
+      "metadata": {
+        "startIndex": 8856,
+        "endIndex": 9852,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "/Button> <Button size=\"large\">Large</Button> </Stack> <Stack direction=\"horizontal\" align=\"center\"> <Button size=\"small\">Small</Button> <Button>Medium (default)</Button> <Button size=\"large\">Large</Button> </Stack> Show full code ### With a leading visual [#with-a-leading-visual] Leading visuals add context to Button labels. For example, a “search” icon next to the label for a search field submit. Activate Copy Reset Open in StackBlitzcode editor<Button leadingVisual={RocketIcon}>Activate</Button> <Button leadingVisual={RocketIcon}>Activate</Button> Show full code ### With a trailing visual [#with-a-trailing-visual] Trailing visuals such as counters display additional information about the action or task at hand. Download Copy Reset Open in StackBlitzcode editor<Button trailingVisual={DownloadIcon}>Download</Button> <Button trailingVisual={DownloadIcon}>Download</Button> Show full code ### With a trailing action [#with-a-trailing-action] Trailing actions (for example: a triangle icon",
+      "metadata": {
+        "startIndex": 9752,
+        "endIndex": 10751,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "### With a trailing action [#with-a-trailing-action] Trailing actions (for example: a triangle icon to indicate a dropdown) are fixed at the Button&#x27;s end. The Button label and leading visual is center-aligned for calls-to-action and left-aligned for buttons that toggle a selection UI (for example: Weeks ▾, Iteration ▾, Sort ▾, etc). Activate Copy Reset Open in StackBlitzcode editor<Button trailingAction={TriangleDownIcon}>Activate</Button> <Button trailingAction={TriangleDownIcon}>Activate</Button> Show full code ### Loading [#loading] Use a loading state while waiting for action completion. See Button loading state [/product/components/button/accessibility/#button-loading-state] for accessibility details. LoadingActivateLoading Copy Reset Open in StackBlitzcode editor<Button loading={true}>Activate</Button> <Button loading={true}>Activate</Button> Show full code ### Inactive [#inactive] Inactive state guidelines [/product/components/button/guidelines/#inactive] Activate Copy",
+      "metadata": {
+        "startIndex": 10651,
+        "endIndex": 11647,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "inactive] Inactive state guidelines [/product/components/button/guidelines/#inactive] Activate Copy Reset Open in StackBlitzcode editor<Button inactive>Activate</Button> <Button inactive>Activate</Button> Show full code ### More code examples [#more-code-examples] The previous examples are a curated subset of the full capabilities of the `Button` component. For more examples, see the Button Storybook stories [https://primer.style/react/storybook/?path=/story/components-button--default]. ## Props [#props] ### Button [#Button] NameDefaultDescriptionalignContent `&#x27;start&#x27; | &#x27;center&#x27;` Content alignment for when visuals are present. as `&#x27;button&#x27;` `React.ElementType` block `boolean` Allow button width to fill its container. children Required `React.ReactNode` The content of the button. count `number` For counter buttons, the number to display. inactive `boolean` Whether the button looks visually disabled, but can still accept all the same interactions as an",
+      "metadata": {
+        "startIndex": 11547,
+        "endIndex": 12542,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "n` Whether the button looks visually disabled, but can still accept all the same interactions as an enabled button. This is intended to be used when a system error such as an outage prevents the button from performing its usual action. Inactive styles are slightly different from disabled styles because inactive buttons need to have an accessible color contrast ratio. This is because inactive buttons can have tooltips or perform an action such as opening a dialog explaining why it&#x27;s inactive. If both `disabled` and `inactive` are true, `disabled` takes precedence. leadingIcon Deprecated `React.ComponentType<OcticonProps>` An icon to display before the button text. leadingVisual `React.ElementType` A visual to display before the button text. loading `boolean` When true, the button is in a loading state. loadingAnnouncement `string` The content to announce to screen readers when loading.",
+      "metadata": {
+        "startIndex": 12442,
+        "endIndex": 13345,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "loading state. loadingAnnouncement `string` The content to announce to screen readers when loading. This requires `loading` prop to be true ref `React.RefObject<HTMLButtonElement>` size `&#x27;medium&#x27;`&#x27;small&#x27; | &#x27;medium&#x27; | &#x27;large&#x27; sx `SystemStyleObject` trailingIcon Deprecated `React.ComponentType<OcticonProps>` An icon to display after the button text. trailingVisual `React.ElementType` A visual to display after the button text. trailingAction `React.ElementType` Trailing action appears to the right of the trailing visual and is always locked to the end variant `&#x27;default&#x27;`&#x27;default&#x27; | &#x27;primary&#x27; | &#x27;danger&#x27; | &#x27;invisible&#x27; | &#x27;link&#x27; Change the visual style of the button. labelWrap `false` `boolean` Whether the button label should wrap to multiple lines of it is longer than the button width. disabled `boolean` Avoid disabling buttons because it will make them inaccessible to users who rely on",
+      "metadata": {
+        "startIndex": 13245,
+        "endIndex": 14239,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "abled `boolean` Avoid disabling buttons because it will make them inaccessible to users who rely on keyboard navigation. Buttons that are disabled can not be clicked, selected, or navigated through. See button [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attributes] for more prop options On this page • React examples [#react-examples] Default [#default] • Style variants [#style-variants] • Full-width [#full-width] • Size variants [#size-variants] • With a leading visual [#with-a-leading-visual] • With a trailing visual [#with-a-trailing-visual] • With a trailing action [#with-a-trailing-action] • Loading [#loading] • Inactive [#inactive] • More code examples [#more-code-examples] • Props [#props]",
+      "metadata": {
+        "startIndex": 14139,
+        "endIndex": 15139,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "github",
+      "primer"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-26T02:38:58.870Z",
+    "system": "Primer",
+    "author": "GitHub",
+    "version": "12.0",
+    "source_url": "https://primer.style/components/button"
+  }
+}
