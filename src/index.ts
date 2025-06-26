@@ -14,47 +14,76 @@ import { Category, ContentEntry } from "../types/content";
 // OpenAI integration
 import { OpenAI } from "openai";
 
-// Import actual content entries (these will be bundled with the worker)
-let handbookContent: any;
-let buttonContent: any;
+// Load content from actual JSON files (same approach for local and production)
+console.log('🔄 Loading content from JSON files...');
 
-try {
-	// Try to load the content files
-	handbookContent = require('../content/entries/8zWJWrDK_bTOv3_KFo30V-pdf-designsystemshandbook-pdf.json');
-	buttonContent = require('../content/entries/sample-button-guidelines.json');
+async function loadActualContent() {
+	try {
+		// Use dynamic imports which work better in Cloudflare Workers
+		const [handbookModule, buttonModule] = await Promise.all([
+			import('../content/entries/8zWJWrDK_bTOv3_KFo30V-pdf-designsystemshandbook-pdf.json'),
+			import('../content/entries/sample-button-guidelines.json')
+		]);
 
-	const actualEntries = [handbookContent, buttonContent] as ContentEntry[];
-	loadEntries(actualEntries);
-	console.log(`✅ Loaded ${actualEntries.length} content entries from imported data`);
-	console.log(`📚 Entries: ${actualEntries.map(e => e.title).join(', ')}`);
+		const actualEntries = [
+			handbookModule.default as ContentEntry,
+			buttonModule.default as ContentEntry
+		];
 
-	// Log some chunks to verify content is loaded
-	const totalChunks = actualEntries.reduce((sum, entry) => sum + (entry.chunks?.length || 0), 0);
-	console.log(`📄 Total chunks loaded: ${totalChunks}`);
-} catch (error) {
-	console.error('Failed to load real content:', error);
-	// Fallback to sample entries
-	const { SAMPLE_ENTRIES } = require('./lib/content-manager');
-	loadEntries(SAMPLE_ENTRIES);
-	console.warn('⚠️  Using fallback sample content');
+		loadEntries(actualEntries);
+
+		console.log(`✅ Loaded ${actualEntries.length} content entries from JSON files`);
+		console.log(`📚 Entries: ${actualEntries.map(e => e.title).join(', ')}`);
+
+		// Log some chunks to verify content is loaded
+		const totalChunks = actualEntries.reduce((sum, entry) => sum + (entry.chunks?.length || 0), 0);
+		console.log(`📄 Total chunks loaded: ${totalChunks}`);
+
+		// Log tags for verification
+		const { getAllTags } = require('./lib/content-manager');
+		const tags = getAllTags();
+		console.log(`🏷️  Available tags: ${tags.length} total`);
+
+		return true;
+	} catch (error) {
+		console.error('❌ Failed to load content from JSON files:', error);
+		console.error('Error details:', error instanceof Error ? error.message : String(error));
+
+		// Fallback to sample entries
+		console.log('🔄 Loading fallback sample content...');
+		const { SAMPLE_ENTRIES } = require('./lib/content-manager');
+		loadEntries(SAMPLE_ENTRIES);
+		console.warn('⚠️  Using fallback sample content');
+		return false;
+	}
 }
+
+// Initialize content loading
+loadActualContent();
 
 // AI System Prompt
 const AI_SYSTEM_PROMPT = `You are a helpful design systems expert with access to a comprehensive design systems knowledge base. Your role is to provide accurate, practical answers about design systems, components, tokens, and best practices.
 
-You have access to the following MCP tools to search the knowledge base:
+CRITICAL: You MUST ALWAYS search the knowledge base first before answering any question. You have the following MCP tools available:
 1. search_design_knowledge - Search for general design system content
-2. search_chunks - Search for specific detailed information
+2. search_chunks - Search for specific detailed information (USE THIS for specific terms, names, or detailed questions)
 3. browse_by_category - Browse content by category (components, tokens, patterns, workflows, guidelines, general)
 4. get_all_tags - Get available tags in the knowledge base
 
-When a user asks a question:
-1. First, determine what information you need to answer their question
-2. Use the appropriate MCP tools to search the knowledge base
-3. Synthesize the information into a clear, helpful response
-4. If the knowledge base doesn't contain enough information, provide general design systems guidance while noting what information wasn't available
+MANDATORY WORKFLOW:
+1. For ANY user question, ALWAYS start by calling search_chunks with relevant keywords from the user's query
+2. If search_chunks doesn't find specific information, try search_design_knowledge with broader terms
+3. Only after searching the knowledge base should you provide your response
+4. Always clearly distinguish between knowledge base findings and general knowledge
 
-Always cite sources from the knowledge base when providing specific information, and format your responses to be helpful and easy to read.`;
+IMPORTANT: Structure your responses as follows:
+## 📚 From Your Knowledge Base
+[Include any information found via MCP tools, with specific quotes and sources]
+
+## 🧠 General Design Systems Knowledge
+[Include any additional context from your training data]
+
+You must ALWAYS call at least one search tool before responding, even if you think you know the answer.`;
 
 // Available MCP tools for the AI
 const MCP_TOOLS = [
@@ -138,7 +167,7 @@ const MCP_TOOLS = [
 ];
 
 // Function to call MCP tools
-async function callMcpTool(toolName: string, args: any): Promise<any> {
+async function callMcpTool(toolName: string, args: any): Promise<string> {
 	switch (toolName) {
 		case "search_design_knowledge":
 			const searchResults = searchEntries({
@@ -146,44 +175,68 @@ async function callMcpTool(toolName: string, args: any): Promise<any> {
 				category: args.category as Category | undefined,
 				limit: args.limit || 10,
 			});
-			return {
-				results: searchResults.map(entry => ({
-					title: entry.title,
-					category: entry.metadata.category,
-					system: entry.metadata.system,
-					tags: entry.metadata.tags,
-					confidence: entry.metadata.confidence,
-					content: entry.content
-				}))
-			};
+
+			if (searchResults.length === 0) {
+				return "No design system knowledge found matching your search criteria.";
+			}
+
+			const formattedResults = searchResults.map((entry, index) =>
+				`**${index + 1}. ${entry.title}**
+Category: ${entry.metadata.category}
+System: ${entry.metadata.system || "N/A"}
+Tags: ${entry.metadata.tags.join(", ")}
+Confidence: ${entry.metadata.confidence}
+
+${entry.content.slice(0, 300)}${entry.content.length > 300 ? "..." : ""}
+
+---`
+			).join("\n\n");
+
+			return `FOUND ${searchResults.length} RESULT${searchResults.length === 1 ? "" : "S"}:
+
+${formattedResults}`;
 
 		case "search_chunks":
 			const chunkResults = searchChunks(args.query, args.limit || 5);
-			return {
-				chunks: chunkResults.map(result => ({
-					section: result.chunk.metadata?.section || "Excerpt",
-					text: result.chunk.text,
-					source: result.entry.title,
-					score: result.score
-				}))
-			};
+
+			if (chunkResults.length === 0) {
+				return "No specific information found matching your query.";
+			}
+
+			const formattedChunks = chunkResults.map((result, index) =>
+				`**${index + 1}. ${(result.chunk.metadata?.section || "EXCERPT")}**
+From: ${result.entry.title}
+Relevance Score: ${result.score}
+
+"${result.chunk.text}"
+
+---`
+			).join("\n\n");
+
+			return `FOUND ${chunkResults.length} RELEVANT CHUNK${chunkResults.length === 1 ? "" : "S"}:
+
+${formattedChunks}`;
 
 		case "browse_by_category":
 			const categoryEntries = getEntriesByCategory(args.category as Category);
-			return {
-				category: args.category,
-				entries: categoryEntries.map(entry => ({
-					title: entry.title,
-					tags: entry.metadata.tags,
-					system: entry.metadata.system
-				}))
-			};
+
+			if (categoryEntries.length === 0) {
+				return `No entries found in category: ${args.category}`;
+			}
+
+			const formattedEntries = categoryEntries.map(entry =>
+				`**${entry.title}**
+Tags: ${entry.metadata.tags.join(", ")}
+System: ${entry.metadata.system || "N/A"}`
+			).join("\n\n");
+
+			return `${categoryEntries.length} ENTR${categoryEntries.length === 1 ? "Y" : "IES"} IN "${args.category.toUpperCase()}":
+
+${formattedEntries}`;
 
 		case "get_all_tags":
 			const tags = getAllTags();
-			return {
-				tags: tags
-			};
+			return `AVAILABLE TAGS (${tags.length}): ${tags.join(", ")}`;
 
 		default:
 			throw new Error(`Unknown tool: ${toolName}`);
@@ -271,13 +324,13 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 					messages.push({
 						role: "tool",
 						tool_call_id: toolCall.id,
-						content: JSON.stringify(toolResult)
+						content: toolResult // Now it's a string, not JSON
 					});
 				} catch (error: any) {
 					messages.push({
 						role: "tool",
 						tool_call_id: toolCall.id,
-						content: JSON.stringify({ error: error.message })
+						content: `Error: ${error.message}`
 					});
 				}
 			}

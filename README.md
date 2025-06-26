@@ -22,7 +22,7 @@ An AI-powered Model Context Protocol (MCP) server that provides intelligent acce
 
 1. **Clone and Install**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/southleft/design-systems-mcp.git
    cd design-systems-mcp
    npm install
    ```
@@ -44,8 +44,9 @@ An AI-powered Model Context Protocol (MCP) server that provides intelligent acce
    - Open `http://localhost:8787` in your browser
    - Try example queries like:
      - "What are design tokens?"
+     - "Where in the design systems handbook is Alicia SEDLOCK mentioned?"
+     - "What does the Design Systems Handbook say about Wraith, Gemini, and BackstopJS?"
      - "How do I implement a design system?"
-     - "What does the handbook say about Marvel and MailChimp?"
 
 ### Adding Content
 
@@ -60,9 +61,18 @@ An AI-powered Model Context Protocol (MCP) server that provides intelligent acce
 
 2. **Update Content Loading** in `src/index.ts`
    ```typescript
-   // Add new content files
-   const newContent = require('../content/entries/your-new-content.json');
-   const actualEntries = [handbookContent, buttonContent, newContent];
+   // Add new content files using dynamic imports
+   const [handbookModule, buttonModule, newContentModule] = await Promise.all([
+     import('../content/entries/8zWJWrDK_bTOv3_KFo30V-pdf-designsystemshandbook-pdf.json'),
+     import('../content/entries/sample-button-guidelines.json'),
+     import('../content/entries/your-new-content.json')
+   ]);
+
+   const actualEntries = [
+     handbookModule.default as ContentEntry,
+     buttonModule.default as ContentEntry,
+     newContentModule.default as ContentEntry
+   ];
    ```
 
 3. **Test Locally**
@@ -247,8 +257,9 @@ Content is automatically:
 
 **Content not loading:**
 - Check that JSON files exist in `content/entries/`
-- Verify `require()` paths in `src/index.ts`
+- Verify dynamic import paths in `src/index.ts`
 - Check server logs for loading errors
+- Ensure content files are valid JSON format
 
 **Port issues:**
 - Ensure `wrangler.jsonc` has correct dev port (8787)
