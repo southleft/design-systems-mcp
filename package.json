@@ -13,7 +13,9 @@
 		"ingest": "tsx scripts/ingestion/ingest.ts",
 		"ingest:csv": "tsx scripts/ingestion/ingest-csv.ts --",
 		"ingest:pdf": "tsx scripts/ingestion/ingest.ts pdf",
-		"ingest:url": "tsx scripts/ingestion/ingest.ts url"
+		"ingest:url": "tsx scripts/ingestion/ingest.ts url",
+		"build:manifest": "tsx scripts/build/generate-manifest.ts",
+		"prebuild": "npm run build:manifest"
 	},
 	"dependencies": {
 		"@modelcontextprotocol/sdk": "^1.0.7",

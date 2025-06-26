@@ -18,37 +18,32 @@ import { OpenAI } from "openai";
 console.log('🔄 Loading content from JSON files...');
 
 async function loadActualContent() {
-		try {
-		// Use dynamic imports which work better in Cloudflare Workers
-		const [handbookModule, buttonModule, primerButtonModule] = await Promise.all([
-			import('../content/entries/8zWJWrDK_bTOv3_KFo30V-pdf-designsystemshandbook-pdf.json'),
-			import('../content/entries/sample-button-guidelines.json'),
-			import('../content/entries/oRdJezsZL3IrFVL8--U4d-url-github-primer-button.json')
-		]);
+	try {
+		// Load content dynamically using manifest file
+		const { loadAllContentEntries } = require('./lib/content-loader');
+		const actualEntries = await loadAllContentEntries();
 
-		const actualEntries = [
-			handbookModule.default as ContentEntry,
-			buttonModule.default as ContentEntry,
-			primerButtonModule.default as ContentEntry
-		];
+		if (actualEntries.length > 0) {
+			loadEntries(actualEntries);
 
-		loadEntries(actualEntries);
+			console.log(`✅ Loaded ${actualEntries.length} content entries dynamically`);
+			console.log(`📚 Entries: ${actualEntries.map((e: ContentEntry) => e.title).join(', ')}`);
 
-		console.log(`✅ Loaded ${actualEntries.length} content entries from JSON files`);
-		console.log(`📚 Entries: ${actualEntries.map(e => e.title).join(', ')}`);
+			// Log some chunks to verify content is loaded
+			const totalChunks = actualEntries.reduce((sum: number, entry: ContentEntry) => sum + (entry.chunks?.length || 0), 0);
+			console.log(`📄 Total chunks loaded: ${totalChunks}`);
 
-		// Log some chunks to verify content is loaded
-		const totalChunks = actualEntries.reduce((sum, entry) => sum + (entry.chunks?.length || 0), 0);
-		console.log(`📄 Total chunks loaded: ${totalChunks}`);
+			// Log tags for verification
+			const { getAllTags } = require('./lib/content-manager');
+			const tags = getAllTags();
+			console.log(`🏷️  Available tags: ${tags.length} total`);
 
-		// Log tags for verification
-		const { getAllTags } = require('./lib/content-manager');
-		const tags = getAllTags();
-		console.log(`🏷️  Available tags: ${tags.length} total`);
-
-		return true;
+			return true;
+		} else {
+			throw new Error('No content entries loaded from manifest');
+		}
 	} catch (error) {
-		console.error('❌ Failed to load content from JSON files:', error);
+		console.error('❌ Failed to load content dynamically:', error);
 		console.error('Error details:', error instanceof Error ? error.message : String(error));
 
 		// Fallback to sample entries

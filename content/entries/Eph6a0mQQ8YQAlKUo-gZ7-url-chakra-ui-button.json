@@ -1,0 +1,202 @@
+{
+  "id": "Eph6a0mQQ8YQAlKUo-gZ7",
+  "title": "Chakra UI Button",
+  "source": {
+    "type": "url",
+    "location": "https://chakra-ui.com/docs/components/button",
+    "ingested_at": "2025-06-26T02:46:25.916Z"
+  },
+  "content": "Button | Chakra UI Build faster with Premium Chakra UI Components 💎 Learn more [https://pro.chakra-ui.com?utm_source=chakra-ui.com]Skip to Content [#chakra-skip-nav] Docs [/docs/get-started/installation]Playground [/playground]Guides [/guides]Blog [/blog] Sponsor [https://opencollective.com/chakra-ui]3.21.0Search...⌘K [https://github.com/chakra-ui/chakra-ui] Get Started [/docs/get-started/installation]Components [/docs/components/concepts/overview]Charts [/docs/charts/installation]Styling [/docs/styling/overview]Theming [/docs/theming/overview] [/] Components Button Concepts Overview [/docs/components/concepts/overview]Composition [/docs/components/concepts/composition]Animation [/docs/components/concepts/animation]Color Mode [/docs/components/concepts/color-mode]Server Component [/docs/components/concepts/server-components]Testing [/docs/components/concepts/testing] Layout Aspect Ratio [/docs/components/aspect-ratio]Bleed [/docs/components/bleed]Box [/docs/components/box]Center [/docs/components/center]Container [/docs/components/container]Flex [/docs/components/flex]Float [/docs/components/float]Grid [/docs/components/grid]Group [/docs/components/group]SimpleGrid [/docs/components/simple-grid]Stack [/docs/components/stack]Wrap [/docs/components/wrap] Typography Blockquote [/docs/components/blockquote]Code [/docs/components/code]Em [/docs/components/em]Heading [/docs/components/heading]Highlight [/docs/components/highlight]Kbd [/docs/components/kbd]Link [/docs/components/link]Link Overlay [/docs/components/link-overlay]List [/docs/components/list]Mark [/docs/components/mark]Prose [/docs/components/prose]Text [/docs/components/text] Components Accordion [/docs/components/accordion]Action Bar [/docs/components/action-bar]Alert [/docs/components/alert]Avatar [/docs/components/avatar]Badge [/docs/components/badge]Breadcrumb [/docs/components/breadcrumb]Button [/docs/components/button]Card [/docs/components/card]Checkbox Card [/docs/components/checkbox-card]Checkbox [/docs/components/checkbox]Clipboard [/docs/components/clipboard]Close Button [/docs/components/close-button]Collapsible [/docs/components/collapsible]Comboboxnew [/docs/components/combobox]Color Picker [/docs/components/color-picker]Color Swatch [/docs/components/color-swatch]Data List [/docs/components/data-list]Dialog [/docs/components/dialog]Drawer [/docs/components/drawer]Editable [/docs/components/editable]Empty State [/docs/components/empty-state]Field [/docs/components/field]Fieldset [/docs/components/fieldset]File Upload [/docs/components/file-upload]Hover Card [/docs/components/hover-card]Icon [/docs/components/icon]Icon Button [/docs/components/icon-button]Image [/docs/components/image]Input [/docs/components/input]Menu [/docs/components/menu]Number Input [/docs/components/number-input]Pagination [/docs/components/pagination]Password Input [/docs/components/password-input]Pin Input [/docs/components/pin-input]Popover [/docs/components/popover]Progress Circle [/docs/components/progress-circle]Progress [/docs/components/progress]QR Code [/docs/components/qr-code]Radio Card [/docs/components/radio-card]Radio [/docs/components/radio]Rating [/docs/components/rating]Segmented Control [/docs/components/segmented-control]Select (Native) [/docs/components/native-select]Select [/docs/components/select]Separator [/docs/components/separator]Skeleton [/docs/components/skeleton]Slider [/docs/components/slider]Spinner [/docs/components/spinner]Stat [/docs/components/stat]Status [/docs/components/status]Steps [/docs/components/steps]Switch [/docs/components/switch]Tabs [/docs/components/tabs]Table [/docs/components/table]Tag [/docs/components/tag]Textarea [/docs/components/textarea]Timeline [/docs/components/timeline]Toast [/docs/components/toast]Toggle Tip [/docs/components/toggle-tip]Tooltip [/docs/components/tooltip] Utilities ClientOnly [/docs/components/client-only]Download Triggernew [/docs/components/download-trigger]EnvironmentProvider [/docs/components/environment-provider]For [/docs/components/for]FormatNumber [/docs/components/format-number]FormatByte [/docs/components/format-byte]LocaleProvider [/docs/components/locale-provider]Overlay Manager [/docs/components/overlay-manager]Presence [/docs/components/presence]Portal [/docs/components/portal]Show [/docs/components/show]Visually Hidden [/docs/components/visually-hidden]Theme [/docs/components/theme] # Button Used to trigger an action or event Source [https://github.com/chakra-ui/chakra-ui/tree/main/packages/react/src/components/button]Storybook [https://storybook.chakra-ui.com/?path=/story/components-button--basic]Recipe [https://github.com/chakra-ui/chakra-ui/tree/main/packages/react/src/theme/recipes/button.ts] PreviewCode Button import { Button } from \"@chakra-ui/react\" const Demo = () => { return &#x3C;Button>Button&#x3C;/Button> } ## Usage [#usage] ``` `import { Button, ButtonGroup } from \"@chakra-ui/react\"` ``` ``` `<Button>Click me</Button>` ``` ## Examples [#examples] ### Sizes [#sizes] Use the `size` prop to change the size of the button. PreviewCode Button (xs)Button (sm)Button (md)Button (lg)Button (xl) import { Button, HStack } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;HStack wrap=\"wrap\" gap=\"6\"> &#x3C;Button size=\"xs\">Button (xs)&#x3C;/Button> &#x3C;Button size=\"sm\">Button (sm)&#x3C;/Button> &#x3C;Button size=\"md\">Button (md)&#x3C;/Button> &#x3C;Button size=\"lg\">Button (lg)&#x3C;/Button> &#x3C;Button size=\"xl\">Button (xl)&#x3C;/Button> &#x3C;/HStack> ) } ### Variants [#variants] Use the `variant` prop to change the visual style of the Button. PreviewCode SolidSubtleSurfaceOutlineGhostPlain import { Button, HStack } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;HStack wrap=\"wrap\" gap=\"6\"> &#x3C;Button variant=\"solid\">Solid&#x3C;/Button> &#x3C;Button variant=\"subtle\">Subtle&#x3C;/Button> &#x3C;Button variant=\"surface\">Surface&#x3C;/Button> &#x3C;Button variant=\"outline\">Outline&#x3C;/Button> &#x3C;Button variant=\"ghost\">Ghost&#x3C;/Button> &#x3C;Button variant=\"plain\">Plain&#x3C;/Button> &#x3C;/HStack> ) } ### Icon [#icon] Use icons within a button PreviewCode EmailCall us import { Button, HStack } from \"@chakra-ui/react\" import { RiArrowRightLine, RiMailLine } from \"react-icons/ri\" const Demo = () => { return ( &#x3C;HStack> &#x3C;Button colorPalette=\"teal\" variant=\"solid\"> &#x3C;RiMailLine /> Email &#x3C;/Button> &#x3C;Button colorPalette=\"teal\" variant=\"outline\"> Call us &#x3C;RiArrowRightLine /> &#x3C;/Button> &#x3C;/HStack> ) } ### Color [#color] Use the `colorPalette` prop to change the color of the button PreviewCode gray ButtonButtonButtonButton red ButtonButtonButtonButton green ButtonButtonButtonButton blue ButtonButtonButtonButton teal ButtonButtonButtonButton pink ButtonButtonButtonButton purple ButtonButtonButtonButton cyan ButtonButtonButtonButton orange ButtonButtonButtonButton yellow ButtonButtonButtonButtonimport { Button, Stack, Text } from \"@chakra-ui/react\" import { colorPalettes } from \"compositions/lib/color-palettes\" const Demo = () => { return ( &#x3C;Stack gap=\"2\" align=\"flex-start\"> {colorPalettes.map((colorPalette) => ( &#x3C;Stack align=\"center\" key={colorPalette} direction=\"row\" gap=\"10\"> &#x3C;Text minW=\"8ch\">{colorPalette}&#x3C;/Text> &#x3C;Button colorPalette={colorPalette}>Button&#x3C;/Button> &#x3C;Button colorPalette={colorPalette} variant=\"outline\"> Button &#x3C;/Button> &#x3C;Button colorPalette={colorPalette} variant=\"surface\"> Button &#x3C;/Button> &#x3C;Button colorPalette={colorPalette} variant=\"subtle\"> Button &#x3C;/Button> &#x3C;/Stack> ))} &#x3C;/Stack> ) } ### Disabled [#disabled] Use the `disabled` prop to disable the button. PreviewCode Button import { Button } from \"@chakra-ui/react\" const Demo = () => { return &#x3C;Button disabled>Button&#x3C;/Button> } ### Disabled Link [#disabled-link] When using the `disabled` prop with a link, you need to prevent the default behavior of the link and add the `data-disabled` attribute. PreviewCode Button [#] \"use client\" import { Button } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;Button asChild> &#x3C;a href=\"#\" data-disabled=\"\" onClick={(e) => e.preventDefault()}> Button &#x3C;/a> &#x3C;/Button> ) } ### Loading [#loading] Pass the `loading` and `loadingText` props to the `Button` component to show a loading spinner and add a loading text. PreviewCode Click meSaving...import { Button, Stack } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;Stack direction=\"row\" gap=\"4\" align=\"center\"> &#x3C;Button loading>Click me&#x3C;/Button> &#x3C;Button loading loadingText=\"Saving...\"> Click me &#x3C;/Button> &#x3C;/Stack> ) } Here&#x27;s an example of how to toggle the loading state of a button while keeping the width of the button the same. PreviewCode Click me Loading\"use client\" import { Button, Checkbox, VStack } from \"@chakra-ui/react\" import { useState } from \"react\" import { MdAdsClick } from \"react-icons/md\" const Demo = () => { const [loading, setLoading] = useState(false) return ( &#x3C;VStack gap=\"4\"> &#x3C;Button loading={loading} onClick={() => setLoading(!loading)}> &#x3C;MdAdsClick /> Click me &#x3C;/Button> &#x3C;Checkbox.Root size=\"sm\" checked={loading} onCheckedChange={() => setLoading(!loading)} > &#x3C;Checkbox.HiddenInput /> &#x3C;Checkbox.Control /> &#x3C;Checkbox.Label>Loading&#x3C;/Checkbox.Label> &#x3C;/Checkbox.Root> &#x3C;/VStack> ) } ### Spinner Placement [#spinner-placement] Use the `spinnerPlacement` prop to change the placement of the spinner. PreviewCode LoadingLoading import { Button, ButtonGroup } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;ButtonGroup colorPalette=\"teal\"> &#x3C;Button loading loadingText=\"Loading\" spinnerPlacement=\"start\"> Submit &#x3C;/Button> &#x3C;Button loading loadingText=\"Loading\" spinnerPlacement=\"end\"> Continue &#x3C;/Button> &#x3C;/ButtonGroup> ) } ### Custom Spinner [#custom-spinner] Use the `spinner` prop to change the spinner. PreviewCode Click meimport { Button } from \"@chakra-ui/react\" import { BeatLoader } from \"react-spinners\" const Demo = () => { return ( &#x3C;Button loading colorPalette=\"blue\" spinner={&#x3C;BeatLoader size={8} color=\"white\" />} > Click me &#x3C;/Button> ) } ### Group [#group] Use the `ButtonGroup` component to group buttons together. This component allows you pass common recipe properties to inner buttons. PreviewCode SaveCancel import { Button, ButtonGroup } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;ButtonGroup size=\"sm\" variant=\"outline\"> &#x3C;Button colorPalette=\"blue\">Save&#x3C;/Button> &#x3C;Button>Cancel&#x3C;/Button> &#x3C;/ButtonGroup> ) } To flush the buttons, pass the `attached` prop. PreviewCode Button import { Button, ButtonGroup, IconButton } from \"@chakra-ui/react\" import { LuChevronDown } from \"react-icons/lu\" const Demo = () => { return ( &#x3C;ButtonGroup size=\"sm\" variant=\"outline\" attached> &#x3C;Button variant=\"outline\">Button&#x3C;/Button> &#x3C;IconButton variant=\"outline\"> &#x3C;LuChevronDown /> &#x3C;/IconButton> &#x3C;/ButtonGroup> ) } ### Radius [#radius] Use the `rounded` prop to change the radius of the button. PreviewCode Semantic Radius Rounded l1Rounded l2Rounded l3 Core Radius Rounded smRounded mdRounded lgRounded xlRounded 2xlRounded full import { Button, ButtonGroup, Stack, Text } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;Stack gap=\"8\"> &#x3C;Stack> &#x3C;Text textStyle=\"sm\">Semantic Radius&#x3C;/Text> &#x3C;ButtonGroup variant=\"subtle\"> &#x3C;Button rounded=\"l1\">Rounded l1&#x3C;/Button> &#x3C;Button rounded=\"l2\">Rounded l2&#x3C;/Button> &#x3C;Button rounded=\"l3\">Rounded l3&#x3C;/Button> &#x3C;/ButtonGroup> &#x3C;/Stack> &#x3C;Stack> &#x3C;Text textStyle=\"sm\">Core Radius&#x3C;/Text> &#x3C;ButtonGroup variant=\"subtle\"> &#x3C;Button rounded=\"sm\">Rounded sm&#x3C;/Button> &#x3C;Button rounded=\"md\">Rounded md&#x3C;/Button> &#x3C;Button rounded=\"lg\">Rounded lg&#x3C;/Button> &#x3C;Button rounded=\"xl\">Rounded xl&#x3C;/Button> &#x3C;Button rounded=\"2xl\">Rounded 2xl&#x3C;/Button> &#x3C;Button rounded=\"full\">Rounded full&#x3C;/Button> &#x3C;/ButtonGroup> &#x3C;/Stack> &#x3C;/Stack> ) } ### As Link [#as-link] Use the `asChild` prop to render a button as a link. PreviewCode Button [#] import { Button } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;Button asChild> &#x3C;a href=\"#\">Button&#x3C;/a> &#x3C;/Button> ) } ### Ref [#ref] Here&#x27;s how to access the underlying element reference const Demo = () => { const ref = useRef<HTMLButtonElement | null>(null) return <Button ref={ref}>Click me</Button> } ## Props [#props] PropDefaultType`colorPalette ``&#x27;gray&#x27;``&#x27;gray&#x27; | &#x27;red&#x27; | &#x27;orange&#x27; | &#x27;yellow&#x27; | &#x27;green&#x27; | &#x27;teal&#x27; | &#x27;blue&#x27; | &#x27;cyan&#x27; | &#x27;purple&#x27; | &#x27;pink&#x27;` The color palette of the component `size ``&#x27;md&#x27;``&#x27;2xs&#x27; | &#x27;xs&#x27; | &#x27;sm&#x27; | &#x27;md&#x27; | &#x27;lg&#x27; | &#x27;xl&#x27; | &#x27;2xl&#x27;` The size of the component `variant ``&#x27;solid&#x27;``&#x27;solid&#x27; | &#x27;subtle&#x27; | &#x27;surface&#x27; | &#x27;outline&#x27; | &#x27;ghost&#x27; | &#x27;plain&#x27;` The variant of the component `loading ` `boolean` `loadingText ` `React.ReactNode` Previous BreadcrumbNext Card On this page Usage [#usage]Examples [#examples]Sizes [#sizes]Variants [#variants]Icon [#icon]Color [#color]Disabled [#disabled]Disabled Link [#disabled-link]Loading [#loading]Spinner Placement [#spinner-placement]Custom Spinner [#custom-spinner]Group [#group]Radius [#radius]As Link [#as-link]Ref [#ref]Props [#props] Edit page on GitHub [https://github.com/chakra-ui/chakra-ui/tree/main/apps/www/content/docs/components/button.mdx]Scroll to top",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Button | Chakra UI Build faster with Premium Chakra UI Components 💎 Learn more [https://pro.chakra-ui.com?utm_source=chakra-ui.com]Skip to Content [#chakra-skip-nav] Docs [/docs/get-started/installation]Playground [/playground]Guides [/guides]Blog [/blog] Sponsor [https://opencollective.com/chakra-ui]3.21.0Search...⌘K [https://github.com/chakra-ui/chakra-ui] Get Started [/docs/get-started/installation]Components [/docs/components/concepts/overview]Charts [/docs/charts/installation]Styling [/docs/styling/overview]Theming [/docs/theming/overview] [/] Components Button Concepts Overview [/docs/components/concepts/overview]Composition [/docs/components/concepts/composition]Animation [/docs/components/concepts/animation]Color Mode [/docs/components/concepts/color-mode]Server Component [/docs/components/concepts/server-components]Testing [/docs/components/concepts/testing] Layout Aspect Ratio [/docs/components/aspect-ratio]Bleed [/docs/components/bleed]Box [/docs/components/box]Center",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 995,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Ratio [/docs/components/aspect-ratio]Bleed [/docs/components/bleed]Box [/docs/components/box]Center [/docs/components/center]Container [/docs/components/container]Flex [/docs/components/flex]Float [/docs/components/float]Grid [/docs/components/grid]Group [/docs/components/group]SimpleGrid [/docs/components/simple-grid]Stack [/docs/components/stack]Wrap [/docs/components/wrap] Typography Blockquote [/docs/components/blockquote]Code [/docs/components/code]Em [/docs/components/em]Heading [/docs/components/heading]Highlight [/docs/components/highlight]Kbd [/docs/components/kbd]Link [/docs/components/link]Link Overlay [/docs/components/link-overlay]List [/docs/components/list]Mark [/docs/components/mark]Prose [/docs/components/prose]Text [/docs/components/text] Components Accordion [/docs/components/accordion]Action Bar [/docs/components/action-bar]Alert [/docs/components/alert]Avatar [/docs/components/avatar]Badge [/docs/components/badge]Breadcrumb [/docs/components/breadcrumb]Button",
+      "metadata": {
+        "startIndex": 895,
+        "endIndex": 1890,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "docs/components/avatar]Badge [/docs/components/badge]Breadcrumb [/docs/components/breadcrumb]Button [/docs/components/button]Card [/docs/components/card]Checkbox Card [/docs/components/checkbox-card]Checkbox [/docs/components/checkbox]Clipboard [/docs/components/clipboard]Close Button [/docs/components/close-button]Collapsible [/docs/components/collapsible]Comboboxnew [/docs/components/combobox]Color Picker [/docs/components/color-picker]Color Swatch [/docs/components/color-swatch]Data List [/docs/components/data-list]Dialog [/docs/components/dialog]Drawer [/docs/components/drawer]Editable [/docs/components/editable]Empty State [/docs/components/empty-state]Field [/docs/components/field]Fieldset [/docs/components/fieldset]File Upload [/docs/components/file-upload]Hover Card [/docs/components/hover-card]Icon [/docs/components/icon]Icon Button [/docs/components/icon-button]Image [/docs/components/image]Input [/docs/components/input]Menu [/docs/components/menu]Number Input",
+      "metadata": {
+        "startIndex": 1790,
+        "endIndex": 2775,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "mage [/docs/components/image]Input [/docs/components/input]Menu [/docs/components/menu]Number Input [/docs/components/number-input]Pagination [/docs/components/pagination]Password Input [/docs/components/password-input]Pin Input [/docs/components/pin-input]Popover [/docs/components/popover]Progress Circle [/docs/components/progress-circle]Progress [/docs/components/progress]QR Code [/docs/components/qr-code]Radio Card [/docs/components/radio-card]Radio [/docs/components/radio]Rating [/docs/components/rating]Segmented Control [/docs/components/segmented-control]Select (Native) [/docs/components/native-select]Select [/docs/components/select]Separator [/docs/components/separator]Skeleton [/docs/components/skeleton]Slider [/docs/components/slider]Spinner [/docs/components/spinner]Stat [/docs/components/stat]Status [/docs/components/status]Steps [/docs/components/steps]Switch [/docs/components/switch]Tabs [/docs/components/tabs]Table [/docs/components/table]Tag",
+      "metadata": {
+        "startIndex": 2675,
+        "endIndex": 3646,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "steps]Switch [/docs/components/switch]Tabs [/docs/components/tabs]Table [/docs/components/table]Tag [/docs/components/tag]Textarea [/docs/components/textarea]Timeline [/docs/components/timeline]Toast [/docs/components/toast]Toggle Tip [/docs/components/toggle-tip]Tooltip [/docs/components/tooltip] Utilities ClientOnly [/docs/components/client-only]Download Triggernew [/docs/components/download-trigger]EnvironmentProvider [/docs/components/environment-provider]For [/docs/components/for]FormatNumber [/docs/components/format-number]FormatByte [/docs/components/format-byte]LocaleProvider [/docs/components/locale-provider]Overlay Manager [/docs/components/overlay-manager]Presence [/docs/components/presence]Portal [/docs/components/portal]Show [/docs/components/show]Visually Hidden [/docs/components/visually-hidden]Theme [/docs/components/theme] # Button Used to trigger an action or event Source [https://github.com/chakra-ui/chakra-ui/tree/main/packages/react/src/components/button]Storybook",
+      "metadata": {
+        "startIndex": 3546,
+        "endIndex": 4546,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ce [https://github.com/chakra-ui/chakra-ui/tree/main/packages/react/src/components/button]Storybook [https://storybook.chakra-ui.com/?path=/story/components-button--basic]Recipe [https://github.com/chakra-ui/chakra-ui/tree/main/packages/react/src/theme/recipes/button.ts] PreviewCode Button import { Button } from \"@chakra-ui/react\" const Demo = () => { return &#x3C;Button>Button&#x3C;/Button> } ## Usage [#usage] ``` `import { Button, ButtonGroup } from \"@chakra-ui/react\"` ``` ``` `<Button>Click me</Button>` ``` ## Examples [#examples] ### Sizes [#sizes] Use the `size` prop to change the size of the button. PreviewCode Button (xs)Button (sm)Button (md)Button (lg)Button (xl) import { Button, HStack } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;HStack wrap=\"wrap\" gap=\"6\"> &#x3C;Button size=\"xs\">Button (xs)&#x3C;/Button> &#x3C;Button size=\"sm\">Button (sm)&#x3C;/Button> &#x3C;Button size=\"md\">Button (md)&#x3C;/Button> &#x3C;Button size=\"lg\">Button (lg)&#x3C;/Button>",
+      "metadata": {
+        "startIndex": 4446,
+        "endIndex": 5437,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "> &#x3C;Button size=\"md\">Button (md)&#x3C;/Button> &#x3C;Button size=\"lg\">Button (lg)&#x3C;/Button> &#x3C;Button size=\"xl\">Button (xl)&#x3C;/Button> &#x3C;/HStack> ) } ### Variants [#variants] Use the `variant` prop to change the visual style of the Button. PreviewCode SolidSubtleSurfaceOutlineGhostPlain import { Button, HStack } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;HStack wrap=\"wrap\" gap=\"6\"> &#x3C;Button variant=\"solid\">Solid&#x3C;/Button> &#x3C;Button variant=\"subtle\">Subtle&#x3C;/Button> &#x3C;Button variant=\"surface\">Surface&#x3C;/Button> &#x3C;Button variant=\"outline\">Outline&#x3C;/Button> &#x3C;Button variant=\"ghost\">Ghost&#x3C;/Button> &#x3C;Button variant=\"plain\">Plain&#x3C;/Button> &#x3C;/HStack> ) } ### Icon [#icon] Use icons within a button PreviewCode EmailCall us import { Button, HStack } from \"@chakra-ui/react\" import { RiArrowRightLine, RiMailLine } from \"react-icons/ri\" const Demo = () => { return ( &#x3C;HStack> &#x3C;Button colorPalette=\"teal\"",
+      "metadata": {
+        "startIndex": 5337,
+        "endIndex": 6337,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "from \"react-icons/ri\" const Demo = () => { return ( &#x3C;HStack> &#x3C;Button colorPalette=\"teal\" variant=\"solid\"> &#x3C;RiMailLine /> Email &#x3C;/Button> &#x3C;Button colorPalette=\"teal\" variant=\"outline\"> Call us &#x3C;RiArrowRightLine /> &#x3C;/Button> &#x3C;/HStack> ) } ### Color [#color] Use the `colorPalette` prop to change the color of the button PreviewCode gray ButtonButtonButtonButton red ButtonButtonButtonButton green ButtonButtonButtonButton blue ButtonButtonButtonButton teal ButtonButtonButtonButton pink ButtonButtonButtonButton purple ButtonButtonButtonButton cyan ButtonButtonButtonButton orange ButtonButtonButtonButton yellow ButtonButtonButtonButtonimport { Button, Stack, Text } from \"@chakra-ui/react\" import { colorPalettes } from \"compositions/lib/color-palettes\" const Demo = () => { return ( &#x3C;Stack gap=\"2\" align=\"flex-start\"> {colorPalettes.map((colorPalette) => ( &#x3C;Stack align=\"center\" key={colorPalette} direction=\"row\" gap=\"10\"> &#x3C;Text",
+      "metadata": {
+        "startIndex": 6237,
+        "endIndex": 7224,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "lorPalette) => ( &#x3C;Stack align=\"center\" key={colorPalette} direction=\"row\" gap=\"10\"> &#x3C;Text minW=\"8ch\">{colorPalette}&#x3C;/Text> &#x3C;Button colorPalette={colorPalette}>Button&#x3C;/Button> &#x3C;Button colorPalette={colorPalette} variant=\"outline\"> Button &#x3C;/Button> &#x3C;Button colorPalette={colorPalette} variant=\"surface\"> Button &#x3C;/Button> &#x3C;Button colorPalette={colorPalette} variant=\"subtle\"> Button &#x3C;/Button> &#x3C;/Stack> ))} &#x3C;/Stack> ) } ### Disabled [#disabled] Use the `disabled` prop to disable the button. PreviewCode Button import { Button } from \"@chakra-ui/react\" const Demo = () => { return &#x3C;Button disabled>Button&#x3C;/Button> } ### Disabled Link [#disabled-link] When using the `disabled` prop with a link, you need to prevent the default behavior of the link and add the `data-disabled` attribute. PreviewCode Button [#] \"use client\" import { Button } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;Button asChild> &#x3C;a",
+      "metadata": {
+        "startIndex": 7124,
+        "endIndex": 8120,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "port { Button } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;Button asChild> &#x3C;a href=\"#\" data-disabled=\"\" onClick={(e) => e.preventDefault()}> Button &#x3C;/a> &#x3C;/Button> ) } ### Loading [#loading] Pass the `loading` and `loadingText` props to the `Button` component to show a loading spinner and add a loading text. PreviewCode Click meSaving...import { Button, Stack } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;Stack direction=\"row\" gap=\"4\" align=\"center\"> &#x3C;Button loading>Click me&#x3C;/Button> &#x3C;Button loading loadingText=\"Saving...\"> Click me &#x3C;/Button> &#x3C;/Stack> ) } Here&#x27;s an example of how to toggle the loading state of a button while keeping the width of the button the same. PreviewCode Click me Loading\"use client\" import { Button, Checkbox, VStack } from \"@chakra-ui/react\" import { useState } from \"react\" import { MdAdsClick } from \"react-icons/md\" const Demo = () => { const [loading, setLoading] = useState(false)",
+      "metadata": {
+        "startIndex": 8020,
+        "endIndex": 9016,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "AdsClick } from \"react-icons/md\" const Demo = () => { const [loading, setLoading] = useState(false) return ( &#x3C;VStack gap=\"4\"> &#x3C;Button loading={loading} onClick={() => setLoading(!loading)}> &#x3C;MdAdsClick /> Click me &#x3C;/Button> &#x3C;Checkbox.Root size=\"sm\" checked={loading} onCheckedChange={() => setLoading(!loading)} > &#x3C;Checkbox.HiddenInput /> &#x3C;Checkbox.Control /> &#x3C;Checkbox.Label>Loading&#x3C;/Checkbox.Label> &#x3C;/Checkbox.Root> &#x3C;/VStack> ) } ### Spinner Placement [#spinner-placement] Use the `spinnerPlacement` prop to change the placement of the spinner. PreviewCode LoadingLoading import { Button, ButtonGroup } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;ButtonGroup colorPalette=\"teal\"> &#x3C;Button loading loadingText=\"Loading\" spinnerPlacement=\"start\"> Submit &#x3C;/Button> &#x3C;Button loading loadingText=\"Loading\" spinnerPlacement=\"end\"> Continue &#x3C;/Button> &#x3C;/ButtonGroup> ) } ### Custom Spinner [#custom-spinner] Use",
+      "metadata": {
+        "startIndex": 8916,
+        "endIndex": 9916,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "ent=\"end\"> Continue &#x3C;/Button> &#x3C;/ButtonGroup> ) } ### Custom Spinner [#custom-spinner] Use the `spinner` prop to change the spinner. PreviewCode Click meimport { Button } from \"@chakra-ui/react\" import { BeatLoader } from \"react-spinners\" const Demo = () => { return ( &#x3C;Button loading colorPalette=\"blue\" spinner={&#x3C;BeatLoader size={8} color=\"white\" />} > Click me &#x3C;/Button> ) } ### Group [#group] Use the `ButtonGroup` component to group buttons together. This component allows you pass common recipe properties to inner buttons. PreviewCode SaveCancel import { Button, ButtonGroup } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;ButtonGroup size=\"sm\" variant=\"outline\"> &#x3C;Button colorPalette=\"blue\">Save&#x3C;/Button> &#x3C;Button>Cancel&#x3C;/Button> &#x3C;/ButtonGroup> ) } To flush the buttons, pass the `attached` prop. PreviewCode Button import { Button, ButtonGroup, IconButton } from \"@chakra-ui/react\" import { LuChevronDown } from \"react-icons/lu\"",
+      "metadata": {
+        "startIndex": 9816,
+        "endIndex": 10816,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "n, ButtonGroup, IconButton } from \"@chakra-ui/react\" import { LuChevronDown } from \"react-icons/lu\" const Demo = () => { return ( &#x3C;ButtonGroup size=\"sm\" variant=\"outline\" attached> &#x3C;Button variant=\"outline\">Button&#x3C;/Button> &#x3C;IconButton variant=\"outline\"> &#x3C;LuChevronDown /> &#x3C;/IconButton> &#x3C;/ButtonGroup> ) } ### Radius [#radius] Use the `rounded` prop to change the radius of the button. PreviewCode Semantic Radius Rounded l1Rounded l2Rounded l3 Core Radius Rounded smRounded mdRounded lgRounded xlRounded 2xlRounded full import { Button, ButtonGroup, Stack, Text } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;Stack gap=\"8\"> &#x3C;Stack> &#x3C;Text textStyle=\"sm\">Semantic Radius&#x3C;/Text> &#x3C;ButtonGroup variant=\"subtle\"> &#x3C;Button rounded=\"l1\">Rounded l1&#x3C;/Button> &#x3C;Button rounded=\"l2\">Rounded l2&#x3C;/Button> &#x3C;Button rounded=\"l3\">Rounded l3&#x3C;/Button> &#x3C;/ButtonGroup> &#x3C;/Stack> &#x3C;Stack> &#x3C;Text",
+      "metadata": {
+        "startIndex": 10716,
+        "endIndex": 11704,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "ton rounded=\"l3\">Rounded l3&#x3C;/Button> &#x3C;/ButtonGroup> &#x3C;/Stack> &#x3C;Stack> &#x3C;Text textStyle=\"sm\">Core Radius&#x3C;/Text> &#x3C;ButtonGroup variant=\"subtle\"> &#x3C;Button rounded=\"sm\">Rounded sm&#x3C;/Button> &#x3C;Button rounded=\"md\">Rounded md&#x3C;/Button> &#x3C;Button rounded=\"lg\">Rounded lg&#x3C;/Button> &#x3C;Button rounded=\"xl\">Rounded xl&#x3C;/Button> &#x3C;Button rounded=\"2xl\">Rounded 2xl&#x3C;/Button> &#x3C;Button rounded=\"full\">Rounded full&#x3C;/Button> &#x3C;/ButtonGroup> &#x3C;/Stack> &#x3C;/Stack> ) } ### As Link [#as-link] Use the `asChild` prop to render a button as a link. PreviewCode Button [#] import { Button } from \"@chakra-ui/react\" const Demo = () => { return ( &#x3C;Button asChild> &#x3C;a href=\"#\">Button&#x3C;/a> &#x3C;/Button> ) } ### Ref [#ref] Here&#x27;s how to access the underlying element reference const Demo = () => { const ref = useRef<HTMLButtonElement | null>(null) return <Button ref={ref}>Click me</Button> } ## Props [#props]",
+      "metadata": {
+        "startIndex": 11604,
+        "endIndex": 12597,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "eRef<HTMLButtonElement | null>(null) return <Button ref={ref}>Click me</Button> } ## Props [#props] PropDefaultType`colorPalette ``&#x27;gray&#x27;``&#x27;gray&#x27; | &#x27;red&#x27; | &#x27;orange&#x27; | &#x27;yellow&#x27; | &#x27;green&#x27; | &#x27;teal&#x27; | &#x27;blue&#x27; | &#x27;cyan&#x27; | &#x27;purple&#x27; | &#x27;pink&#x27;` The color palette of the component `size ``&#x27;md&#x27;``&#x27;2xs&#x27; | &#x27;xs&#x27; | &#x27;sm&#x27; | &#x27;md&#x27; | &#x27;lg&#x27; | &#x27;xl&#x27; | &#x27;2xl&#x27;` The size of the component `variant ``&#x27;solid&#x27;``&#x27;solid&#x27; | &#x27;subtle&#x27; | &#x27;surface&#x27; | &#x27;outline&#x27; | &#x27;ghost&#x27; | &#x27;plain&#x27;` The variant of the component `loading ` `boolean` `loadingText ` `React.ReactNode` Previous BreadcrumbNext Card On this page Usage [#usage]Examples [#examples]Sizes [#sizes]Variants [#variants]Icon [#icon]Color [#color]Disabled [#disabled]Disabled Link [#disabled-link]Loading [#loading]Spinner",
+      "metadata": {
+        "startIndex": 12497,
+        "endIndex": 13495,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "on [#icon]Color [#color]Disabled [#disabled]Disabled Link [#disabled-link]Loading [#loading]Spinner Placement [#spinner-placement]Custom Spinner [#custom-spinner]Group [#group]Radius [#radius]As Link [#as-link]Ref [#ref]Props [#props] Edit page on GitHub [https://github.com/chakra-ui/chakra-ui/tree/main/apps/www/content/docs/components/button.mdx]Scroll to top",
+      "metadata": {
+        "startIndex": 13395,
+        "endIndex": 14395,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "chakra",
+      "react"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-06-26T02:46:25.916Z",
+    "system": "Chakra UI",
+    "author": "Segun Adebayo",
+    "version": "2.0",
+    "source_url": "https://chakra-ui.com/docs/components/button"
+  }
+}

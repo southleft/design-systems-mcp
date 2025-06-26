@@ -209,9 +209,23 @@ async function main() {
         console.log(`  ... and ${entries.length - 5} more`);
       }
 
+      // Automatically regenerate manifest
+      console.log(`\n🔄 Regenerating content manifest...`);
+      try {
+        const { exec } = require('child_process');
+        const { promisify } = require('util');
+        const execAsync = promisify(exec);
+
+        await execAsync('npx tsx scripts/build/generate-manifest.ts');
+        console.log(`✅ Manifest updated automatically`);
+      } catch (error) {
+        console.warn(`⚠️  Failed to regenerate manifest automatically:`, error);
+        console.log(`Please run: npm run build:manifest`);
+      }
+
       console.log(`\n🔄 Next steps:`);
-      console.log(`1. Update src/index.ts to load the new content files`);
-      console.log(`2. Restart your development server: npm run dev`);
+      console.log(`1. Restart your development server: npm run dev`);
+      console.log(`2. New content will be automatically discovered and loaded`);
       console.log(`3. Test the new content in your chat interface`);
     }
 
