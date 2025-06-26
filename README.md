@@ -57,6 +57,9 @@ An AI-powered Model Context Protocol (MCP) server that provides intelligent acce
 
    # Or ingest web content
    npm run ingest:url https://example.com/design-system
+
+   # Or bulk ingest from CSV file
+   npm run ingest:csv path/to/urls.csv
    ```
 
 2. **Update Content Loading** in `src/index.ts`
@@ -208,7 +211,69 @@ design-systems-mcp/
 
 - **PDFs** - Design system handbooks, guidelines
 - **Web Content** - Design system documentation sites
+- **CSV URLs** - Bulk ingestion from CSV files containing multiple URLs
 - **JSON** - Pre-processed design system data
+
+### CSV Bulk Ingestion
+
+For bulk content ingestion, you can use CSV files containing multiple URLs:
+
+#### 1. Create a CSV File
+
+```bash
+# Generate a sample CSV template
+npm run ingest:csv --sample
+```
+
+#### 2. CSV Format
+
+Your CSV file should include these columns (header row recommended):
+
+| Column | Required | Description |
+|--------|----------|-------------|
+| `url` | ✅ | The URL to fetch content from |
+| `title` | ⚪ | Custom title for the content |
+| `category` | ⚪ | Content category (general, components, tokens, patterns, guidelines, tools) |
+| `tags` | ⚪ | Comma-separated tags |
+| `description` | ⚪ | Description of the content |
+| `confidence` | ⚪ | Confidence level (low, medium, high) |
+| `system` | ⚪ | Design system name |
+| `author` | ⚪ | Author or organization |
+| `version` | ⚪ | Version information |
+
+#### 3. Example CSV
+
+```csv
+url,title,category,tags,description,confidence,system,author,version
+https://material.io/components/buttons,Material Design Buttons,components,"button,interaction,material",Material Design button guidelines,high,Material Design,Google,3.0
+https://polaris.shopify.com/components/button,Shopify Polaris Button,components,"button,shopify,polaris",Shopify's button component,high,Polaris,Shopify,
+https://primer.style/components/button,GitHub Primer Button,components,"button,github,primer",GitHub's button guidelines,high,Primer,GitHub,
+```
+
+#### 4. Ingest Content
+
+```bash
+# Basic ingestion
+npm run ingest:csv my-urls.csv
+
+# With custom options
+npm run ingest:csv my-urls.csv --max-concurrent 5 --timeout 60000
+
+# Dry run (validate without fetching)
+npm run ingest:csv my-urls.csv --dry-run
+
+# See all options
+npm run ingest:csv --help
+```
+
+#### 5. Advanced Options
+
+- `--max-concurrent <n>` - Process N URLs simultaneously (default: 3)
+- `--timeout <ms>` - Request timeout in milliseconds (default: 30000)
+- `--retry-attempts <n>` - Number of retry attempts for failed URLs (default: 2)
+- `--output-dir <dir>` - Custom output directory (default: content/entries)
+- `--delimiter <char>` - CSV delimiter (default: ',')
+- `--no-header` - CSV file doesn't have a header row
 
 ### Content Processing
 
@@ -226,6 +291,7 @@ Content is automatically:
 - `npm run deploy` - Deploy to Cloudflare Workers
 - `npm run ingest:pdf <file>` - Ingest PDF content
 - `npm run ingest:url <url>` - Ingest web content
+- `npm run ingest:csv <file>` - Bulk ingest from CSV file containing URLs
 
 ### Adding New MCP Tools
 

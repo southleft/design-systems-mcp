@@ -10,7 +10,10 @@
 		"start": "wrangler dev",
 		"cf-typegen": "wrangler types",
 		"type-check": "tsc --noEmit",
-		"ingest": "tsx scripts/ingestion/ingest.ts"
+		"ingest": "tsx scripts/ingestion/ingest.ts",
+		"ingest:csv": "tsx scripts/ingestion/ingest-csv.ts --",
+		"ingest:pdf": "tsx scripts/ingestion/ingest.ts pdf",
+		"ingest:url": "tsx scripts/ingestion/ingest.ts url"
 	},
 	"dependencies": {
 		"@modelcontextprotocol/sdk": "^1.0.7",
