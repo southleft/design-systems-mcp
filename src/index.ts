@@ -739,8 +739,33 @@ export default {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Powered Design Systems Chat</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Design Systems Assistant - AI-Powered Design Systems Knowledge</title>
+    <meta name="description" content="AI-powered assistant that searches through design systems knowledge base to answer questions about components, tokens, patterns, and best practices.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Design Systems Assistant - AI-Powered Knowledge Base">
+    <meta property="og:description" content="AI assistant that searches through 109 design systems resources to answer questions about components, tokens, patterns, and best practices.">
+    <meta property="og:url" content="https://design-systems-mcp.southleft.com">
+    <meta property="og:image" content="https://design-systems-mcp.southleft.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Design Systems Assistant">
+    <meta name="twitter:description" content="AI-powered assistant for design systems knowledge">
+    <meta name="twitter:image" content="https://design-systems-mcp.southleft.com/og-image.png">
+
+    <!-- Additional Meta -->
+    <meta name="theme-color" content="#339af0">
+    <meta name="author" content="Southleft">
+    <link rel="canonical" href="https://design-systems-mcp.southleft.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -1179,14 +1204,17 @@ export default {
                     flexDirection: 'column'
                 }}>
                     <Container size="lg" style={{ flex: 1, display: 'flex', flexDirection: 'column', padding: '0' }}>
-                        {/* Minimal Header */}
+                        {/* Floating Header */}
                         <div style={{
                             background: '#25262b',
-                            borderBottom: '1px solid #373a40',
+                            border: '1px solid #373a40',
+                            borderRadius: '0 0 16px 16px',
                             padding: '16px 24px',
                             position: 'sticky',
                             top: 0,
-                            zIndex: 100
+                            zIndex: 100,
+                            margin: '0 16px',
+                            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)'
                         }}>
                             <Group justify="space-between" align="center">
                                 <div>
@@ -1505,6 +1533,33 @@ export default {
                             </div>
                         ) : null}
                     </Container>
+
+                    {/* Footer */}
+                    <footer style={{
+                        background: '#25262b',
+                        borderTop: '1px solid #373a40',
+                        padding: '16px 24px',
+                        textAlign: 'center',
+                        marginTop: 'auto'
+                    }}>
+                        <Text size="sm" style={{ color: '#6c6f75', fontSize: '13px' }}>
+                            Made with ❤️ by{' '}
+                            <a
+                                href="https://southleft.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    color: '#339af0',
+                                    textDecoration: 'none',
+                                    fontWeight: '500'
+                                }}
+                                onMouseEnter={(e) => e.target.style.textDecoration = 'underline'}
+                                onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
+                            >
+                                Southleft
+                            </a>
+                        </Text>
+                    </footer>
                 </div>
             );
         }
