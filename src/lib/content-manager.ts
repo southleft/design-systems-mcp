@@ -293,6 +293,22 @@ function calculateRelevanceScore(entry: ContentEntry, query: string, searchTerms
     score += 100;
   }
 
+  // Enhanced semantic matching for fundamental questions
+  if (query.includes('what is') || query.includes('define') || query.includes('definition')) {
+    // "What is X" questions should prioritize introductory content
+    if (titleLower.includes('101') || titleLower.includes('glossary') ||
+        titleLower.includes('introduction') || titleLower.includes('basics') ||
+        titleLower.includes('guide') || titleLower.includes('overview')) {
+      score += 90; // High priority for educational content
+    }
+
+    // Look for definition-style content in the text
+    if (contentLower.includes('definition:') || contentLower.includes('is a ') ||
+        contentLower.includes('summary:') || contentLower.includes('what is')) {
+      score += 80; // Content that defines things
+    }
+  }
+
   // Special semantic matching for common patterns
   if (query.includes('property') && titleLower.includes('properties')) {
     score += 80; // Strong semantic match for property/properties
@@ -398,6 +414,12 @@ function calculateChunkRelevanceScore(chunk: ContentChunk, query: string, search
   // First check if this is navigation content - heavily penalize it
   if (isNavigationContent(chunk.text)) {
     score -= 50; // Major penalty for navigation content
+  }
+
+  // HEAVILY prioritize chunks that contain actual definitions
+  if (chunk.text.includes('Definition:') || chunk.text.includes('Summary:') ||
+      chunk.text.includes('A design system is ') || chunk.text.includes('design system is a ')) {
+    score += 200; // HUGE bonus for definition content
   }
 
   // Boost score for chunks that appear to be instructional content

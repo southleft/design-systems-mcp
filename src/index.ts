@@ -316,7 +316,7 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 				}
 			],
 			tools: MCP_TOOLS,
-			tool_choice: "auto",
+			tool_choice: "required",
 		});
 
 		let response = completion.choices[0].message;
