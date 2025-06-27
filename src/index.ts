@@ -74,7 +74,7 @@ MANDATORY WORKFLOW:
 4. Always clearly distinguish between knowledge base findings and general knowledge
 
 IMPORTANT: Structure your responses as follows:
-## 📚 From Your Knowledge Base
+## 📚 From the Knowledge Base
 [Include any information found via MCP tools, with specific quotes and sources]
 
 ## 🧠 General Design Systems Knowledge
