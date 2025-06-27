@@ -1288,7 +1288,7 @@ export default {
                                                     lineHeight: '1.5'
                                                 }}
                                             >
-                                                This is an MCP (Model Context Protocol) server with specialized design systems knowledge. Unlike generic AI assistants, I search through a curated knowledge base of hundreds of design systems resources to provide expert answers about components, tokens, patterns, and best practices.
+                                                I'm your specialized design systems assistant. Ask me about components, tokens, patterns, and best practices.
                                             </Text>
                                         </div>
 
