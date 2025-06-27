@@ -55,8 +55,17 @@ async function loadActualContent() {
 	}
 }
 
-// Initialize content loading
-loadActualContent();
+// Content will be loaded lazily when first tool is called
+let contentLoaded = false;
+
+async function ensureContentLoaded() {
+	if (!contentLoaded) {
+		console.log('🔄 Loading content lazily...');
+		await loadActualContent();
+		contentLoaded = true;
+		console.log('✅ Content loaded successfully');
+	}
+}
 
 // AI System Prompt
 const AI_SYSTEM_PROMPT = `You are a helpful design systems expert with access to a comprehensive design systems knowledge base. Your role is to provide accurate, practical answers about design systems, components, tokens, and best practices.
@@ -166,6 +175,9 @@ const MCP_TOOLS = [
 
 // Function to call MCP tools
 async function callMcpTool(toolName: string, args: any): Promise<string> {
+	// Ensure content is loaded before any tool call
+	await ensureContentLoaded();
+
 	switch (toolName) {
 		case "search_design_knowledge":
 			const searchResults = searchEntries({
@@ -633,6 +645,9 @@ async function handleMcpRequest(request: Request): Promise<Response> {
 		}
 
 		if (body.method === "tools/call") {
+			// Ensure content is loaded before any tool call
+			await ensureContentLoaded();
+
 			const toolName = body.params?.name;
 			const args = body.params?.arguments || {};
 
