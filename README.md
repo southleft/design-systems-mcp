@@ -425,6 +425,73 @@ npm run dev
 # Check console output for content loading status
 ```
 
+## 📄 **License & Usage**
+
+This project is **free and open source** under the [MIT License](LICENSE). You are welcome to:
+- ✅ Use it for personal and commercial projects
+- ✅ Modify and distribute it
+- ✅ Build upon it for your own projects
+- ✅ Share it with your team and community
+
+### **Content Attribution**
+
+This project compiles design system knowledge from many brilliant creators. **All original content remains the intellectual property of their respective authors.**
+
+- 📚 See [CREDITS.md](CREDITS.md) for complete attribution
+- 🔗 Always link back to original sources when sharing insights
+- 🙏 Support the original creators by visiting their websites and platforms
+
+## 🔒 **Security & Privacy**
+
+- **No sensitive data is stored** - Only public design system knowledge
+- **Environment variables are secure** - API keys use Cloudflare secrets
+- **Open source and auditable** - All code is publicly available
+- **Privacy-focused** - No user data collection beyond basic usage analytics
+
+See [SECURITY.md](SECURITY.md) for detailed security information and best practices.
+
+## 🤝 **Contributing**
+
+We welcome contributions! Whether you want to:
+- 🐛 Report bugs or issues
+- 💡 Suggest new features or improvements
+- 📚 Add more design system content
+- 🔧 Improve the codebase
+- 📖 Enhance documentation
+
+Please:
+1. Check existing [issues](../../issues) first
+2. Open a new issue to discuss your idea
+3. Submit a pull request with your changes
+4. Follow our [security guidelines](SECURITY.md)
+
+### **Adding Content**
+
+To contribute new design system content:
+1. Ensure you have permission to share the content
+2. Follow the ingestion process documented above
+3. Add proper attribution in [CREDITS.md](CREDITS.md)
+4. Submit a pull request with the new content
+
+## 🙏 **Acknowledgments**
+
+This project exists thanks to the generous sharing of knowledge from the design systems community. Special thanks to:
+
+- **[Brad Frost](https://bradfrost.com/)** for the foundational Atomic Design methodology
+- **[The Design System Guide](https://thedesignsystem.guide/)** team for comprehensive practical resources
+- **[Figma](https://www.figma.com/)** for excellent official documentation
+- **All the design teams** who openly share their experiences and methodologies
+- **The entire design systems community** for fostering knowledge sharing
+
+See [CREDITS.md](CREDITS.md) for the complete list of contributors and sources.
+
+## 📞 **Support & Community**
+
+- 🐛 **Issues:** [GitHub Issues](../../issues)
+- 💬 **Discussions:** [GitHub Discussions](../../discussions)
+- 📧 **Security:** Report security issues privately to the maintainers
+- 🌐 **Website:** [Live Demo](https://design-systems-mcp.southleft.com)
+
 ---
 
 ## Legacy Cloudflare Template Information
