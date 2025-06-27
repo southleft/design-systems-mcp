@@ -743,7 +743,7 @@ export default {
     <meta name="description" content="AI-powered assistant that searches through design systems knowledge base to answer questions about components, tokens, patterns, and best practices.">
 
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚃</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1080 482'%3E%3Cstyle%3E.st1%7Bfill:%23333333%7D%3C/style%3E%3Cpath class='st1' d='M439.7 462.3c-12 0-22.1 4.8-30.1 16.8l-32.7-192.9 2.6-1.4C422.9 351 490.5 392 549.4 392c42.9 0 71-17.4 71-46.9 0-30.1-39.5-44.9-102.3-66.3-59.6-21.4-133.2-54.3-133.2-140.8 0-77.7 71-138 170-138 54.9 0 81 15.4 99.7 15.4 10.8 0 18.1-3.4 25.4-12.8l21.4 170.7-2.6 1.4c-32.1-54.3-86.4-85.7-142.5-85.7-44.1 0-73.6 20.2-73.6 46.9 0 30.2 38.9 42.9 79.6 58.9 70.2 24.2 158 57.5 157.2 148.8 0 80.3-70.2 138.6-164 138.6C497.9 482.2 460.4 462.3 439.7 462.3z'/%3E%3Cpath class='st1' d='M831.5 2.5l126.3 236.7L830.4 477.9h124.2L1080 239.2 956.8 2.5H831.5z'/%3E%3Cpath class='st1' d='M125.4 2.5L0 241.2l123.2 236.7h125.2L122.2 241.2 249.6 2.5H125.4z'/%3E%3C/svg%3E">
 
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website">
