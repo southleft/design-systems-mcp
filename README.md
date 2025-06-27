@@ -2,6 +2,8 @@
 
 An AI-powered Model Context Protocol (MCP) server that provides intelligent access to design systems knowledge. This server ingests design system documentation (PDFs, web content) and enables AI assistants to provide expert guidance on design systems, components, tokens, and best practices.
 
+🌐 **Live Demo:** [https://design-systems-mcp.southleft.com](https://design-systems-mcp.southleft.com)
+
 ## Features
 
 - 🤖 **AI-Powered Chat Interface** - Natural language queries with OpenAI integration
@@ -10,13 +12,32 @@ An AI-powered Model Context Protocol (MCP) server that provides intelligent acce
 - 🎨 **Rich Formatting** - Markdown rendering with syntax highlighting
 - 🚀 **Cloudflare Workers** - Scalable serverless deployment
 - 🧪 **Local Testing** - Full local development environment
+- 🌐 **Public Access** - Live MCP server available for external integrations
+
+## Live MCP Server
+
+### 🚀 Public Endpoints
+
+**Custom Domain:** `https://design-systems-mcp.southleft.com`
+
+- **AI Chat Interface:** [https://design-systems-mcp.southleft.com](https://design-systems-mcp.southleft.com)
+- **MCP Endpoint:** `https://design-systems-mcp.southleft.com/mcp`
+- **Health Check:** `https://design-systems-mcp.southleft.com/health`
+
+### ✨ Try It Now
+
+Visit the live demo and ask questions like:
+- "What are design tokens and how should I use them?"
+- "How do I create accessible button components?"
+- "What are the best practices for organizing a design system?"
+- "How do components work in design systems?"
 
 ## Quick Start
 
 ### Prerequisites
 
 - Node.js (v20.17.0+ or v22.9.0+)
-- OpenAI API key
+- OpenAI API key (for local development)
 
 ### Local Development Setup
 
@@ -103,6 +124,8 @@ The MCP server provides these tools for AI assistants:
 5. Verify AI responses are accurate and complete
 
 ### Testing MCP Tools Directly
+
+**Local Testing:**
 ```bash
 # Test MCP search directly
 curl -X POST http://localhost:8787/mcp \
@@ -115,25 +138,59 @@ curl -X POST http://localhost:8787/ai-chat \
   -d '{"message":"What are design tokens?"}'
 ```
 
+**Production Testing:**
+```bash
+# Test live MCP endpoint
+curl -X POST https://design-systems-mcp.southleft.com/mcp \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"search_chunks","arguments":{"query":"design tokens"}}}'
+
+# Test live AI integration
+curl -X POST https://design-systems-mcp.southleft.com/ai-chat \
+  -H "Content-Type: application/json" \
+  -d '{"message":"What are design tokens?"}'
+```
+
 ## Deployment
 
 ### Deploy to Cloudflare Workers
 
-1. **Set Environment Variables**
+1. **Login to Cloudflare**
+   ```bash
+   npx wrangler login
+   ```
+
+2. **Set Environment Variables**
    ```bash
    npx wrangler secret put OPENAI_API_KEY
    # Enter your OpenAI API key when prompted
+
+   # Optional: Set custom model
+   npx wrangler secret put OPENAI_MODEL
+   # Enter model name (default: gpt-4o-mini)
    ```
 
-2. **Deploy**
+3. **Deploy**
    ```bash
-   npx wrangler deploy
+   npm run deploy
    ```
 
-3. **Access Your Deployed Server**
+4. **Access Your Deployed Server**
    - Your server will be available at: `design-systems-mcp.<your-account>.workers.dev`
    - Chat interface: `https://design-systems-mcp.<your-account>.workers.dev`
-   - MCP endpoint: `https://design-systems-mcp.<your-account>.workers.dev/sse`
+   - MCP endpoint: `https://design-systems-mcp.<your-account>.workers.dev/mcp`
+
+### Custom Domain Setup
+
+To set up a custom domain like `design-systems-mcp.southleft.com`:
+
+1. **Deploy your worker** (see steps above)
+2. **In Cloudflare Dashboard:**
+   - Go to **Workers & Pages** → **Custom Domains**
+   - Add your custom domain
+   - Point it to your deployed worker: `design-systems-mcp`
+3. **Configure DNS** in your domain settings
+4. **Test the endpoints** once propagated
 
 ### Environment Variables
 
@@ -149,6 +206,7 @@ Required environment variables:
 
 Add to your Claude Desktop MCP configuration:
 
+**For Local Development:**
 ```json
 {
   "mcpServers": {
@@ -156,14 +214,14 @@ Add to your Claude Desktop MCP configuration:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "http://localhost:8787/sse"
+        "http://localhost:8787/mcp"
       ]
     }
   }
 }
 ```
 
-For production, replace with your deployed URL:
+**For Production (Live Server):**
 ```json
 {
   "mcpServers": {
@@ -171,7 +229,7 @@ For production, replace with your deployed URL:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://design-systems-mcp.<your-account>.workers.dev/sse"
+        "https://design-systems-mcp.southleft.com/mcp"
       ]
     }
   }
@@ -181,8 +239,29 @@ For production, replace with your deployed URL:
 ### Cloudflare AI Playground
 
 1. Go to https://playground.ai.cloudflare.com/
-2. Enter your MCP server URL: `design-systems-mcp.<your-account>.workers.dev/sse`
+2. Enter your MCP server URL: `design-systems-mcp.southleft.com/mcp`
 3. Start using design systems tools in the playground!
+
+### External Applications
+
+Any application that supports MCP can connect to the live server:
+
+**Endpoint:** `https://design-systems-mcp.southleft.com/mcp`
+
+**Example API Call:**
+```bash
+curl -X POST https://design-systems-mcp.southleft.com/mcp \
+  -H "Content-Type: application/json" \
+  -d '{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "search_design_knowledge",
+      "arguments": {"query": "design tokens"}
+    }
+  }'
+```
 
 ## Project Structure
 
