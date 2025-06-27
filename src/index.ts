@@ -740,7 +740,7 @@ export default {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Systems Assistant - AI-Powered Design Systems Knowledge</title>
-    <meta name="description" content="AI-powered assistant that searches through design systems knowledge base to answer questions about components, tokens, patterns, and best practices.">
+    <meta name="description" content="MCP (Model Context Protocol) server with specialized design systems knowledge. Search through 109 curated resources to get expert answers about components, tokens, patterns, and best practices.">
 
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1080 482'%3E%3Cstyle%3E.st1%7Bfill:%23333333%7D@media (prefers-color-scheme:dark)%7B.st1%7Bfill:%23ffffff%7D%7D%3C/style%3E%3Cpath class='st1' d='M439.7 462.3c-12 0-22.1 4.8-30.1 16.8l-32.7-192.9 2.6-1.4C422.9 351 490.5 392 549.4 392c42.9 0 71-17.4 71-46.9 0-30.1-39.5-44.9-102.3-66.3-59.6-21.4-133.2-54.3-133.2-140.8 0-77.7 71-138 170-138 54.9 0 81 15.4 99.7 15.4 10.8 0 18.1-3.4 25.4-12.8l21.4 170.7-2.6 1.4c-32.1-54.3-86.4-85.7-142.5-85.7-44.1 0-73.6 20.2-73.6 46.9 0 30.2 38.9 42.9 79.6 58.9 70.2 24.2 158 57.5 157.2 148.8 0 80.3-70.2 138.6-164 138.6C497.9 482.2 460.4 462.3 439.7 462.3z'/%3E%3Cpath class='st1' d='M831.5 2.5l126.3 236.7L830.4 477.9h124.2L1080 239.2 956.8 2.5H831.5z'/%3E%3Cpath class='st1' d='M125.4 2.5L0 241.2l123.2 236.7h125.2L122.2 241.2 249.6 2.5H125.4z'/%3E%3C/svg%3E">
@@ -748,7 +748,7 @@ export default {
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Design Systems Assistant - AI-Powered Knowledge Base">
-    <meta property="og:description" content="AI assistant that searches through 109 design systems resources to answer questions about components, tokens, patterns, and best practices.">
+    <meta property="og:description" content="MCP server with specialized design systems knowledge. Search through 109 curated resources to get expert answers about components, tokens, patterns, and best practices.">
     <meta property="og:url" content="https://design-systems-mcp.southleft.com">
     <meta property="og:image" content="https://design-systems-mcp.southleft.com/og-image.png">
     <meta property="og:image:width" content="1200">
@@ -757,7 +757,7 @@ export default {
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Design Systems Assistant">
-    <meta name="twitter:description" content="AI-powered assistant for design systems knowledge">
+    <meta name="twitter:description" content="MCP server with specialized design systems knowledge and curated resources">
     <meta name="twitter:image" content="https://design-systems-mcp.southleft.com/og-image.png">
 
     <!-- Additional Meta -->
@@ -1134,11 +1134,11 @@ export default {
                         case 'thinking':
                             return {
                                 ...base,
-                                background: '#2d1e00',
-                                color: '#ffd43b',
-                                border: '1px solid #fab005',
-                                fontStyle: 'italic',
-                                borderRadius: '8px',
+                                background: '#25262b',
+                                color: '#909296',
+                                border: '1px solid #373a40',
+                                fontStyle: 'normal',
+                                borderRadius: '12px',
                                 maxWidth: '85%',
                                 marginLeft: '0',
                                 marginRight: 'auto'
@@ -1165,18 +1165,18 @@ export default {
                     }
                     if (type === 'thinking') {
                         return (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                <div style={{ display: 'flex', gap: '2px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                <div style={{ display: 'flex', gap: '3px' }}>
                                     <span style={{
-                                        width: '4px', height: '4px', background: '#ffd43b', borderRadius: '50%',
+                                        width: '6px', height: '6px', background: '#339af0', borderRadius: '50%',
                                         animation: 'thinking 1.5s ease-in-out infinite'
                                     }}></span>
                                     <span style={{
-                                        width: '4px', height: '4px', background: '#ffd43b', borderRadius: '50%',
+                                        width: '6px', height: '6px', background: '#339af0', borderRadius: '50%',
                                         animation: 'thinking 1.5s ease-in-out infinite 0.2s'
                                     }}></span>
                                     <span style={{
-                                        width: '4px', height: '4px', background: '#ffd43b', borderRadius: '50%',
+                                        width: '6px', height: '6px', background: '#339af0', borderRadius: '50%',
                                         animation: 'thinking 1.5s ease-in-out infinite 0.4s'
                                     }}></span>
                                 </div>
@@ -1194,7 +1194,7 @@ export default {
 
                 return (
                     <div style={{
-                        maxWidth: '800px',
+                        maxWidth: '900px',
                         margin: '0 auto',
                         width: '100%',
                         padding: '0 24px'
@@ -1237,7 +1237,7 @@ export default {
                                         Design Systems Assistant
                                     </Title>
                                     <Text size="sm" style={{ color: '#909296' }}>
-                                        Powered by AI • 109 design systems resources
+                                        MCP Server • 109 design systems resources • Specialized knowledge base
                                     </Text>
                                 </div>
                                 <Badge variant="light" color="green" size="sm">
@@ -1288,7 +1288,7 @@ export default {
                                                     lineHeight: '1.5'
                                                 }}
                                             >
-                                                Search through your design systems knowledge base to answer questions about components, tokens, patterns, and best practices.
+                                                This is an MCP (Model Context Protocol) server with specialized design systems knowledge. Unlike generic AI assistants, I search through a curated knowledge base of 109 design systems resources to provide expert answers about components, tokens, patterns, and best practices.
                                             </Text>
                                         </div>
 
@@ -1461,7 +1461,7 @@ export default {
                                 background: '#1a1b1e'
                             }}>
                                 <div style={{
-                                    maxWidth: '800px',
+                                    maxWidth: '900px',
                                     margin: '0 auto',
                                     position: 'relative'
                                 }}>
@@ -1558,6 +1558,9 @@ export default {
                         textAlign: 'center',
                         marginTop: 'auto'
                     }}>
+                        <Text size="sm" style={{ color: '#6c6f75', fontSize: '13px', marginBottom: '8px' }}>
+                            🤖 MCP Server for Design Systems • Powered by curated knowledge base
+                        </Text>
                         <Text size="sm" style={{ color: '#6c6f75', fontSize: '13px' }}>
                             Made with ❤️ by{' '}
                             <a
