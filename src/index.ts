@@ -740,238 +740,571 @@ export default {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-Powered Design Systems Chat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            background: #f5f5f5;
-            height: 100vh;
+            margin: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        }
+        #root {
+            min-height: 100vh;
+        }
+        .loader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #1a1b1e;
+            color: #c1c2c5;
+            z-index: 9999;
         }
-
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .header h1 {
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .header p {
-            opacity: 0.9;
-            font-size: 1rem;
-        }
-
-        .chat-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            max-width: 900px;
-            margin: 0 auto;
-            width: 100%;
-            padding: 1rem;
-        }
-
-        .messages {
-            flex: 1;
-            overflow-y: auto;
-            background: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            min-height: 400px;
-        }
-
-        .message {
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            border-radius: 12px;
-            max-width: 85%;
-            line-height: 1.6;
-        }
-
-        .message.user {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            margin-left: auto;
-        }
-
-        .message.assistant {
-            background: #f8fafc;
-            color: #1f2937;
-            border: 1px solid #e5e7eb;
-        }
-
-        .message.error {
-            background: #fef2f2;
-            color: #dc2626;
-            border: 1px solid #fecaca;
-        }
-
-        .message.system {
-            background: #f0f9ff;
-            color: #0369a1;
-            border: 1px solid #bae6fd;
-            font-style: italic;
-            text-align: center;
-        }
-
-        .message.thinking {
-            background: #fffbeb;
-            color: #d97706;
-            border: 1px solid #fed7aa;
-            font-style: italic;
-        }
-
-        .input-container {
-            display: flex;
-            gap: 0.5rem;
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        .input-container textarea {
-            flex: 1;
-            padding: 0.75rem;
-            border: 1px solid #d1d5db;
-            border-radius: 6px;
-            font-size: 1rem;
-            resize: vertical;
-            min-height: 50px;
-            max-height: 150px;
-            font-family: inherit;
-        }
-
-        .input-container button {
-            padding: 0.75rem 1.5rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 1rem;
-            font-weight: 500;
-            white-space: nowrap;
-        }
-
-        .input-container button:hover {
-            opacity: 0.9;
-        }
-
-        .input-container button:disabled {
-            background: #9ca3af;
-            cursor: not-allowed;
-            opacity: 0.7;
-        }
-
-        .examples {
-            background: white;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        .examples h3 {
-            margin-bottom: 0.75rem;
-            color: #374151;
-            font-size: 1.1rem;
-        }
-
-        .examples-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 0.5rem;
-        }
-
-        .example-item {
-            padding: 0.75rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.2s;
-            background: #fafafa;
-        }
-
-        .example-item:hover {
-            background: #f0f9ff;
-            border-color: #0369a1;
-        }
-
-        .status {
-            text-align: center;
-            padding: 0.75rem;
-            font-size: 0.875rem;
-            color: #6b7280;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        .status-indicator {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            margin-right: 0.5rem;
-            background: #10b981;
-        }
-
         .loader {
             display: inline-block;
-            width: 16px;
-            height: 16px;
-            border: 2px solid #f3f3f3;
+            width: 24px;
+            height: 24px;
+            border: 3px solid #495057;
             border-radius: 50%;
-            border-top-color: #667eea;
+            border-top-color: #339af0;
             animation: spin 1s ease-in-out infinite;
         }
-
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
+    </style>
+</head>
+<body>
+    <div id="loader" class="loader-container">
+        <div style="text-align: center;">
+            <div class="loader"></div>
+            <div style="margin-top: 16px; font-size: 14px;">Loading Design Systems Chat...</div>
+        </div>
+    </div>
+    <div id="root"></div>
 
-        .thinking-indicator {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+    <!-- React and ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <!-- Babel Standalone for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Mantine Core and Hooks -->
+    <script src="https://unpkg.com/@mantine/core@7.12.2/esm/index.js" type="module"></script>
+    <script src="https://unpkg.com/@mantine/hooks@7.12.2/esm/index.js" type="module"></script>
+
+    <!-- Mantine CSS -->
+    <link href="https://unpkg.com/@mantine/core@7.12.2/styles.css" rel="stylesheet" />
+
+    <!-- Marked for markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Tabler Icons -->
+    <script src="https://unpkg.com/@tabler/icons-react@3.14.0/dist/index.umd.js"></script>
+
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+        const { createRoot } = ReactDOM;
+
+        // Mock Mantine components and hooks (since CDN import might not work perfectly)
+        const MantineProvider = ({ children, defaultColorScheme }) => {
+            React.useEffect(() => {
+                document.documentElement.setAttribute('data-mantine-color-scheme', defaultColorScheme);
+            }, [defaultColorScheme]);
+            return children;
+        };
+
+        const Container = ({ children, size = 'lg', style = {} }) => (
+            <div style={{
+                maxWidth: size === 'lg' ? '1200px' : '100%',
+                margin: '0 auto',
+                padding: '0 16px',
+                ...style
+            }}>
+                {children}
+            </div>
+        );
+
+        const Stack = ({ children, gap = 'md', style = {} }) => (
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: gap === 'md' ? '16px' : gap === 'lg' ? '24px' : gap === 'sm' ? '8px' : gap,
+                ...style
+            }}>
+                {children}
+            </div>
+        );
+
+        const Group = ({ children, justify = 'flex-start', align = 'center', gap = 'md', style = {} }) => (
+            <div style={{
+                display: 'flex',
+                justifyContent: justify,
+                alignItems: align,
+                gap: gap === 'md' ? '16px' : gap === 'lg' ? '24px' : gap === 'sm' ? '8px' : gap,
+                flexWrap: 'wrap',
+                ...style
+            }}>
+                {children}
+            </div>
+        );
+
+        const Card = ({ children, padding = 'md', radius = 'md', withBorder = true, style = {} }) => (
+            <div style={{
+                background: '#25262b',
+                border: withBorder ? '1px solid #373a40' : 'none',
+                borderRadius: radius === 'md' ? '8px' : radius === 'lg' ? '12px' : radius,
+                padding: padding === 'md' ? '16px' : padding === 'lg' ? '24px' : padding,
+                ...style
+            }}>
+                {children}
+            </div>
+        );
+
+        const Title = ({ children, order = 1, style = {} }) => {
+            const Tag = \`h\${order}\`;
+            const fontSize = order === 1 ? '32px' : order === 2 ? '24px' : order === 3 ? '20px' : '16px';
+            return (
+                <Tag style={{
+                    color: '#c1c2c5',
+                    margin: 0,
+                    fontSize,
+                    fontWeight: order <= 2 ? '700' : '600',
+                    ...style
+                }}>
+                    {children}
+                </Tag>
+            );
+        };
+
+        const Text = ({ children, size = 'sm', c = '#909296', fw, style = {} }) => (
+            <p style={{
+                color: c,
+                margin: 0,
+                fontSize: size === 'sm' ? '14px' : size === 'md' ? '16px' : size === 'lg' ? '18px' : size,
+                fontWeight: fw || 'normal',
+                ...style
+            }}>
+                {children}
+            </p>
+        );
+
+        const Button = ({ children, variant = 'filled', size = 'md', leftSection, rightSection, loading, disabled, onClick, style = {} }) => {
+            const baseStyle = {
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
+                padding: size === 'md' ? '10px 16px' : '8px 12px',
+                border: 'none',
+                borderRadius: '6px',
+                cursor: disabled || loading ? 'not-allowed' : 'pointer',
+                fontSize: '14px',
+                fontWeight: '500',
+                transition: 'all 0.2s ease',
+                fontFamily: 'inherit',
+                opacity: disabled || loading ? 0.6 : 1,
+                ...style
+            };
+
+            const variantStyles = {
+                filled: {
+                    background: 'linear-gradient(135deg, #339af0 0%, #1c7ed6 100%)',
+                    color: 'white',
+                },
+                light: {
+                    background: '#1e3a5f',
+                    color: '#339af0',
+                },
+                outline: {
+                    background: 'transparent',
+                    color: '#339af0',
+                    border: '1px solid #339af0',
+                }
+            };
+
+            return (
+                <button
+                    style={{ ...baseStyle, ...variantStyles[variant] }}
+                    onClick={disabled || loading ? undefined : onClick}
+                    disabled={disabled || loading}
+                >
+                    {loading && <div className="loader" style={{width: '16px', height: '16px'}}></div>}
+                    {leftSection}
+                    {children}
+                    {rightSection}
+                </button>
+            );
+        };
+
+        const Textarea = ({ placeholder, value, onChange, onKeyDown, rows = 3, style = {} }) => (
+            <textarea
+                placeholder={placeholder}
+                value={value}
+                onChange={(e) => onChange(e.target.value)}
+                onKeyDown={onKeyDown}
+                rows={rows}
+                style={{
+                    width: '100%',
+                    background: '#1a1b1e',
+                    border: '1px solid #373a40',
+                    borderRadius: '6px',
+                    padding: '12px',
+                    color: '#c1c2c5',
+                    fontSize: '14px',
+                    fontFamily: 'inherit',
+                    resize: 'vertical',
+                    minHeight: '48px',
+                    outline: 'none',
+                    transition: 'border-color 0.2s ease',
+                    ...style
+                }}
+                onFocus={(e) => e.target.style.borderColor = '#339af0'}
+                onBlur={(e) => e.target.style.borderColor = '#373a40'}
+            />
+        );
+
+        const Badge = ({ children, variant = 'light', color = 'blue', size = 'sm', style = {} }) => (
+            <span style={{
+                display: 'inline-block',
+                padding: size === 'sm' ? '4px 8px' : '6px 12px',
+                backgroundColor: color === 'green' ? '#2f5233' : '#1e3a5f',
+                color: color === 'green' ? '#51cf66' : '#339af0',
+                borderRadius: '4px',
+                fontSize: '12px',
+                fontWeight: '500',
+                ...style
+            }}>
+                {children}
+            </span>
+        );
+
+        const ScrollArea = ({ children, style = {} }) => (
+            <div style={{
+                overflow: 'auto',
+                ...style
+            }}>
+                {children}
+            </div>
+        );
+
+        // Example questions data
+        const EXAMPLE_QUESTIONS = [
+            { icon: '🎨', text: 'What are design tokens and how should I use them?' },
+            { icon: '♿', text: 'How do I create accessible button components?' },
+            { icon: '🔧', text: 'What causes design debt and how can I reduce it?' },
+            { icon: '📚', text: 'What are the best practices for organizing a design system?' },
+            { icon: '🧩', text: 'How do components work in design systems?' },
+            { icon: '🏷️', text: 'What categories and tags are available in the knowledge base?' }
+        ];
+
+        // Chat App Component
+        function ChatApp() {
+            const [messages, setMessages] = useState([{
+                type: 'system',
+                content: '🎯 Welcome! I\\'m your AI design systems assistant. I can search through your design systems knowledge base and provide expert answers.\\n\\n💡 Ask me anything about design systems, components, tokens, or best practices!'
+            }]);
+            const [inputValue, setInputValue] = useState('');
+            const [isLoading, setIsLoading] = useState(false);
+            const messagesEndRef = useRef(null);
+
+            const scrollToBottom = () => {
+                messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+            };
+
+            useEffect(() => {
+                scrollToBottom();
+            }, [messages]);
+
+            const addMessage = (type, content) => {
+                setMessages(prev => [...prev, { type, content, id: Date.now() }]);
+            };
+
+            const askQuestion = (question) => {
+                setInputValue(question);
+                setTimeout(() => sendMessage(question), 100);
+            };
+
+            const sendMessage = async (messageText = inputValue) => {
+                const message = messageText.trim();
+                if (!message) return;
+
+                addMessage('user', message);
+                setInputValue('');
+                setIsLoading(true);
+
+                // Add thinking message
+                const thinkingId = Date.now();
+                addMessage('thinking', 'Analyzing your question and searching the knowledge base...');
+
+                try {
+                    const response = await fetch('/ai-chat', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ message })
+                    });
+
+                    // Remove thinking message
+                    setMessages(prev => prev.filter(msg => msg.type !== 'thinking'));
+
+                    if (!response.ok) {
+                        throw new Error(\`HTTP \${response.status}: \${response.statusText}\`);
+                    }
+
+                    const data = await response.json();
+
+                    if (data.error) {
+                        addMessage('error', \`❌ \${data.error}\`);
+                    } else {
+                        addMessage('assistant', data.response);
+                    }
+                } catch (error) {
+                    setMessages(prev => prev.filter(msg => msg.type !== 'thinking'));
+                    addMessage('error', \`❌ Error: \${error.message}. Make sure the MCP server is running and OpenAI API key is configured.\`);
+                } finally {
+                    setIsLoading(false);
+                }
+            };
+
+            const handleKeyPress = (event) => {
+                if (event.key === 'Enter' && !event.shiftKey) {
+                    event.preventDefault();
+                    sendMessage();
+                }
+            };
+
+            const MessageComponent = ({ message }) => {
+                const getMessageStyle = (type) => {
+                    const base = {
+                        padding: '16px',
+                        borderRadius: '12px',
+                        marginBottom: '16px',
+                        maxWidth: '85%',
+                        lineHeight: '1.6'
+                    };
+
+                    switch (type) {
+                        case 'user':
+                            return {
+                                ...base,
+                                background: 'linear-gradient(135deg, #339af0 0%, #1c7ed6 100%)',
+                                color: 'white',
+                                marginLeft: 'auto'
+                            };
+                        case 'assistant':
+                            return {
+                                ...base,
+                                background: '#25262b',
+                                color: '#c1c2c5',
+                                border: '1px solid #373a40'
+                            };
+                        case 'system':
+                            return {
+                                ...base,
+                                background: '#1e3a5f',
+                                color: '#339af0',
+                                border: '1px solid #339af0',
+                                fontStyle: 'italic',
+                                textAlign: 'center',
+                                maxWidth: '100%'
+                            };
+                        case 'thinking':
+                            return {
+                                ...base,
+                                background: '#2d1e00',
+                                color: '#ffd43b',
+                                border: '1px solid #fab005',
+                                fontStyle: 'italic'
+                            };
+                        case 'error':
+                            return {
+                                ...base,
+                                background: '#2d0e0e',
+                                color: '#ff6b6b',
+                                border: '1px solid #e03131'
+                            };
+                        default:
+                            return base;
+                    }
+                };
+
+                const renderContent = (content, type) => {
+                    if (type === 'assistant') {
+                        return { __html: marked.parse(content) };
+                    }
+                    if (type === 'thinking') {
+                        return (
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                <div style={{ display: 'flex', gap: '2px' }}>
+                                    <span style={{
+                                        width: '4px', height: '4px', background: '#ffd43b', borderRadius: '50%',
+                                        animation: 'thinking 1.5s ease-in-out infinite'
+                                    }}></span>
+                                    <span style={{
+                                        width: '4px', height: '4px', background: '#ffd43b', borderRadius: '50%',
+                                        animation: 'thinking 1.5s ease-in-out infinite 0.2s'
+                                    }}></span>
+                                    <span style={{
+                                        width: '4px', height: '4px', background: '#ffd43b', borderRadius: '50%',
+                                        animation: 'thinking 1.5s ease-in-out infinite 0.4s'
+                                    }}></span>
+                                </div>
+                                {content}
+                            </div>
+                        );
+                    }
+                    return content;
+                };
+
+                return (
+                    <div style={getMessageStyle(message.type)}>
+                        {message.type === 'assistant' ? (
+                            <div dangerouslySetInnerHTML={renderContent(message.content, message.type)} />
+                        ) : (
+                            renderContent(message.content, message.type)
+                        )}
+                    </div>
+                );
+            };
+
+            return (
+                <div style={{
+                    minHeight: '100vh',
+                    background: '#1a1b1e',
+                    color: '#c1c2c5',
+                    paddingTop: '24px',
+                    paddingBottom: '24px'
+                }}>
+                    <Container size="lg">
+                        <Stack gap="lg">
+                            {/* Header */}
+                            <Card style={{
+                                background: 'linear-gradient(135deg, #339af0 0%, #1c7ed6 100%)',
+                                textAlign: 'center',
+                                border: 'none'
+                            }}>
+                                <Stack gap="sm">
+                                    <Title order={1} style={{ color: 'white' }}>
+                                        🤖 AI-Powered Design Systems Assistant
+                                    </Title>
+                                    <Text style={{ color: 'rgba(255,255,255,0.9)', fontSize: '16px' }}>
+                                        Ask me anything about design systems, and I'll search through your knowledge base to provide expert answers
+                                    </Text>
+                                </Stack>
+                            </Card>
+
+                            {/* Example Questions */}
+                            <Card>
+                                <Stack gap="md">
+                                    <Title order={3}>💡 Try asking me about:</Title>
+                                    <div style={{
+                                        display: 'grid',
+                                        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                                        gap: '12px'
+                                    }}>
+                                        {EXAMPLE_QUESTIONS.map((question, index) => (
+                                            <Card
+                                                key={index}
+                                                style={{
+                                                    background: '#2c2e33',
+                                                    cursor: 'pointer',
+                                                    transition: 'all 0.2s ease',
+                                                    border: '1px solid #373a40'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.target.style.background = '#1e3a5f';
+                                                    e.target.style.borderColor = '#339af0';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.target.style.background = '#2c2e33';
+                                                    e.target.style.borderColor = '#373a40';
+                                                }}
+                                                onClick={() => askQuestion(question.text)}
+                                            >
+                                                <Text style={{ color: '#c1c2c5', fontSize: '14px' }}>
+                                                    {question.icon} {question.text}
+                                                </Text>
+                                            </Card>
+                                        ))}
+                                    </div>
+                                </Stack>
+                            </Card>
+
+                            {/* Messages */}
+                            <Card style={{ minHeight: '400px' }}>
+                                <ScrollArea style={{ height: '400px', padding: '8px' }}>
+                                    {messages.map((message) => (
+                                        <MessageComponent key={message.id || Math.random()} message={message} />
+                                    ))}
+                                    <div ref={messagesEndRef} />
+                                </ScrollArea>
+                            </Card>
+
+                            {/* Input */}
+                            <Card>
+                                <Group gap="md">
+                                    <div style={{ flex: 1 }}>
+                                        <Textarea
+                                            placeholder="Ask me anything about design systems..."
+                                            value={inputValue}
+                                            onChange={setInputValue}
+                                            onKeyDown={handleKeyPress}
+                                            rows={2}
+                                        />
+                                    </div>
+                                    <Button
+                                        onClick={() => sendMessage()}
+                                        loading={isLoading}
+                                        disabled={!inputValue.trim()}
+                                        size="md"
+                                        style={{ alignSelf: 'flex-end', marginBottom: '4px' }}
+                                    >
+                                        {isLoading ? 'Thinking...' : 'Send'}
+                                    </Button>
+                                </Group>
+                            </Card>
+
+                            {/* Status */}
+                            <Card style={{ textAlign: 'center' }}>
+                                <Group justify="center" gap="sm">
+                                    <Badge variant="light" color="green">
+                                        Ready to chat
+                                    </Badge>
+                                    <Text size="sm">•</Text>
+                                    <Badge variant="light" color="blue">
+                                        MCP Server: Connected ✅
+                                    </Badge>
+                                </Group>
+                            </Card>
+                        </Stack>
+                    </Container>
+                </div>
+            );
         }
 
-        .thinking-dots {
-            display: flex;
-            gap: 2px;
+        // Hide loader and render app
+        function init() {
+            document.getElementById('loader').style.display = 'none';
+            const root = createRoot(document.getElementById('root'));
+            root.render(
+                <MantineProvider defaultColorScheme="dark">
+                    <ChatApp />
+                </MantineProvider>
+            );
         }
 
-        .thinking-dots span {
-            width: 4px;
-            height: 4px;
-            background: #d97706;
-            border-radius: 50%;
-            animation: thinking 1.5s ease-in-out infinite;
+        // Initialize when everything is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
         }
+    </script>
 
-        .thinking-dots span:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        .thinking-dots span:nth-child(3) {
-            animation-delay: 0.4s;
-        }
-
+    <style>
         @keyframes thinking {
             0%, 60%, 100% {
                 transform: scale(1);
@@ -982,151 +1315,22 @@ export default {
                 opacity: 1;
             }
         }
+
+        /* Custom scrollbar for dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #25262b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #495057;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5c6370;
+        }
     </style>
-</head>
-<body>
-    <div class="header">
-        <h1>🤖 AI-Powered Design Systems Assistant</h1>
-        <p>Ask me anything about design systems, and I'll search through your knowledge base to provide expert answers</p>
-    </div>
-
-    <div class="chat-container">
-        <div class="examples">
-            <h3>💡 Try asking me about:</h3>
-            <div class="examples-grid">
-                <div class="example-item" onclick="askQuestion('What are design tokens and how should I use them?')">
-                    🎨 What are design tokens and how should I use them?
-                </div>
-                <div class="example-item" onclick="askQuestion('How do I create accessible button components?')">
-                    ♿ How do I create accessible button components?
-                </div>
-                <div class="example-item" onclick="askQuestion('What causes design debt and how can I reduce it?')">
-                    🔧 What causes design debt and how can I reduce it?
-                </div>
-                <div class="example-item" onclick="askQuestion('What are the best practices for organizing a design system?')">
-                    📚 What are the best practices for organizing a design system?
-                </div>
-                <div class="example-item" onclick="askQuestion('How do components work in design systems?')">
-                    🧩 How do components work in design systems?
-                </div>
-                <div class="example-item" onclick="askQuestion('What categories and tags are available in the knowledge base?')">
-                    🏷️ What categories and tags are available in the knowledge base?
-                </div>
-            </div>
-        </div>
-
-        <div class="messages" id="messages">
-            <div class="message system">
-                🎯 Welcome! I'm your AI design systems assistant. I can search through your design systems knowledge base and provide expert answers.
-                <br><br>
-                💡 Ask me anything about design systems, components, tokens, or best practices!
-            </div>
-        </div>
-
-        <div class="input-container">
-            <textarea
-                id="messageInput"
-                placeholder="Ask me anything about design systems..."
-                onkeydown="handleKeyPress(event)"
-            ></textarea>
-            <button onclick="sendMessage()" id="sendButton">Send</button>
-        </div>
-
-        <div class="status" id="status">
-            <span class="status-indicator"></span>
-            Ready to chat • MCP Server: Connected ✅
-        </div>
-    </div>
-
-         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-     <script>
-         function addMessage(type, content) {
-             const messagesDiv = document.getElementById('messages');
-             const messageDiv = document.createElement('div');
-             messageDiv.className = \`message \${type}\`;
-
-             // Render markdown for assistant messages
-             if (type === 'assistant') {
-                 messageDiv.innerHTML = marked.parse(content);
-             } else {
-                 messageDiv.innerHTML = content;
-             }
-
-             messagesDiv.appendChild(messageDiv);
-             messagesDiv.scrollTop = messagesDiv.scrollHeight;
-         }
-
-        function askQuestion(question) {
-            document.getElementById('messageInput').value = question;
-            sendMessage();
-        }
-
-        function handleKeyPress(event) {
-            if (event.key === 'Enter' && !event.shiftKey) {
-                event.preventDefault();
-                sendMessage();
-            }
-        }
-
-        async function sendMessage() {
-            const input = document.getElementById('messageInput');
-            const sendButton = document.getElementById('sendButton');
-            const message = input.value.trim();
-
-            if (!message) return;
-
-            addMessage('user', message);
-            input.value = '';
-
-            sendButton.disabled = true;
-            sendButton.innerHTML = '<span class="loader"></span> Thinking...';
-
-            addMessage('thinking', \`<div class="thinking-indicator">
-                <div class="thinking-dots"><span></span><span></span><span></span></div>
-                Analyzing your question and searching the knowledge base...
-            </div>\`);
-
-            try {
-                const response = await fetch('/ai-chat', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        message: message
-                    })
-                });
-
-                const thinkingMessage = document.querySelector('.message.thinking:last-of-type');
-                if (thinkingMessage) {
-                    thinkingMessage.remove();
-                }
-
-                if (!response.ok) {
-                    throw new Error(\`HTTP \${response.status}: \${response.statusText}\`);
-                }
-
-                const data = await response.json();
-
-                if (data.error) {
-                    addMessage('error', \`❌ \${data.error}\`);
-                } else {
-                    addMessage('assistant', data.response);
-                }
-
-            } catch (error) {
-                const thinkingMessage = document.querySelector('.message.thinking:last-of-type');
-                if (thinkingMessage) {
-                    thinkingMessage.remove();
-                }
-
-                addMessage('error', \`❌ Error: \${error.message}. Make sure the MCP server is running and OpenAI API key is configured.\`);
-            } finally {
-                sendButton.disabled = false;
-                sendButton.textContent = 'Send';
-            }
-        }
-    </script>
 </body>
 </html>
 			`, {
