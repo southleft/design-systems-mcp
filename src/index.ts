@@ -1104,9 +1104,8 @@ export default {
             const MessageComponent = ({ message }) => {
                 const getMessageStyle = (type) => {
                     const base = {
-                        padding: '24px',
-                        marginBottom: '0',
-                        maxWidth: '100%',
+                        padding: '16px 24px',
+                        marginBottom: '16px',
                         lineHeight: '1.6',
                         fontSize: '16px'
                     };
@@ -1117,25 +1116,20 @@ export default {
                                 ...base,
                                 background: '#2c2e33',
                                 color: '#c1c2c5',
-                                borderBottom: '1px solid #373a40'
+                                borderRadius: '12px',
+                                maxWidth: '85%',
+                                marginLeft: 'auto',
+                                marginRight: '0'
                             };
                         case 'assistant':
                             return {
                                 ...base,
-                                background: '#1a1b1e',
+                                background: '#25262b',
                                 color: '#c1c2c5',
-                                borderBottom: '1px solid #373a40'
-                            };
-                        case 'system':
-                            return {
-                                ...base,
-                                background: '#1e3a5f',
-                                color: '#339af0',
-                                border: '1px solid #339af0',
-                                fontStyle: 'italic',
-                                textAlign: 'center',
                                 borderRadius: '12px',
-                                margin: '16px 0'
+                                maxWidth: '85%',
+                                marginLeft: '0',
+                                marginRight: 'auto'
                             };
                         case 'thinking':
                             return {
@@ -1145,7 +1139,9 @@ export default {
                                 border: '1px solid #fab005',
                                 fontStyle: 'italic',
                                 borderRadius: '8px',
-                                margin: '16px 0'
+                                maxWidth: '85%',
+                                marginLeft: '0',
+                                marginRight: 'auto'
                             };
                         case 'error':
                             return {
@@ -1154,7 +1150,9 @@ export default {
                                 color: '#ff6b6b',
                                 border: '1px solid #e03131',
                                 borderRadius: '8px',
-                                margin: '16px 0'
+                                maxWidth: '85%',
+                                marginLeft: '0',
+                                marginRight: 'auto'
                             };
                         default:
                             return base;
@@ -1189,13 +1187,19 @@ export default {
                     return content;
                 };
 
+                // Don't render system messages in conversation view
+                if (message.type === 'system') {
+                    return null;
+                }
+
                 return (
-                    <div style={getMessageStyle(message.type)}>
-                        <div style={{
-                            maxWidth: '800px',
-                            margin: '0 auto',
-                            width: '100%'
-                        }}>
+                    <div style={{
+                        maxWidth: '800px',
+                        margin: '0 auto',
+                        width: '100%',
+                        padding: '0 24px'
+                    }}>
+                        <div style={getMessageStyle(message.type)}>
                             {message.type === 'assistant' ? (
                                 <div dangerouslySetInnerHTML={renderContent(message.content, message.type)} />
                             ) : (
@@ -1250,7 +1254,7 @@ export default {
                             padding: '0 24px'
                         }}>
                             <ScrollArea style={{ flex: 1 }}>
-                                {messages.length === 1 && messages[0].type === 'system' ? (
+                                {messages.filter(msg => msg.type !== 'system').length === 0 ? (
                                     // Welcome screen when no messages - centered like ChatGPT
                                     <div style={{
                                         display: 'flex',
@@ -1440,7 +1444,7 @@ export default {
                                 ) : (
                                     // Regular chat messages
                                     <div style={{ padding: '24px 0' }}>
-                                        {messages.map((message) => (
+                                        {messages.filter(msg => msg.type !== 'system').map((message) => (
                                             <MessageComponent key={message.id || Math.random()} message={message} />
                                         ))}
                                         <div ref={messagesEndRef} />
@@ -1450,7 +1454,7 @@ export default {
                         </div>
 
                         {/* Input Area for active conversations */}
-                        {messages.length > 1 || (messages.length === 1 && messages[0].type !== 'system') ? (
+                        {messages.filter(msg => msg.type !== 'system').length > 0 ? (
                             <div style={{
                                 padding: '16px 24px 24px',
                                 borderTop: '1px solid #373a40',
