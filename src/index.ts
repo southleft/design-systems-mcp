@@ -1237,7 +1237,7 @@ export default {
                                         Design Systems Assistant
                                     </Title>
                                     <Text size="sm" style={{ color: '#909296' }}>
-                                        MCP Server • Hundreds of design systems resources • Specialized knowledge base
+                                        MCP Server for Design Systems
                                     </Text>
                                 </div>
                                 <Badge variant="light" color="green" size="sm">
