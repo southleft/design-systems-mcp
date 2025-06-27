@@ -1175,111 +1175,233 @@ export default {
                     minHeight: '100vh',
                     background: '#1a1b1e',
                     color: '#c1c2c5',
-                    paddingTop: '24px',
-                    paddingBottom: '24px'
+                    display: 'flex',
+                    flexDirection: 'column'
                 }}>
-                    <Container size="lg">
-                        <Stack gap="lg">
-                            {/* Header */}
-                            <Card style={{
-                                background: 'linear-gradient(135deg, #339af0 0%, #1c7ed6 100%)',
-                                textAlign: 'center',
-                                border: 'none'
-                            }}>
-                                <Stack gap="sm">
-                                    <Title order={1} style={{ color: 'white' }}>
-                                        🤖 AI-Powered Design Systems Assistant
-                                    </Title>
-                                    <Text style={{ color: 'rgba(255,255,255,0.9)', fontSize: '16px' }}>
-                                        Ask me anything about design systems, and I'll search through your knowledge base to provide expert answers
-                                    </Text>
-                                </Stack>
-                            </Card>
-
-                            {/* Example Questions */}
-                            <Card>
-                                <Stack gap="md">
-                                    <Title order={3}>💡 Try asking me about:</Title>
+                    <Container size="lg" style={{ flex: 1, display: 'flex', flexDirection: 'column', padding: '0' }}>
+                        {/* Minimal Header */}
+                        <div style={{
+                            background: '#25262b',
+                            borderBottom: '1px solid #373a40',
+                            padding: '16px 24px',
+                            position: 'sticky',
+                            top: 0,
+                            zIndex: 100
+                        }}>
+                            <Group justify="space-between" align="center">
+                                <Group gap="sm">
                                     <div style={{
-                                        display: 'grid',
-                                        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                                        gap: '12px'
+                                        fontSize: '24px',
+                                        background: 'linear-gradient(135deg, #339af0 0%, #1c7ed6 100%)',
+                                        borderRadius: '8px',
+                                        padding: '4px 8px',
+                                        display: 'flex',
+                                        alignItems: 'center'
                                     }}>
-                                        {EXAMPLE_QUESTIONS.map((question, index) => (
-                                            <Card
-                                                key={index}
-                                                style={{
-                                                    background: '#2c2e33',
-                                                    cursor: 'pointer',
-                                                    transition: 'all 0.2s ease',
-                                                    border: '1px solid #373a40'
-                                                }}
-                                                onMouseEnter={(e) => {
-                                                    e.target.style.background = '#1e3a5f';
-                                                    e.target.style.borderColor = '#339af0';
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.background = '#2c2e33';
-                                                    e.target.style.borderColor = '#373a40';
-                                                }}
-                                                onClick={() => askQuestion(question.text)}
-                                            >
-                                                <Text style={{ color: '#c1c2c5', fontSize: '14px' }}>
-                                                    {question.icon} {question.text}
-                                                </Text>
-                                            </Card>
+                                        🤖
+                                    </div>
+                                    <div>
+                                        <Title order={3} style={{ color: '#c1c2c5', marginBottom: '2px' }}>
+                                            Design Systems Assistant
+                                        </Title>
+                                        <Text size="sm" style={{ color: '#909296' }}>
+                                            Powered by AI • 109 design systems resources
+                                        </Text>
+                                    </div>
+                                </Group>
+                                <Group gap="sm">
+                                    <Badge variant="light" color="green" size="sm">
+                                        Online
+                                    </Badge>
+                                </Group>
+                            </Group>
+                        </div>
+
+                        {/* Messages Area */}
+                        <div style={{
+                            flex: 1,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            maxHeight: 'calc(100vh - 140px)',
+                            padding: '0 24px'
+                        }}>
+                            <ScrollArea style={{ flex: 1, padding: '24px 0' }}>
+                                {messages.length === 1 && messages[0].type === 'system' ? (
+                                    // Welcome screen when no messages
+                                    <div style={{
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        height: '100%',
+                                        minHeight: '400px',
+                                        textAlign: 'center'
+                                    }}>
+                                        <div style={{
+                                            fontSize: '48px',
+                                            marginBottom: '24px',
+                                            opacity: 0.8
+                                        }}>
+                                            💭
+                                        </div>
+                                        <Title order={2} style={{ color: '#c1c2c5', marginBottom: '16px' }}>
+                                            What can I help you with today?
+                                        </Title>
+                                        <Text style={{ color: '#909296', marginBottom: '32px', maxWidth: '500px' }}>
+                                            I can search through your design systems knowledge base to answer questions about components, tokens, patterns, and best practices.
+                                        </Text>
+
+                                        {/* Compact example chips */}
+                                        <div style={{
+                                            display: 'flex',
+                                            flexWrap: 'wrap',
+                                            gap: '8px',
+                                            justifyContent: 'center',
+                                            maxWidth: '600px'
+                                        }}>
+                                            {[
+                                                'Design tokens',
+                                                'Button components',
+                                                'Design debt',
+                                                'Component architecture',
+                                                'Accessibility',
+                                                'Available resources'
+                                            ].map((topic, index) => (
+                                                <div
+                                                    key={index}
+                                                    style={{
+                                                        padding: '6px 12px',
+                                                        background: '#2c2e33',
+                                                        border: '1px solid #373a40',
+                                                        borderRadius: '16px',
+                                                        cursor: 'pointer',
+                                                        fontSize: '13px',
+                                                        color: '#909296',
+                                                        transition: 'all 0.2s ease'
+                                                    }}
+                                                    onMouseEnter={(e) => {
+                                                        e.target.style.background = '#1e3a5f';
+                                                        e.target.style.borderColor = '#339af0';
+                                                        e.target.style.color = '#339af0';
+                                                    }}
+                                                    onMouseLeave={(e) => {
+                                                        e.target.style.background = '#2c2e33';
+                                                        e.target.style.borderColor = '#373a40';
+                                                        e.target.style.color = '#909296';
+                                                    }}
+                                                    onClick={() => askQuestion(\`Tell me about \${topic.toLowerCase()}\`)}
+                                                >
+                                                    {topic}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ) : (
+                                    // Regular chat messages
+                                    <>
+                                        {messages.map((message) => (
+                                            <MessageComponent key={message.id || Math.random()} message={message} />
                                         ))}
-                                    </div>
-                                </Stack>
-                            </Card>
+                                        <div ref={messagesEndRef} />
+                                    </>
+                                )}
+                            </ScrollArea>
+                        </div>
 
-                            {/* Messages */}
-                            <Card style={{ minHeight: '400px' }}>
-                                <ScrollArea style={{ height: '400px', padding: '8px' }}>
-                                    {messages.map((message) => (
-                                        <MessageComponent key={message.id || Math.random()} message={message} />
-                                    ))}
-                                    <div ref={messagesEndRef} />
-                                </ScrollArea>
-                            </Card>
-
-                            {/* Input */}
-                            <Card>
-                                <Group gap="md">
-                                    <div style={{ flex: 1 }}>
-                                        <Textarea
-                                            placeholder="Ask me anything about design systems..."
-                                            value={inputValue}
-                                            onChange={setInputValue}
-                                            onKeyDown={handleKeyPress}
-                                            rows={2}
-                                        />
-                                    </div>
-                                    <Button
+                        {/* Input Area */}
+                        <div style={{
+                            padding: '16px 24px 24px',
+                            borderTop: '1px solid #373a40',
+                            background: '#1a1b1e'
+                        }}>
+                            <div style={{
+                                maxWidth: '800px',
+                                margin: '0 auto',
+                                position: 'relative'
+                            }}>
+                                <div style={{
+                                    background: '#25262b',
+                                    border: '1px solid #373a40',
+                                    borderRadius: '12px',
+                                    padding: '12px 16px',
+                                    display: 'flex',
+                                    alignItems: 'flex-end',
+                                    gap: '12px'
+                                }}>
+                                    <textarea
+                                        placeholder="Ask me anything about design systems..."
+                                        value={inputValue}
+                                        onChange={(e) => setInputValue(e.target.value)}
+                                        onKeyDown={handleKeyPress}
+                                        rows={1}
+                                        style={{
+                                            flex: 1,
+                                            background: 'transparent',
+                                            border: 'none',
+                                            color: '#c1c2c5',
+                                            fontSize: '14px',
+                                            fontFamily: 'inherit',
+                                            resize: 'none',
+                                            outline: 'none',
+                                            minHeight: '20px',
+                                            maxHeight: '120px',
+                                            lineHeight: '1.4'
+                                        }}
+                                        disabled={isLoading}
+                                    />
+                                    <button
                                         onClick={() => sendMessage()}
-                                        loading={isLoading}
-                                        disabled={!inputValue.trim()}
-                                        size="md"
-                                        style={{ alignSelf: 'flex-end', marginBottom: '4px' }}
+                                        disabled={!inputValue.trim() || isLoading}
+                                        style={{
+                                            background: inputValue.trim() && !isLoading
+                                                ? 'linear-gradient(135deg, #339af0 0%, #1c7ed6 100%)'
+                                                : '#373a40',
+                                            border: 'none',
+                                            borderRadius: '8px',
+                                            padding: '8px',
+                                            cursor: inputValue.trim() && !isLoading ? 'pointer' : 'not-allowed',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            transition: 'all 0.2s ease',
+                                            minWidth: '32px',
+                                            height: '32px'
+                                        }}
                                     >
-                                        {isLoading ? 'Thinking...' : 'Send'}
-                                    </Button>
-                                </Group>
-                            </Card>
+                                        {isLoading ? (
+                                            <div style={{
+                                                width: '16px',
+                                                height: '16px',
+                                                border: '2px solid #ffffff40',
+                                                borderTop: '2px solid #ffffff',
+                                                borderRadius: '50%',
+                                                animation: 'spin 1s linear infinite'
+                                            }} />
+                                        ) : (
+                                            <span style={{
+                                                color: inputValue.trim() ? 'white' : '#909296',
+                                                fontSize: '16px'
+                                            }}>
+                                                ↗
+                                            </span>
+                                        )}
+                                    </button>
+                                </div>
 
-                            {/* Status */}
-                            <Card style={{ textAlign: 'center' }}>
-                                <Group justify="center" gap="sm">
-                                    <Badge variant="light" color="green">
-                                        Ready to chat
-                                    </Badge>
-                                    <Text size="sm">•</Text>
-                                    <Badge variant="light" color="blue">
-                                        MCP Server: Connected ✅
-                                    </Badge>
-                                </Group>
-                            </Card>
-                        </Stack>
+                                {/* Subtle helper text */}
+                                <Text
+                                    size="xs"
+                                    style={{
+                                        color: '#6c6f75',
+                                        textAlign: 'center',
+                                        marginTop: '8px',
+                                        fontSize: '11px'
+                                    }}
+                                >
+                                    Press Enter to send, Shift+Enter for new line
+                                </Text>
+                            </div>
+                        </div>
                     </Container>
                 </div>
             );
