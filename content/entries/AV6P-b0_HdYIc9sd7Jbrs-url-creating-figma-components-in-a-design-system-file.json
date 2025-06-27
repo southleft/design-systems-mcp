@@ -1,0 +1,90 @@
+{
+  "id": "AV6P-b0_HdYIc9sd7Jbrs",
+  "title": "Creating Figma Components in a Design System File",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/creating-figma-components-in-a-design-system-file",
+    "ingested_at": "2025-06-27T02:53:03.025Z"
+  },
+  "content": "Creating Figma components in a Design System file - The Design System Guide Close Figma # Creating Figma components in a Design System file Romina Kavcic Guide to components in Figma 🔗 Read the article [https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma] by Figma How we organise our Design System libraries to help Doctolib designers use more than 70 000 components a week 🔗 Read the article [https://medium.com/doctolib/how-we-organise-our-design-system-libraries-to-help-doctolib-designers-use-more-than-70-000-c15237c81f6c] How to create and use components in Figma for beginners 🔗 Read the article [https://uxdesign.cc/how-to-create-and-use-components-in-figma-for-beginners-9f49e21b6968] Space, grids, and layouts 🔗 Read the article [https://www.designsystems.com/space-grids-and-layouts/] Figma in 5: Design Systems: Components 📹 Watch the video [https://www.youtube.com/watch?v=gUQjMoW1N_s] Variant-driven Components 🔗 Read the article [https://pedro-ofurnl2ot-peduarte.vercel.app/writing/variant-driven-components] Components, styles, and shared library best practices 🔗 Read the article [https://www.figma.com/best-practices/components-styles-and-shared-libraries/] Team, project, and file organization 🔗 Read the article [https://www.figma.com/best-practices/team-file-organization/] Subcomponents Relinquish control, offer parts, and let implementers compose 🔗 Read the article [https://medium.com/eightshapes-llc/subcomponents-753ce9f6600a] How to organize your Figma files for your design system 🔗 Read the article [https://zeroheight.com/help/guides/how-to-organize-your-figma-files-for-your-design-system/] Next question Managing platform-specific UI elements Published on: Aug 27, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Creating Figma components in a Design System file - The Design System Guide Close Figma # Creating Figma components in a Design System file Romina Kavcic Guide to components in Figma 🔗 Read the article [https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma] by Figma How we organise our Design System libraries to help Doctolib designers use more than 70 000 components a week 🔗 Read the article [https://medium.com/doctolib/how-we-organise-our-design-system-libraries-to-help-doctolib-designers-use-more-than-70-000-c15237c81f6c] How to create and use components in Figma for beginners 🔗 Read the article [https://uxdesign.cc/how-to-create-and-use-components-in-figma-for-beginners-9f49e21b6968] Space, grids, and layouts 🔗 Read the article [https://www.designsystems.com/space-grids-and-layouts/] Figma in 5: Design Systems: Components 📹 Watch the video [https://www.youtube.com/watch?v=gUQjMoW1N_s] Variant-driven Components 🔗 Read the article",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 982,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "e video [https://www.youtube.com/watch?v=gUQjMoW1N_s] Variant-driven Components 🔗 Read the article [https://pedro-ofurnl2ot-peduarte.vercel.app/writing/variant-driven-components] Components, styles, and shared library best practices 🔗 Read the article [https://www.figma.com/best-practices/components-styles-and-shared-libraries/] Team, project, and file organization 🔗 Read the article [https://www.figma.com/best-practices/team-file-organization/] Subcomponents Relinquish control, offer parts, and let implementers compose 🔗 Read the article [https://medium.com/eightshapes-llc/subcomponents-753ce9f6600a] How to organize your Figma files for your design system 🔗 Read the article [https://zeroheight.com/help/guides/how-to-organize-your-figma-files-for-your-design-system/] Next question Managing platform-specific UI elements Published on: Aug 27, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in",
+      "metadata": {
+        "startIndex": 882,
+        "endIndex": 1882,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "est additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 1782,
+        "endIndex": 2745,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 2645,
+        "endIndex": 3633,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 3533,
+        "endIndex": 4505,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 4405,
+        "endIndex": 5405,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "figma;components;creation;workflow"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:53:03.025Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/creating-figma-components-in-a-design-system-file"
+  }
+}

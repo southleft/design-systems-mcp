@@ -1,0 +1,101 @@
+{
+  "id": "430R5x_DN4itJ4sNkEf5X",
+  "title": "How to Set Up Design Tokens Naming Structure in Line with Tailwind",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/how-to-set-up-the-design-tokens-naming-structure-in-line-with-tailwind",
+    "ingested_at": "2025-06-27T02:53:07.632Z"
+  },
+  "content": "How to set up the design tokens naming structure in line with Tailwind? - The Design System Guide Close Tailwind # How to set up the design tokens naming structure in line with Tailwind? Romina Kavcic The most important step is initialization and configuration. ### Design Tokens integration with Tailwind CSS: Tutorial and Example Application for Frontend Developers 🔗 Read the article [https://www.design-tokens.dev/guides/tailwind-css] ### How to transform Tokens Studio tokens to TailwindCSS configuration preset 🔗 Read the article [https://www.summerbud.org/dev-notes/transform-design-tokens-to-tailwindcss-preset/] ### Tailwind 2024 Primitives by Samantha Gordashko 🔗 Get the template from Figma Community [https://www.figma.com/community/file/1366948905240436718/tailwind-2024-primitives-v1-2] More resources: Design Tokens integration with CSS Modules: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/css-modules#design-tokens-integration-with-css-modules-tutorial-and-example-application-for-frontend-developers] Design Tokens integration with Chakra UI: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/chakra-ui#design-tokens-integration-with-chakra-ui-tutorial-and-example-application-for-frontend-developers] Design Tokens integration with MUI: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/mui#design-tokens-integration-with-mui-tutorial-and-example-application-for-frontend-developers] Design Tokens integration with Radix UI: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/radix-ui#design-tokens-integration-with-radix-ui-tutorial-and-example-application-for-frontend-developers] Design Tokens integration with Headless UI: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/headless-ui#design-tokens-integration-with-headless-ui-tutorial-and-example-application-for-frontend-developers] Design Tokens integration with Emotion: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/emotion#design-tokens-integration-with-emotion-tutorial-and-example-application-for-frontend-developers] Next question How can I create a Figma Variables specifications sheet? Published on: Aug 27, 2024 Updated: Updated: Aug 27, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "How to set up the design tokens naming structure in line with Tailwind? - The Design System Guide Close Tailwind # How to set up the design tokens naming structure in line with Tailwind? Romina Kavcic The most important step is initialization and configuration. ### Design Tokens integration with Tailwind CSS: Tutorial and Example Application for Frontend Developers 🔗 Read the article [https://www.design-tokens.dev/guides/tailwind-css] ### How to transform Tokens Studio tokens to TailwindCSS configuration preset 🔗 Read the article [https://www.summerbud.org/dev-notes/transform-design-tokens-to-tailwindcss-preset/] ### Tailwind 2024 Primitives by Samantha Gordashko 🔗 Get the template from Figma Community [https://www.figma.com/community/file/1366948905240436718/tailwind-2024-primitives-v1-2] More resources: Design Tokens integration with CSS Modules: Tutorial and Example Application for Frontend Developers",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 921,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "esign Tokens integration with CSS Modules: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/css-modules#design-tokens-integration-with-css-modules-tutorial-and-example-application-for-frontend-developers] Design Tokens integration with Chakra UI: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/chakra-ui#design-tokens-integration-with-chakra-ui-tutorial-and-example-application-for-frontend-developers] Design Tokens integration with MUI: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/mui#design-tokens-integration-with-mui-tutorial-and-example-application-for-frontend-developers] Design Tokens integration with Radix UI: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/radix-ui#design-tokens-integration-with-radix-ui-tutorial-and-example-application-for-frontend-developers] Design Tokens integration with",
+      "metadata": {
+        "startIndex": 821,
+        "endIndex": 1820,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "h-radix-ui-tutorial-and-example-application-for-frontend-developers] Design Tokens integration with Headless UI: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/headless-ui#design-tokens-integration-with-headless-ui-tutorial-and-example-application-for-frontend-developers] Design Tokens integration with Emotion: Tutorial and Example Application for Frontend Developers [https://www.design-tokens.dev/guides/emotion#design-tokens-integration-with-emotion-tutorial-and-example-application-for-frontend-developers] Next question How can I create a Figma Variables specifications sheet? Published on: Aug 27, 2024 Updated: Updated: Aug 27, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy.",
+      "metadata": {
+        "startIndex": 1720,
+        "endIndex": 2713,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics",
+      "metadata": {
+        "startIndex": 2613,
+        "endIndex": 3599,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "earn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics",
+      "metadata": {
+        "startIndex": 3499,
+        "endIndex": 4487,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "earn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics]",
+      "metadata": {
+        "startIndex": 4387,
+        "endIndex": 5386,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "[../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 5286,
+        "endIndex": 6286,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tokens",
+    "tags": [
+      "design-tokens;naming;tailwind;structure"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:53:07.632Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/how-to-set-up-the-design-tokens-naming-structure-in-line-with-tailwind"
+  }
+}

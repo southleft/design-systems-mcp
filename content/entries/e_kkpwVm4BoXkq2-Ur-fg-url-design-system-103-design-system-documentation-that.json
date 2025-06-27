@@ -1,0 +1,376 @@
+{
+  "id": "e_kkpwVm4BoXkq2-Ur-fg",
+  "title": "Design System 103: Design system documentation that drives adoption",
+  "source": {
+    "type": "url",
+    "location": "https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/",
+    "ingested_at": "2025-06-27T02:45:20.429Z"
+  },
+  "content": "Documentation That Drives Adoption | Design Systems 103 | Figma Blog Skip to main content Subscribe to Figma’s editorial newsletter [https://www.figma.com/signup] [https://www.figma.com/] [https://www.figma.com/blog/] ##### Categories • Maker Stories [https://www.figma.com/blog/maker-stories/] • Working Well [https://www.figma.com/blog/working-well/] • Inside Figma [https://www.figma.com/blog/inside-figma/] • Insights [https://www.figma.com/blog/insights/] Topics ### Featured Topics ### News Get the latest on all things Figma. ### Design systems ### Explore topics • 3D design [https://www.figma.com/blog/3d-design/] • Accessibility [https://www.figma.com/blog/accessibility/] • AI [https://www.figma.com/blog/ai/] • Behind the scenes [https://www.figma.com/blog/behind-the-scenes/] • Brainstorming [https://www.figma.com/blog/brainstorming/] • Branding [https://www.figma.com/blog/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study [https://www.figma.com/blog/case-study/] • Collaboration [https://www.figma.com/blog/collaboration/] • Config [https://www.figma.com/blog/config/] • Culture [https://www.figma.com/blog/culture/] • Design [https://www.figma.com/blog/design/] • Design thinking [https://www.figma.com/blog/design-thinking/] • Dev Mode [https://www.figma.com/blog/dev-mode/] • Diagramming [https://www.figma.com/blog/diagramming/] • Engineering [https://www.figma.com/blog/engineering/] • Events [https://www.figma.com/blog/events/] • FigJam [https://www.figma.com/blog/figjam/] • Figma Buzz [https://www.figma.com/blog/figma-buzz/] • Figma Design [https://www.figma.com/blog/figma-design/] • Figma Draw [https://www.figma.com/blog/figma-draw/] • Figma Make [https://www.figma.com/blog/figma-make/] • Figma Sites [https://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] • Hiring [https://www.figma.com/blog/hiring/] • Infrastructure [https://www.figma.com/blog/infrastructure/] • Leadership [https://www.figma.com/blog/leadership/] • Localization [https://www.figma.com/blog/localization/] • Marketing [https://www.figma.com/blog/marketing/] • Meetings [https://www.figma.com/blog/meetings/] • Motion [https://www.figma.com/blog/motion/] • Operations [https://www.figma.com/blog/operations/] • Plugins & tooling [https://www.figma.com/blog/plugins-and-tooling/] • Portfolio [https://www.figma.com/blog/portfolio/] • Product management [https://www.figma.com/blog/product-management/] • Product updates [https://www.figma.com/blog/product-updates/] • Productivity [https://www.figma.com/blog/productivity/] • Profiles & interviews [https://www.figma.com/blog/profiles-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance [https://www.figma.com/blog/quality-and-performance/] • React [https://www.figma.com/blog/react/] • Report [https://www.figma.com/blog/report/] • Research [https://www.figma.com/blog/research/] • Security [https://www.figma.com/blog/security/] • Social impact [https://www.figma.com/blog/social-impact/] • Strategy [https://www.figma.com/blog/strategy/] • The Long & Short of It [https://www.figma.com/blog/the-long-and-short-of-it/] • Thought leadership [https://www.figma.com/blog/thought-leadership/] • Tips & inspiration [https://www.figma.com/blog/tips-and-inspiration/] • Typography [https://www.figma.com/blog/typography/] • UI/UX [https://www.figma.com/blog/ui-ux/] • Wireframing [https://www.figma.com/blog/wireframing/] • Writing [https://www.figma.com/blog/writing/] January 23, 2025 # Design system 103: Design system documentation that drives adoption Carly AyresWriter Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Writing [https://www.figma.com/blog/writing/]Design [https://www.figma.com/blog/design/]Engineering [https://www.figma.com/blog/engineering/]UI/UX [https://www.figma.com/blog/ui-ux/]Figma Design [https://www.figma.com/blog/figma-design/] Clear documentation transforms abstract design principles into practical tools. Here’s how leading teams build and maintain living documentation that evolves alongside their design systems. Artwork by Cynthia Alfonso [https://www.instagram.com/zyn_vaites/] Table of contents • How to determine your source of truth [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#how-to-determine-your-source-of-truth] • What to include in your documentation [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#what-to-include-in-your-documentation] • How to maintain and evolve documentation [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#how-to-maintain-and-evolve-documentation] • Keeping documentation up to date [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#keeping-documentation-up-to-date] • Making it work for everyone [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#making-it-work-for-everyone] Table of contents • How to determine your source of truth [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#how-to-determine-your-source-of-truth] • What to include in your documentation [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#what-to-include-in-your-documentation] • How to maintain and evolve documentation [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#how-to-maintain-and-evolve-documentation] • Keeping documentation up to date [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#keeping-documentation-up-to-date] • Making it work for everyone [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#making-it-work-for-everyone] [https://www.figma.com/blog/design-systems/]If you missed our previous articles, check out Design systems 101: What is a design system? [https://www.figma.com/blog/design-systems-101-what-is-a-design-system/] and Design Systems 102: How to build your design system [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/]. When Razorpay’s teams missed small details, Head of Design Saurabh Soni recognized it wasn’t a quality issue—it was a communication problem. “Before we rolled Blade [our design system] out, it was easy for teams to miss a lot of small nuances like different button states, or how an error within a text field should be handled,” he says [https://www.figma.com/blog/how-razorpay-sharpened-developer-workflows/]. “Teams would try to hard-code and build everything custom, and in doing so, they might leave something out by mistake.” This challenge resonates across organizations. “Designers and developers speak a little bit of a different language,” explains Lukas Oppermann [https://www.figma.com/blog/unlocking-the-power-of-code-connect/], Staff System Designer at GitHub. This linguistic gap often leads to inconsistent naming conventions, misaligned component properties, and mismatched expectations about how a product should look and feel. Good documentation bridges this gap, serving as the connection between intention and implementation. But it needs to do more than catalog components—it needs to capture the how and why behind design decisions. Without this comprehensive guidance, even thoughtfully crafted systems gather digital dust. When done well, documentation helps teams: • Understand design principles and implementation details • Make consistent decisions across products and platforms • Onboard new team members efficiently • Bridge communication between designers and developers ## How to determine your source of truth [#how-to-determine-your-source-of-truth] The first question isn’t what to write—it’s where to put it. “One of the most challenging things when it comes to keeping consistency is determining your source of truth,” explains Raul Menezes [https://www.figma.com/blog/unlocking-the-power-of-code-connect/], Design System and Platform Engineer at Bumble. As design systems mature and teams grow, this challenge only intensifies. Gone are the days of static PDFs immediately becoming obsolete in shared drives. Teams today have more options than ever, from dedicated documentation sites to collaborative workspaces. ### Building from scratch [#building-from-scratch] Custom documentation sites shine for large organizations where design systems need to deeply integrate with their tools and processes. Google’s Material Design [https://m3.material.io/], IBM’s Carbon [https://carbondesignsystem.com/], and eBay’s Evo [https://playbook.ebay.com/] all use custom documentation sites serving both internal and external audiences, with gated content and specialized pathways for different user groups. “People simply want to do the best possible work they can,” explains Ryan Tinsley, Staff Product Designer at eBay. “We’ve seen teams level up their work dramatically by referencing our documentation. The office hours we have now versus before the playbook are just night and day—people always know what to reference and how to show the brand in a way that aligns to best practices.” Rather than creating separate destinations for brand and product documentation, eBay built a unified playbook [https://playbook.ebay.com/]. “We wanted to combine guidance for both of these in one location so people wouldn’t have to jump ship to different experiences,” says Ryan. To make this work, the eBay team developed custom tooling that exports changes from Figma directly to their CMS, enabling designers and other teams to get the latest Playbook updates as soon as they’re approved for use. Copied We’ve seen teams level up their work dramatically by referencing our documentation. “We’ve seen teams level up their work dramatically by referencing our documentation.” Ryan Tinsley, Staff Product Designer, eBay ### Leveraging existing platforms [#leveraging-existing-platforms] [https://www.figma.com/community/plugin/1056265616080331589/Storybook-Connect?ref=storybookblog.ghost.io] The Storybook Connect for Figma [https://www.figma.com/community/plugin/1056265616080331589/Storybook-Connect?ref=storybookblog.ghost.io] plugin lets you link Storybook stories to Figma designs, letting you easily compare implementation to design specifications. Not every team needs this level of complexity. Smaller teams often start with collaborative tools like Notion [https://help.figma.com/hc/en-us/articles/360046037373-Notion-and-Figma] or Confluence [https://help.figma.com/hc/en-us/articles/360053110673-Confluence-and-Figma], prioritizing quick setup and easy maintenance. Many teams combine approaches: technical specs in Storybook [https://help.figma.com/hc/en-us/articles/360045003494-Storybook-and-Figma] and design guidelines in more accessible formats, complemented by custom plugins. At Razorpay, the team discovered that their documentation needed to do more than explain what existed—it needed to meet different teams where they are. They built a custom plugin, RazorSharp [https://www.figma.com/blog/how-razorpay-sharpened-developer-workflows/], that bridges the gap between design documentation and implementation. The key is choosing tools that support your current needs while leaving room for growth. ## What to include in your documentation [#what-to-include-in-your-documentation] Beyond where documentation should live, you have another big decision to make: what goes into it. Here are the essential elements: #### Design principles [#design-principles] Every design system needs clearly articulated design principles that inform decisions from big-picture strategy to nitty-gritty details. When you document the “why” behind decisions, teams better understand the rationale and how to implement them consistently. #### Component library [#component-library] For each component, include: • Usage guidelines and best practices • Design specifications covering anatomy, dimensions, and behavior • Real-world examples and use cases • Code snippets and implementation details • Interactive prototypes showing states and variations #### Visual style guide [#visual-style-guide] Document key design decisions defining your brand’s aesthetic: • Color palette with usage guidelines • Typography system specifying hierarchy and best practices • Icon libraries with design specifications • Image and illustration standards including accessibility guidelines #### Technical implementation [#technical-implementation] Help developers implement your system with: • Component APIs and props documentation • Accessibility requirements and testing procedures • Performance considerations • Integration guides for different frameworks • Clear naming conventions and token documentation #### Accessibility guidelines [#accessibility-guidelines] Make accessibility requirements explicit: • WCAG compliance levels for components • Screen reader behavior • Keyboard navigation patterns • Color contrast requirements • Touch target sizes At eBay, the Design Systems team found that the more in-depth details they provided, the better: “People crave documentation,” says Ryan. “Even with a system as comprehensive as ours [https://playbook.ebay.com/], we constantly hear ‘What about this edge case?’ or ‘Have you considered documenting this scenario?’ This continuous feedback loop drives us to refine and expand our resources—partners are not just passively consuming the documentation, they’re actively helping us shape it.” [https://www.figma.com/blog/introducing-code-connect/] Boost adoption with Code Connect [https://www.figma.com/blog/introducing-code-connect/] Code Connect lets you customize code snippets in Figma’s Dev Mode, making it easier for developers to access and implement your system directly from Figma. ## How to maintain and evolve documentation [#how-to-maintain-and-evolve-documentation] One of the most common challenges with documentation is how to keep it current as your team evolves. Out of date documentation can result in inconsistent designs, which, in turn, tarnishes the credibility of the design system. While refreshing documentation requires effort, the payoff is immense: faster onboarding, fewer misalignments, and a more cohesive experience. ### Keeping documentation up to date [#keeping-documentation-up-to-date] Pro tip: Make documentation a required step for completing new components or patterns, ensuring that it reflects evolving design decisions and stays up to date. “What you see in design is what you get in code,” Razorpay’s Kamlesh notes. This alignment comes from intentional choices about how documentation is structured, maintained, and evolved. “We have around 70 designers and 100 front-end developers,” shares Saurabh. “Within those teams, three designers and five engineers are dedicated to our design system.” This core team nurtures community through regular office hours, focus groups, and an advocacy program that includes designers from various teams. As your design system evolves, it’s important to have clear processes for managing updates and contributions. The process should balance centralized governance with community input, allowing for flexibility while maintaining standards. Here are some tools and processes you may want to adopt: • Contribution guidelines: Establish clear guidelines for how team members can suggest changes or additions, including templates, style guides, and review processes. • Version control: Use semantic versioning to communicate the scope and impact of each update. This helps your team understand how each version differs and what to expect when upgrading. • Change logs: Maintain a detailed running list of changes in each release, including new features, bug fixes, or breaking changes, along with migration steps. • Quality assurance: Implement multiple checkpoints to check quality such as feedback loops, regular reviews, and linting systems. eBay’s Design Systems and Design Technology teams maintain a component status table showing implementation status across different platforms. As Cordelia McGee-Tubb, Staff Design Technologist at eBay explains: “A lot of our developers have been using this component status API to figure out, ‘Hey, does the component exist in the framework I build in? And is it up to date with the Figma version? Is it up to date with the Playbook documentation?’ That’s been a huge win.” They also developed a custom linter to validate their documentation, which checks component usage against guidelines, verifies accessibility information is complete, ensures all images have alt text, and flags inconsistencies in naming or structure. [https://www.designsystems.com/keeping-design-system-contributions-in-check/] UX design consultant and founder Wart Burggraaf is on a mission to automate the governance of design systems. Read his thoughts on keeping design system contributions in check [https://www.designsystems.com/keeping-design-system-contributions-in-check/]. ### Making it work for everyone [#making-it-work-for-everyone] Different team members need different things from your documentation—success requires understanding those distinct needs for each audience. At Alaska Airlines [https://www.figma.com/blog/alaska-airlines-reaches-new-heights-with-the-help-of-variables/], designers struggled with pixel-perfect implementation while developers received mismatched designs. Product Designer June Lee focused on documenting key features when moving their Auro design system to Figma. “I really focused on education with our designers so they could understand what Figma could do,” she says. “I could see that designers were better utilizing Figma, and that meant fewer conflicts between designers and engineers.” Here’s a look at what each collaborator might find most useful: #### For designers [#for-designers] • Visual examples and usage patterns • Component variants and states • Design token implementation • Grid systems and spacing • Asset libraries and resources #### For developers [#for-developers] • Technical specifications • API documentation • Integration guides • Testing requirements • Performance considerations #### For product managers [#for-product-managers] • High-level system overview • Component selection guidance • Feature roadmap • Release notes and updates [https://www.youtube.com/watch?v=PQdY1bx0uw8&list=PLXDU_eVOJTx79mRuq_qHx4uDmIOzZLRnR] Figma Designer Advocate Ana Boyer hosts a Design to Code: Roundtable discussion with Bumble, GitHub, and HP [https://www.youtube.com/watch?v=PQdY1bx0uw8&list=PLXDU_eVOJTx79mRuq_qHx4uDmIOzZLRnR], where they discuss the common challenges their design systems teams face in connecting design to code and share their first impressions of Code Connect. ### Gathering feedback and measuring impact [#gathering-feedback-and-measuring-impact] At Razorpay, success isn’t measured by adoption numbers alone—it’s about the tangible impact on workflows and collaboration. They set concrete goals [https://www.figma.com/blog/how-razorpay-sharpened-developer-workflows/]: Teams building new features should use their system for 70% of their design work, while existing products aim for 50% coverage. “We surveyed our designers and developers, and 80% said that they felt more productive when using our Blade design system versus without it,” shares Saurav Rastogi, Staff Designer. When gathering feedback and proofpoints for your own system, look beyond simple page views to understand how documentation influences behavior. Consider user testing and interviews to gather comprehensive feedback. By prioritizing continuous improvement and iteration, you can ensure that your design system remains a valuable and effective tool for your team, even as your products and processes evolve. [https://www.figma.com/blog/introducing-design-system-analytics/] Tools like Figma’s Design System Analytics [https://www.figma.com/blog/introducing-design-system-analytics/] can provide valuable insights for Organization and Enterprise accounts [https://www.figma.com/pricing/] into how your system is being used and where there may be opportunities for improvement. Stay tuned for exciting updates to this feature—coming soon! ## Planning for scale [#planning-for-scale] The most effective documentation not only details what exists, but also empowers teams to build better experiences together. Investing in tooling and processes that keep documentation current pays dividends in adoption and consistency. As you think about how to build and evolve your own documentation, consider these takeaways: • Meet teams where they work through integrated tools and custom solutions • Build bridges between disciplines by creating what GitHub’s Lukas Oppermann calls [https://www.figma.com/blog/unlocking-the-power-of-code-connect/] “a third language” where designers and developers can truly communicate • Create clear contribution paths through dedicated teams and regular community engagement • Measure impact by tracking improvements in team productivity and collaboration The future points toward more integrated approaches where documentation lives alongside the work itself. When documentation evolves with your system, adoption naturally follows. The goal isn’t perfect documentation—it’s documentation that helps teams do their best work. What else would you like to learn? Tweet us at @figma [https://www.twitter.com/figma] with your questions. Learn more about how Figma helps teams drive consistency, scale designs, and maintain parity with development using our design systems features [https://www.figma.com/design-systems/?utm_source=Shortcut&utm_medium=Blog&utm_campaign=ds_102&utm_content=ds_102] and request a demo [https://www.figma.com/request-a-demo/?utm_source=Shortcut&utm_medium=Blog&utm_campaign=ds_102&utm_content=ds_102]. Carly Ayres is a writer, formerly on Figma’s editorial team. She’s written extensively about creative practice and design culture, with work appearing in It’s Nice That, Communication Arts, Wallpaper*, Core77, and elsewhere. Substack [https://carly.substack.com/]LinkedIn [https://www.linkedin.com/in/carlyayres/]X [https://x.com/carlyayres]Instagram [https://instagram.com/carlyayres] ## Subscribe to Figma’s editorial newsletter Enter email* I agree to opt-in to Figma&#x27;s mailing list.* By clicking “Submit” you agree to our TOS [https://www.figma.com/tos/] and Privacy Policy [https://www.figma.com/privacy/]. ## Related articles ### Design system 101: What is a design system? February 12, 2024 By Chad Bergman Understand the basics of design systems, what they are, how they work, and how they can change the way you design. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] ### Design system 102: How to build a design system April 8, 2024 By Chad Bergman It’s time to build your design system! We’ll walk you through the basics of creating a system tailored to your unique goals and challenges, whether building from scratch or starting with existing pieces. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] ### Design system 104: Making metrics matter February 11, 2025 By Carly Ayres Behind every successful design system lies a surprising secret: numbers. Learn how tracking the right metrics can transform your design system from a helpful resource into a powerful engine for efficiency. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] ## Create and collaborate with Figma Get started for free [https://www.figma.com/signup] [https://www.figma.com/] • [https://x.com/figma] • [https://www.youtube.com/figmadesign] • [https://www.instagram.com/figma] • [https://www.facebook.com/figmadesign] ## Product • Figma Design [https://www.figma.com/design/] • Dev Mode [https://www.figma.com/dev-mode/] • FigJam [https://www.figma.com/figjam/] • Figma Slides [https://www.figma.com/slides/] Figma Draw New Figma Buzz Beta Figma Sites Beta Figma Make Beta • AI [https://www.figma.com/ai/] • Downloads [https://www.figma.com/downloads/] • Release notes [https://www.figma.com/release-notes/] ## Plans • Pricing [https://www.figma.com/pricing/] • Enterprise [https://www.figma.com/enterprise/] • Organization [https://www.figma.com/organization/] • Professional [https://www.figma.com/professional/] ## Use cases • UI design [https://www.figma.com/ui-design-tool/] • UX design [https://www.figma.com/ux-design-tool/] • Wireframing [https://www.figma.com/wireframe-tool/] • Diagramming [https://www.figma.com/figjam/diagramming-tool/] • Prototyping [https://www.figma.com/prototyping/] • Brainstorming [https://www.figma.com/figjam/brainstorming-tool/] • Presentation Maker [https://www.figma.com/presentation-maker/] • Online whiteboard [https://www.figma.com/figjam/online-whiteboard/] • Agile [https://www.figma.com/figjam/agile-workflows/] • Strategic planning [https://www.figma.com/figjam/strategic-planning/] • Mind mapping [https://www.figma.com/figjam/mind-map/] • Online sticky notes [https://www.figma.com/figjam/online-sticky-notes/] • Concept map [https://www.figma.com/figjam/concept-map/] ## Resources • Blog [https://www.figma.com/blog/] • Best practices [https://www.figma.com/best-practices/] • QR code generator [https://www.figma.com/qr-code-generator/] • Color wheel [https://www.figma.com/color-wheel/] • Colors [https://www.figma.com/colors/] • Color picker [https://www.figma.com/color-picker/] • Color palettes [https://www.figma.com/color-palettes/] • Color palette generator [https://www.figma.com/color-palette-generator/] • Color contrast checker [https://www.figma.com/color-contrast-checker/] • Font Library [https://www.figma.com/fonts/] • Templates [https://www.figma.com/templates/] • Developers [https://www.figma.com/developers] • Integrations [https://www.figma.com/product-integrations/] • Affiliate program [https://www.figma.com/affiliate-program/] • Resource library [https://www.figma.com/resource-library/] • Reports and insights [https://www.figma.com/reports/] • Support [https://help.figma.com/hc/en-us] • Status [https://status.figma.com/] • Legal and privacy [https://www.figma.com/legal/] • Modern slavery statement [https://static.figma.com/uploads/1b6f8f613c2cc1e77fe543424bbc631298504d35] • Climate disclosure statement [https://static.figma.com/uploads/d2a204b5cc4d64ff539fcd445d0ddedab7dc00f6] ## Compare • Sketch [https://www.figma.com/figma-vs-sketch/] • Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] • Framer [https://www.figma.com/figma-vs-framer/] • Miro [https://www.figma.com/figjam-vs-miro/] ## Company • Events [https://www.figma.com/events/] • Customers [https://www.figma.com/customers/] • Careers [https://www.figma.com/careers/] • Newsroom [https://www.figma.com/newsroom/] English",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Documentation That Drives Adoption | Design Systems 103 | Figma Blog Skip to main content Subscribe to Figma’s editorial newsletter [https://www.figma.com/signup] [https://www.figma.com/] [https://www.figma.com/blog/] ##### Categories • Maker Stories [https://www.figma.com/blog/maker-stories/] • Working Well [https://www.figma.com/blog/working-well/] • Inside Figma [https://www.figma.com/blog/inside-figma/] • Insights [https://www.figma.com/blog/insights/] Topics ### Featured Topics ### News Get the latest on all things Figma. ### Design systems ### Explore topics • 3D design [https://www.figma.com/blog/3d-design/] • Accessibility [https://www.figma.com/blog/accessibility/] • AI [https://www.figma.com/blog/ai/] • Behind the scenes [https://www.figma.com/blog/behind-the-scenes/] • Brainstorming [https://www.figma.com/blog/brainstorming/] • Branding [https://www.figma.com/blog/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 984,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "log/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study [https://www.figma.com/blog/case-study/] • Collaboration [https://www.figma.com/blog/collaboration/] • Config [https://www.figma.com/blog/config/] • Culture [https://www.figma.com/blog/culture/] • Design [https://www.figma.com/blog/design/] • Design thinking [https://www.figma.com/blog/design-thinking/] • Dev Mode [https://www.figma.com/blog/dev-mode/] • Diagramming [https://www.figma.com/blog/diagramming/] • Engineering [https://www.figma.com/blog/engineering/] • Events [https://www.figma.com/blog/events/] • FigJam [https://www.figma.com/blog/figjam/] • Figma Buzz [https://www.figma.com/blog/figma-buzz/] • Figma Design [https://www.figma.com/blog/figma-design/] • Figma Draw [https://www.figma.com/blog/figma-draw/] • Figma Make [https://www.figma.com/blog/figma-make/] • Figma Sites [https://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] •",
+      "metadata": {
+        "startIndex": 884,
+        "endIndex": 1879,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ttps://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] • Hiring [https://www.figma.com/blog/hiring/] • Infrastructure [https://www.figma.com/blog/infrastructure/] • Leadership [https://www.figma.com/blog/leadership/] • Localization [https://www.figma.com/blog/localization/] • Marketing [https://www.figma.com/blog/marketing/] • Meetings [https://www.figma.com/blog/meetings/] • Motion [https://www.figma.com/blog/motion/] • Operations [https://www.figma.com/blog/operations/] • Plugins & tooling [https://www.figma.com/blog/plugins-and-tooling/] • Portfolio [https://www.figma.com/blog/portfolio/] • Product management [https://www.figma.com/blog/product-management/] • Product updates [https://www.figma.com/blog/product-updates/] • Productivity [https://www.figma.com/blog/productivity/] • Profiles & interviews [https://www.figma.com/blog/profiles-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance",
+      "metadata": {
+        "startIndex": 1779,
+        "endIndex": 2771,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "es-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance [https://www.figma.com/blog/quality-and-performance/] • React [https://www.figma.com/blog/react/] • Report [https://www.figma.com/blog/report/] • Research [https://www.figma.com/blog/research/] • Security [https://www.figma.com/blog/security/] • Social impact [https://www.figma.com/blog/social-impact/] • Strategy [https://www.figma.com/blog/strategy/] • The Long & Short of It [https://www.figma.com/blog/the-long-and-short-of-it/] • Thought leadership [https://www.figma.com/blog/thought-leadership/] • Tips & inspiration [https://www.figma.com/blog/tips-and-inspiration/] • Typography [https://www.figma.com/blog/typography/] • UI/UX [https://www.figma.com/blog/ui-ux/] • Wireframing [https://www.figma.com/blog/wireframing/] • Writing [https://www.figma.com/blog/writing/] January 23, 2025 # Design system 103: Design system documentation that drives adoption Carly AyresWriter Insights",
+      "metadata": {
+        "startIndex": 2671,
+        "endIndex": 3663,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "25 # Design system 103: Design system documentation that drives adoption Carly AyresWriter Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Writing [https://www.figma.com/blog/writing/]Design [https://www.figma.com/blog/design/]Engineering [https://www.figma.com/blog/engineering/]UI/UX [https://www.figma.com/blog/ui-ux/]Figma Design [https://www.figma.com/blog/figma-design/] Clear documentation transforms abstract design principles into practical tools. Here’s how leading teams build and maintain living documentation that evolves alongside their design systems. Artwork by Cynthia Alfonso [https://www.instagram.com/zyn_vaites/] Table of contents • How to determine your source of truth [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#how-to-determine-your-source-of-truth] • What to include in your documentation",
+      "metadata": {
+        "startIndex": 3563,
+        "endIndex": 4475,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "hat-drives-adoption/#how-to-determine-your-source-of-truth] • What to include in your documentation [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#what-to-include-in-your-documentation] • How to maintain and evolve documentation [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#how-to-maintain-and-evolve-documentation] • Keeping documentation up to date [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#keeping-documentation-up-to-date] • Making it work for everyone [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#making-it-work-for-everyone] Table of contents • How to determine your source of truth [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#how-to-determine-your-source-of-truth] • What to include in your documentation",
+      "metadata": {
+        "startIndex": 4375,
+        "endIndex": 5279,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "hat-drives-adoption/#how-to-determine-your-source-of-truth] • What to include in your documentation [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#what-to-include-in-your-documentation] • How to maintain and evolve documentation [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#how-to-maintain-and-evolve-documentation] • Keeping documentation up to date [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#keeping-documentation-up-to-date] • Making it work for everyone [https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/#making-it-work-for-everyone] [https://www.figma.com/blog/design-systems/]If you missed our previous articles, check out Design systems 101: What is a design system? [https://www.figma.com/blog/design-systems-101-what-is-a-design-system/] and Design Systems 102: How to build your design system",
+      "metadata": {
+        "startIndex": 5179,
+        "endIndex": 6128,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "esign-systems-101-what-is-a-design-system/] and Design Systems 102: How to build your design system [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/]. When Razorpay’s teams missed small details, Head of Design Saurabh Soni recognized it wasn’t a quality issue—it was a communication problem. “Before we rolled Blade [our design system] out, it was easy for teams to miss a lot of small nuances like different button states, or how an error within a text field should be handled,” he says [https://www.figma.com/blog/how-razorpay-sharpened-developer-workflows/]. “Teams would try to hard-code and build everything custom, and in doing so, they might leave something out by mistake.” This challenge resonates across organizations. “Designers and developers speak a little bit of a different language,” explains Lukas Oppermann [https://www.figma.com/blog/unlocking-the-power-of-code-connect/], Staff System Designer at GitHub.",
+      "metadata": {
+        "startIndex": 6028,
+        "endIndex": 6984,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "[https://www.figma.com/blog/unlocking-the-power-of-code-connect/], Staff System Designer at GitHub. This linguistic gap often leads to inconsistent naming conventions, misaligned component properties, and mismatched expectations about how a product should look and feel. Good documentation bridges this gap, serving as the connection between intention and implementation. But it needs to do more than catalog components—it needs to capture the how and why behind design decisions. Without this comprehensive guidance, even thoughtfully crafted systems gather digital dust. When done well, documentation helps teams: • Understand design principles and implementation details • Make consistent decisions across products and platforms • Onboard new team members efficiently • Bridge communication between designers and developers ## How to determine your source of truth [#how-to-determine-your-source-of-truth] The first question isn’t what to write—it’s where to put it.",
+      "metadata": {
+        "startIndex": 6884,
+        "endIndex": 7854,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "how-to-determine-your-source-of-truth] The first question isn’t what to write—it’s where to put it. “One of the most challenging things when it comes to keeping consistency is determining your source of truth,” explains Raul Menezes [https://www.figma.com/blog/unlocking-the-power-of-code-connect/], Design System and Platform Engineer at Bumble. As design systems mature and teams grow, this challenge only intensifies. Gone are the days of static PDFs immediately becoming obsolete in shared drives. Teams today have more options than ever, from dedicated documentation sites to collaborative workspaces. ### Building from scratch [#building-from-scratch] Custom documentation sites shine for large organizations where design systems need to deeply integrate with their tools and processes. Google’s Material Design [https://m3.material.io/], IBM’s Carbon [https://carbondesignsystem.com/], and eBay’s Evo [https://playbook.ebay.com/] all use custom documentation sites serving both internal and",
+      "metadata": {
+        "startIndex": 7754,
+        "endIndex": 8752,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "Bay’s Evo [https://playbook.ebay.com/] all use custom documentation sites serving both internal and external audiences, with gated content and specialized pathways for different user groups. “People simply want to do the best possible work they can,” explains Ryan Tinsley, Staff Product Designer at eBay. “We’ve seen teams level up their work dramatically by referencing our documentation. The office hours we have now versus before the playbook are just night and day—people always know what to reference and how to show the brand in a way that aligns to best practices.” Rather than creating separate destinations for brand and product documentation, eBay built a unified playbook [https://playbook.ebay.com/]. “We wanted to combine guidance for both of these in one location so people wouldn’t have to jump ship to different experiences,” says Ryan. To make this work, the eBay team developed custom tooling that exports changes from Figma directly to their CMS, enabling designers and other",
+      "metadata": {
+        "startIndex": 8652,
+        "endIndex": 9648,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "custom tooling that exports changes from Figma directly to their CMS, enabling designers and other teams to get the latest Playbook updates as soon as they’re approved for use. Copied We’ve seen teams level up their work dramatically by referencing our documentation. “We’ve seen teams level up their work dramatically by referencing our documentation.” Ryan Tinsley, Staff Product Designer, eBay ### Leveraging existing platforms [#leveraging-existing-platforms] [https://www.figma.com/community/plugin/1056265616080331589/Storybook-Connect?ref=storybookblog.ghost.io] The Storybook Connect for Figma [https://www.figma.com/community/plugin/1056265616080331589/Storybook-Connect?ref=storybookblog.ghost.io] plugin lets you link Storybook stories to Figma designs, letting you easily compare implementation to design specifications. Not every team needs this level of complexity. Smaller teams often start with collaborative tools like Notion",
+      "metadata": {
+        "startIndex": 9548,
+        "endIndex": 10492,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "team needs this level of complexity. Smaller teams often start with collaborative tools like Notion [https://help.figma.com/hc/en-us/articles/360046037373-Notion-and-Figma] or Confluence [https://help.figma.com/hc/en-us/articles/360053110673-Confluence-and-Figma], prioritizing quick setup and easy maintenance. Many teams combine approaches: technical specs in Storybook [https://help.figma.com/hc/en-us/articles/360045003494-Storybook-and-Figma] and design guidelines in more accessible formats, complemented by custom plugins. At Razorpay, the team discovered that their documentation needed to do more than explain what existed—it needed to meet different teams where they are. They built a custom plugin, RazorSharp [https://www.figma.com/blog/how-razorpay-sharpened-developer-workflows/], that bridges the gap between design documentation and implementation. The key is choosing tools that support your current needs while leaving room for growth.",
+      "metadata": {
+        "startIndex": 10392,
+        "endIndex": 11346,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "mentation. The key is choosing tools that support your current needs while leaving room for growth. ## What to include in your documentation [#what-to-include-in-your-documentation] Beyond where documentation should live, you have another big decision to make: what goes into it. Here are the essential elements: #### Design principles [#design-principles] Every design system needs clearly articulated design principles that inform decisions from big-picture strategy to nitty-gritty details. When you document the “why” behind decisions, teams better understand the rationale and how to implement them consistently. #### Component library [#component-library] For each component, include: • Usage guidelines and best practices • Design specifications covering anatomy, dimensions, and behavior • Real-world examples and use cases • Code snippets and implementation details • Interactive prototypes showing states and variations #### Visual style guide [#visual-style-guide] Document key design",
+      "metadata": {
+        "startIndex": 11246,
+        "endIndex": 12242,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "pes showing states and variations #### Visual style guide [#visual-style-guide] Document key design decisions defining your brand’s aesthetic: • Color palette with usage guidelines • Typography system specifying hierarchy and best practices • Icon libraries with design specifications • Image and illustration standards including accessibility guidelines #### Technical implementation [#technical-implementation] Help developers implement your system with: • Component APIs and props documentation • Accessibility requirements and testing procedures • Performance considerations • Integration guides for different frameworks • Clear naming conventions and token documentation #### Accessibility guidelines [#accessibility-guidelines] Make accessibility requirements explicit: • WCAG compliance levels for components • Screen reader behavior • Keyboard navigation patterns • Color contrast requirements • Touch target sizes At eBay, the Design Systems team found that the more in-depth details they",
+      "metadata": {
+        "startIndex": 12142,
+        "endIndex": 13140,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "nts • Touch target sizes At eBay, the Design Systems team found that the more in-depth details they provided, the better: “People crave documentation,” says Ryan. “Even with a system as comprehensive as ours [https://playbook.ebay.com/], we constantly hear ‘What about this edge case?’ or ‘Have you considered documenting this scenario?’ This continuous feedback loop drives us to refine and expand our resources—partners are not just passively consuming the documentation, they’re actively helping us shape it.” [https://www.figma.com/blog/introducing-code-connect/] Boost adoption with Code Connect [https://www.figma.com/blog/introducing-code-connect/] Code Connect lets you customize code snippets in Figma’s Dev Mode, making it easier for developers to access and implement your system directly from Figma. ## How to maintain and evolve documentation [#how-to-maintain-and-evolve-documentation] One of the most common challenges with documentation is how to keep it current as your team evolves.",
+      "metadata": {
+        "startIndex": 13040,
+        "endIndex": 14041,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "ne of the most common challenges with documentation is how to keep it current as your team evolves. Out of date documentation can result in inconsistent designs, which, in turn, tarnishes the credibility of the design system. While refreshing documentation requires effort, the payoff is immense: faster onboarding, fewer misalignments, and a more cohesive experience. ### Keeping documentation up to date [#keeping-documentation-up-to-date] Pro tip: Make documentation a required step for completing new components or patterns, ensuring that it reflects evolving design decisions and stays up to date. “What you see in design is what you get in code,” Razorpay’s Kamlesh notes. This alignment comes from intentional choices about how documentation is structured, maintained, and evolved. “We have around 70 designers and 100 front-end developers,” shares Saurabh. “Within those teams, three designers and five engineers are dedicated to our design system.” This core team nurtures community through",
+      "metadata": {
+        "startIndex": 13941,
+        "endIndex": 14941,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "s and five engineers are dedicated to our design system.” This core team nurtures community through regular office hours, focus groups, and an advocacy program that includes designers from various teams. As your design system evolves, it’s important to have clear processes for managing updates and contributions. The process should balance centralized governance with community input, allowing for flexibility while maintaining standards. Here are some tools and processes you may want to adopt: • Contribution guidelines: Establish clear guidelines for how team members can suggest changes or additions, including templates, style guides, and review processes. • Version control: Use semantic versioning to communicate the scope and impact of each update. This helps your team understand how each version differs and what to expect when upgrading. • Change logs: Maintain a detailed running list of changes in each release, including new features, bug fixes, or breaking changes, along with",
+      "metadata": {
+        "startIndex": 14841,
+        "endIndex": 15834,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "list of changes in each release, including new features, bug fixes, or breaking changes, along with migration steps. • Quality assurance: Implement multiple checkpoints to check quality such as feedback loops, regular reviews, and linting systems. eBay’s Design Systems and Design Technology teams maintain a component status table showing implementation status across different platforms. As Cordelia McGee-Tubb, Staff Design Technologist at eBay explains: “A lot of our developers have been using this component status API to figure out, ‘Hey, does the component exist in the framework I build in? And is it up to date with the Figma version? Is it up to date with the Playbook documentation?’ That’s been a huge win.” They also developed a custom linter to validate their documentation, which checks component usage against guidelines, verifies accessibility information is complete, ensures all images have alt text, and flags inconsistencies in naming or structure.",
+      "metadata": {
+        "startIndex": 15734,
+        "endIndex": 16705,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "on is complete, ensures all images have alt text, and flags inconsistencies in naming or structure. [https://www.designsystems.com/keeping-design-system-contributions-in-check/] UX design consultant and founder Wart Burggraaf is on a mission to automate the governance of design systems. Read his thoughts on keeping design system contributions in check [https://www.designsystems.com/keeping-design-system-contributions-in-check/]. ### Making it work for everyone [#making-it-work-for-everyone] Different team members need different things from your documentation—success requires understanding those distinct needs for each audience. At Alaska Airlines [https://www.figma.com/blog/alaska-airlines-reaches-new-heights-with-the-help-of-variables/], designers struggled with pixel-perfect implementation while developers received mismatched designs. Product Designer June Lee focused on documenting key features when moving their Auro design system to Figma.",
+      "metadata": {
+        "startIndex": 16605,
+        "endIndex": 17563,
+        "chunkIndex": 19,
+        "section": "Introduction",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "esigner June Lee focused on documenting key features when moving their Auro design system to Figma. “I really focused on education with our designers so they could understand what Figma could do,” she says. “I could see that designers were better utilizing Figma, and that meant fewer conflicts between designers and engineers.” Here’s a look at what each collaborator might find most useful: #### For designers [#for-designers] • Visual examples and usage patterns • Component variants and states • Design token implementation • Grid systems and spacing • Asset libraries and resources #### For developers [#for-developers] • Technical specifications • API documentation • Integration guides • Testing requirements • Performance considerations #### For product managers [#for-product-managers] • High-level system overview • Component selection guidance • Feature roadmap • Release notes and updates [https://www.youtube.com/watch?v=PQdY1bx0uw8&list=PLXDU_eVOJTx79mRuq_qHx4uDmIOzZLRnR] Figma",
+      "metadata": {
+        "startIndex": 17463,
+        "endIndex": 18456,
+        "chunkIndex": 20,
+        "section": "Introduction",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "updates [https://www.youtube.com/watch?v=PQdY1bx0uw8&list=PLXDU_eVOJTx79mRuq_qHx4uDmIOzZLRnR] Figma Designer Advocate Ana Boyer hosts a Design to Code: Roundtable discussion with Bumble, GitHub, and HP [https://www.youtube.com/watch?v=PQdY1bx0uw8&list=PLXDU_eVOJTx79mRuq_qHx4uDmIOzZLRnR], where they discuss the common challenges their design systems teams face in connecting design to code and share their first impressions of Code Connect. ### Gathering feedback and measuring impact [#gathering-feedback-and-measuring-impact] At Razorpay, success isn’t measured by adoption numbers alone—it’s about the tangible impact on workflows and collaboration. They set concrete goals [https://www.figma.com/blog/how-razorpay-sharpened-developer-workflows/]: Teams building new features should use their system for 70% of their design work, while existing products aim for 50% coverage. “We surveyed our designers and developers, and 80% said that they felt more productive when using our Blade design",
+      "metadata": {
+        "startIndex": 18356,
+        "endIndex": 19351,
+        "chunkIndex": 21,
+        "section": "Introduction",
+        "globalChunkIndex": 21
+      }
+    },
+    {
+      "id": "chunk-22",
+      "text": "r designers and developers, and 80% said that they felt more productive when using our Blade design system versus without it,” shares Saurav Rastogi, Staff Designer. When gathering feedback and proofpoints for your own system, look beyond simple page views to understand how documentation influences behavior. Consider user testing and interviews to gather comprehensive feedback. By prioritizing continuous improvement and iteration, you can ensure that your design system remains a valuable and effective tool for your team, even as your products and processes evolve. [https://www.figma.com/blog/introducing-design-system-analytics/] Tools like Figma’s Design System Analytics [https://www.figma.com/blog/introducing-design-system-analytics/] can provide valuable insights for Organization and Enterprise accounts [https://www.figma.com/pricing/] into how your system is being used and where there may be opportunities for improvement.",
+      "metadata": {
+        "startIndex": 19251,
+        "endIndex": 20190,
+        "chunkIndex": 22,
+        "section": "Introduction",
+        "globalChunkIndex": 22
+      }
+    },
+    {
+      "id": "chunk-23",
+      "text": "/pricing/] into how your system is being used and where there may be opportunities for improvement. Stay tuned for exciting updates to this feature—coming soon! ## Planning for scale [#planning-for-scale] The most effective documentation not only details what exists, but also empowers teams to build better experiences together. Investing in tooling and processes that keep documentation current pays dividends in adoption and consistency. As you think about how to build and evolve your own documentation, consider these takeaways: • Meet teams where they work through integrated tools and custom solutions • Build bridges between disciplines by creating what GitHub’s Lukas Oppermann calls [https://www.figma.com/blog/unlocking-the-power-of-code-connect/] “a third language” where designers and developers can truly communicate • Create clear contribution paths through dedicated teams and regular community engagement • Measure impact by tracking improvements in team productivity and",
+      "metadata": {
+        "startIndex": 20090,
+        "endIndex": 21079,
+        "chunkIndex": 23,
+        "section": "Introduction",
+        "globalChunkIndex": 23
+      }
+    },
+    {
+      "id": "chunk-24",
+      "text": "and regular community engagement • Measure impact by tracking improvements in team productivity and collaboration The future points toward more integrated approaches where documentation lives alongside the work itself. When documentation evolves with your system, adoption naturally follows. The goal isn’t perfect documentation—it’s documentation that helps teams do their best work. What else would you like to learn? Tweet us at @figma [https://www.twitter.com/figma] with your questions. Learn more about how Figma helps teams drive consistency, scale designs, and maintain parity with development using our design systems features [https://www.figma.com/design-systems/?utm_source=Shortcut&utm_medium=Blog&utm_campaign=ds_102&utm_content=ds_102] and request a demo [https://www.figma.com/request-a-demo/?utm_source=Shortcut&utm_medium=Blog&utm_campaign=ds_102&utm_content=ds_102]. Carly Ayres is a writer, formerly on Figma’s editorial team.",
+      "metadata": {
+        "startIndex": 20979,
+        "endIndex": 21926,
+        "chunkIndex": 24,
+        "section": "Introduction",
+        "globalChunkIndex": 24
+      }
+    },
+    {
+      "id": "chunk-25",
+      "text": "m_campaign=ds_102&utm_content=ds_102]. Carly Ayres is a writer, formerly on Figma’s editorial team. She’s written extensively about creative practice and design culture, with work appearing in It’s Nice That, Communication Arts, Wallpaper*, Core77, and elsewhere. Substack [https://carly.substack.com/]LinkedIn [https://www.linkedin.com/in/carlyayres/]X [https://x.com/carlyayres]Instagram [https://instagram.com/carlyayres] ## Subscribe to Figma’s editorial newsletter Enter email* I agree to opt-in to Figma&#x27;s mailing list.* By clicking “Submit” you agree to our TOS [https://www.figma.com/tos/] and Privacy Policy [https://www.figma.com/privacy/]. ## Related articles ### Design system 101: What is a design system? February 12, 2024 By Chad Bergman Understand the basics of design systems, what they are, how they work, and how they can change the way you design. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education",
+      "metadata": {
+        "startIndex": 21826,
+        "endIndex": 22824,
+        "chunkIndex": 25,
+        "section": "Introduction",
+        "globalChunkIndex": 25
+      }
+    },
+    {
+      "id": "chunk-26",
+      "text": "ma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] ### Design system 102: How to build a design system April 8, 2024 By Chad Bergman It’s time to build your design system! We’ll walk you through the basics of creating a system tailored to your unique goals and challenges, whether building from scratch or starting with existing pieces. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] ### Design system 104: Making metrics matter February 11, 2025 By Carly Ayres Behind every successful design",
+      "metadata": {
+        "startIndex": 22724,
+        "endIndex": 23724,
+        "chunkIndex": 26,
+        "section": "Introduction",
+        "globalChunkIndex": 26
+      }
+    },
+    {
+      "id": "chunk-27",
+      "text": "n system 104: Making metrics matter February 11, 2025 By Carly Ayres Behind every successful design system lies a surprising secret: numbers. Learn how tracking the right metrics can transform your design system from a helpful resource into a powerful engine for efficiency. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] ## Create and collaborate with Figma Get started for free [https://www.figma.com/signup] [https://www.figma.com/] • [https://x.com/figma] • [https://www.youtube.com/figmadesign] • [https://www.instagram.com/figma] • [https://www.facebook.com/figmadesign] ## Product • Figma Design [https://www.figma.com/design/] • Dev Mode [https://www.figma.com/dev-mode/] • FigJam [https://www.figma.com/figjam/] • Figma",
+      "metadata": {
+        "startIndex": 23624,
+        "endIndex": 24621,
+        "chunkIndex": 27,
+        "section": "Introduction",
+        "globalChunkIndex": 27
+      }
+    },
+    {
+      "id": "chunk-28",
+      "text": "ign/] • Dev Mode [https://www.figma.com/dev-mode/] • FigJam [https://www.figma.com/figjam/] • Figma Slides [https://www.figma.com/slides/] Figma Draw New Figma Buzz Beta Figma Sites Beta Figma Make Beta • AI [https://www.figma.com/ai/] • Downloads [https://www.figma.com/downloads/] • Release notes [https://www.figma.com/release-notes/] ## Plans • Pricing [https://www.figma.com/pricing/] • Enterprise [https://www.figma.com/enterprise/] • Organization [https://www.figma.com/organization/] • Professional [https://www.figma.com/professional/] ## Use cases • UI design [https://www.figma.com/ui-design-tool/] • UX design [https://www.figma.com/ux-design-tool/] • Wireframing [https://www.figma.com/wireframe-tool/] • Diagramming [https://www.figma.com/figjam/diagramming-tool/] • Prototyping [https://www.figma.com/prototyping/] • Brainstorming [https://www.figma.com/figjam/brainstorming-tool/] • Presentation Maker [https://www.figma.com/presentation-maker/] • Online whiteboard",
+      "metadata": {
+        "startIndex": 24521,
+        "endIndex": 25503,
+        "chunkIndex": 28,
+        "section": "Introduction",
+        "globalChunkIndex": 28
+      }
+    },
+    {
+      "id": "chunk-29",
+      "text": "torming-tool/] • Presentation Maker [https://www.figma.com/presentation-maker/] • Online whiteboard [https://www.figma.com/figjam/online-whiteboard/] • Agile [https://www.figma.com/figjam/agile-workflows/] • Strategic planning [https://www.figma.com/figjam/strategic-planning/] • Mind mapping [https://www.figma.com/figjam/mind-map/] • Online sticky notes [https://www.figma.com/figjam/online-sticky-notes/] • Concept map [https://www.figma.com/figjam/concept-map/] ## Resources • Blog [https://www.figma.com/blog/] • Best practices [https://www.figma.com/best-practices/] • QR code generator [https://www.figma.com/qr-code-generator/] • Color wheel [https://www.figma.com/color-wheel/] • Colors [https://www.figma.com/colors/] • Color picker [https://www.figma.com/color-picker/] • Color palettes [https://www.figma.com/color-palettes/] • Color palette generator [https://www.figma.com/color-palette-generator/] • Color contrast checker [https://www.figma.com/color-contrast-checker/] • Font Library",
+      "metadata": {
+        "startIndex": 25403,
+        "endIndex": 26404,
+        "chunkIndex": 29,
+        "section": "Introduction",
+        "globalChunkIndex": 29
+      }
+    },
+    {
+      "id": "chunk-30",
+      "text": "generator/] • Color contrast checker [https://www.figma.com/color-contrast-checker/] • Font Library [https://www.figma.com/fonts/] • Templates [https://www.figma.com/templates/] • Developers [https://www.figma.com/developers] • Integrations [https://www.figma.com/product-integrations/] • Affiliate program [https://www.figma.com/affiliate-program/] • Resource library [https://www.figma.com/resource-library/] • Reports and insights [https://www.figma.com/reports/] • Support [https://help.figma.com/hc/en-us] • Status [https://status.figma.com/] • Legal and privacy [https://www.figma.com/legal/] • Modern slavery statement [https://static.figma.com/uploads/1b6f8f613c2cc1e77fe543424bbc631298504d35] • Climate disclosure statement [https://static.figma.com/uploads/d2a204b5cc4d64ff539fcd445d0ddedab7dc00f6] ## Compare • Sketch [https://www.figma.com/figma-vs-sketch/] • Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] • Framer [https://www.figma.com/figma-vs-framer/] • Miro",
+      "metadata": {
+        "startIndex": 26304,
+        "endIndex": 27285,
+        "chunkIndex": 30,
+        "section": "Introduction",
+        "globalChunkIndex": 30
+      }
+    },
+    {
+      "id": "chunk-31",
+      "text": "[https://www.figma.com/figma-vs-adobe-xd/] • Framer [https://www.figma.com/figma-vs-framer/] • Miro [https://www.figma.com/figjam-vs-miro/] ## Company • Events [https://www.figma.com/events/] • Customers [https://www.figma.com/customers/] • Careers [https://www.figma.com/careers/] • Newsroom [https://www.figma.com/newsroom/] English",
+      "metadata": {
+        "startIndex": 27185,
+        "endIndex": 28185,
+        "chunkIndex": 31,
+        "section": "Introduction",
+        "globalChunkIndex": 31
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "documentation;adoption;best-practices"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:20.429Z",
+    "system": "Figma",
+    "author": "Carly Ayres",
+    "version": "1.0",
+    "source_url": "https://www.figma.com/blog/design-systems-103-documentation-that-drives-adoption/"
+  }
+}

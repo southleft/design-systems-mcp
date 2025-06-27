@@ -1,0 +1,90 @@
+{
+  "id": "8udIZX0e0IZOsb004jFzG",
+  "title": "Balance Flexibility and Consistency",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/balance-flexibility-and-consistency",
+    "ingested_at": "2025-06-27T02:52:56.159Z"
+  },
+  "content": "Balance flexibility and consistency - The Design System Guide Close Design System # Balance flexibility and consistency Romina Kavcic Tobias Oberpaul, Product Owner of the DB UX Design System at Deutsche Bahn, emphasizes the importance of shared ownership. By involving stakeholders and product teams in the design system's development, organizations can ensure the system remains adaptable to diverse needs while maintaining a unified approach. 🔗 Read the full interview [https://thedesignsystem.guide/interview-tobias-oberpaul] Alberto Calvo, Senior Design Manager, discusses the necessity of a flexible foundation. He notes that a design system should allow for creative solutions without compromising its core logic, enabling teams to innovate within a consistent framework. 🔗 Read the full interview [https://thedesignsystem.guide/interview-alberto-calvo] Katerina Kaleta, Senior Product Designer at ADT, highlights the development of platform-agnostic components. This approach ensures that components function seamlessly across various platforms, balancing consistency with the flexibility to adapt to platform-specific requirements. 🔗 Read the full interview [https://thedesignsystem.guide/interview-katerina-kaleta] Ariel Salminen, Design Systems Architect at Nordhealth, underscores the importance of continuous user engagement. By regularly consulting with users and stakeholders, design systems can evolve to meet changing needs, maintaining flexibility while upholding consistent standards. 🔗 Read the full interview [https://thedesignsystem.guide/interview-ariel-salminen] Next question How do you gather and manage feedback? Published on: Nov 12, 2024 Updated: Updated: Nov 12, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Balance flexibility and consistency - The Design System Guide Close Design System # Balance flexibility and consistency Romina Kavcic Tobias Oberpaul, Product Owner of the DB UX Design System at Deutsche Bahn, emphasizes the importance of shared ownership. By involving stakeholders and product teams in the design system's development, organizations can ensure the system remains adaptable to diverse needs while maintaining a unified approach. 🔗 Read the full interview [https://thedesignsystem.guide/interview-tobias-oberpaul] Alberto Calvo, Senior Design Manager, discusses the necessity of a flexible foundation. He notes that a design system should allow for creative solutions without compromising its core logic, enabling teams to innovate within a consistent framework. 🔗 Read the full interview [https://thedesignsystem.guide/interview-alberto-calvo] Katerina Kaleta, Senior Product Designer at ADT, highlights the development of platform-agnostic components.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 972,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Kaleta, Senior Product Designer at ADT, highlights the development of platform-agnostic components. This approach ensures that components function seamlessly across various platforms, balancing consistency with the flexibility to adapt to platform-specific requirements. 🔗 Read the full interview [https://thedesignsystem.guide/interview-katerina-kaleta] Ariel Salminen, Design Systems Architect at Nordhealth, underscores the importance of continuous user engagement. By regularly consulting with users and stakeholders, design systems can evolve to meet changing needs, maintaining flexibility while upholding consistent standards. 🔗 Read the full interview [https://thedesignsystem.guide/interview-ariel-salminen] Next question How do you gather and manage feedback? Published on: Nov 12, 2024 Updated: Updated: Nov 12, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components",
+      "metadata": {
+        "startIndex": 872,
+        "endIndex": 1872,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory",
+      "metadata": {
+        "startIndex": 1772,
+        "endIndex": 2772,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ubscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️",
+      "metadata": {
+        "startIndex": 2672,
+        "endIndex": 3663,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "cribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a",
+      "metadata": {
+        "startIndex": 3563,
+        "endIndex": 4564,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 4464,
+        "endIndex": 5464,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "flexibility;consistency;balance;principles"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:52:56.159Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/balance-flexibility-and-consistency"
+  }
+}

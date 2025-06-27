@@ -1,0 +1,101 @@
+{
+  "id": "KAO7hVeD9qeUBfP8ssgbJ",
+  "title": "Where Can I Learn More About Storybook",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/where-can-i-learn-more-about-storybook",
+    "ingested_at": "2025-06-27T02:52:57.305Z"
+  },
+  "content": "Where can I learn more about Storybook? - The Design System Guide Close Storybook # Where can I learn more about Storybook? Romina Kavcic Official Storybook Tutorial The official Storybook website offers a comprehensive \"Intro to Storybook\" tutorial that covers the essentials Setting up Storybook in your development environment Building simple and composite components Working with data Constructing screens Deploying Storybook Visual testing Using addons The official tutorial is available for multiple frameworks including React, Vue, Angular, and more 🔗 Read the guides [https://storybook.js.org/tutorials/] 🔗 Storybook Docs [https://storybook.js.org/docs] Getting Started with Storybook: The Ultimate Tool for Component Documentation and Testing 👉 Chapters 0:00 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=0s] Introduction 00:50 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=50s] Setting Up Storybook 01:14 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=74s] Exploring Storybook 01:36 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=96s] The Purpose of Storybook 01:54 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=114s] Storybook File Structure 04:02 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=242s] Metadata and Grouping 04:41 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=281s] Creating a Story 05:23 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=323s] Styling the Footer Component 08:32 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=512s] Storybook Features 09:19 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=559s] Controls and Actions 09:44 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=584s] Accessibility Testing 📹 Watch the video [https://www.youtube.com/watch?v=PMNAehI0_cI] Design Systems for Developers 🔗 Read the guide [https://storybook.js.org/tutorials/design-systems-for-developers/] 6 Storybook Tutorials for Product Development Teams 🔗 Read the guides [https://www.uxpin.com/studio/blog/storybook-tutorial/] Next question How can I create a Personal Access Token on GitHub? Published on: Nov 8, 2024 Updated: Updated: Nov 8, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Where can I learn more about Storybook? - The Design System Guide Close Storybook # Where can I learn more about Storybook? Romina Kavcic Official Storybook Tutorial The official Storybook website offers a comprehensive \"Intro to Storybook\" tutorial that covers the essentials Setting up Storybook in your development environment Building simple and composite components Working with data Constructing screens Deploying Storybook Visual testing Using addons The official tutorial is available for multiple frameworks including React, Vue, Angular, and more 🔗 Read the guides [https://storybook.js.org/tutorials/] 🔗 Storybook Docs [https://storybook.js.org/docs] Getting Started with Storybook: The Ultimate Tool for Component Documentation and Testing 👉 Chapters 0:00 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=0s] Introduction 00:50 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=50s] Setting Up Storybook 01:14 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=74s] Exploring Storybook 01:36",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 998,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ng Up Storybook 01:14 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=74s] Exploring Storybook 01:36 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=96s] The Purpose of Storybook 01:54 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=114s] Storybook File Structure 04:02 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=242s] Metadata and Grouping 04:41 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=281s] Creating a Story 05:23 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=323s] Styling the Footer Component 08:32 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=512s] Storybook Features 09:19 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=559s] Controls and Actions 09:44 [https://www.youtube.com/watch?v=PMNAehI0_cI&t=584s] Accessibility Testing 📹 Watch the video [https://www.youtube.com/watch?v=PMNAehI0_cI] Design Systems for Developers 🔗 Read the guide [https://storybook.js.org/tutorials/design-systems-for-developers/] 6 Storybook Tutorials for Product Development Teams 🔗 Read the guides",
+      "metadata": {
+        "startIndex": 898,
+        "endIndex": 1895,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ign-systems-for-developers/] 6 Storybook Tutorials for Product Development Teams 🔗 Read the guides [https://www.uxpin.com/studio/blog/storybook-tutorial/] Next question How can I create a Personal Access Token on GitHub? Published on: Nov 8, 2024 Updated: Updated: Nov 8, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2",
+      "metadata": {
+        "startIndex": 1795,
+        "endIndex": 2796,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "em Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic]",
+      "metadata": {
+        "startIndex": 2696,
+        "endIndex": 3691,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship",
+      "metadata": {
+        "startIndex": 3591,
+        "endIndex": 4591,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ps://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship",
+      "metadata": {
+        "startIndex": 4491,
+        "endIndex": 5463,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ps://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 5363,
+        "endIndex": 6363,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "storybook;documentation;resources"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:52:57.305Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/where-can-i-learn-more-about-storybook"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "AlnJxaw69IEAnEw0WEB6R",
+  "title": "Figma Variables Mapped to Styles",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/figma-variables-mapped-to-styles",
+    "ingested_at": "2025-06-27T02:53:04.173Z"
+  },
+  "content": "Figma Variables Mapped to Styles - The Design System Guide Close Figma Variables # Figma Variables Mapped to Styles Romina Kavcic Find ways to automate migration from Figma styles to Figma Variables Here are the main points about using variables and styles in Figma: Both create reusable design elements but differ in important ways: Variables hold simple values (like colors, numbers, string), while styles can include complex formats. Variables work in different modes (like light and dark), but styles do not. You can use variables as \"primitive design tokens\" or \"semantic design tokens.\" You can do that by connecting values from different collections. If you are using Figma styles and want to automate migrating to Figma Variables, you can use these plugins: Generating variables & Linking styles (Figma plugin) 🔗 Get the plugin [https://www.figma.com/community/plugin/1254734842186427768/generating-variables-linking-styles] Styles to Variables Converter 🔗 Get the plugin [https://www.figma.com/community/plugin/1253585487427690087/styles-to-variables-converter] Apply variables 🔗 Get the plugin [https://www.figma.com/community/plugin/1264259625007726988/apply-variables] Tokens Studio plugin 🔗 Get the plugin [https://tokens.studio/] Figma Variables Map - Creating Variables in Figma Design System Tutorial [Figma Community File] 📹 Watch the video [https://www.youtube.com/watch?v=Yu7MzVgx2Ko] Next question What are the best Figma tools/plugins for managing themes? Published on: Aug 27, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Figma Variables Mapped to Styles - The Design System Guide Close Figma Variables # Figma Variables Mapped to Styles Romina Kavcic Find ways to automate migration from Figma styles to Figma Variables Here are the main points about using variables and styles in Figma: Both create reusable design elements but differ in important ways: Variables hold simple values (like colors, numbers, string), while styles can include complex formats. Variables work in different modes (like light and dark), but styles do not. You can use variables as \"primitive design tokens\" or \"semantic design tokens.\" You can do that by connecting values from different collections. If you are using Figma styles and want to automate migrating to Figma Variables, you can use these plugins: Generating variables & Linking styles (Figma plugin) 🔗 Get the plugin [https://www.figma.com/community/plugin/1254734842186427768/generating-variables-linking-styles] Styles to Variables Converter 🔗 Get the plugin",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 982,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "34842186427768/generating-variables-linking-styles] Styles to Variables Converter 🔗 Get the plugin [https://www.figma.com/community/plugin/1253585487427690087/styles-to-variables-converter] Apply variables 🔗 Get the plugin [https://www.figma.com/community/plugin/1264259625007726988/apply-variables] Tokens Studio plugin 🔗 Get the plugin [https://tokens.studio/] Figma Variables Map - Creating Variables in Figma Design System Tutorial [Figma Community File] 📹 Watch the video [https://www.youtube.com/watch?v=Yu7MzVgx2Ko] Next question What are the best Figma tools/plugins for managing themes? Published on: Aug 27, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic.",
+      "metadata": {
+        "startIndex": 882,
+        "endIndex": 1862,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design",
+      "metadata": {
+        "startIndex": 1762,
+        "endIndex": 2763,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "rt-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System",
+      "metadata": {
+        "startIndex": 2663,
+        "endIndex": 3658,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions",
+      "metadata": {
+        "startIndex": 3558,
+        "endIndex": 4549,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "./knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 4449,
+        "endIndex": 5449,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma;variables;styles;mapping"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:53:04.173Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/figma-variables-mapped-to-styles"
+  }
+}

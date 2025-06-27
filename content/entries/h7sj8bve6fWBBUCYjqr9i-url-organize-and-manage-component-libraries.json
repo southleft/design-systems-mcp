@@ -1,0 +1,255 @@
+{
+  "id": "h7sj8bve6fWBBUCYjqr9i",
+  "title": "Organize and Manage Component Libraries",
+  "source": {
+    "type": "url",
+    "location": "https://help.figma.com/hc/en-us/articles/360061175334",
+    "ingested_at": "2025-06-27T03:09:58.991Z"
+  },
+  "content": "Create interactive components with variants &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Components [/hc/en-us/sections/4403935997847-Components] Create interactive components with variants Who can use this feature Supported on any team or plan [https://help.figma.com/hc/en-us/articles/360040328273-Plans-and-teams-in-Figma]. Anyone with can edit access can create interactive components. Anyone with can edit access to the file can publish components to a library. New to Prototyping? Check out our Guide to prototyping in Figma → [https://help.figma.com/hc/en-us/articles/360040314193] Interactive components allow you to create prototype interactions between variants in a component set. Any time you add an instance to your designs, those interactions are set up and ready to go. This saves you time when creating prototypes and prevents unnecessary noodle soup. • Create interactive elements that automatically switch between variants, like buttons that change from hover to pressed states. • Set default interactions at a component level and remove the guesswork when it comes to building prototypes. • Reduce the amount of frames and connections needed to prototype input fields, like a set of checkboxes or toggles. Note: Interactive components are an extension of variants. If you don't have a component set to work with, you'll need to create one first. Learn how to create and use variants → [https://help.figma.com/hc/en-us/articles/360056440594] ### Before variant interactions In the example below we've added all the possible connections to prototype a frame with five checkboxes. Without interactive components, we would need to duplicate the same frame 32 times and create 160 connections between them to prototype every possible combination. ### With variant interactions With interactive components, we only need to add an instance of the checkbox to our design and its variant interactions are ready to go. When we view the prototype, Figma automatically switches between the checked and unchecked variants. # Create interactive components You can only create interactive components using variants from the same component set. If you don't have a component set to work with, you'll need to create one first. Learn how to create variants → [https://help.figma.com/hc/en-us/articles/360056440594] ## Create variant interactions Interactive components introduces a new prototype action [https://help.figma.com/hc/en-us/articles/360040035874]: Change to. • Navigate to the Prototype tab of the right sidebar. • Click the on the frame's bounding box and drag it to the destination variant. You can also click the in the Interactions section of the Prototype panel, set the action to Change to, then select the destination variant using the dropdown menu. • Once the connection has been made, use the Interaction panel to adjust the trigger and action. You can also use the Change to action on a nested instance to change the parent component variant. In the example below, a variant from a component set is nested within another `Expandable` component set. A Change to interaction is placed on the nested instance to change the parent component from its `Collapsed` variant to its `Expanded` variant. Hands-on learner? Explore the interactive components playground file → [https://www.figma.com/community/file/1033456279024883078] # Use interactive components Add instances of interactive components to your designs like any other component. The only difference is the instances already have interactions applied for prototyping. To use interactive components: Add an instance [https://help.figma.com/hc/en-us/articles/360039150173-Create-an-instance-of-a-component#Component_from_other_files] of an interactive component to a frame in your design. • When you're ready to prototype your design, navigate to the Prototype tab of the right sidebar. Build your prototype [https://help.figma.com/hc/en-us/articles/360040314193]. Preview designs and interactions in Presentation view [https://help.figma.com/hc/en-us/articles/360040318013]. Note: Figma will use the existing rules to preserve any overrides [https://help.figma.com/hc/en-us/articles/360039150733-Apply-overrides-to-instances#Preserve_overrides] you apply to the default variant in a component set. For example: changing the contents of a button label or swapping an icon. When you add an instance of a component set to the canvas, you also bring along the other variants in that component set. While you can technically still apply overrides to those other variants, Figma won't reflect those overrides in presentation view. ## Add more interactions When you're building a prototype with interactive components, you can add regular interactions on top of the variant interactions. In the example below, we have added an interaction with a hover trigger on top of the variant interaction triggered by a click. The interaction order will depend on whether the triggers you use are the same triggers as the variant interactions. Learn more about prototype triggers → [https://help.figma.com/hc/en-us/articles/360040035834] ### Same triggers When both interactions use the same trigger, Figma will use the prototype interaction and ignore the variant interaction. For example: • A toggle switch has an `On click` → `Change to` variant interaction between the On and Off variants in its component set. • You add an `On click` → `Navigate to` interaction from the toggle switch to another frame. Figma will navigate to the next frame when the user clicks on the toggle switch. ### Different triggers When you add an interaction with a different trigger, Figma will play both the interaction and the variant interactions. For example: • A button has an `On hover` → `Change to` variant interaction between the default and hover variants. • You add an `On click` → `Navigate to` interaction when building your prototype. Figma will `Change to` the hover variant on `hover` , then `Navigate to` the next frame `On click`. ## View interactions When using interactive components, you will see separate sections for Interactions and Variant interactions in the Prototype tab of the right sidebar. Use the Interactions section to create prototype interactions and animations [https://help.figma.com/hc/en-us/articles/360040315773-Prototype-interactions-and-animations] • Use the Variant interactions section view a variant interaction's details ## Edit variant interactions You can override a variant interaction for an instance in your prototype. If you want to edit a variant interaction for the main component, you'll need to do so from the source file. To access a component set from an instance and make your edits: • In design mode, select the instance. • At the top of the right sidebar, click . • Select Go to main component. • Navigate to the Prototype tab of the right sidebar. • Make your edits to the variant interactions. ## State management across frames Your prototypes likely involve interactions across multiple frames. By default, Figma uses state management controls to determine how interactive components work across frames. State memorization: Figma memorizes the last set variant of your interactive component. For example, you might have an interactive component for a checkbox. If you set the interactive component to the checked variant, Figma remembers the state of that variant. This means that if you navigate away from that frame and come back to it later, the interactive component will remain in the checked state. State sharing: Figma shares states between matching interactive components. States are only shared after the component has been initially interacted with. For example, you might have an interactive component for a checkbox, with an instance of the component on each of two frames. If you set the interactive component to the checked variant on the first frame, then navigate to the second frame, the matching component on the second frame will also be set to the checked variant. If you don’t want to maintain states across frames, check off Reset component state on the Interaction details panel of the prototype interaction. Learn more about prototype state management → [https://help.figma.com/hc/en-us/articles/14397859494295] ## Use with variables Apply variables [https://help.figma.com/hc/en-us/articles/15339657135383] to interactive components to extend their power even further. When you click an interactive component with an applied variable: • The variant updates • The variable updates, which in turn updates any other elements bound to that same variable Learn more about using variables with interactive components → [https://help.figma.com/hc/en-us/articles/14506587589399#Use_variables_with_interactive_components] ## Interactive components with custom fonts When using custom fonts for text inside interactive components, keep in mind that prototype viewers might not have those custom fonts installed on their devices. In these cases, Figma uses cached information about variants of interactive components to display custom fonts correctly when presenting a prototype, but may replace a font with Inter when we can’t both preserve text overrides and change font settings for an interaction. For example, let's say a person viewing your prototype doesn't have the custom font being used installed on their device. If an instance of an interactive component has a text overrides: • Figma may replace the custom font with Inter if the change in variants includes changing a font setting like weight or underline. • Figma will display the correct font if the change in variant isn't related to a font setting, like a button's background color. We recommend using Google fonts [https://fonts.google.com/] for prototypes that are being shared with viewers who may not have access to custom fonts in your designs. If your team is on the Organization or Enterprise plan [https://help.figma.com/hc/en-us/articles/360040328273-Compare-teams-and-plans#Organization_plan], you can make sure prototype viewers have access to custom fonts by uploading them as shared fonts [https://help.figma.com/hc/en-us/articles/360039956774]. Tip! Visit the Figma Forum [https://forum.figma.com/] to ask questions, share feedback, and connect with the Figma community! Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Create interactive components with variants &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311]",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1000,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication",
+      "metadata": {
+        "startIndex": 900,
+        "endIndex": 1868,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "06606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials.",
+      "metadata": {
+        "startIndex": 1768,
+        "endIndex": 2753,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "s Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma",
+      "metadata": {
+        "startIndex": 2653,
+        "endIndex": 3611,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "a Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions",
+      "metadata": {
+        "startIndex": 3511,
+        "endIndex": 4471,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "00000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Components [/hc/en-us/sections/4403935997847-Components] Create interactive components with variants Who can use this feature Supported on any team or plan [https://help.figma.com/hc/en-us/articles/360040328273-Plans-and-teams-in-Figma]. Anyone with can edit access can create interactive components. Anyone with can edit access to the file can publish components to a library. New to Prototyping? Check out our Guide to prototyping in Figma → [https://help.figma.com/hc/en-us/articles/360040314193] Interactive components allow you to create prototype interactions between variants in a component set.",
+      "metadata": {
+        "startIndex": 4371,
+        "endIndex": 5361,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "eractive components allow you to create prototype interactions between variants in a component set. Any time you add an instance to your designs, those interactions are set up and ready to go. This saves you time when creating prototypes and prevents unnecessary noodle soup. • Create interactive elements that automatically switch between variants, like buttons that change from hover to pressed states. • Set default interactions at a component level and remove the guesswork when it comes to building prototypes. • Reduce the amount of frames and connections needed to prototype input fields, like a set of checkboxes or toggles. Note: Interactive components are an extension of variants. If you don't have a component set to work with, you'll need to create one first. Learn how to create and use variants → [https://help.figma.com/hc/en-us/articles/360056440594] ### Before variant interactions In the example below we've added all the possible connections to prototype a frame with five",
+      "metadata": {
+        "startIndex": 5261,
+        "endIndex": 6254,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ctions In the example below we've added all the possible connections to prototype a frame with five checkboxes. Without interactive components, we would need to duplicate the same frame 32 times and create 160 connections between them to prototype every possible combination. ### With variant interactions With interactive components, we only need to add an instance of the checkbox to our design and its variant interactions are ready to go. When we view the prototype, Figma automatically switches between the checked and unchecked variants. # Create interactive components You can only create interactive components using variants from the same component set. If you don't have a component set to work with, you'll need to create one first. Learn how to create variants → [https://help.figma.com/hc/en-us/articles/360056440594] ## Create variant interactions Interactive components introduces a new prototype action [https://help.figma.com/hc/en-us/articles/360040035874]: Change to.",
+      "metadata": {
+        "startIndex": 6154,
+        "endIndex": 7141,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "troduces a new prototype action [https://help.figma.com/hc/en-us/articles/360040035874]: Change to. • Navigate to the Prototype tab of the right sidebar. • Click the on the frame's bounding box and drag it to the destination variant. You can also click the in the Interactions section of the Prototype panel, set the action to Change to, then select the destination variant using the dropdown menu. • Once the connection has been made, use the Interaction panel to adjust the trigger and action. You can also use the Change to action on a nested instance to change the parent component variant. In the example below, a variant from a component set is nested within another `Expandable` component set. A Change to interaction is placed on the nested instance to change the parent component from its `Collapsed` variant to its `Expanded` variant. Hands-on learner? Explore the interactive components playground file → [https://www.figma.com/community/file/1033456279024883078] # Use interactive",
+      "metadata": {
+        "startIndex": 7041,
+        "endIndex": 8034,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "ents playground file → [https://www.figma.com/community/file/1033456279024883078] # Use interactive components Add instances of interactive components to your designs like any other component. The only difference is the instances already have interactions applied for prototyping. To use interactive components: Add an instance [https://help.figma.com/hc/en-us/articles/360039150173-Create-an-instance-of-a-component#Component_from_other_files] of an interactive component to a frame in your design. • When you're ready to prototype your design, navigate to the Prototype tab of the right sidebar. Build your prototype [https://help.figma.com/hc/en-us/articles/360040314193]. Preview designs and interactions in Presentation view [https://help.figma.com/hc/en-us/articles/360040318013]. Note: Figma will use the existing rules to preserve any overrides [https://help.figma.com/hc/en-us/articles/360039150733-Apply-overrides-to-instances#Preserve_overrides] you apply to the default variant in a",
+      "metadata": {
+        "startIndex": 7934,
+        "endIndex": 8929,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "360039150733-Apply-overrides-to-instances#Preserve_overrides] you apply to the default variant in a component set. For example: changing the contents of a button label or swapping an icon. When you add an instance of a component set to the canvas, you also bring along the other variants in that component set. While you can technically still apply overrides to those other variants, Figma won't reflect those overrides in presentation view. ## Add more interactions When you're building a prototype with interactive components, you can add regular interactions on top of the variant interactions. In the example below, we have added an interaction with a hover trigger on top of the variant interaction triggered by a click. The interaction order will depend on whether the triggers you use are the same triggers as the variant interactions. Learn more about prototype triggers → [https://help.figma.com/hc/en-us/articles/360040035834] ### Same triggers When both interactions use the same trigger,",
+      "metadata": {
+        "startIndex": 8829,
+        "endIndex": 9829,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": ".com/hc/en-us/articles/360040035834] ### Same triggers When both interactions use the same trigger, Figma will use the prototype interaction and ignore the variant interaction. For example: • A toggle switch has an `On click` → `Change to` variant interaction between the On and Off variants in its component set. • You add an `On click` → `Navigate to` interaction from the toggle switch to another frame. Figma will navigate to the next frame when the user clicks on the toggle switch. ### Different triggers When you add an interaction with a different trigger, Figma will play both the interaction and the variant interactions. For example: • A button has an `On hover` → `Change to` variant interaction between the default and hover variants. • You add an `On click` → `Navigate to` interaction when building your prototype. Figma will `Change to` the hover variant on `hover` , then `Navigate to` the next frame `On click`.",
+      "metadata": {
+        "startIndex": 9729,
+        "endIndex": 10659,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "Figma will `Change to` the hover variant on `hover` , then `Navigate to` the next frame `On click`. ## View interactions When using interactive components, you will see separate sections for Interactions and Variant interactions in the Prototype tab of the right sidebar. Use the Interactions section to create prototype interactions and animations [https://help.figma.com/hc/en-us/articles/360040315773-Prototype-interactions-and-animations] • Use the Variant interactions section view a variant interaction's details ## Edit variant interactions You can override a variant interaction for an instance in your prototype. If you want to edit a variant interaction for the main component, you'll need to do so from the source file. To access a component set from an instance and make your edits: • In design mode, select the instance. • At the top of the right sidebar, click . • Select Go to main component. • Navigate to the Prototype tab of the right sidebar.",
+      "metadata": {
+        "startIndex": 10559,
+        "endIndex": 11521,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "debar, click . • Select Go to main component. • Navigate to the Prototype tab of the right sidebar. • Make your edits to the variant interactions. ## State management across frames Your prototypes likely involve interactions across multiple frames. By default, Figma uses state management controls to determine how interactive components work across frames. State memorization: Figma memorizes the last set variant of your interactive component. For example, you might have an interactive component for a checkbox. If you set the interactive component to the checked variant, Figma remembers the state of that variant. This means that if you navigate away from that frame and come back to it later, the interactive component will remain in the checked state. State sharing: Figma shares states between matching interactive components. States are only shared after the component has been initially interacted with.",
+      "metadata": {
+        "startIndex": 11421,
+        "endIndex": 12335,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "eractive components. States are only shared after the component has been initially interacted with. For example, you might have an interactive component for a checkbox, with an instance of the component on each of two frames. If you set the interactive component to the checked variant on the first frame, then navigate to the second frame, the matching component on the second frame will also be set to the checked variant. If you don’t want to maintain states across frames, check off Reset component state on the Interaction details panel of the prototype interaction. Learn more about prototype state management → [https://help.figma.com/hc/en-us/articles/14397859494295] ## Use with variables Apply variables [https://help.figma.com/hc/en-us/articles/15339657135383] to interactive components to extend their power even further. When you click an interactive component with an applied variable: • The variant updates • The variable updates, which in turn updates any other elements bound to that",
+      "metadata": {
+        "startIndex": 12235,
+        "endIndex": 13236,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "The variant updates • The variable updates, which in turn updates any other elements bound to that same variable Learn more about using variables with interactive components → [https://help.figma.com/hc/en-us/articles/14506587589399#Use_variables_with_interactive_components] ## Interactive components with custom fonts When using custom fonts for text inside interactive components, keep in mind that prototype viewers might not have those custom fonts installed on their devices. In these cases, Figma uses cached information about variants of interactive components to display custom fonts correctly when presenting a prototype, but may replace a font with Inter when we can’t both preserve text overrides and change font settings for an interaction. For example, let's say a person viewing your prototype doesn't have the custom font being used installed on their device. If an instance of an interactive component has a text overrides: • Figma may replace the custom font with Inter if the",
+      "metadata": {
+        "startIndex": 13136,
+        "endIndex": 14132,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "n interactive component has a text overrides: • Figma may replace the custom font with Inter if the change in variants includes changing a font setting like weight or underline. • Figma will display the correct font if the change in variant isn't related to a font setting, like a button's background color. We recommend using Google fonts [https://fonts.google.com/] for prototypes that are being shared with viewers who may not have access to custom fonts in your designs. If your team is on the Organization or Enterprise plan [https://help.figma.com/hc/en-us/articles/360040328273-Compare-teams-and-plans#Organization_plan], you can make sure prototype viewers have access to custom fonts by uploading them as shared fonts [https://help.figma.com/hc/en-us/articles/360039956774]. Tip! Visit the Figma Forum [https://forum.figma.com/] to ask questions, share feedback, and connect with the Figma community!",
+      "metadata": {
+        "startIndex": 14032,
+        "endIndex": 14942,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "[https://forum.figma.com/] to ask questions, share feedback, and connect with the Figma community! Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center!",
+      "metadata": {
+        "startIndex": 14842,
+        "endIndex": 15755,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "ttps://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/]",
+      "metadata": {
+        "startIndex": 15655,
+        "endIndex": 16654,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status",
+      "metadata": {
+        "startIndex": 16554,
+        "endIndex": 17533,
+        "chunkIndex": 19,
+        "section": "Introduction",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+      "metadata": {
+        "startIndex": 17433,
+        "endIndex": 18433,
+        "chunkIndex": 20,
+        "section": "Introduction",
+        "globalChunkIndex": 20
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "figma;components;libraries;organization"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T03:09:58.991Z",
+    "system": "Figma",
+    "author": "Figma Help Center",
+    "version": "1.0",
+    "source_url": "https://help.figma.com/hc/en-us/articles/360061175334"
+  }
+}

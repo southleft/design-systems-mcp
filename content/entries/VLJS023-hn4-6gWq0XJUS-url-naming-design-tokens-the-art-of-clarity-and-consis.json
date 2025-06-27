@@ -1,0 +1,178 @@
+{
+  "id": "VLJS023-hn4-6gWq0XJUS",
+  "title": "Naming design tokens: the art of clarity and consistency",
+  "source": {
+    "type": "url",
+    "location": "https://uxdesign.cc/naming-design-tokens-347f630ba4f9",
+    "ingested_at": "2025-06-27T02:45:22.631Z"
+  },
+  "content": "Naming design tokens: the art of clarity and consistency | by Zara Soltani | UX Collective Sitemap [/sitemap/sitemap.xml] Open in app Sign up [https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Sign in [https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Medium Logo Write Sign up [https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Sign in [https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] ## UX Collective · Follow publication [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fcollection%2Fuser-experience-design-1&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&collection=UX+Collective&collectionId=138adf9c44c&source=post_page---publication_nav-138adf9c44c-347f630ba4f9---------------------publication_nav------------------] We believe designers are thinkers as much as they are makers. https://linktr.ee/uxc [https://linktr.ee/uxc] Follow publication [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fcollection%2Fuser-experience-design-1&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&collection=UX+Collective&collectionId=138adf9c44c&source=post_page---post_publication_sidebar-138adf9c44c-347f630ba4f9---------------------post_publication_sidebar------------------] # Naming design tokens: the art of clarity and consistency Zara Soltani [https://zarasoltani.medium.com/?source=post_page---byline--347f630ba4f9---------------------------------------] 6 min read· Dec 16, 2023 -- 4 Listen Share Design tokens act as reusable pieces of code that describe colors, typefaces, spacing, and other visual elements in a design system. Choosing the proper names for your design tokens is critical for maintainability, clarity, and efficiency, just like naming variables in programming. Design token naming structure (Figma owns the image rights) # Why Naming Design Tokens Matters Effective design token names offer several benefits: • Clarity: A well-named token communicates its purpose and function immediately, reducing confusion and uncertainty for designers and developers. • Consistency: Consistency in naming patterns makes the design system easier to navigate and understand, increasing efficiency and reducing errors. • Maintainability: Clear and straightforward names enable updating and evolving the design system easier over time. • Collaboration: When design and development teams share a common understanding of token names, it promotes better communication and collaboration. An example of clear, consistent, maintainable and collaborative naming system. # Design Token Naming Patterns Several typical naming patterns might assist you in successfully organizing and naming your design tokens. They do, however, discuss what, where, and how the token is utilized. 1 Category-based (what): Tokens in this pattern are organized according to their functional category, such as colors, fonts, spacing, or shadows: • `color-primary`: The main color of your brand, used for logos, buttons, and important elements. • `font-body`: The standard font for body text, used in paragraphs and headings. • `spacing-sm`: A small amount of space between elements, often used for padding or margins. • `shadow-card`: A subtle shadow applied to cards to create depth and separation. 2 Component-based (where): Tokens are named in this pattern based on the exact component to which they apply. like: • `button-primary-background`: The background color of a primary button in its default state. • `card-header-title`: The font size and weight for the title in a card header. • `navigation-link-active`: The color of a navigation link when it&#x27;s currently active. • `input-error`: The color and border style used to highlight an error in a form input field. 3 Modifier-based (how): Modifiers are used in this pattern to identify differences within a category or component. like: • `color-primary-hover`: The slightly lighter shade of the primary color used when hovering over a button or element. • `font-body-bold`: A bold version of the body font, used for emphasis. • `spacing-sm-top`: Applies the small space only to the top margin of an element. • `shadow-card-hover`: A slightly stronger shadow applied to a card when hovering over it. Design Token Naming Pattern structure (Figma owns the image rights) # Design Token Naming Principles Here are some key principles to consider when naming your design tokens: • Be descriptive: Use names that are specific and informative, reflecting the token’s purpose and value. Avoid using generic phrases such as “color1” or “spacing2.” Bad: `color1 `Good: `brand-primary ✅` • Make use of context: Include context about the token’s usage, such as the component to which it applies or its role in the design system.Bad: `font-large `Good: `heading-xl ✅` • Keep it brief: Aim for names that are brief and memorable, as well as easy to type and read. Avoid names that are too long or too complicated.Bad: `border-width-slightly-raised `Good: `border-raised ✅` • Maintain consistency: Maintain a consistent naming scheme throughout your design system. This involves employing comparable tokens with the same prefixes, separators, and word order.Bad: `color-button-active` / `active-button-color `Good: `button-primary-active ✅` • Consider the big picture: Think about how your token names will scale as your design system expands. Use names that are specific to a project or component as little as possible.Bad: `hero-banner-background` (specific to one component)Good: `background-hero` (more reusable) `✅` Example of the design token naming principle (Figma owns the image rights) # Tips for Choosing Design Token Names • Use real words: Avoid using abbreviations, symbols, or jargon that may not be universally understood.Bad: `btn-err` (abbreviation for \"button error\")Good: `button-error-state` (clear and explicit) • Start with the basics: Name core tokens like primary colors and fonts first, then expand to more specific tokens.First: `color-primary`, `font-body`, `spacing-sm`Later: `button-primary-hover`, `card-header-title`, `shadow-subtle` • Document your naming system: Clearly document your chosen naming pattern and principles to ensure consistency across the team.``Categories: colors, fonts, spacing, shadowsSubcategories: buttons, cards, headings, inputsModifiers: active, hover, error, disabled Examples of Effective Design Token Names `color-brand-primary, font-heading-xl, spacing-card-margin, button-primary-disabled, navigation-link-hover-underline` Example of the design token naming (Figma owns the image rights) # Token Case Naming: A Matter of Style and Consistency When naming your design tokens, alongside clarity and descriptiveness, you’ll need to decide on a consistent case convention for your naming scheme. This seemingly small detail can impact the overall readability and maintainability of your design system. You have to collaborate with developers to use the code friendly case, which is most likely camelCase or underscore_case. Let’s explore the different options for token case naming: # - PascalCase: Each word starts with a capital letter, with no separators.Example: `PrimaryColor`, `CardHeaderText`, `ButtonHoverState`. 👍 Pros: • Easily readable, especially for longer names. • Commonly used in programming languages, making it familiar to developers. 👎 Cons: • Can appear visually heavy and blocky. • Not as intuitive for non-technical audiences. # - camelCase: Similar to PascalCase, but the first word starts with a lowercase letter.Example: `primaryColor`, `cardHeaderText`, `buttonHoverState`. 👍 Pros: • Slightly less visually imposing than PascalCase. • More common in design circles and documentation. 👎 Cons: • Can still be perceived as technical by non-technical users. • Potential for confusion with variable naming conventions in some programming languages. kebab-case (Figma owns the image rights) # - underscore_case: Words separated by underscores, all lowercase.Example: `primary_color`, `card_header_text`, `button_hover_state`. 👍 Pros: • Clear separation between words, improving readability for all audiences. • Widely used in configuration files and YAML, potentially familiar to designers and developers. 👎 Cons: • Can appear visually cluttered and long, especially with longer names. • Less commonly used in design systems compared to other options. # - kebab-case: Similar to underscore_case, but uses hyphens instead of underscores.Example: `primary-color`, `card-header-text`, `button-hover-state`. 👍 Pros: • Offers a visual distinction from snake_case, potentially aiding readability. • Used in some design systems and CSS naming conventions. 👎 Cons: • Can be visually similar to URLs or file paths, potentially causing confusion. • Not as widely recognized as other case conventions. You can create a clear and consistent naming system for your design tokens by carefully evaluating the principles and patterns outlined above. Not only will this increase the usability and maintainability of your design system, but it will also create greater communication and collaboration between design and development teams. Remember that good design token names are an investment in your design system’s long-term success and scalability. Thanks for the clap 👏 if you liked this article! Also I tried to produce a decent reference based on my experience working on a variety of design systems, and I hope this post was useful. Please stay tuned for additional updates and let me know if you have any questions. Design Systems Figma UX UI Prototyping -- -- 4 [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F347f630ba4f9&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&source=---footer_actions--347f630ba4f9---------------------bookmark_footer------------------] Follow ## Published in UX Collective 553K followers [/followers?source=post_page---post_publication_info--347f630ba4f9---------------------------------------] ·Last published 7 hours ago [/in-a-world-of-infinite-outputs-how-do-you-design-a-single-entry-point-4b2c5a683ec9?source=post_page---post_publication_info--347f630ba4f9---------------------------------------] We believe designers are thinkers as much as they are makers. https://linktr.ee/uxc [https://linktr.ee/uxc] Follow ## Written by Zara Soltani 120 followers [https://zarasoltani.medium.com/followers?source=post_page---post_author_info--347f630ba4f9---------------------------------------] ·19 following [https://medium.com/@zarasoltani/following?source=post_page---post_author_info--347f630ba4f9---------------------------------------] Senior Product Designer | Streamlining Design for Brand Harmony | Fostering User-Centric Solutions.. https://www.linkedin.com/in/zara-soltani/ [https://www.linkedin.com/in/zara-soltani/] ## Responses (4) See all responses Help Status About Careers Press Blog Privacy Rules Terms Text to speech",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Naming design tokens: the art of clarity and consistency | by Zara Soltani | UX Collective Sitemap [/sitemap/sitemap.xml] Open in app Sign up [https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Sign in [https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Medium Logo Write Sign up [https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Sign in",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 808,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "9&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Sign in [https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] ## UX Collective · Follow publication [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fcollection%2Fuser-experience-design-1&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&collection=UX+Collective&collectionId=138adf9c44c&source=post_page---publication_nav-138adf9c44c-347f630ba4f9---------------------publication_nav------------------] We believe designers are thinkers as much as they are makers. https://linktr.ee/uxc [https://linktr.ee/uxc] Follow publication",
+      "metadata": {
+        "startIndex": 708,
+        "endIndex": 1554,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "inkers as much as they are makers. https://linktr.ee/uxc [https://linktr.ee/uxc] Follow publication [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fcollection%2Fuser-experience-design-1&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&collection=UX+Collective&collectionId=138adf9c44c&source=post_page---post_publication_sidebar-138adf9c44c-347f630ba4f9---------------------post_publication_sidebar------------------] # Naming design tokens: the art of clarity and consistency Zara Soltani [https://zarasoltani.medium.com/?source=post_page---byline--347f630ba4f9---------------------------------------] 6 min read· Dec 16, 2023 -- 4 Listen Share Design tokens act as reusable pieces of code that describe colors, typefaces, spacing, and other visual elements in a design system. Choosing the proper names for your design tokens is critical for maintainability, clarity, and efficiency, just like naming variables in",
+      "metadata": {
+        "startIndex": 1454,
+        "endIndex": 2445,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "sign tokens is critical for maintainability, clarity, and efficiency, just like naming variables in programming. Design token naming structure (Figma owns the image rights) # Why Naming Design Tokens Matters Effective design token names offer several benefits: • Clarity: A well-named token communicates its purpose and function immediately, reducing confusion and uncertainty for designers and developers. • Consistency: Consistency in naming patterns makes the design system easier to navigate and understand, increasing efficiency and reducing errors. • Maintainability: Clear and straightforward names enable updating and evolving the design system easier over time. • Collaboration: When design and development teams share a common understanding of token names, it promotes better communication and collaboration. An example of clear, consistent, maintainable and collaborative naming system. # Design Token Naming Patterns Several typical naming patterns might assist you in successfully",
+      "metadata": {
+        "startIndex": 2345,
+        "endIndex": 3339,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "em. # Design Token Naming Patterns Several typical naming patterns might assist you in successfully organizing and naming your design tokens. They do, however, discuss what, where, and how the token is utilized. 1 Category-based (what): Tokens in this pattern are organized according to their functional category, such as colors, fonts, spacing, or shadows: • `color-primary`: The main color of your brand, used for logos, buttons, and important elements. • `font-body`: The standard font for body text, used in paragraphs and headings. • `spacing-sm`: A small amount of space between elements, often used for padding or margins. • `shadow-card`: A subtle shadow applied to cards to create depth and separation. 2 Component-based (where): Tokens are named in this pattern based on the exact component to which they apply. like: • `button-primary-background`: The background color of a primary button in its default state. • `card-header-title`: The font size and weight for the title in a card",
+      "metadata": {
+        "startIndex": 3239,
+        "endIndex": 4233,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "utton in its default state. • `card-header-title`: The font size and weight for the title in a card header. • `navigation-link-active`: The color of a navigation link when it&#x27;s currently active. • `input-error`: The color and border style used to highlight an error in a form input field. 3 Modifier-based (how): Modifiers are used in this pattern to identify differences within a category or component. like: • `color-primary-hover`: The slightly lighter shade of the primary color used when hovering over a button or element. • `font-body-bold`: A bold version of the body font, used for emphasis. • `spacing-sm-top`: Applies the small space only to the top margin of an element. • `shadow-card-hover`: A slightly stronger shadow applied to a card when hovering over it. Design Token Naming Pattern structure (Figma owns the image rights) # Design Token Naming Principles Here are some key principles to consider when naming your design tokens: • Be descriptive: Use names that are specific",
+      "metadata": {
+        "startIndex": 4133,
+        "endIndex": 5131,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "rinciples to consider when naming your design tokens: • Be descriptive: Use names that are specific and informative, reflecting the token’s purpose and value. Avoid using generic phrases such as “color1” or “spacing2.” Bad: `color1 `Good: `brand-primary ✅` • Make use of context: Include context about the token’s usage, such as the component to which it applies or its role in the design system.Bad: `font-large `Good: `heading-xl ✅` • Keep it brief: Aim for names that are brief and memorable, as well as easy to type and read. Avoid names that are too long or too complicated.Bad: `border-width-slightly-raised `Good: `border-raised ✅` • Maintain consistency: Maintain a consistent naming scheme throughout your design system. This involves employing comparable tokens with the same prefixes, separators, and word order.Bad: `color-button-active` / `active-button-color `Good: `button-primary-active ✅` • Consider the big picture: Think about how your token names will scale as your design system",
+      "metadata": {
+        "startIndex": 5031,
+        "endIndex": 6031,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ve ✅` • Consider the big picture: Think about how your token names will scale as your design system expands. Use names that are specific to a project or component as little as possible.Bad: `hero-banner-background` (specific to one component)Good: `background-hero` (more reusable) `✅` Example of the design token naming principle (Figma owns the image rights) # Tips for Choosing Design Token Names • Use real words: Avoid using abbreviations, symbols, or jargon that may not be universally understood.Bad: `btn-err` (abbreviation for \"button error\")Good: `button-error-state` (clear and explicit) • Start with the basics: Name core tokens like primary colors and fonts first, then expand to more specific tokens.First: `color-primary`, `font-body`, `spacing-sm`Later: `button-primary-hover`, `card-header-title`, `shadow-subtle` • Document your naming system: Clearly document your chosen naming pattern and principles to ensure consistency across the team.``Categories: colors, fonts, spacing,",
+      "metadata": {
+        "startIndex": 5931,
+        "endIndex": 6928,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "pattern and principles to ensure consistency across the team.``Categories: colors, fonts, spacing, shadowsSubcategories: buttons, cards, headings, inputsModifiers: active, hover, error, disabled Examples of Effective Design Token Names `color-brand-primary, font-heading-xl, spacing-card-margin, button-primary-disabled, navigation-link-hover-underline` Example of the design token naming (Figma owns the image rights) # Token Case Naming: A Matter of Style and Consistency When naming your design tokens, alongside clarity and descriptiveness, you’ll need to decide on a consistent case convention for your naming scheme. This seemingly small detail can impact the overall readability and maintainability of your design system. You have to collaborate with developers to use the code friendly case, which is most likely camelCase or underscore_case. Let’s explore the different options for token case naming: # - PascalCase: Each word starts with a capital letter, with no separators.Example:",
+      "metadata": {
+        "startIndex": 6828,
+        "endIndex": 7823,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "en case naming: # - PascalCase: Each word starts with a capital letter, with no separators.Example: `PrimaryColor`, `CardHeaderText`, `ButtonHoverState`. 👍 Pros: • Easily readable, especially for longer names. • Commonly used in programming languages, making it familiar to developers. 👎 Cons: • Can appear visually heavy and blocky. • Not as intuitive for non-technical audiences. # - camelCase: Similar to PascalCase, but the first word starts with a lowercase letter.Example: `primaryColor`, `cardHeaderText`, `buttonHoverState`. 👍 Pros: • Slightly less visually imposing than PascalCase. • More common in design circles and documentation. 👎 Cons: • Can still be perceived as technical by non-technical users. • Potential for confusion with variable naming conventions in some programming languages. kebab-case (Figma owns the image rights) # - underscore_case: Words separated by underscores, all lowercase.Example: `primary_color`, `card_header_text`, `button_hover_state`.",
+      "metadata": {
+        "startIndex": 7723,
+        "endIndex": 8706,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "d by underscores, all lowercase.Example: `primary_color`, `card_header_text`, `button_hover_state`. 👍 Pros: • Clear separation between words, improving readability for all audiences. • Widely used in configuration files and YAML, potentially familiar to designers and developers. 👎 Cons: • Can appear visually cluttered and long, especially with longer names. • Less commonly used in design systems compared to other options. # - kebab-case: Similar to underscore_case, but uses hyphens instead of underscores.Example: `primary-color`, `card-header-text`, `button-hover-state`. 👍 Pros: • Offers a visual distinction from snake_case, potentially aiding readability. • Used in some design systems and CSS naming conventions. 👎 Cons: • Can be visually similar to URLs or file paths, potentially causing confusion. • Not as widely recognized as other case conventions. You can create a clear and consistent naming system for your design tokens by carefully evaluating the principles and patterns",
+      "metadata": {
+        "startIndex": 8606,
+        "endIndex": 9602,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "consistent naming system for your design tokens by carefully evaluating the principles and patterns outlined above. Not only will this increase the usability and maintainability of your design system, but it will also create greater communication and collaboration between design and development teams. Remember that good design token names are an investment in your design system’s long-term success and scalability. Thanks for the clap 👏 if you liked this article! Also I tried to produce a decent reference based on my experience working on a variety of design systems, and I hope this post was useful. Please stay tuned for additional updates and let me know if you have any questions. Design Systems Figma UX UI Prototyping -- -- 4",
+      "metadata": {
+        "startIndex": 9502,
+        "endIndex": 10240,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "l updates and let me know if you have any questions. Design Systems Figma UX UI Prototyping -- -- 4 [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F347f630ba4f9&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Fnaming-design-tokens-347f630ba4f9&source=---footer_actions--347f630ba4f9---------------------bookmark_footer------------------] Follow ## Published in UX Collective 553K followers [/followers?source=post_page---post_publication_info--347f630ba4f9---------------------------------------] ·Last published 7 hours ago [/in-a-world-of-infinite-outputs-how-do-you-design-a-single-entry-point-4b2c5a683ec9?source=post_page---post_publication_info--347f630ba4f9---------------------------------------] We believe designers are thinkers as much as they are makers. https://linktr.ee/uxc [https://linktr.ee/uxc] Follow ## Written by Zara Soltani 120 followers",
+      "metadata": {
+        "startIndex": 10140,
+        "endIndex": 11045,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "kers. https://linktr.ee/uxc [https://linktr.ee/uxc] Follow ## Written by Zara Soltani 120 followers [https://zarasoltani.medium.com/followers?source=post_page---post_author_info--347f630ba4f9---------------------------------------] ·19 following [https://medium.com/@zarasoltani/following?source=post_page---post_author_info--347f630ba4f9---------------------------------------] Senior Product Designer | Streamlining Design for Brand Harmony | Fostering User-Centric Solutions.. https://www.linkedin.com/in/zara-soltani/ [https://www.linkedin.com/in/zara-soltani/] ## Responses (4) See all responses Help Status About Careers Press Blog Privacy Rules Terms Text to speech",
+      "metadata": {
+        "startIndex": 10945,
+        "endIndex": 11945,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "design-tokens;naming;standards"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:22.631Z",
+    "system": "UX Collective",
+    "author": "Zara Soltani",
+    "version": "1.0",
+    "source_url": "https://uxdesign.cc/naming-design-tokens-347f630ba4f9"
+  }
+}

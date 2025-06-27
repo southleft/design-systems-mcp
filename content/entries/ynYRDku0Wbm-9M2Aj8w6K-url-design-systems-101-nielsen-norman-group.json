@@ -1,0 +1,233 @@
+{
+  "id": "ynYRDku0Wbm-9M2Aj8w6K",
+  "title": "Design Systems 101 (Nielsen Norman Group)",
+  "source": {
+    "type": "url",
+    "location": "https://www.nngroup.com/articles/design-systems-101/",
+    "ingested_at": "2025-06-27T02:45:26.623Z"
+  },
+  "content": "Design Systems 101 - NN/g Skip to content [#main] Open main navigation Nielsen Norman Group Training & UX Certification All Live Courses [/courses/] Live Online Training Events [/training/live-courses/] Private Team Training [/team-training/] Bulk Discounts [/training/bulk-discounts/] UX Certification [/ux-certification/] Articles & Videos [/articles/] Consulting [/consulting/] Reports & Books [/reports/] About NN/g Overview [/about/] People [/people/] Clients [/about/about-client-list/] News [/news/] Contact Us [/about/contact/] Profile Search Search Reset Search 7 # Design Systems 101 Therese Fessenden Therese Fessenden April 11, 2021 2021-04-11 Share Email article Share on LinkedIn Share on Twitter Summary: A design system is a set of standards to manage design at scale by reducing redundancy while creating a shared language and visual consistency across different pages and channels. As UI design has evolved over the years, the scale and speed at which UI screens must be created has also increased. Not only are there millions of applications and billions of websites (with more created each year), but each of those apps and websites might have hundreds or thousands of pages (or screens). With this drastic expansion comes a dire need for organizations to streamline design work. So, many design teams leverage robust design systems to manage designs at scale. Definition: A design system is a complete set of standards intended to manage design at scale using reusable components and patterns. In This Article: [#] Why Use a Design System? [#toc-why-use-a-design-system-1] Why Not Use a Design System? [#toc-why-not-use-a-design-system-2] Elements of a Design System [#toc-elements-of-a-design-system-3] How to Approach Design-System Adoption [#toc-how-to-approach-design-system-adoption-4] Conclusion [#toc-conclusion-5] ## Why Use a Design System? Design systems, when implemented well, can provide a lot of benefits to a design team: Design (and development) work can be created and replicated quickly and at scale. The primary benefit of design systems is their ability to replicate designs quickly by utilizing premade UI components and elements. Teams can continue to use the same elements over and over, reducing the need to reinvent the wheel and thus risking unintended inconsistency. It alleviates strain on design resources to focus on larger, more complex problems. Since simpler UI elements are created already and reusable, design resources can focus less on tweaking visual appearance and more on more-complex problems (like information prioritization, workflow optimization, and journey management). While this payoff might seem small when you create only a small number of screens, it becomes substantial when you must coordinate efforts across dozens of teams and thousands of screens. It creates a unified language within and between crossfunctional teams. Especially when design responsibilities shift or when teams become geographically dispersed, a unified language reduces wasted design or development time around miscommunications. For example, the functionality or appearance of a dropdown [https://www.nngroup.com/articles/drop-down-menus/] menu would not be debated, since that term is reserved for a specifically defined element within the design system. It creates visual consistency across products, channels, and (potentially siloed) departments. Particularly when teams work in silos, where each product or channel operates independently of the others, the absence of an organization-wide design system can lead to inconsistent visual appearance and experiences that seem fragmented or unrelated to the brand. Design systems provide a single source of components, patterns, and styles and unify disjointed experiences so that they are visually cohesive and appear to be part of the same ecosystem. As an added bonus, any major visual rebrands or redesigns can be managed at scale through the design system. It can serve as an educational tool and reference for junior-level designers and content contributors. Explicitly written usage guidelines and style guides help onboard individual contributors who are new to UI design or content creation and also serve as a reminder for the rest of the contributors. ## Why Not Use a Design System? There are some potential hurdles and limitations which may prevent a design team from using a design system: • Creating and maintaining a design system is a time-intensive activity which requires a dedicated team. Design systems, unfortunately, are not a one-and-done solution. At their best, they are constantly evolving as teams gather feedback from those who use them. • It takes time to teach others how to use the design system. Any design system, even if it were adapted from an existing one, needs instructions for use — otherwise there is a risk that it may be applied inconsistently or incorrectly across screens or across teams. • There may be a perception that projects are static, one-off creations, which generally don’t require reusable components. Whether true or not, this perception may signal a lack of unified strategy across projects and a missed opportunity to increase efficiency. ## Elements of a Design System There are two important parts to a design system: • The design repository • The people who manage it ### Design-System Repository Design repositories can take many forms, but they often contain a style guide, a component library, and a pattern library. #### Style Guide Style guides contain specific implementation guidelines, visual references, and design principles [https://www.nngroup.com/videos/design-principles-101/] for creating interfaces or other design deliverables. The most-common style guides tend to focus on branding (colors, typography, trademarks, logos, and print media), but style guides also offer guidance on content (such as tone of voice [https://www.nngroup.com/articles/tone-of-voice-dimensions/] and language recommendations) and visual- and interaction-design standards (also known as front-end style guides [https://www.nngroup.com/articles/front-end-style-guides/]). These guidelines are sometimes incorporated into the component library as well, to provide relevant guidance in context. The 1976 NASA Graphics Standards Manual (NHB 1430.2) is an example of a thorough branding style guide. It offers much more than remarkably modern visual examples: guidelines on color pairings to improve visibility and readability, explicit design principles, like “A sign should be thought of as a large-scale headline; therefore, language should be clear and concise. Brevity is desirable in order communicate quickly, especially to drivers of vehicles.” Mailchimp’s Content Style Guide contains robust guidelines for how to write different kinds of content so that they align with Mailchimp’s company values and company tone of voice. #### Component Library Component libraries (also known as design libraries) are what many people associate with design systems: these thorough libraries house predetermined, reusable UI elements and serve as a one-stop shop for designers and developers alike to learn about and implement specific UI elements. Creating these libraries takes significant time and resources. In addition to visual examples of components, they include: • Component name: a specific and unique UI component name, to avoid miscommunication between designers and developers • Description: a clear explanation for what this element is and how it is typically used, occasionally accompanied by do’s and don’ts for context and clarification • Attributes: variables or adjustments that can be made to customize or adapt the component for specific needs (i.e., color, size, shape, copy) • State: recommended defaults and the subsequent changes in appearance • Code snippets: the actual code excerpt for the element (some design systems go as far as sharing multiple examples and offering a “sandbox” environment to try out different component customizations) • Front-end & backend frameworks to implement the library (if applicable), to avoid painful and unnecessary debugging Google’s Material Design system [https://www.material.io/] features a component library which includes implementation guidelines and code snippets (shown above) for specific operating systems and frameworks, as well as thorough design guidelines with usability do’s and don’ts in a separate tab. IBM’s Carbon design system [https://www.carbondesignsystem.com/] features usage, style, and code guidelines, as well as accessibility considerations and a code sandbox for designers and developers to visualize any customizations before implementation. #### Pattern Library Sometimes, the terms ‘component library’ and ‘pattern library’ are used synonymously; however, there is a distinction between these two types of libraries. Component libraries specify individual UI elements, while pattern libraries feature collections of UI-element groupings or layouts. Pattern libraries are often thought of as less robust compared to component libraries, but they can be as thorough or as high-level as needed. They typically feature content structures, layouts, and/or templates. Much like the components, the patterns are meant to be reused and adapted. The Atlassian design system [https://atlassian.design/] identifies a number of reusable patterns including a page-header template. Not only does it show a visual example, but it also highlights the exact component that designers should leverage and explains how each component should be used. While many public-sector websites have a long way to go, the US Web Design System (USWDS) [https://designsystem.digital.gov/] is a great starting point to unify many disparate departments and agencies with clear guidelines. The USWDS specifies page templates (pictured above), as well as design principles, components, and coding specifications. ### Design-System Team A design system is only as effective as the team that manages it. Whether created or adapted, design systems require continuous maintenance and oversight to ensure they don’t become outdated, obsolete, or overcrowded with redundant entries or submissions. The size of this team can vary, given that design systems themselves can take on different sizes and levels of customization, but, at a minimum, the team should include 1 interaction designer, 1 visual designer, and 1 developer, each meant to help write interaction-design guidelines, create visual examples, and provide code snippets and implementation specifications for each element, respectively. Ideally, the team should also include a part-time researcher, part-time architect, and content writer, if these roles are explicitly determined in your organization. Lastly, consider securing an executive sponsor (from leadership ranks) to orchestrate design-system efforts. While the lack of a sponsor won’t be a show-stopper, sponsors can secure money and resources, while also conveying the strategic importance of a design system to the rest of the organization. ## How to Approach Design-System Adoption There are generally three approaches to using a design system: • Adopting an existing design system • Adapting an existing design system • Creating your own proprietary or custom design system There are pros and cons to each, but generally speaking, the more custom your design-system solution is, the more time and money it will take to implement. Thus, using an existing design system is the lowest-cost approach and requires the least time to implement. (It will, still, need more time than if you continue design as usual, however, because you will have to either replace or update some UI elements and agree upon a standard). Investment in a custom design system will be worth it if the organization has particular needs that cannot be met by open-source design systems. As customizations and adjustments to the design system increase, the cost savings you may have gained from using the existing design system will diminish, and, in the long run, you may be better off creating your own design system anyway. Be sure you know what your organization needs before you embark on design system endeavors and evaluate the tradeoffs. Depending on budget and needs, companies can select one of three approaches to design systems: adopt an existing system in its entirety, adapt an existing system to the company’s needs, or create an entirely new one. Last, for a proof of concept or an initial prototype which is likely to change, creating a full-fledged design system is probably not going to generate a desirable ROI [https://www.nngroup.com/articles/calculating-roi-design-projects/] in the near term. The benefit, after all, is the replicability of design, which is in the future. Though it may be tempting to establish these from the outset, keep in mind that a design system should not be thought of as a portfolio of work, but rather as a functional toolkit or resource for designers and developers to work more quickly. That said, if you are doubting the usefulness of a design system, it might be worth considering the timescale you will use to evaluate your design work. Design systems are best when the company foresees years of future, replicable design work. ## Conclusion Design systems are made of many components, patterns, styles, and guidelines, which can help operationalize and optimize your design efforts. However, they are designed, managed, and implemented by people. The main factors to consider when creating a design system are the scale and replicability of your projects, as well as the resources and time available. When poorly implemented and maintained, design systems can become unwieldly collections of components and code; but, when implemented well, they can educate team members, streamline work, and enable designers to tackle complex UX problems. ## Related Courses #### Design Systems and Pattern Libraries Increase design quality, consistency, and efficiency Management #### Service Blueprinting Orchestrate people, props, and processes that are core to your digital experience Management #### UX Roadmaps Set a strategic, practical plan to align, prioritize, and communicate UX work. Management Design System,Design Process,DesignOps,Design Operations,Strategy,Branding ## Related Topics Design Process Design Process [/topic/ux-design-process/] Strategy [/topic/strategy/] Branding [/topic/branding/] ## Learn More: Enable cookies to watch NN/g videos Design Systems and Their Benefits Kara Pernice &centerdot; 3 min 5 Common Mistakes When Creating Design Specs Kelley Gordon &centerdot; 4 min 5 Stages of UX Career Progression Rachel Krause &centerdot; 5 min Journey-Centric Design: The Evolution of Design Ops Kim Flaherty &centerdot; 5 min ## Related Articles: 3 Design Processes for High Usability: Iterative Design, Parallel Design, and Competitive Testing Therese Fessenden &centerdot; 7 min Design Thinking: Study Guide Kate Moran and Megan Brown &centerdot; 4 min Getting Started with Journey Mapping: 27 Tips from Practitioners Alita Kendrick &centerdot; 8 min Remote Design Work: Top Challenges Rachel Krause &centerdot; 6 min The 6 Steps to Roadmapping Sarah Gibbons &centerdot; 8 min Design Thinking: The Learner’s Journey Sarah Gibbons &centerdot; 11 min ## Subscribe to Our Newsletter Get weekly UX articles, videos, and upcoming training events straight to your inbox. Email ## Follow Us LinkedIn Instagram Youtube Podcast X (Twitter) Facebook Certification What is UX Certification? [/ux-certification/] Specialties [/ux-certification/specialties/] Exams [/ux-certification/exams/] UX Certified People [/ux-certification/people/] UX Training All Live Courses [/courses/] Live Online Training Events [/training/live-courses/] Private Team Training [/team-training/] Course Calendar [/course-calendar/] Consulting Expert Review [/consulting/expert-review/] User Testing [/consulting/user-testing/] Customized Research [/consulting/user-research/] Applied Workshops [/consulting/applied-workshops/] Keynote Speaking [/consulting/keynote-speaking/] Free Guidance Articles & Videos [/articles/] The NN/g UX Podcast [https://podcasters.spotify.com/pod/show/nngroup] About Why NN/g [/about/why-nng/] About Us [/about/] People [/people/] Clients [/about/about-client-list/] Contact [/about/contact/] Return Policy [/return-policy/] Copyright [/copyright-and-reprint-info/] &copy; 1998-2025 Nielsen Norman Group, All Rights Reserved. • Cookie Preferences • Cookie Declaration [/cookie-declaration/] • Privacy Policy [/privacy-policy/] Top",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Design Systems 101 - NN/g Skip to content [#main] Open main navigation Nielsen Norman Group Training & UX Certification All Live Courses [/courses/] Live Online Training Events [/training/live-courses/] Private Team Training [/team-training/] Bulk Discounts [/training/bulk-discounts/] UX Certification [/ux-certification/] Articles & Videos [/articles/] Consulting [/consulting/] Reports & Books [/reports/] About NN/g Overview [/about/] People [/people/] Clients [/about/about-client-list/] News [/news/] Contact Us [/about/contact/] Profile Search Search Reset Search 7 # Design Systems 101 Therese Fessenden Therese Fessenden April 11, 2021 2021-04-11 Share Email article Share on LinkedIn Share on Twitter Summary: A design system is a set of standards to manage design at scale by reducing redundancy while creating a shared language and visual consistency across different pages and channels. As UI design has evolved over the years, the scale and speed at which UI screens must be created has",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1001,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "s UI design has evolved over the years, the scale and speed at which UI screens must be created has also increased. Not only are there millions of applications and billions of websites (with more created each year), but each of those apps and websites might have hundreds or thousands of pages (or screens). With this drastic expansion comes a dire need for organizations to streamline design work. So, many design teams leverage robust design systems to manage designs at scale. Definition: A design system is a complete set of standards intended to manage design at scale using reusable components and patterns. In This Article: [#] Why Use a Design System? [#toc-why-use-a-design-system-1] Why Not Use a Design System? [#toc-why-not-use-a-design-system-2] Elements of a Design System [#toc-elements-of-a-design-system-3] How to Approach Design-System Adoption [#toc-how-to-approach-design-system-adoption-4] Conclusion [#toc-conclusion-5] ## Why Use a Design System?",
+      "metadata": {
+        "startIndex": 901,
+        "endIndex": 1871,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ow-to-approach-design-system-adoption-4] Conclusion [#toc-conclusion-5] ## Why Use a Design System? Design systems, when implemented well, can provide a lot of benefits to a design team: Design (and development) work can be created and replicated quickly and at scale. The primary benefit of design systems is their ability to replicate designs quickly by utilizing premade UI components and elements. Teams can continue to use the same elements over and over, reducing the need to reinvent the wheel and thus risking unintended inconsistency. It alleviates strain on design resources to focus on larger, more complex problems. Since simpler UI elements are created already and reusable, design resources can focus less on tweaking visual appearance and more on more-complex problems (like information prioritization, workflow optimization, and journey management). While this payoff might seem small when you create only a small number of screens, it becomes substantial when you must coordinate",
+      "metadata": {
+        "startIndex": 1771,
+        "endIndex": 2768,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "all when you create only a small number of screens, it becomes substantial when you must coordinate efforts across dozens of teams and thousands of screens. It creates a unified language within and between crossfunctional teams. Especially when design responsibilities shift or when teams become geographically dispersed, a unified language reduces wasted design or development time around miscommunications. For example, the functionality or appearance of a dropdown [https://www.nngroup.com/articles/drop-down-menus/] menu would not be debated, since that term is reserved for a specifically defined element within the design system. It creates visual consistency across products, channels, and (potentially siloed) departments. Particularly when teams work in silos, where each product or channel operates independently of the others, the absence of an organization-wide design system can lead to inconsistent visual appearance and experiences that seem fragmented or unrelated to the brand.",
+      "metadata": {
+        "startIndex": 2668,
+        "endIndex": 3663,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "d to inconsistent visual appearance and experiences that seem fragmented or unrelated to the brand. Design systems provide a single source of components, patterns, and styles and unify disjointed experiences so that they are visually cohesive and appear to be part of the same ecosystem. As an added bonus, any major visual rebrands or redesigns can be managed at scale through the design system. It can serve as an educational tool and reference for junior-level designers and content contributors. Explicitly written usage guidelines and style guides help onboard individual contributors who are new to UI design or content creation and also serve as a reminder for the rest of the contributors. ## Why Not Use a Design System? There are some potential hurdles and limitations which may prevent a design team from using a design system: • Creating and maintaining a design system is a time-intensive activity which requires a dedicated team.",
+      "metadata": {
+        "startIndex": 3563,
+        "endIndex": 4507,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ating and maintaining a design system is a time-intensive activity which requires a dedicated team. Design systems, unfortunately, are not a one-and-done solution. At their best, they are constantly evolving as teams gather feedback from those who use them. • It takes time to teach others how to use the design system. Any design system, even if it were adapted from an existing one, needs instructions for use — otherwise there is a risk that it may be applied inconsistently or incorrectly across screens or across teams. • There may be a perception that projects are static, one-off creations, which generally don’t require reusable components. Whether true or not, this perception may signal a lack of unified strategy across projects and a missed opportunity to increase efficiency. ## Elements of a Design System There are two important parts to a design system: • The design repository • The people who manage it ### Design-System Repository Design repositories can take many forms, but they",
+      "metadata": {
+        "startIndex": 4407,
+        "endIndex": 5407,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "people who manage it ### Design-System Repository Design repositories can take many forms, but they often contain a style guide, a component library, and a pattern library. #### Style Guide Style guides contain specific implementation guidelines, visual references, and design principles [https://www.nngroup.com/videos/design-principles-101/] for creating interfaces or other design deliverables. The most-common style guides tend to focus on branding (colors, typography, trademarks, logos, and print media), but style guides also offer guidance on content (such as tone of voice [https://www.nngroup.com/articles/tone-of-voice-dimensions/] and language recommendations) and visual- and interaction-design standards (also known as front-end style guides [https://www.nngroup.com/articles/front-end-style-guides/]). These guidelines are sometimes incorporated into the component library as well, to provide relevant guidance in context.",
+      "metadata": {
+        "startIndex": 5307,
+        "endIndex": 6245,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "sometimes incorporated into the component library as well, to provide relevant guidance in context. The 1976 NASA Graphics Standards Manual (NHB 1430.2) is an example of a thorough branding style guide. It offers much more than remarkably modern visual examples: guidelines on color pairings to improve visibility and readability, explicit design principles, like “A sign should be thought of as a large-scale headline; therefore, language should be clear and concise. Brevity is desirable in order communicate quickly, especially to drivers of vehicles.” Mailchimp’s Content Style Guide contains robust guidelines for how to write different kinds of content so that they align with Mailchimp’s company values and company tone of voice. #### Component Library Component libraries (also known as design libraries) are what many people associate with design systems: these thorough libraries house predetermined, reusable UI elements and serve as a one-stop shop for designers and developers alike to",
+      "metadata": {
+        "startIndex": 6145,
+        "endIndex": 7144,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "determined, reusable UI elements and serve as a one-stop shop for designers and developers alike to learn about and implement specific UI elements. Creating these libraries takes significant time and resources. In addition to visual examples of components, they include: • Component name: a specific and unique UI component name, to avoid miscommunication between designers and developers • Description: a clear explanation for what this element is and how it is typically used, occasionally accompanied by do’s and don’ts for context and clarification • Attributes: variables or adjustments that can be made to customize or adapt the component for specific needs (i.e., color, size, shape, copy) • State: recommended defaults and the subsequent changes in appearance • Code snippets: the actual code excerpt for the element (some design systems go as far as sharing multiple examples and offering a “sandbox” environment to try out different component customizations) • Front-end & backend",
+      "metadata": {
+        "startIndex": 7044,
+        "endIndex": 8035,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "fering a “sandbox” environment to try out different component customizations) • Front-end & backend frameworks to implement the library (if applicable), to avoid painful and unnecessary debugging Google’s Material Design system [https://www.material.io/] features a component library which includes implementation guidelines and code snippets (shown above) for specific operating systems and frameworks, as well as thorough design guidelines with usability do’s and don’ts in a separate tab. IBM’s Carbon design system [https://www.carbondesignsystem.com/] features usage, style, and code guidelines, as well as accessibility considerations and a code sandbox for designers and developers to visualize any customizations before implementation. #### Pattern Library Sometimes, the terms ‘component library’ and ‘pattern library’ are used synonymously; however, there is a distinction between these two types of libraries.",
+      "metadata": {
+        "startIndex": 7935,
+        "endIndex": 8856,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "brary’ are used synonymously; however, there is a distinction between these two types of libraries. Component libraries specify individual UI elements, while pattern libraries feature collections of UI-element groupings or layouts. Pattern libraries are often thought of as less robust compared to component libraries, but they can be as thorough or as high-level as needed. They typically feature content structures, layouts, and/or templates. Much like the components, the patterns are meant to be reused and adapted. The Atlassian design system [https://atlassian.design/] identifies a number of reusable patterns including a page-header template. Not only does it show a visual example, but it also highlights the exact component that designers should leverage and explains how each component should be used. While many public-sector websites have a long way to go, the US Web Design System (USWDS) [https://designsystem.digital.gov/] is a great starting point to unify many disparate departments",
+      "metadata": {
+        "startIndex": 8756,
+        "endIndex": 9757,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": ") [https://designsystem.digital.gov/] is a great starting point to unify many disparate departments and agencies with clear guidelines. The USWDS specifies page templates (pictured above), as well as design principles, components, and coding specifications. ### Design-System Team A design system is only as effective as the team that manages it. Whether created or adapted, design systems require continuous maintenance and oversight to ensure they don’t become outdated, obsolete, or overcrowded with redundant entries or submissions. The size of this team can vary, given that design systems themselves can take on different sizes and levels of customization, but, at a minimum, the team should include 1 interaction designer, 1 visual designer, and 1 developer, each meant to help write interaction-design guidelines, create visual examples, and provide code snippets and implementation specifications for each element, respectively.",
+      "metadata": {
+        "startIndex": 9657,
+        "endIndex": 10595,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "amples, and provide code snippets and implementation specifications for each element, respectively. Ideally, the team should also include a part-time researcher, part-time architect, and content writer, if these roles are explicitly determined in your organization. Lastly, consider securing an executive sponsor (from leadership ranks) to orchestrate design-system efforts. While the lack of a sponsor won’t be a show-stopper, sponsors can secure money and resources, while also conveying the strategic importance of a design system to the rest of the organization. ## How to Approach Design-System Adoption There are generally three approaches to using a design system: • Adopting an existing design system • Adapting an existing design system • Creating your own proprietary or custom design system There are pros and cons to each, but generally speaking, the more custom your design-system solution is, the more time and money it will take to implement.",
+      "metadata": {
+        "startIndex": 10495,
+        "endIndex": 11453,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "the more custom your design-system solution is, the more time and money it will take to implement. Thus, using an existing design system is the lowest-cost approach and requires the least time to implement. (It will, still, need more time than if you continue design as usual, however, because you will have to either replace or update some UI elements and agree upon a standard). Investment in a custom design system will be worth it if the organization has particular needs that cannot be met by open-source design systems. As customizations and adjustments to the design system increase, the cost savings you may have gained from using the existing design system will diminish, and, in the long run, you may be better off creating your own design system anyway. Be sure you know what your organization needs before you embark on design system endeavors and evaluate the tradeoffs. Depending on budget and needs, companies can select one of three approaches to design systems: adopt an existing",
+      "metadata": {
+        "startIndex": 11353,
+        "endIndex": 12351,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "budget and needs, companies can select one of three approaches to design systems: adopt an existing system in its entirety, adapt an existing system to the company’s needs, or create an entirely new one. Last, for a proof of concept or an initial prototype which is likely to change, creating a full-fledged design system is probably not going to generate a desirable ROI [https://www.nngroup.com/articles/calculating-roi-design-projects/] in the near term. The benefit, after all, is the replicability of design, which is in the future. Though it may be tempting to establish these from the outset, keep in mind that a design system should not be thought of as a portfolio of work, but rather as a functional toolkit or resource for designers and developers to work more quickly. That said, if you are doubting the usefulness of a design system, it might be worth considering the timescale you will use to evaluate your design work.",
+      "metadata": {
+        "startIndex": 12251,
+        "endIndex": 13185,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "sign system, it might be worth considering the timescale you will use to evaluate your design work. Design systems are best when the company foresees years of future, replicable design work. ## Conclusion Design systems are made of many components, patterns, styles, and guidelines, which can help operationalize and optimize your design efforts. However, they are designed, managed, and implemented by people. The main factors to consider when creating a design system are the scale and replicability of your projects, as well as the resources and time available. When poorly implemented and maintained, design systems can become unwieldly collections of components and code; but, when implemented well, they can educate team members, streamline work, and enable designers to tackle complex UX problems. ## Related Courses #### Design Systems and Pattern Libraries Increase design quality, consistency, and efficiency Management #### Service Blueprinting Orchestrate people, props, and processes",
+      "metadata": {
+        "startIndex": 13085,
+        "endIndex": 14082,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "tency, and efficiency Management #### Service Blueprinting Orchestrate people, props, and processes that are core to your digital experience Management #### UX Roadmaps Set a strategic, practical plan to align, prioritize, and communicate UX work. Management Design System,Design Process,DesignOps,Design Operations,Strategy,Branding ## Related Topics Design Process Design Process [/topic/ux-design-process/] Strategy [/topic/strategy/] Branding [/topic/branding/] ## Learn More: Enable cookies to watch NN/g videos Design Systems and Their Benefits Kara Pernice &centerdot; 3 min 5 Common Mistakes When Creating Design Specs Kelley Gordon &centerdot; 4 min 5 Stages of UX Career Progression Rachel Krause &centerdot; 5 min Journey-Centric Design: The Evolution of Design Ops Kim Flaherty &centerdot; 5 min ## Related Articles: 3 Design Processes for High Usability: Iterative Design, Parallel Design, and Competitive Testing Therese Fessenden &centerdot; 7 min Design Thinking: Study Guide Kate",
+      "metadata": {
+        "startIndex": 13982,
+        "endIndex": 14979,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "sign, and Competitive Testing Therese Fessenden &centerdot; 7 min Design Thinking: Study Guide Kate Moran and Megan Brown &centerdot; 4 min Getting Started with Journey Mapping: 27 Tips from Practitioners Alita Kendrick &centerdot; 8 min Remote Design Work: Top Challenges Rachel Krause &centerdot; 6 min The 6 Steps to Roadmapping Sarah Gibbons &centerdot; 8 min Design Thinking: The Learner’s Journey Sarah Gibbons &centerdot; 11 min ## Subscribe to Our Newsletter Get weekly UX articles, videos, and upcoming training events straight to your inbox. Email ## Follow Us LinkedIn Instagram Youtube Podcast X (Twitter) Facebook Certification What is UX Certification? [/ux-certification/] Specialties [/ux-certification/specialties/] Exams [/ux-certification/exams/] UX Certified People [/ux-certification/people/] UX Training All Live Courses [/courses/] Live Online Training Events [/training/live-courses/] Private Team Training [/team-training/] Course Calendar [/course-calendar/] Consulting",
+      "metadata": {
+        "startIndex": 14879,
+        "endIndex": 15875,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "ve-courses/] Private Team Training [/team-training/] Course Calendar [/course-calendar/] Consulting Expert Review [/consulting/expert-review/] User Testing [/consulting/user-testing/] Customized Research [/consulting/user-research/] Applied Workshops [/consulting/applied-workshops/] Keynote Speaking [/consulting/keynote-speaking/] Free Guidance Articles & Videos [/articles/] The NN/g UX Podcast [https://podcasters.spotify.com/pod/show/nngroup] About Why NN/g [/about/why-nng/] About Us [/about/] People [/people/] Clients [/about/about-client-list/] Contact [/about/contact/] Return Policy [/return-policy/] Copyright [/copyright-and-reprint-info/] &copy; 1998-2025 Nielsen Norman Group, All Rights Reserved. • Cookie Preferences • Cookie Declaration [/cookie-declaration/] • Privacy Policy [/privacy-policy/] Top",
+      "metadata": {
+        "startIndex": 15775,
+        "endIndex": 16775,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "standards;scale;consistency"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:26.623Z",
+    "system": "Nielsen Norman Group",
+    "author": "Therese Fessenden",
+    "version": "1.0",
+    "source_url": "https://www.nngroup.com/articles/design-systems-101/"
+  }
+}

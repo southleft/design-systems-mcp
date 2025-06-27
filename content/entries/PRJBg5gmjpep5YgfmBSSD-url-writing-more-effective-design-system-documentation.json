@@ -1,0 +1,123 @@
+{
+  "id": "PRJBg5gmjpep5YgfmBSSD",
+  "title": "Writing More Effective Design System Documentation",
+  "source": {
+    "type": "url",
+    "location": "https://rossmoody.com/writing/effective-ds-documentation",
+    "ingested_at": "2025-06-27T02:45:24.583Z"
+  },
+  "content": "Writing More Effective Design System Documentation - Ross Moody Ross Moody [/]Writing [/writing] • Home [/]/ • Writing [/writing] # Writing More Effective Design System Documentation Practical tactics for writing helpful design guidelines. Last updated: Fri Apr 01 2022 Creating effective documentation is a really important part of a design system. The key word there is effective. My experience with design system documentation is that there is rarely a shortage of information. Helping people understand how to use the system by presenting it in an organized and succinct fashion is the hard part. To make matters worse, design system documentation is a moving target. Standards and guidelines evolve over time with the products they serve. You don’t write it once and move on. You write it once and maintain it forever. I’m a designer by trade so to keep from getting overwhelmed with all these words flying around, I started to record practical tactics to use for auditing my own writing habits. ## 1. Partner with a writer This is a rather odd tip to lead with for improving your writing but the hard truth is if you aren’t a UX writer or a content strategist, reading this blog post isn’t going to make you one. The tips below will help set a better foundation for communicating a cohesive vision, but most good practices I’ve learned (including these principles) are from writer feedback. It’s going to take the best parts of a lot of roles to craft effective design system documentation. That’s the point. It’s a combination of best practices from all the different disciplines in one place. ## 2. Fight to shorten everything Time is money and documentation isn’t exactly riveting. Most readers are here to answer their questions and leave — not read leisurely. The single most important question I ask myself while editing is:Can I say the same thing with fewer words? ### Lead with examples If you find yourself trying to explain context, scenarios or applications — ask yourself “Would an example work better here?”. It gives readers relatable UI applications and it’s much easier to digest. ### Break up large blocks of text into a list Large blocks of paragraph copy can feel intimidating. Increase the scannability of dense paragraphs by formatting copy into lists. ### Prompt action Most readers are here looking for direction. Leading sentences with action verbs in an active voice [https://www.grammarly.com/blog/active-vs-passive-voice/] is a good way to give clear direction and shorten copy at the same time. ## 3. Be mindful of absolutes Except in rare cases, avoid phrasing rules or guidelines with absolute adverbs. Saying a reader should “never” or “always” do something is a very difficult bar to set with absolute certainty. The probability that there will be an exception to any given rule is high and this creates two problems: • It creates a culture of rigid rulebook design thinking. The focus gets placed on following the rules instead of using educated judgement to craft a great experience. • It trains readers to find loopholes. Every time an exception to an absolute rule is found it hurts the integrity of the documentation. Worse, it can make truly non-negotiable rules seem optional. ### Solicit a reader’s judgement Design systems serve to be assistive and empowering — not authoritarian. Providing direction with rationale can be more approachable than rigid rules without context. Consider prefacing direction with “It’s best to…”, “Avoid…” or “Consider…”. It accomplishes the same goal and doesn’t feel as domineering. Too much rationale can make the documentation seem lengthy and daunting to read. Too little, and designers will feel like they are following an instruction manual. Finding a balance is difficult. ## 4. Favor the positive over negative Lead with positive communication instead of focusing on bad practices. Repeatedly focusing on negative patterns to avoid can put a reader on the defensive. There is a ton of valid and necessary reasons to advise not doing something. The primary point of this tip is to be mindful of finding a balance so the tone doesn’t feel accusatory or make the system feel oppressive. ### Provide favorable alternatives When you use negative examples to illustrate a point, provide a favorable alternative. This helps the direction feel constructive instead of like a dead end. ## 5. Write headlines with purpose Think of a headline as a singular point you are trying to make. Most readers are scanning headlines for key words on a problem they want to solve. Typically the more explicit you can be, the better. ### Remember, headlines serve a practical purpose too For many documentation websites headlines play a practical role as well as a hierarchical one. Headlines get used in the URL so readers can link others to a specific section of any given page. This means all headlines have an opportunity to give readers an idea of what they stand to learn from navigating to the URL. The more explicit you can be, the more shareable and accessible the entire site becomes. This is a win for page hierarchy, SEO and shareability simply by taking extra care in your headline verbiage. ### 6. Write to guide, not restrain This last tip is more of a personal design system ethos than practical rule but it guides a lot of my approach to writing. To a design system with a hammer, everything looks like a nail. That is to say, I always try to be mindful the documentation isn’t becoming too prescriptive. Design systems are about empowering others with tools and information to improve upon what has already been built — not police against it. To be clear, deviations from established standards need to have merit. A lot of shared consideration, effort and learned usability is taken into account when writing design standards. Predictability is usability. Intuition is muscle memory. Those things must be respected. That said, a design system will not, and should not, contain an answer for every situation [https://publication.design.systems/what-i-learned-about-leading-a-design-system-in-2017-46b85e9d7eab]. At the end of the day a typical design system team has bandwidth to work on new documentation or police the old, but likely not both. ### Consider maintenance cost I’ve been to a lot of design systems conferences. There are usually a few foreboding themes the speakers touch on that I’ve grown to take to heart while editing: • Writing is hard but maintaining what you’ve written is exponentially more difficult • Putting content in is easy, taking it out is really hard • Even the most successful design systems have limits [https://www.rethinkhq.com/videos/how-to-know-when-youve-outgrown-your-design-system] ## Final notes There is no shortage of things to consider when writing effective documentation. If you want to learn more, here are a few of my favorite resources on the subject. • Documenting Components: [https://medium.com/eightshapes-llc/documenting-components-9fe59b80c015] by Nathan Curtis • Maintaining design systems: [http://atomicdesign.bradfrost.com/chapter-5/] by Brad Frost • Expressive Design Systems: [https://abookapart.com/products/expressive-design-systems] by Yesenia Perez-Cruz • Everyday Information Architecture: [https://abookapart.com/products/everyday-information-architecture] by Lisa Maria Marquis ## Table of Contents Email [mailto:ross@rossmoody.com]/Dribbble [https://dribbble.com/_rossmoody]/GitHub [https://www.github.com/rossmoody]/LinkedIn [https://www.linkedin.com/in/moodyrooster/]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Writing More Effective Design System Documentation - Ross Moody Ross Moody [/]Writing [/writing] • Home [/]/ • Writing [/writing] # Writing More Effective Design System Documentation Practical tactics for writing helpful design guidelines. Last updated: Fri Apr 01 2022 Creating effective documentation is a really important part of a design system. The key word there is effective. My experience with design system documentation is that there is rarely a shortage of information. Helping people understand how to use the system by presenting it in an organized and succinct fashion is the hard part. To make matters worse, design system documentation is a moving target. Standards and guidelines evolve over time with the products they serve. You don’t write it once and move on. You write it once and maintain it forever. I’m a designer by trade so to keep from getting overwhelmed with all these words flying around, I started to record practical tactics to use for auditing my own writing habits.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1001,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "rds flying around, I started to record practical tactics to use for auditing my own writing habits. ## 1. Partner with a writer This is a rather odd tip to lead with for improving your writing but the hard truth is if you aren’t a UX writer or a content strategist, reading this blog post isn’t going to make you one. The tips below will help set a better foundation for communicating a cohesive vision, but most good practices I’ve learned (including these principles) are from writer feedback. It’s going to take the best parts of a lot of roles to craft effective design system documentation. That’s the point. It’s a combination of best practices from all the different disciplines in one place. ## 2. Fight to shorten everything Time is money and documentation isn’t exactly riveting. Most readers are here to answer their questions and leave — not read leisurely. The single most important question I ask myself while editing is:Can I say the same thing with fewer words?",
+      "metadata": {
+        "startIndex": 901,
+        "endIndex": 1879,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "le most important question I ask myself while editing is:Can I say the same thing with fewer words? ### Lead with examples If you find yourself trying to explain context, scenarios or applications — ask yourself “Would an example work better here?”. It gives readers relatable UI applications and it’s much easier to digest. ### Break up large blocks of text into a list Large blocks of paragraph copy can feel intimidating. Increase the scannability of dense paragraphs by formatting copy into lists. ### Prompt action Most readers are here looking for direction. Leading sentences with action verbs in an active voice [https://www.grammarly.com/blog/active-vs-passive-voice/] is a good way to give clear direction and shorten copy at the same time. ## 3. Be mindful of absolutes Except in rare cases, avoid phrasing rules or guidelines with absolute adverbs. Saying a reader should “never” or “always” do something is a very difficult bar to set with absolute certainty.",
+      "metadata": {
+        "startIndex": 1779,
+        "endIndex": 2752,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "der should “never” or “always” do something is a very difficult bar to set with absolute certainty. The probability that there will be an exception to any given rule is high and this creates two problems: • It creates a culture of rigid rulebook design thinking. The focus gets placed on following the rules instead of using educated judgement to craft a great experience. • It trains readers to find loopholes. Every time an exception to an absolute rule is found it hurts the integrity of the documentation. Worse, it can make truly non-negotiable rules seem optional. ### Solicit a reader’s judgement Design systems serve to be assistive and empowering — not authoritarian. Providing direction with rationale can be more approachable than rigid rules without context. Consider prefacing direction with “It’s best to…”, “Avoid…” or “Consider…”. It accomplishes the same goal and doesn’t feel as domineering. Too much rationale can make the documentation seem lengthy and daunting to read.",
+      "metadata": {
+        "startIndex": 2652,
+        "endIndex": 3643,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "el as domineering. Too much rationale can make the documentation seem lengthy and daunting to read. Too little, and designers will feel like they are following an instruction manual. Finding a balance is difficult. ## 4. Favor the positive over negative Lead with positive communication instead of focusing on bad practices. Repeatedly focusing on negative patterns to avoid can put a reader on the defensive. There is a ton of valid and necessary reasons to advise not doing something. The primary point of this tip is to be mindful of finding a balance so the tone doesn’t feel accusatory or make the system feel oppressive. ### Provide favorable alternatives When you use negative examples to illustrate a point, provide a favorable alternative. This helps the direction feel constructive instead of like a dead end. ## 5. Write headlines with purpose Think of a headline as a singular point you are trying to make. Most readers are scanning headlines for key words on a problem they want to",
+      "metadata": {
+        "startIndex": 3543,
+        "endIndex": 4538,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "you are trying to make. Most readers are scanning headlines for key words on a problem they want to solve. Typically the more explicit you can be, the better. ### Remember, headlines serve a practical purpose too For many documentation websites headlines play a practical role as well as a hierarchical one. Headlines get used in the URL so readers can link others to a specific section of any given page. This means all headlines have an opportunity to give readers an idea of what they stand to learn from navigating to the URL. The more explicit you can be, the more shareable and accessible the entire site becomes. This is a win for page hierarchy, SEO and shareability simply by taking extra care in your headline verbiage. ### 6. Write to guide, not restrain This last tip is more of a personal design system ethos than practical rule but it guides a lot of my approach to writing. To a design system with a hammer, everything looks like a nail.",
+      "metadata": {
+        "startIndex": 4438,
+        "endIndex": 5391,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "es a lot of my approach to writing. To a design system with a hammer, everything looks like a nail. That is to say, I always try to be mindful the documentation isn’t becoming too prescriptive. Design systems are about empowering others with tools and information to improve upon what has already been built — not police against it. To be clear, deviations from established standards need to have merit. A lot of shared consideration, effort and learned usability is taken into account when writing design standards. Predictability is usability. Intuition is muscle memory. Those things must be respected. That said, a design system will not, and should not, contain an answer for every situation [https://publication.design.systems/what-i-learned-about-leading-a-design-system-in-2017-46b85e9d7eab]. At the end of the day a typical design system team has bandwidth to work on new documentation or police the old, but likely not both.",
+      "metadata": {
+        "startIndex": 5291,
+        "endIndex": 6226,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "sign system team has bandwidth to work on new documentation or police the old, but likely not both. ### Consider maintenance cost I’ve been to a lot of design systems conferences. There are usually a few foreboding themes the speakers touch on that I’ve grown to take to heart while editing: • Writing is hard but maintaining what you’ve written is exponentially more difficult • Putting content in is easy, taking it out is really hard • Even the most successful design systems have limits [https://www.rethinkhq.com/videos/how-to-know-when-youve-outgrown-your-design-system] ## Final notes There is no shortage of things to consider when writing effective documentation. If you want to learn more, here are a few of my favorite resources on the subject. • Documenting Components: [https://medium.com/eightshapes-llc/documenting-components-9fe59b80c015] by Nathan Curtis • Maintaining design systems: [http://atomicdesign.bradfrost.com/chapter-5/] by Brad Frost • Expressive Design Systems:",
+      "metadata": {
+        "startIndex": 6126,
+        "endIndex": 7118,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "systems: [http://atomicdesign.bradfrost.com/chapter-5/] by Brad Frost • Expressive Design Systems: [https://abookapart.com/products/expressive-design-systems] by Yesenia Perez-Cruz • Everyday Information Architecture: [https://abookapart.com/products/everyday-information-architecture] by Lisa Maria Marquis ## Table of Contents Email [mailto:ross@rossmoody.com]/Dribbble [https://dribbble.com/_rossmoody]/GitHub [https://www.github.com/rossmoody]/LinkedIn [https://www.linkedin.com/in/moodyrooster/]",
+      "metadata": {
+        "startIndex": 7018,
+        "endIndex": 8018,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "guidelines;writing;content"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:24.583Z",
+    "system": "Ross Moody",
+    "author": "Ross Moody",
+    "version": "1.0",
+    "source_url": "https://rossmoody.com/writing/effective-ds-documentation"
+  }
+}

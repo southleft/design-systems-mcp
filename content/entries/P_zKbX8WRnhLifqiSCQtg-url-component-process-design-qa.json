@@ -1,0 +1,68 @@
+{
+  "id": "P_zKbX8WRnhLifqiSCQtg",
+  "title": "Component Process: Design QA",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/design-qa",
+    "ingested_at": "2025-06-27T02:59:42.747Z"
+  },
+  "content": "Design QA - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 3.3 Design QA. Phase --> Build Type Focus --> Time --> 1-3 days ## What is it? A review of the cross-platform component build to ensure alignment with the design. ## Why do we do it? Ensure our designs are consistent across platforms and align with our design specs. ## How do we do it? ### Start with a meeting Align with the team on how you’re going to do the QA. Depending on your platforms and setup, you might have a staging environment or a storybook where you can preview built components. In certain instances where it’s harder for your Developers to share or for you to test, ask them to provide screenshots and videos of the component in action. Use this session to work out what the best path forward is. ### QA the work Once you gain access to review the work, you’ll need to test the following areas to ensure they match your spec doc — Visual design Component states Interaction and animation Responsive design Cross browser compatibility Accessibility — where relevant ### Giving feedback I find it most effective for both Designers and Developers to keep it visual by using screenshots and adding documented comments — I usually do this in Figma. ### Who needs to be involved? All of the platform Developers that will be working on this. You may also want to loop in another Designer to support the QA. ## Useful links • BrowserStack [https://www.browserstack.com/] • WhatFont — Chrome plugin [https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm] ## Outcomes • Any additional fixes to build components to align them with the designs. • Tickets to update build components. Hot tips When testing visual inconsistencies, overlay the original design on top of a screenshot of the built component, making it easier to see what needs to be updated. ## Up next Step 3.4 Figma build Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Design QA - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 3.3 Design QA. Phase --> Build Type Focus --> Time --> 1-3 days ## What is it?",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 921,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "icles About [/about] 3.3 Design QA. Phase --> Build Type Focus --> Time --> 1-3 days ## What is it? A review of the cross-platform component build to ensure alignment with the design. ## Why do we do it? Ensure our designs are consistent across platforms and align with our design specs. ## How do we do it? ### Start with a meeting Align with the team on how you’re going to do the QA. Depending on your platforms and setup, you might have a staging environment or a storybook where you can preview built components. In certain instances where it’s harder for your Developers to share or for you to test, ask them to provide screenshots and videos of the component in action. Use this session to work out what the best path forward is. ### QA the work Once you gain access to review the work, you’ll need to test the following areas to ensure they match your spec doc — Visual design Component states Interaction and animation Responsive design Cross browser compatibility Accessibility — where",
+      "metadata": {
+        "startIndex": 821,
+        "endIndex": 1817,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "tates Interaction and animation Responsive design Cross browser compatibility Accessibility — where relevant ### Giving feedback I find it most effective for both Designers and Developers to keep it visual by using screenshots and adding documented comments — I usually do this in Figma. ### Who needs to be involved? All of the platform Developers that will be working on this. You may also want to loop in another Designer to support the QA. ## Useful links • BrowserStack [https://www.browserstack.com/] • WhatFont — Chrome plugin [https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm] ## Outcomes • Any additional fixes to build components to align them with the designs. • Tickets to update build components. Hot tips When testing visual inconsistencies, overlay the original design on top of a screenshot of the built component, making it easier to see what needs to be updated.",
+      "metadata": {
+        "startIndex": 1717,
+        "endIndex": 2633,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "gn on top of a screenshot of the built component, making it easier to see what needs to be updated. ## Up next Step 3.4 Figma build Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 2533,
+        "endIndex": 3533,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "qa;quality-assurance;review;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:42.747Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/design-qa"
+  }
+}

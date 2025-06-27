@@ -1,0 +1,90 @@
+{
+  "id": "Hr7CXC3KbBDjxq0f4Ify0",
+  "title": "Best Figma Tools and Plugins for Managing Themes",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/what-are-the-best-figma-tools-plugins-for-managing-themes",
+    "ingested_at": "2025-06-27T02:53:04.207Z"
+  },
+  "content": "What are the best Figma tools/plugins for managing themes? - The Design System Guide Close Figma # What are the best Figma tools/plugins for managing themes? Romina Kavcic The best Figma plugin for managing multiple themes is Tokens Studio plugin. [https://tokens.studio/] If you are using Material design, check out Material Theme Builder. [https://www.figma.com/community/plugin/1034969338659738588/material-theme-builder ] The Material Theme builder is built to assist in exploring the possibilities of dynamic color [http://m3.material.io/styles/color/dynamic-color/overview], harmonizing brand colors, and customizing a type scale. All with implementation in mind to bridge designer and developer workflows. You can also use try Themer. [https://www.figma.com/community/plugin/731176732337510831/themer] Themer enables you to create and switch themes from your *published* styles in your team library. Themer creates themes from sets of styles. Each set of styles should contain styles with the same name. When you make a selection, the plugin will identify styles which have matching names associated with the theme you selected, and apply them all at once; enabling you to do fast theme switches. ### Articles Making of true multi-brand design system Building an advanced design system for true white-label products with full control over colours, typography and visual styles 🔗 Read the article [https://uxdesign.cc/flexible-styles-for-multi-brand-design-systems-638f9c25c227] Next question What are design tokens? Published on: Aug 27, 2024 Updated: Updated: Aug 27, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "What are the best Figma tools/plugins for managing themes? - The Design System Guide Close Figma # What are the best Figma tools/plugins for managing themes? Romina Kavcic The best Figma plugin for managing multiple themes is Tokens Studio plugin. [https://tokens.studio/] If you are using Material design, check out Material Theme Builder. [https://www.figma.com/community/plugin/1034969338659738588/material-theme-builder ] The Material Theme builder is built to assist in exploring the possibilities of dynamic color [http://m3.material.io/styles/color/dynamic-color/overview], harmonizing brand colors, and customizing a type scale. All with implementation in mind to bridge designer and developer workflows. You can also use try Themer. [https://www.figma.com/community/plugin/731176732337510831/themer] Themer enables you to create and switch themes from your *published* styles in your team library. Themer creates themes from sets of styles.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 950,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "hemes from your *published* styles in your team library. Themer creates themes from sets of styles. Each set of styles should contain styles with the same name. When you make a selection, the plugin will identify styles which have matching names associated with the theme you selected, and apply them all at once; enabling you to do fast theme switches. ### Articles Making of true multi-brand design system Building an advanced design system for true white-label products with full control over colours, typography and visual styles 🔗 Read the article [https://uxdesign.cc/flexible-styles-for-multi-brand-design-systems-638f9c25c227] Next question What are design tokens? Published on: Aug 27, 2024 Updated: Updated: Aug 27, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic.",
+      "metadata": {
+        "startIndex": 850,
+        "endIndex": 1771,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "esign Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle]",
+      "metadata": {
+        "startIndex": 1671,
+        "endIndex": 2670,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build",
+      "metadata": {
+        "startIndex": 2570,
+        "endIndex": 3570,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "okens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System",
+      "metadata": {
+        "startIndex": 3470,
+        "endIndex": 4458,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "[../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 4358,
+        "endIndex": 5358,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma;plugins;theming;management"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:53:04.207Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/what-are-the-best-figma-tools-plugins-for-managing-themes"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "rXEhxjo55juDpkZQgf2pF",
+  "title": "Managing Multi-Brand Design Systems",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/managing-multi-brand-design-systems",
+    "ingested_at": "2025-06-27T02:53:08.807Z"
+  },
+  "content": "Managing multi-brand design systems - The Design System Guide Close Theming # Managing multi-brand design systems Romina Kavcic To build a multi-brand design system, start by organizing your components. Document your process and connections for scalability. Use Figma to set up design files. For the UI kit, consider Figma Variables or Tokens Studio. Decide how you'll connect with developers, either through Figma API or Tokens Studio. I prefer Tokens Studio linked to a code repository like GitHub or GitLab. This setup allows me to easily update changes. Alternatively, you can export design tokens to Figma Variables for all the design system consumers. This approach allows you to restrict any edits. ### More articles Maintaining a design system in Figma Maintaining a design system in Figma requires a structured approach to ensure consistency and efficiency. Learn all about key steps. 🔗 Read the article [https://uxdesign.cc/flexible-styles-for-multi-brand-design-systems-638f9c25c227]by Lukas Opperman Making of true multi-brand design system Building an advanced design system for true white-label products with full control over colours, typography and visual styles 🔗 Read the article [https://uxdesign.cc/flexible-styles-for-multi-brand-design-systems-638f9c25c227] Bringing more character to the Zalando Design System with theming 🔗 Read the article [https://medium.com/zalando-design/bringing-more-character-to-the-zalando-design-system-with-theming-e69e18359c39] Eight Multi-Brand Design Systems Elevating Global Brand Consistency 🔗 Read the article [https://www.supernova.io/blog/eight-multi-brand-design-systems-elevating-global-brand-consistency] Building an automated multi-brand token workflow - Behind the System Behind the Systems: Building an automated multi-brand token workflow by Chris Kerr & Nicole Duncan. 📹 Watch the video [https://www.youtube.com/watch?v=7zWrEJVuP24&t=1876s] The Forge: Harry’s approach to the multi-brand component library 🔗 Read the article [https://www.designsystems.com/the-forge-harrys-approach-to-multi-brand-design-systems/] Multi-Brand Design System – How to Get Started 🔗 Read the article [https://www.uxpin.com/studio/blog/multi-brand-design-system/] Using Figma Variables to build a Multi-Brand Design System 🔗 Read the article [https://rangle.io/blog/using-figma-variables-to-build-a-multi-brand-design-system] Structuring documentation in multi-brand design systems by Amy Hupe 🔗 Read the article [https://amyhupe.co.uk/articles/structuring-documentation-multi-brand-design-systems/] Next question Published on: Aug 29, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Managing multi-brand design systems - The Design System Guide Close Theming # Managing multi-brand design systems Romina Kavcic To build a multi-brand design system, start by organizing your components. Document your process and connections for scalability. Use Figma to set up design files. For the UI kit, consider Figma Variables or Tokens Studio. Decide how you'll connect with developers, either through Figma API or Tokens Studio. I prefer Tokens Studio linked to a code repository like GitHub or GitLab. This setup allows me to easily update changes. Alternatively, you can export design tokens to Figma Variables for all the design system consumers. This approach allows you to restrict any edits. ### More articles Maintaining a design system in Figma Maintaining a design system in Figma requires a structured approach to ensure consistency and efficiency. Learn all about key steps. 🔗 Read the article [https://uxdesign.cc/flexible-styles-for-multi-brand-design-systems-638f9c25c227]by",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 998,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ead the article [https://uxdesign.cc/flexible-styles-for-multi-brand-design-systems-638f9c25c227]by Lukas Opperman Making of true multi-brand design system Building an advanced design system for true white-label products with full control over colours, typography and visual styles 🔗 Read the article [https://uxdesign.cc/flexible-styles-for-multi-brand-design-systems-638f9c25c227] Bringing more character to the Zalando Design System with theming 🔗 Read the article [https://medium.com/zalando-design/bringing-more-character-to-the-zalando-design-system-with-theming-e69e18359c39] Eight Multi-Brand Design Systems Elevating Global Brand Consistency 🔗 Read the article [https://www.supernova.io/blog/eight-multi-brand-design-systems-elevating-global-brand-consistency] Building an automated multi-brand token workflow - Behind the System Behind the Systems: Building an automated multi-brand token workflow by Chris Kerr & Nicole Duncan.",
+      "metadata": {
+        "startIndex": 898,
+        "endIndex": 1840,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "Behind the Systems: Building an automated multi-brand token workflow by Chris Kerr & Nicole Duncan. 📹 Watch the video [https://www.youtube.com/watch?v=7zWrEJVuP24&t=1876s] The Forge: Harry’s approach to the multi-brand component library 🔗 Read the article [https://www.designsystems.com/the-forge-harrys-approach-to-multi-brand-design-systems/] Multi-Brand Design System – How to Get Started 🔗 Read the article [https://www.uxpin.com/studio/blog/multi-brand-design-system/] Using Figma Variables to build a Multi-Brand Design System 🔗 Read the article [https://rangle.io/blog/using-figma-variables-to-build-a-multi-brand-design-system] Structuring documentation in multi-brand design systems by Amy Hupe 🔗 Read the article [https://amyhupe.co.uk/articles/structuring-documentation-multi-brand-design-systems/] Next question Published on: Aug 29, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024",
+      "metadata": {
+        "startIndex": 1740,
+        "endIndex": 2738,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "dditions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 2638,
+        "endIndex": 3596,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 3496,
+        "endIndex": 4484,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 4384,
+        "endIndex": 5356,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 5256,
+        "endIndex": 6256,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "multi-brand;management;strategy;scaling"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:53:08.807Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/managing-multi-brand-design-systems"
+  }
+}

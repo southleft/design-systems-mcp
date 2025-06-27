@@ -1,0 +1,343 @@
+{
+  "id": "H4M9cuWJbleWIZ-I8AJ15",
+  "title": "Create and Use Component Variants",
+  "source": {
+    "type": "url",
+    "location": "https://help.figma.com/hc/en-us/articles/360056440594",
+    "ingested_at": "2025-06-27T03:09:56.207Z"
+  },
+  "content": "Create and use variants &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Components [/hc/en-us/sections/4403935997847-Components] Create and use variants Before you start Who can use this feature Supported on all plans. Publishing variants to a library is supported paid plans [https://help.figma.com/hc/en-us/articles/360040328273]. Anyone with `can edit` access to a file can create variants and component sets in that file. Anyone with `can view` access to a file can use components or components sets from that library [https://help.figma.com/hc/en-us/articles/360025508373]. As you create components and build out your design system, you'll find the need for components that are similar to each other, with only slight differences. For example: you might have multiple components for buttons, with separate components for various states and sizes, as well as light and dark modes. Variants allow you to group and organize similar components into a single container. This simplifies your component library and makes it easier for everyone to find what they need. Customize the properties and values of your variants, to take the guesswork out of your design system and bring your components closer to front-end code. Note: We don't recommend using variants to group different icons. If you have different sizes of the same icon, then you could combine these as variants instead. ## Variant properties and values Variant properties and their values allow you to define the attributes of your variants. Variant properties are a type of component property [https://help.figma.com/hc/en-us/articles/5579474826519/] specific to variants and component sets. You can add as many properties and values as you need, and customize them to suit your design system. You can even map your properties and values to code components in your design system. Variant properties are the variable aspects of our component. For example: the properties of a button component could be the `size`, `state`, or `color`. Values are the different options available for each property. For example: the state property could have `default`, `hover`, `pressed`, and `disabled` values. All variants within the component set should use the same properties and values, but each variant needs to be a unique combination of them. You don’t need to have a component for every possible combination of properties and values. Let's take a look at an example! We have a button component that has 24 unique variants. The image below shows all of the variants for this component inside a single component set. There are four properties in our button component set, each with its own set of values. Type property with Primary and Secondary values. Size property with Large and Small values. State property with Default, Pressed, and Inactive values. Icon property has True and False values. Figma uses these properties and values to determine which variant we need from the component set. In the image below, we've created an instance of our component set and configured the following values: • Type: Primary • Size: Large • State: Default • Icon: False (or off) ## Layer names and syntax Layer naming is an important aspect of creating and managing variants. Unlike other layer names in Figma, which can be mostly arbitrary, the names of variants in a component set have a very specific syntax. This includes information about the properties and values of that variant. You can only see this syntax when you try to rename a variant in the layers panel. Variant names follow this structure: `Property1=value, Property2=value, Property3=value` # Combine components as variants Caution: When you add an instance with variants to a file, Figma will import every variant in that component set. Importing large component sets will impact Figma's speed and performance. If you already have component libraries in Figma, you can combine your components as variants. The general process looks like this: Rename your components so they use the slash naming convention • Organize your components on the canvas • Combine components as variants • Give your properties descriptive names Note: Figma only looks at layer names when combining components as variants, not page and frame names. If you were using pages or frames to organize components, these will become redundant on conversion. You’ll still be able to use pages and top-level frames to create extra levels of hierarchy. This makes for better component organization in the Assets panel and Instance menu. --> ## Rename your components Figma uses the slash naming system to organize components in the assets tab and instance menu. Each `/` in a component's name will create another level of hierarchy. This makes it easier to navigate your library, or find and swap related components. Learn how to name and organize components [https://help.figma.com/hc/en-us/articles/360038663994-Name-and-organize-components]. Tip: You can rename layers in bulk using the rename layers modal. Learn more about renaming layers in bulk [https://help.figma.com/hc/en-us/articles/360039958934]. You can also use this naming system to convert your existing components to variants. To be accurately converted, component names need to follow this structure: `componentName/property1value/property2value/property3value` • The text before the first `/` will become the name of the component set. • Figma will create a new property for every other `/` in the component's name, then add the attribute as a value. • If you have used suffixes in your naming system, you will need to add these to the component's name, separated by a `/`. Caution: To make sure your values match up with the same property, every component you are combining needs to have the same number of slashes. A button component with the name `Button/Primary/Large/Default/False` will have the following properties and values: Component set name: ButtonVariant: PrimaryProperty 2: LargeProperty 3: DefaultProperty 4: False In the image below, we can see how the rest of our component names (on the left) are converted to variant values (on the right). ## Organize components on the canvas Note: Component sets can only contain components, so it's not possible to add text or annotations, nest frames, or group a subset of variants inside a component set. When combining components as variants, Figma will apply your existing layout and spacing to variants inside the component set. We recommend organizing your components before converting them, to save you from having to rearrange them after. If you have a lot of variants for a particular component, you may want to organize your components in rows, columns, or grids. This will help to communicate their multi-dimensional nature to anyone who's using your design system. You can also add text layers beside your component set to annotate the relevant properties and values. In our example below, we've arranged our button variants in a grid. We've also added text layers to the canvas that correspond to a property's values. Tip: By default, component sets have a dashed-purple stroke and no fill. You can adjust the fill and stroke properties of the component set to better suit your brand or design system. ## Combine as variants • Select the components you want to combine. Learn how to select layers and objects [https://help.figma.com/hc/en-us/articles/360040449873-Select-layers-and-objects]. • In the right sidebar, click Combine as variants. • Figma will add all components to a single component set. ## Give properties descriptive names As part of the conversion process, Figma will create generic properties and add any attributes you added to the component's name as values. As Figma doesn't know the names of the properties, it will name the first property `Variant`, then number them sequentially: `Property 2`, then `Property 3`, and so on. You'll need to rename those properties to something more descriptive. • Select the component set. • Find the Properties section in the right sidebar. • Hover over a component property name and double-click it. • Edit the name and press Enter / Return to apply the edit. • Repeat for the remaining properties. Note: Figma handles component sets the same way as regular components. You can add descriptions and links to documentation to them. You can also drag them into the canvas from the assets tab, and swap between instances of them. ## Create new variants Note: Figma places variants in a single container called a component set [https://help.figma.com/hc/en-us/articles/360038663154]. Component sets can only contain components. Click Create component in the right sidebar, or use the keyboard shortcut to turn your selection into a component: Mac: ⌥ Option ⌘ Command K Windows: Ctrl Alt K There are a few ways to create a new variant. Select a main component and: • Click from the right sidebar, or • Right-click the main component > Main component > Add variant, or • Click next to Add property from the right sidebar, then select Variant from the dropdown. This creates a new variant property [https://help.figma.com/hc/en-us/articles/5579474826519] and turns the main component into a component set.From there, click below the component set to add a variant. --> Figma will do a few things: • Make an identical component with the same properties • Add both components as variants to a component set • If you used the slash naming convention, the text before the / will become the name of the component set, and the attributes after will be used as values. You can also create new variants by combining multiple components [#h_01G2SX8RVSXK0JCQBF8RDWT1MM]. If you have an existing component set, add more variants [#h_01G2SXVWV94RP15D9QBP1P4PMY] to it at any time. Tip: By default, component sets have a dashed-purple stroke and no fill. You can adjust the fill and stroke properties of the component set to better suit your brand or style guide. ## Add properties and values Create and apply properties and values to your variants when you first create them, or as your design system evolves. Learn how to create and apply properties and values [https://help.figma.com/hc/en-us/articles/5579474826519]. Fix conflicted value errors All variants within the component set will use the same properties and values, but each variant needs to be a unique combination of them. If any variants have the exact same combination of values, Figma will let you know that there is a conflict. You'll see this error even if the variants themselves are visually different. To resolve this issue, you'll need to add or update the values of the affected variants, so they have a unique combination of values. ## Add more variants to a component set Continue to add variants to your component set using any of the following methods: • Select a component set and click in the right sidebar. • Select a component set and click just below the component set. Duplicate existing variant using the keyboard shortcut: Mac: ⌘ CommandD Windows: CtrlD • Drag other components into the component set to add them as variants. Tip: Dragging in other components won't reflow existing variants. You can use smart selection to adjust the layout of your variants. Learn more about smart selection [https://help.figma.com/hc/en-us/articles/360040450233-Arrange-objects-with-Smart-Selection]. Caution: When you add an instance with variants to a file, Figma will import every variant in that component set. Importing large component sets will impact Figma's speed and performance. ## Manage variants ### Organize variants When you add new variants to a component, Figma's default behavior is to add variants in a single column, with equal spacing between them. If you have your components in another layout before converting them, Figma will keep the same layout for the component set. You can override Figma's default behavior and arrange variants in any way you choose. • Select a variant and move it to new co-ordinates within the component set. Figma will allow you to place variants anywhere within the component set, including over the top of other variants. • Adjust the dimensions of the component set in the right sidebar, or resize it in the canvas like you would a regular frame. • With all variants selected: Use the fields in the right sidebar to adjust the horizontal and vertical space between variants. Note: Figma will use the variant in the top-left corner as the default variant. This variant will represent the entire component set in the Assets tab of the left sidebar. ### Manage properties and values You can rename and reorder [https://help.figma.com/hc/en-us/articles/5579474826519/#Manage] properties and values anytime after creation. Remove properties you no longer need. • If you reorder properties, Figma will adjust the name and syntax of your variants to match. • If you've converted your existing components to variants, you'll need to rename your properties to make them more descriptive. Fix corrupted variant errors You will get a corrupted variant error if any of your variants do not follow this syntax. This can happen if you mistype a property or value, or use an invalid naming structure when converting existing components. To fix this issue, you'll need to rename the properties and values of the variant. While it's possible to rename them using this syntax in the layer name, we recommend renaming properties and values in the right sidebar instead. Tip: Use multi-edit [https://help.figma.com/hc/en-us/articles/21635177948567] to speed up your workflow when editing component sets. While editing variants in with multi-edit enabled, matching objects also get the same edits without needing you to take extra steps to select them. ## Publish component sets to a library Users on paid plans can publish component sets to a library [https://help.figma.com/hc/en-us/articles/360039162653-Publish-a-file-to-a-Team-Library] to share them with collaborators. Publish component sets alongside your styles and regular components to allow members of your team or organization to use them. Component sets appear in the assets tab alongside your other components. Figma will use the variant in the top-left corner of the component set as the default variant. Collaborators can then drag the component set into their files to create an instance. They can then access all the other variants in the component set by configuring the property values in the right sidebar. Are you a member of a Figma Organization? Design system analytics [https://help.figma.com/hc/en-us/articles/360039238353-Track-library-and-component-usage]allow you to see how members of your organization are using components and variants. ## Use variants Component sets appear in the assets tab alongside any regular components. So instead of looking for a specific variant in the assets tab, you only need to select the component set. Once you have an instance of that component set on the canvas, you can configure the instance's property values to select a variant. ### Select component sets Click on the Assets tab in the left sidebar, or use the keyboard shortcut: Mac: ⌥ Option 2 Windows: Alt 2 • Click on a component set and drag it on to the canvas. Figma will create an instance of the default variant of that component set. View the component set's name and properties in the right sidebar. • Use the dropdowns next to the property to select your preferred combination of values. • Turn specific properties off and on using the toggles. ### Configure variants Select other variants in a component set by configuring the properties and values in the right sidebar. • Select the instance. View the name of the component in the right sidebar. If the component has variants, you'll see fields underneath the component name to configure the properties and values of that component set. • Use the dropdowns next to the property to select your preferred combination of values. • Turn specific properties off and on using the toggles. You can still swap between instances when using variants, like you would with regular components. The most efficient way to do this is using the Instance menu. The Instance menu allows you to find component replacements from the current file, or any of your enabled team libraries. Access the Instance menu from the properties panel in the right sidebar, when you have a component selected. • Select the instance you want to change. • Click on the component name in the right sidebar. Use the instance menu to search for and select another component. Learn how to swap using the instance menu → [https://help.figma.com/hc/en-us/articles/360039150413-Swap-between-component-instances-in-a-file] ## Override properties Component libraries define and outline the ideal implementation of our design system. These components often contain generic information which you'll need to change, like a button label. Under some circumstances, you may need to change other aspects of that specific instance. Overrides allow you to make superficial changes to instances. Figma supports overrides to text, fill, stroke, and effect properties. Learn more about supported overrides → [https://help.figma.com/hc/en-us/articles/360039150733-Override-properties-of-a-component-Instance] --> Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Create and use variants &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 999,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "6365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311]",
+      "metadata": {
+        "startIndex": 899,
+        "endIndex": 1899,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "tions/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials.",
+      "metadata": {
+        "startIndex": 1799,
+        "endIndex": 2733,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "s Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma",
+      "metadata": {
+        "startIndex": 2633,
+        "endIndex": 3591,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "a Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions",
+      "metadata": {
+        "startIndex": 3491,
+        "endIndex": 4451,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "00000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Components [/hc/en-us/sections/4403935997847-Components] Create and use variants Before you start Who can use this feature Supported on all plans. Publishing variants to a library is supported paid plans [https://help.figma.com/hc/en-us/articles/360040328273]. Anyone with `can edit` access to a file can create variants and component sets in that file. Anyone with `can view` access to a file can use components or components sets from that library [https://help.figma.com/hc/en-us/articles/360025508373]. As you create components and build out your design system, you'll find the need for components that are",
+      "metadata": {
+        "startIndex": 4351,
+        "endIndex": 5349,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ou create components and build out your design system, you'll find the need for components that are similar to each other, with only slight differences. For example: you might have multiple components for buttons, with separate components for various states and sizes, as well as light and dark modes. Variants allow you to group and organize similar components into a single container. This simplifies your component library and makes it easier for everyone to find what they need. Customize the properties and values of your variants, to take the guesswork out of your design system and bring your components closer to front-end code. Note: We don't recommend using variants to group different icons. If you have different sizes of the same icon, then you could combine these as variants instead. ## Variant properties and values Variant properties and their values allow you to define the attributes of your variants.",
+      "metadata": {
+        "startIndex": 5249,
+        "endIndex": 6170,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "and values Variant properties and their values allow you to define the attributes of your variants. Variant properties are a type of component property [https://help.figma.com/hc/en-us/articles/5579474826519/] specific to variants and component sets. You can add as many properties and values as you need, and customize them to suit your design system. You can even map your properties and values to code components in your design system. Variant properties are the variable aspects of our component. For example: the properties of a button component could be the `size`, `state`, or `color`. Values are the different options available for each property. For example: the state property could have `default`, `hover`, `pressed`, and `disabled` values. All variants within the component set should use the same properties and values, but each variant needs to be a unique combination of them. You don’t need to have a component for every possible combination of properties and values.",
+      "metadata": {
+        "startIndex": 6070,
+        "endIndex": 7054,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "f them. You don’t need to have a component for every possible combination of properties and values. Let's take a look at an example! We have a button component that has 24 unique variants. The image below shows all of the variants for this component inside a single component set. There are four properties in our button component set, each with its own set of values. Type property with Primary and Secondary values. Size property with Large and Small values. State property with Default, Pressed, and Inactive values. Icon property has True and False values. Figma uses these properties and values to determine which variant we need from the component set. In the image below, we've created an instance of our component set and configured the following values: • Type: Primary • Size: Large • State: Default • Icon: False (or off) ## Layer names and syntax Layer naming is an important aspect of creating and managing variants.",
+      "metadata": {
+        "startIndex": 6954,
+        "endIndex": 7884,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "f) ## Layer names and syntax Layer naming is an important aspect of creating and managing variants. Unlike other layer names in Figma, which can be mostly arbitrary, the names of variants in a component set have a very specific syntax. This includes information about the properties and values of that variant. You can only see this syntax when you try to rename a variant in the layers panel. Variant names follow this structure: `Property1=value, Property2=value, Property3=value` # Combine components as variants Caution: When you add an instance with variants to a file, Figma will import every variant in that component set. Importing large component sets will impact Figma's speed and performance. If you already have component libraries in Figma, you can combine your components as variants. The general process looks like this: Rename your components so they use the slash naming convention • Organize your components on the canvas • Combine components as variants • Give your properties",
+      "metadata": {
+        "startIndex": 7784,
+        "endIndex": 8780,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "on • Organize your components on the canvas • Combine components as variants • Give your properties descriptive names Note: Figma only looks at layer names when combining components as variants, not page and frame names. If you were using pages or frames to organize components, these will become redundant on conversion. You’ll still be able to use pages and top-level frames to create extra levels of hierarchy. This makes for better component organization in the Assets panel and Instance menu. --> ## Rename your components Figma uses the slash naming system to organize components in the assets tab and instance menu. Each `/` in a component's name will create another level of hierarchy. This makes it easier to navigate your library, or find and swap related components. Learn how to name and organize components [https://help.figma.com/hc/en-us/articles/360038663994-Name-and-organize-components]. Tip: You can rename layers in bulk using the rename layers modal.",
+      "metadata": {
+        "startIndex": 8680,
+        "endIndex": 9652,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "94-Name-and-organize-components]. Tip: You can rename layers in bulk using the rename layers modal. Learn more about renaming layers in bulk [https://help.figma.com/hc/en-us/articles/360039958934]. You can also use this naming system to convert your existing components to variants. To be accurately converted, component names need to follow this structure: `componentName/property1value/property2value/property3value` • The text before the first `/` will become the name of the component set. • Figma will create a new property for every other `/` in the component's name, then add the attribute as a value. • If you have used suffixes in your naming system, you will need to add these to the component's name, separated by a `/`. Caution: To make sure your values match up with the same property, every component you are combining needs to have the same number of slashes. A button component with the name `Button/Primary/Large/Default/False` will have the following properties and values:",
+      "metadata": {
+        "startIndex": 9552,
+        "endIndex": 10544,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "t with the name `Button/Primary/Large/Default/False` will have the following properties and values: Component set name: ButtonVariant: PrimaryProperty 2: LargeProperty 3: DefaultProperty 4: False In the image below, we can see how the rest of our component names (on the left) are converted to variant values (on the right). ## Organize components on the canvas Note: Component sets can only contain components, so it's not possible to add text or annotations, nest frames, or group a subset of variants inside a component set. When combining components as variants, Figma will apply your existing layout and spacing to variants inside the component set. We recommend organizing your components before converting them, to save you from having to rearrange them after. If you have a lot of variants for a particular component, you may want to organize your components in rows, columns, or grids. This will help to communicate their multi-dimensional nature to anyone who's using your design system.",
+      "metadata": {
+        "startIndex": 10444,
+        "endIndex": 11442,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "s will help to communicate their multi-dimensional nature to anyone who's using your design system. You can also add text layers beside your component set to annotate the relevant properties and values. In our example below, we've arranged our button variants in a grid. We've also added text layers to the canvas that correspond to a property's values. Tip: By default, component sets have a dashed-purple stroke and no fill. You can adjust the fill and stroke properties of the component set to better suit your brand or design system. ## Combine as variants • Select the components you want to combine. Learn how to select layers and objects [https://help.figma.com/hc/en-us/articles/360040449873-Select-layers-and-objects]. • In the right sidebar, click Combine as variants. • Figma will add all components to a single component set. ## Give properties descriptive names As part of the conversion process, Figma will create generic properties and add any attributes you added to the component's",
+      "metadata": {
+        "startIndex": 11342,
+        "endIndex": 12341,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "n process, Figma will create generic properties and add any attributes you added to the component's name as values. As Figma doesn't know the names of the properties, it will name the first property `Variant`, then number them sequentially: `Property 2`, then `Property 3`, and so on. You'll need to rename those properties to something more descriptive. • Select the component set. • Find the Properties section in the right sidebar. • Hover over a component property name and double-click it. • Edit the name and press Enter / Return to apply the edit. • Repeat for the remaining properties. Note: Figma handles component sets the same way as regular components. You can add descriptions and links to documentation to them. You can also drag them into the canvas from the assets tab, and swap between instances of them. ## Create new variants Note: Figma places variants in a single container called a component set [https://help.figma.com/hc/en-us/articles/360038663154].",
+      "metadata": {
+        "startIndex": 12241,
+        "endIndex": 13216,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "a single container called a component set [https://help.figma.com/hc/en-us/articles/360038663154]. Component sets can only contain components. Click Create component in the right sidebar, or use the keyboard shortcut to turn your selection into a component: Mac: ⌥ Option ⌘ Command K Windows: Ctrl Alt K There are a few ways to create a new variant. Select a main component and: • Click from the right sidebar, or • Right-click the main component > Main component > Add variant, or • Click next to Add property from the right sidebar, then select Variant from the dropdown. This creates a new variant property [https://help.figma.com/hc/en-us/articles/5579474826519] and turns the main component into a component set.From there, click below the component set to add a variant. --> Figma will do a few things: • Make an identical component with the same properties • Add both components as variants to a component set • If you used the slash naming convention, the text before the / will become the",
+      "metadata": {
+        "startIndex": 13116,
+        "endIndex": 14115,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "to a component set • If you used the slash naming convention, the text before the / will become the name of the component set, and the attributes after will be used as values. You can also create new variants by combining multiple components [#h_01G2SX8RVSXK0JCQBF8RDWT1MM]. If you have an existing component set, add more variants [#h_01G2SXVWV94RP15D9QBP1P4PMY] to it at any time. Tip: By default, component sets have a dashed-purple stroke and no fill. You can adjust the fill and stroke properties of the component set to better suit your brand or style guide. ## Add properties and values Create and apply properties and values to your variants when you first create them, or as your design system evolves. Learn how to create and apply properties and values [https://help.figma.com/hc/en-us/articles/5579474826519]. Fix conflicted value errors All variants within the component set will use the same properties and values, but each variant needs to be a unique combination of them.",
+      "metadata": {
+        "startIndex": 14015,
+        "endIndex": 15003,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "will use the same properties and values, but each variant needs to be a unique combination of them. If any variants have the exact same combination of values, Figma will let you know that there is a conflict. You'll see this error even if the variants themselves are visually different. To resolve this issue, you'll need to add or update the values of the affected variants, so they have a unique combination of values. ## Add more variants to a component set Continue to add variants to your component set using any of the following methods: • Select a component set and click in the right sidebar. • Select a component set and click just below the component set. Duplicate existing variant using the keyboard shortcut: Mac: ⌘ CommandD Windows: CtrlD • Drag other components into the component set to add them as variants. Tip: Dragging in other components won't reflow existing variants. You can use smart selection to adjust the layout of your variants.",
+      "metadata": {
+        "startIndex": 14903,
+        "endIndex": 15861,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "won't reflow existing variants. You can use smart selection to adjust the layout of your variants. Learn more about smart selection [https://help.figma.com/hc/en-us/articles/360040450233-Arrange-objects-with-Smart-Selection]. Caution: When you add an instance with variants to a file, Figma will import every variant in that component set. Importing large component sets will impact Figma's speed and performance. ## Manage variants ### Organize variants When you add new variants to a component, Figma's default behavior is to add variants in a single column, with equal spacing between them. If you have your components in another layout before converting them, Figma will keep the same layout for the component set. You can override Figma's default behavior and arrange variants in any way you choose. • Select a variant and move it to new co-ordinates within the component set. Figma will allow you to place variants anywhere within the component set, including over the top of other variants.",
+      "metadata": {
+        "startIndex": 15761,
+        "endIndex": 16760,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "you to place variants anywhere within the component set, including over the top of other variants. • Adjust the dimensions of the component set in the right sidebar, or resize it in the canvas like you would a regular frame. • With all variants selected: Use the fields in the right sidebar to adjust the horizontal and vertical space between variants. Note: Figma will use the variant in the top-left corner as the default variant. This variant will represent the entire component set in the Assets tab of the left sidebar. ### Manage properties and values You can rename and reorder [https://help.figma.com/hc/en-us/articles/5579474826519/#Manage] properties and values anytime after creation. Remove properties you no longer need. • If you reorder properties, Figma will adjust the name and syntax of your variants to match. • If you've converted your existing components to variants, you'll need to rename your properties to make them more descriptive.",
+      "metadata": {
+        "startIndex": 16660,
+        "endIndex": 17618,
+        "chunkIndex": 19,
+        "section": "Introduction",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "isting components to variants, you'll need to rename your properties to make them more descriptive. Fix corrupted variant errors You will get a corrupted variant error if any of your variants do not follow this syntax. This can happen if you mistype a property or value, or use an invalid naming structure when converting existing components. To fix this issue, you'll need to rename the properties and values of the variant. While it's possible to rename them using this syntax in the layer name, we recommend renaming properties and values in the right sidebar instead. Tip: Use multi-edit [https://help.figma.com/hc/en-us/articles/21635177948567] to speed up your workflow when editing component sets. While editing variants in with multi-edit enabled, matching objects also get the same edits without needing you to take extra steps to select them. ## Publish component sets to a library Users on paid plans can publish component sets to a library",
+      "metadata": {
+        "startIndex": 17518,
+        "endIndex": 18470,
+        "chunkIndex": 20,
+        "section": "Introduction",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "## Publish component sets to a library Users on paid plans can publish component sets to a library [https://help.figma.com/hc/en-us/articles/360039162653-Publish-a-file-to-a-Team-Library] to share them with collaborators. Publish component sets alongside your styles and regular components to allow members of your team or organization to use them. Component sets appear in the assets tab alongside your other components. Figma will use the variant in the top-left corner of the component set as the default variant. Collaborators can then drag the component set into their files to create an instance. They can then access all the other variants in the component set by configuring the property values in the right sidebar. Are you a member of a Figma Organization? Design system analytics [https://help.figma.com/hc/en-us/articles/360039238353-Track-library-and-component-usage]allow you to see how members of your organization are using components and variants.",
+      "metadata": {
+        "startIndex": 18370,
+        "endIndex": 19336,
+        "chunkIndex": 21,
+        "section": "Introduction",
+        "globalChunkIndex": 21
+      }
+    },
+    {
+      "id": "chunk-22",
+      "text": "omponent-usage]allow you to see how members of your organization are using components and variants. ## Use variants Component sets appear in the assets tab alongside any regular components. So instead of looking for a specific variant in the assets tab, you only need to select the component set. Once you have an instance of that component set on the canvas, you can configure the instance's property values to select a variant. ### Select component sets Click on the Assets tab in the left sidebar, or use the keyboard shortcut: Mac: ⌥ Option 2 Windows: Alt 2 • Click on a component set and drag it on to the canvas. Figma will create an instance of the default variant of that component set. View the component set's name and properties in the right sidebar. • Use the dropdowns next to the property to select your preferred combination of values. • Turn specific properties off and on using the toggles.",
+      "metadata": {
+        "startIndex": 19236,
+        "endIndex": 20144,
+        "chunkIndex": 22,
+        "section": "Introduction",
+        "globalChunkIndex": 22
+      }
+    },
+    {
+      "id": "chunk-23",
+      "text": "lect your preferred combination of values. • Turn specific properties off and on using the toggles. ### Configure variants Select other variants in a component set by configuring the properties and values in the right sidebar. • Select the instance. View the name of the component in the right sidebar. If the component has variants, you'll see fields underneath the component name to configure the properties and values of that component set. • Use the dropdowns next to the property to select your preferred combination of values. • Turn specific properties off and on using the toggles. You can still swap between instances when using variants, like you would with regular components. The most efficient way to do this is using the Instance menu. The Instance menu allows you to find component replacements from the current file, or any of your enabled team libraries. Access the Instance menu from the properties panel in the right sidebar, when you have a component selected.",
+      "metadata": {
+        "startIndex": 20044,
+        "endIndex": 21025,
+        "chunkIndex": 23,
+        "section": "Introduction",
+        "globalChunkIndex": 23
+      }
+    },
+    {
+      "id": "chunk-24",
+      "text": "e Instance menu from the properties panel in the right sidebar, when you have a component selected. • Select the instance you want to change. • Click on the component name in the right sidebar. Use the instance menu to search for and select another component. Learn how to swap using the instance menu → [https://help.figma.com/hc/en-us/articles/360039150413-Swap-between-component-instances-in-a-file] ## Override properties Component libraries define and outline the ideal implementation of our design system. These components often contain generic information which you'll need to change, like a button label. Under some circumstances, you may need to change other aspects of that specific instance. Overrides allow you to make superficial changes to instances. Figma supports overrides to text, fill, stroke, and effect properties. Learn more about supported overrides → [https://help.figma.com/hc/en-us/articles/360039150733-Override-properties-of-a-component-Instance] --> Was this article",
+      "metadata": {
+        "startIndex": 20925,
+        "endIndex": 21921,
+        "chunkIndex": 24,
+        "section": "Introduction",
+        "globalChunkIndex": 24
+      }
+    },
+    {
+      "id": "chunk-25",
+      "text": "om/hc/en-us/articles/360039150733-Override-properties-of-a-component-Instance] --> Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland)",
+      "metadata": {
+        "startIndex": 21821,
+        "endIndex": 22819,
+        "chunkIndex": 25,
+        "section": "Introduction",
+        "globalChunkIndex": 25
+      }
+    },
+    {
+      "id": "chunk-26",
+      "text": "glish (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators",
+      "metadata": {
+        "startIndex": 22719,
+        "endIndex": 23688,
+        "chunkIndex": 26,
+        "section": "Introduction",
+        "globalChunkIndex": 26
+      }
+    },
+    {
+      "id": "chunk-27",
+      "text": "s://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/]",
+      "metadata": {
+        "startIndex": 23588,
+        "endIndex": 24586,
+        "chunkIndex": 27,
+        "section": "Introduction",
+        "globalChunkIndex": 27
+      }
+    },
+    {
+      "id": "chunk-28",
+      "text": "] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+      "metadata": {
+        "startIndex": 24486,
+        "endIndex": 25486,
+        "chunkIndex": 28,
+        "section": "Introduction",
+        "globalChunkIndex": 28
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "figma;components;variants;organization"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T03:09:56.207Z",
+    "system": "Figma",
+    "author": "Figma Help Center",
+    "version": "1.0",
+    "source_url": "https://help.figma.com/hc/en-us/articles/360056440594"
+  }
+}

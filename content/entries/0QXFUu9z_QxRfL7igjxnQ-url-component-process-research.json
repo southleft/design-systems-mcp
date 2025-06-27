@@ -1,0 +1,101 @@
+{
+  "id": "0QXFUu9z_QxRfL7igjxnQ",
+  "title": "Component Process: Research",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/research",
+    "ingested_at": "2025-06-27T02:59:40.630Z"
+  },
+  "content": "Research - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 1.3 Research. Phase --> Research Type Focus --> Time --> 1-3 days ## What is it? Industry analysis, best practice and accessibility review. ## Why do we do it? To gain a more substantial perspective of how we can improve on what we have by looking at the outside world. ## How do we do it? ### Where to research Industry standards and best practices • Material Design [https://m3.material.io/], Human Interface Guidelines [https://developer.apple.com/design/human-interface-guidelines], WCAG [https://www.w3.org/WAI/standards-guidelines/wcag/] Accessibility considerations • Nielsen Norman Group [https://www.nngroup.com/], Adam Silver [https://adamsilver.io/] Other Design Systems and component guides • The component gallery [https://component.gallery/], Brandsite Design [https://www.brandsite.design/] and GDS [https://www.gov.uk/government/organisations/government-digital-service] (high standard for accessibility) • Competitors to your product Inspirational sites for ideas • Dribbble [https://dribbble.com/following], Pinterest [https://www.pinterest.co.uk/], Awwwards [https://www.awwwards.com/], Behance [https://www.behance.net/], Design inspiration [https://www.designspiration.com/], The inspiration grid [https://theinspirationgrid.com/] Tech, design, UX articles and books • Smashing Magazine [https://www.smashingmagazine.com/], A List Apart [https://alistapart.com/], UX Collective [https://uxdesign.cc/] ## What to research ### Design Basic standards of how the component is designed and its different variations and states. Consider and outline the different contexts for the design examples you find and consider their relevance to your use cases. ### Usage Where is this component going to be used in the experience? Are there single or multiple types/variants for this component? If so, do they have different use cases or contexts? Is there a particular placement for this component? Is there another component that performs a similar function to the one you’re making? If so, what are the rules around when to use what, and which case best suits the problem you’re trying to solve? This is important to get right up front. Otherwise, teams will use different components in the same use case, creating a disjointed experience. Example Tabs and Segmented Control The lines between these two components can quickly become blurred without the proper guidance. #### Tabs Tabbed interfaces are a way of navigating between multiple panels, reducing clutter and fitting more into a smaller space. #### Segmented control A hybrid somewhere between a button group, radio buttons, and tabs; segmented controls are used to switch between different options or views. ### Interaction and animation Consider what kind of interactions are available for the different states of this component. Are there any other additional features you need to accommodate when designing? What are the different options for animation on this component? Does it require any? ### Accessibility Accessibility isn’t just adhering to WCAGs colour contrast guidelines [https://webaim.org/resources/contrastchecker/#:~:text=WCAG%20Level%20AAA%20requires%20a,value%20from%20any%20page%20element.]. It’s understanding how to design components for everyone best. Each component will be different, so reviewing each as you go is best. For example, the text input component, which has a fundamental accessibility consideration, is often overlooked — #### Placeholders are problematic Placeholders have below AA [https://www.w3.org/WAI/WCAG2AA-Conformance] contrast and are cleared the moment the user clicks inside them, making them poor for accessibility. Read more [https://adamsilver.io/blog/the-problem-with-placeholders-and-what-to-do-instead/] ### Tone of voice How have others considered tone of voice in this particular component? Does the micro-copy on this component need to be straight to the point, or can you inject more of your brand into it? Example error messages Avoid using a cheerful tone of voice on an error message. The goal is to be as straightforward as possible so the user can reach their end goal without getting frustrated with your content. ### Guidance How have others considered guidance of this component? What areas are heavily highlighted that might indicate Design System users require more support or information? What can you learn from other guidance sites for this component? ## Outcomes • A deeper understanding of accessibility for the specific component. • Ideas for naming conventions. • A collection of best practice examples and visuals to help structure the design phase. • Research to support design decisions Hot tips Use this opportunity to make notes for best practice and accessibility documentation. ## Up next Step 1.4 Research sync Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Research - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 1.3 Research. Phase --> Research Type Focus --> Time --> 1-3 days ## What is it? Industry analysis, best practice and accessibility review.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 981,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "cus --> Time --> 1-3 days ## What is it? Industry analysis, best practice and accessibility review. ## Why do we do it? To gain a more substantial perspective of how we can improve on what we have by looking at the outside world. ## How do we do it? ### Where to research Industry standards and best practices • Material Design [https://m3.material.io/], Human Interface Guidelines [https://developer.apple.com/design/human-interface-guidelines], WCAG [https://www.w3.org/WAI/standards-guidelines/wcag/] Accessibility considerations • Nielsen Norman Group [https://www.nngroup.com/], Adam Silver [https://adamsilver.io/] Other Design Systems and component guides • The component gallery [https://component.gallery/], Brandsite Design [https://www.brandsite.design/] and GDS [https://www.gov.uk/government/organisations/government-digital-service] (high standard for accessibility) • Competitors to your product Inspirational sites for ideas • Dribbble [https://dribbble.com/following], Pinterest",
+      "metadata": {
+        "startIndex": 881,
+        "endIndex": 1877,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "o your product Inspirational sites for ideas • Dribbble [https://dribbble.com/following], Pinterest [https://www.pinterest.co.uk/], Awwwards [https://www.awwwards.com/], Behance [https://www.behance.net/], Design inspiration [https://www.designspiration.com/], The inspiration grid [https://theinspirationgrid.com/] Tech, design, UX articles and books • Smashing Magazine [https://www.smashingmagazine.com/], A List Apart [https://alistapart.com/], UX Collective [https://uxdesign.cc/] ## What to research ### Design Basic standards of how the component is designed and its different variations and states. Consider and outline the different contexts for the design examples you find and consider their relevance to your use cases. ### Usage Where is this component going to be used in the experience? Are there single or multiple types/variants for this component? If so, do they have different use cases or contexts? Is there a particular placement for this component?",
+      "metadata": {
+        "startIndex": 1777,
+        "endIndex": 2748,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": ", do they have different use cases or contexts? Is there a particular placement for this component? Is there another component that performs a similar function to the one you’re making? If so, what are the rules around when to use what, and which case best suits the problem you’re trying to solve? This is important to get right up front. Otherwise, teams will use different components in the same use case, creating a disjointed experience. Example Tabs and Segmented Control The lines between these two components can quickly become blurred without the proper guidance. #### Tabs Tabbed interfaces are a way of navigating between multiple panels, reducing clutter and fitting more into a smaller space. #### Segmented control A hybrid somewhere between a button group, radio buttons, and tabs; segmented controls are used to switch between different options or views. ### Interaction and animation Consider what kind of interactions are available for the different states of this component.",
+      "metadata": {
+        "startIndex": 2648,
+        "endIndex": 3642,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "mation Consider what kind of interactions are available for the different states of this component. Are there any other additional features you need to accommodate when designing? What are the different options for animation on this component? Does it require any? ### Accessibility Accessibility isn’t just adhering to WCAGs colour contrast guidelines [https://webaim.org/resources/contrastchecker/#:~:text=WCAG%20Level%20AAA%20requires%20a,value%20from%20any%20page%20element.]. It’s understanding how to design components for everyone best. Each component will be different, so reviewing each as you go is best. For example, the text input component, which has a fundamental accessibility consideration, is often overlooked — #### Placeholders are problematic Placeholders have below AA [https://www.w3.org/WAI/WCAG2AA-Conformance] contrast and are cleared the moment the user clicks inside them, making them poor for accessibility.",
+      "metadata": {
+        "startIndex": 3542,
+        "endIndex": 4478,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ontrast and are cleared the moment the user clicks inside them, making them poor for accessibility. Read more [https://adamsilver.io/blog/the-problem-with-placeholders-and-what-to-do-instead/] ### Tone of voice How have others considered tone of voice in this particular component? Does the micro-copy on this component need to be straight to the point, or can you inject more of your brand into it? Example error messages Avoid using a cheerful tone of voice on an error message. The goal is to be as straightforward as possible so the user can reach their end goal without getting frustrated with your content. ### Guidance How have others considered guidance of this component? What areas are heavily highlighted that might indicate Design System users require more support or information? What can you learn from other guidance sites for this component? ## Outcomes • A deeper understanding of accessibility for the specific component. • Ideas for naming conventions.",
+      "metadata": {
+        "startIndex": 4378,
+        "endIndex": 5350,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "A deeper understanding of accessibility for the specific component. • Ideas for naming conventions. • A collection of best practice examples and visuals to help structure the design phase. • Research to support design decisions Hot tips Use this opportunity to make notes for best practice and accessibility documentation. ## Up next Step 1.4 Research sync Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 5250,
+        "endIndex": 6250,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "research;user-research;discovery;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:40.630Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/research"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "T0mRbc0IXO5Wq4lCpITMp",
+  "title": "Component Process: Product Audit",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/product-audit",
+    "ingested_at": "2025-06-27T02:59:39.575Z"
+  },
+  "content": "Product audit - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 1.1 Product audit. Phase --> Research Type Focus --> Time --> 3-5 days ## What is it? A detailed review of your existing product experience — specifically around the use of the component you’re auditing. All audits will look slightly different based on what you’re auditing. Generally, it’ll comprise of a series of screens, split by platform and screen size — coupled with notes and observations. ## Why do we do it? It’s impossible to know your current component’s issues or how the experience is performing without a detailed overview of the product. Doing an audit allows us to see misalignment, inconsistency, UX issues and gaps in our experiences. But the biggest reason we do it is to answer this question: do you even need it? Is there another component that performs a similar function, or would an update to an existing component support this? Is there a different pattern that would work better for your use cases? And finally, is this component simply plugging lazy or poor UX? ## How do we do it? ### Review the existing experience Go through product screens and gather as many examples as possible of where this component is currently being used, including where it could/should be used — this will also highlight where components are being misused or misaligned. If you’re auditing for a new component, review all of the interaction states in your experience as well. #### Work with your Developers Your Developers can easily find out where a component is being used in the product. This will make it easier to find them within experiences without mindlessly searching — they’ll also have a better idea of where other components are being misused. They can also help identify where native components have been used vs. your system components or … dare I say it, where custom components have been implemented — custom components can be deceiving as they may look and act precisely like system components but don’t get the fundamental support or updates from your System, so it’s essential to weed them out and find out why they’re custom. #### Chat with product teams If you can, be sure to engage your product teams to crowd-source as many examples of what you’re auditing as possible; you’ll likely also get a lot of initial feedback from these people. ### Things to look out for #### Design • What are the visual differences between each example? #### Use case Are they being used for the proper purposes? • How do they differ, and why? #### Interaction and animation Look at the hover, active and focus states. • Are they all different? • Do they animate in the same way? #### Accessibility • How do they scale Do they support voiceover? • Is it understandable? #### Tone of voice • Have they been written in the same/similar format? • Has the wrong tone of voice been used in a particular use case? #### Cross platform differences Do your iOS, Android or web platforms look different? • Has this change been made intentionally? ### Take notes as you go Be sure to add post-its or comments as you go to highlight important pieces, inconsistencies or ideas — and don’t be afraid to allow the project to evolve as needed. You can also run a meeting post-audit and share it back to get additional feedback — this will highlight things you may have missed. ## Requirements gathering This process will leave you with a comprehensive collection of the different experiences that are or should be using your component. At this point, you should start listing the requirements needed to align your component in each use case for scalability. By aligning and defining these requirements, you’ll have the opportunity to find more innovative and scaleable ways to solve design problems across many areas, which you can further explore in the design exploration phase. ## Outcomes While every audit is different, usually you should end up with the following — • A comprehensive overview of component usage across platforms • A collection of examples structured by area and platform • A list of considerations, ideas, outcomes and next steps Hot tips Be sure to look for areas where your component could/should be used in the product but isn’t — dig deeper, find out why and take notes. Creating a page of snippets — like ‘misaligned buttons’, is a great visual asset in your arsenal for selling the need of your system to the business should you ever need it. ## Up next Step 1.2 Kickoff Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Product audit - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 1.1 Product audit. Phase --> Research Type Focus --> Time --> 3-5 days ## What is it?",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 932,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "bout [/about] 1.1 Product audit. Phase --> Research Type Focus --> Time --> 3-5 days ## What is it? A detailed review of your existing product experience — specifically around the use of the component you’re auditing. All audits will look slightly different based on what you’re auditing. Generally, it’ll comprise of a series of screens, split by platform and screen size — coupled with notes and observations. ## Why do we do it? It’s impossible to know your current component’s issues or how the experience is performing without a detailed overview of the product. Doing an audit allows us to see misalignment, inconsistency, UX issues and gaps in our experiences. But the biggest reason we do it is to answer this question: do you even need it? Is there another component that performs a similar function, or would an update to an existing component support this? Is there a different pattern that would work better for your use cases?",
+      "metadata": {
+        "startIndex": 832,
+        "endIndex": 1772,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ing component support this? Is there a different pattern that would work better for your use cases? And finally, is this component simply plugging lazy or poor UX? ## How do we do it? ### Review the existing experience Go through product screens and gather as many examples as possible of where this component is currently being used, including where it could/should be used — this will also highlight where components are being misused or misaligned. If you’re auditing for a new component, review all of the interaction states in your experience as well. #### Work with your Developers Your Developers can easily find out where a component is being used in the product. This will make it easier to find them within experiences without mindlessly searching — they’ll also have a better idea of where other components are being misused. They can also help identify where native components have been used vs.",
+      "metadata": {
+        "startIndex": 1672,
+        "endIndex": 2580,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "omponents are being misused. They can also help identify where native components have been used vs. your system components or … dare I say it, where custom components have been implemented — custom components can be deceiving as they may look and act precisely like system components but don’t get the fundamental support or updates from your System, so it’s essential to weed them out and find out why they’re custom. #### Chat with product teams If you can, be sure to engage your product teams to crowd-source as many examples of what you’re auditing as possible; you’ll likely also get a lot of initial feedback from these people. ### Things to look out for #### Design • What are the visual differences between each example? #### Use case Are they being used for the proper purposes? • How do they differ, and why? #### Interaction and animation Look at the hover, active and focus states. • Are they all different? • Do they animate in the same way?",
+      "metadata": {
+        "startIndex": 2480,
+        "endIndex": 3436,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "at the hover, active and focus states. • Are they all different? • Do they animate in the same way? #### Accessibility • How do they scale Do they support voiceover? • Is it understandable? #### Tone of voice • Have they been written in the same/similar format? • Has the wrong tone of voice been used in a particular use case? #### Cross platform differences Do your iOS, Android or web platforms look different? • Has this change been made intentionally? ### Take notes as you go Be sure to add post-its or comments as you go to highlight important pieces, inconsistencies or ideas — and don’t be afraid to allow the project to evolve as needed. You can also run a meeting post-audit and share it back to get additional feedback — this will highlight things you may have missed. ## Requirements gathering This process will leave you with a comprehensive collection of the different experiences that are or should be using your component.",
+      "metadata": {
+        "startIndex": 3336,
+        "endIndex": 4276,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "a comprehensive collection of the different experiences that are or should be using your component. At this point, you should start listing the requirements needed to align your component in each use case for scalability. By aligning and defining these requirements, you’ll have the opportunity to find more innovative and scaleable ways to solve design problems across many areas, which you can further explore in the design exploration phase. ## Outcomes While every audit is different, usually you should end up with the following — • A comprehensive overview of component usage across platforms • A collection of examples structured by area and platform • A list of considerations, ideas, outcomes and next steps Hot tips Be sure to look for areas where your component could/should be used in the product but isn’t — dig deeper, find out why and take notes. Creating a page of snippets — like ‘misaligned buttons’, is a great visual asset in your arsenal for selling the need of your system to",
+      "metadata": {
+        "startIndex": 4176,
+        "endIndex": 5174,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "misaligned buttons’, is a great visual asset in your arsenal for selling the need of your system to the business should you ever need it. ## Up next Step 1.2 Kickoff Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 5074,
+        "endIndex": 6074,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "audit;analysis;assessment;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:39.575Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/product-audit"
+  }
+}

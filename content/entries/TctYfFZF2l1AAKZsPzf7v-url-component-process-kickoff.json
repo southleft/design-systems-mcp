@@ -1,0 +1,68 @@
+{
+  "id": "TctYfFZF2l1AAKZsPzf7v",
+  "title": "Component Process: Kickoff",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/kickoff",
+    "ingested_at": "2025-06-27T02:59:39.573Z"
+  },
+  "content": "Kickoff - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 1.2 Kickoff. Phase --> Research Type Focus --> Time --> 1 hour ## What is it? A meeting to align everyone on the project — including goals and next steps. ## Why do we do it? Keeping everyone involved from the beginning stops us from working in silos. It also expands our thinking and allows others to give feedback/advice on what we’re working on. ## Things to prepare An audit findings overview presentation. #### Example presentation • Why are we doing this? What problem do we need to solve? • Audit of the component in use, including any other areas where it could/should be used • Customers impact • Why now? • Any additional supporting data/evidence? ## Who should be there? This depends on your team, but a good rule of thumb is — #### Developers If you want to ship and ship fast, you’ll want to involve your Developers from the beginning. Not only will they feel like they’ve been part of the process, they’ll be bought in, so they’ll more likely be engaged to work on this project. It also eliminates this idea of a ‘handover’ where they’ve not seen anything until they’re told to build it — yuck. Be sure to include any Developer working on this project or has some investment in it. If you have multiple platforms, including a representative from each platform is essential. #### Other Designers Any other Designers, Content Designers or Researchers in your team that will be involved in this work. #### Key stakeholders (optional) Any stakeholders for this project, including Product/Program Managers, Delivery Managers, or even external team members who will be using this component/have expressed interest in this work. ## Example agenda This depends on how your audit has come together and who you have in your session. • Introduction to the component & walkthrough of your presentation/playback • Any existing issues cross-platform • Current platform implementation — if any • Feedback and ideas • Next steps ## Outcomes • Team alignment • Cross-platform awareness • Additional areas to investigate Hot tips Putting together a deck to share your findings for this meeting will make it smoother and create stronger alignment. Be sure to outline what you expect from others and their level of engagement in this work. ## Up next Step 1.3 Research Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Kickoff - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 1.2 Kickoff. Phase --> Research Type Focus --> Time --> 1 hour ## What is it? A meeting to align everyone on the project — including goals and next steps.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 995,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "1 hour ## What is it? A meeting to align everyone on the project — including goals and next steps. ## Why do we do it? Keeping everyone involved from the beginning stops us from working in silos. It also expands our thinking and allows others to give feedback/advice on what we’re working on. ## Things to prepare An audit findings overview presentation. #### Example presentation • Why are we doing this? What problem do we need to solve? • Audit of the component in use, including any other areas where it could/should be used • Customers impact • Why now? • Any additional supporting data/evidence? ## Who should be there? This depends on your team, but a good rule of thumb is — #### Developers If you want to ship and ship fast, you’ll want to involve your Developers from the beginning. Not only will they feel like they’ve been part of the process, they’ll be bought in, so they’ll more likely be engaged to work on this project.",
+      "metadata": {
+        "startIndex": 895,
+        "endIndex": 1833,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "rt of the process, they’ll be bought in, so they’ll more likely be engaged to work on this project. It also eliminates this idea of a ‘handover’ where they’ve not seen anything until they’re told to build it — yuck. Be sure to include any Developer working on this project or has some investment in it. If you have multiple platforms, including a representative from each platform is essential. #### Other Designers Any other Designers, Content Designers or Researchers in your team that will be involved in this work. #### Key stakeholders (optional) Any stakeholders for this project, including Product/Program Managers, Delivery Managers, or even external team members who will be using this component/have expressed interest in this work. ## Example agenda This depends on how your audit has come together and who you have in your session. • Introduction to the component & walkthrough of your presentation/playback • Any existing issues cross-platform • Current platform implementation — if any",
+      "metadata": {
+        "startIndex": 1733,
+        "endIndex": 2733,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "esentation/playback • Any existing issues cross-platform • Current platform implementation — if any • Feedback and ideas • Next steps ## Outcomes • Team alignment • Cross-platform awareness • Additional areas to investigate Hot tips Putting together a deck to share your findings for this meeting will make it smoother and create stronger alignment. Be sure to outline what you expect from others and their level of engagement in this work. ## Up next Step 1.3 Research Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 2633,
+        "endIndex": 3633,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "kickoff;planning;stakeholders;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:39.574Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/kickoff"
+  }
+}

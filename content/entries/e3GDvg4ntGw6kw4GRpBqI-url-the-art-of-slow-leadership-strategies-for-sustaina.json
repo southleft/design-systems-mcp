@@ -1,0 +1,189 @@
+{
+  "id": "e3GDvg4ntGw6kw4GRpBqI",
+  "title": "The Art of Slow: Leadership Strategies for Sustainable Design Systems",
+  "source": {
+    "type": "url",
+    "location": "https://www.knapsack.cloud/blog/the-art-of-slow",
+    "ingested_at": "2025-06-27T02:45:21.532Z"
+  },
+  "content": "The Art of Slow: Leadership Strategies for Sustainable Design Systems | Knapsack A Tale of Two Tools: How Knapsack and Storybook Stack up [https://www.knapsack.cloud/blog/a-tale-of-two-tools-how-knapsack-and-storybook-stack-up] Knapsack for Engineers: Spend less time maintaining and more time coding [https://www.knapsack.cloud/solutions/developers] Patterns: An event for design, engineering, and product leaders. Apply now! [https://www.knapsack.cloud/patterns] [/]Features [/features] Dynamic Documentation [/feature-listing/dynamic-documentation]Design Tokens & Theming [/feature-listing/design-tokens-theming]Component & Pattern Management [/feature-listing/component-and-pattern-management]Prototyping & Composition [/feature-listing/prototyping-and-composition]Permissions & Controls [/feature-listing/permissions-and-controls]Integrations [/feature-listing/integrations] Solutions [#] For Engineers [/solutions/engineers]For Designers [/solutions/designers]For Product Managers [/solutions/product-managers]For Executive Leadership [/solutions/executives]Case Studies [/case-studies] Resources [#] Insights [/blog]Events [/events]Product Tours [https://app.teamwalnut.com/player/playlist?playlistId=416abec8-00dc-417e-8a8a-65f0b9b2290a]Roadmap [/roadmap]Documentation [https://docs.knapsack.cloud/]ROI Calculator [/calculator]FAQs [/faq] Solutions [/solutions-2] Designers [/solutions?tab=who-for_tab-link1]Developers [/solutions?tab=who-for_tab-link2]Product Managers [/solutions?tab=product-managers]UX Writers [/solutions?tab=ux-writers] Enterprise [/enterprise] ROI Calculator [/calculator] Plans [/pricing]Blog [/blog]Help [https://help.knapsack.cloud/] Blog [/blog] Accessibility [/blog-categories/accessibility] Announcements [/blog-categories/announcements] Collaboration [/blog-categories/collaboration] Design Systems [/blog-categories/design-systems] Design Tokens [/blog-categories/design-tokens] Events [/blog-categories/events] Insights [/blog-categories/insights] Podcast [/blog-categories/podcast] Product [/blog-categories/product] Webinars [/blog-categories/webinars] Contact Sales [/connect-with-us] March 5, 2024 | Richard Banfield Design Systems [/blog-categories/design-systems] # The Art of Slow: Leadership Strategies for Sustainable Design Systems ‍ “How can we get better by going slow? What benefits will our teams enjoy when we slow down the work?” ‍ These were the questions that Dan Mall kicked off with at Knapsack’s Design Systems Leadership Summit [https://www.knapsack.cloud/design-systems-leadership-summits] last month in NYC. His questions imply an understanding that we’re all caught up in the hustle culture of continuous delivery. We’ve been driving our teams to do more, but with little to show for it apart from burnout, frustration, and a tech stack that resembles a hoarder&#x27;s closet. ‍ It is very telling that the enterprise leaders who gathered for this conversation last week were far more interested in talking about preventing burnout, cultivating a positive mindset, and nurturing relationships, than they were about methodologies and velocity. With several decades of broken process efficiency promises behind us, this isn’t surprising. It is clear that going faster and increasing velocity do not equal productivity or value. ‍ We need to ask ourselves better questions. What if we were able to move faster by slowing down? How might we become more intentional instead of only focusing on higher velocity? Can we increase impact if we decelerate our work? What if we described work in only terms of scope instead of roadmaps and deadlines? ‍ The Design Systems Leadership Summit provided attendees with actionable insights that can immediately be applied to projects and initiatives. Here are the key findings: ‍ ### 1. Negotiate Scope, Not Time ‍ “Don’t call it slowing down, call it stability,” was the advice of Alice Christina Vøgg Preisler, who leads the design system efforts at ADP. Negotiating deadlines can be very difficult. Leadership doesn’t react well to suggestions of slowing down but they do value predictability and stability. Reframing the conversation from doing less in the time available, to making the work more stable and predictable is critical in shaping a reasonable scope while still addressing growth and scale concerns. ‍ Being focused on scope versus speed is a characteristic of mature product teams. Studies like the Design Maturity Assessment from InVision [https://s3.amazonaws.com/designco-web-assets/uploads/2019/01/The-New-Design-Frontier-from-InVision-012919.pdf?utm_campaign=Design+Maturity], have shown that mature teams see time as a fixed constraint. By making time a non-negotiable, these teams were able to focus on negotiating about scope and not getting caught up in the weeds of deadlines and schedules. ‍ The key question for these teams is, “What can we do with the time we have?” Leaders who understand that time cannot be created out of thin air will do better than those who try to squeeze unreasonable efforts into short timelines. The obvious benefit of respecting the fixed nature of time is reduced stress for both leaders and teams. ‍ ### 2. Adopt a Subtractive Mindset (or Less is More) ‍ “There is nothing more permanent than a temporary solution,” observes Robin Cannon from JP Morgan Chase. “Unfortunately, the short-term solution is often the thing that gets attention.” Leaders are incentivized to solve problems quickly, which means the near-term solution looks the most attractive. To create sustainable solutions, leaders need to adopt a long-term mindset that is based on reducing—not adding—complexity. ‍ There is a natural tendency to add solutions or processes to solve problems, but this is counteractive. The more we add, the more risks we create. In design systems, risks can mean out-of-date documentation, parallel work, duplicated components, and downstream tech debt. “A design system is a spirit,” says Andrew Pendergast, leader of the Verizon Design System. “It’s a mindset, and that means you have to be willing to play the long game.” ‍ When it comes to design systems, the biggest culprit for short-term complexity is the number of components. “Avoid the components argument and start with something simple like color and typography,” suggests ADP’s Preisler. Trying to create a full collection of components is a significant scope that will result in serious delays. Instead, start very small. Once the initial components are in place, the rest can follow. The narrative of reducing the number of components is only half the conversation. Reducing complexity by removing items, steps, tools and even people is a characteristic of mature product teams. ‍ ### 3. Build in Daylight. Initiatives built in secret are bound to fail. ‍ “This is the third time we’re embarking on a design system project,” revealed an executive at a top global healthcare company. \"We stumbled the previous two times because we tried to build them in private.” Their solution is to foster full transparency and secure senior support when building design systems. ‍ As frightening as it may seem, building your design system for all to see is the least risky path. It is common to assume that by getting everything right before the big reveal, you can avoid failure, but this simply isn’t the case. ‍ As with all things in life, it is not true that the more we succeed, the less we fail. The reality is that failure is woven into the fabric of success. Instead of asking, “How do we avoid failing at this initiative?”, we need to ask, “How do we proceed and fail in ways that lead to the type of skill development and understanding that will make this a long-term success?” In other words, we need to ask how we can fail to produce success. ‍ In the case of design systems, the answer is to start out in the open and share your learnings from all the inevitable missteps. “The team needs to see their work visible to the org. They need to see the impact they are making so they can create momentum and excitement,” suggests Corey Greeneltch, who is leading Autodesk’s design system efforts. When you build in plain sight, you gain supporters, not detractors. By asking for help and including the people that the design system affects, you’re building the grassroots support you’ll need to get the project built. ‍ ### 4. Prioritize Well-being to Avoid Burnout‍ ‍How do you remain productive but not burn out your team? To achieve this balance, you might need to ask, “What does productivity mean to my team?” Every team should be building the design system that is right for them. That means that teams need to avoid comparing their systems to the systems of other companies. What is good for a large technology business isn’t going to be good for a global bank. As Getting Things Done [https://gettingthingsdone.com/] creator David Allen said, “You can do anything, but you can’t do everything.” ‍ How we define and measure our work often becomes the incentive for what we focus on. If the metrics are high volume outputs, then we’re heading towards burnout. If metrics are based on team health and achieving objective outcomes, the health of the team rises accordingly. Behind these metrics and incentives are relationships. Healthy relationships are at the core of a healthy team, both within and extending beyond the immediate team. “Building partnerships is the work,” says Jackie Lai, Lead UX Designer at OPIS (A Dow Jones Company). ‍ ### Better Products From Intentional Choices ‍ The key takeaways from our second Design Systems Leadership Summit were that leaders have had to adopt new mindsets and behaviors that align with sustainable practices. As we’ve learned from conversations with leaders aboutscope, visibility and mindset, avoiding burnout requires a multifaceted approach. Smaller teams operating in a transparent way tend to start with their peers and organize their work into smaller tasks. Smaller, more focused teams working on smaller sprints are happier and more stable. It’s not hard to see how all of these things are connected. From our conversations at the Design Systems Leadership Summit and reflecting on decades of evidence, smaller teams are much healthier and more motivated. A team with a reasonable scope, healthy relationships, and the safety to mindfully talk about deadlines and incentives will deliver value in a sustainable way. ‍ Join the conversation to get real insights from other leaders working on enterprise design systems. These exclusive Design Systems Leadership Summits are happening once a month in major cities across the US. Check out the schedule and apply today [https://www.knapsack.cloud/design-systems-leadership-summits]! ## Get started See how Knapsack helps you reach your design system goals. Explore Case Studies [/case-studies] ## Get started See how Knapsack makes design system management easy. Learn more [#] ## Related posts [/blog/how-design-systems-create-and-maintain-competitive-advantage] ## How Design Systems Help Create and Maintain Your Product Organization&#x27;s Competitive Advantage [/blog/streamlined-design-system-integration-for-the-enterprise] ## Streamlined Design System Integration for the Enterprise [/blog/t-rowe-price-beacon-design-system] ## Unifying Design and Development: The Beacon Design System at T. Rowe Price [/] The digital production platform for enterprise teams. Subscribe for digital production tips and inspiration. Thank you! Your submission has been received! Oops! Something went wrong while submitting the form. Company Case Studies [/case-studies]Careers [https://knapsack.breezy.hr/]Agency Partners [/agency]Terms of Service [/legal/terms-of-service]Security [/legal/security]Privacy [/legal/privacy] Product Solutions [/solutions-2]Plans [/pricing]Roadmap [/roadmap]Help Docs [https://docs.knapsack.cloud/site/ks-docs/latest]vs Storybook [/storybook-vs-knapsack]vs Supernova [/knapsack-vs-supernova]vs Zeroheight [/knapsack-vs-zeroheight] Resources Blog [/blog]How Knapsack Works [#]ROI Calculator [/calculator]Videos [https://www.youtube.com/@knapsackcloud]Podcast [https://www.designsystemspodcast.com/episodes]Documentation [https://help.knapsack.cloud/]Contact us [mailto:hello@knapsack.cloud?subject=Knapsack%20inquiry]Customer Login [http://app.knapsack.cloud] ©2025 Knapsack Company. All rights reserved. Social",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "The Art of Slow: Leadership Strategies for Sustainable Design Systems | Knapsack A Tale of Two Tools: How Knapsack and Storybook Stack up [https://www.knapsack.cloud/blog/a-tale-of-two-tools-how-knapsack-and-storybook-stack-up] Knapsack for Engineers: Spend less time maintaining and more time coding [https://www.knapsack.cloud/solutions/developers] Patterns: An event for design, engineering, and product leaders. Apply now! [https://www.knapsack.cloud/patterns] [/]Features [/features] Dynamic Documentation [/feature-listing/dynamic-documentation]Design Tokens & Theming [/feature-listing/design-tokens-theming]Component & Pattern Management [/feature-listing/component-and-pattern-management]Prototyping & Composition [/feature-listing/prototyping-and-composition]Permissions & Controls [/feature-listing/permissions-and-controls]Integrations [/feature-listing/integrations] Solutions [#] For Engineers [/solutions/engineers]For Designers [/solutions/designers]For Product Managers",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 987,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ns [#] For Engineers [/solutions/engineers]For Designers [/solutions/designers]For Product Managers [/solutions/product-managers]For Executive Leadership [/solutions/executives]Case Studies [/case-studies] Resources [#] Insights [/blog]Events [/events]Product Tours [https://app.teamwalnut.com/player/playlist?playlistId=416abec8-00dc-417e-8a8a-65f0b9b2290a]Roadmap [/roadmap]Documentation [https://docs.knapsack.cloud/]ROI Calculator [/calculator]FAQs [/faq] Solutions [/solutions-2] Designers [/solutions?tab=who-for_tab-link1]Developers [/solutions?tab=who-for_tab-link2]Product Managers [/solutions?tab=product-managers]UX Writers [/solutions?tab=ux-writers] Enterprise [/enterprise] ROI Calculator [/calculator] Plans [/pricing]Blog [/blog]Help [https://help.knapsack.cloud/] Blog [/blog] Accessibility [/blog-categories/accessibility] Announcements [/blog-categories/announcements] Collaboration [/blog-categories/collaboration] Design Systems [/blog-categories/design-systems] Design Tokens",
+      "metadata": {
+        "startIndex": 887,
+        "endIndex": 1885,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ion [/blog-categories/collaboration] Design Systems [/blog-categories/design-systems] Design Tokens [/blog-categories/design-tokens] Events [/blog-categories/events] Insights [/blog-categories/insights] Podcast [/blog-categories/podcast] Product [/blog-categories/product] Webinars [/blog-categories/webinars] Contact Sales [/connect-with-us] March 5, 2024 | Richard Banfield Design Systems [/blog-categories/design-systems] # The Art of Slow: Leadership Strategies for Sustainable Design Systems ‍ “How can we get better by going slow? What benefits will our teams enjoy when we slow down the work?” ‍ These were the questions that Dan Mall kicked off with at Knapsack’s Design Systems Leadership Summit [https://www.knapsack.cloud/design-systems-leadership-summits] last month in NYC. His questions imply an understanding that we’re all caught up in the hustle culture of continuous delivery. We’ve been driving our teams to do more, but with little to show for it apart from burnout, frustration,",
+      "metadata": {
+        "startIndex": 1785,
+        "endIndex": 2785,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "been driving our teams to do more, but with little to show for it apart from burnout, frustration, and a tech stack that resembles a hoarder&#x27;s closet. ‍ It is very telling that the enterprise leaders who gathered for this conversation last week were far more interested in talking about preventing burnout, cultivating a positive mindset, and nurturing relationships, than they were about methodologies and velocity. With several decades of broken process efficiency promises behind us, this isn’t surprising. It is clear that going faster and increasing velocity do not equal productivity or value. ‍ We need to ask ourselves better questions. What if we were able to move faster by slowing down? How might we become more intentional instead of only focusing on higher velocity? Can we increase impact if we decelerate our work? What if we described work in only terms of scope instead of roadmaps and deadlines?",
+      "metadata": {
+        "startIndex": 2685,
+        "endIndex": 3605,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "erate our work? What if we described work in only terms of scope instead of roadmaps and deadlines? ‍ The Design Systems Leadership Summit provided attendees with actionable insights that can immediately be applied to projects and initiatives. Here are the key findings: ‍ ### 1. Negotiate Scope, Not Time ‍ “Don’t call it slowing down, call it stability,” was the advice of Alice Christina Vøgg Preisler, who leads the design system efforts at ADP. Negotiating deadlines can be very difficult. Leadership doesn’t react well to suggestions of slowing down but they do value predictability and stability. Reframing the conversation from doing less in the time available, to making the work more stable and predictable is critical in shaping a reasonable scope while still addressing growth and scale concerns. ‍ Being focused on scope versus speed is a characteristic of mature product teams. Studies like the Design Maturity Assessment from InVision",
+      "metadata": {
+        "startIndex": 3505,
+        "endIndex": 4455,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "a characteristic of mature product teams. Studies like the Design Maturity Assessment from InVision [https://s3.amazonaws.com/designco-web-assets/uploads/2019/01/The-New-Design-Frontier-from-InVision-012919.pdf?utm_campaign=Design+Maturity], have shown that mature teams see time as a fixed constraint. By making time a non-negotiable, these teams were able to focus on negotiating about scope and not getting caught up in the weeds of deadlines and schedules. ‍ The key question for these teams is, “What can we do with the time we have?” Leaders who understand that time cannot be created out of thin air will do better than those who try to squeeze unreasonable efforts into short timelines. The obvious benefit of respecting the fixed nature of time is reduced stress for both leaders and teams. ‍ ### 2. Adopt a Subtractive Mindset (or Less is More) ‍ “There is nothing more permanent than a temporary solution,” observes Robin Cannon from JP Morgan Chase.",
+      "metadata": {
+        "startIndex": 4355,
+        "endIndex": 5317,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "e is nothing more permanent than a temporary solution,” observes Robin Cannon from JP Morgan Chase. “Unfortunately, the short-term solution is often the thing that gets attention.” Leaders are incentivized to solve problems quickly, which means the near-term solution looks the most attractive. To create sustainable solutions, leaders need to adopt a long-term mindset that is based on reducing—not adding—complexity. ‍ There is a natural tendency to add solutions or processes to solve problems, but this is counteractive. The more we add, the more risks we create. In design systems, risks can mean out-of-date documentation, parallel work, duplicated components, and downstream tech debt. “A design system is a spirit,” says Andrew Pendergast, leader of the Verizon Design System. “It’s a mindset, and that means you have to be willing to play the long game.” ‍ When it comes to design systems, the biggest culprit for short-term complexity is the number of components.",
+      "metadata": {
+        "startIndex": 5217,
+        "endIndex": 6191,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "comes to design systems, the biggest culprit for short-term complexity is the number of components. “Avoid the components argument and start with something simple like color and typography,” suggests ADP’s Preisler. Trying to create a full collection of components is a significant scope that will result in serious delays. Instead, start very small. Once the initial components are in place, the rest can follow. The narrative of reducing the number of components is only half the conversation. Reducing complexity by removing items, steps, tools and even people is a characteristic of mature product teams. ‍ ### 3. Build in Daylight. Initiatives built in secret are bound to fail. ‍ “This is the third time we’re embarking on a design system project,” revealed an executive at a top global healthcare company. \"We stumbled the previous two times because we tried to build them in private.” Their solution is to foster full transparency and secure senior support when building design systems.",
+      "metadata": {
+        "startIndex": 6091,
+        "endIndex": 7086,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "eir solution is to foster full transparency and secure senior support when building design systems. ‍ As frightening as it may seem, building your design system for all to see is the least risky path. It is common to assume that by getting everything right before the big reveal, you can avoid failure, but this simply isn’t the case. ‍ As with all things in life, it is not true that the more we succeed, the less we fail. The reality is that failure is woven into the fabric of success. Instead of asking, “How do we avoid failing at this initiative?”, we need to ask, “How do we proceed and fail in ways that lead to the type of skill development and understanding that will make this a long-term success?” In other words, we need to ask how we can fail to produce success. ‍ In the case of design systems, the answer is to start out in the open and share your learnings from all the inevitable missteps. “The team needs to see their work visible to the org.",
+      "metadata": {
+        "startIndex": 6986,
+        "endIndex": 7948,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "r learnings from all the inevitable missteps. “The team needs to see their work visible to the org. They need to see the impact they are making so they can create momentum and excitement,” suggests Corey Greeneltch, who is leading Autodesk’s design system efforts. When you build in plain sight, you gain supporters, not detractors. By asking for help and including the people that the design system affects, you’re building the grassroots support you’ll need to get the project built. ‍ ### 4. Prioritize Well-being to Avoid Burnout‍ ‍How do you remain productive but not burn out your team? To achieve this balance, you might need to ask, “What does productivity mean to my team?” Every team should be building the design system that is right for them. That means that teams need to avoid comparing their systems to the systems of other companies. What is good for a large technology business isn’t going to be good for a global bank.",
+      "metadata": {
+        "startIndex": 7848,
+        "endIndex": 8785,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "r companies. What is good for a large technology business isn’t going to be good for a global bank. As Getting Things Done [https://gettingthingsdone.com/] creator David Allen said, “You can do anything, but you can’t do everything.” ‍ How we define and measure our work often becomes the incentive for what we focus on. If the metrics are high volume outputs, then we’re heading towards burnout. If metrics are based on team health and achieving objective outcomes, the health of the team rises accordingly. Behind these metrics and incentives are relationships. Healthy relationships are at the core of a healthy team, both within and extending beyond the immediate team. “Building partnerships is the work,” says Jackie Lai, Lead UX Designer at OPIS (A Dow Jones Company). ‍ ### Better Products From Intentional Choices ‍ The key takeaways from our second Design Systems Leadership Summit were that leaders have had to adopt new mindsets and behaviors that align with sustainable practices.",
+      "metadata": {
+        "startIndex": 8685,
+        "endIndex": 9679,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "re that leaders have had to adopt new mindsets and behaviors that align with sustainable practices. As we’ve learned from conversations with leaders aboutscope, visibility and mindset, avoiding burnout requires a multifaceted approach. Smaller teams operating in a transparent way tend to start with their peers and organize their work into smaller tasks. Smaller, more focused teams working on smaller sprints are happier and more stable. It’s not hard to see how all of these things are connected. From our conversations at the Design Systems Leadership Summit and reflecting on decades of evidence, smaller teams are much healthier and more motivated. A team with a reasonable scope, healthy relationships, and the safety to mindfully talk about deadlines and incentives will deliver value in a sustainable way. ‍ Join the conversation to get real insights from other leaders working on enterprise design systems.",
+      "metadata": {
+        "startIndex": 9579,
+        "endIndex": 10496,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "Join the conversation to get real insights from other leaders working on enterprise design systems. These exclusive Design Systems Leadership Summits are happening once a month in major cities across the US. Check out the schedule and apply today [https://www.knapsack.cloud/design-systems-leadership-summits]! ## Get started See how Knapsack helps you reach your design system goals. Explore Case Studies [/case-studies] ## Get started See how Knapsack makes design system management easy. Learn more [#] ## Related posts [/blog/how-design-systems-create-and-maintain-competitive-advantage] ## How Design Systems Help Create and Maintain Your Product Organization&#x27;s Competitive Advantage [/blog/streamlined-design-system-integration-for-the-enterprise] ## Streamlined Design System Integration for the Enterprise [/blog/t-rowe-price-beacon-design-system] ## Unifying Design and Development: The Beacon Design System at T. Rowe Price [/] The digital production platform for enterprise teams.",
+      "metadata": {
+        "startIndex": 10396,
+        "endIndex": 11393,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "The Beacon Design System at T. Rowe Price [/] The digital production platform for enterprise teams. Subscribe for digital production tips and inspiration. Thank you! Your submission has been received! Oops! Something went wrong while submitting the form. Company Case Studies [/case-studies]Careers [https://knapsack.breezy.hr/]Agency Partners [/agency]Terms of Service [/legal/terms-of-service]Security [/legal/security]Privacy [/legal/privacy] Product Solutions [/solutions-2]Plans [/pricing]Roadmap [/roadmap]Help Docs [https://docs.knapsack.cloud/site/ks-docs/latest]vs Storybook [/storybook-vs-knapsack]vs Supernova [/knapsack-vs-supernova]vs Zeroheight [/knapsack-vs-zeroheight] Resources Blog [/blog]How Knapsack Works [#]ROI Calculator [/calculator]Videos [https://www.youtube.com/@knapsackcloud]Podcast [https://www.designsystemspodcast.com/episodes]Documentation [https://help.knapsack.cloud/]Contact us [mailto:hello@knapsack.cloud?subject=Knapsack%20inquiry]Customer Login",
+      "metadata": {
+        "startIndex": 11293,
+        "endIndex": 12278,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "p.knapsack.cloud/]Contact us [mailto:hello@knapsack.cloud?subject=Knapsack%20inquiry]Customer Login [http://app.knapsack.cloud] ©2025 Knapsack Company. All rights reserved. Social",
+      "metadata": {
+        "startIndex": 12178,
+        "endIndex": 13178,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "leadership;sustainability;culture"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:21.532Z",
+    "system": "Knapsack",
+    "author": "Richard Banfield",
+    "version": "1.0",
+    "source_url": "https://www.knapsack.cloud/blog/the-art-of-slow"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "id": "Tmi_P4RcDaVdPG1GE9CzU",
+  "title": "Design System Tooling: DIY, End-to-end, or multi-tool?",
+  "source": {
+    "type": "url",
+    "location": "https://www.knapsack.cloud/blog/design-system-tooling-diy-end-to-end-or-multi-tool",
+    "ingested_at": "2025-06-27T02:45:19.984Z"
+  },
+  "content": "Design System Tooling: DIY, End-to-end, or multi-tool? | Knapsack A Tale of Two Tools: How Knapsack and Storybook Stack up [https://www.knapsack.cloud/blog/a-tale-of-two-tools-how-knapsack-and-storybook-stack-up] Knapsack for Engineers: Spend less time maintaining and more time coding [https://www.knapsack.cloud/solutions/developers] Patterns: An event for design, engineering, and product leaders. Apply now! [https://www.knapsack.cloud/patterns] [/]Features [/features] Dynamic Documentation [/feature-listing/dynamic-documentation]Design Tokens & Theming [/feature-listing/design-tokens-theming]Component & Pattern Management [/feature-listing/component-and-pattern-management]Prototyping & Composition [/feature-listing/prototyping-and-composition]Permissions & Controls [/feature-listing/permissions-and-controls]Integrations [/feature-listing/integrations] Solutions [#] For Engineers [/solutions/engineers]For Designers [/solutions/designers]For Product Managers [/solutions/product-managers]For Executive Leadership [/solutions/executives]Case Studies [/case-studies] Resources [#] Insights [/blog]Events [/events]Product Tours [https://app.teamwalnut.com/player/playlist?playlistId=416abec8-00dc-417e-8a8a-65f0b9b2290a]Roadmap [/roadmap]Documentation [https://docs.knapsack.cloud/]ROI Calculator [/calculator]FAQs [/faq] Solutions [/solutions-2] Designers [/solutions?tab=who-for_tab-link1]Developers [/solutions?tab=who-for_tab-link2]Product Managers [/solutions?tab=product-managers]UX Writers [/solutions?tab=ux-writers] Enterprise [/enterprise] ROI Calculator [/calculator] Plans [/pricing]Blog [/blog]Help [https://help.knapsack.cloud/] Blog [/blog] Accessibility [/blog-categories/accessibility] Announcements [/blog-categories/announcements] Collaboration [/blog-categories/collaboration] Design Systems [/blog-categories/design-systems] Design Tokens [/blog-categories/design-tokens] Events [/blog-categories/events] Insights [/blog-categories/insights] Podcast [/blog-categories/podcast] Product [/blog-categories/product] Webinars [/blog-categories/webinars] Contact Sales [/connect-with-us] December 9, 2022 | Andrew Rohman Design Systems [/blog-categories/design-systems] # Design System Tooling: DIY, End-to-end, or multi-tool? ‍ So your company is thinking about investing (or re-investing) in a design system. What does that look like? Beyond the seemingly never-ending debate about what your design system will include, there is a whole decision about what it will be built on. Many teams look at the software landscape of design systems and immediately look toward many popular but partial solutions that solve for important pieces of the system stack: Storybook or Styleguideist, Figma or Xd, and even things like GitHub Pages or Confluence can all support elements of a design system. But even if you pull these tools off the shelf there’s more work to be done to effectively power a cross-functional operation end-to-end. So, how do you go about standing up a true platform for your design system operation? Typically, the choice falls into one of three categories that we’ll explore in more depth below: • DIY / Build your own • End-to-end platforms • Multi-tool integration ## DIY / Build your own Many organizations look at a design system infrastructure as a few simple features tied to a design tool. A few engineers with a code repo and some plugins are seemingly all you need to have some reusable design and code. While there can be some value in a system like this, most organizations reach a ceiling quickly. As demand for new features and customizations pile up, they advocate for more resources to build “what they really need” in a way that is “perfectly tailored to their needs”. You can see where this is going. To fully build a DIY system you quickly find a nearly bottomless well of features and nice-to-haves that can all become need-to-haves in order for anyone other than the core team to adopt the system. Not to mention the features that are table-stakes to stand up a platform in your enterprise environment (raise your hand if you’re excited about building a permissions system!). Most organizations end up with a quagmire of spaghetti-meets-Frankenstein’s-monster platforms that work if you don’t stray too far from the happy path. Teams with lots of experience, buy-in, and budget can build a system that does deliver value, but typically has brittle parts that require significant continual investment in custom software development. Even seemingly easy extensions to existing platforms (e.g. Storybook) ultimately create software that is often limited, variable quality, and requires continual reinvestment. Support, if available, is usually a patchwork of overlapping vendors forcing reliance on key internal resources that may leave or change roles. But doesn’t a DIY system get you exactly what you want in a way that is tailored to your specific business needs? This is a trap. Sure, if you’re Google, IBM, Salesforce or another highly mature organization, you may find that you can’t meet your needs any other way. Then DIY – and the hefty price-tag that comes with it – may be your only option. For most, however, the lure of DIY gets you what you thought you wanted 18 months before you started building it (when you planned your build), and it usually shows its age quickly as tech and approaches mature in a fast-changing environment. Bottom line, unless your business is building design systems, then you probably shouldn’t go down this road. Most likely, your business cares a lot more about investing in the content and adoption of your system rather than what you build it on. ## End-to-end platforms In contrast to DIY, an end-to-end system is fully managed by a provider and gives you a platform infrastructure for your design system. These platforms are all relatively new with most of them being created in the past two or three years. These types of platforms represent the Software-as-a-Service (SaaS) model that has been successful in recent decades in shortcutting time to value and displacing the burden and cost of innovation for enterprise platforms. The goal of these solutions is to create a single platform that manages the majority of the design system’s needs (documentation, token management, code + CI/CD integration) and balances their ability to be flexible and configurable for a wide variety of organizations. Simply put, these platforms help your organization go further faster while reducing the long term overhead of operating effectively and efficiently at scale. There are solutions that vary on the spectrum of how opinionated their approach is to your design system. Typically, smaller and less mature organizations look toward more opinionated solutions as they have “headroom” to mature within these platforms. Further, the baked-in opinions are often valuable absent a concrete understanding of implementation details, even if they come with significant impositions for your engineering org (e.g. using a new coding framework). Larger or more mature organizations typically look toward more flexible un-opinionated platforms that provide a wide range of options and allow them the ability to fine-tune their design system without the need for extensive customization or maintenance. These platforms – like Knapsack – often pair technical solutions with white glove services and support to help enterprise organizations, as well. ## Multi-tool integration Using multiple point solutions - a documentation tool, a code rendering tool, a design library manager, etc. - can seem like an appealing way to go for many teams. The challenges most teams encounter are similar to those found by teams on the DIY path: there’s a lot of manual work required, and you’re on your own. Point solutions typically provide robust feature sets around a more limited set of solution areas, creating what we think of as a ‘lumpy’ experience or foundation. It may be easy to spin up a rich documentation site that reflects what’s in design, but that experience isn’t directly connected to the workflows used for shipping code to engineers or showing what’s actually used in product. Likewise, engineers may have great solutions for reusing well-built components, but those aren’t easily available to design without additional engineering overhead. More often than not, these teams continue to experience the pains that led them down the design system path in the first place: inconsistent output, confusion and disconnect across disciplines, and overall inefficient production. This hampers adoption, and most organizations quickly hit limitations they weren’t expecting. ## Conculsion At Knapsack, we most often guide teams down the end-to-end platform path, because it helps them go farther faster and find ways to get ROI [https://www.knapsack.cloud/calculator] quickly. Instead of spending months building the system and the tooling to use it, they find quick wins by getting tokens out of Figma, into code (JSON), transformed to styling (CSS/SCSS/XML/Swift, etc.) and distributed to engineers to use - within days. End-to-end enables teams to focus on how they work - enabling reuse of solutions and sharing of innovation - which in turn enables the return they set out to realize. ## Get started See how Knapsack helps you reach your design system goals. Explore Case Studies [/case-studies] ## Get started See how Knapsack makes design system management easy. Learn more [#] ## Related posts [/blog/how-design-systems-create-and-maintain-competitive-advantage] ## How Design Systems Help Create and Maintain Your Product Organization&#x27;s Competitive Advantage [/blog/streamlined-design-system-integration-for-the-enterprise] ## Streamlined Design System Integration for the Enterprise [/blog/t-rowe-price-beacon-design-system] ## Unifying Design and Development: The Beacon Design System at T. Rowe Price [/] The digital production platform for enterprise teams. Subscribe for digital production tips and inspiration. Thank you! Your submission has been received! Oops! Something went wrong while submitting the form. Company Case Studies [/case-studies]Careers [https://knapsack.breezy.hr/]Agency Partners [/agency]Terms of Service [/legal/terms-of-service]Security [/legal/security]Privacy [/legal/privacy] Product Solutions [/solutions-2]Plans [/pricing]Roadmap [/roadmap]Help Docs [https://docs.knapsack.cloud/site/ks-docs/latest]vs Storybook [/storybook-vs-knapsack]vs Supernova [/knapsack-vs-supernova]vs Zeroheight [/knapsack-vs-zeroheight] Resources Blog [/blog]How Knapsack Works [#]ROI Calculator [/calculator]Videos [https://www.youtube.com/@knapsackcloud]Podcast [https://www.designsystemspodcast.com/episodes]Documentation [https://help.knapsack.cloud/]Contact us [mailto:hello@knapsack.cloud?subject=Knapsack%20inquiry]Customer Login [http://app.knapsack.cloud] ©2025 Knapsack Company. All rights reserved. Social",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Design System Tooling: DIY, End-to-end, or multi-tool? | Knapsack A Tale of Two Tools: How Knapsack and Storybook Stack up [https://www.knapsack.cloud/blog/a-tale-of-two-tools-how-knapsack-and-storybook-stack-up] Knapsack for Engineers: Spend less time maintaining and more time coding [https://www.knapsack.cloud/solutions/developers] Patterns: An event for design, engineering, and product leaders. Apply now! [https://www.knapsack.cloud/patterns] [/]Features [/features] Dynamic Documentation [/feature-listing/dynamic-documentation]Design Tokens & Theming [/feature-listing/design-tokens-theming]Component & Pattern Management [/feature-listing/component-and-pattern-management]Prototyping & Composition [/feature-listing/prototyping-and-composition]Permissions & Controls [/feature-listing/permissions-and-controls]Integrations [/feature-listing/integrations] Solutions [#] For Engineers [/solutions/engineers]For Designers [/solutions/designers]For Product Managers",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 972,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ns [#] For Engineers [/solutions/engineers]For Designers [/solutions/designers]For Product Managers [/solutions/product-managers]For Executive Leadership [/solutions/executives]Case Studies [/case-studies] Resources [#] Insights [/blog]Events [/events]Product Tours [https://app.teamwalnut.com/player/playlist?playlistId=416abec8-00dc-417e-8a8a-65f0b9b2290a]Roadmap [/roadmap]Documentation [https://docs.knapsack.cloud/]ROI Calculator [/calculator]FAQs [/faq] Solutions [/solutions-2] Designers [/solutions?tab=who-for_tab-link1]Developers [/solutions?tab=who-for_tab-link2]Product Managers [/solutions?tab=product-managers]UX Writers [/solutions?tab=ux-writers] Enterprise [/enterprise] ROI Calculator [/calculator] Plans [/pricing]Blog [/blog]Help [https://help.knapsack.cloud/] Blog [/blog] Accessibility [/blog-categories/accessibility] Announcements [/blog-categories/announcements] Collaboration [/blog-categories/collaboration] Design Systems [/blog-categories/design-systems] Design Tokens",
+      "metadata": {
+        "startIndex": 872,
+        "endIndex": 1870,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ion [/blog-categories/collaboration] Design Systems [/blog-categories/design-systems] Design Tokens [/blog-categories/design-tokens] Events [/blog-categories/events] Insights [/blog-categories/insights] Podcast [/blog-categories/podcast] Product [/blog-categories/product] Webinars [/blog-categories/webinars] Contact Sales [/connect-with-us] December 9, 2022 | Andrew Rohman Design Systems [/blog-categories/design-systems] # Design System Tooling: DIY, End-to-end, or multi-tool? ‍ So your company is thinking about investing (or re-investing) in a design system. What does that look like? Beyond the seemingly never-ending debate about what your design system will include, there is a whole decision about what it will be built on. Many teams look at the software landscape of design systems and immediately look toward many popular but partial solutions that solve for important pieces of the system stack: Storybook or Styleguideist, Figma or Xd, and even things like GitHub Pages or Confluence",
+      "metadata": {
+        "startIndex": 1770,
+        "endIndex": 2770,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "tem stack: Storybook or Styleguideist, Figma or Xd, and even things like GitHub Pages or Confluence can all support elements of a design system. But even if you pull these tools off the shelf there’s more work to be done to effectively power a cross-functional operation end-to-end. So, how do you go about standing up a true platform for your design system operation? Typically, the choice falls into one of three categories that we’ll explore in more depth below: • DIY / Build your own • End-to-end platforms • Multi-tool integration ## DIY / Build your own Many organizations look at a design system infrastructure as a few simple features tied to a design tool. A few engineers with a code repo and some plugins are seemingly all you need to have some reusable design and code. While there can be some value in a system like this, most organizations reach a ceiling quickly. As demand for new features and customizations pile up, they advocate for more resources to build “what they really need”",
+      "metadata": {
+        "startIndex": 2670,
+        "endIndex": 3671,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "tures and customizations pile up, they advocate for more resources to build “what they really need” in a way that is “perfectly tailored to their needs”. You can see where this is going. To fully build a DIY system you quickly find a nearly bottomless well of features and nice-to-haves that can all become need-to-haves in order for anyone other than the core team to adopt the system. Not to mention the features that are table-stakes to stand up a platform in your enterprise environment (raise your hand if you’re excited about building a permissions system!). Most organizations end up with a quagmire of spaghetti-meets-Frankenstein’s-monster platforms that work if you don’t stray too far from the happy path. Teams with lots of experience, buy-in, and budget can build a system that does deliver value, but typically has brittle parts that require significant continual investment in custom software development. Even seemingly easy extensions to existing platforms (e.g.",
+      "metadata": {
+        "startIndex": 3571,
+        "endIndex": 4551,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "vestment in custom software development. Even seemingly easy extensions to existing platforms (e.g. Storybook) ultimately create software that is often limited, variable quality, and requires continual reinvestment. Support, if available, is usually a patchwork of overlapping vendors forcing reliance on key internal resources that may leave or change roles. But doesn’t a DIY system get you exactly what you want in a way that is tailored to your specific business needs? This is a trap. Sure, if you’re Google, IBM, Salesforce or another highly mature organization, you may find that you can’t meet your needs any other way. Then DIY – and the hefty price-tag that comes with it – may be your only option. For most, however, the lure of DIY gets you what you thought you wanted 18 months before you started building it (when you planned your build), and it usually shows its age quickly as tech and approaches mature in a fast-changing environment.",
+      "metadata": {
+        "startIndex": 4451,
+        "endIndex": 5403,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "and it usually shows its age quickly as tech and approaches mature in a fast-changing environment. Bottom line, unless your business is building design systems, then you probably shouldn’t go down this road. Most likely, your business cares a lot more about investing in the content and adoption of your system rather than what you build it on. ## End-to-end platforms In contrast to DIY, an end-to-end system is fully managed by a provider and gives you a platform infrastructure for your design system. These platforms are all relatively new with most of them being created in the past two or three years. These types of platforms represent the Software-as-a-Service (SaaS) model that has been successful in recent decades in shortcutting time to value and displacing the burden and cost of innovation for enterprise platforms. The goal of these solutions is to create a single platform that manages the majority of the design system’s needs (documentation, token management, code + CI/CD",
+      "metadata": {
+        "startIndex": 5303,
+        "endIndex": 6295,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "at manages the majority of the design system’s needs (documentation, token management, code + CI/CD integration) and balances their ability to be flexible and configurable for a wide variety of organizations. Simply put, these platforms help your organization go further faster while reducing the long term overhead of operating effectively and efficiently at scale. There are solutions that vary on the spectrum of how opinionated their approach is to your design system. Typically, smaller and less mature organizations look toward more opinionated solutions as they have “headroom” to mature within these platforms. Further, the baked-in opinions are often valuable absent a concrete understanding of implementation details, even if they come with significant impositions for your engineering org (e.g. using a new coding framework). Larger or more mature organizations typically look toward more flexible un-opinionated platforms that provide a wide range of options and allow them the ability to",
+      "metadata": {
+        "startIndex": 6195,
+        "endIndex": 7196,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "lexible un-opinionated platforms that provide a wide range of options and allow them the ability to fine-tune their design system without the need for extensive customization or maintenance. These platforms – like Knapsack – often pair technical solutions with white glove services and support to help enterprise organizations, as well. ## Multi-tool integration Using multiple point solutions - a documentation tool, a code rendering tool, a design library manager, etc. - can seem like an appealing way to go for many teams. The challenges most teams encounter are similar to those found by teams on the DIY path: there’s a lot of manual work required, and you’re on your own. Point solutions typically provide robust feature sets around a more limited set of solution areas, creating what we think of as a ‘lumpy’ experience or foundation. It may be easy to spin up a rich documentation site that reflects what’s in design, but that experience isn’t directly connected to the workflows used for",
+      "metadata": {
+        "startIndex": 7096,
+        "endIndex": 8094,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "t reflects what’s in design, but that experience isn’t directly connected to the workflows used for shipping code to engineers or showing what’s actually used in product. Likewise, engineers may have great solutions for reusing well-built components, but those aren’t easily available to design without additional engineering overhead. More often than not, these teams continue to experience the pains that led them down the design system path in the first place: inconsistent output, confusion and disconnect across disciplines, and overall inefficient production. This hampers adoption, and most organizations quickly hit limitations they weren’t expecting. ## Conculsion At Knapsack, we most often guide teams down the end-to-end platform path, because it helps them go farther faster and find ways to get ROI [https://www.knapsack.cloud/calculator] quickly. Instead of spending months building the system and the tooling to use it, they find quick wins by getting tokens out of Figma, into code",
+      "metadata": {
+        "startIndex": 7994,
+        "endIndex": 8993,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "he system and the tooling to use it, they find quick wins by getting tokens out of Figma, into code (JSON), transformed to styling (CSS/SCSS/XML/Swift, etc.) and distributed to engineers to use - within days. End-to-end enables teams to focus on how they work - enabling reuse of solutions and sharing of innovation - which in turn enables the return they set out to realize. ## Get started See how Knapsack helps you reach your design system goals. Explore Case Studies [/case-studies] ## Get started See how Knapsack makes design system management easy. Learn more [#] ## Related posts [/blog/how-design-systems-create-and-maintain-competitive-advantage] ## How Design Systems Help Create and Maintain Your Product Organization&#x27;s Competitive Advantage [/blog/streamlined-design-system-integration-for-the-enterprise] ## Streamlined Design System Integration for the Enterprise [/blog/t-rowe-price-beacon-design-system] ## Unifying Design and Development: The Beacon Design System at T.",
+      "metadata": {
+        "startIndex": 8893,
+        "endIndex": 9886,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "rowe-price-beacon-design-system] ## Unifying Design and Development: The Beacon Design System at T. Rowe Price [/] The digital production platform for enterprise teams. Subscribe for digital production tips and inspiration. Thank you! Your submission has been received! Oops! Something went wrong while submitting the form. Company Case Studies [/case-studies]Careers [https://knapsack.breezy.hr/]Agency Partners [/agency]Terms of Service [/legal/terms-of-service]Security [/legal/security]Privacy [/legal/privacy] Product Solutions [/solutions-2]Plans [/pricing]Roadmap [/roadmap]Help Docs [https://docs.knapsack.cloud/site/ks-docs/latest]vs Storybook [/storybook-vs-knapsack]vs Supernova [/knapsack-vs-supernova]vs Zeroheight [/knapsack-vs-zeroheight] Resources Blog [/blog]How Knapsack Works [#]ROI Calculator [/calculator]Videos [https://www.youtube.com/@knapsackcloud]Podcast [https://www.designsystemspodcast.com/episodes]Documentation [https://help.knapsack.cloud/]Contact us",
+      "metadata": {
+        "startIndex": 9786,
+        "endIndex": 10769,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "ttps://www.designsystemspodcast.com/episodes]Documentation [https://help.knapsack.cloud/]Contact us [mailto:hello@knapsack.cloud?subject=Knapsack%20inquiry]Customer Login [http://app.knapsack.cloud] ©2025 Knapsack Company. All rights reserved. Social",
+      "metadata": {
+        "startIndex": 10669,
+        "endIndex": 11669,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "tooling;platforms;integration"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:19.984Z",
+    "system": "Knapsack",
+    "author": "Andrew Rohman",
+    "version": "1.0",
+    "source_url": "https://www.knapsack.cloud/blog/design-system-tooling-diy-end-to-end-or-multi-tool"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "DNcsdWVmk4k_3aVZ1tWKS",
+  "title": "Component Process: Specification Walkthrough",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/spec-walkthrough",
+    "ingested_at": "2025-06-27T02:59:42.807Z"
+  },
+  "content": "Spec walkthrough - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 3.2 Spec walkthrough. Phase --> Build Type Focus --> Time --> 1-3 hours ## What is it? A meeting to go through the specification document with Developers. ## Why do we do it? Rather than just handing over our work, we must walk everyone through what we’ve done. This is so that if anything is missing or there are any questions, they can be discussed. This also opens the conversation between Designers and Developers so that continued progress on the work is open. You can have as many walkthroughs/sync-ups as needed, as there might be further questions. I like to set up weekly or biweekly sync-ups with my team on projects to catch up on where we’re all at. ## How do we do it? ### Who should be there? All of the platform Developers that will work on this. ### Agenda This is a reasonably informal session; be sure to share the spec doc before the meeting so everyone can review it beforehand. Example agenda — • Walkthrough of the component spec doc • Any questions ## Outcomes • Alignment of final designs and specs and next steps. Hot tips Be sure to share your file before the session so that everyone has an opportunity to have their questions ready. Don't forget to give everyone view access to comment on the file. ## Up next Step 3.3 Design QA Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Spec walkthrough - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 3.2 Spec walkthrough. Phase --> Build Type Focus --> Time --> 1-3 hours ## What is it?",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 936,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "out [/about] 3.2 Spec walkthrough. Phase --> Build Type Focus --> Time --> 1-3 hours ## What is it? A meeting to go through the specification document with Developers. ## Why do we do it? Rather than just handing over our work, we must walk everyone through what we’ve done. This is so that if anything is missing or there are any questions, they can be discussed. This also opens the conversation between Designers and Developers so that continued progress on the work is open. You can have as many walkthroughs/sync-ups as needed, as there might be further questions. I like to set up weekly or biweekly sync-ups with my team on projects to catch up on where we’re all at. ## How do we do it? ### Who should be there? All of the platform Developers that will work on this. ### Agenda This is a reasonably informal session; be sure to share the spec doc before the meeting so everyone can review it beforehand.",
+      "metadata": {
+        "startIndex": 836,
+        "endIndex": 1748,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "mal session; be sure to share the spec doc before the meeting so everyone can review it beforehand. Example agenda — • Walkthrough of the component spec doc • Any questions ## Outcomes • Alignment of final designs and specs and next steps. Hot tips Be sure to share your file before the session so that everyone has an opportunity to have their questions ready. Don't forget to give everyone view access to comment on the file. ## Up next Step 3.3 Design QA Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 1648,
+        "endIndex": 2648,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "walkthrough;specs;communication;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:42.807Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/spec-walkthrough"
+  }
+}

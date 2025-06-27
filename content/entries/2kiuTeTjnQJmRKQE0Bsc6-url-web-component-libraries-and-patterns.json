@@ -1,0 +1,310 @@
+{
+  "id": "2kiuTeTjnQJmRKQE0Bsc6",
+  "title": "Web Component Libraries and Patterns",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/web-component-libraries-and-patterns",
+    "ingested_at": "2025-06-27T02:52:55.001Z"
+  },
+  "content": "The Complete Web Components Resource Guide - The Design System Guide Close # The Complete Web Components Resource Guide Romina Kavcic ### Official Documentation and Specifications Web Components consist of four main technologies, though HTML Imports have been deprecated and replaced by ES Modules. Custom Elements API forms the foundation, enabling developers to define new HTML tags with custom behavior. The official specification lives in the WHATWG HTML Standard rather than standalone W3C documents, reflecting its integration into core web standards. Shadow DOM API enables style and markup encapsulation, preventing CSS conflicts and providing true component isolation. Recent additions like Declarative Shadow DOM standardized in 2023-2024 allow server-side rendering of shadow roots without JavaScript. HTML Templates provide a standardized way to declare reusable markup patterns using `<template>` and `<slot>` elements. Unlike other specifications, templates have been universally supported since early implementations. HTML Imports were deprecated in Chrome 73 (March 2019) and completely removed by 2020. ES Modules now serve as the standard replacement for component loading and dependency management. All modern browsers now fully support Web Components. Chrome led implementation since version 54, Firefox achieved full support by version 63, and Edge gained complete compatibility with its Chromium transition in January 2020. Safari supports Custom Elements and Shadow DOM but has no plans to implement Customized Built-in Elements. #### Resources MDN Web Components Documentation [https://developer.mozilla.org/en-US/docs/Web/API/Web_components] Using Custom Elements - MDN [https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements] W3C Custom Elements Specification [https://www.w3.org/TR/custom-elements/] Declarative Shadow DOM - Web.dev [https://web.dev/articles/declarative-shadow-dom] Custom Elements v1 - Web.dev [https://web.dev/articles/custom-elements-v1] Shadow DOM Security - Imperva [https://www.imperva.com/learn/application-security/shadow-dom/] Web Components - Wikipedia [https://en.wikipedia.org/wiki/Web_Components] ## Learning Resources #### Beginner-Friendly Foundations MDN Web Components Documentation serves as the definitive starting point, offering comprehensive tutorials with practical examples and working implementations. The content receives regular updates incorporating current best practices. Lit.dev provides the most accessible entry point for practical Web Components development. Google's 5KB library simplifies component creation while maintaining web standards compliance. The official documentation includes codelabs, tutorials, and real-world examples from companies like YouTube and IBM Carbon. WebComponents.org offers community-curated tutorials and best practices, serving as a central hub for educational content and component galleries. #### Advanced Learning Paths Framework-specific advanced guides include Lit's server-side rendering documentation, Microsoft FAST's enterprise patterns, and GitHub's open-source Catalyst library demonstrating large-scale application architecture. Open Web Components project provides standardized tools and best practices developed by the community, including testing frameworks and development servers optimized for Web Components workflows. Community and Certification Discord communities offer the most active real-time support, with Lit's server hosting 5,000+ members. Formal certification options include the W3C Front-End Web Developer Professional Certificate through edX, which covers Web Components as part of modern web standards curriculum. #### Resources Lit Documentation and Tutorials [https://lit.dev/docs/] From Web Component to Lit Element - Google Codelabs [https://codelabs.developers.google.com/codelabs/the-lit-path] Web Components in 2024: Complete Guide [https://karanmandal.dev/posts/web-components/] Ultimate Guide to Web Components in 2024 [https://blog.pixelfreestudio.com/ultimate-guide-to-web-components-in-2024/] Complete Introduction to Web Components in 2025 [https://kinsta.com/blog/web-components/] W3C Front-End Web Developer Certificate [https://www.edx.org/professional-certificate/w3cx-front-end-web-developer] Working with Slots and Web Components [https://www.raymondcamden.com/2022/10/13/working-with-slots-and-web-components] ## Real-World Case Studies #### Major Enterprise Adoption GitHub rebuilt their entire platform using vanilla JavaScript and Web Components with their open-source Catalyst library. They've released 17+ custom elements publicly and report significant developer experience improvements. Their approach demonstrates Web Components' viability for complex, high-traffic applications. YouTube's interface reconstruction with Web Components contributes significantly to the 18% of Chrome page loads now using Web Components, representing massive scale validation of the technology. ING Bank adopted Web Components from inception across most web applications, creating the Lion component library and demonstrating financial services compliance capabilities. Their implementation emphasizes accessibility, performance, and design system consistency. SAP's UI5 Web Components provide enterprise-grade components working across Angular, React, Vue, and Svelte with only ~20KB gzipped footprint. Performance and Technical Outcomes Lit implementations consistently outperform framework alternatives, with First Contentful Paint times averaging 235ms compared to React's ~300ms+. Bundle sizes remain significantly smaller than framework equivalents while maintaining feature parity. Financial services trading platforms report 17% faster initial load times after migrating from Angular to Lit, with better handling of high-frequency market data. #### Resources How We Use Web Components at GitHub [https://github.blog/2021-05-04-how-we-use-web-components-at-github/] GitHub Catalyst Library [https://github.com/github/catalyst] GitHub Catalyst Release - InfoQ [https://www.infoq.com/news/2020/12/catalyst-github-web-components/] Are Web Components Dead? - Analysis [https://web-highlights.com/blog/are-web-components-dead/] Why Web Components - California Design System [https://designsystem.webstandards.ca.gov/why-web-components/index.html] ## Popular Libraries and Frameworks #### Production-Ready Frameworks Lit leads the ecosystem as Google's flagship Web Components library, offering simple templating with tagged template literals, reactive properties, and excellent TypeScript support. Version 3.x introduced experimental SSR capabilities and performance optimizations for enterprise applications. Stencil provides a compiler-based approach that generates optimized Web Components from TypeScript and JSX source code. Created by the Ionic team, it excels at creating component libraries with framework-specific wrappers for React, Angular, and Vue. Notable users include BMW, Mastercard, and Porsche. Microsoft FAST powers enterprise applications and Fluent UI Web Components, demonstrating excellent performance benchmarks versus React, Angular, and Vue while providing special Blazor integration for .NET ecosystems. Angular Elements enables converting Angular components to Custom Elements, though it carries Angular runtime overhead and primarily serves migration scenarios. #### Emerging and Specialized Options Hybrids takes a functional programming approach using plain objects and pure functions instead of classes. Omi leverages signal-driven reactive programming with JSX support and cross-framework compatibility maintained by Tencent. Polymer entered maintenance mode with Google officially recommending Lit for new projects, though existing Polymer applications remain functional with migration paths available. #### Resources Lit Framework [https://lit.dev/] Stencil - Compiler for Web Components [https://stenciljs.com/docs/introduction] Stencil GitHub Repository [https://github.com/stenciljs/core] Microsoft FAST Framework [https://fast.design/docs/resources/why-web-components] Fluent UI Web Components [https://learn.microsoft.com/en-us/fluent-ui/web-components/] Angular Elements Guide [https://angular.dev/guide/elements] Building Web Components with Angular [https://buddy.works/tutorials/building-web-components-with-angular] Hybrids Framework [https://bennypowers.dev/posts/lets-build-web-components/part-7-hybrids/] Omi Framework by Tencent [https://github.com/Tencent/omi] Web Components 2025: Lit vs Stencil Comparison [https://markaicode.com/web-components-2025-lit-stencil-enterprise/] Lit to Stencil Journey - Phase2 [https://phase2.io/blog/web-components-our-journey-from-lit-to-stencil-and-back-again] ## Development and Testing Tools #### Modern Development Workflow @web/dev-server and @web/test-runner represent the current standard for Web Components development, providing native ES modules support and real browser testing capabilities. Vite offers the most popular build experience with fast development servers, hot module replacement, and Lit-specific templates. Webpack remains viable for complex configurations, while Parcel provides zero-config alternatives for rapid prototyping. #### Testing Frameworks and Strategies @web/test-runner excels for unit testing by running tests in actual browsers rather than JSDOM, supporting Chrome, Firefox, Safari, and Edge with coverage reporting and Shadow DOM testing capabilities. Cypress handles end-to-end testing with full Shadow DOM support, while WebdriverIO provides comprehensive component and integration testing with mock support. #### IDE Support and Debugging VS Code receives first-class support through the official lit-plugin, providing syntax highlighting, auto-completion, and type checking for Lit components. Browser DevTools provide native Custom Elements debugging across all modern browsers. ### Resources Open Web Components - Testing Guide [https://open-wc.org/guides/developing-components/testing/] Best Practices for Testing Web Components [https://blog.pixelfreestudio.com/best-practices-for-testing-web-components/] Lit - Lightning Fast Web Components [https://jasonbutz.info/2024/10/lit-web-components/] JavaScript Module Bundlers Guide [https://snipcart.com/blog/javascript-module-bundler] Web Components with Parcel Bundler [https://srinivasankk.com/web-components-parcel-bundler/] Node.js Bundler and Build Tools [https://geekflare.com/dev/node-js-bundler-and-build-tools/] ## Browser Support and Polyfills #### Current Compatibility Status Universal modern browser support marks Web Components as production-ready for contemporary web development. Chrome, Firefox, Edge, and Safari all support Custom Elements, Shadow DOM, and HTML Templates with consistent behavior. Polyfill requirements primarily target IE11 and legacy browser versions through `@webcomponents/webcomponentsjs`. The intelligent loader only adds necessary polyfills based on browser capabilities. Safari's Customized Built-in Elements limitation remains the only significant compatibility gap, affecting components that extend existing HTML elements. #### Future Standards and Proposals Declarative Shadow DOM reached standardization in 2023-2024, enabling server-side rendering of shadow roots. Chrome 90+ provides full support, while Firefox and Safari implementations remain in development. HTML Modules proposal continues discussion in WHATWG as a potential successor to deprecated HTML Imports, though ES Modules serve current needs effectively. ### Resources WebComponents.js Polyfills - npm [https://www.npmjs.com/package/@webcomponents/webcomponentsjs] WebComponents Polyfills - GitHub [https://github.com/webcomponents/polyfills/tree/master/packages/webcomponentsjs] Custom Elements Polyfill [https://github.com/oliver-moran/custom-elements] Web Components and SSR - 2024 Edition [https://dev.to/stuffbreaker/web-components-and-ssr-2024-edition-1nel] Declarative Shadow DOM - Web.dev [https://web.dev/articles/declarative-shadow-dom] ## Performance and Best Practices #### Optimization Strategies Direct DOM manipulation outperforms innerHTML-heavy implementations in high-frequency updates, making Web Components particularly suitable for real-time applications like trading platforms and data dashboards. Shadow DOM carries performance overhead for frequently-used small components, with best practices recommending selective usage based on encapsulation needs versus performance requirements. Tree-shaking capabilities prove crucial for production bundles, with modern build tools effectively eliminating unused component code when properly configured. SEO and Accessibility Server-side rendering remains experimental through solutions like Lit's @lit-labs/ssr, though Declarative Shadow DOM improves SSR capabilities significantly. Accessibility requires careful ARIA implementation within Shadow DOM boundaries, with enterprise-grade libraries like SAP UI5 and ING's Lion providing accessible defaults and patterns. ### Resources Why Web Components? - FAST [https://fast.design/docs/resources/why-web-components] Web Components Performance Considerations [https://lit.dev/docs/] California Design System - Why Web Components [https://designsystem.webstandards.ca.gov/why-web-components/index.html] Evaluating Web Components in 2024 [https://ictinstitute.nl/webcomponents-in-2024/] Polymer is Dead, Long Live Web Components [https://craftsmen.nl/polymer-is-dead-long-live-web-components/] ## Framework Comparison #### Market Position and Trends React maintains dominance with 34+ million websites, though job postings declined from 80K to 52K indicating market maturation. Angular job postings dropped from 37K to 23K, while Vue saw significant decline from 13K to 2K in US markets. Web Components offer unique advantages in framework-agnostic compatibility, zero vendor lock-in, and standards-based future-proofing. Frameworks excel in comprehensive ecosystems, mature tooling, and rapid application development. Strategic Selection Criteria Choose Web Components for cross-framework compatibility requirements, long-term maintenance concerns, component libraries and design systems, and micro-frontend architectures. Choose frameworks for complex application state management, rapid prototyping needs, rich ecosystem requirements, and team expertise alignment. Hybrid approaches combining Web Components with frameworks increasingly represent practical middle-ground solutions. ### Resources Are Web Components Dead? - Analysis [https://web-highlights.com/blog/are-web-components-dead/] Web Components vs Frameworks Comparison [https://karanmandal.dev/posts/web-components/] Complete Introduction to Web Components [https://kinsta.com/blog/web-components/] ## Community Resources ### Active Community Platforms Lit Discord Server hosts the most active Web Components community with 5,000+ members providing real-time help and discussions. Stack Overflow's #web-components tag maintains 22,000+ questions with active expert participation. WebComponents.org serves as the official community hub with component galleries, best practices, and curated tutorials from industry practitioners. Conferences and Thought Leadership JSNation 2025 (June 12-16, Amsterdam/Remote) features dedicated Web Components tracks alongside major JavaScript conference programming. Frontend Master Events regularly include Web Components workshops and professional development sessions. Influential voices include Nolan Lawson's balanced perspectives, Cory LaViska as Shoelace/Web Awesome creator, and Rob Eisenberg leading Microsoft's FAST framework development. ### Podcasts and Media Syntax FM (Wes Bos & Scott Tolinski) provides regular Web Components discussions and tutorials, while ShopTalk Show covers frontend-focused Web Components topics. ### Resources Shoelace Web Components Library [https://thenewstack.io/shoelace-web-components-library-that-works-with-any-framework/] 17 Best Web Development Podcasts [https://thectoclub.com/career/web-development-podcast/] 20 Best Web Development Podcasts [https://podcast.feedspot.com/web_development_podcasts/] PodRocket - Web Development Podcast [https://podrocket.logrocket.com/] ## Recent Developments and Trends ### 2024-2025 Ecosystem Evolution Enterprise adoption accelerated significantly, with usage growing from 10% to 18% of Chrome page loads in 2024. Major companies including Microsoft, GitHub, Google, Adobe, and SAP actively invest in Web Components for production applications. Framework integration improved, particularly with React 19 enhancing Web Components compatibility after years of integration challenges. Angular Elements supports standalone components, while Vue and Svelte maintain excellent Web Components integration. #### Technical Advancement Highlights Lit 5.0 introduced enhanced TypeScript support, signals-like reactivity improvements, and direct DOM manipulation optimizations. Stencil 4.0 provides comprehensive enterprise tooling with multi-framework output targets and enhanced CI/CD integration. Browser standards progress includes Declarative Shadow DOM stabilization, DOM Parts proposal for efficient templating, and Open Styleable Shadow Roots proposal for enhanced styling capabilities. Design system adoption drives much enterprise interest, with Shoelace rebranding to Web Awesome under Font Awesome acquisition, IBM Carbon expanding Web Components support, and Microsoft Fluent UI implementing comprehensive Web Components libraries. ### Resources Web Components 2025: Lit vs Stencil Enterprise Analysis [https://markaicode.com/web-components-2025-lit-stencil-enterprise/] Web Components and SSR - 2024 Edition [https://dev.to/stuffbreaker/web-components-and-ssr-2024-edition-1nel] What's New in the Web - IO2024 [https://web.dev/blog/new-in-the-web-io2024] Shoelace Framework-Agnostic Library [https://thenewstack.io/shoelace-web-components-library-that-works-with-any-framework/] Lit [https://lit.dev/] (by Google) Lightweight library for building fast Web Components Features reactive properties, declarative templates, scoped styles Very small bundle size and excellent performance Popular choice for enterprise applications Stencil (by Ionic team) Full-featured compiler that generates Web Components Includes TypeScript, JSX, and Virtual DOM Great for building design systems and component libraries FAST (by Microsoft) Enterprise-focused Web Component system Includes design system tools and adaptive UI controls Strong accessibility features ## Next question Organize design files in Figma Published on: Dec 5, 2024 Updated: Updated: Dec 5, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "The Complete Web Components Resource Guide - The Design System Guide Close # The Complete Web Components Resource Guide Romina Kavcic ### Official Documentation and Specifications Web Components consist of four main technologies, though HTML Imports have been deprecated and replaced by ES Modules. Custom Elements API forms the foundation, enabling developers to define new HTML tags with custom behavior. The official specification lives in the WHATWG HTML Standard rather than standalone W3C documents, reflecting its integration into core web standards. Shadow DOM API enables style and markup encapsulation, preventing CSS conflicts and providing true component isolation. Recent additions like Declarative Shadow DOM standardized in 2023-2024 allow server-side rendering of shadow roots without JavaScript. HTML Templates provide a standardized way to declare reusable markup patterns using `<template>` and `<slot>` elements.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 933,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "de a standardized way to declare reusable markup patterns using `<template>` and `<slot>` elements. Unlike other specifications, templates have been universally supported since early implementations. HTML Imports were deprecated in Chrome 73 (March 2019) and completely removed by 2020. ES Modules now serve as the standard replacement for component loading and dependency management. All modern browsers now fully support Web Components. Chrome led implementation since version 54, Firefox achieved full support by version 63, and Edge gained complete compatibility with its Chromium transition in January 2020. Safari supports Custom Elements and Shadow DOM but has no plans to implement Customized Built-in Elements. #### Resources MDN Web Components Documentation [https://developer.mozilla.org/en-US/docs/Web/API/Web_components] Using Custom Elements - MDN [https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements] W3C Custom Elements Specification",
+      "metadata": {
+        "startIndex": 833,
+        "endIndex": 1817,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "illa.org/en-US/docs/Web/API/Web_components/Using_custom_elements] W3C Custom Elements Specification [https://www.w3.org/TR/custom-elements/] Declarative Shadow DOM - Web.dev [https://web.dev/articles/declarative-shadow-dom] Custom Elements v1 - Web.dev [https://web.dev/articles/custom-elements-v1] Shadow DOM Security - Imperva [https://www.imperva.com/learn/application-security/shadow-dom/] Web Components - Wikipedia [https://en.wikipedia.org/wiki/Web_Components] ## Learning Resources #### Beginner-Friendly Foundations MDN Web Components Documentation serves as the definitive starting point, offering comprehensive tutorials with practical examples and working implementations. The content receives regular updates incorporating current best practices. Lit.dev provides the most accessible entry point for practical Web Components development. Google's 5KB library simplifies component creation while maintaining web standards compliance.",
+      "metadata": {
+        "startIndex": 1717,
+        "endIndex": 2663,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ent. Google's 5KB library simplifies component creation while maintaining web standards compliance. The official documentation includes codelabs, tutorials, and real-world examples from companies like YouTube and IBM Carbon. WebComponents.org offers community-curated tutorials and best practices, serving as a central hub for educational content and component galleries. #### Advanced Learning Paths Framework-specific advanced guides include Lit's server-side rendering documentation, Microsoft FAST's enterprise patterns, and GitHub's open-source Catalyst library demonstrating large-scale application architecture. Open Web Components project provides standardized tools and best practices developed by the community, including testing frameworks and development servers optimized for Web Components workflows. Community and Certification Discord communities offer the most active real-time support, with Lit's server hosting 5,000+ members.",
+      "metadata": {
+        "startIndex": 2563,
+        "endIndex": 3509,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "cord communities offer the most active real-time support, with Lit's server hosting 5,000+ members. Formal certification options include the W3C Front-End Web Developer Professional Certificate through edX, which covers Web Components as part of modern web standards curriculum. #### Resources Lit Documentation and Tutorials [https://lit.dev/docs/] From Web Component to Lit Element - Google Codelabs [https://codelabs.developers.google.com/codelabs/the-lit-path] Web Components in 2024: Complete Guide [https://karanmandal.dev/posts/web-components/] Ultimate Guide to Web Components in 2024 [https://blog.pixelfreestudio.com/ultimate-guide-to-web-components-in-2024/] Complete Introduction to Web Components in 2025 [https://kinsta.com/blog/web-components/] W3C Front-End Web Developer Certificate [https://www.edx.org/professional-certificate/w3cx-front-end-web-developer] Working with Slots and Web Components [https://www.raymondcamden.com/2022/10/13/working-with-slots-and-web-components] ##",
+      "metadata": {
+        "startIndex": 3409,
+        "endIndex": 4407,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "Web Components [https://www.raymondcamden.com/2022/10/13/working-with-slots-and-web-components] ## Real-World Case Studies #### Major Enterprise Adoption GitHub rebuilt their entire platform using vanilla JavaScript and Web Components with their open-source Catalyst library. They've released 17+ custom elements publicly and report significant developer experience improvements. Their approach demonstrates Web Components' viability for complex, high-traffic applications. YouTube's interface reconstruction with Web Components contributes significantly to the 18% of Chrome page loads now using Web Components, representing massive scale validation of the technology. ING Bank adopted Web Components from inception across most web applications, creating the Lion component library and demonstrating financial services compliance capabilities. Their implementation emphasizes accessibility, performance, and design system consistency.",
+      "metadata": {
+        "startIndex": 4307,
+        "endIndex": 5244,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ilities. Their implementation emphasizes accessibility, performance, and design system consistency. SAP's UI5 Web Components provide enterprise-grade components working across Angular, React, Vue, and Svelte with only ~20KB gzipped footprint. Performance and Technical Outcomes Lit implementations consistently outperform framework alternatives, with First Contentful Paint times averaging 235ms compared to React's ~300ms+. Bundle sizes remain significantly smaller than framework equivalents while maintaining feature parity. Financial services trading platforms report 17% faster initial load times after migrating from Angular to Lit, with better handling of high-frequency market data. #### Resources How We Use Web Components at GitHub [https://github.blog/2021-05-04-how-we-use-web-components-at-github/] GitHub Catalyst Library [https://github.com/github/catalyst] GitHub Catalyst Release - InfoQ [https://www.infoq.com/news/2020/12/catalyst-github-web-components/] Are Web Components Dead?",
+      "metadata": {
+        "startIndex": 5144,
+        "endIndex": 6143,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "InfoQ [https://www.infoq.com/news/2020/12/catalyst-github-web-components/] Are Web Components Dead? - Analysis [https://web-highlights.com/blog/are-web-components-dead/] Why Web Components - California Design System [https://designsystem.webstandards.ca.gov/why-web-components/index.html] ## Popular Libraries and Frameworks #### Production-Ready Frameworks Lit leads the ecosystem as Google's flagship Web Components library, offering simple templating with tagged template literals, reactive properties, and excellent TypeScript support. Version 3.x introduced experimental SSR capabilities and performance optimizations for enterprise applications. Stencil provides a compiler-based approach that generates optimized Web Components from TypeScript and JSX source code. Created by the Ionic team, it excels at creating component libraries with framework-specific wrappers for React, Angular, and Vue. Notable users include BMW, Mastercard, and Porsche.",
+      "metadata": {
+        "startIndex": 6043,
+        "endIndex": 6998,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "-specific wrappers for React, Angular, and Vue. Notable users include BMW, Mastercard, and Porsche. Microsoft FAST powers enterprise applications and Fluent UI Web Components, demonstrating excellent performance benchmarks versus React, Angular, and Vue while providing special Blazor integration for .NET ecosystems. Angular Elements enables converting Angular components to Custom Elements, though it carries Angular runtime overhead and primarily serves migration scenarios. #### Emerging and Specialized Options Hybrids takes a functional programming approach using plain objects and pure functions instead of classes. Omi leverages signal-driven reactive programming with JSX support and cross-framework compatibility maintained by Tencent. Polymer entered maintenance mode with Google officially recommending Lit for new projects, though existing Polymer applications remain functional with migration paths available.",
+      "metadata": {
+        "startIndex": 6898,
+        "endIndex": 7822,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "ew projects, though existing Polymer applications remain functional with migration paths available. #### Resources Lit Framework [https://lit.dev/] Stencil - Compiler for Web Components [https://stenciljs.com/docs/introduction] Stencil GitHub Repository [https://github.com/stenciljs/core] Microsoft FAST Framework [https://fast.design/docs/resources/why-web-components] Fluent UI Web Components [https://learn.microsoft.com/en-us/fluent-ui/web-components/] Angular Elements Guide [https://angular.dev/guide/elements] Building Web Components with Angular [https://buddy.works/tutorials/building-web-components-with-angular] Hybrids Framework [https://bennypowers.dev/posts/lets-build-web-components/part-7-hybrids/] Omi Framework by Tencent [https://github.com/Tencent/omi] Web Components 2025: Lit vs Stencil Comparison [https://markaicode.com/web-components-2025-lit-stencil-enterprise/] Lit to Stencil Journey - Phase2",
+      "metadata": {
+        "startIndex": 7722,
+        "endIndex": 8644,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "https://markaicode.com/web-components-2025-lit-stencil-enterprise/] Lit to Stencil Journey - Phase2 [https://phase2.io/blog/web-components-our-journey-from-lit-to-stencil-and-back-again] ## Development and Testing Tools #### Modern Development Workflow @web/dev-server and @web/test-runner represent the current standard for Web Components development, providing native ES modules support and real browser testing capabilities. Vite offers the most popular build experience with fast development servers, hot module replacement, and Lit-specific templates. Webpack remains viable for complex configurations, while Parcel provides zero-config alternatives for rapid prototyping. #### Testing Frameworks and Strategies @web/test-runner excels for unit testing by running tests in actual browsers rather than JSDOM, supporting Chrome, Firefox, Safari, and Edge with coverage reporting and Shadow DOM testing capabilities.",
+      "metadata": {
+        "startIndex": 8544,
+        "endIndex": 9463,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "ting Chrome, Firefox, Safari, and Edge with coverage reporting and Shadow DOM testing capabilities. Cypress handles end-to-end testing with full Shadow DOM support, while WebdriverIO provides comprehensive component and integration testing with mock support. #### IDE Support and Debugging VS Code receives first-class support through the official lit-plugin, providing syntax highlighting, auto-completion, and type checking for Lit components. Browser DevTools provide native Custom Elements debugging across all modern browsers. ### Resources Open Web Components - Testing Guide [https://open-wc.org/guides/developing-components/testing/] Best Practices for Testing Web Components [https://blog.pixelfreestudio.com/best-practices-for-testing-web-components/] Lit - Lightning Fast Web Components [https://jasonbutz.info/2024/10/lit-web-components/] JavaScript Module Bundlers Guide [https://snipcart.com/blog/javascript-module-bundler] Web Components with Parcel Bundler",
+      "metadata": {
+        "startIndex": 9363,
+        "endIndex": 10336,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "lers Guide [https://snipcart.com/blog/javascript-module-bundler] Web Components with Parcel Bundler [https://srinivasankk.com/web-components-parcel-bundler/] Node.js Bundler and Build Tools [https://geekflare.com/dev/node-js-bundler-and-build-tools/] ## Browser Support and Polyfills #### Current Compatibility Status Universal modern browser support marks Web Components as production-ready for contemporary web development. Chrome, Firefox, Edge, and Safari all support Custom Elements, Shadow DOM, and HTML Templates with consistent behavior. Polyfill requirements primarily target IE11 and legacy browser versions through `@webcomponents/webcomponentsjs`. The intelligent loader only adds necessary polyfills based on browser capabilities. Safari's Customized Built-in Elements limitation remains the only significant compatibility gap, affecting components that extend existing HTML elements. #### Future Standards and Proposals Declarative Shadow DOM reached standardization in 2023-2024,",
+      "metadata": {
+        "startIndex": 10236,
+        "endIndex": 11231,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "s. #### Future Standards and Proposals Declarative Shadow DOM reached standardization in 2023-2024, enabling server-side rendering of shadow roots. Chrome 90+ provides full support, while Firefox and Safari implementations remain in development. HTML Modules proposal continues discussion in WHATWG as a potential successor to deprecated HTML Imports, though ES Modules serve current needs effectively. ### Resources WebComponents.js Polyfills - npm [https://www.npmjs.com/package/@webcomponents/webcomponentsjs] WebComponents Polyfills - GitHub [https://github.com/webcomponents/polyfills/tree/master/packages/webcomponentsjs] Custom Elements Polyfill [https://github.com/oliver-moran/custom-elements] Web Components and SSR - 2024 Edition [https://dev.to/stuffbreaker/web-components-and-ssr-2024-edition-1nel] Declarative Shadow DOM - Web.dev [https://web.dev/articles/declarative-shadow-dom] ## Performance and Best Practices #### Optimization Strategies Direct DOM manipulation outperforms",
+      "metadata": {
+        "startIndex": 11131,
+        "endIndex": 12125,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "## Performance and Best Practices #### Optimization Strategies Direct DOM manipulation outperforms innerHTML-heavy implementations in high-frequency updates, making Web Components particularly suitable for real-time applications like trading platforms and data dashboards. Shadow DOM carries performance overhead for frequently-used small components, with best practices recommending selective usage based on encapsulation needs versus performance requirements. Tree-shaking capabilities prove crucial for production bundles, with modern build tools effectively eliminating unused component code when properly configured. SEO and Accessibility Server-side rendering remains experimental through solutions like Lit's @lit-labs/ssr, though Declarative Shadow DOM improves SSR capabilities significantly. Accessibility requires careful ARIA implementation within Shadow DOM boundaries, with enterprise-grade libraries like SAP UI5 and ING's Lion providing accessible defaults and patterns.",
+      "metadata": {
+        "startIndex": 12025,
+        "endIndex": 13013,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "enterprise-grade libraries like SAP UI5 and ING's Lion providing accessible defaults and patterns. ### Resources Why Web Components? - FAST [https://fast.design/docs/resources/why-web-components] Web Components Performance Considerations [https://lit.dev/docs/] California Design System - Why Web Components [https://designsystem.webstandards.ca.gov/why-web-components/index.html] Evaluating Web Components in 2024 [https://ictinstitute.nl/webcomponents-in-2024/] Polymer is Dead, Long Live Web Components [https://craftsmen.nl/polymer-is-dead-long-live-web-components/] ## Framework Comparison #### Market Position and Trends React maintains dominance with 34+ million websites, though job postings declined from 80K to 52K indicating market maturation. Angular job postings dropped from 37K to 23K, while Vue saw significant decline from 13K to 2K in US markets. Web Components offer unique advantages in framework-agnostic compatibility, zero vendor lock-in, and standards-based future-proofing.",
+      "metadata": {
+        "startIndex": 12913,
+        "endIndex": 13913,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "ages in framework-agnostic compatibility, zero vendor lock-in, and standards-based future-proofing. Frameworks excel in comprehensive ecosystems, mature tooling, and rapid application development. Strategic Selection Criteria Choose Web Components for cross-framework compatibility requirements, long-term maintenance concerns, component libraries and design systems, and micro-frontend architectures. Choose frameworks for complex application state management, rapid prototyping needs, rich ecosystem requirements, and team expertise alignment. Hybrid approaches combining Web Components with frameworks increasingly represent practical middle-ground solutions. ### Resources Are Web Components Dead? - Analysis [https://web-highlights.com/blog/are-web-components-dead/] Web Components vs Frameworks Comparison [https://karanmandal.dev/posts/web-components/] Complete Introduction to Web Components [https://kinsta.com/blog/web-components/] ## Community Resources ### Active Community Platforms Lit",
+      "metadata": {
+        "startIndex": 13813,
+        "endIndex": 14813,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "[https://kinsta.com/blog/web-components/] ## Community Resources ### Active Community Platforms Lit Discord Server hosts the most active Web Components community with 5,000+ members providing real-time help and discussions. Stack Overflow's #web-components tag maintains 22,000+ questions with active expert participation. WebComponents.org serves as the official community hub with component galleries, best practices, and curated tutorials from industry practitioners. Conferences and Thought Leadership JSNation 2025 (June 12-16, Amsterdam/Remote) features dedicated Web Components tracks alongside major JavaScript conference programming. Frontend Master Events regularly include Web Components workshops and professional development sessions. Influential voices include Nolan Lawson's balanced perspectives, Cory LaViska as Shoelace/Web Awesome creator, and Rob Eisenberg leading Microsoft's FAST framework development.",
+      "metadata": {
+        "startIndex": 14713,
+        "endIndex": 15638,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "as Shoelace/Web Awesome creator, and Rob Eisenberg leading Microsoft's FAST framework development. ### Podcasts and Media Syntax FM (Wes Bos & Scott Tolinski) provides regular Web Components discussions and tutorials, while ShopTalk Show covers frontend-focused Web Components topics. ### Resources Shoelace Web Components Library [https://thenewstack.io/shoelace-web-components-library-that-works-with-any-framework/] 17 Best Web Development Podcasts [https://thectoclub.com/career/web-development-podcast/] 20 Best Web Development Podcasts [https://podcast.feedspot.com/web_development_podcasts/] PodRocket - Web Development Podcast [https://podrocket.logrocket.com/] ## Recent Developments and Trends ### 2024-2025 Ecosystem Evolution Enterprise adoption accelerated significantly, with usage growing from 10% to 18% of Chrome page loads in 2024. Major companies including Microsoft, GitHub, Google, Adobe, and SAP actively invest in Web Components for production applications.",
+      "metadata": {
+        "startIndex": 15538,
+        "endIndex": 16520,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "soft, GitHub, Google, Adobe, and SAP actively invest in Web Components for production applications. Framework integration improved, particularly with React 19 enhancing Web Components compatibility after years of integration challenges. Angular Elements supports standalone components, while Vue and Svelte maintain excellent Web Components integration. #### Technical Advancement Highlights Lit 5.0 introduced enhanced TypeScript support, signals-like reactivity improvements, and direct DOM manipulation optimizations. Stencil 4.0 provides comprehensive enterprise tooling with multi-framework output targets and enhanced CI/CD integration. Browser standards progress includes Declarative Shadow DOM stabilization, DOM Parts proposal for efficient templating, and Open Styleable Shadow Roots proposal for enhanced styling capabilities. Design system adoption drives much enterprise interest, with Shoelace rebranding to Web Awesome under Font Awesome acquisition, IBM Carbon expanding Web",
+      "metadata": {
+        "startIndex": 16420,
+        "endIndex": 17411,
+        "chunkIndex": 19,
+        "section": "Introduction",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "t, with Shoelace rebranding to Web Awesome under Font Awesome acquisition, IBM Carbon expanding Web Components support, and Microsoft Fluent UI implementing comprehensive Web Components libraries. ### Resources Web Components 2025: Lit vs Stencil Enterprise Analysis [https://markaicode.com/web-components-2025-lit-stencil-enterprise/] Web Components and SSR - 2024 Edition [https://dev.to/stuffbreaker/web-components-and-ssr-2024-edition-1nel] What's New in the Web - IO2024 [https://web.dev/blog/new-in-the-web-io2024] Shoelace Framework-Agnostic Library [https://thenewstack.io/shoelace-web-components-library-that-works-with-any-framework/] Lit [https://lit.dev/] (by Google) Lightweight library for building fast Web Components Features reactive properties, declarative templates, scoped styles Very small bundle size and excellent performance Popular choice for enterprise applications Stencil (by Ionic team) Full-featured compiler that generates Web Components Includes TypeScript, JSX, and",
+      "metadata": {
+        "startIndex": 17311,
+        "endIndex": 18310,
+        "chunkIndex": 20,
+        "section": "Introduction",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "(by Ionic team) Full-featured compiler that generates Web Components Includes TypeScript, JSX, and Virtual DOM Great for building design systems and component libraries FAST (by Microsoft) Enterprise-focused Web Component system Includes design system tools and adaptive UI controls Strong accessibility features ## Next question Organize design files in Figma Published on: Dec 5, 2024 Updated: Updated: Dec 5, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System",
+      "metadata": {
+        "startIndex": 18210,
+        "endIndex": 19202,
+        "chunkIndex": 21,
+        "section": "Introduction",
+        "globalChunkIndex": 21
+      }
+    },
+    {
+      "id": "chunk-22",
+      "text": "ntory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin",
+      "metadata": {
+        "startIndex": 19102,
+        "endIndex": 20102,
+        "chunkIndex": 22,
+        "section": "Introduction",
+        "globalChunkIndex": 22
+      }
+    },
+    {
+      "id": "chunk-23",
+      "text": "Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin",
+      "metadata": {
+        "startIndex": 20002,
+        "endIndex": 20990,
+        "chunkIndex": 23,
+        "section": "Introduction",
+        "globalChunkIndex": 23
+      }
+    },
+    {
+      "id": "chunk-24",
+      "text": "Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin",
+      "metadata": {
+        "startIndex": 20890,
+        "endIndex": 21862,
+        "chunkIndex": 24,
+        "section": "Introduction",
+        "globalChunkIndex": 24
+      }
+    },
+    {
+      "id": "chunk-25",
+      "text": "Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 21762,
+        "endIndex": 22762,
+        "chunkIndex": 25,
+        "section": "Introduction",
+        "globalChunkIndex": 25
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "web-components;libraries;patterns"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:52:55.001Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/web-component-libraries-and-patterns"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "M-APcxfNAUq0eDdDZxVY9",
+  "title": "How Do You Set Up Figma Variables for Single vs Multi-Brand Themes",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/how-do-you-set-up-figma-variables-for-single-vs-multi-brand-themes",
+    "ingested_at": "2025-06-27T02:53:04.164Z"
+  },
+  "content": "How do you set up Figma Variables for single vs multi-brand themes? - The Design System Guide Close Figma Variables # How do you set up Figma Variables for single vs multi-brand themes? Romina Kavcic This article covers how you can structure Figma Variables for single or multi-brand theme. How do you organize Figma Variables? Do you make a separate file for design tokens, or do you add them in your component library file? My preferred way to handle Figma variables is to create: ↪️ Create a Figma file called Foundations (or primitives, or core) Add all the colors Add all the numbers (spacings, paddings, border radius, etc) Publish the library. ↪️ Open a new Figma file, called Semantic design tokens Here you can \"call\" the values from your foundations and define all the reusable design tokens Publish the library and make it available for your team. ↪️ Create a new Figma file for your component (for example \"Accordian\") Add your Semantic Figma library Add your Foundations Figma library Connect layers with Figma variables This structure lets you hide Foundations from your design system's users. (If you need to 🙃) ### More resources: Guide: Variable mapping and design system structureby Luis Ouriach A primer on how to structure your variable collections for: Single brand Multi brand with shared primitives Multi brand with different primitives Multi product with shared primitives and semantics There's also an introductory primer to variables, explaining the different types and how they are structured within Figma. 🔗 Check the template [https://www.figma.com/community/file/1262724388830684966/guide-variable-mapping-and-design-system-structure] Figma Variables at Vodafone UK: how we structured taxonomy for a complex multi-brand design systemby Alex Dyulgerova and Robyn Layton 🔗 Read the article [https://medium.com/vodafone-uk-design-experience/figma-variables-at-vodafone-uk-how-we-structured-taxonomy-for-a-complex-multi-brand-design-system-693b1b95675f] Bringing more character to the Zalando Design System with themingby Zalando 🔗 Read the article [https://medium.com/zalando-design/bringing-more-character-to-the-zalando-design-system-with-theming-e69e18359c39] Optimising your design system with Figma’s variables 🔗 Read the article [https://uxdesign.cc/design-system-figma-variables-f3d9c4351bcc] Creating a flexible design token taxonomy for Intuit’s Design Systemby Nate Baldwin 🔗 Read the article [https://medium.com/@NateBaldwin/creating-a-flexible-design-token-taxonomy-for-intuits-design-system-81c8ff55c59b] Next question Figma Variables Mapped to Styles Published on: Aug 27, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "How do you set up Figma Variables for single vs multi-brand themes? - The Design System Guide Close Figma Variables # How do you set up Figma Variables for single vs multi-brand themes? Romina Kavcic This article covers how you can structure Figma Variables for single or multi-brand theme. How do you organize Figma Variables? Do you make a separate file for design tokens, or do you add them in your component library file? My preferred way to handle Figma variables is to create: ↪️ Create a Figma file called Foundations (or primitives, or core) Add all the colors Add all the numbers (spacings, paddings, border radius, etc) Publish the library. ↪️ Open a new Figma file, called Semantic design tokens Here you can \"call\" the values from your foundations and define all the reusable design tokens Publish the library and make it available for your team. ↪️ Create a new Figma file for your component (for example \"Accordian\") Add your Semantic Figma library Add your Foundations Figma library",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 998,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ponent (for example \"Accordian\") Add your Semantic Figma library Add your Foundations Figma library Connect layers with Figma variables This structure lets you hide Foundations from your design system's users. (If you need to 🙃) ### More resources: Guide: Variable mapping and design system structureby Luis Ouriach A primer on how to structure your variable collections for: Single brand Multi brand with shared primitives Multi brand with different primitives Multi product with shared primitives and semantics There's also an introductory primer to variables, explaining the different types and how they are structured within Figma. 🔗 Check the template [https://www.figma.com/community/file/1262724388830684966/guide-variable-mapping-and-design-system-structure] Figma Variables at Vodafone UK: how we structured taxonomy for a complex multi-brand design systemby Alex Dyulgerova and Robyn Layton 🔗 Read the article",
+      "metadata": {
+        "startIndex": 898,
+        "endIndex": 1821,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "nomy for a complex multi-brand design systemby Alex Dyulgerova and Robyn Layton 🔗 Read the article [https://medium.com/vodafone-uk-design-experience/figma-variables-at-vodafone-uk-how-we-structured-taxonomy-for-a-complex-multi-brand-design-system-693b1b95675f] Bringing more character to the Zalando Design System with themingby Zalando 🔗 Read the article [https://medium.com/zalando-design/bringing-more-character-to-the-zalando-design-system-with-theming-e69e18359c39] Optimising your design system with Figma’s variables 🔗 Read the article [https://uxdesign.cc/design-system-figma-variables-f3d9c4351bcc] Creating a flexible design token taxonomy for Intuit’s Design Systemby Nate Baldwin 🔗 Read the article [https://medium.com/@NateBaldwin/creating-a-flexible-design-token-taxonomy-for-intuits-design-system-81c8ff55c59b] Next question Figma Variables Mapped to Styles Published on: Aug 27, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new",
+      "metadata": {
+        "startIndex": 1721,
+        "endIndex": 2720,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox.",
+      "metadata": {
+        "startIndex": 2620,
+        "endIndex": 3607,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "e Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox.",
+      "metadata": {
+        "startIndex": 3507,
+        "endIndex": 4495,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "e Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 4395,
+        "endIndex": 5385,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 5285,
+        "endIndex": 6285,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma;variables;theming;multi-brand"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:53:04.164Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/how-do-you-set-up-figma-variables-for-single-vs-multi-brand-themes"
+  }
+}

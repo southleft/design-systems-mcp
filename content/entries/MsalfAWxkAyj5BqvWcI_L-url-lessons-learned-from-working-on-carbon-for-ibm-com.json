@@ -1,0 +1,310 @@
+{
+  "id": "MsalfAWxkAyj5BqvWcI_L",
+  "title": "Lessons learned from working on Carbon for IBM.com",
+  "source": {
+    "type": "url",
+    "location": "https://www.knapsack.cloud/blog/lessons-learned-from-working-on-carbon-for-ibm-com",
+    "ingested_at": "2025-06-27T02:45:16.374Z"
+  },
+  "content": "Lessons learned from working on Carbon for IBM.com | Knapsack A Tale of Two Tools: How Knapsack and Storybook Stack up [https://www.knapsack.cloud/blog/a-tale-of-two-tools-how-knapsack-and-storybook-stack-up] Knapsack for Engineers: Spend less time maintaining and more time coding [https://www.knapsack.cloud/solutions/developers] Patterns: An event for design, engineering, and product leaders. Apply now! [https://www.knapsack.cloud/patterns] [/]Features [/features] Dynamic Documentation [/feature-listing/dynamic-documentation]Design Tokens & Theming [/feature-listing/design-tokens-theming]Component & Pattern Management [/feature-listing/component-and-pattern-management]Prototyping & Composition [/feature-listing/prototyping-and-composition]Permissions & Controls [/feature-listing/permissions-and-controls]Integrations [/feature-listing/integrations] Solutions [#] For Engineers [/solutions/engineers]For Designers [/solutions/designers]For Product Managers [/solutions/product-managers]For Executive Leadership [/solutions/executives]Case Studies [/case-studies] Resources [#] Insights [/blog]Events [/events]Product Tours [https://app.teamwalnut.com/player/playlist?playlistId=416abec8-00dc-417e-8a8a-65f0b9b2290a]Roadmap [/roadmap]Documentation [https://docs.knapsack.cloud/]ROI Calculator [/calculator]FAQs [/faq] Solutions [/solutions-2] Designers [/solutions?tab=who-for_tab-link1]Developers [/solutions?tab=who-for_tab-link2]Product Managers [/solutions?tab=product-managers]UX Writers [/solutions?tab=ux-writers] Enterprise [/enterprise] ROI Calculator [/calculator] Plans [/pricing]Blog [/blog]Help [https://help.knapsack.cloud/] Blog [/blog] Accessibility [/blog-categories/accessibility] Announcements [/blog-categories/announcements] Collaboration [/blog-categories/collaboration] Design Systems [/blog-categories/design-systems] Design Tokens [/blog-categories/design-tokens] Events [/blog-categories/events] Insights [/blog-categories/insights] Podcast [/blog-categories/podcast] Product [/blog-categories/product] Webinars [/blog-categories/webinars] Contact Sales [/connect-with-us] April 19, 2022 | Xiangjun (Shixie) Shi Trofimov Design Systems [/blog-categories/design-systems] # Lessons learned from working on Carbon for IBM.com ‍ In February 2021, I was fortunate to join the leadership team as the Design Lead of Carbon for IBM.com design system [https://www.ibm.com/standards/carbon/]. While our goals are connected to consistency and brand expression, our success as a team has far exceeded those categories. We have successfully refined our team’s operation and workflows, delivering seven-fold growth in adoption within ten months. It took me some time to digest this tremendous experience. Here are my reflections on what might have worked and why. ## Some context about the Carbon for IBM.com design system Our design system supports specifically the needs of IBM.com, IBM’s corporate website with over 20 million pages built on two legacy design systems, with hundreds to thousands of globally distributed owners. Our team’s objectives and challenges are shared by many design system teams. We want to encourage teams adopting the system to reuse as much as possible, but these teams often face aggressive timelines and are tempted by customization and quick hacks. There is a healthy amount of executive pressure on us to not become a bottleneck to others, and to continue to drive consistency and beautiful brand expression in what hits the glass. We had to aim for the success of all parties : the adopters of the system need to ship; the stakeholders need results, and the system team needs a healthy pace to run the distance. A design system is a large investment — a bet on efficiency through reuse. Creating the system is only half the battle. Sustainable operation, successful adoption, and observable value return are my focus today. ## Lesson 1: a project, a product, a service Most would acknowledge today that a design system is not a one time project, but a product or a program that requires ongoing maintenance. These labels don’t highlight the importance of design system adoption efforts. For a system to be adopted at scale, the design system team has to operate like a service provider. Let’s start with self-service, which should have required minimum attention from the design system team. The Carbon for IBM.com design system is open-source so we have a public GitHub repository [https://github.com/carbon-design-system/carbon-for-ibm-dotcom/], and we maintain a public website for usage documentation. Our sprint plans and work-in-progress designs are available on ZenHub and Box, so all IBMers can view. These decisions provide transparency and enable a large number of adopters to self-serve on getting status updates on their requests. However, those familiar with Service Design [http://www.practicalservicedesign.com/service-design-101] would be quick to point out these are only a surface experience, and a lot of backstage work is needed to achieve it. In order to arrive at a delightful and seamless service delivery, an end-to-end, surface-to-core perspective has to be applied to the operation. Otherwise, GitHub issues can be out of date, and Box can be a labyrinth of nested folders, and the purpose of self-service through transparency would be lost. Example of publicly available project status information and usage documentation To make sure we are on top of every touch point with our adopters, we formed a “fire line” support team, which is a roster of one designer and one developer assigned for the sprint to watch our Slack and GitHub activities. These are our “first responders” and can close out a good portion of the inquiries by leveraging their own knowledge and connections. When we realized increased adoption created more implementation questions, we added one more developer to the fire line to increase response time and make the workload more manageable. The Carbon for IBM.com leadership team meets twice a week to triage new issues in GitHub. We use a collaboration method internally referred to as the “four-in-the-box” model, where design lead, development lead, product owner, and project manager get together, and align on decisions, next steps, scheduling, and move the issues down the pipeline. This method helps us closely monitor and respond to the touch points with the adopters, so that the surface experience is an efficient and reliable one. To keep these meetings efficient, fire-line designers and developers fill in any “blanks” that may have come up during triage. ### Troubleshooting for adopters Aside from GitHub, we have other channels of connection with adopters, including weekly office hours. Office hours are hosted by the design system team and open to anyone in IBM interested in the design system. IBMers are invited to come with questions, work in progress, blockers, or anything. In some parts of IBM, there’s often only one designer on the team, and they can come to us during this weekly time slot for design feedback, grow their skills, and join a virtual design community. We’ve created Away Missions where a Carbon for IBM.com team member joins an adopter team on a short-term engagement project. This has been especially fruitful in activating adopter teams’ developers in learning to use the system. For high-priority adopters, such as the Adobe Experience Manager team in charge of creating page templates, the leadership team has bi-weekly or monthly check-ins to see if they are on track with their adoption and address any blockers. These benefit our work in a lot of ways. Beyond facilitating the product teams’ adoption progress and building up a good relationship, we also became frequent witnesses to serendipitous encounters. A frequent occurrence in our office hours is when team X comes with an ask, and we can show them that team Y already has a similar request in the pipeline, and it often fits their needs. I observed how these strategies made every team member more aware of our role in the bigger picture — to serve our adopter teams so they can succeed. The design system teams connect the dots between product teams, create alignments, and boost efficiency while playing a supporting role. Our role in governance comes second. When pushback on requests are needed, for example when the request conflicts with IBM’s design and content standards, it is done through the leadership team, with clear documentation. In the end, the win for us is that the system got adopted, the components got reused, and IBM’s public digital storefront got a little bit tidier. ## Lesson 2: prioritization, process, and pace The more services we offer, the more others depend on us. This can go to a dangerous extreme. The design system team members have to take care of themselves and make sure we don’t drown in meetings. This quickly became my number one concern after I joined the team—after all, we still have a whole library to build and maintain. The design system team members’ day-to-day lives should not be always at the mercy of adopter teams’ deadlines and their executives. Prioritization is a must. Understanding how a request relates to the current business focus is essential, and there are many helpful prioritization methods [https://www.nngroup.com/articles/prioritization-methods/] out there. However the bigger challenge, in our experience, is putting a time frame on this prioritized backlog so it is not all for “some time in the indefinite future.” An estimated delivery date is a basic requirement for good service. We found that leaning into a transparent and robust process of working helps to create this estimated time frame, and make our adopter teams understand some very important things: • Things take time. We are not miracle workers. • Our quality is high because we never skip important steps such as QA. • They can help too! With these understandings in place, we can delay or push back on requests we are unable to fulfill without alienating adopters, expand our capacity by encouraging contribution, and really pace ourselves for the long run. Below is a high-level overview of our workflow. Steps colored magenta are work primarily handled by designers; blue steps are handled by developers, and black-colored steps are handled by the leadership team. (You can find detailed step descriptions in the Appendix.) Depending on the type and scope of work, only some of these steps might be needed: A bug might only take us four steps to close it out. A typical feature request engages the whole team, but some design and dev work can happen concurrently. The best part is external teams contributing! Below is an example of when we partnered with the AEM template team on some of their feature requests. We were able to let go of the wheel and play an advisory role, allowing the whole ship to sail faster: We encourage design and code contributions The workflow feels hypothetical until it becomes part of a release schedule. Keeping in mind that the goal is to arrive at a transparent and robust process ensures success for all parties, so a timeline is really helpful. Here’s how we arrived at a timeline with some important dates to observe: We practice the standard two-week sprint. Below is the calendar for our version 1.20 to 1.22 releases. We quickened the release pace by one week so our adopters can get the changes faster. Calendar for our v1.20 to v1.22 releases, where release date is in dark blue, and code freeze lasts for a week. Too often, release cycles are discussed as a developer-only activity. This is false, and unhealthy. This schedule has significant impact on a design team’s workload and pace, so here are the additional relevant dates when designers’ work are taken into consideration: • Design and specs freeze is three weeks before the next code freeze. It’s pencil down time. This gives the dev team a reasonable amount of time to implement by code freeze. • Pull request submission date has to be at least three days before code freeze to allow time for the design team to do design QA. Designers can block a merge if the implementation is below standard from a design perspective. Thanks to Browserstack Percy [https://www.browserstack.com/percy], visual review has become very straightforward. Conscientious developers can even run and check Percy results before submitting the PR to reduce design QA cycles. Dates that requires design attention — in addition to code freeze — are PR submission date and design and spec freeze date Putting the release cycle together with the workflows, it becomes easy to see whether expecting a feature request by a particular date is realistic, or to plan ahead by backtracking the days to give time for every necessary step. Below are a few hypothetical examples; in reality, one can expect a bit more gaps between the steps as the individual is often handling more than one request or bug per release. Hypothetical example timelines. In reality, one can expect a bit more gaps between the steps as the individual is often handling more than one request or bug per release. The team is constantly looking at possible ways to be more efficient. Our testing period, for example, has already become much shorter since last year thanks to automation. For more, check out Automating a design system [https://medium.com/carbondesign/automating-a-design-system-69bd2414f75] from our Development Lead and Architect Jeff Chew [https://medium.com/u/18e8f1b7f20a]. ## Lesson 3: observable value return Pick a key performance index (KPI) that resonates with executives, but be mindful of the inevitable limitation of simplifying a complex reality into a single number. For Carbon for IBM.com, our KPI is the amount of pageviews. We track the page view of pages built with Carbon vs the pages built with legacy design systems to see the amount of adoption. Pageviews as a metric is more accurate to measure adoption than the more straightforward number of pages. IBM.com has over 20 million pages, but a small portion of the pages garner over 80% of the total traffic. Pageviews’ direct connection with traffic makes our impact clear and observable. We started the year with 6.2% of all pageviews attributed to pages built with Carbon. By the end of November that same year, 44.8% of page views of all pages on IBM.com were attributed to us. Meanwhile, the page views attributed to the deprecated design system Northstar has been steadily reducing from 54% to 21%, suggesting the increase in page views we got is not just from new pages, but also because page owners are successfully migrating their pages over. Bar chart showing the change in page views of Carbon built pages between February and November This result carries some caveats. Instrumentation has limitations. It’s easy for the tool to decide whether a page is using Carbon for IBM.com as a dependency, but hard for it to know how much––never mind how well––the page is using the system. It is very likely a page out there is getting counted but is only using one of our components, or worse, has broken every usage rule. It’s hard to deny the necessity of a KPI, but hopefully we will all become a little bit wiser if we keep up a healthy habit to scrutinize every number. ## Closing thoughts Yesterday, I came across the Sales organization’s upbeat monthly letter, filled with actions and demands: “Make the move! Close the deal!” And I was instantly thankful that, being on a design system team, we don’t have to “win,” generate revenue, or beat out competition — at least not directly. Although we had to prove our impact in other ways, we are here to serve. It is only one website we have influence over! But this thought relaxed my nerves. There’s power in thinking that if we do our work right, we can make everyone a winner. ### Meet the team The above practices, workflow, and metrics were very much in place before I joined the team, and credit goes to the present and past leads who created them and matured them over time: Linda Carotenuto [https://www.linkedin.com/in/ljcarotenuto/], Jeff Chew [https://medium.com/u/18e8f1b7f20a], and Wonil Suh [https://medium.com/u/428789cb6348] and Roberta Hahn [https://www.linkedin.com/in/robertahahn/]. It is an incredible experience to be working alongside these extremely smart people. ‍ ## Appendix: Description of steps #### 1. Triage Determine if this is the right work to do and when is a reasonable time for the team to tackle it. This is done by PM, squad leads, and fire-line team members. Our fire-line team is made up of representatives from the design and development team, and the team members rotate every sprint. ‍ #### 2. Design Discovery, research, and rounds of design explorations. This is when designers dive in and do competitive research, talk to stakeholders and adopter teams to better understand the end user’s expectation, gather data and metrics, explore solutions, get reviews and critiques, iterate, and finally identify a solution. The whole shebang. ‍ #### 3. Spec There are many tools out there to help with red lining or hand off to development, but as a step in the process, it still requires attention. This is when the designers and developers stare at the same thing together, and exchange notes and patch what’s missed. We keep both detailed visual and functional specs. These documents help immensely with triaging bug tickets later. ‍ #### 4. Code Developer (picks up keyboard, 2 seconds later): ✨Tada! 🎉 Is this what you want? Designer: Nice, almost there! Just a few— Developer: Did this take two months to design? Designer (swallows in dry throat): …(then breaks down into inconsolable sobbing.) ‍ #### 5. Testing Testing starts after Code freeze, and could take a while to complete. This is to ensure the changes on the code behave as expected on other browsers and devices. We use a fair amount of automation to speed it up and increase coverage. In addition, we do visual regression testing with every code merge. There is front-loaded work to write these tests, and then we update when necessary. For details on how our awesome robot army helps with end-to-end testing, and keeps up with upstream and manage releases, checkout Automating a Design System [https://medium.com/carbondesign/automating-a-design-system-69bd2414f75] from our Development lead and architect Jeff Chew [https://medium.com/u/18e8f1b7f20a]. #### 6. Write documentation After handing off the work at the end of Step 3. Spec, designers begin documenting the intent and usage of the component or feature for our adopters. This means updating the design system website. If it is done before the dev team is able to complete the code, the updated documentation can be a pull request approved and ready, waiting to merge at the next code release. Developers also have technical documentations to write, which can happen concurrently with design documentation. ‍ #### 7. Design kits There are usually design assets created already by this point. But these are not easily found or distributed. Especially in the case of a new feature or a new component, it has to be added to our design kits to be delivered to adopters. Usually this requires rebuilding the thing to ensure the Sketch symbols or Figma components are reusing foundational elements. ‍ #### 8. QA Never skip the QA, even for small bug fixes. This is done by both designers and developers. If you remember from above, we have some automated testing done. One of these is the visual regression testing done using BrowserStack Percy [https://www.browserstack.com/percy]. Percy creates snapshots of the new build and puts it against the old build snapshots for a comparison. Any differences are highlighted and shown as a fail. These visual differences need to be approved by a designer. We have a process to distribute PRs to team members to review, and a set of standardized review instructions. Realizing reviewing PRs is actually a lot of work, we also started tracking time spent on PR reviews by creating a ticket every sprint with flexible story points. ‍ #### 9. Tooling We are working on a governance tool, called Beacon, designed for evaluating pages for compliance with the design system. It can be used by product managers and stakeholders, or adopter teams to self-evaluate their adoption maturity. Again, with the evolving library, the evaluation criteria in Beacon needs to be frequently updated. There is design input, such as what violation is severe and worth a fail. At the moment this is primarily a developer task. #### 10. Release code At last, the work that passes QA and regression testing is ready for release. At the moment our release is scheduled every three weeks. This could change depending on the adopter team’s needs and state of the library’s growth. We have pretty much fully automated this step, and it is managed by the dev team. ‍ ## Get started See how Knapsack helps you reach your design system goals. Explore Case Studies [/case-studies] ## Get started See how Knapsack makes design system management easy. Learn more [#] ## Related posts [/blog/how-design-systems-create-and-maintain-competitive-advantage] ## How Design Systems Help Create and Maintain Your Product Organization&#x27;s Competitive Advantage [/blog/streamlined-design-system-integration-for-the-enterprise] ## Streamlined Design System Integration for the Enterprise [/blog/t-rowe-price-beacon-design-system] ## Unifying Design and Development: The Beacon Design System at T. Rowe Price [/] The digital production platform for enterprise teams. Subscribe for digital production tips and inspiration. Thank you! Your submission has been received! Oops! Something went wrong while submitting the form. Company Case Studies [/case-studies]Careers [https://knapsack.breezy.hr/]Agency Partners [/agency]Terms of Service [/legal/terms-of-service]Security [/legal/security]Privacy [/legal/privacy] Product Solutions [/solutions-2]Plans [/pricing]Roadmap [/roadmap]Help Docs [https://docs.knapsack.cloud/site/ks-docs/latest]vs Storybook [/storybook-vs-knapsack]vs Supernova [/knapsack-vs-supernova]vs Zeroheight [/knapsack-vs-zeroheight] Resources Blog [/blog]How Knapsack Works [#]ROI Calculator [/calculator]Videos [https://www.youtube.com/@knapsackcloud]Podcast [https://www.designsystemspodcast.com/episodes]Documentation [https://help.knapsack.cloud/]Contact us [mailto:hello@knapsack.cloud?subject=Knapsack%20inquiry]Customer Login [http://app.knapsack.cloud] ©2025 Knapsack Company. All rights reserved. Social",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Lessons learned from working on Carbon for IBM.com | Knapsack A Tale of Two Tools: How Knapsack and Storybook Stack up [https://www.knapsack.cloud/blog/a-tale-of-two-tools-how-knapsack-and-storybook-stack-up] Knapsack for Engineers: Spend less time maintaining and more time coding [https://www.knapsack.cloud/solutions/developers] Patterns: An event for design, engineering, and product leaders. Apply now! [https://www.knapsack.cloud/patterns] [/]Features [/features] Dynamic Documentation [/feature-listing/dynamic-documentation]Design Tokens & Theming [/feature-listing/design-tokens-theming]Component & Pattern Management [/feature-listing/component-and-pattern-management]Prototyping & Composition [/feature-listing/prototyping-and-composition]Permissions & Controls [/feature-listing/permissions-and-controls]Integrations [/feature-listing/integrations] Solutions [#] For Engineers [/solutions/engineers]For Designers [/solutions/designers]For Product Managers [/solutions/product-managers]For",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1001,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "engineers]For Designers [/solutions/designers]For Product Managers [/solutions/product-managers]For Executive Leadership [/solutions/executives]Case Studies [/case-studies] Resources [#] Insights [/blog]Events [/events]Product Tours [https://app.teamwalnut.com/player/playlist?playlistId=416abec8-00dc-417e-8a8a-65f0b9b2290a]Roadmap [/roadmap]Documentation [https://docs.knapsack.cloud/]ROI Calculator [/calculator]FAQs [/faq] Solutions [/solutions-2] Designers [/solutions?tab=who-for_tab-link1]Developers [/solutions?tab=who-for_tab-link2]Product Managers [/solutions?tab=product-managers]UX Writers [/solutions?tab=ux-writers] Enterprise [/enterprise] ROI Calculator [/calculator] Plans [/pricing]Blog [/blog]Help [https://help.knapsack.cloud/] Blog [/blog] Accessibility [/blog-categories/accessibility] Announcements [/blog-categories/announcements] Collaboration [/blog-categories/collaboration] Design Systems [/blog-categories/design-systems] Design Tokens [/blog-categories/design-tokens]",
+      "metadata": {
+        "startIndex": 901,
+        "endIndex": 1899,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "on] Design Systems [/blog-categories/design-systems] Design Tokens [/blog-categories/design-tokens] Events [/blog-categories/events] Insights [/blog-categories/insights] Podcast [/blog-categories/podcast] Product [/blog-categories/product] Webinars [/blog-categories/webinars] Contact Sales [/connect-with-us] April 19, 2022 | Xiangjun (Shixie) Shi Trofimov Design Systems [/blog-categories/design-systems] # Lessons learned from working on Carbon for IBM.com ‍ In February 2021, I was fortunate to join the leadership team as the Design Lead of Carbon for IBM.com design system [https://www.ibm.com/standards/carbon/]. While our goals are connected to consistency and brand expression, our success as a team has far exceeded those categories. We have successfully refined our team’s operation and workflows, delivering seven-fold growth in adoption within ten months. It took me some time to digest this tremendous experience. Here are my reflections on what might have worked and why.",
+      "metadata": {
+        "startIndex": 1799,
+        "endIndex": 2786,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "me to digest this tremendous experience. Here are my reflections on what might have worked and why. ## Some context about the Carbon for IBM.com design system Our design system supports specifically the needs of IBM.com, IBM’s corporate website with over 20 million pages built on two legacy design systems, with hundreds to thousands of globally distributed owners. Our team’s objectives and challenges are shared by many design system teams. We want to encourage teams adopting the system to reuse as much as possible, but these teams often face aggressive timelines and are tempted by customization and quick hacks. There is a healthy amount of executive pressure on us to not become a bottleneck to others, and to continue to drive consistency and beautiful brand expression in what hits the glass. We had to aim for the success of all parties : the adopters of the system need to ship; the stakeholders need results, and the system team needs a healthy pace to run the distance.",
+      "metadata": {
+        "startIndex": 2686,
+        "endIndex": 3670,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ship; the stakeholders need results, and the system team needs a healthy pace to run the distance. A design system is a large investment — a bet on efficiency through reuse. Creating the system is only half the battle. Sustainable operation, successful adoption, and observable value return are my focus today. ## Lesson 1: a project, a product, a service Most would acknowledge today that a design system is not a one time project, but a product or a program that requires ongoing maintenance. These labels don’t highlight the importance of design system adoption efforts. For a system to be adopted at scale, the design system team has to operate like a service provider. Let’s start with self-service, which should have required minimum attention from the design system team. The Carbon for IBM.com design system is open-source so we have a public GitHub repository [https://github.com/carbon-design-system/carbon-for-ibm-dotcom/], and we maintain a public website for usage documentation.",
+      "metadata": {
+        "startIndex": 3570,
+        "endIndex": 4564,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "on-design-system/carbon-for-ibm-dotcom/], and we maintain a public website for usage documentation. Our sprint plans and work-in-progress designs are available on ZenHub and Box, so all IBMers can view. These decisions provide transparency and enable a large number of adopters to self-serve on getting status updates on their requests. However, those familiar with Service Design [http://www.practicalservicedesign.com/service-design-101] would be quick to point out these are only a surface experience, and a lot of backstage work is needed to achieve it. In order to arrive at a delightful and seamless service delivery, an end-to-end, surface-to-core perspective has to be applied to the operation. Otherwise, GitHub issues can be out of date, and Box can be a labyrinth of nested folders, and the purpose of self-service through transparency would be lost. Example of publicly available project status information and usage documentation To make sure we are on top of every touch point with our",
+      "metadata": {
+        "startIndex": 4464,
+        "endIndex": 5464,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "status information and usage documentation To make sure we are on top of every touch point with our adopters, we formed a “fire line” support team, which is a roster of one designer and one developer assigned for the sprint to watch our Slack and GitHub activities. These are our “first responders” and can close out a good portion of the inquiries by leveraging their own knowledge and connections. When we realized increased adoption created more implementation questions, we added one more developer to the fire line to increase response time and make the workload more manageable. The Carbon for IBM.com leadership team meets twice a week to triage new issues in GitHub. We use a collaboration method internally referred to as the “four-in-the-box” model, where design lead, development lead, product owner, and project manager get together, and align on decisions, next steps, scheduling, and move the issues down the pipeline.",
+      "metadata": {
+        "startIndex": 5364,
+        "endIndex": 6297,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "et together, and align on decisions, next steps, scheduling, and move the issues down the pipeline. This method helps us closely monitor and respond to the touch points with the adopters, so that the surface experience is an efficient and reliable one. To keep these meetings efficient, fire-line designers and developers fill in any “blanks” that may have come up during triage. ### Troubleshooting for adopters Aside from GitHub, we have other channels of connection with adopters, including weekly office hours. Office hours are hosted by the design system team and open to anyone in IBM interested in the design system. IBMers are invited to come with questions, work in progress, blockers, or anything. In some parts of IBM, there’s often only one designer on the team, and they can come to us during this weekly time slot for design feedback, grow their skills, and join a virtual design community.",
+      "metadata": {
+        "startIndex": 6197,
+        "endIndex": 7102,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "this weekly time slot for design feedback, grow their skills, and join a virtual design community. We’ve created Away Missions where a Carbon for IBM.com team member joins an adopter team on a short-term engagement project. This has been especially fruitful in activating adopter teams’ developers in learning to use the system. For high-priority adopters, such as the Adobe Experience Manager team in charge of creating page templates, the leadership team has bi-weekly or monthly check-ins to see if they are on track with their adoption and address any blockers. These benefit our work in a lot of ways. Beyond facilitating the product teams’ adoption progress and building up a good relationship, we also became frequent witnesses to serendipitous encounters. A frequent occurrence in our office hours is when team X comes with an ask, and we can show them that team Y already has a similar request in the pipeline, and it often fits their needs.",
+      "metadata": {
+        "startIndex": 7002,
+        "endIndex": 7954,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "show them that team Y already has a similar request in the pipeline, and it often fits their needs. I observed how these strategies made every team member more aware of our role in the bigger picture — to serve our adopter teams so they can succeed. The design system teams connect the dots between product teams, create alignments, and boost efficiency while playing a supporting role. Our role in governance comes second. When pushback on requests are needed, for example when the request conflicts with IBM’s design and content standards, it is done through the leadership team, with clear documentation. In the end, the win for us is that the system got adopted, the components got reused, and IBM’s public digital storefront got a little bit tidier. ## Lesson 2: prioritization, process, and pace The more services we offer, the more others depend on us. This can go to a dangerous extreme. The design system team members have to take care of themselves and make sure we don’t drown in meetings.",
+      "metadata": {
+        "startIndex": 7854,
+        "endIndex": 8855,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "esign system team members have to take care of themselves and make sure we don’t drown in meetings. This quickly became my number one concern after I joined the team—after all, we still have a whole library to build and maintain. The design system team members’ day-to-day lives should not be always at the mercy of adopter teams’ deadlines and their executives. Prioritization is a must. Understanding how a request relates to the current business focus is essential, and there are many helpful prioritization methods [https://www.nngroup.com/articles/prioritization-methods/] out there. However the bigger challenge, in our experience, is putting a time frame on this prioritized backlog so it is not all for “some time in the indefinite future.” An estimated delivery date is a basic requirement for good service. We found that leaning into a transparent and robust process of working helps to create this estimated time frame, and make our adopter teams understand some very important things: •",
+      "metadata": {
+        "startIndex": 8755,
+        "endIndex": 9754,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "eate this estimated time frame, and make our adopter teams understand some very important things: • Things take time. We are not miracle workers. • Our quality is high because we never skip important steps such as QA. • They can help too! With these understandings in place, we can delay or push back on requests we are unable to fulfill without alienating adopters, expand our capacity by encouraging contribution, and really pace ourselves for the long run. Below is a high-level overview of our workflow. Steps colored magenta are work primarily handled by designers; blue steps are handled by developers, and black-colored steps are handled by the leadership team. (You can find detailed step descriptions in the Appendix.) Depending on the type and scope of work, only some of these steps might be needed: A bug might only take us four steps to close it out. A typical feature request engages the whole team, but some design and dev work can happen concurrently.",
+      "metadata": {
+        "startIndex": 9654,
+        "endIndex": 10622,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "pical feature request engages the whole team, but some design and dev work can happen concurrently. The best part is external teams contributing! Below is an example of when we partnered with the AEM template team on some of their feature requests. We were able to let go of the wheel and play an advisory role, allowing the whole ship to sail faster: We encourage design and code contributions The workflow feels hypothetical until it becomes part of a release schedule. Keeping in mind that the goal is to arrive at a transparent and robust process ensures success for all parties, so a timeline is really helpful. Here’s how we arrived at a timeline with some important dates to observe: We practice the standard two-week sprint. Below is the calendar for our version 1.20 to 1.22 releases. We quickened the release pace by one week so our adopters can get the changes faster. Calendar for our v1.20 to v1.22 releases, where release date is in dark blue, and code freeze lasts for a week.",
+      "metadata": {
+        "startIndex": 10522,
+        "endIndex": 11514,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "our v1.20 to v1.22 releases, where release date is in dark blue, and code freeze lasts for a week. Too often, release cycles are discussed as a developer-only activity. This is false, and unhealthy. This schedule has significant impact on a design team’s workload and pace, so here are the additional relevant dates when designers’ work are taken into consideration: • Design and specs freeze is three weeks before the next code freeze. It’s pencil down time. This gives the dev team a reasonable amount of time to implement by code freeze. • Pull request submission date has to be at least three days before code freeze to allow time for the design team to do design QA. Designers can block a merge if the implementation is below standard from a design perspective. Thanks to Browserstack Percy [https://www.browserstack.com/percy], visual review has become very straightforward. Conscientious developers can even run and check Percy results before submitting the PR to reduce design QA cycles.",
+      "metadata": {
+        "startIndex": 11414,
+        "endIndex": 12411,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "evelopers can even run and check Percy results before submitting the PR to reduce design QA cycles. Dates that requires design attention — in addition to code freeze — are PR submission date and design and spec freeze date Putting the release cycle together with the workflows, it becomes easy to see whether expecting a feature request by a particular date is realistic, or to plan ahead by backtracking the days to give time for every necessary step. Below are a few hypothetical examples; in reality, one can expect a bit more gaps between the steps as the individual is often handling more than one request or bug per release. Hypothetical example timelines. In reality, one can expect a bit more gaps between the steps as the individual is often handling more than one request or bug per release. The team is constantly looking at possible ways to be more efficient. Our testing period, for example, has already become much shorter since last year thanks to automation.",
+      "metadata": {
+        "startIndex": 12311,
+        "endIndex": 13286,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "testing period, for example, has already become much shorter since last year thanks to automation. For more, check out Automating a design system [https://medium.com/carbondesign/automating-a-design-system-69bd2414f75] from our Development Lead and Architect Jeff Chew [https://medium.com/u/18e8f1b7f20a]. ## Lesson 3: observable value return Pick a key performance index (KPI) that resonates with executives, but be mindful of the inevitable limitation of simplifying a complex reality into a single number. For Carbon for IBM.com, our KPI is the amount of pageviews. We track the page view of pages built with Carbon vs the pages built with legacy design systems to see the amount of adoption. Pageviews as a metric is more accurate to measure adoption than the more straightforward number of pages. IBM.com has over 20 million pages, but a small portion of the pages garner over 80% of the total traffic. Pageviews’ direct connection with traffic makes our impact clear and observable.",
+      "metadata": {
+        "startIndex": 13186,
+        "endIndex": 14176,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "the total traffic. Pageviews’ direct connection with traffic makes our impact clear and observable. We started the year with 6.2% of all pageviews attributed to pages built with Carbon. By the end of November that same year, 44.8% of page views of all pages on IBM.com were attributed to us. Meanwhile, the page views attributed to the deprecated design system Northstar has been steadily reducing from 54% to 21%, suggesting the increase in page views we got is not just from new pages, but also because page owners are successfully migrating their pages over. Bar chart showing the change in page views of Carbon built pages between February and November This result carries some caveats. Instrumentation has limitations. It’s easy for the tool to decide whether a page is using Carbon for IBM.com as a dependency, but hard for it to know how much––never mind how well––the page is using the system.",
+      "metadata": {
+        "startIndex": 14076,
+        "endIndex": 14978,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "a dependency, but hard for it to know how much––never mind how well––the page is using the system. It is very likely a page out there is getting counted but is only using one of our components, or worse, has broken every usage rule. It’s hard to deny the necessity of a KPI, but hopefully we will all become a little bit wiser if we keep up a healthy habit to scrutinize every number. ## Closing thoughts Yesterday, I came across the Sales organization’s upbeat monthly letter, filled with actions and demands: “Make the move! Close the deal!” And I was instantly thankful that, being on a design system team, we don’t have to “win,” generate revenue, or beat out competition — at least not directly. Although we had to prove our impact in other ways, we are here to serve. It is only one website we have influence over! But this thought relaxed my nerves. There’s power in thinking that if we do our work right, we can make everyone a winner.",
+      "metadata": {
+        "startIndex": 14878,
+        "endIndex": 15823,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "d my nerves. There’s power in thinking that if we do our work right, we can make everyone a winner. ### Meet the team The above practices, workflow, and metrics were very much in place before I joined the team, and credit goes to the present and past leads who created them and matured them over time: Linda Carotenuto [https://www.linkedin.com/in/ljcarotenuto/], Jeff Chew [https://medium.com/u/18e8f1b7f20a], and Wonil Suh [https://medium.com/u/428789cb6348] and Roberta Hahn [https://www.linkedin.com/in/robertahahn/]. It is an incredible experience to be working alongside these extremely smart people. ‍ ## Appendix: Description of steps #### 1. Triage Determine if this is the right work to do and when is a reasonable time for the team to tackle it. This is done by PM, squad leads, and fire-line team members. Our fire-line team is made up of representatives from the design and development team, and the team members rotate every sprint. ‍ #### 2.",
+      "metadata": {
+        "startIndex": 15723,
+        "endIndex": 16680,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "entatives from the design and development team, and the team members rotate every sprint. ‍ #### 2. Design Discovery, research, and rounds of design explorations. This is when designers dive in and do competitive research, talk to stakeholders and adopter teams to better understand the end user’s expectation, gather data and metrics, explore solutions, get reviews and critiques, iterate, and finally identify a solution. The whole shebang. ‍ #### 3. Spec There are many tools out there to help with red lining or hand off to development, but as a step in the process, it still requires attention. This is when the designers and developers stare at the same thing together, and exchange notes and patch what’s missed. We keep both detailed visual and functional specs. These documents help immensely with triaging bug tickets later. ‍ #### 4. Code Developer (picks up keyboard, 2 seconds later): ✨Tada! 🎉 Is this what you want? Designer: Nice, almost there!",
+      "metadata": {
+        "startIndex": 16580,
+        "endIndex": 17541,
+        "chunkIndex": 19,
+        "section": "Introduction",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "picks up keyboard, 2 seconds later): ✨Tada! 🎉 Is this what you want? Designer: Nice, almost there! Just a few— Developer: Did this take two months to design? Designer (swallows in dry throat): …(then breaks down into inconsolable sobbing.) ‍ #### 5. Testing Testing starts after Code freeze, and could take a while to complete. This is to ensure the changes on the code behave as expected on other browsers and devices. We use a fair amount of automation to speed it up and increase coverage. In addition, we do visual regression testing with every code merge. There is front-loaded work to write these tests, and then we update when necessary. For details on how our awesome robot army helps with end-to-end testing, and keeps up with upstream and manage releases, checkout Automating a Design System [https://medium.com/carbondesign/automating-a-design-system-69bd2414f75] from our Development lead and architect Jeff Chew [https://medium.com/u/18e8f1b7f20a]. #### 6.",
+      "metadata": {
+        "startIndex": 17441,
+        "endIndex": 18412,
+        "chunkIndex": 20,
+        "section": "Introduction",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "f75] from our Development lead and architect Jeff Chew [https://medium.com/u/18e8f1b7f20a]. #### 6. Write documentation After handing off the work at the end of Step 3. Spec, designers begin documenting the intent and usage of the component or feature for our adopters. This means updating the design system website. If it is done before the dev team is able to complete the code, the updated documentation can be a pull request approved and ready, waiting to merge at the next code release. Developers also have technical documentations to write, which can happen concurrently with design documentation. ‍ #### 7. Design kits There are usually design assets created already by this point. But these are not easily found or distributed. Especially in the case of a new feature or a new component, it has to be added to our design kits to be delivered to adopters. Usually this requires rebuilding the thing to ensure the Sketch symbols or Figma components are reusing foundational elements. ‍ #### 8.",
+      "metadata": {
+        "startIndex": 18312,
+        "endIndex": 19313,
+        "chunkIndex": 21,
+        "section": "Introduction",
+        "globalChunkIndex": 21
+      }
+    },
+    {
+      "id": "chunk-22",
+      "text": "thing to ensure the Sketch symbols or Figma components are reusing foundational elements. ‍ #### 8. QA Never skip the QA, even for small bug fixes. This is done by both designers and developers. If you remember from above, we have some automated testing done. One of these is the visual regression testing done using BrowserStack Percy [https://www.browserstack.com/percy]. Percy creates snapshots of the new build and puts it against the old build snapshots for a comparison. Any differences are highlighted and shown as a fail. These visual differences need to be approved by a designer. We have a process to distribute PRs to team members to review, and a set of standardized review instructions. Realizing reviewing PRs is actually a lot of work, we also started tracking time spent on PR reviews by creating a ticket every sprint with flexible story points. ‍ #### 9. Tooling We are working on a governance tool, called Beacon, designed for evaluating pages for compliance with the design",
+      "metadata": {
+        "startIndex": 19213,
+        "endIndex": 20207,
+        "chunkIndex": 22,
+        "section": "Introduction",
+        "globalChunkIndex": 22
+      }
+    },
+    {
+      "id": "chunk-23",
+      "text": "g on a governance tool, called Beacon, designed for evaluating pages for compliance with the design system. It can be used by product managers and stakeholders, or adopter teams to self-evaluate their adoption maturity. Again, with the evolving library, the evaluation criteria in Beacon needs to be frequently updated. There is design input, such as what violation is severe and worth a fail. At the moment this is primarily a developer task. #### 10. Release code At last, the work that passes QA and regression testing is ready for release. At the moment our release is scheduled every three weeks. This could change depending on the adopter team’s needs and state of the library’s growth. We have pretty much fully automated this step, and it is managed by the dev team. ‍ ## Get started See how Knapsack helps you reach your design system goals. Explore Case Studies [/case-studies] ## Get started See how Knapsack makes design system management easy.",
+      "metadata": {
+        "startIndex": 20107,
+        "endIndex": 21064,
+        "chunkIndex": 23,
+        "section": "Introduction",
+        "globalChunkIndex": 23
+      }
+    },
+    {
+      "id": "chunk-24",
+      "text": "e Case Studies [/case-studies] ## Get started See how Knapsack makes design system management easy. Learn more [#] ## Related posts [/blog/how-design-systems-create-and-maintain-competitive-advantage] ## How Design Systems Help Create and Maintain Your Product Organization&#x27;s Competitive Advantage [/blog/streamlined-design-system-integration-for-the-enterprise] ## Streamlined Design System Integration for the Enterprise [/blog/t-rowe-price-beacon-design-system] ## Unifying Design and Development: The Beacon Design System at T. Rowe Price [/] The digital production platform for enterprise teams. Subscribe for digital production tips and inspiration. Thank you! Your submission has been received! Oops! Something went wrong while submitting the form. Company Case Studies [/case-studies]Careers [https://knapsack.breezy.hr/]Agency Partners [/agency]Terms of Service [/legal/terms-of-service]Security [/legal/security]Privacy [/legal/privacy] Product Solutions [/solutions-2]Plans",
+      "metadata": {
+        "startIndex": 20964,
+        "endIndex": 21954,
+        "chunkIndex": 24,
+        "section": "Introduction",
+        "globalChunkIndex": 24
+      }
+    },
+    {
+      "id": "chunk-25",
+      "text": "of-service]Security [/legal/security]Privacy [/legal/privacy] Product Solutions [/solutions-2]Plans [/pricing]Roadmap [/roadmap]Help Docs [https://docs.knapsack.cloud/site/ks-docs/latest]vs Storybook [/storybook-vs-knapsack]vs Supernova [/knapsack-vs-supernova]vs Zeroheight [/knapsack-vs-zeroheight] Resources Blog [/blog]How Knapsack Works [#]ROI Calculator [/calculator]Videos [https://www.youtube.com/@knapsackcloud]Podcast [https://www.designsystemspodcast.com/episodes]Documentation [https://help.knapsack.cloud/]Contact us [mailto:hello@knapsack.cloud?subject=Knapsack%20inquiry]Customer Login [http://app.knapsack.cloud] ©2025 Knapsack Company. All rights reserved. Social",
+      "metadata": {
+        "startIndex": 21854,
+        "endIndex": 22854,
+        "chunkIndex": 25,
+        "section": "Introduction",
+        "globalChunkIndex": 25
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "adoption;operations;enterprise"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:16.374Z",
+    "system": "IBM Design",
+    "author": "Xiangjun (Shixie) Shi Trofimov",
+    "version": "1.0",
+    "source_url": "https://www.knapsack.cloud/blog/lessons-learned-from-working-on-carbon-for-ibm-com"
+  }
+}

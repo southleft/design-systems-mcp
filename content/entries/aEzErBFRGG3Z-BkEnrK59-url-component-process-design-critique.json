@@ -1,0 +1,101 @@
+{
+  "id": "aEzErBFRGG3Z-BkEnrK59",
+  "title": "Component Process: Design Critique",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/design-crit",
+    "ingested_at": "2025-06-27T02:59:41.698Z"
+  },
+  "content": "Design crit - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 2.2 Design crit. Phase --> Design Type Focus --> Time --> 1 hour ## What is it? First things first, crit is short for critique, not criticism. It’s a safe environment where you and others can share your work and get objective feedback to help you evolve and explore other options you may not have considered. ## Why do we do it? Crits and collaboration help us evolve our work and gain a stronger perspective. By sharing our work often and openly, we break silos and build a safe environment for others to share. Crits can also facilitate even stronger cross-collaboration between people and teams. It exposes projects and design work that may have otherwise been missed. You never know; someone may have already been exploring something similar to you — sharing opens up opportunities to support one another. You may even find others with a strong interest in your project willing to help. ## How do we do it? ### Set a precedent If you don’t have regular crits in place and are starting from scratch, setting an etiquette for your sessions to facilitate a safe environment for others to share is essential. Be sure to create these foundations and share them with everyone participating before your crit. That way, everyone knows what they need to prepare and how they’re expected to behave in the session. #### Facilitation One person runs the crit — this can be on a rotation. • They time keep the session. • They don’t give feedback — or very minimal if they do. • They ensure there is strong engagement within the session. • They ensure that people are respectful and the session doesn’t go off-topic. #### Presenting work Work to be crit’d be presented back in a well-constructed manner without being long-winded — slides are best for this. • Explain the opportunity/challenge. • Walk everyone through what you’ve done. #### Keep it focused If you’re asking for multiple pieces of feedback, break your session up. Showing thirty slides and then asking for feedback about what you indicated on slide three will lead to many questions and confusion. Avoid going through WIP Figma files that are unstructured. • It makes it hard to understand what feedback you want and where to look. If you’re sharing back work, present it in a digestible way. Ensure people know precisely what type of feedback you’re after and how you would like to receive it — • Post-its on Figma or Figjam (or Miro, whatever tool you’re using) • Group discussion — nominate a note taker for these sessions so nothing gets lost. • Comments on a word doc #### Giving feedback • Be respectful and constructive. • Everyone should have an opportunity to give feedback. • Don’t derail the session from the topic at hand. ### Who should be there? For a Design System crit, it’s essential to involve Designers and Developers* from the Design System team. It can also be handy to bring in any external Designers or stakeholders from your team if you feel it will give you a wider variety of feedback, especially if someone would directly benefit from this component. *Yes, I said Developers — why? If you want to ship faster, getting early feedback from the ones who will be building this will gain you more substantial buy-in and, two, highlight any significant issues or opportunities with your exploration early on. ### The agenda A 5-10 minute ice breaker — no forced fun The facilitator kicks everyone off by critiquing something. This could be a product, website or even an activity. The most important thing is to keep it light and get everyone comfortable talking openly. • They should cover things they liked and didn’t like about it. • As well as what they might improve • Open the floor for questions/discussion before kicking off. • Introduction and an overview of who is presenting, what they’re showing, and how long they have for sharing and feedback. The work — each person takes their turn to present back • Walkthrough of the project • Feedback gathering • Feedback review • Overall roundup of feedback (if relevant) ## Useful links • A practical guide to running effective design critiques [https://suelynyu.medium.com/a-practical-guide-to-running-effective-design-critiques-c6e8166c9eb0] ## Outcomes • A collection of feedback from your peers and clear next steps for exploration • Potential accessibility considerations • Cross-collaboration with others and stronger engagement with your project Hot tips Building a safe environment is essential. You can do this by inviting the right people and setting a precedent for the sessions. Ensure you hold others accountable. ## Up next Step 2.3 User testing Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Design crit - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 2.2 Design crit. Phase --> Design Type Focus --> Time --> 1 hour ## What is it? First things first, crit is short for critique, not criticism.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 987,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "s --> Time --> 1 hour ## What is it? First things first, crit is short for critique, not criticism. It’s a safe environment where you and others can share your work and get objective feedback to help you evolve and explore other options you may not have considered. ## Why do we do it? Crits and collaboration help us evolve our work and gain a stronger perspective. By sharing our work often and openly, we break silos and build a safe environment for others to share. Crits can also facilitate even stronger cross-collaboration between people and teams. It exposes projects and design work that may have otherwise been missed. You never know; someone may have already been exploring something similar to you — sharing opens up opportunities to support one another. You may even find others with a strong interest in your project willing to help. ## How do we do it? ### Set a precedent If you don’t have regular crits in place and are starting from scratch, setting an etiquette for your sessions",
+      "metadata": {
+        "startIndex": 887,
+        "endIndex": 1886,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "t have regular crits in place and are starting from scratch, setting an etiquette for your sessions to facilitate a safe environment for others to share is essential. Be sure to create these foundations and share them with everyone participating before your crit. That way, everyone knows what they need to prepare and how they’re expected to behave in the session. #### Facilitation One person runs the crit — this can be on a rotation. • They time keep the session. • They don’t give feedback — or very minimal if they do. • They ensure there is strong engagement within the session. • They ensure that people are respectful and the session doesn’t go off-topic. #### Presenting work Work to be crit’d be presented back in a well-constructed manner without being long-winded — slides are best for this. • Explain the opportunity/challenge. • Walk everyone through what you’ve done. #### Keep it focused If you’re asking for multiple pieces of feedback, break your session up.",
+      "metadata": {
+        "startIndex": 1786,
+        "endIndex": 2764,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "done. #### Keep it focused If you’re asking for multiple pieces of feedback, break your session up. Showing thirty slides and then asking for feedback about what you indicated on slide three will lead to many questions and confusion. Avoid going through WIP Figma files that are unstructured. • It makes it hard to understand what feedback you want and where to look. If you’re sharing back work, present it in a digestible way. Ensure people know precisely what type of feedback you’re after and how you would like to receive it — • Post-its on Figma or Figjam (or Miro, whatever tool you’re using) • Group discussion — nominate a note taker for these sessions so nothing gets lost. • Comments on a word doc #### Giving feedback • Be respectful and constructive. • Everyone should have an opportunity to give feedback. • Don’t derail the session from the topic at hand. ### Who should be there? For a Design System crit, it’s essential to involve Designers and Developers* from the Design System",
+      "metadata": {
+        "startIndex": 2664,
+        "endIndex": 3661,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "or a Design System crit, it’s essential to involve Designers and Developers* from the Design System team. It can also be handy to bring in any external Designers or stakeholders from your team if you feel it will give you a wider variety of feedback, especially if someone would directly benefit from this component. *Yes, I said Developers — why? If you want to ship faster, getting early feedback from the ones who will be building this will gain you more substantial buy-in and, two, highlight any significant issues or opportunities with your exploration early on. ### The agenda A 5-10 minute ice breaker — no forced fun The facilitator kicks everyone off by critiquing something. This could be a product, website or even an activity. The most important thing is to keep it light and get everyone comfortable talking openly. • They should cover things they liked and didn’t like about it. • As well as what they might improve • Open the floor for questions/discussion before kicking off.",
+      "metadata": {
+        "startIndex": 3561,
+        "endIndex": 4554,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "• As well as what they might improve • Open the floor for questions/discussion before kicking off. • Introduction and an overview of who is presenting, what they’re showing, and how long they have for sharing and feedback. The work — each person takes their turn to present back • Walkthrough of the project • Feedback gathering • Feedback review • Overall roundup of feedback (if relevant) ## Useful links • A practical guide to running effective design critiques [https://suelynyu.medium.com/a-practical-guide-to-running-effective-design-critiques-c6e8166c9eb0] ## Outcomes • A collection of feedback from your peers and clear next steps for exploration • Potential accessibility considerations • Cross-collaboration with others and stronger engagement with your project Hot tips Building a safe environment is essential. You can do this by inviting the right people and setting a precedent for the sessions. Ensure you hold others accountable.",
+      "metadata": {
+        "startIndex": 4454,
+        "endIndex": 5402,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ting the right people and setting a precedent for the sessions. Ensure you hold others accountable. ## Up next Step 2.3 User testing Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 5302,
+        "endIndex": 6302,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "design-crit;feedback;review;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:41.698Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/design-crit"
+  }
+}

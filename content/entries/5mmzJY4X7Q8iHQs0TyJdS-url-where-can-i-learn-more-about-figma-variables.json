@@ -1,0 +1,101 @@
+{
+  "id": "5mmzJY4X7Q8iHQs0TyJdS",
+  "title": "Where Can I Learn More About Figma Variables",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/where-can-i-learn-more-about-figma-variables",
+    "ingested_at": "2025-06-27T02:53:05.364Z"
+  },
+  "content": "Where can I learn more about Figma Variables? - The Design System Guide Close Figma Variables # Where can I learn more about Figma Variables? Romina Kavcic Intro to variables Playground File In this tutorial, learn how to use variables to help you design faster, use aliasing to implement design tokens, and account for different product themes. 🔗 Get the Figma template file [https://www.figma.com/community/file/1253086684245880517] Use this file to follow along our Intro to variables [https://youtu.be/1ONxxlJnvdM] and Prototype with variables [https://youtu.be/VEuwKJAz7Jg] video tutorials. Optimising your design system with Figma’s variables [https://uxdesign.cc/design-system-figma-variables-f3d9c4351bcc] Diving into primitive & semantic. Figma Variables at Vodafone UK: how we structured taxonomy for a complex multi-brand design system [https://medium.com/vodafone-uk-design-experience/figma-variables-at-vodafone-uk-how-we-structured-taxonomy-for-a-complex-multi-brand-design-system-693b1b95675f] When we started working on this project leading up to the Variables launch at Config 2023, we came across lots of insightful information albeit no ready-made solution for our use case, nor the discovery process that led to other frameworks’ informed decisions. Therefore, we hope documenting our journey may provide some inspiration for anyone else starting to apply Variables to their design system. Design tokens (variables) architecture in Tetrisly Design System. Part 1: Introduction [https://medium.com/design-bootcamp/design-tokens-variables-architecture-in-tetrisly-design-system-part-1-introduction-9cee27e45d6c] The way how we addressed design token challenges, from Figma limitations to building a scalable taxonomy. Tokens vs Variables in Tokens Studio for Figma | Variables Series by Samantha Gordashko 📹 Watch the video [https://www.youtube.com/watch?v=AtMVxP0UMII&t=2s ] Tokens, variables, and styles 📹 Watch the video [https://Tokens, variables, and styles - Update: Introduction to design systems] Next question How to import or export Figma Variables with plugin? Published on: Aug 27, 2024 Updated: Updated: Oct 21, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Where can I learn more about Figma Variables? - The Design System Guide Close Figma Variables # Where can I learn more about Figma Variables? Romina Kavcic Intro to variables Playground File In this tutorial, learn how to use variables to help you design faster, use aliasing to implement design tokens, and account for different product themes. 🔗 Get the Figma template file [https://www.figma.com/community/file/1253086684245880517] Use this file to follow along our Intro to variables [https://youtu.be/1ONxxlJnvdM] and Prototype with variables [https://youtu.be/VEuwKJAz7Jg] video tutorials. Optimising your design system with Figma’s variables [https://uxdesign.cc/design-system-figma-variables-f3d9c4351bcc] Diving into primitive & semantic. Figma Variables at Vodafone UK: how we structured taxonomy for a complex multi-brand design system",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 848,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Figma Variables at Vodafone UK: how we structured taxonomy for a complex multi-brand design system [https://medium.com/vodafone-uk-design-experience/figma-variables-at-vodafone-uk-how-we-structured-taxonomy-for-a-complex-multi-brand-design-system-693b1b95675f] When we started working on this project leading up to the Variables launch at Config 2023, we came across lots of insightful information albeit no ready-made solution for our use case, nor the discovery process that led to other frameworks’ informed decisions. Therefore, we hope documenting our journey may provide some inspiration for anyone else starting to apply Variables to their design system. Design tokens (variables) architecture in Tetrisly Design System. Part 1: Introduction [https://medium.com/design-bootcamp/design-tokens-variables-architecture-in-tetrisly-design-system-part-1-introduction-9cee27e45d6c] The way how we addressed design token challenges, from Figma limitations to building a scalable taxonomy.",
+      "metadata": {
+        "startIndex": 748,
+        "endIndex": 1737,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "y how we addressed design token challenges, from Figma limitations to building a scalable taxonomy. Tokens vs Variables in Tokens Studio for Figma | Variables Series by Samantha Gordashko 📹 Watch the video [https://www.youtube.com/watch?v=AtMVxP0UMII&t=2s ] Tokens, variables, and styles 📹 Watch the video [https://Tokens, variables, and styles - Update: Introduction to design systems] Next question How to import or export Figma Variables with plugin? Published on: Aug 27, 2024 Updated: Updated: Oct 21, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy.",
+      "metadata": {
+        "startIndex": 1637,
+        "endIndex": 2587,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast",
+      "metadata": {
+        "startIndex": 2487,
+        "endIndex": 3460,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "trics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast",
+      "metadata": {
+        "startIndex": 3360,
+        "endIndex": 4348,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "trics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast",
+      "metadata": {
+        "startIndex": 4248,
+        "endIndex": 5220,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "trics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 5120,
+        "endIndex": 6120,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma;variables;learning;resources"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:53:05.364Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/where-can-i-learn-more-about-figma-variables"
+  }
+}

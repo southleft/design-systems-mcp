@@ -1,0 +1,299 @@
+{
+  "id": "ICFkHfpgtlONMhL2q2SB3",
+  "title": "The future of design systems is marketing",
+  "source": {
+    "type": "url",
+    "location": "https://www.figma.com/blog/the-future-of-design-systems-is-marketing/",
+    "ingested_at": "2025-06-27T02:45:24.149Z"
+  },
+  "content": "The Future of Design Systems is Marketing | Figma Blog Skip to main content Subscribe to Figma’s editorial newsletter [https://www.figma.com/signup] [https://www.figma.com/] [https://www.figma.com/blog/] ##### Categories • Maker Stories [https://www.figma.com/blog/maker-stories/] • Working Well [https://www.figma.com/blog/working-well/] • Inside Figma [https://www.figma.com/blog/inside-figma/] • Insights [https://www.figma.com/blog/insights/] Topics ### Featured Topics ### News Get the latest on all things Figma. ### Design systems ### Explore topics • 3D design [https://www.figma.com/blog/3d-design/] • Accessibility [https://www.figma.com/blog/accessibility/] • AI [https://www.figma.com/blog/ai/] • Behind the scenes [https://www.figma.com/blog/behind-the-scenes/] • Brainstorming [https://www.figma.com/blog/brainstorming/] • Branding [https://www.figma.com/blog/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study [https://www.figma.com/blog/case-study/] • Collaboration [https://www.figma.com/blog/collaboration/] • Config [https://www.figma.com/blog/config/] • Culture [https://www.figma.com/blog/culture/] • Design [https://www.figma.com/blog/design/] • Design thinking [https://www.figma.com/blog/design-thinking/] • Dev Mode [https://www.figma.com/blog/dev-mode/] • Diagramming [https://www.figma.com/blog/diagramming/] • Engineering [https://www.figma.com/blog/engineering/] • Events [https://www.figma.com/blog/events/] • FigJam [https://www.figma.com/blog/figjam/] • Figma Buzz [https://www.figma.com/blog/figma-buzz/] • Figma Design [https://www.figma.com/blog/figma-design/] • Figma Draw [https://www.figma.com/blog/figma-draw/] • Figma Make [https://www.figma.com/blog/figma-make/] • Figma Sites [https://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] • Hiring [https://www.figma.com/blog/hiring/] • Infrastructure [https://www.figma.com/blog/infrastructure/] • Leadership [https://www.figma.com/blog/leadership/] • Localization [https://www.figma.com/blog/localization/] • Marketing [https://www.figma.com/blog/marketing/] • Meetings [https://www.figma.com/blog/meetings/] • Motion [https://www.figma.com/blog/motion/] • Operations [https://www.figma.com/blog/operations/] • Plugins & tooling [https://www.figma.com/blog/plugins-and-tooling/] • Portfolio [https://www.figma.com/blog/portfolio/] • Product management [https://www.figma.com/blog/product-management/] • Product updates [https://www.figma.com/blog/product-updates/] • Productivity [https://www.figma.com/blog/productivity/] • Profiles & interviews [https://www.figma.com/blog/profiles-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance [https://www.figma.com/blog/quality-and-performance/] • React [https://www.figma.com/blog/react/] • Report [https://www.figma.com/blog/report/] • Research [https://www.figma.com/blog/research/] • Security [https://www.figma.com/blog/security/] • Social impact [https://www.figma.com/blog/social-impact/] • Strategy [https://www.figma.com/blog/strategy/] • The Long & Short of It [https://www.figma.com/blog/the-long-and-short-of-it/] • Thought leadership [https://www.figma.com/blog/thought-leadership/] • Tips & inspiration [https://www.figma.com/blog/tips-and-inspiration/] • Typography [https://www.figma.com/blog/typography/] • UI/UX [https://www.figma.com/blog/ui-ux/] • Wireframing [https://www.figma.com/blog/wireframing/] • Writing [https://www.figma.com/blog/writing/] April 10, 2024 # The future of design systems is marketing Ana BoyerDesigner Advocate, Figma Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Design [https://www.figma.com/blog/design/]Thought leadership [https://www.figma.com/blog/thought-leadership/]AI [https://www.figma.com/blog/ai/] Design systems promise consistency, efficiency, and scalability, but realizing these benefits hinges on widespread usage. To get your entire team on board, you’ll need to tap into your inner marketer and craft a compelling adoption strategy. Artwork by Cynthia Alfonso Table of contents • Know your target audience [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#get-to-know-your-target-audience] • Think like a campaign strategist [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#think-like-a-campaign-strategist] • Going to market [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#get-the-word-out-going-to-market] • Building influence [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#building-influence-through-advocacy] • Measuring success [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#measuring-success] Table of contents • Know your target audience [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#get-to-know-your-target-audience] • Think like a campaign strategist [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#think-like-a-campaign-strategist] • Going to market [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#get-the-word-out-going-to-market] • Building influence [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#building-influence-through-advocacy] • Measuring success [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#measuring-success] If you work on a design systems team, I bet you’ve hit some walls trying to drum up excitement and buy-in for your system. You’ve probably sent countless Slack messages, organized presentations, and hosted under-attended training sessions. As someone who has worked on design systems for years, I know firsthand that simply building a great system isn’t enough—you need to actively market its value to drive adoption. Interested in the future of design systems? Join us for Framework by Figma [https://www.figma.com/blog/join-us-for-framework-by-figma-our-global-design-systems-event/], a global design systems event happening April 16. What if we started treating design systems as products themselves, requiring a go-to-market strategy to succeed within organizations? By crafting compelling narratives, identifying champions, and measuring impact, design systems teams can position their work as an essential cornerstone of how organizations design and build digital experiences. This marketing mindset turns design systems from nice-to-have toolkits into must-have instruments for your team. ## Build it, but will they come? The art of marketing your design system [#build-it-but-will-they-come-the-art-of-marketing] In my time at Figma, I’ve talked to dozens of design systems teams looking to drive adoption and prove the value of their work. Now, more than ever, it’s important to think, strategize, and execute like a marketer. Here are some of the tactics and strategies for helping you position your design system as an integral asset—whether launching anew or revitalizing existing efforts. ### Get to know your target audience [#get-to-know-your-target-audience] First and foremost, you need to be confident that your design system resonates with the needs of your audience. Finding product-market fit is an ongoing process of exploration, communication, and iteration. It requires a nuanced understanding of your audience—what drives them, what concerns them about new tools, and how do they perceive the system’s value in their daily work? This means immersing yourself in the daily realities of designers, developers, and decision-makers—identifying not just their challenges, but also understanding their unstated frustrations and desires. What gets under their skin? What are they craving that they don’t even know they need yet? Engaging in this level of audience understanding is not unlike the initial stages of product development, where user research is paramount. Interview people across your Product Design and Engineering (PDE) organization—from individual contributors to leadership. Each level offers unique perspectives to inform your strategy. Start conversations discussing existing processes, bottlenecks and goals, before diving into specifics about your design system. [https://www.figma.com/blog/what-we-launched-at-framework-2024/] At Framework 2024, we announced Code Connect for developers [https://www.figma.com/blog/introducing-code-connect/], typography and gradient variables, and our Library Analytics API to help you drive design system adoption across your entire organization. Read more [https://www.figma.com/blog/what-we-launched-at-framework-2024/]. ### Think like a campaign strategist [#think-like-a-campaign-strategist] Developers, designers, project managers—they all speak slightly different dialects of the same language. By creating and fine-tuning a pitch to each group’s specific needs and concerns, you ensure that the proposition for your design system is heard loud and clear. • For designers, highlight how the system enables creativity, while ensuring brand consistency. • Developers will likely care more about reusability and efficiency gains. Share how the system facilitates reusability, standardization, and a frictionless workflow between design and code. • And for decision-makers, emphasize ROI through accelerated speed-to-market, reduced technical debt. Part of this means addressing hesitations and concerns head-on. Understand why some may be reluctant to adopt or invest in your design system—like concerns around flexibility, technical limitations, or implementation overhead—and craft messaging that addresses these objections, converting skepticism into enthusiasm. [https://www.figma.com/blog/an-insiders-guide-to-a-seamless-figma-migration/] Thinking about making the switch to Figma? Check out Designer Advocate Clara Ujiie’s An insider’s guide to a seamless Figma migration [https://www.figma.com/blog/an-insiders-guide-to-a-seamless-figma-migration/] for a plethora of resources, tips, and tools. ## Get the word out: Going to market [#get-the-word-out-going-to-market] Martin Hardee helps large organizations navigate big design transitions, and offers his advice for others looking to do the same [https://www.linkedin.com/pulse/deploying-design-scale-figma-anything-else-martin-e-hardee/]. This phase demands careful consideration of the channels and formats that best suit each audience. Communicate your design system’s core value and functionality in a way that sparks interest without overwhelming–you can always link to resources with more detail if people want to go deeper. Here are some strategies for how you can get your message across are: Treat the roll-out as a learning opportunity. At Spotify, the team prioritized collaboration and feedback loops [https://www.figma.com/blog/creating-coherence-how-spotifys-design-system-goes-beyond-platforms/] when rethinking their design system implementation. Showing responsiveness to user feedback not only improves the system but also builds trust and reduces resistance. • Host engaging hands-on workshops and FigJam sessions. • Publish informative, yet concise documentation. • Produce short videos highlighting real-world use cases and benefits. • Schedule presentations at relevant team meetings and events. Discover how News UK shipped their multi-brand design system [https://www.figma.com/blog/how-news-uk-developed-a-multi-brand-design-system/], leveraging custom resources to onboard designers and empower advocates. Timing is everything. Capitalize on moments like product launches, company meetings, or quarterly planning sessions to amplify your message, and steer clear of periods when your audience is likely to be disengaged or preoccupied, such as late Friday afternoons, around holidays, company-wide events, or involved product launches. And remember, building awareness is an ongoing effort. If you don’t see immediate traction, that’s okay! Companies make marketing moments not only during a launch, but continuously—and you can use this same approach through updates and evangelism. ### Building influence through advocacy [#building-influence-through-advocacy] Identify internal advocates and influencers who can champion the system and equip them to rally others. These could include senior designers, respected developers, or product leaders who have sway and see the system’s potential. Consider formalizing their advocacy through performance reviews or a program where members earn recognition for contributions like creating new components, giving training sessions, or writing educational content. This fosters a culture that highlights the system’s importance and impact. The flywheel effect in marketing refers to a strategy of creating a self-sustaining cycle of growth and improvement. It’s based on the idea that initial efforts to engage and satisfy customers generate momentum that leads to more customers and further growth, much like a flywheel gaining speed. By empowering a mobilized group of internal experts and formalizing incentives, you create a powerful flywheel effect of grassroots promotion, enablement, and lasting adoption. This can attract and retain a wider audience over time. A community not only supports the system’s current users but also welcomes new ones, creating a dynamic environment where feedback fuels continuous improvement. ### Measuring success [#measuring-success] Establish clear success metrics for your design system in terms of adoption, engagement, and satisfaction. Think of it like a game where you’re keeping score on how many people are actually using the system: how many show up eager to learn at your workshops, and how many roll up their sleeves to help make the system even better? It’s about setting clear markers for success, like aiming for most of your design and development teams to use the system regularly, getting a packed room for training, and building a buzzing community. Specific metrics to track could include: • Number of teams or projects using the design system • Contribution rates: people creating or updating components • Attendance at trainings, workshops, community events • System usage telemetry: component inserts & detaches, library usage, et cetera [https://www.figma.com/blog/how-pinterests-design-systems-team-measures-adoption/] Learn how Pinterest’s design systems team measures adoption [https://www.figma.com/blog/how-pinterests-design-systems-team-measures-adoption/] using our REST API. Set ambitious but achievable targets, like aiming for 70% of product teams using the system within six months. Monitor progress and share wins. An actively engaged community will provide a feedback loop to evolve your design system into an ever-more integral asset. ## Stepping into the marketing spotlight [#stepping-into-the-marketing-spotlight] Design systems are a force for unifying creative visions, streamlining processes, and empowering teams to build incredible user experiences with efficiency. But to maximize this impact, design systems teams need to move beyond a build-it-and-they-will-come mentality. Driving adoption requires thinking, planning, and executing with a marketing mindset. It’s time to embrace wearing the marketing hat. By proactively raising awareness, building advocacy, and proving impact, you’ll transform your design system from a helpful utility into an indispensable centerpiece of how your organization crafts amazing digital experiences. The work won’t always be easy, but the payoff of an enthusiastically embraced design system will be well worth the effort. Ana Boyer is a designer advocate at Figma, where she is building community and empowering design teams across industries. She believes in collaboration and iteration and is always looking to build systems and establish processes where there is ambiguity. ## Subscribe to Figma’s editorial newsletter Enter email* I agree to opt-in to Figma&#x27;s mailing list.* By clicking “Submit” you agree to our TOS [https://www.figma.com/tos/] and Privacy Policy [https://www.figma.com/privacy/]. ## Related articles ### Updating our web system for a new era November 13, 2024 By Becca Ramos Want to see how we used Figma’s latest features to audit and refresh our web system? Here’s a behind-the-scenes look at how we streamlined our components, improved our workflows, and built for the future. Inside Figma [https://www.figma.com/blog/inside-figma/]Design systems [https://www.figma.com/blog/design-systems/]Branding [https://www.figma.com/blog/branding/]Behind the scenes [https://www.figma.com/blog/behind-the-scenes/]Collaboration [https://www.figma.com/blog/collaboration/]Design [https://www.figma.com/blog/design/]Marketing [https://www.figma.com/blog/marketing/] ### What we launched at Framework April 16, 2024 By Jacob Miller We announced Code Connect for developers, typography and gradient variables, and our Library Analytics API to help you drive design system adoption across your entire organization. Inside Figma [https://www.figma.com/blog/inside-figma/]Design systems [https://www.figma.com/blog/design-systems/]Product updates [https://www.figma.com/blog/product-updates/]Engineering [https://www.figma.com/blog/engineering/]Prototyping [https://www.figma.com/blog/prototyping/]News [https://www.figma.com/blog/news/] ### The future of design systems is semantic July 27, 2023 By Carly Ayres Variables, one of Figma’s newest features, help you streamline designs and connect more closely to code, but what do they tell us about larger shifts in the industry? We dig into what they might signal for the future of design systems. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Thought leadership [https://www.figma.com/blog/thought-leadership/]Product updates [https://www.figma.com/blog/product-updates/]Plugins & tooling [https://www.figma.com/blog/plugins-and-tooling/]Design [https://www.figma.com/blog/design/] ## Create and collaborate with Figma Get started for free [https://www.figma.com/signup] [https://www.figma.com/] • [https://x.com/figma] • [https://www.youtube.com/figmadesign] • [https://www.instagram.com/figma] • [https://www.facebook.com/figmadesign] ## Product • Figma Design [https://www.figma.com/design/] • Dev Mode [https://www.figma.com/dev-mode/] • FigJam [https://www.figma.com/figjam/] • Figma Slides [https://www.figma.com/slides/] Figma Draw New Figma Buzz Beta Figma Sites Beta Figma Make Beta • AI [https://www.figma.com/ai/] • Downloads [https://www.figma.com/downloads/] • Release notes [https://www.figma.com/release-notes/] ## Plans • Pricing [https://www.figma.com/pricing/] • Enterprise [https://www.figma.com/enterprise/] • Organization [https://www.figma.com/organization/] • Professional [https://www.figma.com/professional/] ## Use cases • UI design [https://www.figma.com/ui-design-tool/] • UX design [https://www.figma.com/ux-design-tool/] • Wireframing [https://www.figma.com/wireframe-tool/] • Diagramming [https://www.figma.com/figjam/diagramming-tool/] • Prototyping [https://www.figma.com/prototyping/] • Brainstorming [https://www.figma.com/figjam/brainstorming-tool/] • Presentation Maker [https://www.figma.com/presentation-maker/] • Online whiteboard [https://www.figma.com/figjam/online-whiteboard/] • Agile [https://www.figma.com/figjam/agile-workflows/] • Strategic planning [https://www.figma.com/figjam/strategic-planning/] • Mind mapping [https://www.figma.com/figjam/mind-map/] • Online sticky notes [https://www.figma.com/figjam/online-sticky-notes/] • Concept map [https://www.figma.com/figjam/concept-map/] ## Resources • Blog [https://www.figma.com/blog/] • Best practices [https://www.figma.com/best-practices/] • QR code generator [https://www.figma.com/qr-code-generator/] • Color wheel [https://www.figma.com/color-wheel/] • Colors [https://www.figma.com/colors/] • Color picker [https://www.figma.com/color-picker/] • Color palettes [https://www.figma.com/color-palettes/] • Color palette generator [https://www.figma.com/color-palette-generator/] • Color contrast checker [https://www.figma.com/color-contrast-checker/] • Font Library [https://www.figma.com/fonts/] • Templates [https://www.figma.com/templates/] • Developers [https://www.figma.com/developers] • Integrations [https://www.figma.com/product-integrations/] • Affiliate program [https://www.figma.com/affiliate-program/] • Resource library [https://www.figma.com/resource-library/] • Reports and insights [https://www.figma.com/reports/] • Support [https://help.figma.com/hc/en-us] • Status [https://status.figma.com/] • Legal and privacy [https://www.figma.com/legal/] • Modern slavery statement [https://static.figma.com/uploads/1b6f8f613c2cc1e77fe543424bbc631298504d35] • Climate disclosure statement [https://static.figma.com/uploads/d2a204b5cc4d64ff539fcd445d0ddedab7dc00f6] ## Compare • Sketch [https://www.figma.com/figma-vs-sketch/] • Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] • Framer [https://www.figma.com/figma-vs-framer/] • Miro [https://www.figma.com/figjam-vs-miro/] ## Company • Events [https://www.figma.com/events/] • Customers [https://www.figma.com/customers/] • Careers [https://www.figma.com/careers/] • Newsroom [https://www.figma.com/newsroom/] English",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "The Future of Design Systems is Marketing | Figma Blog Skip to main content Subscribe to Figma’s editorial newsletter [https://www.figma.com/signup] [https://www.figma.com/] [https://www.figma.com/blog/] ##### Categories • Maker Stories [https://www.figma.com/blog/maker-stories/] • Working Well [https://www.figma.com/blog/working-well/] • Inside Figma [https://www.figma.com/blog/inside-figma/] • Insights [https://www.figma.com/blog/insights/] Topics ### Featured Topics ### News Get the latest on all things Figma. ### Design systems ### Explore topics • 3D design [https://www.figma.com/blog/3d-design/] • Accessibility [https://www.figma.com/blog/accessibility/] • AI [https://www.figma.com/blog/ai/] • Behind the scenes [https://www.figma.com/blog/behind-the-scenes/] • Brainstorming [https://www.figma.com/blog/brainstorming/] • Branding [https://www.figma.com/blog/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 970,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "log/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study [https://www.figma.com/blog/case-study/] • Collaboration [https://www.figma.com/blog/collaboration/] • Config [https://www.figma.com/blog/config/] • Culture [https://www.figma.com/blog/culture/] • Design [https://www.figma.com/blog/design/] • Design thinking [https://www.figma.com/blog/design-thinking/] • Dev Mode [https://www.figma.com/blog/dev-mode/] • Diagramming [https://www.figma.com/blog/diagramming/] • Engineering [https://www.figma.com/blog/engineering/] • Events [https://www.figma.com/blog/events/] • FigJam [https://www.figma.com/blog/figjam/] • Figma Buzz [https://www.figma.com/blog/figma-buzz/] • Figma Design [https://www.figma.com/blog/figma-design/] • Figma Draw [https://www.figma.com/blog/figma-draw/] • Figma Make [https://www.figma.com/blog/figma-make/] • Figma Sites [https://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] •",
+      "metadata": {
+        "startIndex": 870,
+        "endIndex": 1865,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ttps://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] • Hiring [https://www.figma.com/blog/hiring/] • Infrastructure [https://www.figma.com/blog/infrastructure/] • Leadership [https://www.figma.com/blog/leadership/] • Localization [https://www.figma.com/blog/localization/] • Marketing [https://www.figma.com/blog/marketing/] • Meetings [https://www.figma.com/blog/meetings/] • Motion [https://www.figma.com/blog/motion/] • Operations [https://www.figma.com/blog/operations/] • Plugins & tooling [https://www.figma.com/blog/plugins-and-tooling/] • Portfolio [https://www.figma.com/blog/portfolio/] • Product management [https://www.figma.com/blog/product-management/] • Product updates [https://www.figma.com/blog/product-updates/] • Productivity [https://www.figma.com/blog/productivity/] • Profiles & interviews [https://www.figma.com/blog/profiles-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance",
+      "metadata": {
+        "startIndex": 1765,
+        "endIndex": 2757,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "es-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance [https://www.figma.com/blog/quality-and-performance/] • React [https://www.figma.com/blog/react/] • Report [https://www.figma.com/blog/report/] • Research [https://www.figma.com/blog/research/] • Security [https://www.figma.com/blog/security/] • Social impact [https://www.figma.com/blog/social-impact/] • Strategy [https://www.figma.com/blog/strategy/] • The Long & Short of It [https://www.figma.com/blog/the-long-and-short-of-it/] • Thought leadership [https://www.figma.com/blog/thought-leadership/] • Tips & inspiration [https://www.figma.com/blog/tips-and-inspiration/] • Typography [https://www.figma.com/blog/typography/] • UI/UX [https://www.figma.com/blog/ui-ux/] • Wireframing [https://www.figma.com/blog/wireframing/] • Writing [https://www.figma.com/blog/writing/] April 10, 2024 # The future of design systems is marketing Ana BoyerDesigner Advocate, Figma Insights",
+      "metadata": {
+        "startIndex": 2657,
+        "endIndex": 3637,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ril 10, 2024 # The future of design systems is marketing Ana BoyerDesigner Advocate, Figma Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Design [https://www.figma.com/blog/design/]Thought leadership [https://www.figma.com/blog/thought-leadership/]AI [https://www.figma.com/blog/ai/] Design systems promise consistency, efficiency, and scalability, but realizing these benefits hinges on widespread usage. To get your entire team on board, you’ll need to tap into your inner marketer and craft a compelling adoption strategy. Artwork by Cynthia Alfonso Table of contents • Know your target audience [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#get-to-know-your-target-audience] • Think like a campaign strategist [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#think-like-a-campaign-strategist] • Going to market",
+      "metadata": {
+        "startIndex": 3537,
+        "endIndex": 4458,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "blog/the-future-of-design-systems-is-marketing/#think-like-a-campaign-strategist] • Going to market [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#get-the-word-out-going-to-market] • Building influence [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#building-influence-through-advocacy] • Measuring success [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#measuring-success] Table of contents • Know your target audience [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#get-to-know-your-target-audience] • Think like a campaign strategist [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#think-like-a-campaign-strategist] • Going to market [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#get-the-word-out-going-to-market] • Building influence [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#building-influence-through-advocacy] • Measuring",
+      "metadata": {
+        "startIndex": 4358,
+        "endIndex": 5357,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "om/blog/the-future-of-design-systems-is-marketing/#building-influence-through-advocacy] • Measuring success [https://www.figma.com/blog/the-future-of-design-systems-is-marketing/#measuring-success] If you work on a design systems team, I bet you’ve hit some walls trying to drum up excitement and buy-in for your system. You’ve probably sent countless Slack messages, organized presentations, and hosted under-attended training sessions. As someone who has worked on design systems for years, I know firsthand that simply building a great system isn’t enough—you need to actively market its value to drive adoption. Interested in the future of design systems? Join us for Framework by Figma [https://www.figma.com/blog/join-us-for-framework-by-figma-our-global-design-systems-event/], a global design systems event happening April 16. What if we started treating design systems as products themselves, requiring a go-to-market strategy to succeed within organizations?",
+      "metadata": {
+        "startIndex": 5257,
+        "endIndex": 6226,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "systems as products themselves, requiring a go-to-market strategy to succeed within organizations? By crafting compelling narratives, identifying champions, and measuring impact, design systems teams can position their work as an essential cornerstone of how organizations design and build digital experiences. This marketing mindset turns design systems from nice-to-have toolkits into must-have instruments for your team. ## Build it, but will they come? The art of marketing your design system [#build-it-but-will-they-come-the-art-of-marketing] In my time at Figma, I’ve talked to dozens of design systems teams looking to drive adoption and prove the value of their work. Now, more than ever, it’s important to think, strategize, and execute like a marketer. Here are some of the tactics and strategies for helping you position your design system as an integral asset—whether launching anew or revitalizing existing efforts.",
+      "metadata": {
+        "startIndex": 6126,
+        "endIndex": 7057,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "on your design system as an integral asset—whether launching anew or revitalizing existing efforts. ### Get to know your target audience [#get-to-know-your-target-audience] First and foremost, you need to be confident that your design system resonates with the needs of your audience. Finding product-market fit is an ongoing process of exploration, communication, and iteration. It requires a nuanced understanding of your audience—what drives them, what concerns them about new tools, and how do they perceive the system’s value in their daily work? This means immersing yourself in the daily realities of designers, developers, and decision-makers—identifying not just their challenges, but also understanding their unstated frustrations and desires. What gets under their skin? What are they craving that they don’t even know they need yet? Engaging in this level of audience understanding is not unlike the initial stages of product development, where user research is paramount.",
+      "metadata": {
+        "startIndex": 6957,
+        "endIndex": 7942,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "standing is not unlike the initial stages of product development, where user research is paramount. Interview people across your Product Design and Engineering (PDE) organization—from individual contributors to leadership. Each level offers unique perspectives to inform your strategy. Start conversations discussing existing processes, bottlenecks and goals, before diving into specifics about your design system. [https://www.figma.com/blog/what-we-launched-at-framework-2024/] At Framework 2024, we announced Code Connect for developers [https://www.figma.com/blog/introducing-code-connect/], typography and gradient variables, and our Library Analytics API to help you drive design system adoption across your entire organization. Read more [https://www.figma.com/blog/what-we-launched-at-framework-2024/]. ### Think like a campaign strategist [#think-like-a-campaign-strategist] Developers, designers, project managers—they all speak slightly different dialects of the same language.",
+      "metadata": {
+        "startIndex": 7842,
+        "endIndex": 8831,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "opers, designers, project managers—they all speak slightly different dialects of the same language. By creating and fine-tuning a pitch to each group’s specific needs and concerns, you ensure that the proposition for your design system is heard loud and clear. • For designers, highlight how the system enables creativity, while ensuring brand consistency. • Developers will likely care more about reusability and efficiency gains. Share how the system facilitates reusability, standardization, and a frictionless workflow between design and code. • And for decision-makers, emphasize ROI through accelerated speed-to-market, reduced technical debt. Part of this means addressing hesitations and concerns head-on. Understand why some may be reluctant to adopt or invest in your design system—like concerns around flexibility, technical limitations, or implementation overhead—and craft messaging that addresses these objections, converting skepticism into enthusiasm.",
+      "metadata": {
+        "startIndex": 8731,
+        "endIndex": 9699,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "verhead—and craft messaging that addresses these objections, converting skepticism into enthusiasm. [https://www.figma.com/blog/an-insiders-guide-to-a-seamless-figma-migration/] Thinking about making the switch to Figma? Check out Designer Advocate Clara Ujiie’s An insider’s guide to a seamless Figma migration [https://www.figma.com/blog/an-insiders-guide-to-a-seamless-figma-migration/] for a plethora of resources, tips, and tools. ## Get the word out: Going to market [#get-the-word-out-going-to-market] Martin Hardee helps large organizations navigate big design transitions, and offers his advice for others looking to do the same [https://www.linkedin.com/pulse/deploying-design-scale-figma-anything-else-martin-e-hardee/]. This phase demands careful consideration of the channels and formats that best suit each audience. Communicate your design system’s core value and functionality in a way that sparks interest without overwhelming–you can always link to resources with more detail if",
+      "metadata": {
+        "startIndex": 9599,
+        "endIndex": 10596,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "way that sparks interest without overwhelming–you can always link to resources with more detail if people want to go deeper. Here are some strategies for how you can get your message across are: Treat the roll-out as a learning opportunity. At Spotify, the team prioritized collaboration and feedback loops [https://www.figma.com/blog/creating-coherence-how-spotifys-design-system-goes-beyond-platforms/] when rethinking their design system implementation. Showing responsiveness to user feedback not only improves the system but also builds trust and reduces resistance. • Host engaging hands-on workshops and FigJam sessions. • Publish informative, yet concise documentation. • Produce short videos highlighting real-world use cases and benefits. • Schedule presentations at relevant team meetings and events. Discover how News UK shipped their multi-brand design system [https://www.figma.com/blog/how-news-uk-developed-a-multi-brand-design-system/], leveraging custom resources to onboard",
+      "metadata": {
+        "startIndex": 10496,
+        "endIndex": 11490,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "om/blog/how-news-uk-developed-a-multi-brand-design-system/], leveraging custom resources to onboard designers and empower advocates. Timing is everything. Capitalize on moments like product launches, company meetings, or quarterly planning sessions to amplify your message, and steer clear of periods when your audience is likely to be disengaged or preoccupied, such as late Friday afternoons, around holidays, company-wide events, or involved product launches. And remember, building awareness is an ongoing effort. If you don’t see immediate traction, that’s okay! Companies make marketing moments not only during a launch, but continuously—and you can use this same approach through updates and evangelism. ### Building influence through advocacy [#building-influence-through-advocacy] Identify internal advocates and influencers who can champion the system and equip them to rally others. These could include senior designers, respected developers, or product leaders who have sway and see the",
+      "metadata": {
+        "startIndex": 11390,
+        "endIndex": 12389,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "could include senior designers, respected developers, or product leaders who have sway and see the system’s potential. Consider formalizing their advocacy through performance reviews or a program where members earn recognition for contributions like creating new components, giving training sessions, or writing educational content. This fosters a culture that highlights the system’s importance and impact. The flywheel effect in marketing refers to a strategy of creating a self-sustaining cycle of growth and improvement. It’s based on the idea that initial efforts to engage and satisfy customers generate momentum that leads to more customers and further growth, much like a flywheel gaining speed. By empowering a mobilized group of internal experts and formalizing incentives, you create a powerful flywheel effect of grassroots promotion, enablement, and lasting adoption. This can attract and retain a wider audience over time.",
+      "metadata": {
+        "startIndex": 12289,
+        "endIndex": 13227,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "romotion, enablement, and lasting adoption. This can attract and retain a wider audience over time. A community not only supports the system’s current users but also welcomes new ones, creating a dynamic environment where feedback fuels continuous improvement. ### Measuring success [#measuring-success] Establish clear success metrics for your design system in terms of adoption, engagement, and satisfaction. Think of it like a game where you’re keeping score on how many people are actually using the system: how many show up eager to learn at your workshops, and how many roll up their sleeves to help make the system even better? It’s about setting clear markers for success, like aiming for most of your design and development teams to use the system regularly, getting a packed room for training, and building a buzzing community. Specific metrics to track could include: • Number of teams or projects using the design system • Contribution rates: people creating or updating components •",
+      "metadata": {
+        "startIndex": 13127,
+        "endIndex": 14123,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "or projects using the design system • Contribution rates: people creating or updating components • Attendance at trainings, workshops, community events • System usage telemetry: component inserts & detaches, library usage, et cetera [https://www.figma.com/blog/how-pinterests-design-systems-team-measures-adoption/] Learn how Pinterest’s design systems team measures adoption [https://www.figma.com/blog/how-pinterests-design-systems-team-measures-adoption/] using our REST API. Set ambitious but achievable targets, like aiming for 70% of product teams using the system within six months. Monitor progress and share wins. An actively engaged community will provide a feedback loop to evolve your design system into an ever-more integral asset. ## Stepping into the marketing spotlight [#stepping-into-the-marketing-spotlight] Design systems are a force for unifying creative visions, streamlining processes, and empowering teams to build incredible user experiences with efficiency.",
+      "metadata": {
+        "startIndex": 14023,
+        "endIndex": 15008,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "streamlining processes, and empowering teams to build incredible user experiences with efficiency. But to maximize this impact, design systems teams need to move beyond a build-it-and-they-will-come mentality. Driving adoption requires thinking, planning, and executing with a marketing mindset. It’s time to embrace wearing the marketing hat. By proactively raising awareness, building advocacy, and proving impact, you’ll transform your design system from a helpful utility into an indispensable centerpiece of how your organization crafts amazing digital experiences. The work won’t always be easy, but the payoff of an enthusiastically embraced design system will be well worth the effort. Ana Boyer is a designer advocate at Figma, where she is building community and empowering design teams across industries. She believes in collaboration and iteration and is always looking to build systems and establish processes where there is ambiguity.",
+      "metadata": {
+        "startIndex": 14908,
+        "endIndex": 15858,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "iteration and is always looking to build systems and establish processes where there is ambiguity. ## Subscribe to Figma’s editorial newsletter Enter email* I agree to opt-in to Figma&#x27;s mailing list.* By clicking “Submit” you agree to our TOS [https://www.figma.com/tos/] and Privacy Policy [https://www.figma.com/privacy/]. ## Related articles ### Updating our web system for a new era November 13, 2024 By Becca Ramos Want to see how we used Figma’s latest features to audit and refresh our web system? Here’s a behind-the-scenes look at how we streamlined our components, improved our workflows, and built for the future. Inside Figma [https://www.figma.com/blog/inside-figma/]Design systems [https://www.figma.com/blog/design-systems/]Branding [https://www.figma.com/blog/branding/]Behind the scenes [https://www.figma.com/blog/behind-the-scenes/]Collaboration [https://www.figma.com/blog/collaboration/]Design [https://www.figma.com/blog/design/]Marketing",
+      "metadata": {
+        "startIndex": 15758,
+        "endIndex": 16725,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "ion [https://www.figma.com/blog/collaboration/]Design [https://www.figma.com/blog/design/]Marketing [https://www.figma.com/blog/marketing/] ### What we launched at Framework April 16, 2024 By Jacob Miller We announced Code Connect for developers, typography and gradient variables, and our Library Analytics API to help you drive design system adoption across your entire organization. Inside Figma [https://www.figma.com/blog/inside-figma/]Design systems [https://www.figma.com/blog/design-systems/]Product updates [https://www.figma.com/blog/product-updates/]Engineering [https://www.figma.com/blog/engineering/]Prototyping [https://www.figma.com/blog/prototyping/]News [https://www.figma.com/blog/news/] ### The future of design systems is semantic July 27, 2023 By Carly Ayres Variables, one of Figma’s newest features, help you streamline designs and connect more closely to code, but what do they tell us about larger shifts in the industry?",
+      "metadata": {
+        "startIndex": 16625,
+        "endIndex": 17573,
+        "chunkIndex": 19,
+        "section": "Introduction",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "gns and connect more closely to code, but what do they tell us about larger shifts in the industry? We dig into what they might signal for the future of design systems. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Thought leadership [https://www.figma.com/blog/thought-leadership/]Product updates [https://www.figma.com/blog/product-updates/]Plugins & tooling [https://www.figma.com/blog/plugins-and-tooling/]Design [https://www.figma.com/blog/design/] ## Create and collaborate with Figma Get started for free [https://www.figma.com/signup] [https://www.figma.com/] • [https://x.com/figma] • [https://www.youtube.com/figmadesign] • [https://www.instagram.com/figma] • [https://www.facebook.com/figmadesign] ## Product • Figma Design [https://www.figma.com/design/] • Dev Mode [https://www.figma.com/dev-mode/] • FigJam [https://www.figma.com/figjam/] • Figma Slides [https://www.figma.com/slides/] Figma Draw New Figma Buzz Beta Figma",
+      "metadata": {
+        "startIndex": 17473,
+        "endIndex": 18470,
+        "chunkIndex": 20,
+        "section": "Introduction",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "ma.com/figjam/] • Figma Slides [https://www.figma.com/slides/] Figma Draw New Figma Buzz Beta Figma Sites Beta Figma Make Beta • AI [https://www.figma.com/ai/] • Downloads [https://www.figma.com/downloads/] • Release notes [https://www.figma.com/release-notes/] ## Plans • Pricing [https://www.figma.com/pricing/] • Enterprise [https://www.figma.com/enterprise/] • Organization [https://www.figma.com/organization/] • Professional [https://www.figma.com/professional/] ## Use cases • UI design [https://www.figma.com/ui-design-tool/] • UX design [https://www.figma.com/ux-design-tool/] • Wireframing [https://www.figma.com/wireframe-tool/] • Diagramming [https://www.figma.com/figjam/diagramming-tool/] • Prototyping [https://www.figma.com/prototyping/] • Brainstorming [https://www.figma.com/figjam/brainstorming-tool/] • Presentation Maker [https://www.figma.com/presentation-maker/] • Online whiteboard [https://www.figma.com/figjam/online-whiteboard/] • Agile",
+      "metadata": {
+        "startIndex": 18370,
+        "endIndex": 19334,
+        "chunkIndex": 21,
+        "section": "Introduction",
+        "globalChunkIndex": 21
+      }
+    },
+    {
+      "id": "chunk-22",
+      "text": "/presentation-maker/] • Online whiteboard [https://www.figma.com/figjam/online-whiteboard/] • Agile [https://www.figma.com/figjam/agile-workflows/] • Strategic planning [https://www.figma.com/figjam/strategic-planning/] • Mind mapping [https://www.figma.com/figjam/mind-map/] • Online sticky notes [https://www.figma.com/figjam/online-sticky-notes/] • Concept map [https://www.figma.com/figjam/concept-map/] ## Resources • Blog [https://www.figma.com/blog/] • Best practices [https://www.figma.com/best-practices/] • QR code generator [https://www.figma.com/qr-code-generator/] • Color wheel [https://www.figma.com/color-wheel/] • Colors [https://www.figma.com/colors/] • Color picker [https://www.figma.com/color-picker/] • Color palettes [https://www.figma.com/color-palettes/] • Color palette generator [https://www.figma.com/color-palette-generator/] • Color contrast checker [https://www.figma.com/color-contrast-checker/] • Font Library [https://www.figma.com/fonts/] • Templates",
+      "metadata": {
+        "startIndex": 19234,
+        "endIndex": 20220,
+        "chunkIndex": 22,
+        "section": "Introduction",
+        "globalChunkIndex": 22
+      }
+    },
+    {
+      "id": "chunk-23",
+      "text": "://www.figma.com/color-contrast-checker/] • Font Library [https://www.figma.com/fonts/] • Templates [https://www.figma.com/templates/] • Developers [https://www.figma.com/developers] • Integrations [https://www.figma.com/product-integrations/] • Affiliate program [https://www.figma.com/affiliate-program/] • Resource library [https://www.figma.com/resource-library/] • Reports and insights [https://www.figma.com/reports/] • Support [https://help.figma.com/hc/en-us] • Status [https://status.figma.com/] • Legal and privacy [https://www.figma.com/legal/] • Modern slavery statement [https://static.figma.com/uploads/1b6f8f613c2cc1e77fe543424bbc631298504d35] • Climate disclosure statement [https://static.figma.com/uploads/d2a204b5cc4d64ff539fcd445d0ddedab7dc00f6] ## Compare • Sketch [https://www.figma.com/figma-vs-sketch/] • Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] • Framer [https://www.figma.com/figma-vs-framer/] • Miro [https://www.figma.com/figjam-vs-miro/] ## Company • Events",
+      "metadata": {
+        "startIndex": 20120,
+        "endIndex": 21118,
+        "chunkIndex": 23,
+        "section": "Introduction",
+        "globalChunkIndex": 23
+      }
+    },
+    {
+      "id": "chunk-24",
+      "text": "/www.figma.com/figma-vs-framer/] • Miro [https://www.figma.com/figjam-vs-miro/] ## Company • Events [https://www.figma.com/events/] • Customers [https://www.figma.com/customers/] • Careers [https://www.figma.com/careers/] • Newsroom [https://www.figma.com/newsroom/] English",
+      "metadata": {
+        "startIndex": 21018,
+        "endIndex": 22018,
+        "chunkIndex": 24,
+        "section": "Introduction",
+        "globalChunkIndex": 24
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "advocacy;strategy;evangelism"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:24.149Z",
+    "system": "Figma",
+    "author": "Ana Boyer",
+    "version": "1.0",
+    "source_url": "https://www.figma.com/blog/the-future-of-design-systems-is-marketing/"
+  }
+}

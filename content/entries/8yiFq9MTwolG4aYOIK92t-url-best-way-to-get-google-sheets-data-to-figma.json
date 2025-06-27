@@ -1,0 +1,101 @@
+{
+  "id": "8yiFq9MTwolG4aYOIK92t",
+  "title": "Best Way to Get Google Sheets Data to Figma",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/what-is-the-best-way-to-get-google-sheets-data-to-figma",
+    "ingested_at": "2025-06-27T02:53:06.513Z"
+  },
+  "content": "What is the best way to get Google Sheets data to Figma? - The Design System Guide Close Figma # What is the best way to get Google Sheets data to Figma? Romina Kavcic ### Import Google Sheets (For Variables) A plugin that allows you to import Google Sheets into a Figma collection (variables). Supports synchronization to multiple modes, not just single mode. 🔗 Get the plugin [https://www.figma.com/community/plugin/1255805112270870719/import-google-sheets-for-variables] ### Variables ⇔ CSV (Export+Import) Export variables to CSV for bulk editing Import edited CSV back to Figma to update variables Simple CSV format 🔗 Get the plugin [https://www.figma.com/community/plugin/1355357264377995556/variables-csv-export-import] ## data.to.design Design with your data from Google Sheets, CSV, JSON, Airtable or Notion With data.to.design, import your product content into Figma and populate your designs with real data. Create more accurate and realistic prototypes with less bias, bringing your designs closer to what’s in production. 🔗 Get the plugin [https://www.figma.com/community/plugin/1133729773197702197/data-to-design-design-with-your-data-from-google-sheets-csv-json-airtable-or-notion] ## CopyDoc Text Kit Privacy focused — no data or content ever leaves your Figma file. Export Figma text layers to XLSX, DOCX, CSV, Markdown and JSON files directly to your computer. Bulk update Figma text layers via XLSX, DOCX, CSV, Markdown or JSON import directly from your computer. Create a custom content library inside your Figma file, with optional Google Sheets, Airtable and Figma Variable integrations. Sync repeating text/image content or CSS styles from a Google Sheet or XLSX/CSV file. Automatically generate Figma data tables from a Google Sheet or XLSX/CSV. Seamless design Localizations via simple Spreadsheet or XLIFF export/import. Find & Replace feature to quickly update any matching text. Automatically generate Charts by adding your own spreadsheet data. Export frames to DOCX, XLSX, TXT, EPUB, HTML or PDF. Quickly export selected text layers to XLSX, DOCX, CSV, Markdown, JSON or XLIFF files. Spell check your Figma text in dozens of languages. Download all Figma comments to CSV and JSON files. Include design references for text and comment exports. 🔗 Get the plugin [https://www.figma.com/community/plugin/900893606648879767/copydoc-text-kit] Next question How to set up the design tokens naming structure in line with Tailwind? Published on: Aug 27, 2024 Updated: Updated: Aug 27, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "What is the best way to get Google Sheets data to Figma? - The Design System Guide Close Figma # What is the best way to get Google Sheets data to Figma? Romina Kavcic ### Import Google Sheets (For Variables) A plugin that allows you to import Google Sheets into a Figma collection (variables). Supports synchronization to multiple modes, not just single mode. 🔗 Get the plugin [https://www.figma.com/community/plugin/1255805112270870719/import-google-sheets-for-variables] ### Variables ⇔ CSV (Export+Import) Export variables to CSV for bulk editing Import edited CSV back to Figma to update variables Simple CSV format 🔗 Get the plugin [https://www.figma.com/community/plugin/1355357264377995556/variables-csv-export-import] ## data.to.design Design with your data from Google Sheets, CSV, JSON, Airtable or Notion With data.to.design, import your product content into Figma and populate your designs with real data.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 921,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "th data.to.design, import your product content into Figma and populate your designs with real data. Create more accurate and realistic prototypes with less bias, bringing your designs closer to what’s in production. 🔗 Get the plugin [https://www.figma.com/community/plugin/1133729773197702197/data-to-design-design-with-your-data-from-google-sheets-csv-json-airtable-or-notion] ## CopyDoc Text Kit Privacy focused — no data or content ever leaves your Figma file. Export Figma text layers to XLSX, DOCX, CSV, Markdown and JSON files directly to your computer. Bulk update Figma text layers via XLSX, DOCX, CSV, Markdown or JSON import directly from your computer. Create a custom content library inside your Figma file, with optional Google Sheets, Airtable and Figma Variable integrations. Sync repeating text/image content or CSS styles from a Google Sheet or XLSX/CSV file. Automatically generate Figma data tables from a Google Sheet or XLSX/CSV.",
+      "metadata": {
+        "startIndex": 821,
+        "endIndex": 1773,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "e Sheet or XLSX/CSV file. Automatically generate Figma data tables from a Google Sheet or XLSX/CSV. Seamless design Localizations via simple Spreadsheet or XLIFF export/import. Find & Replace feature to quickly update any matching text. Automatically generate Charts by adding your own spreadsheet data. Export frames to DOCX, XLSX, TXT, EPUB, HTML or PDF. Quickly export selected text layers to XLSX, DOCX, CSV, Markdown, JSON or XLIFF files. Spell check your Figma text in dozens of languages. Download all Figma comments to CSV and JSON files. Include design references for text and comment exports. 🔗 Get the plugin [https://www.figma.com/community/plugin/900893606648879767/copydoc-text-kit] Next question How to set up the design tokens naming structure in line with Tailwind? Published on: Aug 27, 2024 Updated: Updated: Aug 27, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web",
+      "metadata": {
+        "startIndex": 1673,
+        "endIndex": 2674,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 2574,
+        "endIndex": 3484,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 3384,
+        "endIndex": 4372,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 4272,
+        "endIndex": 5244,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 5144,
+        "endIndex": 6144,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma;google-sheets;data;integration"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:53:06.513Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/what-is-the-best-way-to-get-google-sheets-data-to-figma"
+  }
+}

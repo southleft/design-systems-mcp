@@ -1,0 +1,101 @@
+{
+  "id": "B8bt2mDf3x3rlhbjAimJK",
+  "title": "Managing Platform-Specific UI Elements",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/managing-platform-specific-ui-elements",
+    "ingested_at": "2025-06-27T02:53:03.049Z"
+  },
+  "content": "Managing platform-specific UI elements - The Design System Guide Close UI # Managing platform-specific UI elements Romina Kavcic This article covers having custom UI elements against platform-specific ones. Here's how I choose the best approach. Assess development time, performance impact, and visual consistency. Weigh tradeoffs. The goal? Optimal user experience, always. Choose the best approach: ➡️ Hybrid approach Mix your UI elements with platform specific components. For example, you might adopt a native iOS calendar on iOS app, but keep the rest of the custom components. This way, our app feels native yet distinctly ours. ➡️ Platform-First design In this case we would use only platform specific UI elements. An iOS app would follow Apple's design principles for a native experience. An Android app would use Material Design for user familiarity. 🚨 Structure libraries Regardless of your choice, keep platform-specific elements out of your custom library. If using Figma Variables or Tokens Studio, create extra design tokens and a separate library for platform-specific styles and components. Each approach has its advantages, and the best choice will depend on your product goals. Good luck 🙌 Read more: What are the best practices for implementing platform-specific design guidelines? (Linkedin) 🔗 Read the article [https://www.linkedin.com/advice/0/what-best-pract] 5 Best Practices for Designing Cross-Platform UI/UX in 2024 🔗 Read the article [https://codment.com/5-best-practices-for-designing-cross-platform-ui-ux/] The Ultimate Showdown: Flutter Widgets vs. Traditional UI Elements 🔗 Read the article [https://www.codeepsilon.com/flutter-widgets-vs-traditional-ui-elements/] Cross-platform app design guide- Android & iOS 🔗 Read the article [https://codewave.com/insights/cross-platform-app-design-guide-android-ios-2022/] Next question Templates for Design System Brainstorming Published on: Aug 27, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Managing platform-specific UI elements - The Design System Guide Close UI # Managing platform-specific UI elements Romina Kavcic This article covers having custom UI elements against platform-specific ones. Here's how I choose the best approach. Assess development time, performance impact, and visual consistency. Weigh tradeoffs. The goal? Optimal user experience, always. Choose the best approach: ➡️ Hybrid approach Mix your UI elements with platform specific components. For example, you might adopt a native iOS calendar on iOS app, but keep the rest of the custom components. This way, our app feels native yet distinctly ours. ➡️ Platform-First design In this case we would use only platform specific UI elements. An iOS app would follow Apple's design principles for a native experience. An Android app would use Material Design for user familiarity. 🚨 Structure libraries Regardless of your choice, keep platform-specific elements out of your custom library.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 970,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "re libraries Regardless of your choice, keep platform-specific elements out of your custom library. If using Figma Variables or Tokens Studio, create extra design tokens and a separate library for platform-specific styles and components. Each approach has its advantages, and the best choice will depend on your product goals. Good luck 🙌 Read more: What are the best practices for implementing platform-specific design guidelines? (Linkedin) 🔗 Read the article [https://www.linkedin.com/advice/0/what-best-pract] 5 Best Practices for Designing Cross-Platform UI/UX in 2024 🔗 Read the article [https://codment.com/5-best-practices-for-designing-cross-platform-ui-ux/] The Ultimate Showdown: Flutter Widgets vs. Traditional UI Elements 🔗 Read the article [https://www.codeepsilon.com/flutter-widgets-vs-traditional-ui-elements/] Cross-platform app design guide- Android & iOS 🔗 Read the article [https://codewave.com/insights/cross-platform-app-design-guide-android-ios-2022/] Next question",
+      "metadata": {
+        "startIndex": 870,
+        "endIndex": 1865,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "cle [https://codewave.com/insights/cross-platform-app-design-guide-android-ios-2022/] Next question Templates for Design System Brainstorming Published on: Aug 27, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of",
+      "metadata": {
+        "startIndex": 1765,
+        "endIndex": 2764,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System",
+      "metadata": {
+        "startIndex": 2664,
+        "endIndex": 3661,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by",
+      "metadata": {
+        "startIndex": 3561,
+        "endIndex": 4558,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic",
+      "metadata": {
+        "startIndex": 4458,
+        "endIndex": 5444,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 5344,
+        "endIndex": 6344,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "platform;cross-platform;ui-elements"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:53:03.049Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/managing-platform-specific-ui-elements"
+  }
+}

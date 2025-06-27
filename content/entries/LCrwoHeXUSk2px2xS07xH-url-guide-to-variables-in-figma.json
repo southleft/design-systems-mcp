@@ -1,0 +1,222 @@
+{
+  "id": "LCrwoHeXUSk2px2xS07xH",
+  "title": "Guide to Variables in Figma",
+  "source": {
+    "type": "url",
+    "location": "https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma",
+    "ingested_at": "2025-06-27T03:09:54.440Z"
+  },
+  "content": "Guide to variables in Figma &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Variables [/hc/en-us/sections/14506605769879-Variables] Guide to variables in Figma Before you Start Who can use this feature Variables in prototypes and publishing variables to team libraries are available on the education plan and any paid plans [https://help.figma.com/hc/en-us/articles/360040328273-Choose-a-Figma-Plan] Anyone with can edit access to a file can create and manage variables Anyone with access to a file can use variables from that file in their designs Variables in Figma Design store reusable values that can be applied to all kinds of design properties and prototyping actions. They help save time and effort when building designs, managing design systems, and creating complex prototyping flows. For example, you can: • Create design tokens for better efficiency when managing design systems • Switch a frame between different device sizes and have spacing immediately update, according to a defined spatial system • Preview how text flows in different languages by switching copy on a frame • Create a fully functional checkout cart design that calculates order total based on which items were added to the cart • Build a prototype of an interactive quiz that uses conditional logic to show whether a user answers a questions correctly or incorrectly There are three main ways to use variables in Figma: • Designs and design systems ↓ [#h_01H3AECYSXVMKV6H60WJ9SF84F] • Advanced prototyping ↓ [#h_01H3AED6XW5K1DKGXJWEMSF303] • Figma APIs ↓ [#h_01H4S62F4ERWJQ6B4DZ7NBCJWC] ## Variables for designs and design systems Use variables and modes to implement design tokens for your design system, switch designs between different contexts—such as light/dark themes. With variables, you can design more efficiently and build a more powerful design system. Figma tutorial: Intro to variables This video tutorial covers the foundations of variables, how to use them to represent design tokens, and how to use color and number variables to account for different modes and themes. Figma tutorial: Variables for typography In this video tutorial, learn how to use variables on font properties, adopt variables into an existing type system, and how to use them to power a responsive design. Article: Overview of variables, collections, and modes → [https://help.figma.com/hc/en-us/articles/14506821864087] Start your variables journey here! Learn about the different types of variables and what variable collections and modes are. Article: Create and manage variables and collections → [https://help.figma.com/hc/en-us/articles/15145852043927] Learn how to create variables and collections, reference other variable definitions, and scope which variables can be used in designs. Article: Apply variables to designs → [https://help.figma.com/hc/en-us/articles/15343107263511] Learn how to apply existing variables to design properties. Article: Modes for variables → [https://help.figma.com/hc/en-us/articles/15343816063383] Learn how to create multiple definitions for a variable, each one associated with a mode. Also, learn how to use them to quickly switch the contexts of designs. Article: The difference between variables and styles → [https://help.figma.com/hc/en-us/articles/15871097384471] As Figma extends its feature set with variables, you might be wondering: What is the difference between variables and styles? When should I choose one over the other? Article: Variables in Dev Mode → [https://help.figma.com/hc/en-us/articles/27882809912471] Learn more about accessing variables in Dev Mode while inspecting designs, including getting variable details and suggested variables, and viewing local collections using the variables table. Community file: Variables playground → [https://www.figma.com/community/file/1234936397107899445] Want to get hands-on experience with variables? Grab a copy of the variables playground file to practice while you learn. ## Variables for advanced prototyping With variables, you can build high-fidelity prototypes using fewer frames. Use variables with other advanced features like expressions and conditionals to take your prototypes to the next level. In prototyping, variables are used to store object states or properties. Use prototype interactions to modify variable values, which can change the appearance, content, or visibility of objects in a design—all in a few simple frames. Video tutorial: Prototype with variables Watch and learn how to use variables in prototypes by following along with a realistic example. You’ll review how to modify variable values, how to build simple expressions, and how to use multiple actions and if/else logic to evaluate conditional checks. Article: Use variables in prototypes → [https://help.figma.com/hc/en-us/articles/14506587589399] Learn the basics of how to prototype with variables in Figma—including how to configure your variables, use the Set variable action to change variable values, and use variables with component variants and interactive components. Article: Use expressions in prototypes → [https://help.figma.com/hc/en-us/articles/15253194385943] Learn how to use expressions and variables in prototypes to generate dynamic string values, perform basic math operations with number values, or even evaluate boolean expressions. Article: Multiple actions and conditionals → [https://help.figma.com/hc/en-us/articles/15253220891799] Learn how to use multiple actions to stack an unlimited number of actions on the same trigger, or use conditionals to check if a condition is met before performing an action by using if/else logic. Article: Variable modes in prototypes → [https://help.figma.com/hc/en-us/articles/15253268379799] Learn how to use variable modes in your prototypes. You can set the values of specific modes based on context, or use specific mode values in your expressions. Community file: Advanced prototyping playground → [https://www.figma.com/community/file/1234939241273272375] Make a copy of our advanced prototyping playground file to get some more hands-on practice with variables in prototyping. ## Variables using APIs Variables are now supported in Figma’s Plugin API—for building plugins and widgets—and in the REST API. Developer docs: For the REST API → [https://www.figma.com/developers/api#variables] Support for variables in the REST API includes endpoints for querying, creating, updating, and deleting variables. Developer docs: For the plugin API → [https://www.figma.com/plugin-docs/working-with-variables] Support for variables in the plugin API includes creating and reading variables, and binding variables to components. For example, a plugin can be built to import or export variables [https://github.com/figma/plugin-samples/tree/master/variables-import-export] or to convert styles to variables [https://github.com/figma/plugin-samples/tree/master/styles-to-variables]. Developer docs: For the widget API → [https://www.figma.com/widget-docs/working-with-variables] Widgets can access variables using the Plugin API. Widgets can create and read variables, but widget properties cannot be bound to variables. Figma tutorial: Sync variable to GitHub In this video tutorial, learn how to sync your variables with your codebase. We'll cover how to use our Variables GitHub Action example repo to sync your Figma variables and your codebase. Community file: Syncing design systems using Variables REST API → [https://www.figma.com/community/file/1270821372236564565] Learn how you can use Figma's variables REST API to set up automated workflows to sync changes between design files and your codebase. Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Guide to variables in Figma &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 994,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ns/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication",
+      "metadata": {
+        "startIndex": 894,
+        "endIndex": 1852,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "06606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials.",
+      "metadata": {
+        "startIndex": 1752,
+        "endIndex": 2737,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "s Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma",
+      "metadata": {
+        "startIndex": 2637,
+        "endIndex": 3595,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "a Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions",
+      "metadata": {
+        "startIndex": 3495,
+        "endIndex": 4455,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "00000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Variables [/hc/en-us/sections/14506605769879-Variables] Guide to variables in Figma Before you Start Who can use this feature Variables in prototypes and publishing variables to team libraries are available on the education plan and any paid plans [https://help.figma.com/hc/en-us/articles/360040328273-Choose-a-Figma-Plan] Anyone with can edit access to a file can create and manage variables Anyone with access to a file can use variables from that file in their designs Variables in Figma Design store reusable values that can be applied to all kinds of design properties and prototyping actions.",
+      "metadata": {
+        "startIndex": 4355,
+        "endIndex": 5342,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "tore reusable values that can be applied to all kinds of design properties and prototyping actions. They help save time and effort when building designs, managing design systems, and creating complex prototyping flows. For example, you can: • Create design tokens for better efficiency when managing design systems • Switch a frame between different device sizes and have spacing immediately update, according to a defined spatial system • Preview how text flows in different languages by switching copy on a frame • Create a fully functional checkout cart design that calculates order total based on which items were added to the cart • Build a prototype of an interactive quiz that uses conditional logic to show whether a user answers a questions correctly or incorrectly There are three main ways to use variables in Figma: • Designs and design systems ↓ [#h_01H3AECYSXVMKV6H60WJ9SF84F] • Advanced prototyping ↓ [#h_01H3AED6XW5K1DKGXJWEMSF303] • Figma APIs ↓ [#h_01H4S62F4ERWJQ6B4DZ7NBCJWC] ##",
+      "metadata": {
+        "startIndex": 5242,
+        "endIndex": 6240,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ced prototyping ↓ [#h_01H3AED6XW5K1DKGXJWEMSF303] • Figma APIs ↓ [#h_01H4S62F4ERWJQ6B4DZ7NBCJWC] ## Variables for designs and design systems Use variables and modes to implement design tokens for your design system, switch designs between different contexts—such as light/dark themes. With variables, you can design more efficiently and build a more powerful design system. Figma tutorial: Intro to variables This video tutorial covers the foundations of variables, how to use them to represent design tokens, and how to use color and number variables to account for different modes and themes. Figma tutorial: Variables for typography In this video tutorial, learn how to use variables on font properties, adopt variables into an existing type system, and how to use them to power a responsive design. Article: Overview of variables, collections, and modes → [https://help.figma.com/hc/en-us/articles/14506821864087] Start your variables journey here!",
+      "metadata": {
+        "startIndex": 6140,
+        "endIndex": 7093,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "odes → [https://help.figma.com/hc/en-us/articles/14506821864087] Start your variables journey here! Learn about the different types of variables and what variable collections and modes are. Article: Create and manage variables and collections → [https://help.figma.com/hc/en-us/articles/15145852043927] Learn how to create variables and collections, reference other variable definitions, and scope which variables can be used in designs. Article: Apply variables to designs → [https://help.figma.com/hc/en-us/articles/15343107263511] Learn how to apply existing variables to design properties. Article: Modes for variables → [https://help.figma.com/hc/en-us/articles/15343816063383] Learn how to create multiple definitions for a variable, each one associated with a mode. Also, learn how to use them to quickly switch the contexts of designs. Article: The difference between variables and styles → [https://help.figma.com/hc/en-us/articles/15871097384471] As Figma extends its feature set with",
+      "metadata": {
+        "startIndex": 6993,
+        "endIndex": 7988,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "s → [https://help.figma.com/hc/en-us/articles/15871097384471] As Figma extends its feature set with variables, you might be wondering: What is the difference between variables and styles? When should I choose one over the other? Article: Variables in Dev Mode → [https://help.figma.com/hc/en-us/articles/27882809912471] Learn more about accessing variables in Dev Mode while inspecting designs, including getting variable details and suggested variables, and viewing local collections using the variables table. Community file: Variables playground → [https://www.figma.com/community/file/1234936397107899445] Want to get hands-on experience with variables? Grab a copy of the variables playground file to practice while you learn. ## Variables for advanced prototyping With variables, you can build high-fidelity prototypes using fewer frames. Use variables with other advanced features like expressions and conditionals to take your prototypes to the next level.",
+      "metadata": {
+        "startIndex": 7888,
+        "endIndex": 8853,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "ther advanced features like expressions and conditionals to take your prototypes to the next level. In prototyping, variables are used to store object states or properties. Use prototype interactions to modify variable values, which can change the appearance, content, or visibility of objects in a design—all in a few simple frames. Video tutorial: Prototype with variables Watch and learn how to use variables in prototypes by following along with a realistic example. You’ll review how to modify variable values, how to build simple expressions, and how to use multiple actions and if/else logic to evaluate conditional checks. Article: Use variables in prototypes → [https://help.figma.com/hc/en-us/articles/14506587589399] Learn the basics of how to prototype with variables in Figma—including how to configure your variables, use the Set variable action to change variable values, and use variables with component variants and interactive components.",
+      "metadata": {
+        "startIndex": 8753,
+        "endIndex": 9710,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "on to change variable values, and use variables with component variants and interactive components. Article: Use expressions in prototypes → [https://help.figma.com/hc/en-us/articles/15253194385943] Learn how to use expressions and variables in prototypes to generate dynamic string values, perform basic math operations with number values, or even evaluate boolean expressions. Article: Multiple actions and conditionals → [https://help.figma.com/hc/en-us/articles/15253220891799] Learn how to use multiple actions to stack an unlimited number of actions on the same trigger, or use conditionals to check if a condition is met before performing an action by using if/else logic. Article: Variable modes in prototypes → [https://help.figma.com/hc/en-us/articles/15253268379799] Learn how to use variable modes in your prototypes. You can set the values of specific modes based on context, or use specific mode values in your expressions.",
+      "metadata": {
+        "startIndex": 9610,
+        "endIndex": 10548,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "set the values of specific modes based on context, or use specific mode values in your expressions. Community file: Advanced prototyping playground → [https://www.figma.com/community/file/1234939241273272375] Make a copy of our advanced prototyping playground file to get some more hands-on practice with variables in prototyping. ## Variables using APIs Variables are now supported in Figma’s Plugin API—for building plugins and widgets—and in the REST API. Developer docs: For the REST API → [https://www.figma.com/developers/api#variables] Support for variables in the REST API includes endpoints for querying, creating, updating, and deleting variables. Developer docs: For the plugin API → [https://www.figma.com/plugin-docs/working-with-variables] Support for variables in the plugin API includes creating and reading variables, and binding variables to components. For example, a plugin can be built to import or export variables",
+      "metadata": {
+        "startIndex": 10448,
+        "endIndex": 11385,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "d binding variables to components. For example, a plugin can be built to import or export variables [https://github.com/figma/plugin-samples/tree/master/variables-import-export] or to convert styles to variables [https://github.com/figma/plugin-samples/tree/master/styles-to-variables]. Developer docs: For the widget API → [https://www.figma.com/widget-docs/working-with-variables] Widgets can access variables using the Plugin API. Widgets can create and read variables, but widget properties cannot be bound to variables. Figma tutorial: Sync variable to GitHub In this video tutorial, learn how to sync your variables with your codebase. We'll cover how to use our Variables GitHub Action example repo to sync your Figma variables and your codebase. Community file: Syncing design systems using Variables REST API → [https://www.figma.com/community/file/1270821372236564565] Learn how you can use Figma's variables REST API to set up automated workflows to sync changes between design files and",
+      "metadata": {
+        "startIndex": 11285,
+        "endIndex": 12284,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "e Figma's variables REST API to set up automated workflows to sync changes between design files and your codebase. Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center!",
+      "metadata": {
+        "startIndex": 12184,
+        "endIndex": 13112,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "ttps://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/]",
+      "metadata": {
+        "startIndex": 13012,
+        "endIndex": 14011,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status",
+      "metadata": {
+        "startIndex": 13911,
+        "endIndex": 14890,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+      "metadata": {
+        "startIndex": 14790,
+        "endIndex": 15790,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma;variables;design-tokens;design-systems"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T03:09:54.441Z",
+    "system": "Figma",
+    "author": "Figma Help Center",
+    "version": "1.0",
+    "source_url": "https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma"
+  }
+}

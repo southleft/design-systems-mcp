@@ -1,0 +1,475 @@
+{
+  "id": "CbEX1cXlKk2dEEYs5PZem",
+  "title": "Design System 102: How to build a design system",
+  "source": {
+    "type": "url",
+    "location": "https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/",
+    "ingested_at": "2025-06-27T02:45:18.826Z"
+  },
+  "content": "How to Build a Design System | Design Systems 102 | Figma Blog Skip to main content Subscribe to Figma’s editorial newsletter [https://www.figma.com/signup] [https://www.figma.com/] [https://www.figma.com/blog/] ##### Categories • Maker Stories [https://www.figma.com/blog/maker-stories/] • Working Well [https://www.figma.com/blog/working-well/] • Inside Figma [https://www.figma.com/blog/inside-figma/] • Insights [https://www.figma.com/blog/insights/] Topics ### Featured Topics ### News Get the latest on all things Figma. ### Design systems ### Explore topics • 3D design [https://www.figma.com/blog/3d-design/] • Accessibility [https://www.figma.com/blog/accessibility/] • AI [https://www.figma.com/blog/ai/] • Behind the scenes [https://www.figma.com/blog/behind-the-scenes/] • Brainstorming [https://www.figma.com/blog/brainstorming/] • Branding [https://www.figma.com/blog/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study [https://www.figma.com/blog/case-study/] • Collaboration [https://www.figma.com/blog/collaboration/] • Config [https://www.figma.com/blog/config/] • Culture [https://www.figma.com/blog/culture/] • Design [https://www.figma.com/blog/design/] • Design thinking [https://www.figma.com/blog/design-thinking/] • Dev Mode [https://www.figma.com/blog/dev-mode/] • Diagramming [https://www.figma.com/blog/diagramming/] • Engineering [https://www.figma.com/blog/engineering/] • Events [https://www.figma.com/blog/events/] • FigJam [https://www.figma.com/blog/figjam/] • Figma Buzz [https://www.figma.com/blog/figma-buzz/] • Figma Design [https://www.figma.com/blog/figma-design/] • Figma Draw [https://www.figma.com/blog/figma-draw/] • Figma Make [https://www.figma.com/blog/figma-make/] • Figma Sites [https://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] • Hiring [https://www.figma.com/blog/hiring/] • Infrastructure [https://www.figma.com/blog/infrastructure/] • Leadership [https://www.figma.com/blog/leadership/] • Localization [https://www.figma.com/blog/localization/] • Marketing [https://www.figma.com/blog/marketing/] • Meetings [https://www.figma.com/blog/meetings/] • Motion [https://www.figma.com/blog/motion/] • Operations [https://www.figma.com/blog/operations/] • Plugins & tooling [https://www.figma.com/blog/plugins-and-tooling/] • Portfolio [https://www.figma.com/blog/portfolio/] • Product management [https://www.figma.com/blog/product-management/] • Product updates [https://www.figma.com/blog/product-updates/] • Productivity [https://www.figma.com/blog/productivity/] • Profiles & interviews [https://www.figma.com/blog/profiles-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance [https://www.figma.com/blog/quality-and-performance/] • React [https://www.figma.com/blog/react/] • Report [https://www.figma.com/blog/report/] • Research [https://www.figma.com/blog/research/] • Security [https://www.figma.com/blog/security/] • Social impact [https://www.figma.com/blog/social-impact/] • Strategy [https://www.figma.com/blog/strategy/] • The Long & Short of It [https://www.figma.com/blog/the-long-and-short-of-it/] • Thought leadership [https://www.figma.com/blog/thought-leadership/] • Tips & inspiration [https://www.figma.com/blog/tips-and-inspiration/] • Typography [https://www.figma.com/blog/typography/] • UI/UX [https://www.figma.com/blog/ui-ux/] • Wireframing [https://www.figma.com/blog/wireframing/] • Writing [https://www.figma.com/blog/writing/] April 8, 2024 # Design system 102: How to build a design system Chad BergmanDesigner Advocate, Figma Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] It’s time to build your design system! We’ll walk you through the basics of creating a system tailored to your unique goals and challenges, whether building from scratch or starting with existing pieces. Artwork by Cynthia Alfonso [https://www.instagram.com/zyn_vaites/] Table of contents • Lay the groundwork [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-1-lay-the-groundwork] • Define your foundations [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-2-define-your-foundations] • Build your design system in Figma [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-3-build-your-design-system-in-figma] Table of contents • Lay the groundwork [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-1-lay-the-groundwork] • Define your foundations [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-2-define-your-foundations] • Build your design system in Figma [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-3-build-your-design-system-in-figma] A well-crafted design system is a powerful tool for teams looking to create cohesive, scalable, and efficient processes. By establishing a shared language and a library of reusable components, a design system ensures consistency across your products, speeds up your workflow, and frees up your team to focus on solving user problems. In this guide, we’ll break down the process of building a design system into clear, actionable steps. From defining your principles and laying the groundwork to creating and organizing your design assets, we’ll cover best practices and real-world examples to help you create a system that empowers your team and elevates your product. [https://www.figma.com/blog/design-systems-101-what-is-a-design-system/] This is the second part of our series on getting started with design systems. Check out our first part: Design systems 101: What is a design system? [https://www.figma.com/blog/design-systems-101-what-is-a-design-system/] ## Step 1: Lay the groundwork [#step-1-lay-the-groundwork] Before diving into creating components and patterns, it’s important to understand why you’re building a design system and what problems you hope to solve. Maybe you’ve noticed inconsistency across platforms, time-consuming manual updates, or collaboration challenges between design and development teams. Take a moment to clearly define your goals by answering these key questions: • Why do you want a design system? • What specific problems will it solve? • How will you know if it’s successfully solving those problems? Our design systems talk from Config 2024 [https://youtu.be/MJTCfSFLUGE?si=EUZ3bTfEr4STeT3z] highlights many points in this article, from defining standards, finding champions, working with developers early and often, and more. Remember, design systems aren’t one-size-fits-all. They exist on a spectrum, from simple component collections for small teams to comprehensive systems for enterprise organizations. The key is to create a system that makes sense for your specific situation and can evolve as your needs change. ### Take stock of what you have [#take-stock-of-what-you-have] Once you’ve aligned on your goals, take a closer look at your existing product landscape. Gather examples of your UI across different platforms and devices, including interactive states and alternate versions. Screenshots are your best friend here! Capture examples of your product across different platforms and devices, and don’t forget to include any interactive states or alternate versions. Chances are, you’ll start to notice patterns and consistencies that can serve as the starting point for your design system. Don’t forget to inventory your codebase as well. Engineers may have already created reusable components that aren&#x27;t documented in your design files. Look for patterns in your production code—repeated UI elements, standardized CSS variables, or shared components that developers have built. This technical audit helps bridge the gap between design and development by ensuring your design system builds upon existing engineering work rather than creating parallel systems. ### Organize and evaluate [#organize-and-evaluate] With your inventory in hand, organize your examples into categories and evaluate the big picture. What does your current design language look like? Are there inconsistencies or redundancies that could be streamlined? Keep an eye out for areas where your product feels disjointed or where designers and developers are solving the same problems in different ways. These are often signals that your user experience could be improved through a more cohesive design system. ### Find your champions [#find-your-champions] Building a design system is a team effort. Seek out people who are passionate about design consistency across your organization—not just from the design team, but also developers, product managers, and other stakeholders. Getting diverse perspectives will help ensure your design system meets the needs of your entire product team, not just one discipline. Developers are particularly valuable allies, as they’ll be implementing the components in code and can provide insights on technical feasibility and maintenance considerations from the start. And remember, many successful design systems start with a team of one! ### Choose your approach [#choose-your-approach] There are two main ways to approach building your design system: starting from scratch with a custom solution, or adopting an existing framework and adapting it to your needs. Building from scratch allows you to tailor the system to your unique requirements, but requires more time and resources upfront. Using an existing framework [https://www.designsystems.com/open-design-systems/] can help you get up and running faster, but may require more customization to fit your specific use case. There’s no right or wrong answer—it depends on your team’s capabilities, bandwidth, and long-term goals. Don’t be afraid to start small and evolve over time. ### Align with company goals [#align-with-company-goals] Make sure your design system initiative aligns with your overall company objectives. Consider factors like timing, resources, and leadership buy-in. Your earlier audit will come in handy here; use your findings to help build the case for how a design system will support key business goals. Design systems require ongoing investment, so it’s important to secure stakeholder support early on. Tying your system to tangible business benefits, like faster time-to-market or improved developer productivity, can go a long way in getting the resources and buy-in you need. [https://www.figma.com/blog/an-insiders-guide-to-a-seamless-figma-migration/] Thinking about making the switch? Designer Advocate Clara Ujiie’s “An insider’s guide to a seamless Figma migration [https://www.figma.com/blog/an-insiders-guide-to-a-seamless-figma-migration/]” has resources, tips, and tools for transitioning to Figma. ### Define your guiding principles [#define-your-guiding-principles] With the groundwork in place, define a set of guiding principles that will serve as a north star for your system. Your principles should establish the purpose and values driving your system, and ensure that every decision ladders up to your organization’s broader goals. Aim for a small set of memorable, actionable statements that can be easily referenced and applied. In an ideal world, you’d define your principles right at the start. But in practice, they often emerge later in the process, or evolve as your system matures. That’s okay! The important thing is that once you have them, you make sure everyone is aware of and aligned with them. They’ll make future decisions much clearer. This series builds on our Introduction to design systems course [https://help.figma.com/hc/en-us/articles/14552802134807], which follows the Habitz team as they establish their core principles [https://www.youtube.com/watch?v=pwzYVIgga2c] and translate them into concrete design guidelines. Here are a few tips for crafting effective design principles: • Start with the “why.” What core belief or value is driving this principle? • Be specific. Provide concrete examples and guidelines for how to apply the principle in practice. • Keep it actionable. Principles should translate into tangible practices for both designers and developers. Let’s say accessibility is a core priority for your team. A principle around designing for inclusivity might include guidelines like accounting for different vision and hearing abilities, testing contrast and legibility, or following the latest accessibility standards [https://www.w3.org/]. The more specific and actionable, the better. [https://www.figma.com/community/file/817913152610525667] Discover your principles with your team using this FigJam template [https://www.figma.com/community/file/817913152610525667]. Leverage the wealth of knowledge within your organization as the foundation for your design principles. Take a look at existing resources like brand standards, voice and tone guides, or engineering best practices. Work with cross-functional partners to ensure your principles reflect both design and development values, creating a shared foundation that everyone can rally behind. ## Step 2: Define your foundations [#step-2-define-your-foundations] The foundations of your design system are the essential visual and functional elements that form its base. They include elements like accessibility, color, typography, iconography, illustration, and dimensions. These elements work together to create a strong, consistent design language that’s easy for people to use and understand. [https://www.figma.com/customers/how-stash-builds-financial-products-customers-trust/] Learn how Stash builds financial products that customers can trust [https://www.figma.com/customers/how-stash-builds-financial-products-customers-trust/] by using Figma components and Ditto to ship out copy updates—speeding up their work by 20% and saving over 12,000 hours. ### Make your design accessible to everyone [#make-your-design-accessible-to-everyone] Accessibility means making sure everyone can use and understand your product, regardless of their abilities. This is everyone’s responsibility, and it should be a core part of your design system principles. When creating your design system, consider elements like font sizes, color contrast, and how components are labeled and organized. It’s important to communicate both how and why your design system assets are intended to be used when creating accessible experiences. By prioritizing accessibility from the beginning and providing clear guidelines for both designers and developers, you lay the foundation for a more inclusive product. [https://www.figma.com/community/plugin/732603254453395948] Try Stark’s Contrast & Accessibility plugin [https://www.figma.com/community/plugin/732603254453395948] to help you streamline your accessibility workflow. To ensure your colors are accessible, explore plugins in the Figma Community [https://www.figma.com/community/search?resource_type=plugins&sort_by=relevancy&query=color+contrast&editor_type=all&price=all&creators=all] and follow Web Content Accessibility Guidelines [https://www.w3.org/WAI/WCAG21/quickref/]. ### Choose colors that work well together [#choose-colors-that-work-well-together] Color is a powerful tool in design. When selecting colors for your design system, aim for a balanced palette that works across different modes (like dark mode) and platforms. [https://www.figma.com/community/file/1029506782158027808/ultimate-color-palette-system-untitled-ui] Check out this Ultimate color palette system [https://www.figma.com/community/file/1029506782158027808/ultimate-color-palette-system-untitled-ui] from Untitled UI, a purposeful set of neatly-organized color styles—the perfect starting point for any brand or project. To simplify your color palette, look at your team’s existing designs and consolidate similar shades. A good rule of thumb is to start with 60% neutral colors, 30% primary colors, and 10% secondary or accent colors. This balance provides enough flexibility while maintaining visual coherence. ### Pick typography that’s easy to read and fits your brand [#pick-typography-that-s-easy-to-read-and-fits-your] Typography is another key element of your design foundation. Choose fonts that are easy to read, match your brand personality, and work well together. Pay attention to details like letter spacing, weight, and line height [https://www.designsystems.com/typography-guides/] to create a pleasant reading experience. Establish a consistent set of font sizes and line heights when defining your type scale, commonly set around a base size of 16 pixels. You may also want to organize your type scale by its intended application in mind, such as ‘display’ or ‘title,’ or opt for a more primitive naming such as ‘heading-100.’ [https://www.figma.com/community/plugin/967802396210455992] For type scale, use plugins like Typescale [https://www.figma.com/community/plugin/967802396210455992] by Sam Smith, or Scaaale [https://www.figma.com/community/plugin/892543384437155629] (with three A’s) by Nicolas Massi. ### Use elevation to create visual hierarchy [#use-elevation-to-create-visual-hierarchy] Elevation refers to the use of shadows, layers, and transparency to create depth and order in your design. For example, cards can appear slightly raised off the page, or a dialog box might become a focal point by seeming to float above everything else through the use of shadows. Elevation can help you structure your design, guiding users to understand which elements are primary and which are secondary, in an intuitive way. ### Create consistent and meaningful icons [#create-consistent-and-meaningful-icons] Explore this complete guide to iconography [https://www.designsystems.com/iconography-guide/] by illustrator and icon designer Bonnie Kate Wolf on DesignSystems.com. Icons are small visual symbols that communicate ideas and actions quickly. A well-designed icon system strengthens your brand identity and improves usability. Make sure your icons are clear, consistent, and maintain their meaning even when styled differently. Use an icon grid to ensure consistent sizing and alignment, and provide descriptive names and search terms to make them easy to find and use for both designers and developers. [https://www.figma.com/community/file/836835755999342788/microsoft-fluent-system-iconography] See how the Microsoft team uses their Fluent icon system [https://www.figma.com/community/file/836835755999342788/microsoft-fluent-system-iconography] across their products. The Fluent icons include rounded corners, simplified shapes, and come in regular and filled. ### Apply tokens using variables and styles [#apply-tokens-using-variables-and-styles] Watch our lesson on applying tokens, variables, and styles [https://www.youtube.com/watch?v=JyCmacSyDY4], part of our introduction to design systems course. Variables vs. styles Variables in Figma store single values such as colors, whereas styles hold more complex information, such as gradients, and are better for detailed, multi-layered designs. Learn more [https://help.figma.com/hc/en-us/articles/15871097384471-The-difference-between-variables-and-styles]. In Figma, you can use variables [https://help.figma.com/hc/en-us/articles/15145852043927-Create-and-manage-variables] and styles to create a consistent and scalable design system. They are most commonly categorized into two primary types: • Primitives: These are your design system’s basic building blocks, like colors, spacing, and sizing. They form the foundations of your design but aren’t used directly in components or layouts. • Semantic: These provide a meaningful context for how a variable or style should be used. For example, you may have a color variable called“color-background-warning” to convey a sense of urgency or potential danger. Watch Figma tutorial: Intro to variables [https://www.youtube.com/watch?v=1ONxxlJnvdM] to better understand how variables work, and how to use them to represent design tokens and account for different modes and themes. Creating a shared language between design and code is essential for tokens to be effective. When designers and developers use the same naming conventions and token structure, it becomes much easier to maintain consistency across both design files and code implementation. This alignment ensures that design decisions flow seamlessly into development. When naming your variables and styles, use clear and consistent conventions. Design system contributor Nathan Curtis suggests [https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676] combining a base (like color or size) with modifiers (like variant or state) to create names that are easy to understand and use. This naming consistency extends to code as well. Understanding basic syntax patterns used by developers [https://www.youtube.com/watch?v=t2bMxHk7D5k] can help designers create more implementation-friendly variable names. For example, using kebab-case (with hyphens) for CSS variables or camelCase for JavaScript variables can make the translation from design to code much smoother. ### Use layout grids and spacing to create visual harmony [#use-layout-grids-and-spacing-to-create-visual] Layout grids, spacing, and sizing (referred to collectively as “spatial systems”) are like the invisible glue that holds your design together. They create a sense of structure, consistency, and visual harmony that makes your product feel polished and professional. • Layouts: Define how your design adapts to different screen sizes and devices, ensuring a consistent experience across all platforms. • Grids: Use column grids, baseline grids, and modular grids to align elements consistently and create a clear visual hierarchy. • Spacing: Define consistent spacing units to control the distances between elements and create a balanced, readable layout. When thinking about spatial systems, consider how your layout decisions will translate to code implementation. Discussing with developers how grid systems are implemented in your frontend framework—whether it’s CSS Grid, Flexbox, or a UI framework—can help ensure your design decisions are technically feasible and efficiently implemented. Why is eight a recurring number in design systems? It’s simple—the majority of device breakpoints are divisible by eight, making it an ideal base unit for grids, spacing, and typography. Learn more about spacing, grids, and layouts [https://www.designsystems.com/space-grids-and-layouts/] from Elliot Dahl, Head of Product Design at Hightouch, on DesignSystems.com. Many types of grids can be used to create the backbone of your layout: • Column grids divide the screen into vertical sections, making it easy to align elements and maintain a consistent look across different devices. • Baseline grids [https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/]control the vertical spacing between elements, typically aligning with the baseline of your text. • Modular grids combine both column and row divisions to create a flexible structure for more complex layouts. [https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/#types-of-grids] The grid settings above illustrate how you can take different approaches to styling a baseline grid. Responsive design is an approach to building for screens that takes into consideration a diversity of devices, optimizing for an optimal viewing experience across each. By providing pre-built layout components and templates, your design system can help teams create responsive and adaptive designs more efficiently. These components can be built with a set of predefined breakpoints that determine how the layout changes at different screen sizes, ensuring visual consistency while making implementation straightforward for developers. Counterpoint: Do you even need a grid? Design Systems Architect Donnie D’Amato makes the case for thinking outside the grid [https://gridless.design/]. However, just having a system in place doesn’t guarantee that everyone will use it perfectly. It’s like having a recipe book—it’s super helpful, but it’s up to the chef to follow the instructions and create a delicious meal. That’s why it’s so important for designers to understand and embrace the spatial system. When designers understand why consistent spacing and layout matter, they’re more likely to create designs that look and feel great for users. ## Step 3: Build your design system in Figma [#step-3-build-your-design-system-in-figma] Building a design system in Figma is all about creating a consistent, efficient, and scalable way of working across your entire project. Here&#x27;s a step-by-step guide to help you get started: ### Take a closer look at your existing designs [#take-a-closer-look-at-your-existing-designs] Remember that initial audit you did [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#take-stock-of-what-you-have]? It’s time to revisit that alongside your code audit. Start by mapping your design elements to existing code components wherever possible. This alignment ensures you’re building on the foundation your developers have already established rather than creating parallel systems. In this Figma tip [https://www.youtube.com/watch?v=EA0NbEOrpuo], Designer Advocate Lauren Andres goes over what component properties are and how to create them. Component properties [https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties] are the changeable aspects of a component. You can define which parts of a component others can change by tying them to specific design properties. Define your variables and styles based on what’s already implemented in production to minimize inconsistencies between design intent and technical reality. Then, define your components—the pre-made building blocks that you can reuse throughout your designs, from simple buttons to complex modals. ### Choose clear and consistent names [#choose-clear-and-consistent-names] When naming your components and variables, choose names that reflect their function, rather than how they look or how they’re coded. Use semantic naming that reflects the meaning and purpose of the element. For example, “color-warning” for an alert message or “surface-primary” for the main background color. This approach to naming creates a shared language that bridges design and development [https://www.figma.com/blog/the-shared-language-of-props/]. While designers might focus on visual variants like size and color, developers are concerned with behavioral props like accessibility attributes and event handlers. Creating alignment on how these properties are named ensures smoother handoffs and fewer implementation errors. When it comes to naming cases, talk with your development team to learn about any existing conventions in your organization that you could align with. Hyphens (like “primary-button”) and camel case (like “primaryButton”) tend to be the most commonly used approaches. ### Organize your Figma library [#organize-your-figma-library] Hear how Onfido, a technology company that helps businesses with verification, organizes their design system teams, projects, and files [https://www.youtube.com/watch?v=b0BsybgcaI8&t=8s]. One of the great things about Figma is that you can share libraries across different files and projects. This means that everyone on your team can access the same set of styles and components, no matter what they’re working on. When setting up your library, think about what structure will work best for your team. You might want to keep everything in a single file, or split things up into multiple files for different parts of your project. Consider how both your design team and your development team will be using the library. To streamline the handoff process, consider using Code Connect [https://help.figma.com/hc/en-us/articles/23920389749655-Code-Connect] to directly link your design components to code implementation. This powerful tool surfaces design systems code from your codebase within Figma, making it easier for both designers and developers to maintain consistency between design and implementation without leaving the Figma environment. [https://www.figma.com/community/file/985175703891677674] Looking for guidance on structuring your design system? Check out this Community file [https://www.figma.com/community/file/985175703891677674] from Figma Designer Advocate Luis Ouriach for recommendations on how to build out your design system for teams, projects, and files. Remember, building a design system in Figma is an ongoing process that will grow and evolve along with your team. Start by laying a strong foundation, and encourage everyone—designers and developers alike—to contribute and help improve your design system over time. If you want to learn more about the nitty-gritty of building a design system in Figma, check out our step-by-step walkthrough [https://help.figma.com/hc/en-us/articles/14548865734679-Lesson-3-Build-your-design-system] and the video below. ✉️ Sign up for our editorial newsletter [https://www.figma.com/blog/newsletter/] for more design systems tips and ideas! And if you have any other questions or topics you’d like to learn about, give us a shout on Twitter at @figma [https://www.twitter.com/figma]. We’re always happy to help! Learn more about how Figma helps teams drive consistency, scale designs, and maintain parity with development using our design systems features [https://www.figma.com/design-systems/?utm_source=Shortcut&utm_medium=Blog&utm_campaign=ds_102&utm_content=ds_102] and request a demo [https://www.figma.com/request-a-demo/?utm_source=Shortcut&utm_medium=Blog&utm_campaign=ds_102&utm_content=ds_102]. ## Subscribe to Figma’s editorial newsletter Enter email* I agree to opt-in to Figma&#x27;s mailing list.* By clicking “Submit” you agree to our TOS [https://www.figma.com/tos/] and Privacy Policy [https://www.figma.com/privacy/]. ## Related articles ### Design system 101: What is a design system? February 12, 2024 By Chad Bergman Understand the basics of design systems, what they are, how they work, and how they can change the way you design. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] ### Design system 103: Design system documentation that drives adoption January 23, 2025 By Carly Ayres Clear documentation transforms abstract design principles into practical tools. Here’s how leading teams build and maintain living documentation that evolves alongside their design systems. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Writing [https://www.figma.com/blog/writing/]Design [https://www.figma.com/blog/design/]Engineering [https://www.figma.com/blog/engineering/]UI/UX [https://www.figma.com/blog/ui-ux/]Figma Design [https://www.figma.com/blog/figma-design/] ### Design system 104: Making metrics matter February 11, 2025 By Carly Ayres Behind every successful design system lies a surprising secret: numbers. Learn how tracking the right metrics can transform your design system from a helpful resource into a powerful engine for efficiency. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] ## Create and collaborate with Figma Get started for free [https://www.figma.com/signup] [https://www.figma.com/] • [https://x.com/figma] • [https://www.youtube.com/figmadesign] • [https://www.instagram.com/figma] • [https://www.facebook.com/figmadesign] ## Product • Figma Design [https://www.figma.com/design/] • Dev Mode [https://www.figma.com/dev-mode/] • FigJam [https://www.figma.com/figjam/] • Figma Slides [https://www.figma.com/slides/] Figma Draw New Figma Buzz Beta Figma Sites Beta Figma Make Beta • AI [https://www.figma.com/ai/] • Downloads [https://www.figma.com/downloads/] • Release notes [https://www.figma.com/release-notes/] ## Plans • Pricing [https://www.figma.com/pricing/] • Enterprise [https://www.figma.com/enterprise/] • Organization [https://www.figma.com/organization/] • Professional [https://www.figma.com/professional/] ## Use cases • UI design [https://www.figma.com/ui-design-tool/] • UX design [https://www.figma.com/ux-design-tool/] • Wireframing [https://www.figma.com/wireframe-tool/] • Diagramming [https://www.figma.com/figjam/diagramming-tool/] • Prototyping [https://www.figma.com/prototyping/] • Brainstorming [https://www.figma.com/figjam/brainstorming-tool/] • Presentation Maker [https://www.figma.com/presentation-maker/] • Online whiteboard [https://www.figma.com/figjam/online-whiteboard/] • Agile [https://www.figma.com/figjam/agile-workflows/] • Strategic planning [https://www.figma.com/figjam/strategic-planning/] • Mind mapping [https://www.figma.com/figjam/mind-map/] • Online sticky notes [https://www.figma.com/figjam/online-sticky-notes/] • Concept map [https://www.figma.com/figjam/concept-map/] ## Resources • Blog [https://www.figma.com/blog/] • Best practices [https://www.figma.com/best-practices/] • QR code generator [https://www.figma.com/qr-code-generator/] • Color wheel [https://www.figma.com/color-wheel/] • Colors [https://www.figma.com/colors/] • Color picker [https://www.figma.com/color-picker/] • Color palettes [https://www.figma.com/color-palettes/] • Color palette generator [https://www.figma.com/color-palette-generator/] • Color contrast checker [https://www.figma.com/color-contrast-checker/] • Font Library [https://www.figma.com/fonts/] • Templates [https://www.figma.com/templates/] • Developers [https://www.figma.com/developers] • Integrations [https://www.figma.com/product-integrations/] • Affiliate program [https://www.figma.com/affiliate-program/] • Resource library [https://www.figma.com/resource-library/] • Reports and insights [https://www.figma.com/reports/] • Support [https://help.figma.com/hc/en-us] • Status [https://status.figma.com/] • Legal and privacy [https://www.figma.com/legal/] • Modern slavery statement [https://static.figma.com/uploads/1b6f8f613c2cc1e77fe543424bbc631298504d35] • Climate disclosure statement [https://static.figma.com/uploads/d2a204b5cc4d64ff539fcd445d0ddedab7dc00f6] ## Compare • Sketch [https://www.figma.com/figma-vs-sketch/] • Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] • Framer [https://www.figma.com/figma-vs-framer/] • Miro [https://www.figma.com/figjam-vs-miro/] ## Company • Events [https://www.figma.com/events/] • Customers [https://www.figma.com/customers/] • Careers [https://www.figma.com/careers/] • Newsroom [https://www.figma.com/newsroom/] English",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "How to Build a Design System | Design Systems 102 | Figma Blog Skip to main content Subscribe to Figma’s editorial newsletter [https://www.figma.com/signup] [https://www.figma.com/] [https://www.figma.com/blog/] ##### Categories • Maker Stories [https://www.figma.com/blog/maker-stories/] • Working Well [https://www.figma.com/blog/working-well/] • Inside Figma [https://www.figma.com/blog/inside-figma/] • Insights [https://www.figma.com/blog/insights/] Topics ### Featured Topics ### News Get the latest on all things Figma. ### Design systems ### Explore topics • 3D design [https://www.figma.com/blog/3d-design/] • Accessibility [https://www.figma.com/blog/accessibility/] • AI [https://www.figma.com/blog/ai/] • Behind the scenes [https://www.figma.com/blog/behind-the-scenes/] • Brainstorming [https://www.figma.com/blog/brainstorming/] • Branding [https://www.figma.com/blog/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 978,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "log/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study [https://www.figma.com/blog/case-study/] • Collaboration [https://www.figma.com/blog/collaboration/] • Config [https://www.figma.com/blog/config/] • Culture [https://www.figma.com/blog/culture/] • Design [https://www.figma.com/blog/design/] • Design thinking [https://www.figma.com/blog/design-thinking/] • Dev Mode [https://www.figma.com/blog/dev-mode/] • Diagramming [https://www.figma.com/blog/diagramming/] • Engineering [https://www.figma.com/blog/engineering/] • Events [https://www.figma.com/blog/events/] • FigJam [https://www.figma.com/blog/figjam/] • Figma Buzz [https://www.figma.com/blog/figma-buzz/] • Figma Design [https://www.figma.com/blog/figma-design/] • Figma Draw [https://www.figma.com/blog/figma-draw/] • Figma Make [https://www.figma.com/blog/figma-make/] • Figma Sites [https://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] •",
+      "metadata": {
+        "startIndex": 878,
+        "endIndex": 1873,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ttps://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] • Hiring [https://www.figma.com/blog/hiring/] • Infrastructure [https://www.figma.com/blog/infrastructure/] • Leadership [https://www.figma.com/blog/leadership/] • Localization [https://www.figma.com/blog/localization/] • Marketing [https://www.figma.com/blog/marketing/] • Meetings [https://www.figma.com/blog/meetings/] • Motion [https://www.figma.com/blog/motion/] • Operations [https://www.figma.com/blog/operations/] • Plugins & tooling [https://www.figma.com/blog/plugins-and-tooling/] • Portfolio [https://www.figma.com/blog/portfolio/] • Product management [https://www.figma.com/blog/product-management/] • Product updates [https://www.figma.com/blog/product-updates/] • Productivity [https://www.figma.com/blog/productivity/] • Profiles & interviews [https://www.figma.com/blog/profiles-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance",
+      "metadata": {
+        "startIndex": 1773,
+        "endIndex": 2765,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "es-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance [https://www.figma.com/blog/quality-and-performance/] • React [https://www.figma.com/blog/react/] • Report [https://www.figma.com/blog/report/] • Research [https://www.figma.com/blog/research/] • Security [https://www.figma.com/blog/security/] • Social impact [https://www.figma.com/blog/social-impact/] • Strategy [https://www.figma.com/blog/strategy/] • The Long & Short of It [https://www.figma.com/blog/the-long-and-short-of-it/] • Thought leadership [https://www.figma.com/blog/thought-leadership/] • Tips & inspiration [https://www.figma.com/blog/tips-and-inspiration/] • Typography [https://www.figma.com/blog/typography/] • UI/UX [https://www.figma.com/blog/ui-ux/] • Wireframing [https://www.figma.com/blog/wireframing/] • Writing [https://www.figma.com/blog/writing/] April 8, 2024 # Design system 102: How to build a design system Chad BergmanDesigner Advocate, Figma Insights",
+      "metadata": {
+        "startIndex": 2665,
+        "endIndex": 3653,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "024 # Design system 102: How to build a design system Chad BergmanDesigner Advocate, Figma Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] It’s time to build your design system! We’ll walk you through the basics of creating a system tailored to your unique goals and challenges, whether building from scratch or starting with existing pieces. Artwork by Cynthia Alfonso [https://www.instagram.com/zyn_vaites/] Table of contents • Lay the groundwork [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-1-lay-the-groundwork] • Define your foundations [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-2-define-your-foundations] • Build your design system in Figma",
+      "metadata": {
+        "startIndex": 3553,
+        "endIndex": 4550,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ow-to-build-your-design-system/#step-2-define-your-foundations] • Build your design system in Figma [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-3-build-your-design-system-in-figma] Table of contents • Lay the groundwork [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-1-lay-the-groundwork] • Define your foundations [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-2-define-your-foundations] • Build your design system in Figma [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#step-3-build-your-design-system-in-figma] A well-crafted design system is a powerful tool for teams looking to create cohesive, scalable, and efficient processes. By establishing a shared language and a library of reusable components, a design system ensures consistency across your products, speeds up your workflow, and frees up your team to focus on solving user problems.",
+      "metadata": {
+        "startIndex": 4450,
+        "endIndex": 5448,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "s your products, speeds up your workflow, and frees up your team to focus on solving user problems. In this guide, we’ll break down the process of building a design system into clear, actionable steps. From defining your principles and laying the groundwork to creating and organizing your design assets, we’ll cover best practices and real-world examples to help you create a system that empowers your team and elevates your product. [https://www.figma.com/blog/design-systems-101-what-is-a-design-system/] This is the second part of our series on getting started with design systems. Check out our first part: Design systems 101: What is a design system? [https://www.figma.com/blog/design-systems-101-what-is-a-design-system/] ## Step 1: Lay the groundwork [#step-1-lay-the-groundwork] Before diving into creating components and patterns, it’s important to understand why you’re building a design system and what problems you hope to solve.",
+      "metadata": {
+        "startIndex": 5348,
+        "endIndex": 6292,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "’s important to understand why you’re building a design system and what problems you hope to solve. Maybe you’ve noticed inconsistency across platforms, time-consuming manual updates, or collaboration challenges between design and development teams. Take a moment to clearly define your goals by answering these key questions: • Why do you want a design system? • What specific problems will it solve? • How will you know if it’s successfully solving those problems? Our design systems talk from Config 2024 [https://youtu.be/MJTCfSFLUGE?si=EUZ3bTfEr4STeT3z] highlights many points in this article, from defining standards, finding champions, working with developers early and often, and more. Remember, design systems aren’t one-size-fits-all. They exist on a spectrum, from simple component collections for small teams to comprehensive systems for enterprise organizations. The key is to create a system that makes sense for your specific situation and can evolve as your needs change.",
+      "metadata": {
+        "startIndex": 6192,
+        "endIndex": 7180,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "o create a system that makes sense for your specific situation and can evolve as your needs change. ### Take stock of what you have [#take-stock-of-what-you-have] Once you’ve aligned on your goals, take a closer look at your existing product landscape. Gather examples of your UI across different platforms and devices, including interactive states and alternate versions. Screenshots are your best friend here! Capture examples of your product across different platforms and devices, and don’t forget to include any interactive states or alternate versions. Chances are, you’ll start to notice patterns and consistencies that can serve as the starting point for your design system. Don’t forget to inventory your codebase as well. Engineers may have already created reusable components that aren&#x27;t documented in your design files. Look for patterns in your production code—repeated UI elements, standardized CSS variables, or shared components that developers have built.",
+      "metadata": {
+        "startIndex": 7080,
+        "endIndex": 8058,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "—repeated UI elements, standardized CSS variables, or shared components that developers have built. This technical audit helps bridge the gap between design and development by ensuring your design system builds upon existing engineering work rather than creating parallel systems. ### Organize and evaluate [#organize-and-evaluate] With your inventory in hand, organize your examples into categories and evaluate the big picture. What does your current design language look like? Are there inconsistencies or redundancies that could be streamlined? Keep an eye out for areas where your product feels disjointed or where designers and developers are solving the same problems in different ways. These are often signals that your user experience could be improved through a more cohesive design system. ### Find your champions [#find-your-champions] Building a design system is a team effort. Seek out people who are passionate about design consistency across your organization—not just from the design",
+      "metadata": {
+        "startIndex": 7958,
+        "endIndex": 8959,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "eople who are passionate about design consistency across your organization—not just from the design team, but also developers, product managers, and other stakeholders. Getting diverse perspectives will help ensure your design system meets the needs of your entire product team, not just one discipline. Developers are particularly valuable allies, as they’ll be implementing the components in code and can provide insights on technical feasibility and maintenance considerations from the start. And remember, many successful design systems start with a team of one! ### Choose your approach [#choose-your-approach] There are two main ways to approach building your design system: starting from scratch with a custom solution, or adopting an existing framework and adapting it to your needs. Building from scratch allows you to tailor the system to your unique requirements, but requires more time and resources upfront.",
+      "metadata": {
+        "startIndex": 8859,
+        "endIndex": 9780,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "you to tailor the system to your unique requirements, but requires more time and resources upfront. Using an existing framework [https://www.designsystems.com/open-design-systems/] can help you get up and running faster, but may require more customization to fit your specific use case. There’s no right or wrong answer—it depends on your team’s capabilities, bandwidth, and long-term goals. Don’t be afraid to start small and evolve over time. ### Align with company goals [#align-with-company-goals] Make sure your design system initiative aligns with your overall company objectives. Consider factors like timing, resources, and leadership buy-in. Your earlier audit will come in handy here; use your findings to help build the case for how a design system will support key business goals. Design systems require ongoing investment, so it’s important to secure stakeholder support early on. Tying your system to tangible business benefits, like faster time-to-market or improved developer",
+      "metadata": {
+        "startIndex": 9680,
+        "endIndex": 10672,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": ". Tying your system to tangible business benefits, like faster time-to-market or improved developer productivity, can go a long way in getting the resources and buy-in you need. [https://www.figma.com/blog/an-insiders-guide-to-a-seamless-figma-migration/] Thinking about making the switch? Designer Advocate Clara Ujiie’s “An insider’s guide to a seamless Figma migration [https://www.figma.com/blog/an-insiders-guide-to-a-seamless-figma-migration/]” has resources, tips, and tools for transitioning to Figma. ### Define your guiding principles [#define-your-guiding-principles] With the groundwork in place, define a set of guiding principles that will serve as a north star for your system. Your principles should establish the purpose and values driving your system, and ensure that every decision ladders up to your organization’s broader goals. Aim for a small set of memorable, actionable statements that can be easily referenced and applied.",
+      "metadata": {
+        "startIndex": 10572,
+        "endIndex": 11521,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "Aim for a small set of memorable, actionable statements that can be easily referenced and applied. In an ideal world, you’d define your principles right at the start. But in practice, they often emerge later in the process, or evolve as your system matures. That’s okay! The important thing is that once you have them, you make sure everyone is aware of and aligned with them. They’ll make future decisions much clearer. This series builds on our Introduction to design systems course [https://help.figma.com/hc/en-us/articles/14552802134807], which follows the Habitz team as they establish their core principles [https://www.youtube.com/watch?v=pwzYVIgga2c] and translate them into concrete design guidelines. Here are a few tips for crafting effective design principles: • Start with the “why.” What core belief or value is driving this principle? • Be specific. Provide concrete examples and guidelines for how to apply the principle in practice. • Keep it actionable.",
+      "metadata": {
+        "startIndex": 11421,
+        "endIndex": 12395,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "concrete examples and guidelines for how to apply the principle in practice. • Keep it actionable. Principles should translate into tangible practices for both designers and developers. Let’s say accessibility is a core priority for your team. A principle around designing for inclusivity might include guidelines like accounting for different vision and hearing abilities, testing contrast and legibility, or following the latest accessibility standards [https://www.w3.org/]. The more specific and actionable, the better. [https://www.figma.com/community/file/817913152610525667] Discover your principles with your team using this FigJam template [https://www.figma.com/community/file/817913152610525667]. Leverage the wealth of knowledge within your organization as the foundation for your design principles. Take a look at existing resources like brand standards, voice and tone guides, or engineering best practices.",
+      "metadata": {
+        "startIndex": 12295,
+        "endIndex": 13218,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "k at existing resources like brand standards, voice and tone guides, or engineering best practices. Work with cross-functional partners to ensure your principles reflect both design and development values, creating a shared foundation that everyone can rally behind. ## Step 2: Define your foundations [#step-2-define-your-foundations] The foundations of your design system are the essential visual and functional elements that form its base. They include elements like accessibility, color, typography, iconography, illustration, and dimensions. These elements work together to create a strong, consistent design language that’s easy for people to use and understand. [https://www.figma.com/customers/how-stash-builds-financial-products-customers-trust/] Learn how Stash builds financial products that customers can trust [https://www.figma.com/customers/how-stash-builds-financial-products-customers-trust/] by using Figma components and Ditto to ship out copy updates—speeding up their work by 20%",
+      "metadata": {
+        "startIndex": 13118,
+        "endIndex": 14119,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "-trust/] by using Figma components and Ditto to ship out copy updates—speeding up their work by 20% and saving over 12,000 hours. ### Make your design accessible to everyone [#make-your-design-accessible-to-everyone] Accessibility means making sure everyone can use and understand your product, regardless of their abilities. This is everyone’s responsibility, and it should be a core part of your design system principles. When creating your design system, consider elements like font sizes, color contrast, and how components are labeled and organized. It’s important to communicate both how and why your design system assets are intended to be used when creating accessible experiences. By prioritizing accessibility from the beginning and providing clear guidelines for both designers and developers, you lay the foundation for a more inclusive product. [https://www.figma.com/community/plugin/732603254453395948] Try Stark’s Contrast & Accessibility plugin",
+      "metadata": {
+        "startIndex": 14019,
+        "endIndex": 14981,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "ps://www.figma.com/community/plugin/732603254453395948] Try Stark’s Contrast & Accessibility plugin [https://www.figma.com/community/plugin/732603254453395948] to help you streamline your accessibility workflow. To ensure your colors are accessible, explore plugins in the Figma Community [https://www.figma.com/community/search?resource_type=plugins&sort_by=relevancy&query=color+contrast&editor_type=all&price=all&creators=all] and follow Web Content Accessibility Guidelines [https://www.w3.org/WAI/WCAG21/quickref/]. ### Choose colors that work well together [#choose-colors-that-work-well-together] Color is a powerful tool in design. When selecting colors for your design system, aim for a balanced palette that works across different modes (like dark mode) and platforms. [https://www.figma.com/community/file/1029506782158027808/ultimate-color-palette-system-untitled-ui] Check out this Ultimate color palette system",
+      "metadata": {
+        "startIndex": 14881,
+        "endIndex": 15806,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "82158027808/ultimate-color-palette-system-untitled-ui] Check out this Ultimate color palette system [https://www.figma.com/community/file/1029506782158027808/ultimate-color-palette-system-untitled-ui] from Untitled UI, a purposeful set of neatly-organized color styles—the perfect starting point for any brand or project. To simplify your color palette, look at your team’s existing designs and consolidate similar shades. A good rule of thumb is to start with 60% neutral colors, 30% primary colors, and 10% secondary or accent colors. This balance provides enough flexibility while maintaining visual coherence. ### Pick typography that’s easy to read and fits your brand [#pick-typography-that-s-easy-to-read-and-fits-your] Typography is another key element of your design foundation. Choose fonts that are easy to read, match your brand personality, and work well together. Pay attention to details like letter spacing, weight, and line height [https://www.designsystems.com/typography-guides/]",
+      "metadata": {
+        "startIndex": 15706,
+        "endIndex": 16705,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "ils like letter spacing, weight, and line height [https://www.designsystems.com/typography-guides/] to create a pleasant reading experience. Establish a consistent set of font sizes and line heights when defining your type scale, commonly set around a base size of 16 pixels. You may also want to organize your type scale by its intended application in mind, such as ‘display’ or ‘title,’ or opt for a more primitive naming such as ‘heading-100.’ [https://www.figma.com/community/plugin/967802396210455992] For type scale, use plugins like Typescale [https://www.figma.com/community/plugin/967802396210455992] by Sam Smith, or Scaaale [https://www.figma.com/community/plugin/892543384437155629] (with three A’s) by Nicolas Massi. ### Use elevation to create visual hierarchy [#use-elevation-to-create-visual-hierarchy] Elevation refers to the use of shadows, layers, and transparency to create depth and order in your design.",
+      "metadata": {
+        "startIndex": 16605,
+        "endIndex": 17531,
+        "chunkIndex": 19,
+        "section": "Introduction",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "on refers to the use of shadows, layers, and transparency to create depth and order in your design. For example, cards can appear slightly raised off the page, or a dialog box might become a focal point by seeming to float above everything else through the use of shadows. Elevation can help you structure your design, guiding users to understand which elements are primary and which are secondary, in an intuitive way. ### Create consistent and meaningful icons [#create-consistent-and-meaningful-icons] Explore this complete guide to iconography [https://www.designsystems.com/iconography-guide/] by illustrator and icon designer Bonnie Kate Wolf on DesignSystems.com. Icons are small visual symbols that communicate ideas and actions quickly. A well-designed icon system strengthens your brand identity and improves usability. Make sure your icons are clear, consistent, and maintain their meaning even when styled differently.",
+      "metadata": {
+        "startIndex": 17431,
+        "endIndex": 18362,
+        "chunkIndex": 20,
+        "section": "Introduction",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "ake sure your icons are clear, consistent, and maintain their meaning even when styled differently. Use an icon grid to ensure consistent sizing and alignment, and provide descriptive names and search terms to make them easy to find and use for both designers and developers. [https://www.figma.com/community/file/836835755999342788/microsoft-fluent-system-iconography] See how the Microsoft team uses their Fluent icon system [https://www.figma.com/community/file/836835755999342788/microsoft-fluent-system-iconography] across their products. The Fluent icons include rounded corners, simplified shapes, and come in regular and filled. ### Apply tokens using variables and styles [#apply-tokens-using-variables-and-styles] Watch our lesson on applying tokens, variables, and styles [https://www.youtube.com/watch?v=JyCmacSyDY4], part of our introduction to design systems course. Variables vs. styles Variables in Figma store single values such as colors, whereas styles hold more complex",
+      "metadata": {
+        "startIndex": 18262,
+        "endIndex": 19252,
+        "chunkIndex": 21,
+        "section": "Introduction",
+        "globalChunkIndex": 21
+      }
+    },
+    {
+      "id": "chunk-22",
+      "text": "vs. styles Variables in Figma store single values such as colors, whereas styles hold more complex information, such as gradients, and are better for detailed, multi-layered designs. Learn more [https://help.figma.com/hc/en-us/articles/15871097384471-The-difference-between-variables-and-styles]. In Figma, you can use variables [https://help.figma.com/hc/en-us/articles/15145852043927-Create-and-manage-variables] and styles to create a consistent and scalable design system. They are most commonly categorized into two primary types: • Primitives: These are your design system’s basic building blocks, like colors, spacing, and sizing. They form the foundations of your design but aren’t used directly in components or layouts. • Semantic: These provide a meaningful context for how a variable or style should be used. For example, you may have a color variable called“color-background-warning” to convey a sense of urgency or potential danger.",
+      "metadata": {
+        "startIndex": 19152,
+        "endIndex": 20100,
+        "chunkIndex": 22,
+        "section": "Introduction",
+        "globalChunkIndex": 22
+      }
+    },
+    {
+      "id": "chunk-23",
+      "text": "a color variable called“color-background-warning” to convey a sense of urgency or potential danger. Watch Figma tutorial: Intro to variables [https://www.youtube.com/watch?v=1ONxxlJnvdM] to better understand how variables work, and how to use them to represent design tokens and account for different modes and themes. Creating a shared language between design and code is essential for tokens to be effective. When designers and developers use the same naming conventions and token structure, it becomes much easier to maintain consistency across both design files and code implementation. This alignment ensures that design decisions flow seamlessly into development. When naming your variables and styles, use clear and consistent conventions. Design system contributor Nathan Curtis suggests [https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676] combining a base (like color or size) with modifiers (like variant or state) to create names that are easy to understand",
+      "metadata": {
+        "startIndex": 20000,
+        "endIndex": 20999,
+        "chunkIndex": 23,
+        "section": "Introduction",
+        "globalChunkIndex": 23
+      }
+    },
+    {
+      "id": "chunk-24",
+      "text": "e color or size) with modifiers (like variant or state) to create names that are easy to understand and use. This naming consistency extends to code as well. Understanding basic syntax patterns used by developers [https://www.youtube.com/watch?v=t2bMxHk7D5k] can help designers create more implementation-friendly variable names. For example, using kebab-case (with hyphens) for CSS variables or camelCase for JavaScript variables can make the translation from design to code much smoother. ### Use layout grids and spacing to create visual harmony [#use-layout-grids-and-spacing-to-create-visual] Layout grids, spacing, and sizing (referred to collectively as “spatial systems”) are like the invisible glue that holds your design together. They create a sense of structure, consistency, and visual harmony that makes your product feel polished and professional. • Layouts: Define how your design adapts to different screen sizes and devices, ensuring a consistent experience across all platforms.",
+      "metadata": {
+        "startIndex": 20899,
+        "endIndex": 21897,
+        "chunkIndex": 24,
+        "section": "Introduction",
+        "globalChunkIndex": 24
+      }
+    },
+    {
+      "id": "chunk-25",
+      "text": "dapts to different screen sizes and devices, ensuring a consistent experience across all platforms. • Grids: Use column grids, baseline grids, and modular grids to align elements consistently and create a clear visual hierarchy. • Spacing: Define consistent spacing units to control the distances between elements and create a balanced, readable layout. When thinking about spatial systems, consider how your layout decisions will translate to code implementation. Discussing with developers how grid systems are implemented in your frontend framework—whether it’s CSS Grid, Flexbox, or a UI framework—can help ensure your design decisions are technically feasible and efficiently implemented. Why is eight a recurring number in design systems? It’s simple—the majority of device breakpoints are divisible by eight, making it an ideal base unit for grids, spacing, and typography. Learn more about spacing, grids, and layouts [https://www.designsystems.com/space-grids-and-layouts/] from Elliot Dahl,",
+      "metadata": {
+        "startIndex": 21797,
+        "endIndex": 22798,
+        "chunkIndex": 25,
+        "section": "Introduction",
+        "globalChunkIndex": 25
+      }
+    },
+    {
+      "id": "chunk-26",
+      "text": "cing, grids, and layouts [https://www.designsystems.com/space-grids-and-layouts/] from Elliot Dahl, Head of Product Design at Hightouch, on DesignSystems.com. Many types of grids can be used to create the backbone of your layout: • Column grids divide the screen into vertical sections, making it easy to align elements and maintain a consistent look across different devices. • Baseline grids [https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/]control the vertical spacing between elements, typically aligning with the baseline of your text. • Modular grids combine both column and row divisions to create a flexible structure for more complex layouts. [https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/#types-of-grids] The grid settings above illustrate how you can take different approaches to styling a baseline grid. Responsive design is an approach to building for screens that takes into consideration a diversity of",
+      "metadata": {
+        "startIndex": 22698,
+        "endIndex": 23692,
+        "chunkIndex": 26,
+        "section": "Introduction",
+        "globalChunkIndex": 26
+      }
+    },
+    {
+      "id": "chunk-27",
+      "text": "sponsive design is an approach to building for screens that takes into consideration a diversity of devices, optimizing for an optimal viewing experience across each. By providing pre-built layout components and templates, your design system can help teams create responsive and adaptive designs more efficiently. These components can be built with a set of predefined breakpoints that determine how the layout changes at different screen sizes, ensuring visual consistency while making implementation straightforward for developers. Counterpoint: Do you even need a grid? Design Systems Architect Donnie D’Amato makes the case for thinking outside the grid [https://gridless.design/]. However, just having a system in place doesn’t guarantee that everyone will use it perfectly. It’s like having a recipe book—it’s super helpful, but it’s up to the chef to follow the instructions and create a delicious meal. That’s why it’s so important for designers to understand and embrace the spatial system.",
+      "metadata": {
+        "startIndex": 23592,
+        "endIndex": 24592,
+        "chunkIndex": 27,
+        "section": "Introduction",
+        "globalChunkIndex": 27
+      }
+    },
+    {
+      "id": "chunk-28",
+      "text": "ious meal. That’s why it’s so important for designers to understand and embrace the spatial system. When designers understand why consistent spacing and layout matter, they’re more likely to create designs that look and feel great for users. ## Step 3: Build your design system in Figma [#step-3-build-your-design-system-in-figma] Building a design system in Figma is all about creating a consistent, efficient, and scalable way of working across your entire project. Here&#x27;s a step-by-step guide to help you get started: ### Take a closer look at your existing designs [#take-a-closer-look-at-your-existing-designs] Remember that initial audit you did [https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/#take-stock-of-what-you-have]? It’s time to revisit that alongside your code audit. Start by mapping your design elements to existing code components wherever possible.",
+      "metadata": {
+        "startIndex": 24492,
+        "endIndex": 25397,
+        "chunkIndex": 28,
+        "section": "Introduction",
+        "globalChunkIndex": 28
+      }
+    },
+    {
+      "id": "chunk-29",
+      "text": "ur code audit. Start by mapping your design elements to existing code components wherever possible. This alignment ensures you’re building on the foundation your developers have already established rather than creating parallel systems. In this Figma tip [https://www.youtube.com/watch?v=EA0NbEOrpuo], Designer Advocate Lauren Andres goes over what component properties are and how to create them. Component properties [https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties] are the changeable aspects of a component. You can define which parts of a component others can change by tying them to specific design properties. Define your variables and styles based on what’s already implemented in production to minimize inconsistencies between design intent and technical reality. Then, define your components—the pre-made building blocks that you can reuse throughout your designs, from simple buttons to complex modals.",
+      "metadata": {
+        "startIndex": 25297,
+        "endIndex": 26247,
+        "chunkIndex": 29,
+        "section": "Introduction",
+        "globalChunkIndex": 29
+      }
+    },
+    {
+      "id": "chunk-30",
+      "text": "building blocks that you can reuse throughout your designs, from simple buttons to complex modals. ### Choose clear and consistent names [#choose-clear-and-consistent-names] When naming your components and variables, choose names that reflect their function, rather than how they look or how they’re coded. Use semantic naming that reflects the meaning and purpose of the element. For example, “color-warning” for an alert message or “surface-primary” for the main background color. This approach to naming creates a shared language that bridges design and development [https://www.figma.com/blog/the-shared-language-of-props/]. While designers might focus on visual variants like size and color, developers are concerned with behavioral props like accessibility attributes and event handlers. Creating alignment on how these properties are named ensures smoother handoffs and fewer implementation errors.",
+      "metadata": {
+        "startIndex": 26147,
+        "endIndex": 27054,
+        "chunkIndex": 30,
+        "section": "Introduction",
+        "globalChunkIndex": 30
+      }
+    },
+    {
+      "id": "chunk-31",
+      "text": "gnment on how these properties are named ensures smoother handoffs and fewer implementation errors. When it comes to naming cases, talk with your development team to learn about any existing conventions in your organization that you could align with. Hyphens (like “primary-button”) and camel case (like “primaryButton”) tend to be the most commonly used approaches. ### Organize your Figma library [#organize-your-figma-library] Hear how Onfido, a technology company that helps businesses with verification, organizes their design system teams, projects, and files [https://www.youtube.com/watch?v=b0BsybgcaI8&t=8s]. One of the great things about Figma is that you can share libraries across different files and projects. This means that everyone on your team can access the same set of styles and components, no matter what they’re working on. When setting up your library, think about what structure will work best for your team.",
+      "metadata": {
+        "startIndex": 26954,
+        "endIndex": 27887,
+        "chunkIndex": 31,
+        "section": "Introduction",
+        "globalChunkIndex": 31
+      }
+    },
+    {
+      "id": "chunk-32",
+      "text": "working on. When setting up your library, think about what structure will work best for your team. You might want to keep everything in a single file, or split things up into multiple files for different parts of your project. Consider how both your design team and your development team will be using the library. To streamline the handoff process, consider using Code Connect [https://help.figma.com/hc/en-us/articles/23920389749655-Code-Connect] to directly link your design components to code implementation. This powerful tool surfaces design systems code from your codebase within Figma, making it easier for both designers and developers to maintain consistency between design and implementation without leaving the Figma environment. [https://www.figma.com/community/file/985175703891677674] Looking for guidance on structuring your design system? Check out this Community file [https://www.figma.com/community/file/985175703891677674] from Figma Designer Advocate Luis Ouriach for",
+      "metadata": {
+        "startIndex": 27787,
+        "endIndex": 28778,
+        "chunkIndex": 32,
+        "section": "Introduction",
+        "globalChunkIndex": 32
+      }
+    },
+    {
+      "id": "chunk-33",
+      "text": "ps://www.figma.com/community/file/985175703891677674] from Figma Designer Advocate Luis Ouriach for recommendations on how to build out your design system for teams, projects, and files. Remember, building a design system in Figma is an ongoing process that will grow and evolve along with your team. Start by laying a strong foundation, and encourage everyone—designers and developers alike—to contribute and help improve your design system over time. If you want to learn more about the nitty-gritty of building a design system in Figma, check out our step-by-step walkthrough [https://help.figma.com/hc/en-us/articles/14548865734679-Lesson-3-Build-your-design-system] and the video below. ✉️ Sign up for our editorial newsletter [https://www.figma.com/blog/newsletter/] for more design systems tips and ideas! And if you have any other questions or topics you’d like to learn about, give us a shout on Twitter at @figma [https://www.twitter.com/figma].",
+      "metadata": {
+        "startIndex": 28678,
+        "endIndex": 29634,
+        "chunkIndex": 33,
+        "section": "Introduction",
+        "globalChunkIndex": 33
+      }
+    },
+    {
+      "id": "chunk-34",
+      "text": "cs you’d like to learn about, give us a shout on Twitter at @figma [https://www.twitter.com/figma]. We’re always happy to help! Learn more about how Figma helps teams drive consistency, scale designs, and maintain parity with development using our design systems features [https://www.figma.com/design-systems/?utm_source=Shortcut&utm_medium=Blog&utm_campaign=ds_102&utm_content=ds_102] and request a demo [https://www.figma.com/request-a-demo/?utm_source=Shortcut&utm_medium=Blog&utm_campaign=ds_102&utm_content=ds_102]. ## Subscribe to Figma’s editorial newsletter Enter email* I agree to opt-in to Figma&#x27;s mailing list.* By clicking “Submit” you agree to our TOS [https://www.figma.com/tos/] and Privacy Policy [https://www.figma.com/privacy/]. ## Related articles ### Design system 101: What is a design system? February 12, 2024 By Chad Bergman Understand the basics of design systems, what they are, how they work, and how they can change the way you design.",
+      "metadata": {
+        "startIndex": 29534,
+        "endIndex": 30504,
+        "chunkIndex": 34,
+        "section": "Introduction",
+        "globalChunkIndex": 34
+      }
+    },
+    {
+      "id": "chunk-35",
+      "text": "basics of design systems, what they are, how they work, and how they can change the way you design. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] ### Design system 103: Design system documentation that drives adoption January 23, 2025 By Carly Ayres Clear documentation transforms abstract design principles into practical tools. Here’s how leading teams build and maintain living documentation that evolves alongside their design systems. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Writing [https://www.figma.com/blog/writing/]Design [https://www.figma.com/blog/design/]Engineering [https://www.figma.com/blog/engineering/]UI/UX",
+      "metadata": {
+        "startIndex": 30404,
+        "endIndex": 31366,
+        "chunkIndex": 35,
+        "section": "Introduction",
+        "globalChunkIndex": 35
+      }
+    },
+    {
+      "id": "chunk-36",
+      "text": "sign [https://www.figma.com/blog/design/]Engineering [https://www.figma.com/blog/engineering/]UI/UX [https://www.figma.com/blog/ui-ux/]Figma Design [https://www.figma.com/blog/figma-design/] ### Design system 104: Making metrics matter February 11, 2025 By Carly Ayres Behind every successful design system lies a surprising secret: numbers. Learn how tracking the right metrics can transform your design system from a helpful resource into a powerful engine for efficiency. Insights [https://www.figma.com/blog/insights/]Design systems [https://www.figma.com/blog/design-systems/]Career & education [https://www.figma.com/blog/career-and-education/]Design [https://www.figma.com/blog/design/]UI/UX [https://www.figma.com/blog/ui-ux/]Productivity [https://www.figma.com/blog/productivity/] ## Create and collaborate with Figma Get started for free [https://www.figma.com/signup] [https://www.figma.com/] • [https://x.com/figma] • [https://www.youtube.com/figmadesign] •",
+      "metadata": {
+        "startIndex": 31266,
+        "endIndex": 32236,
+        "chunkIndex": 36,
+        "section": "Introduction",
+        "globalChunkIndex": 36
+      }
+    },
+    {
+      "id": "chunk-37",
+      "text": "/signup] [https://www.figma.com/] • [https://x.com/figma] • [https://www.youtube.com/figmadesign] • [https://www.instagram.com/figma] • [https://www.facebook.com/figmadesign] ## Product • Figma Design [https://www.figma.com/design/] • Dev Mode [https://www.figma.com/dev-mode/] • FigJam [https://www.figma.com/figjam/] • Figma Slides [https://www.figma.com/slides/] Figma Draw New Figma Buzz Beta Figma Sites Beta Figma Make Beta • AI [https://www.figma.com/ai/] • Downloads [https://www.figma.com/downloads/] • Release notes [https://www.figma.com/release-notes/] ## Plans • Pricing [https://www.figma.com/pricing/] • Enterprise [https://www.figma.com/enterprise/] • Organization [https://www.figma.com/organization/] • Professional [https://www.figma.com/professional/] ## Use cases • UI design [https://www.figma.com/ui-design-tool/] • UX design [https://www.figma.com/ux-design-tool/] • Wireframing [https://www.figma.com/wireframe-tool/] • Diagramming",
+      "metadata": {
+        "startIndex": 32136,
+        "endIndex": 33093,
+        "chunkIndex": 37,
+        "section": "Introduction",
+        "globalChunkIndex": 37
+      }
+    },
+    {
+      "id": "chunk-38",
+      "text": "/www.figma.com/ux-design-tool/] • Wireframing [https://www.figma.com/wireframe-tool/] • Diagramming [https://www.figma.com/figjam/diagramming-tool/] • Prototyping [https://www.figma.com/prototyping/] • Brainstorming [https://www.figma.com/figjam/brainstorming-tool/] • Presentation Maker [https://www.figma.com/presentation-maker/] • Online whiteboard [https://www.figma.com/figjam/online-whiteboard/] • Agile [https://www.figma.com/figjam/agile-workflows/] • Strategic planning [https://www.figma.com/figjam/strategic-planning/] • Mind mapping [https://www.figma.com/figjam/mind-map/] • Online sticky notes [https://www.figma.com/figjam/online-sticky-notes/] • Concept map [https://www.figma.com/figjam/concept-map/] ## Resources • Blog [https://www.figma.com/blog/] • Best practices [https://www.figma.com/best-practices/] • QR code generator [https://www.figma.com/qr-code-generator/] • Color wheel [https://www.figma.com/color-wheel/] • Colors [https://www.figma.com/colors/] • Color picker",
+      "metadata": {
+        "startIndex": 32993,
+        "endIndex": 33988,
+        "chunkIndex": 38,
+        "section": "Introduction",
+        "globalChunkIndex": 38
+      }
+    },
+    {
+      "id": "chunk-39",
+      "text": "wheel [https://www.figma.com/color-wheel/] • Colors [https://www.figma.com/colors/] • Color picker [https://www.figma.com/color-picker/] • Color palettes [https://www.figma.com/color-palettes/] • Color palette generator [https://www.figma.com/color-palette-generator/] • Color contrast checker [https://www.figma.com/color-contrast-checker/] • Font Library [https://www.figma.com/fonts/] • Templates [https://www.figma.com/templates/] • Developers [https://www.figma.com/developers] • Integrations [https://www.figma.com/product-integrations/] • Affiliate program [https://www.figma.com/affiliate-program/] • Resource library [https://www.figma.com/resource-library/] • Reports and insights [https://www.figma.com/reports/] • Support [https://help.figma.com/hc/en-us] • Status [https://status.figma.com/] • Legal and privacy [https://www.figma.com/legal/] • Modern slavery statement [https://static.figma.com/uploads/1b6f8f613c2cc1e77fe543424bbc631298504d35] • Climate disclosure statement",
+      "metadata": {
+        "startIndex": 33888,
+        "endIndex": 34879,
+        "chunkIndex": 39,
+        "section": "Introduction",
+        "globalChunkIndex": 39
+      }
+    },
+    {
+      "id": "chunk-40",
+      "text": "//static.figma.com/uploads/1b6f8f613c2cc1e77fe543424bbc631298504d35] • Climate disclosure statement [https://static.figma.com/uploads/d2a204b5cc4d64ff539fcd445d0ddedab7dc00f6] ## Compare • Sketch [https://www.figma.com/figma-vs-sketch/] • Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] • Framer [https://www.figma.com/figma-vs-framer/] • Miro [https://www.figma.com/figjam-vs-miro/] ## Company • Events [https://www.figma.com/events/] • Customers [https://www.figma.com/customers/] • Careers [https://www.figma.com/careers/] • Newsroom [https://www.figma.com/newsroom/] English",
+      "metadata": {
+        "startIndex": 34779,
+        "endIndex": 35779,
+        "chunkIndex": 40,
+        "section": "Introduction",
+        "globalChunkIndex": 40
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "getting-started;implementation;workflow"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:18.826Z",
+    "system": "Figma",
+    "author": "Chad Bergman",
+    "version": "1.0",
+    "source_url": "https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/"
+  }
+}

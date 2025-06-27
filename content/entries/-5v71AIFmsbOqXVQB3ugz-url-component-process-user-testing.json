@@ -1,0 +1,90 @@
+{
+  "id": "-5v71AIFmsbOqXVQB3ugz",
+  "title": "Component Process: User Testing",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/user-testing",
+    "ingested_at": "2025-06-27T02:59:41.696Z"
+  },
+  "content": "User testing - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 2.3 User testing. Phase --> Design Type Focus --> Time --> 1-3 days ## What is it? To better understand if there are any usability/accessibility issues with it and ensure it doesn’t hinder the user experience. ## Why do we do it? To ensure the new component doesn’t negatively impact the current experience. To better understand if the component is useable and to be able to justify our design decisions back to stakeholders. ## When should you do user testing? While it’s always good to test, it’s not always necessary. We can use our best judgment to decide this, but some good examples of when not to test include — • When the design of a component is ubiquitous/visually evident • When the change is minor If there is any risk that the component may impact the current experience, or if we want to understand further how others interact with our new design, it’s essential to perform user testing. ## How do we do it? For lightweight, unmoderated testing, you can use usertesting.com [https://www.usertesting.com/]. Test on a minimum of 5 people, with the criteria that they’re not customers of your product. Be sure to start with a benchmark of your current component/experience to compare to the one you want insight on, and ensure it’s within the same flow. Of course, if you don’t have access to tools like user testing or would like to ask follow-up questions, you can always do in-person testing [https://www.nngroup.com/articles/usability-testing-101/] using your prototypes. Just be sure to avoid leading the user, keep a solid poker face, and remind them that there are no wrong answers. If you can, always try to test on people you don’t know, as you’ll get the most objective results. ### What to do • Create two prototypes of the same experience — one with the current component and the other with the new component. De-brand your experience so that users aren’t influenced. • When stripping back, it’s essential to keep it still high fidelity. Interface nuances make a massive difference in affordance and interaction. For example, a blue text link with no underline changed to black will impact that link’s affordance. Write out the task you want the user to complete • Please keep it simple. Don’t be prescriptive • i.e. don’t say, ‘click on the send button.’ Choose your criteria • Five people per test • None of them are users of your product. • Run the test ### What to review When reviewing the test videos, consider the following and document your results — • Do users comprehend how to complete the task at hand? • Can users complete the task they are asked to do? • Does the new component in any way hinder the experience? What kind of verbal feedback am I getting from these users? • Remember, everyone has an opinion. If others repeatedly share it or it resonates with you, listen to it. Otherwise, don’t fret too much. ## Handy links • 6 Simple steps to conduct user testing successfully [https://adamfard.com/blog/conduct-user-testing] ## Outcomes • Qualitative feedback on your designs • A page with your findings, decisions and next steps Hot tips Ensure your prototype is publicly available for others to view and that it’s not too heavy a file. Some testers don’t have the fastest internet speed and might be unable to load your task if it’s too big. You don’t need to include all of your interactions and animations unless you need to test these in your experience; this will also keep your file size small. ## Up next Step 2.4 Design alignment Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "User testing - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 2.3 User testing. Phase --> Design Type Focus --> Time --> 1-3 days ## What is it?",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 928,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "s About [/about] 2.3 User testing. Phase --> Design Type Focus --> Time --> 1-3 days ## What is it? To better understand if there are any usability/accessibility issues with it and ensure it doesn’t hinder the user experience. ## Why do we do it? To ensure the new component doesn’t negatively impact the current experience. To better understand if the component is useable and to be able to justify our design decisions back to stakeholders. ## When should you do user testing? While it’s always good to test, it’s not always necessary. We can use our best judgment to decide this, but some good examples of when not to test include — • When the design of a component is ubiquitous/visually evident • When the change is minor If there is any risk that the component may impact the current experience, or if we want to understand further how others interact with our new design, it’s essential to perform user testing.",
+      "metadata": {
+        "startIndex": 828,
+        "endIndex": 1747,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "understand further how others interact with our new design, it’s essential to perform user testing. ## How do we do it? For lightweight, unmoderated testing, you can use usertesting.com [https://www.usertesting.com/]. Test on a minimum of 5 people, with the criteria that they’re not customers of your product. Be sure to start with a benchmark of your current component/experience to compare to the one you want insight on, and ensure it’s within the same flow. Of course, if you don’t have access to tools like user testing or would like to ask follow-up questions, you can always do in-person testing [https://www.nngroup.com/articles/usability-testing-101/] using your prototypes. Just be sure to avoid leading the user, keep a solid poker face, and remind them that there are no wrong answers. If you can, always try to test on people you don’t know, as you’ll get the most objective results. ### What to do • Create two prototypes of the same experience — one with the current component and the",
+      "metadata": {
+        "startIndex": 1647,
+        "endIndex": 2648,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "What to do • Create two prototypes of the same experience — one with the current component and the other with the new component. De-brand your experience so that users aren’t influenced. • When stripping back, it’s essential to keep it still high fidelity. Interface nuances make a massive difference in affordance and interaction. For example, a blue text link with no underline changed to black will impact that link’s affordance. Write out the task you want the user to complete • Please keep it simple. Don’t be prescriptive • i.e. don’t say, ‘click on the send button.’ Choose your criteria • Five people per test • None of them are users of your product. • Run the test ### What to review When reviewing the test videos, consider the following and document your results — • Do users comprehend how to complete the task at hand? • Can users complete the task they are asked to do? • Does the new component in any way hinder the experience?",
+      "metadata": {
+        "startIndex": 2548,
+        "endIndex": 3494,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "complete the task they are asked to do? • Does the new component in any way hinder the experience? What kind of verbal feedback am I getting from these users? • Remember, everyone has an opinion. If others repeatedly share it or it resonates with you, listen to it. Otherwise, don’t fret too much. ## Handy links • 6 Simple steps to conduct user testing successfully [https://adamfard.com/blog/conduct-user-testing] ## Outcomes • Qualitative feedback on your designs • A page with your findings, decisions and next steps Hot tips Ensure your prototype is publicly available for others to view and that it’s not too heavy a file. Some testers don’t have the fastest internet speed and might be unable to load your task if it’s too big. You don’t need to include all of your interactions and animations unless you need to test these in your experience; this will also keep your file size small. ## Up next Step 2.4 Design alignment Enjoy this guide?",
+      "metadata": {
+        "startIndex": 3394,
+        "endIndex": 4343,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "e; this will also keep your file size small. ## Up next Step 2.4 Design alignment Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 4243,
+        "endIndex": 5243,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "user-testing;usability;validation;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:41.696Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/user-testing"
+  }
+}

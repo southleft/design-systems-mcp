@@ -1,0 +1,101 @@
+{
+  "id": "5HosiPrvez-ZWZ96TAhuV",
+  "title": "How to Import or Export Figma Variables with Plugin",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/how-to-import-or-export-figma-variables-with-plugin",
+    "ingested_at": "2025-06-27T02:53:05.328Z"
+  },
+  "content": "How to import or export Figma Variables with plugin? - The Design System Guide Close Figma Variables # How to import or export Figma Variables with plugin? Romina Kavcic #### Export/Import Variables Export variables from one file and import them to another. It's great for migrating libraries, or when you downloaded library from the community and you’d like to import or update variables in your existing design system. 🔗 Get the plugin [https://www.figma.com/community/plugin/1256972111705530093/export-import-variables] #### Variables Pro 🔗 Get the plugin [https://www.figma.com/community/plugin/1264578192495051449/variables-pro-swap-import-export-variables ] #### #### Styles and Variables Organizer 🔗 Get the plugin [https://www.figma.com/community/plugin/816627069580757929/styles-variables-organizer ] #### #### Design Tokens plugin [https://www.figma.com/community/plugin/888356646278934516/design-tokens ] 🔗 Get the plugin [https://www.figma.com/community/plugin/888356646278934516/design-tokens ] ## Design Tokens Manager You can export or import Figma Variables Export Styles to JSON files Import Tokens from JSON files 🔗 Get the plugin [https://www.figma.com/community/plugin/1263743870981744253/design-tokens-manager ] ## Tokens Studio Gives you the ability to use Design Tokens that can be used for a whole range of design options, from border radii or spacer units to semantic color and typography styles that are able to reference other tokens. It allows you to change tokens and see these changes applied to the whole document, its styles or just a selection. Generate Tokens with the UI or with your own JSON. Create or update Type, Color or Shadow Styles based on tokens. Reference tokens in each other to create type scales, container paddings or semantic colors. 🔗 Get the plugin [https://www.figma.com/community/plugin/843461159747178978/tokens-studio-for-figma] Next question How to Import JSON into Figma? Published on: Aug 27, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "How to import or export Figma Variables with plugin? - The Design System Guide Close Figma Variables # How to import or export Figma Variables with plugin? Romina Kavcic #### Export/Import Variables Export variables from one file and import them to another. It's great for migrating libraries, or when you downloaded library from the community and you’d like to import or update variables in your existing design system. 🔗 Get the plugin [https://www.figma.com/community/plugin/1256972111705530093/export-import-variables] #### Variables Pro 🔗 Get the plugin [https://www.figma.com/community/plugin/1264578192495051449/variables-pro-swap-import-export-variables ] #### #### Styles and Variables Organizer 🔗 Get the plugin [https://www.figma.com/community/plugin/816627069580757929/styles-variables-organizer ] #### #### Design Tokens plugin [https://www.figma.com/community/plugin/888356646278934516/design-tokens ] 🔗 Get the plugin",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 937,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "plugin [https://www.figma.com/community/plugin/888356646278934516/design-tokens ] 🔗 Get the plugin [https://www.figma.com/community/plugin/888356646278934516/design-tokens ] ## Design Tokens Manager You can export or import Figma Variables Export Styles to JSON files Import Tokens from JSON files 🔗 Get the plugin [https://www.figma.com/community/plugin/1263743870981744253/design-tokens-manager ] ## Tokens Studio Gives you the ability to use Design Tokens that can be used for a whole range of design options, from border radii or spacer units to semantic color and typography styles that are able to reference other tokens. It allows you to change tokens and see these changes applied to the whole document, its styles or just a selection. Generate Tokens with the UI or with your own JSON. Create or update Type, Color or Shadow Styles based on tokens. Reference tokens in each other to create type scales, container paddings or semantic colors.",
+      "metadata": {
+        "startIndex": 837,
+        "endIndex": 1790,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "okens. Reference tokens in each other to create type scales, container paddings or semantic colors. 🔗 Get the plugin [https://www.figma.com/community/plugin/843461159747178978/tokens-studio-for-figma] Next question How to Import JSON into Figma? Published on: Aug 27, 2024 Updated: Updated: Oct 22, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design",
+      "metadata": {
+        "startIndex": 1690,
+        "endIndex": 2688,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X)",
+      "metadata": {
+        "startIndex": 2588,
+        "endIndex": 3578,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X)",
+      "metadata": {
+        "startIndex": 3478,
+        "endIndex": 4466,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X)",
+      "metadata": {
+        "startIndex": 4366,
+        "endIndex": 5338,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 5238,
+        "endIndex": 6238,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma;variables;import;export;plugins"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:53:05.328Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/how-to-import-or-export-figma-variables-with-plugin"
+  }
+}

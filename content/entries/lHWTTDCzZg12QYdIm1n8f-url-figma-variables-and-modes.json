@@ -1,0 +1,167 @@
+{
+  "id": "lHWTTDCzZg12QYdIm1n8f",
+  "title": "Figma Variables and Modes",
+  "source": {
+    "type": "url",
+    "location": "https://help.figma.com/hc/en-us/articles/21635177948567",
+    "ingested_at": "2025-06-27T03:09:59.031Z"
+  },
+  "content": "Edit objects on the canvas in bulk &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Create designs [/hc/en-us/sections/4403912808599-Create-designs] Work with layers [/hc/en-us/sections/15330116720791-Work-with-layers] Edit objects on the canvas in bulk Before you Start Who can use this feature Available on any plan [https://help.figma.com/hc/en-us/articles/360040328273-Choose-a-Figma-Plan] Anyone with `can edit` access to a file can edit objects on the canvas Want to get hands-on with editing objects in bulk? Grab a copy of the multi-edit playground file [https://www.figma.com/community/file/1343991048099728924] to practice while you learn. Select multiple layers across frames, groups, and sections and apply the same edits to them in bulk. For example: • Update the string on a text layer, and other selected text layers will update as well • Create multiple groups of objects across separate sections • Add auto layout to multiple nested objects across frames • Insert an object into one variant that repeats across all variants in a component set ## Edit objects in bulk You can select multiple layers across frames, groups, or sections either via the canvas or the Layers panel. You can also bulk select matching objects. Learn how to select multiple layers and matching objects → [https://help.figma.com/hc/en-us/articles/360040449873-Select-layers-and-objects] Once you’ve selected objects, you can bulk edit them at the same time. This includes rotating, grouping, masking, boolean operations, adding auto layout frames, and more. These actions work even if the selected objects live in different types of containers (frames, groups, and sections). A couple of things to note: Alignment: Hold ⇧ Shift and click one of the alignment buttons in the right sidebar to align objects [https://help.figma.com/hc/en-us/articles/360039956914-Adjust-alignment-rotation-and-position] to their respective parent frames. Copy and paste: Objects copied from and pasted to multiple frames are pasted in the order that they are copied and will repeat if there are additional frames. Learn about how objects will be pasted → [https://help.figma.com/hc/en-us/articles/4409078832791-Copy-and-paste-objects-in-the-canvas] ## Multi-edit text You can update the content of multiple text layers at the same time. Select more than one text layer. Learn how to select multiple layers and objects → [https://help.figma.com/hc/en-us/articles/360040449873] • Click Multi-edit text at the top of the right sidebar or press Enter / Return to edit the contents. All selected text layers will update to match. ## Multi-edit variants Multi-edit speeds up your workflow when editing variants and component sets [https://help.figma.com/hc/en-us/articles/360056440594]. When you edit a variant while having multi-edit enabled, matching objects will automatically get the same edits. To enable multi-edit: Select a component set, a variant, or a nested layer inside a variant. If you select: A component set: Enabling multi-edit places a dotted rectangle around each variant within the set to indicate the objects you can edit A variant: Enabling multi-edit selects other component variants in the set A nested layer: Enabling multi-edit selects matching objects across other component variants in the set • Click Multi-edit variants at the top of the right sidebar, or press Q. • To exit multi-edit, click , or press Q. You can also double-click anywhere on the canvas outside the component set. Check out the entire multi-edit video playlist → [https://youtu.be/XfHSWfCrX58?feature=shared] Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Edit objects on the canvas in bulk &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1001,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ns/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication",
+      "metadata": {
+        "startIndex": 901,
+        "endIndex": 1859,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "06606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials.",
+      "metadata": {
+        "startIndex": 1759,
+        "endIndex": 2744,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "s Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma",
+      "metadata": {
+        "startIndex": 2644,
+        "endIndex": 3602,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "a Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions",
+      "metadata": {
+        "startIndex": 3502,
+        "endIndex": 4462,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "00000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Create designs [/hc/en-us/sections/4403912808599-Create-designs] Work with layers [/hc/en-us/sections/15330116720791-Work-with-layers] Edit objects on the canvas in bulk Before you Start Who can use this feature Available on any plan [https://help.figma.com/hc/en-us/articles/360040328273-Choose-a-Figma-Plan] Anyone with `can edit` access to a file can edit objects on the canvas Want to get hands-on with editing objects in bulk? Grab a copy of the multi-edit playground file [https://www.figma.com/community/file/1343991048099728924] to practice while you learn. Select multiple layers across frames, groups, and sections and apply the same edits to them in bulk.",
+      "metadata": {
+        "startIndex": 4362,
+        "endIndex": 5338,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "elect multiple layers across frames, groups, and sections and apply the same edits to them in bulk. For example: • Update the string on a text layer, and other selected text layers will update as well • Create multiple groups of objects across separate sections • Add auto layout to multiple nested objects across frames • Insert an object into one variant that repeats across all variants in a component set ## Edit objects in bulk You can select multiple layers across frames, groups, or sections either via the canvas or the Layers panel. You can also bulk select matching objects. Learn how to select multiple layers and matching objects → [https://help.figma.com/hc/en-us/articles/360040449873-Select-layers-and-objects] Once you’ve selected objects, you can bulk edit them at the same time. This includes rotating, grouping, masking, boolean operations, adding auto layout frames, and more. These actions work even if the selected objects live in different types of containers (frames, groups,",
+      "metadata": {
+        "startIndex": 5238,
+        "endIndex": 6238,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "se actions work even if the selected objects live in different types of containers (frames, groups, and sections). A couple of things to note: Alignment: Hold ⇧ Shift and click one of the alignment buttons in the right sidebar to align objects [https://help.figma.com/hc/en-us/articles/360039956914-Adjust-alignment-rotation-and-position] to their respective parent frames. Copy and paste: Objects copied from and pasted to multiple frames are pasted in the order that they are copied and will repeat if there are additional frames. Learn about how objects will be pasted → [https://help.figma.com/hc/en-us/articles/4409078832791-Copy-and-paste-objects-in-the-canvas] ## Multi-edit text You can update the content of multiple text layers at the same time. Select more than one text layer. Learn how to select multiple layers and objects → [https://help.figma.com/hc/en-us/articles/360040449873] • Click Multi-edit text at the top of the right sidebar or press Enter / Return to edit the contents.",
+      "metadata": {
+        "startIndex": 6138,
+        "endIndex": 7135,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "Click Multi-edit text at the top of the right sidebar or press Enter / Return to edit the contents. All selected text layers will update to match. ## Multi-edit variants Multi-edit speeds up your workflow when editing variants and component sets [https://help.figma.com/hc/en-us/articles/360056440594]. When you edit a variant while having multi-edit enabled, matching objects will automatically get the same edits. To enable multi-edit: Select a component set, a variant, or a nested layer inside a variant. If you select: A component set: Enabling multi-edit places a dotted rectangle around each variant within the set to indicate the objects you can edit A variant: Enabling multi-edit selects other component variants in the set A nested layer: Enabling multi-edit selects matching objects across other component variants in the set • Click Multi-edit variants at the top of the right sidebar, or press Q. • To exit multi-edit, click , or press Q.",
+      "metadata": {
+        "startIndex": 7035,
+        "endIndex": 7988,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "dit variants at the top of the right sidebar, or press Q. • To exit multi-edit, click , or press Q. You can also double-click anywhere on the canvas outside the component set. Check out the entire multi-edit video playlist → [https://youtu.be/XfHSWfCrX58?feature=shared] Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center.",
+      "metadata": {
+        "startIndex": 7888,
+        "endIndex": 8802,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "rent way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features",
+      "metadata": {
+        "startIndex": 8702,
+        "endIndex": 9689,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "igma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/]",
+      "metadata": {
+        "startIndex": 9589,
+        "endIndex": 10588,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "gma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+      "metadata": {
+        "startIndex": 10488,
+        "endIndex": 11488,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma;variables;modes;design-systems"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T03:09:59.031Z",
+    "system": "Figma",
+    "author": "Figma Help Center",
+    "version": "1.0",
+    "source_url": "https://help.figma.com/hc/en-us/articles/21635177948567"
+  }
+}

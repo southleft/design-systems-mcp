@@ -1,0 +1,222 @@
+{
+  "id": "iAbUWs09crdP1OttQewfP",
+  "title": "Scaling adoption and advocacy for an enterprise-wide design system",
+  "source": {
+    "type": "url",
+    "location": "https://omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/",
+    "ingested_at": "2025-06-27T02:45:25.929Z"
+  },
+  "content": "Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal · Omlet [/] • Docs [https://feta.omlet.dev/l/docs] • Pricing [/pricing/] • Use cases [/use-cases/] • Blog [/blog/] Dashboard demo [https://feta.omlet.dev/proton/analytics] Login [https://feta.omlet.dev/login] Get extension [https://marketplace.visualstudio.com/items?itemName=Omlet.omlet-vscode-extension] • Docs [https://feta.omlet.dev/l/docs] • Pricing [/pricing/] • Use cases [/use-cases/] • Blog [/blog/] Dashboard demo [https://feta.omlet.dev/proton/analytics] Login [https://feta.omlet.dev/login] Get extension [https://marketplace.visualstudio.com/items?itemName=Omlet.omlet-vscode-extension] All articles [/blog] Share on [https://twitter.com/intent/tweet?text=Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal &url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] [https://www.linkedin.com/sharing/share-offsite/?url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] # Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal Mar 31, 2024 Russ Drury Share on [https://twitter.com/intent/tweet?text=Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal &url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] [https://www.linkedin.com/sharing/share-offsite/?url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] Each design system is its own experience, its own unique context and its own environment. Design systems are also a way to rethink things within an organization. Guy Segal, Director, Design System These two ideas — that design systems are experiences, and that design systems are drivers for organizational change — are just a couple thoughts we explored with Guy Segal, Director, Design System. Guy has been in the rare position of inheriting a portfolio of legacy design systems that live within a single organization and — with the help of organizational commitment and buy-in — building and scaling a new centralized design system to unite them all. At Omlet [https://omlet.dev/], we‘re always looking to learn about how teams approach design system adoption, measurement, and success, and Guy is not only very intentional about all of these things, but is deep into this work everyday. He’s launched programs to advocate for and realize the value of the new design system at scale which we were particularly excited to hear about — things like an adoption playbook, an ambassador program, and a contribution model. We’ll share some highlights of our conversation below, including: • The design system challenge and leadership role Guy stepped into • A look into Guy’s programmatic approach to adoption and advocacy • How he measures design system success ## Stepping into a complex design system challenge and role The design system is an area of infrastructure that’s critical for companies that need to scale, and that’s the situation Guy stepped into with his latest and most significant design system challenge. He was hired to take the lead on establishing a new design system for a major and established multi-product organization, because they knew that was the path to operational efficiency across design, development, and product. What’s interesting about Guy’s experience is that it wasn’t about establishing a new design system for teams that had never worked with one before — which is often the case when organizations decide to expand their design system investment. Instead, there were multiple business and product segments across the organization that were already operating with their own design systems, using Angular, React, or other frameworks. Some were newer than others, and some were better maintained.Guy’s challenge was to bring these different teams and technologies together to adopt a single central design system. And he ultimately did that by learning from all of these past design systems and building a brand new, platform agnostic one (with Web Components) that everyone could benefit from and adopt. ## The journey of building a design system and driving early adoption To put it into perspective, Guy started his role in 2021 and he and his team spent most of 2022 building Version 1 of the design system. Within that first year of building, they launched with ~40 components within the design library and 13 code components. But, as most design system teams can relate to, getting it off the ground and making it a success wasn’t just about building components. “If you build it, they will come” is just not true to reality, and Guy’s team started 2023 with no one having adopted the new code components in production. What became clear for Guy is that design system adoption — especially in the early days — means more than just telling people that it exists. Design system adoption is about creating systems for discoverability, and connecting the design system to how your teams are already working. This is when he put his energy into the most effective method he could find — spending time talking directly with teams. It turned out to be the right move. There was just not a lot of early adoption, so that's why I went on a road show tour. I did about 10 different road shows with different product teams. Over and over just to explain what a design system is, what it has, how they should be working with it. We ended the year with 18 products having the design system in code in some capacity, and 65 components in the design library and 52 code components. ## ## Scaling adoption: an ambassador program, a playbook, and a contribution model As successful as the roadshow tour was, it wasn’t scalable. Introducing a design system across a large organization is, and continues to be, a major and continuous organizational transition. So, Guy and his team put several mechanisms in place to drive discoverability and adoption on a wider scale. ### An ambassador program Within the design organization that Guy works closely with, there are over a dozen different pods with each dedicated to one or two products. The concept behind their ambassador program is that there’s a dedicated design system ambassador — usually at lead level or higher — for each pod, and they all participate in weekly ambassador meetings. This opens up a natural channel for them to facilitate bidirectional communication between these pods and their customers, and the design system team. These ambassadors are the ones at the frontline working with customers. They know the needs of the products better than anyone else, so this gives them a way to surface those needs so we can talk about them. This is actually the first time where there's a mechanism that breaks the barriers between silos. This is the first time that we can all come together as a group and see what all the other teams are working on. What’s most valuable about this ambassador program is that, in addition to creating a rhythm of cross-team communication that boosts the design system’s discoverability — like being able to share out what components are currently available and what's coming up next on the design system roadmap — they can also exchange detailed, actionable feedback on how the design system can help these pods succeed in their work. So if someone says, hey, I need this kind of functionality or components, the ambassadors can discuss amongst each other, consider what the common use cases are, and ultimately bring the pods’ input into what needs to be built. This feedback loop is something we’ve seen among lots of Omlet users who are similarly looking to scale design system adoption over time, and it’s the kind of qualitative feedback that pairs well with the quantitative component insights that Omlet is able to surface. For example, if an ambassador got a request for a certain component, they could run a custom analysis in Omlet to scan the codebase for components of that type that are already being used. They could then determine whether to potentially introduce that one or replace it. From there, they could also use Omlet’s Component Dependency Tree to pinpoint exactly where the production dependencies would be when it came to migration. Overall, their ambassador program has been extremely positive for Guy’s team so far, and they’re considering a similar initiative with having engineering advocates or evangelists. In the meantime, they’ve been working on an adoption playbook that helps both designers and devs in the org. ### A design system adoption playbook Now that Guy’s team is over a year into their journey with the central design system, they’ve been developing an adoption playbook based on lessons learned from initial adopters. At the most basic level, this playbook allows them to build upon their early success and free up time from not having to constantly repeat themselves. With adoption, you need to tell people the same thing over and over. Up to a point where some would say, if after the seventh time they didn’t get it, it's on them. But, we've had basically the same conversation with a lot of different people, so that's why we're working on this adoption playbook. But looking at it more broadly, the more significant benefit Guy sees in this adoption playbook is how it contributes to the experience of the design system for the designers and engineers whose participation is critical to its long-term success. Because in his experience, one of the biggest hurdles to adoption is misperception (and even cynicism) around how cumbersome it seems to use the design system. ### A design system contribution model — for designers and engineers One of the more recent programs Guy and his team are refining and iterating on is a contribution model. The idea behind their contribution model comes from recognizing that their design system team members — who are immersed in this work — have a very different perspective than those outside of the team. Rather than guessing what will resonate and lead to the design system’s acceptance, adoption, and even advocacy, why not create a contribution model that fits how designers and engineers work and brings them into that process? We see contributions as part of the evolution of the design system. We want people to be able to contribute back if something they’re working on makes sense in the design system. Why not contribute your work and build it with us? You can also contribute bug fixes or enhancements or even documentation. We definitely want to leverage the community to help grow the design system. This is a great lesson and potential new strategy for teams similarly thinking about the evolution of their design system. A contribution model helps teams fulfill the promise of what their design system investment is all about — creating a shared foundation so that designers and developers can deliver beautiful products at scale. ## Measuring design system success Like with any organizational initiative such as this central design system, the conversation tends to always turn back to: how do you measure success? Guy’s team focuses on measuring design system success in two ways — quantitative adoption metrics and qualitative user satisfaction. ### Quantitative design system success metrics For quantitative measures, Guy approaches success in a very similar way that Omlet does, in that it’s all about frontend project usage and code-level adoption. We’re thinking: of all the new projects, how much of the front end is using the design system? How much of the code is using it? Those are indicators that we look at. We want and expect a certain percentage, and that’s an important piece of how we measure success. For design system teams who are also thinking about tracking code component adoption, Omlet has been invaluable for teams who need these types of hard metrics but don’t have resources to uncover and track it manually on an ongoing basis. Omlet gives you component adoption trends and insights out-of-the-box, like Design System Component Usage Over Time… Omlet also enables you to run custom component analyses across your codebase and bring them into a custom reporting dashboard. ### Qualitative Design System Success Metrics There’s also the qualitative side of success measurement that matters a lot to Guy and his team, which goes beyond technical usage. It goes to the whole experience of working with the design system and understanding whether its users are able to accomplish their work better with it. For example, a designer needs to be able to know what's available from the design system. They need to know they need to be able to build and create screens using it. We mapped out the main tasks that designers and engineers need to do with the system and had our UX researchers do user studies to gauge baseline satisfaction and usability. We now have a dashboard for that, which is another way for us to measure the success — not just how much the design system is being used, but how teams are experiencing it. ## Advice for teams starting a design system ### Shape its perception early on, with your stakeholders Talk to all the stakeholders you can. You can find people in product management, people in product engineering, leaders within the design organization, and try to understand what their expectation is from the design system. Because those are the things that are going to shape their perception of it. I'm not saying necessarily go and build exactly what they're looking for because everyone will see it differently. But that, first of all, helps give you categories of what your design system should address, what the problems are that need fixing, and what you should focus on. And then within that you can prioritize whatever you need. ### Think of your Design System experience from a people perspective In design in general, but specifically within design systems, we're building something for other people to use. And we need to understand the people we work with and we need to understand what's keeping them up at night…and the more we can work with them instead of at them, the better the outcome is. Share on [https://twitter.com/intent/tweet?text=Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal &url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] [https://www.linkedin.com/sharing/share-offsite/?url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] Big thanks to Guy for giving us an inside look into his journey of building and scaling a new central design system within a multi-layered organization. We’re definitely coming away with lots of inspiration and ideas to think about, and we’re sure that design system teams out there feel the same. If you’re interested in chatting with us about your Design System team’s experience, we‘re always looking to learn about and highlight stories from what’s happening in this space. Contact us at hi@omlet.dev. [/] [/] • Terms [https://zeplin.io/terms/] • Privacy [https://zeplin.io/privacy/] • Contact us [/contact/]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal · Omlet [/] • Docs [https://feta.omlet.dev/l/docs] • Pricing [/pricing/] • Use cases [/use-cases/] • Blog [/blog/] Dashboard demo [https://feta.omlet.dev/proton/analytics] Login [https://feta.omlet.dev/login] Get extension [https://marketplace.visualstudio.com/items?itemName=Omlet.omlet-vscode-extension] • Docs [https://feta.omlet.dev/l/docs] • Pricing [/pricing/] • Use cases [/use-cases/] • Blog [/blog/] Dashboard demo [https://feta.omlet.dev/proton/analytics] Login [https://feta.omlet.dev/login] Get extension [https://marketplace.visualstudio.com/items?itemName=Omlet.omlet-vscode-extension] All articles [/blog] Share on [https://twitter.com/intent/tweet?text=Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal &url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/]",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 926,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Segal &url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] [https://www.linkedin.com/sharing/share-offsite/?url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] # Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal Mar 31, 2024 Russ Drury Share on [https://twitter.com/intent/tweet?text=Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal &url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] [https://www.linkedin.com/sharing/share-offsite/?url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] Each design system is its own experience, its own unique context and its own environment. Design systems are also a way to rethink things within an organization. Guy Segal, Director, Design System These two ideas — that design systems are experiences, and that design systems are drivers",
+      "metadata": {
+        "startIndex": 826,
+        "endIndex": 1827,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "n System These two ideas — that design systems are experiences, and that design systems are drivers for organizational change — are just a couple thoughts we explored with Guy Segal, Director, Design System. Guy has been in the rare position of inheriting a portfolio of legacy design systems that live within a single organization and — with the help of organizational commitment and buy-in — building and scaling a new centralized design system to unite them all. At Omlet [https://omlet.dev/], we‘re always looking to learn about how teams approach design system adoption, measurement, and success, and Guy is not only very intentional about all of these things, but is deep into this work everyday. He’s launched programs to advocate for and realize the value of the new design system at scale which we were particularly excited to hear about — things like an adoption playbook, an ambassador program, and a contribution model.",
+      "metadata": {
+        "startIndex": 1727,
+        "endIndex": 2659,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "to hear about — things like an adoption playbook, an ambassador program, and a contribution model. We’ll share some highlights of our conversation below, including: • The design system challenge and leadership role Guy stepped into • A look into Guy’s programmatic approach to adoption and advocacy • How he measures design system success ## Stepping into a complex design system challenge and role The design system is an area of infrastructure that’s critical for companies that need to scale, and that’s the situation Guy stepped into with his latest and most significant design system challenge. He was hired to take the lead on establishing a new design system for a major and established multi-product organization, because they knew that was the path to operational efficiency across design, development, and product. What’s interesting about Guy’s experience is that it wasn’t about establishing a new design system for teams that had never worked with one before — which is often the case",
+      "metadata": {
+        "startIndex": 2559,
+        "endIndex": 3558,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "shing a new design system for teams that had never worked with one before — which is often the case when organizations decide to expand their design system investment. Instead, there were multiple business and product segments across the organization that were already operating with their own design systems, using Angular, React, or other frameworks. Some were newer than others, and some were better maintained.Guy’s challenge was to bring these different teams and technologies together to adopt a single central design system. And he ultimately did that by learning from all of these past design systems and building a brand new, platform agnostic one (with Web Components) that everyone could benefit from and adopt. ## The journey of building a design system and driving early adoption To put it into perspective, Guy started his role in 2021 and he and his team spent most of 2022 building Version 1 of the design system.",
+      "metadata": {
+        "startIndex": 3458,
+        "endIndex": 4388,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ed his role in 2021 and he and his team spent most of 2022 building Version 1 of the design system. Within that first year of building, they launched with ~40 components within the design library and 13 code components. But, as most design system teams can relate to, getting it off the ground and making it a success wasn’t just about building components. “If you build it, they will come” is just not true to reality, and Guy’s team started 2023 with no one having adopted the new code components in production. What became clear for Guy is that design system adoption — especially in the early days — means more than just telling people that it exists. Design system adoption is about creating systems for discoverability, and connecting the design system to how your teams are already working. This is when he put his energy into the most effective method he could find — spending time talking directly with teams. It turned out to be the right move.",
+      "metadata": {
+        "startIndex": 4288,
+        "endIndex": 5243,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "thod he could find — spending time talking directly with teams. It turned out to be the right move. There was just not a lot of early adoption, so that's why I went on a road show tour. I did about 10 different road shows with different product teams. Over and over just to explain what a design system is, what it has, how they should be working with it. We ended the year with 18 products having the design system in code in some capacity, and 65 components in the design library and 52 code components. ## ## Scaling adoption: an ambassador program, a playbook, and a contribution model As successful as the roadshow tour was, it wasn’t scalable. Introducing a design system across a large organization is, and continues to be, a major and continuous organizational transition. So, Guy and his team put several mechanisms in place to drive discoverability and adoption on a wider scale. ### An ambassador program Within the design organization that Guy works closely with, there are over a dozen",
+      "metadata": {
+        "startIndex": 5143,
+        "endIndex": 6142,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "bassador program Within the design organization that Guy works closely with, there are over a dozen different pods with each dedicated to one or two products. The concept behind their ambassador program is that there’s a dedicated design system ambassador — usually at lead level or higher — for each pod, and they all participate in weekly ambassador meetings. This opens up a natural channel for them to facilitate bidirectional communication between these pods and their customers, and the design system team. These ambassadors are the ones at the frontline working with customers. They know the needs of the products better than anyone else, so this gives them a way to surface those needs so we can talk about them. This is actually the first time where there's a mechanism that breaks the barriers between silos. This is the first time that we can all come together as a group and see what all the other teams are working on.",
+      "metadata": {
+        "startIndex": 6042,
+        "endIndex": 6974,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "irst time that we can all come together as a group and see what all the other teams are working on. What’s most valuable about this ambassador program is that, in addition to creating a rhythm of cross-team communication that boosts the design system’s discoverability — like being able to share out what components are currently available and what's coming up next on the design system roadmap — they can also exchange detailed, actionable feedback on how the design system can help these pods succeed in their work. So if someone says, hey, I need this kind of functionality or components, the ambassadors can discuss amongst each other, consider what the common use cases are, and ultimately bring the pods’ input into what needs to be built. This feedback loop is something we’ve seen among lots of Omlet users who are similarly looking to scale design system adoption over time, and it’s the kind of qualitative feedback that pairs well with the quantitative component insights that Omlet is",
+      "metadata": {
+        "startIndex": 6874,
+        "endIndex": 7871,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "kind of qualitative feedback that pairs well with the quantitative component insights that Omlet is able to surface. For example, if an ambassador got a request for a certain component, they could run a custom analysis in Omlet to scan the codebase for components of that type that are already being used. They could then determine whether to potentially introduce that one or replace it. From there, they could also use Omlet’s Component Dependency Tree to pinpoint exactly where the production dependencies would be when it came to migration. Overall, their ambassador program has been extremely positive for Guy’s team so far, and they’re considering a similar initiative with having engineering advocates or evangelists. In the meantime, they’ve been working on an adoption playbook that helps both designers and devs in the org. ### A design system adoption playbook Now that Guy’s team is over a year into their journey with the central design system, they’ve been developing an adoption",
+      "metadata": {
+        "startIndex": 7771,
+        "endIndex": 8765,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "over a year into their journey with the central design system, they’ve been developing an adoption playbook based on lessons learned from initial adopters. At the most basic level, this playbook allows them to build upon their early success and free up time from not having to constantly repeat themselves. With adoption, you need to tell people the same thing over and over. Up to a point where some would say, if after the seventh time they didn’t get it, it's on them. But, we've had basically the same conversation with a lot of different people, so that's why we're working on this adoption playbook. But looking at it more broadly, the more significant benefit Guy sees in this adoption playbook is how it contributes to the experience of the design system for the designers and engineers whose participation is critical to its long-term success. Because in his experience, one of the biggest hurdles to adoption is misperception (and even cynicism) around how cumbersome it seems to use the",
+      "metadata": {
+        "startIndex": 8665,
+        "endIndex": 9664,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "hurdles to adoption is misperception (and even cynicism) around how cumbersome it seems to use the design system. ### A design system contribution model — for designers and engineers One of the more recent programs Guy and his team are refining and iterating on is a contribution model. The idea behind their contribution model comes from recognizing that their design system team members — who are immersed in this work — have a very different perspective than those outside of the team. Rather than guessing what will resonate and lead to the design system’s acceptance, adoption, and even advocacy, why not create a contribution model that fits how designers and engineers work and brings them into that process? We see contributions as part of the evolution of the design system. We want people to be able to contribute back if something they’re working on makes sense in the design system. Why not contribute your work and build it with us?",
+      "metadata": {
+        "startIndex": 9564,
+        "endIndex": 10511,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "’re working on makes sense in the design system. Why not contribute your work and build it with us? You can also contribute bug fixes or enhancements or even documentation. We definitely want to leverage the community to help grow the design system. This is a great lesson and potential new strategy for teams similarly thinking about the evolution of their design system. A contribution model helps teams fulfill the promise of what their design system investment is all about — creating a shared foundation so that designers and developers can deliver beautiful products at scale. ## Measuring design system success Like with any organizational initiative such as this central design system, the conversation tends to always turn back to: how do you measure success? Guy’s team focuses on measuring design system success in two ways — quantitative adoption metrics and qualitative user satisfaction.",
+      "metadata": {
+        "startIndex": 10411,
+        "endIndex": 11313,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "esign system success in two ways — quantitative adoption metrics and qualitative user satisfaction. ### Quantitative design system success metrics For quantitative measures, Guy approaches success in a very similar way that Omlet does, in that it’s all about frontend project usage and code-level adoption. We’re thinking: of all the new projects, how much of the front end is using the design system? How much of the code is using it? Those are indicators that we look at. We want and expect a certain percentage, and that’s an important piece of how we measure success. For design system teams who are also thinking about tracking code component adoption, Omlet has been invaluable for teams who need these types of hard metrics but don’t have resources to uncover and track it manually on an ongoing basis. Omlet gives you component adoption trends and insights out-of-the-box, like Design System Component Usage Over Time… Omlet also enables you to run custom component analyses across your",
+      "metadata": {
+        "startIndex": 11213,
+        "endIndex": 12208,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "stem Component Usage Over Time… Omlet also enables you to run custom component analyses across your codebase and bring them into a custom reporting dashboard. ### Qualitative Design System Success Metrics There’s also the qualitative side of success measurement that matters a lot to Guy and his team, which goes beyond technical usage. It goes to the whole experience of working with the design system and understanding whether its users are able to accomplish their work better with it. For example, a designer needs to be able to know what's available from the design system. They need to know they need to be able to build and create screens using it. We mapped out the main tasks that designers and engineers need to do with the system and had our UX researchers do user studies to gauge baseline satisfaction and usability. We now have a dashboard for that, which is another way for us to measure the success — not just how much the design system is being used, but how teams are experiencing",
+      "metadata": {
+        "startIndex": 12108,
+        "endIndex": 13107,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "ure the success — not just how much the design system is being used, but how teams are experiencing it. ## Advice for teams starting a design system ### Shape its perception early on, with your stakeholders Talk to all the stakeholders you can. You can find people in product management, people in product engineering, leaders within the design organization, and try to understand what their expectation is from the design system. Because those are the things that are going to shape their perception of it. I'm not saying necessarily go and build exactly what they're looking for because everyone will see it differently. But that, first of all, helps give you categories of what your design system should address, what the problems are that need fixing, and what you should focus on. And then within that you can prioritize whatever you need. ### Think of your Design System experience from a people perspective In design in general, but specifically within design systems, we're building something",
+      "metadata": {
+        "startIndex": 13007,
+        "endIndex": 14008,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "perspective In design in general, but specifically within design systems, we're building something for other people to use. And we need to understand the people we work with and we need to understand what's keeping them up at night…and the more we can work with them instead of at them, the better the outcome is. Share on [https://twitter.com/intent/tweet?text=Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal &url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] [https://www.linkedin.com/sharing/share-offsite/?url=https://www.omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/] Big thanks to Guy for giving us an inside look into his journey of building and scaling a new central design system within a multi-layered organization. We’re definitely coming away with lots of inspiration and ideas to think about, and we’re sure that design system teams out there feel the same.",
+      "metadata": {
+        "startIndex": 13908,
+        "endIndex": 14885,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "piration and ideas to think about, and we’re sure that design system teams out there feel the same. If you’re interested in chatting with us about your Design System team’s experience, we‘re always looking to learn about and highlight stories from what’s happening in this space. Contact us at hi@omlet.dev. [/] [/] • Terms [https://zeplin.io/terms/] • Privacy [https://zeplin.io/privacy/] • Contact us [/contact/]",
+      "metadata": {
+        "startIndex": 14785,
+        "endIndex": 15785,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "enterprise;advocacy;measurement"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:25.929Z",
+    "system": "Omlet",
+    "author": "Guy Segal",
+    "version": "1.0",
+    "source_url": "https://omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/"
+  }
+}

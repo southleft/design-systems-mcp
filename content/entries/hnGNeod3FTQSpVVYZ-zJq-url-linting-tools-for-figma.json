@@ -1,0 +1,101 @@
+{
+  "id": "hnGNeod3FTQSpVVYZ-zJq",
+  "title": "Linting Tools for Figma",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/linting-tools-for-figma",
+    "ingested_at": "2025-06-27T02:52:58.480Z"
+  },
+  "content": "Linting tools for Figma - The Design System Guide Close Figma # Linting tools for Figma Romina Kavcic Why would you use design lint tools? Save time on manual checks Ensure consistent designs Catch errors before handing off to developers Improve compliance with the design system ### Design Lint Tools Design Lint Figma plugin Design Lint is a free and open source plugin for Figma built to help you find and fix errors in your designs. Design Lint checks for missing text, fill, stroke, and effects styles. It also catches incorrect border radius values. 🔗 Check the plugin [https://lintyour.design/] Roller Design Linter Figma plugin Automatically find and fix style inconsistencies Create custom linting rules for teams Scan entire files or selected frames 🔗 Check the plugin [https://lintyour.design/] ESLint Plugin for Figma Plugins This tool helps you stay up to date with best practices and deprecations in the Figma Plugin API. You can use it to help identify, and in many cases automatically fix, issues in your plugin code. Like any ESLint plugin, it integrates with IDEs like VSCode to provide inline warnings and quick-fix functionality. Enforce best practices for plugin development Catch deprecations and issues in the Figma Plugin API Provide auto-fixes for common problems 🔗 Check the plugin [https://github.com/figma/eslint-plugin-figma-plugins] Contrast Contrast lets you quickly run a AA or AAA type contrast report on all text across all your artboards at once. Simply select a few layers and run the command to see your report. 🔗 Check the plugin [https://www.figma.com/community/plugin/911262488575486588/contrast] Sweeper - design linter Making layers pixel perfect (no half pixels) No hidden layers Layer name linting Require text, fill, stroke and effect styles No groups (at all) or no 1 layer groups 🔗 Check the plugin [https://www.figma.com/community/plugin/891651591932556735/sweeper-design-linter] ### More articles: How to set up custom design linting in Figma using the Design Lint plugin A tutorial for creating a design linter specific to your team. 🔗 Read the article [https://uxdesign.cc/how-to-set-up-custom-design-linting-in-figma-using-the-design-lint-plugin-c435e2f8851b] Next question What are the best practices for governance in a design system? Published on: Oct 29, 2024 Updated: Updated: Nov 2, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Linting tools for Figma - The Design System Guide Close Figma # Linting tools for Figma Romina Kavcic Why would you use design lint tools? Save time on manual checks Ensure consistent designs Catch errors before handing off to developers Improve compliance with the design system ### Design Lint Tools Design Lint Figma plugin Design Lint is a free and open source plugin for Figma built to help you find and fix errors in your designs. Design Lint checks for missing text, fill, stroke, and effects styles. It also catches incorrect border radius values. 🔗 Check the plugin [https://lintyour.design/] Roller Design Linter Figma plugin Automatically find and fix style inconsistencies Create custom linting rules for teams Scan entire files or selected frames 🔗 Check the plugin [https://lintyour.design/] ESLint Plugin for Figma Plugins This tool helps you stay up to date with best practices and deprecations in the Figma Plugin API.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 938,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "s This tool helps you stay up to date with best practices and deprecations in the Figma Plugin API. You can use it to help identify, and in many cases automatically fix, issues in your plugin code. Like any ESLint plugin, it integrates with IDEs like VSCode to provide inline warnings and quick-fix functionality. Enforce best practices for plugin development Catch deprecations and issues in the Figma Plugin API Provide auto-fixes for common problems 🔗 Check the plugin [https://github.com/figma/eslint-plugin-figma-plugins] Contrast Contrast lets you quickly run a AA or AAA type contrast report on all text across all your artboards at once. Simply select a few layers and run the command to see your report. 🔗 Check the plugin [https://www.figma.com/community/plugin/911262488575486588/contrast] Sweeper - design linter Making layers pixel perfect (no half pixels) No hidden layers Layer name linting Require text, fill, stroke and effect styles No groups (at all) or no 1 layer groups 🔗",
+      "metadata": {
+        "startIndex": 838,
+        "endIndex": 1834,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ame linting Require text, fill, stroke and effect styles No groups (at all) or no 1 layer groups 🔗 Check the plugin [https://www.figma.com/community/plugin/891651591932556735/sweeper-design-linter] ### More articles: How to set up custom design linting in Figma using the Design Lint plugin A tutorial for creating a design linter specific to your team. 🔗 Read the article [https://uxdesign.cc/how-to-set-up-custom-design-linting-in-figma-using-the-design-lint-plugin-c435e2f8851b] Next question What are the best practices for governance in a design system? Published on: Oct 29, 2024 Updated: Updated: Nov 2, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic.",
+      "metadata": {
+        "startIndex": 1734,
+        "endIndex": 2674,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design",
+      "metadata": {
+        "startIndex": 2574,
+        "endIndex": 3575,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "rt-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System",
+      "metadata": {
+        "startIndex": 3475,
+        "endIndex": 4470,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions",
+      "metadata": {
+        "startIndex": 4370,
+        "endIndex": 5361,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "./knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 5261,
+        "endIndex": 6261,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma;linting;quality-control"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:52:58.480Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/linting-tools-for-figma"
+  }
+}

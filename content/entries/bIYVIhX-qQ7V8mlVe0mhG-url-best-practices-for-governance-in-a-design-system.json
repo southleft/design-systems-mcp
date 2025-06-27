@@ -1,0 +1,101 @@
+{
+  "id": "bIYVIhX-qQ7V8mlVe0mhG",
+  "title": "Best Practices for Governance in a Design System",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/what-are-the-best-practices-for-governance-in-a-design-system",
+    "ingested_at": "2025-06-27T02:52:58.375Z"
+  },
+  "content": "What are the best practices for governance in a design system? - The Design System Guide Close governance # What are the best practices for governance in a design system? Romina Kavcic Define Roles: Clearly state who owns, decides, and contributes. This helps everyone understand their role. Set a Contribution Process: Let’s create easy workflows for proposing changes. Tools like GitHub or Figma can help. Also, setting clear criteria for new additions will keep things organized. Use Version Control: Implementing semantic versioning is a great idea. Keeping a changelog and having a plan to phase out old components will help keep our system up-to-date. Meetings + updatesRegular meetings with design, engineering, and product teams will help us review changes. Collaborative decision-making for the win! Also, don't forget to have monthly/quarterly meetings, where you share the progress with the whole org. Document Standards: Providing clear guidelines on usage and accessibility is essential. Let’s set coding and design standards and outline our quality assurance processes for everyone. Encourage Feedback: There is no stupid questions. 🙃 Creating open channels for input and issues is vital. Let’s offer sessions for questions and work on building a supportive community. Measure Impact: Tracking how components are used and gathering feedback will help us improve. Using this data will guide us in making better choices. Your \"north star\": Anticipating future governance needs is wise. What are your plans for scaling? Trainings: Onboarding new members is crucial. Create helpful resources and guidance to set them up for success. Align with Goals: Have your company objectives in mind. You need executive support. ### More useful articles A Design System Governance Process by Brad Frost 🔗 Read the article [https://bradfrost.com/blog/post/a-design-system-governance-process/] In the file: Governing your design system by Figma Pinterest’s Ashley Seto and Fidelity Investments’ Taylor Cashdan and Mark Steinruck provide a behind the scenes look into their design systems and the operations that keep them going. 📹 Watch the video [https://www.youtube.com/watch?v=RB8Pk3BmZzU] Creating design system inventory with Airtable 🔗 Check the guide [https://thedesignsystem.guide/airbundle] How We Drove Adoption of Our Design System | Twilio Segment Blog 🔗 Read the article [https://segment.com/blog/driving-adoption-of-a-design-system/#how-can-we-report-on-the-progress-of-adoption] Governance by design: Building successful design systems by Rangle.io 🔗 Read the article [https://rangleio.medium.com/governance-by-design-building-successful-design-systems-rangle-io-3202f64c831d] Next question Naming design tokens Published on: Oct 29, 2024 Updated: Updated: Nov 2, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "What are the best practices for governance in a design system? - The Design System Guide Close governance # What are the best practices for governance in a design system? Romina Kavcic Define Roles: Clearly state who owns, decides, and contributes. This helps everyone understand their role. Set a Contribution Process: Let’s create easy workflows for proposing changes. Tools like GitHub or Figma can help. Also, setting clear criteria for new additions will keep things organized. Use Version Control: Implementing semantic versioning is a great idea. Keeping a changelog and having a plan to phase out old components will help keep our system up-to-date. Meetings + updatesRegular meetings with design, engineering, and product teams will help us review changes. Collaborative decision-making for the win! Also, don't forget to have monthly/quarterly meetings, where you share the progress with the whole org. Document Standards: Providing clear guidelines on usage and accessibility is essential.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1001,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "whole org. Document Standards: Providing clear guidelines on usage and accessibility is essential. Let’s set coding and design standards and outline our quality assurance processes for everyone. Encourage Feedback: There is no stupid questions. 🙃 Creating open channels for input and issues is vital. Let’s offer sessions for questions and work on building a supportive community. Measure Impact: Tracking how components are used and gathering feedback will help us improve. Using this data will guide us in making better choices. Your \"north star\": Anticipating future governance needs is wise. What are your plans for scaling? Trainings: Onboarding new members is crucial. Create helpful resources and guidance to set them up for success. Align with Goals: Have your company objectives in mind. You need executive support. ### More useful articles A Design System Governance Process by Brad Frost 🔗 Read the article [https://bradfrost.com/blog/post/a-design-system-governance-process/] In the",
+      "metadata": {
+        "startIndex": 901,
+        "endIndex": 1899,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "st 🔗 Read the article [https://bradfrost.com/blog/post/a-design-system-governance-process/] In the file: Governing your design system by Figma Pinterest’s Ashley Seto and Fidelity Investments’ Taylor Cashdan and Mark Steinruck provide a behind the scenes look into their design systems and the operations that keep them going. 📹 Watch the video [https://www.youtube.com/watch?v=RB8Pk3BmZzU] Creating design system inventory with Airtable 🔗 Check the guide [https://thedesignsystem.guide/airbundle] How We Drove Adoption of Our Design System | Twilio Segment Blog 🔗 Read the article [https://segment.com/blog/driving-adoption-of-a-design-system/#how-can-we-report-on-the-progress-of-adoption] Governance by design: Building successful design systems by Rangle.io 🔗 Read the article [https://rangleio.medium.com/governance-by-design-building-successful-design-systems-rangle-io-3202f64c831d] Next question Naming design tokens Published on: Oct 29, 2024 Updated: Updated: Nov 2, 2024 ## Latest",
+      "metadata": {
+        "startIndex": 1799,
+        "endIndex": 2796,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "xt question Naming design tokens Published on: Oct 29, 2024 Updated: Updated: Nov 2, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system",
+      "metadata": {
+        "startIndex": 2696,
+        "endIndex": 3692,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips,",
+      "metadata": {
+        "startIndex": 3592,
+        "endIndex": 4586,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "e by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in",
+      "metadata": {
+        "startIndex": 4486,
+        "endIndex": 5485,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 5385,
+        "endIndex": 6385,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "governance;best-practices;process"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:52:58.375Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/what-are-the-best-practices-for-governance-in-a-design-system"
+  }
+}

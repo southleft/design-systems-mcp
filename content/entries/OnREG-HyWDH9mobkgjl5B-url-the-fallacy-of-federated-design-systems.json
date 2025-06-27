@@ -1,0 +1,332 @@
+{
+  "id": "OnREG-HyWDH9mobkgjl5B",
+  "title": "The Fallacy of Federated Design Systems",
+  "source": {
+    "type": "url",
+    "location": "https://medium.com/@nathanacurtis/the-fallacy-of-federated-design-systems-23b9a9a05542",
+    "ingested_at": "2025-06-27T02:45:16.429Z"
+  },
+  "content": "The Fallacy of Federated Design Systems | by Nathan Curtis | Medium Sitemap [/sitemap/sitemap.xml] Open in app Sign up Sign in [/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40nathanacurtis%2Fthe-fallacy-of-federated-design-systems-23b9a9a05542&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Medium Logo Write Sign up Sign in [/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40nathanacurtis%2Fthe-fallacy-of-federated-design-systems-23b9a9a05542&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] # The Fallacy of Federated Design Systems ## Avoid the damage and distress of glorifying the wrong model Nathan Curtis [/@nathanacurtis?source=post_page---byline--23b9a9a05542---------------------------------------] Follow 11 min read· Sep 13, 2024 -- 9 Listen Share My inquiry of “So, how can I help?” was met with design system distress. Six months back, the design system team disbanded. In its place, a “federated model” of design and engineering staff (none relieved of other responsibilities) was designated to drive design system progress. Yet, the system stalled. Assets are aging. Trust is shaken. Heads are scratched as everyone wonders what to do. Putting a prospective project at risk, I bluntly responded “Well, you deallocated people responsible for doing the work. What did you expect?” In 2015, I established three models of forming teams for scaling design systems [/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0]: solitary, central, and federated. The article progressed through each, scoffing at solitary, considering central, and favoring federated based on the section’s positioning and proportional length. Since then, design system practitioners throughout our community (see articles as examples below) have leveraged and extended the models to frame thinking, promote opportunities, and sell stakeholders on how and why to pursue systems in a federated way. Favoring federated was and is wrong. Since publishing nearly a decade ago, I’ve been clarifying, nuancing and even contradicting what I wrote. It’s time to set the record straight. In this article, I’ll dig into how federated is not a choice, it’s a facet. In practice, it’s never pursued first and never without central investment. In most cases, it’s optional and its outcomes can be so expensive and frustrating that it’s not worth it. Even worse, positioning federated as a primary objective anchors so many stakeholder myths to unwind that it damages system potential and even threatens its existence. # Federated dreams are not most people’s reality Organizations in general and system practitioners specifically strive to involve people. The “People” part of design systems is essential, effortful and often difficult. My colleague Jina Anne [https://medium.com/u/f5d1807b4e38?source=post_page---user_mention--23b9a9a05542---------------------------------------] has made that people point in her long running, well known Design Systems are For People [https://publication.design.systems/design-systems-are-for-people-a484620b6988] talk. ## For, of, and by the people? Couple that focus on people with expectations of governance, and conversations quickly veer into principled territory. A design system shouldn’t be just for the people, but also of and by the people, right? In many mindsets, that implies of and by all the people. But from a practical and historical perspective, all people making the design system simply isn’t how it ends up working. Design systems I encounter are made by directly responsible, dedicated teams or individual designer(s) and/or developer(s). Aka, “Central people” making a design system as a product, serving products [/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935]. Sure, there’s also services supporting a community to steward participation, influence and even contribution [/eightshapes-llc/stewarding-design-system-contributions-817665b6c7dd] (those are different concepts [/eightshapes-llc/defining-design-system-contributions-eb48e00e8898], mind you). Those contributions matter [/eightshapes-llc/why-contributions-matter-22652d8676c6], right? I guess so. However, virtually all productive output is delivered by central people. ## Federated-only exceptions distract and muddle conversations I can hear a few of you now: “I got federated-only to work!” Sure, maybe in a limited context or temporal endeavor. Those situations are inconsistent with how I define design systems [/eightshapes-llc/defining-design-systems-6dd4b03e0ff6]: deliver foundations and UI components via evolving, ideally mirrored design and code libraries that scaling organizations depend on. Sure, maybe it works if exceedingly rare conditions hold. I’m aware of a fellow expert that combines inarguable talent, sharp intelligence, supreme confidence, and unassailable authority to drive product outcomes without a central design system team. I’ve read righteous claims of a small group of collaboratively-tight, high-performing, coding-capable designers evolving a product without a design system at all (there are systems in there somewhere, nevertheless). The federated dream comes alive! ## Federated people don’t and can’t prioritize (extra) system work However, my experience suggests a different reality. The hope for aligned outputs emerging from independent federated contributors driven by altruism is at best misplaced. At its worst, it’s recklessly naive. I see organizations orient priorities to evolve products, individuals align to those priorities, and no one set aside an allowance for system contribution. My consulting across 80+ design system spans diverse setups: product or marketing, adopter communities large (100s) or small (10s), design-only or design-and-code, etc. Every organization sought system success and was willing to invest. How many had a wizard oozing confidence, tight-enough collaborative culture, or other secret that made federated–only magic happen? Steve Carrell as Mark Baum declares “Zero.” in The Big Short [https://www.youtube.com/watch?v=_4KrHwvtxrc] In the spirit of Steve Carrell’s memorable portrayal of disdainful expert Mark Baum in The Big Short [https://en.wikipedia.org/wiki/The_Big_Short_(film)]: “Zero. Zero. Zero percent [of design systems thrived without centrally allocated people to make and support it].” None experienced federated-only success without a investment in central capacity. Federated-only is not a choice. # Federated is a False Choice So let’s get to it. Why isn’t federated-only a choice? The diagram’s arrangement implies choice, unfortunately. Should your design system be centrally managed or a federated community? The article bridged to federated misleadingly with “if a central model doesn’t fit, there is a more complicated path to pursue…” The implication was clear: choose federated! Ugh. Positioning central versus federated as a mutually exclusive choice was a mistake. ## Embracing federated doesn’t mean avoiding central That’s thinking in binary, described well in Black and White Thinking:The Burden of a Binary Brain in a Complex World [https://www.amazon.com/Black-White-Thinking-Burden-Complex/dp/1250829453/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.fCyRr4zq4XSMwuXkcB7Lg52MBd3-BEuXOZho_cJ6KibBXBMFvW8WJvu1VDWlay9ymOOhysW8jju_Nxz9WZj6MBikJjFqUhEwQaRakqx4ouxqJoCc04zTafzQ9vafykZf8Ysporuo5PCBxtY7AR7FOUeI9rNx_mWXd4xc-0Zrt7lOi4ACoR8mmjJjq2LACProG-o4cFDbTekQd8DeR5BquGtBA1uqP5kAuRk3g0YYNgM.ecV6WkVEsVGM5cAWh8YhTyKVvV2rD-U2uIMYjDO_kIQ&qid=1726158216&sr=8-1]. Just because there’s two options doesn’t make them mutually exclusive. It certainly doesn’t mean that if federated is desirable, then central isn’t. Shift that or to an and. In my practice, successful design systems always have a central team and always seek the participation (and, if worth it, contribution) from a federated community. Evolving models to invest in both to varying degrees. ## Being only federated doesn’t work When discussions get tough, bracket the conversation with an uncomfortable extreme. Injecting an intentionally impractical assertion can establish the value of centrally allocated people: It’s not as if we should create an empty Figma library file, empty code repository, and empty ZeroHeight instance and encourage contributors to have at it. Instead, central people setup architecture, create tools, define process, create playbooks, and support the platform. 100% of the time, those central people make and maintain the core components too. ## Don’t choose federated. Instead, add federated. Gradually. As you consider your system’s future, consider how to progressively add federated contribution gradually to a centrally supported endeavor. If federated work really succeeds, you may even tune down central investment as circumstances permit. A stable and complete core architecture (when the design system isn’t going through a period of generational change [/@nathanacurtis/design-system-generations-65f99960dc3d]) can evolve with federated contributions coupled with a lower investment in central curation. Don’t hold your breath, however. I’ve rarely experienced conditions in the past decade where either stable or complete hold for long, let alone both. ## Federated is optional. Some teams gradually incorporate federated influence, such as via tiers [/eightshapes-llc/design-system-tiers-2c827b67eae1] and shared libraries [/eightshapes-llc/figma-shared-libraries-d2dfbf9d1b8d]. However, many systems thrive and create tremendous value without a focus on contributions. Some systems even transcend contributions, shedding responsibility to let the community fend for itself. I revere Atlassian’s design system [https://atlassian.design/] and have cited the Atlaskit code catalog for years as a vibrant melting pot of contribution. Their community-supported Editor component [https://www.npmjs.com/package/@atlaskit/editor-core?activeTab=versions] hit major version 197 recently! Yet, Editor seems a concern now separate from the core system, which explicitly limits contributions to fixes [https://atlassian.design/resources/contribution]: We are currently accepting … fixes … At this time, we are unable to take [small enhancement, major enhancement, and new component or pattern] contributions. Their rationale cites familiar values: build for widely shared need, ensure quality, avoid being a bottleneck. Just because Editor is a component, serving and evolved by a community doesn’t mean it “goes in the design system” (even though it’s clearly in a system). I love it! # Federated Anchors Damaging Myths Stakeholders anchor assumptions the moment they see that diagram. An anchoring bias [https://en.wikipedia.org/wiki/Anchoring_effect] is a cognitive bias by which stakeholders rely heavily on what’s first presented (and how they interpret it), and new information is referenced relative to that anchor rather than considered objectively. This distorts new information, impairing influence and decision making. Many of those assumptions are damaging myths, including: ⚓︎ Everyone can, should and will contribute.⚓︎ Every component made goes in the system.⚓︎ Anyone that makes UI is capable of contributing.⚓︎ All UI components of any level of composition are welcome.⚓ ︎Federated contribution is a primary success indicator.⚓ Federated gets you a design system for free. When educating stakeholders, you want to be on the front foot. You want to confidently build a rational case so they understand impacts, opportunities, risks and efforts ahead. You don’t want to position yourself as saying “No” repeatedly to correct mistaken assumptions of superiors that approve or deny the system’s existence. So, you face a choice: let the anchored myths stick, or contradict your stakeholders and unwind the myths. Weighing anchor [https://en.wikipedia.org/wiki/Weigh_anchor] is difficult, effortful and worst of all, risky. Let’s dig in to each one. ## Myth: ⚓ Everyone can, should and will contribute. Fact: Few if any contribute meaningful new features and enhancements. Wait, if almost no one will contribute, then this isn’t made by everybody? (Yes.) That’s bad. It can be very, very good to have central team makes a library everyone depends on. A central team can focus on details, solicit shared needs, architect small parts into a cohesive whole, document and release it, and support others. Federated people don’t, can’t and/or won’t do that. ## Myth: ⚓ Every component made goes in the system. Fact: Almost all components made across teams don’t belong in the system. Wait, so the system will have barely any components our organization makes, and most of the UI everyone makes isn’t going to be shared? (Yes.) That stinks. Design systems offer assets that serve widely shared needs and prioritize features that can evolve in a stable way to serve many groups. You should expect that teams will still need to create considerable UI using system assets. You should also expect that most components that teams make — even low level components — will not serve a need shared by other teams, and thus don’t belong in any system. ## Myth: ⚓ Anyone that makes UI is capable of contributing. Fact: Most contributors lack systems experience generally and knowledge of this system’s architecture specifically to contribute efficiently. Wait, so people can’t contribute because you say they lack skills? (Yes.) That’s terrible gatekeeping and risks morale. Design systems are about business value. If the cost to steward a contribution (effort of all participants plus maintenance and opportunity cost [https://en.wikipedia.org/wiki/Opportunity_cost]s) exceeds business benefits (value of reusable assets and staff personal development), then the contribution is a bad idea. Only do it if it’s worth it. Additionally, identifying directly responsible individuals [/@mmamet/directly-responsible-individuals-f5009f465da4] (DRI) and teams leads to the clarity needed for a satisfying workplace. Positioning capable and talented staff in DRI roles is a strength. Finally, central systems practitioners are responsible to support system integration, pair with others, and curate contributions that do arise. Sharing knowledge and resolving incidents responsively are ways of how system practitioners can be a rising tide lifting everyone’s capability. ## Myth: ⚓ Components of any level of composition are welcome. Fact: Design systems are visual foundations threaded through a library of usually lower-level UI components that equip teams to compose digital experiences on their own teams. Wait, system UI components are limited to a bunch of low-level widgets? (Yes, at least in the core library.) That’s lame and lacks business value. There’s a ton of business value in that. Have you seen what goes into a system’s `button`, `alert` , `textInput` or `modal`? Each relies on 10s or 100s of visual attributes across a component’s anatomy, property configurations, layouts, behaviors and other stuff. That’s measurable work, done at a high-level of accessible quality, packaged as design and code libraries so that other teams don’t need to make that stuff. ## Myth: ⚓ Federated contribution is our primary success indicator. Fact: Core libraries made by a central team and containing no contributions from outsiders can be extremely valuable. Wait, if our goals are to make a library and enable other people to use the library, how does users that contribute to the library matter?(Exactly.)That feels wrong. When semi-annual or annual planning season comes along, federated contribution is rarely a published objective and never an existential one focusing a significant proportion of central people’s capacity (although efforts to like Figma Shared Libraries [/eightshapes-llc/figma-shared-libraries-d2dfbf9d1b8d] are pursued secondarily). Instead, federated investments are often on the periphery, deprioritized in favor of other efforts. It’s never a galvanizing singular focus of a system’s team relative to responsible people making system outputs and enabling others to successfully use them. ## Myth: ⚓ Federated gets you a design system for free. Fact: Successful federated activity requires a non-trivial capital expense and ongoing operational costs to make and maintain a platform, support federated people, and curate contributions. It’s not free. Wait, so I need to pay for a group of people to build a platform and make it all work when seconds ago I thought this was largely free?(Yes.) That’s expensive. Going federated in the long run means more than composing a designer’s playbook (often not read) and developer’s `CONTRIBUTING.md`. There’s far more work needed. Once built, using platforms isn’t a long leap for developers. Coding in systems should be familiar: build modularly, manage dependencies, run test suites, commit to repos, review a pull request. Tasks are familiar (if with some system spice) such that once setup, running a platform can be predictable. However, there’s still the work of curation, quality and approval for core engineering maintainers to do. Familiarity is less true for designers, where diverse tasks carry unfamiliar system-specific expectations [/eightshapes-llc/design-system-ui-is-more-expensive-than-a-product-teams-ui-f3c3e48c555]. Audit and synthesize shared needs. Compare existing component examples. Devise an API. Document usage. Produce and test high quality Figma assets [/eightshapes-llc/testing-figma-components-a47fc978465f]. The bar is higher and skills are different than “normal product design work.” Learning takes practice and collaboration time with system experts (read: operational cost) to produce good things and grow individually. I love that work, which offers tremendous intrinsic reward. But it’s time consuming. You reap what you sow. Did you notice how verbose it is explaining away those myths? Did you even read the text above, or did you skim it as your mind drifted? Now, imagine you are a stakeholder that had to listen to someone — often lower level or from a different group — contradicting what you believe. So be careful. Explaining what you don’t get with federated contribution isn’t just complicated. It risks irritation, boredom, distraction, insufficient time, indignation, and dismissiveness. Such emotions are not to be trifled with. # References to Central v Federated Models The following posts all reference the concepts of central and federated models described in Team Models for Scaling a Design System [/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0]. The Salesforce Team Model for Scaling a Design System [/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b] by Jina Anne [https://medium.com/u/f5d1807b4e38?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2015• Designing a Design System (a step by step guide) [https://www.linkedin.com/pulse/designing-design-system-step-guide-sascha-marc-louis-henrich/] by Louis Henrich, 2017 Scaling Design as the Company Grows [https://uxplanet.org/scaling-design-as-the-company-grows-e99af38f9e8d] by Ian Armstrong [https://medium.com/u/4709e5887030?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2018The Paradox of Design Systems [https://spotify.design/article/the-paradox-of-design-systems] by Brendon Manwaring [https://medium.com/u/b58d5887fe0f?source=post_page---user_mention--23b9a9a05542---------------------------------------] and Josh Mateo [https://medium.com/u/506b37832ee2?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2018Tips For Managing Design Systems [https://www.smashingmagazine.com/2019/05/tips-managing-design-systems/] by Nick Babich [https://medium.com/u/bcab753a4d4e?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2019Design Systems: Why Do They Matter? [https://bootcamp.uxdesign.cc/design-systems-why-do-they-matter-83149e76101c] by Marcela Morales [https://medium.com/u/63e1625a9efa?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2021Remarkable UX Design Teams [https://isadoradigitalagency.com/insights/strategy/ux-design-teams] by Isadora Agency [https://medium.com/u/85d64590100?source=post_page---user_mention--23b9a9a05542---------------------------------------] , After 2019• How do teams work with your Design System? [https://www.linkedin.com/pulse/how-do-teams-work-your-design-system-raktim-chatterjee/] by Raktim Chatterjee, 2022 Is your design system performing? [https://rangle.io/blog/is-your-design-system-performing] by Alicia Cheung [https://medium.com/u/7f33e8acc40?source=post_page---user_mention--23b9a9a05542---------------------------------------] and Rebecca Holland, 2022Design Systems: Investing in the People Behind the System [https://www.viget.com/articles/design-systems-investing-in-the-people-behind-the-system/] by Reneé Cagnina Haynes [https://medium.com/u/cf83bc1ff014?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2022• From Vision to Reality: The Roadmap to Building an Enterprise Design System [https://apiko.com/blog/enterprise-design-system/] by Oleksii Popovych, 2023 Opening up the Design System for Everyone — The Federated Model [https://bootcamp.uxdesign.cc/opening-up-the-design-system-for-everyone-11b9b92f3f75] by Anirudh Hothur [https://medium.com/u/b4cb61d5a5c0?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2023Implementing a Design System in an Existing Product [https://www.netguru.com/blog/design-system-in-existing-product] by Justyna Klimkowska [https://medium.com/u/13df56357048?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2024• The merits of design systems [https://www.baianat.com/books/merits-of-design-systems/design-systems-and-their-benefits] by Balanet, 2024 • ROI of Having a Design System by Kim Nguyen [https://www.netguru.com/blog/roi-design-systems], 2024 • How to build effective enterprise design systems for your company [https://webflow.com/blog/enterprise-design-systems] by Webflow, 2024 Design System: Pancake [https://www.mikhailbelstar.com/portfolio/project-ds-fevo] by Mikhail Belstar [https://medium.com/u/784637ff1e0f?source=post_page---user_mention--23b9a9a05542---------------------------------------] Keeping design system contributions in check [https://www.designsystems.com/keeping-design-system-contributions-in-check/] by Wart Burggraaf [https://medium.com/u/d86823ecc6f0?source=post_page---user_mention--23b9a9a05542---------------------------------------] Design Systems Process Front End Development UX Design Visual Design -- -- 9 [/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F23b9a9a05542&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40nathanacurtis%2Fthe-fallacy-of-federated-design-systems-23b9a9a05542&source=---footer_actions--23b9a9a05542---------------------bookmark_footer------------------] Follow ## Written by Nathan Curtis 30K followers [/@nathanacurtis/followers?source=post_page---post_author_info--23b9a9a05542---------------------------------------] ·252 following [/@nathanacurtis/following?source=post_page---post_author_info--23b9a9a05542---------------------------------------] Design systems consultant contributing to the field through the specs plugin, writing and workshops. VT & @uchicago grad. Follow ## Responses (9) See all responses Help Status About Careers Press Blog Privacy Rules Terms Text to speech",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "The Fallacy of Federated Design Systems | by Nathan Curtis | Medium Sitemap [/sitemap/sitemap.xml] Open in app Sign up Sign in [/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40nathanacurtis%2Fthe-fallacy-of-federated-design-systems-23b9a9a05542&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Medium Logo Write Sign up Sign in [/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40nathanacurtis%2Fthe-fallacy-of-federated-design-systems-23b9a9a05542&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] # The Fallacy of Federated Design Systems ## Avoid the damage and distress of glorifying the wrong model Nathan Curtis [/@nathanacurtis?source=post_page---byline--23b9a9a05542---------------------------------------] Follow 11 min read· Sep 13, 2024 -- 9 Listen Share My inquiry of “So, how can I help?” was met with design system distress. Six months back, the design system team",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 991,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "“So, how can I help?” was met with design system distress. Six months back, the design system team disbanded. In its place, a “federated model” of design and engineering staff (none relieved of other responsibilities) was designated to drive design system progress. Yet, the system stalled. Assets are aging. Trust is shaken. Heads are scratched as everyone wonders what to do. Putting a prospective project at risk, I bluntly responded “Well, you deallocated people responsible for doing the work. What did you expect?” In 2015, I established three models of forming teams for scaling design systems [/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0]: solitary, central, and federated. The article progressed through each, scoffing at solitary, considering central, and favoring federated based on the section’s positioning and proportional length. Since then, design system practitioners throughout our community (see articles as examples below) have leveraged and extended",
+      "metadata": {
+        "startIndex": 891,
+        "endIndex": 1889,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "practitioners throughout our community (see articles as examples below) have leveraged and extended the models to frame thinking, promote opportunities, and sell stakeholders on how and why to pursue systems in a federated way. Favoring federated was and is wrong. Since publishing nearly a decade ago, I’ve been clarifying, nuancing and even contradicting what I wrote. It’s time to set the record straight. In this article, I’ll dig into how federated is not a choice, it’s a facet. In practice, it’s never pursued first and never without central investment. In most cases, it’s optional and its outcomes can be so expensive and frustrating that it’s not worth it. Even worse, positioning federated as a primary objective anchors so many stakeholder myths to unwind that it damages system potential and even threatens its existence. # Federated dreams are not most people’s reality Organizations in general and system practitioners specifically strive to involve people.",
+      "metadata": {
+        "startIndex": 1789,
+        "endIndex": 2762,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "’s reality Organizations in general and system practitioners specifically strive to involve people. The “People” part of design systems is essential, effortful and often difficult. My colleague Jina Anne [https://medium.com/u/f5d1807b4e38?source=post_page---user_mention--23b9a9a05542---------------------------------------] has made that people point in her long running, well known Design Systems are For People [https://publication.design.systems/design-systems-are-for-people-a484620b6988] talk. ## For, of, and by the people? Couple that focus on people with expectations of governance, and conversations quickly veer into principled territory. A design system shouldn’t be just for the people, but also of and by the people, right? In many mindsets, that implies of and by all the people. But from a practical and historical perspective, all people making the design system simply isn’t how it ends up working.",
+      "metadata": {
+        "startIndex": 2662,
+        "endIndex": 3579,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "nd historical perspective, all people making the design system simply isn’t how it ends up working. Design systems I encounter are made by directly responsible, dedicated teams or individual designer(s) and/or developer(s). Aka, “Central people” making a design system as a product, serving products [/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935]. Sure, there’s also services supporting a community to steward participation, influence and even contribution [/eightshapes-llc/stewarding-design-system-contributions-817665b6c7dd] (those are different concepts [/eightshapes-llc/defining-design-system-contributions-eb48e00e8898], mind you). Those contributions matter [/eightshapes-llc/why-contributions-matter-22652d8676c6], right? I guess so. However, virtually all productive output is delivered by central people. ## Federated-only exceptions distract and muddle conversations I can hear a few of you now: “I got federated-only to work!” Sure, maybe",
+      "metadata": {
+        "startIndex": 3479,
+        "endIndex": 4480,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "t and muddle conversations I can hear a few of you now: “I got federated-only to work!” Sure, maybe in a limited context or temporal endeavor. Those situations are inconsistent with how I define design systems [/eightshapes-llc/defining-design-systems-6dd4b03e0ff6]: deliver foundations and UI components via evolving, ideally mirrored design and code libraries that scaling organizations depend on. Sure, maybe it works if exceedingly rare conditions hold. I’m aware of a fellow expert that combines inarguable talent, sharp intelligence, supreme confidence, and unassailable authority to drive product outcomes without a central design system team. I’ve read righteous claims of a small group of collaboratively-tight, high-performing, coding-capable designers evolving a product without a design system at all (there are systems in there somewhere, nevertheless). The federated dream comes alive! ## Federated people don’t and can’t prioritize (extra) system work However, my experience suggests a",
+      "metadata": {
+        "startIndex": 4380,
+        "endIndex": 5381,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "# Federated people don’t and can’t prioritize (extra) system work However, my experience suggests a different reality. The hope for aligned outputs emerging from independent federated contributors driven by altruism is at best misplaced. At its worst, it’s recklessly naive. I see organizations orient priorities to evolve products, individuals align to those priorities, and no one set aside an allowance for system contribution. My consulting across 80+ design system spans diverse setups: product or marketing, adopter communities large (100s) or small (10s), design-only or design-and-code, etc. Every organization sought system success and was willing to invest. How many had a wizard oozing confidence, tight-enough collaborative culture, or other secret that made federated–only magic happen? Steve Carrell as Mark Baum declares “Zero.” in The Big Short [https://www.youtube.com/watch?v=_4KrHwvtxrc] In the spirit of Steve Carrell’s memorable portrayal of disdainful expert Mark Baum in The",
+      "metadata": {
+        "startIndex": 5281,
+        "endIndex": 6279,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "Hwvtxrc] In the spirit of Steve Carrell’s memorable portrayal of disdainful expert Mark Baum in The Big Short [https://en.wikipedia.org/wiki/The_Big_Short_(film)]: “Zero. Zero. Zero percent [of design systems thrived without centrally allocated people to make and support it].” None experienced federated-only success without a investment in central capacity. Federated-only is not a choice. # Federated is a False Choice So let’s get to it. Why isn’t federated-only a choice? The diagram’s arrangement implies choice, unfortunately. Should your design system be centrally managed or a federated community? The article bridged to federated misleadingly with “if a central model doesn’t fit, there is a more complicated path to pursue…” The implication was clear: choose federated! Ugh. Positioning central versus federated as a mutually exclusive choice was a mistake. ## Embracing federated doesn’t mean avoiding central That’s thinking in binary, described well in Black and White Thinking:The",
+      "metadata": {
+        "startIndex": 6179,
+        "endIndex": 7175,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "n’t mean avoiding central That’s thinking in binary, described well in Black and White Thinking:The Burden of a Binary Brain in a Complex World [https://www.amazon.com/Black-White-Thinking-Burden-Complex/dp/1250829453/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.fCyRr4zq4XSMwuXkcB7Lg52MBd3-BEuXOZho_cJ6KibBXBMFvW8WJvu1VDWlay9ymOOhysW8jju_Nxz9WZj6MBikJjFqUhEwQaRakqx4ouxqJoCc04zTafzQ9vafykZf8Ysporuo5PCBxtY7AR7FOUeI9rNx_mWXd4xc-0Zrt7lOi4ACoR8mmjJjq2LACProG-o4cFDbTekQd8DeR5BquGtBA1uqP5kAuRk3g0YYNgM.ecV6WkVEsVGM5cAWh8YhTyKVvV2rD-U2uIMYjDO_kIQ&qid=1726158216&sr=8-1]. Just because there’s two options doesn’t make them mutually exclusive. It certainly doesn’t mean that if federated is desirable, then central isn’t. Shift that or to an and. In my practice, successful design systems always have a central team and always seek the participation (and, if worth it, contribution) from a federated community. Evolving models to invest in both to varying degrees.",
+      "metadata": {
+        "startIndex": 7075,
+        "endIndex": 8053,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "it, contribution) from a federated community. Evolving models to invest in both to varying degrees. ## Being only federated doesn’t work When discussions get tough, bracket the conversation with an uncomfortable extreme. Injecting an intentionally impractical assertion can establish the value of centrally allocated people: It’s not as if we should create an empty Figma library file, empty code repository, and empty ZeroHeight instance and encourage contributors to have at it. Instead, central people setup architecture, create tools, define process, create playbooks, and support the platform. 100% of the time, those central people make and maintain the core components too. ## Don’t choose federated. Instead, add federated. Gradually. As you consider your system’s future, consider how to progressively add federated contribution gradually to a centrally supported endeavor. If federated work really succeeds, you may even tune down central investment as circumstances permit.",
+      "metadata": {
+        "startIndex": 7953,
+        "endIndex": 8938,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "federated work really succeeds, you may even tune down central investment as circumstances permit. A stable and complete core architecture (when the design system isn’t going through a period of generational change [/@nathanacurtis/design-system-generations-65f99960dc3d]) can evolve with federated contributions coupled with a lower investment in central curation. Don’t hold your breath, however. I’ve rarely experienced conditions in the past decade where either stable or complete hold for long, let alone both. ## Federated is optional. Some teams gradually incorporate federated influence, such as via tiers [/eightshapes-llc/design-system-tiers-2c827b67eae1] and shared libraries [/eightshapes-llc/figma-shared-libraries-d2dfbf9d1b8d]. However, many systems thrive and create tremendous value without a focus on contributions. Some systems even transcend contributions, shedding responsibility to let the community fend for itself.",
+      "metadata": {
+        "startIndex": 8838,
+        "endIndex": 9778,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "systems even transcend contributions, shedding responsibility to let the community fend for itself. I revere Atlassian’s design system [https://atlassian.design/] and have cited the Atlaskit code catalog for years as a vibrant melting pot of contribution. Their community-supported Editor component [https://www.npmjs.com/package/@atlaskit/editor-core?activeTab=versions] hit major version 197 recently! Yet, Editor seems a concern now separate from the core system, which explicitly limits contributions to fixes [https://atlassian.design/resources/contribution]: We are currently accepting … fixes … At this time, we are unable to take [small enhancement, major enhancement, and new component or pattern] contributions. Their rationale cites familiar values: build for widely shared need, ensure quality, avoid being a bottleneck. Just because Editor is a component, serving and evolved by a community doesn’t mean it “goes in the design system” (even though it’s clearly in a system).",
+      "metadata": {
+        "startIndex": 9678,
+        "endIndex": 10666,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "by a community doesn’t mean it “goes in the design system” (even though it’s clearly in a system). I love it! # Federated Anchors Damaging Myths Stakeholders anchor assumptions the moment they see that diagram. An anchoring bias [https://en.wikipedia.org/wiki/Anchoring_effect] is a cognitive bias by which stakeholders rely heavily on what’s first presented (and how they interpret it), and new information is referenced relative to that anchor rather than considered objectively. This distorts new information, impairing influence and decision making. Many of those assumptions are damaging myths, including: ⚓︎ Everyone can, should and will contribute.⚓︎ Every component made goes in the system.⚓︎ Anyone that makes UI is capable of contributing.⚓︎ All UI components of any level of composition are welcome.⚓ ︎Federated contribution is a primary success indicator.⚓ Federated gets you a design system for free. When educating stakeholders, you want to be on the front foot.",
+      "metadata": {
+        "startIndex": 10566,
+        "endIndex": 11544,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "d gets you a design system for free. When educating stakeholders, you want to be on the front foot. You want to confidently build a rational case so they understand impacts, opportunities, risks and efforts ahead. You don’t want to position yourself as saying “No” repeatedly to correct mistaken assumptions of superiors that approve or deny the system’s existence. So, you face a choice: let the anchored myths stick, or contradict your stakeholders and unwind the myths. Weighing anchor [https://en.wikipedia.org/wiki/Weigh_anchor] is difficult, effortful and worst of all, risky. Let’s dig in to each one. ## Myth: ⚓ Everyone can, should and will contribute. Fact: Few if any contribute meaningful new features and enhancements. Wait, if almost no one will contribute, then this isn’t made by everybody? (Yes.) That’s bad. It can be very, very good to have central team makes a library everyone depends on.",
+      "metadata": {
+        "startIndex": 11444,
+        "endIndex": 12354,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "s.) That’s bad. It can be very, very good to have central team makes a library everyone depends on. A central team can focus on details, solicit shared needs, architect small parts into a cohesive whole, document and release it, and support others. Federated people don’t, can’t and/or won’t do that. ## Myth: ⚓ Every component made goes in the system. Fact: Almost all components made across teams don’t belong in the system. Wait, so the system will have barely any components our organization makes, and most of the UI everyone makes isn’t going to be shared? (Yes.) That stinks. Design systems offer assets that serve widely shared needs and prioritize features that can evolve in a stable way to serve many groups. You should expect that teams will still need to create considerable UI using system assets. You should also expect that most components that teams make — even low level components — will not serve a need shared by other teams, and thus don’t belong in any system.",
+      "metadata": {
+        "startIndex": 12254,
+        "endIndex": 13238,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "evel components — will not serve a need shared by other teams, and thus don’t belong in any system. ## Myth: ⚓ Anyone that makes UI is capable of contributing. Fact: Most contributors lack systems experience generally and knowledge of this system’s architecture specifically to contribute efficiently. Wait, so people can’t contribute because you say they lack skills? (Yes.) That’s terrible gatekeeping and risks morale. Design systems are about business value. If the cost to steward a contribution (effort of all participants plus maintenance and opportunity cost [https://en.wikipedia.org/wiki/Opportunity_cost]s) exceeds business benefits (value of reusable assets and staff personal development), then the contribution is a bad idea. Only do it if it’s worth it. Additionally, identifying directly responsible individuals [/@mmamet/directly-responsible-individuals-f5009f465da4] (DRI) and teams leads to the clarity needed for a satisfying workplace.",
+      "metadata": {
+        "startIndex": 13138,
+        "endIndex": 14095,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "e-individuals-f5009f465da4] (DRI) and teams leads to the clarity needed for a satisfying workplace. Positioning capable and talented staff in DRI roles is a strength. Finally, central systems practitioners are responsible to support system integration, pair with others, and curate contributions that do arise. Sharing knowledge and resolving incidents responsively are ways of how system practitioners can be a rising tide lifting everyone’s capability. ## Myth: ⚓ Components of any level of composition are welcome. Fact: Design systems are visual foundations threaded through a library of usually lower-level UI components that equip teams to compose digital experiences on their own teams. Wait, system UI components are limited to a bunch of low-level widgets? (Yes, at least in the core library.) That’s lame and lacks business value. There’s a ton of business value in that. Have you seen what goes into a system’s `button`, `alert` , `textInput` or `modal`?",
+      "metadata": {
+        "startIndex": 13995,
+        "endIndex": 14961,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "value in that. Have you seen what goes into a system’s `button`, `alert` , `textInput` or `modal`? Each relies on 10s or 100s of visual attributes across a component’s anatomy, property configurations, layouts, behaviors and other stuff. That’s measurable work, done at a high-level of accessible quality, packaged as design and code libraries so that other teams don’t need to make that stuff. ## Myth: ⚓ Federated contribution is our primary success indicator. Fact: Core libraries made by a central team and containing no contributions from outsiders can be extremely valuable. Wait, if our goals are to make a library and enable other people to use the library, how does users that contribute to the library matter?(Exactly.)That feels wrong. When semi-annual or annual planning season comes along, federated contribution is rarely a published objective and never an existential one focusing a significant proportion of central people’s capacity (although efforts to like Figma Shared Libraries",
+      "metadata": {
+        "startIndex": 14861,
+        "endIndex": 15861,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "ignificant proportion of central people’s capacity (although efforts to like Figma Shared Libraries [/eightshapes-llc/figma-shared-libraries-d2dfbf9d1b8d] are pursued secondarily). Instead, federated investments are often on the periphery, deprioritized in favor of other efforts. It’s never a galvanizing singular focus of a system’s team relative to responsible people making system outputs and enabling others to successfully use them. ## Myth: ⚓ Federated gets you a design system for free. Fact: Successful federated activity requires a non-trivial capital expense and ongoing operational costs to make and maintain a platform, support federated people, and curate contributions. It’s not free. Wait, so I need to pay for a group of people to build a platform and make it all work when seconds ago I thought this was largely free?(Yes.) That’s expensive. Going federated in the long run means more than composing a designer’s playbook (often not read) and developer’s `CONTRIBUTING.md`.",
+      "metadata": {
+        "startIndex": 15761,
+        "endIndex": 16753,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "means more than composing a designer’s playbook (often not read) and developer’s `CONTRIBUTING.md`. There’s far more work needed. Once built, using platforms isn’t a long leap for developers. Coding in systems should be familiar: build modularly, manage dependencies, run test suites, commit to repos, review a pull request. Tasks are familiar (if with some system spice) such that once setup, running a platform can be predictable. However, there’s still the work of curation, quality and approval for core engineering maintainers to do. Familiarity is less true for designers, where diverse tasks carry unfamiliar system-specific expectations [/eightshapes-llc/design-system-ui-is-more-expensive-than-a-product-teams-ui-f3c3e48c555]. Audit and synthesize shared needs. Compare existing component examples. Devise an API. Document usage. Produce and test high quality Figma assets [/eightshapes-llc/testing-figma-components-a47fc978465f].",
+      "metadata": {
+        "startIndex": 16653,
+        "endIndex": 17593,
+        "chunkIndex": 19,
+        "section": "Introduction",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "roduce and test high quality Figma assets [/eightshapes-llc/testing-figma-components-a47fc978465f]. The bar is higher and skills are different than “normal product design work.” Learning takes practice and collaboration time with system experts (read: operational cost) to produce good things and grow individually. I love that work, which offers tremendous intrinsic reward. But it’s time consuming. You reap what you sow. Did you notice how verbose it is explaining away those myths? Did you even read the text above, or did you skim it as your mind drifted? Now, imagine you are a stakeholder that had to listen to someone — often lower level or from a different group — contradicting what you believe. So be careful. Explaining what you don’t get with federated contribution isn’t just complicated. It risks irritation, boredom, distraction, insufficient time, indignation, and dismissiveness. Such emotions are not to be trifled with.",
+      "metadata": {
+        "startIndex": 17493,
+        "endIndex": 18433,
+        "chunkIndex": 20,
+        "section": "Introduction",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "tion, insufficient time, indignation, and dismissiveness. Such emotions are not to be trifled with. # References to Central v Federated Models The following posts all reference the concepts of central and federated models described in Team Models for Scaling a Design System [/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0]. The Salesforce Team Model for Scaling a Design System [/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b] by Jina Anne [https://medium.com/u/f5d1807b4e38?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2015• Designing a Design System (a step by step guide) [https://www.linkedin.com/pulse/designing-design-system-step-guide-sascha-marc-louis-henrich/] by Louis Henrich, 2017 Scaling Design as the Company Grows [https://uxplanet.org/scaling-design-as-the-company-grows-e99af38f9e8d] by Ian Armstrong",
+      "metadata": {
+        "startIndex": 18333,
+        "endIndex": 19253,
+        "chunkIndex": 21,
+        "section": "Introduction",
+        "globalChunkIndex": 21
+      }
+    },
+    {
+      "id": "chunk-22",
+      "text": "pany Grows [https://uxplanet.org/scaling-design-as-the-company-grows-e99af38f9e8d] by Ian Armstrong [https://medium.com/u/4709e5887030?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2018The Paradox of Design Systems [https://spotify.design/article/the-paradox-of-design-systems] by Brendon Manwaring [https://medium.com/u/b58d5887fe0f?source=post_page---user_mention--23b9a9a05542---------------------------------------] and Josh Mateo [https://medium.com/u/506b37832ee2?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2018Tips For Managing Design Systems [https://www.smashingmagazine.com/2019/05/tips-managing-design-systems/] by Nick Babich [https://medium.com/u/bcab753a4d4e?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2019Design Systems: Why Do They Matter? [https://bootcamp.uxdesign.cc/design-systems-why-do-they-matter-83149e76101c] by Marcela Morales",
+      "metadata": {
+        "startIndex": 19153,
+        "endIndex": 20138,
+        "chunkIndex": 22,
+        "section": "Introduction",
+        "globalChunkIndex": 22
+      }
+    },
+    {
+      "id": "chunk-23",
+      "text": "r? [https://bootcamp.uxdesign.cc/design-systems-why-do-they-matter-83149e76101c] by Marcela Morales [https://medium.com/u/63e1625a9efa?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2021Remarkable UX Design Teams [https://isadoradigitalagency.com/insights/strategy/ux-design-teams] by Isadora Agency [https://medium.com/u/85d64590100?source=post_page---user_mention--23b9a9a05542---------------------------------------] , After 2019• How do teams work with your Design System? [https://www.linkedin.com/pulse/how-do-teams-work-your-design-system-raktim-chatterjee/] by Raktim Chatterjee, 2022 Is your design system performing? [https://rangle.io/blog/is-your-design-system-performing] by Alicia Cheung [https://medium.com/u/7f33e8acc40?source=post_page---user_mention--23b9a9a05542---------------------------------------] and Rebecca Holland, 2022Design Systems: Investing in the People Behind the System",
+      "metadata": {
+        "startIndex": 20038,
+        "endIndex": 20984,
+        "chunkIndex": 23,
+        "section": "Introduction",
+        "globalChunkIndex": 23
+      }
+    },
+    {
+      "id": "chunk-24",
+      "text": "---------------] and Rebecca Holland, 2022Design Systems: Investing in the People Behind the System [https://www.viget.com/articles/design-systems-investing-in-the-people-behind-the-system/] by Reneé Cagnina Haynes [https://medium.com/u/cf83bc1ff014?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2022• From Vision to Reality: The Roadmap to Building an Enterprise Design System [https://apiko.com/blog/enterprise-design-system/] by Oleksii Popovych, 2023 Opening up the Design System for Everyone — The Federated Model [https://bootcamp.uxdesign.cc/opening-up-the-design-system-for-everyone-11b9b92f3f75] by Anirudh Hothur [https://medium.com/u/b4cb61d5a5c0?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2023Implementing a Design System in an Existing Product [https://www.netguru.com/blog/design-system-in-existing-product] by Justyna Klimkowska",
+      "metadata": {
+        "startIndex": 20884,
+        "endIndex": 21815,
+        "chunkIndex": 24,
+        "section": "Introduction",
+        "globalChunkIndex": 24
+      }
+    },
+    {
+      "id": "chunk-25",
+      "text": "ting Product [https://www.netguru.com/blog/design-system-in-existing-product] by Justyna Klimkowska [https://medium.com/u/13df56357048?source=post_page---user_mention--23b9a9a05542---------------------------------------] , 2024• The merits of design systems [https://www.baianat.com/books/merits-of-design-systems/design-systems-and-their-benefits] by Balanet, 2024 • ROI of Having a Design System by Kim Nguyen [https://www.netguru.com/blog/roi-design-systems], 2024 • How to build effective enterprise design systems for your company [https://webflow.com/blog/enterprise-design-systems] by Webflow, 2024 Design System: Pancake [https://www.mikhailbelstar.com/portfolio/project-ds-fevo] by Mikhail Belstar [https://medium.com/u/784637ff1e0f?source=post_page---user_mention--23b9a9a05542---------------------------------------] Keeping design system contributions in check [https://www.designsystems.com/keeping-design-system-contributions-in-check/] by Wart Burggraaf",
+      "metadata": {
+        "startIndex": 21715,
+        "endIndex": 22684,
+        "chunkIndex": 25,
+        "section": "Introduction",
+        "globalChunkIndex": 25
+      }
+    },
+    {
+      "id": "chunk-26",
+      "text": "eck [https://www.designsystems.com/keeping-design-system-contributions-in-check/] by Wart Burggraaf [https://medium.com/u/d86823ecc6f0?source=post_page---user_mention--23b9a9a05542---------------------------------------] Design Systems Process Front End Development UX Design Visual Design -- -- 9 [/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F23b9a9a05542&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40nathanacurtis%2Fthe-fallacy-of-federated-design-systems-23b9a9a05542&source=---footer_actions--23b9a9a05542---------------------bookmark_footer------------------] Follow ## Written by Nathan Curtis 30K followers [/@nathanacurtis/followers?source=post_page---post_author_info--23b9a9a05542---------------------------------------] ·252 following [/@nathanacurtis/following?source=post_page---post_author_info--23b9a9a05542---------------------------------------] Design systems consultant contributing to the field through the specs plugin, writing and workshops.",
+      "metadata": {
+        "startIndex": 22584,
+        "endIndex": 23582,
+        "chunkIndex": 26,
+        "section": "Introduction",
+        "globalChunkIndex": 26
+      }
+    },
+    {
+      "id": "chunk-27",
+      "text": "esign systems consultant contributing to the field through the specs plugin, writing and workshops. VT & @uchicago grad. Follow ## Responses (9) See all responses Help Status About Careers Press Blog Privacy Rules Terms Text to speech",
+      "metadata": {
+        "startIndex": 23482,
+        "endIndex": 24482,
+        "chunkIndex": 27,
+        "section": "Introduction",
+        "globalChunkIndex": 27
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "team-models;governance;centralization"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:16.429Z",
+    "system": "EightShapes (Nathan Curtis)",
+    "author": "Nathan Curtis",
+    "version": "1.0",
+    "source_url": "https://medium.com/@nathanacurtis/the-fallacy-of-federated-design-systems-23b9a9a05542"
+  }
+}

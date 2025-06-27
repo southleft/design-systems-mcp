@@ -1,0 +1,68 @@
+{
+  "id": "EWr7rhLS8jsdB7NKPoz7U",
+  "title": "Component Process: Design Alignment",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/design-alignment",
+    "ingested_at": "2025-06-27T02:59:41.699Z"
+  },
+  "content": "Design alignment - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 2.4 Design alignment. Phase --> Design Type Focus --> Time --> 1-3 hours ## What is it? A session with Designers and Developers to agree on the final designs. ## Why do we do it? After going through rounds of exploration, crits and testing, your team will likely be on different pages regarding where you are in the process. Final design alignments are a great way to review any feedback from crits, user testing, and design refinements to share your final version of the component everyone can agree on. It also is a final round to cover anything that has been overlooked. ## How do we do it? ### Put together your final proposal Your final proposal is an informal presentation which will include the following — #### User testing and feedback from your design phase This is to showcase how you got to your final proposed component and get everyone aligned with your process. • Any fundamental discoveries from user testing • Insights from crits • Any further research you did as part of the design phase #### The proposed component Component fidelity • All of the different states, types and properties Any animation or interactions • Include prototypes Accessibility considerations • Scaling text and fallbacks • Colour considerations ### Example agenda • Walk-through of design exploration and final iteration and justification for design decisions • Platform discussion on component fidelity and scope Discussion on the next steps for the spec doc • What is needed and what’s not ## Outcomes • Clear alignment and direction of the fidelity of the component. Next steps. Hot tips Take time to take everyone on the journey with you. If you have a clear justification for how you got to your final design, it’ll be much easier to sell to your team. Don’t forget, if you’ve been following this process, your team should have already been giving feedback along the way, so this session should be pretty straightforward and more of a roundup/recap of how you got to your final design. ## Up next Step 3.1 Spec doc Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Design alignment - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 2.4 Design alignment. Phase --> Design Type Focus --> Time --> 1-3 hours ## What is it?",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 937,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ut [/about] 2.4 Design alignment. Phase --> Design Type Focus --> Time --> 1-3 hours ## What is it? A session with Designers and Developers to agree on the final designs. ## Why do we do it? After going through rounds of exploration, crits and testing, your team will likely be on different pages regarding where you are in the process. Final design alignments are a great way to review any feedback from crits, user testing, and design refinements to share your final version of the component everyone can agree on. It also is a final round to cover anything that has been overlooked. ## How do we do it? ### Put together your final proposal Your final proposal is an informal presentation which will include the following — #### User testing and feedback from your design phase This is to showcase how you got to your final proposed component and get everyone aligned with your process. • Any fundamental discoveries from user testing • Insights from crits • Any further research you did as part of",
+      "metadata": {
+        "startIndex": 837,
+        "endIndex": 1838,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ental discoveries from user testing • Insights from crits • Any further research you did as part of the design phase #### The proposed component Component fidelity • All of the different states, types and properties Any animation or interactions • Include prototypes Accessibility considerations • Scaling text and fallbacks • Colour considerations ### Example agenda • Walk-through of design exploration and final iteration and justification for design decisions • Platform discussion on component fidelity and scope Discussion on the next steps for the spec doc • What is needed and what’s not ## Outcomes • Clear alignment and direction of the fidelity of the component. Next steps. Hot tips Take time to take everyone on the journey with you. If you have a clear justification for how you got to your final design, it’ll be much easier to sell to your team. Don’t forget, if you’ve been following this process, your team should have already been giving feedback along the way, so this session",
+      "metadata": {
+        "startIndex": 1738,
+        "endIndex": 2735,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ing this process, your team should have already been giving feedback along the way, so this session should be pretty straightforward and more of a roundup/recap of how you got to your final design. ## Up next Step 3.1 Spec doc Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 2635,
+        "endIndex": 3635,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "alignment;consensus;stakeholders;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:41.699Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/design-alignment"
+  }
+}

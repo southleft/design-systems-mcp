@@ -1,0 +1,442 @@
+{
+  "id": "WwhXPzBZvIwV0sNBJ9CyJ",
+  "title": "Cutting deep through Blade: A case study on design system adoption",
+  "source": {
+    "type": "url",
+    "location": "https://engineering.razorpay.com/cutting-deep-through-blade-23a72bcc3bcc",
+    "ingested_at": "2025-06-27T02:45:17.185Z"
+  },
+  "content": "Cutting deep through Blade. A case study on design system adoption | by Abinash Shaw | Razorpay Engineering Sitemap [/sitemap/sitemap.xml] Open in app Sign up [https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Sign in [https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Medium Logo Write Sign up [https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Sign in [https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] ## Razorpay Engineering · Follow publication [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fcollection%2Frazorpay-engineering&operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&collection=Razorpay+Engineering&collectionId=6407ad2e59af&source=post_page---publication_nav-6407ad2e59af-23a72bcc3bcc---------------------publication_nav------------------] Razorpay’s Engineering blog, decoding how we build India’s Financial Infrastructure backbone Follow publication [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fcollection%2Frazorpay-engineering&operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&collection=Razorpay+Engineering&collectionId=6407ad2e59af&source=post_page---post_publication_sidebar-6407ad2e59af-23a72bcc3bcc---------------------post_publication_sidebar------------------] # Cutting deep through Blade ## A case study on design system adoption Abinash Shaw [https://medium.com/@nashcheez?source=post_page---byline--23a72bcc3bcc---------------------------------------] 17 min read· May 13, 2024 -- [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F23a72bcc3bcc&operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=---header_actions--23a72bcc3bcc---------------------bookmark_footer------------------] Listen Share In March of 2022 when I was interviewing for a role of an Engineering Manager at Razorpay Engineering [https://medium.com/u/b25ec63c1c9b?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] for the Platform Frontend Infrastructure team, my now peers Kamlesh Chandnani [https://medium.com/u/45305dd0d625?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] & Chaitanya Deorukhkar [https://medium.com/u/6f2098c07e83?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] asked me a simple question. How will you drive the adoption of our design system? I was amused at the question. I came from a background of having built the UI Toolkit and the foundations of the Design System at Goldman Sachs [https://design.gs.com/home] as an individual contributor. My answer was simple — We will build a good product, ship fast, provide support and our consumers will automatically start using the design system because it will make their lives easy. After 2 years from then I now understand why my interviewers were far from convinced. This single problem has manifested itself as one of the most challenging & mysterious puzzles of my professional experience. We have come a long way since then and I will lay down a few principles based on our experiences on how we navigated through leadership alignment, quantified adoption metrics, org-wide goal settings & consumer delight to unravel the enigma of design system adoption. # Introduction to Blade Razorpay [https://razorpay.com/] is one of India’s largest and fastest-growing financial services companies serving 10 million businesses and providing multiple streams of products across different platforms. The finance industry as a domain can be tricky where user perception & trust are of the utmost importance. A user is more likely to click on a payment button if they can associate it with a brand. We set out on building Razorpay’s design system Blade to solve for many of these problems with some core foundations — design consistency, developer productivity, cross-platform compatibility, code reusability across desktop, mweb & React Native, responsiveness & accessibility. Much has been said about the principles that Blade has been built on which I won’t delve deep into, the focus of this writeup is solely going to be the adoption of Blade. However, I will attach a few references in case you are interested to know more about how Blade has been built from ground-up. • Frontend Foundations with a Platform team [/laying-the-frontend-foundations-with-a-platform-team-62c21c37bf9c] • Building reusable UI components while balancing flexibility vs constraints [/lessons-learned-from-building-reusable-ui-components-bb34289cd438] • Organising Design Systems [https://medium.com/razorpay-design/organising-design-systems-3f191c4e00c0] • Designing a Design System component [https://medium.com/razorpay-design/behind-the-scenes-of-designing-a-design-system-component-7969636fabf4] If you are interested in deep diving more into the technical aspects & implementation of Blade, I would recommend the following reads. • Blade’s Storybook documentation [https://blade.razorpay.com/] • Blade’s foundational RFCs [https://github.com/razorpay/blade/tree/master/rfcs] # Adoption Although everyone agrees in principle on the benefits & need of a design system, the quintessential question that arises is “Why is design system adoption so challenging?”. I will try to lay out a few probable reasons. • Product & functional teams often chase business metric goals & are willing to achieve the same without an overhead or restriction on infrastructure. • Developers are set in their own ways when it comes to workflows and are resistant to change. • Designers feel design systems restrict creativity. • Leadership feels the integration of a design system with a project may affect a product’s timeline. • People are lazy. Both developers & designers have a learning curve and would often avoid the friction of understanding a new tool or a system. • Platform teams don’t take additional efforts to market the design system well. Although all of the above reasons are understandable from a consumer perspective, they are short-sighted and result in the accumulation of tech debts. In the long run, adoption of the design system is to solve for developer productivity by accelerating delivery due to standardisation of components, less incoherence between design & development and to aim for brand consistency. The outcomes have far larger perks for the org once we have pushed ourselves beyond the initial hurdles mentioned above. There are no certain rules of the trade to master design system adoption. Each one generally has its own journey depending on the type, size & maturity of the organisation. I will detail out the journey of Blade’s adoption, some of which are accepted standards while others have needed much fine-tuning over the years. ## Documentation I often say documentation is the butter to a developer’s bread. It is the cornerstone on top of which great engineering solutions are built. Design system teams are usually small, it’s physically draining & certainly impractical for a small group of people to keep on supporting multiple teams and products individually throughout the buildout of the system. This is why a good design system documentation keeps consumer support at bay & addresses much of the common queries users might have on foundations, components and patterns. With Blade we structured our documentation in the following ways. Storybook Blade’s developer documentation [https://blade.razorpay.com/] is built on Storybook [https://storybook.js.org/] which is a great tool to document UI component examples in isolation by extracting out data and business logic. The documentation for Blade includes developer friendly guides on how to install, guides for local development, component status, foundational tokens, utils & components. The team pays extra attention to the component documentation where we mention component descriptions, Figma embeds of component types & usage, live code editors to meddle around with the component, API decisions (read below), API table with prop names, description & defaults, and real world examples of different variants of the component. A real world card body content example from Blade’s card documentation [https://blade.razorpay.com/?path=%2Fdocs%2Fcomponents-card--docs#card-body-content]Blade’s design documentation is hosted on Figma and is quite extensive defining the anatomy of a component, visualisation on light/dark modes, different properties & foundational tokens used, intents & variants, pseudo states of the component (hover, focused, active, disabled), guidelines on Do’s and Don’ts, content guidelines, motion and accessibility. Tooltip Tooltip design documentation & usage guidelinesSwitch motion guidelinesComponent API Decisions A foundational principle that Blade is based on is “what you see in design is what you get in code”. To explain that narrative better I would highlight that our ideal future state from Day 1 has been to reduce the designer-developer friction to zero. All the component properties on Figma have a 1:1 mapping to React props for ease of translation, there is no exception to this philosophy. Thus, special attention is paid to how we create component APIs, default values, component naming conventions etc. For alignment the team documents these decisions and provides reasons, and we float it around with all Frontend Leads from different products in the org for a review. This is to ensure a collective responsibility on the decisions and to keep a check on if the team missed an edge case for a product. Once we have a sign off from everyone then the team begins the implementation. Take the example of the Cards API decisions where multiple APIs have been discussed and their pros & cons listed out. You can browse through other API decisions [https://github.com/razorpay/blade/tree/master/packages/blade/src/components] in the `component/_decisions` folder. ## blade/packages/blade/src/components/Card/_decisions/decisions.md at master · razorpay/blade ### Design System that powers Razorpay. github.com Announcements As mentioned previously, one of the roadblocks to DS adoption is a Platform team not marketing their system enough. Product teams are often caught up with features, releases, bugs, incidents etc. and might not pay immediate attention to the possibility of an infrastructure enhancement. Hence, it’s imperative for a DS team to over-publish about new upgrades, component additions, DS bug resolutions etc. while making it catchy to be in the spotlight. Take the example of a Blade Progress Bar release here where Chaitanya Deorukhkar [https://medium.com/u/6f2098c07e83?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] highlights the necessary features of the component while the video does its job of getting consumers excited to try out the component. Blade’s Progress Bar [https://blade.razorpay.com/?path=%2Fdocs%2Fcomponents-progressbar--docs] announcementEase of Onboarding As companies scale and a DS consumer base grows, it’s of paramount importance that Platform teams integrate a knowledge transfer workflow into the onboarding of a new employee. This essentially ensures the chain of information flows from one consumer to another without much burden on the DS team. At Razorpay, we have created a workflow on an internal tool which is a prerequisite for every designer that comes into the firm before they start working on any project. Blade learning modules for new joiners & early adopters ## Internal usage metrics Razorpay as an org follows the OKR methodology [https://en.wikipedia.org/wiki/Objectives_and_key_results], which means that every goal or decision needs to be backed up by a numerical metric to define a success criteria. We wanted to extend the same format for every decision we took on Blade and conclusions were to be drawn through data. The first step towards the idea was for the team to understand how our consumers were using our components via usage instrumentation. We made use of react-scanner [https://www.npmjs.com/package/react-scanner], a nifty utility that helped us understand the total occurrences of a component, usage categorised by projects, widely used vs less used props etc. This helped the team to comprehend the pattern of component usages, demise any prop/token that wasn’t used, invest in the more utilised family of components (input, feedback) etc. Component usage categorised via projects Props usage for the Button component ## Page % coverage During a meeting with our co-founder Shashank Kumar [https://medium.com/u/18d21a11dba1?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , we were brainstorming on his vision for the design system. His questions were simple and valid – “I don’t know how the org is using Blade today. If you tell me that 4–5 projects are using the design system I don’t know if that’s a good number or not. How much of Blade are they actually using?” While we had solved for the internal instrumentation of our components, we didn’t exactly know how were our consumers using Blade. I could tell you that Product A used the Button component 100 times (which most design systems enable) but I couldn’t say for sure if all of the Buttons in the product were from Blade or if there were any misses. We wanted to establish a framework for the Design System Adoption OKR, attach a metric to it and follow it up with a goal. However, we soon realised that there is no definite standard to measure the adoption of a design system. We initially thought of taking a dev productivity goal and tried to figure how much less JS and CSS code developers are writing based on the number of component usages, but that turned out to be a dead end. It was impractical to track how much code developers would have written in isolation of business logic in case a component wasn’t present. While brainstorming on multiple solutions the team did finally stumble upon a Eureka moment — what if we could develop a mechanism where we could take an HTML node as a base molecule and calculate the number of nodes that are coming from Blade relative to the total nodes on the page. We could then have a framework for measuring how much % of a page is built using the nodes from the components of Blade! % Page Coverage = Total Blade nodes / Total number of page nodes * 100 Anurag Hazra [https://medium.com/u/bf2e65f6d437?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] translated this simple idea into a small script while ignoring hidden & empty nodes, and nodes that weren’t in the purview of the design system (img, svg, media elements etc.) /** * Checks if DOM node is hidden or not */const isElementHidden = (element) => { if (element.parentElement && isElementHidden(element.parentElement)) { return true; } if (!(element instanceof HTMLElement)) { return false; } if (element.hidden) { return true; } const style = getComputedStyle(element); return style.display === &#x27;none&#x27; || style.visibility === &#x27;hidden&#x27; || style.opacity === &#x27;0&#x27;;};/** * Checks if DOM element is empty or not */const isElementEmpty = (element) => { if (!element) return true; if (!element.childNodes.length) { return true; } return false;};/** * Checks if DOM node is a media element or not */const isMediaElement = (element) => { const mediaTags = [&#x27;img&#x27;, &#x27;video&#x27;, &#x27;audio&#x27;, &#x27;source&#x27;, &#x27;picture&#x27;]; return mediaTags.includes(element.tagName.toLowerCase());};const calculateBladeCoverage = () => { const allDomElements = document.querySelectorAll(&#x27;body *&#x27;); const bladeNodeElements = []; const totalNodeElements = []; allDomElements.forEach((elm) => { if (isElementHidden(elm)) return; if (isElementEmpty(elm)) return; if (isMediaElement(elm)) return; totalNodeElements.push(elm); if (elm.hasAttribute(&#x27;data-blade-component&#x27;)) { bladeNodeElements.push(elm); } else if (elm.closest(&#x27;[data-blade-component]&#x27;)) { bladeNodeElements.push(elm); } }); const totalNodes = totalNodeElements.length; const bladeNodes = bladeNodeElements.length; const bladeCoverage = Number(((bladeNodes / totalNodes) * 100).toFixed(2)); return { bladeCoverage, totalNodes, bladeNodes, bladeNodeElements, };};console.log(calculateBladeCoverage());Tip: You can figure out the Blade % coverage of razorpay.com [http://razorpay.com] by executing the above snippet in the developer console. Once we had a framework we put our thesis to test and it worked! Many of our current pages that were built using Blade had a meagre coverage of 40–50%. We integrated the script with all our apps to periodically push this data as an instrumentation event & built dashboards for continuous monitoring. Now we had a metric to chase! Overall and page-wise Blade coverage for a couple of our apps The page % coverage metric soon became a standard in the org that new modules and apps were being assessed by. To make it seamless for developers to use the script and for stakeholders (leaders, product managers, designers etc.) to figure which sections of a page were from Blade vs which weren’t Sumit Gupta [https://medium.com/u/5a8116e19715?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] & Anurag Hazra [https://medium.com/u/bf2e65f6d437?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] integrated it with a Chrome extension that provide the % coverage for any page and highlighted non Blade-nodes on the page. Blade Chrome extension displays % coverage & highlights non-Blade nodes Owing to the success of the % page coverage metric in Engineering, we further extended it to Design where it made sense to have a checkpoint so that design handovers are accompanied by adequate Blade coverage before development begins. Kamlesh Chandnani [https://medium.com/u/45305dd0d625?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] created the Figma Blade Coverage plugin [https://www.figma.com/community/plugin/1258393250170675750/blade-coverage] to calculate the coverage by evaluating the design layers and attaching a tiny card on top of each design frame before design handover. Chaitanya Deorukhkar [https://medium.com/u/6f2098c07e83?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] explains in details the above implementations of the Internal usage metrics and % page coverage in his talk on Measuring A Design System’s Success. Also, read Dan Mall’s [https://x.com/danmall/status/1513526864320602116?s=46&t=ZLb-Z0xQ9ayWgCYah7b4-g] article on Design System coverage [https://danmall.com/posts/design-system-coverage/] for the United Airlines homepage that was an inspiration to this implementation. ## Central org goals Establishing a framework to measure Blade coverage was laying the groundwork for design system adoption. The strategy to bifurcate a page into Blade nodes vs non-Blade nodes and the aggregate average of Blade % pages in an app helped us define baselines for each apps as a single metric. Once the baselines were ready, we could then develop and write a strategy on the need of design system adoption, future state, risks and possible org wide goals for design & engineering. While developing and strategising adoption goals, we needed to take care of two things — all new apps should be built using Blade while all older modules of existing apps should also be prioritised to be migrated to Blade to maintain consistency in language. This culminated in the following org goals for Razorpay. O: All the frontend apps have a coverage of at least 20% of Blade components — KR: New modules/apps have coverage > 70% — KR: 90% of traffic pages have at least 50% blade coverage The overall target for all apps was set to achieve 20% as an aggregate average of all pages or modules defined uniquely by routes. This was to be achieved by a 70% coverage of all new pages which was a no brainer. However, the trickier bit was to migrate older pages where instead of focusing on a certain count of pages we decided to spotlight only on pages that had heavy traffic to maintain visual consistency from a consumer’s view point. While writing design system strategies it’s also important to detail out the minute details like design strategy, contribution & migration guidelines etc. to iron out any inconsistencies between teams, application owners or new stakeholders, check attached example. ## Support Despite the maturity, completeness or exhaustive documentation, it’s crucial for design system adoption to have a well defined support process to enable or assist consumers during blockers. For Blade we have aided our consumers in the following ways.- Open office hours for engineers & designers to discuss doubts or new use cases (twice a week)- Github Issues [https://github.com/razorpay/blade/issues] with well defined labels - Ad-hoc support requests on JIRA- Dedicated Slack channels for quick queries A detailed Slack support example for Blade issues on react-nativeOur support structure has not only facilitated our consumers in multitude ways to explore the foundations & components of the design system but also has played a part in enabling the platform team to learn more about new patterns, common usages or enhancements to existing components resulting in the continued improvement of Blade. ## Evangelists We had earlier established that design system teams are small and cannot be the single point of contact to resolve issues or conceptualise on all new product requirements for the org. Hence, it’s important to have pillars or evangelists across various business units in the org that act as a surface to resolve issues or queries on the design system or float across any new component or variations of a component that may arise during the ideation of a product — we called these folks “Blade Advocates”. Blade Advocates are a group of product designers from different business units across Razorpay who help audit, provide use-cases and inputs and review final outcomes of a Blade component corresponding to each of their products. During the design phase of every Blade component we request the advocates to provide us use-cases from their products and post design completion we review the component with the group, this not only helps us in boosting confidence that the component does cater to the needs of the org but also assists in confirming that the final component will be eventually adopted if the designers have signed off. Another side-effect of this exercise is that the advocate group is consistently being educated about new components and tokens of the design system bridging the gap between a platform and a product, they in turn are able to dispense the knowledge among their peers. ## FGDs & Surveys In products that are not directly consumer facing it’s arduous to define a success metric. More often than not teams rely on surveys and focussed group discussions (FGDs) to create a NPS (Net Promoter Score) to comprehend the consumer perception of their product. We have actively conducted surveys for both developers and designers with questions pertaining to a wide variety of categories like productivity, developer-designer friction, reduction in UI reiterations, alignment between Figma and code, documentation, efficient communication etc. In addition to these, the team would also participate in FGDs with multiple brackets of people either segregated by business units or type of tooling (React/ReactNative/Svelte) where the questions would often deep dive on themes coming out of the survey like flexibility vs restrictions in Blade, mapping of component/tokens from design to development, onboarding challenges for a new developer, comparisons with other UI libraries, existing components vs custom components etc. On the surface it might seem tedious to conduct these extensive surveys or FGDs, however they result in significant outcomes. • The surveys provide you with a NPS on the overall pulse of what designers and developers feel about working with the design system. This leads to a score that the platform team can chase year on year and try to improve upon. • The survey results are also efficient in presenting a view to leadership justifying the investment in the design system • Speaking to consumers about areas of improvement and adoption challenges can bring good insights on how to persevere, thereby leading to better adoption OKRs. • Providing a platform for consumers to speak their minds out helps enforcing the idea that the platform team cares and reinforces a more collaborating attitude towards the development of the design system. ## Branding Giving personality to any product is important, this is why you remember Brad Pitt more than Edward Norton in Fight Club (no spoilers!). We decided in the same way that it would be easier for the org and the world to associate with Blade if we built a solid brand around it. We set out creating a logo, a typeface in the logo that stood out, a definitive color palette etc. The result was impactful and provided a visual way to relate to the brand (read: too many Slack emoji reactions everywhere). Blade logo Blade logo typeface, colors & visual language ## Merchandise Once the branding was established, we set out to create merchandise around it with a goal to reward our consumers and early adopters while helping in the overall evangelisation of Blade across the org. Blade merchandise ## Rewards & Recognition A successful design system adoption process is often an org wide effort and cannot be only attributed to a platform team, hence it’s imperative to recognise individuals who believe in the objective and go beyond their way to get the system adopted. It provides the whole org an impetus to celebrate these individuals while inspiring others to take up similar initiatives in the future, while indirectly reinforcing the impact of the system. We celebrated many such individuals while highlighting the team’s achievements & creating a positive cultural impact during the endeavour. Blade awards Blade — Year in review # Conclusion Blade as a design system has a come a long way since its inception to be a consolidated and a mature product catering to around 13 products in Razorpay today. While the org advances in size and operations acquiring other business, having a sophisticated design language helps to bring all products under the same umbrella. Also owing to its strong foundations, Blade was able to go through a visual refresh exercise with ease when the org demanded so while leading to the open sourcing of our Figma library [https://www.figma.com/community/file/1341658976127676210]. Blade open source announcement Over the years Blade has received a lot of fanfare in the industry, however the peak of it was when Figma collaborated with us to discourse on Boosting design system adoption, and design-to-dev collaboration [https://www.figma.com/customers/razorpay-boosting-design-system-adoption-and-collaboration/]. They also published many of the above discussed themes in their article titled How Razorpay sharpened developer workflows [https://www.figma.com/blog/how-razorpay-sharpened-developer-workflows/], I would recommend both a read if you have come this far. The adoption of the design system has been a challenging one, however the outcome has been exemplary. Much of the kudos for the achievements goes to the team, however, the sky’s the limit here and we can’t wait to see what the team will build in the future. Design — Saurav Rastogi [https://medium.com/u/59dedb5475d0?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Rama Krushna Behera [https://medium.com/u/eea360ba3532?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Abhishek Bhardwaj [https://twitter.com/AbhishekB1992], Gopi Bhatnagar [https://medium.com/u/9e02d5d34b47?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Aditi Arora [https://medium.com/u/4f9a0e09a888?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Pingal Kakati [https://medium.com/u/d8a8735ca2ee?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Saurabh Soni [https://medium.com/u/71f6ede820b7?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] Engineering — Kamlesh Chandnani [https://medium.com/u/45305dd0d625?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Chaitanya Deorukhkar [https://medium.com/u/6f2098c07e83?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Anurag Hazra [https://medium.com/u/bf2e65f6d437?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Saurabh Daware [https://medium.com/u/62c4f53d9b8c?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Nitin Kumar [https://medium.com/u/4724904dfddf?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Divyanshu Maithani [https://medium.com/u/d525dfff9e01?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Dhruvdutt Jadhav [https://medium.com/u/7eef925d625b?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Abinash Shaw [https://medium.com/u/b2798c68b61a?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Varun Achar [https://medium.com/u/62da266255c1?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] ## Blade references Figma Library [https://www.figma.com/community/file/1341658976127676210/blade-design-system]GitHub Codebase [https://github.com/razorpay/blade]Documentation [https://blade.razorpay.com/] Design System Blade Design System Adoption Razorpay Ui Platforms -- -- [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F23a72bcc3bcc&operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=---footer_actions--23a72bcc3bcc---------------------bookmark_footer------------------] Follow ## Published in Razorpay Engineering 1.4K followers [/followers?source=post_page---post_publication_info--23a72bcc3bcc---------------------------------------] ·Last published May 6, 2025 [/streamlining-case-updates-with-real-time-webhooks-at-razorpay-7782113ce57c?source=post_page---post_publication_info--23a72bcc3bcc---------------------------------------] Razorpay’s Engineering blog, decoding how we build India’s Financial Infrastructure backbone Follow ## Written by Abinash Shaw 101 followers [https://medium.com/@nashcheez/followers?source=post_page---post_author_info--23a72bcc3bcc---------------------------------------] ·111 following [https://medium.com/@nashcheez/following?source=post_page---post_author_info--23a72bcc3bcc---------------------------------------] ## No responses yet Help Status About Careers Press Blog Privacy Rules Terms Text to speech",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Cutting deep through Blade. A case study on design system adoption | by Abinash Shaw | Razorpay Engineering Sitemap [/sitemap/sitemap.xml] Open in app Sign up [https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Sign in [https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Medium Logo Write Sign up [https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Sign in",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 882,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "c&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Sign in [https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] ## Razorpay Engineering · Follow publication [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fcollection%2Frazorpay-engineering&operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&collection=Razorpay+Engineering&collectionId=6407ad2e59af&source=post_page---publication_nav-6407ad2e59af-23a72bcc3bcc---------------------publication_nav------------------] Razorpay’s Engineering blog, decoding how we build India’s Financial Infrastructure backbone Follow publication",
+      "metadata": {
+        "startIndex": 782,
+        "endIndex": 1663,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ngineering blog, decoding how we build India’s Financial Infrastructure backbone Follow publication [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fcollection%2Frazorpay-engineering&operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&collection=Razorpay+Engineering&collectionId=6407ad2e59af&source=post_page---post_publication_sidebar-6407ad2e59af-23a72bcc3bcc---------------------post_publication_sidebar------------------] # Cutting deep through Blade ## A case study on design system adoption Abinash Shaw [https://medium.com/@nashcheez?source=post_page---byline--23a72bcc3bcc---------------------------------------] 17 min read· May 13, 2024 --",
+      "metadata": {
+        "startIndex": 1563,
+        "endIndex": 2304,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "st_page---byline--23a72bcc3bcc---------------------------------------] 17 min read· May 13, 2024 -- [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F23a72bcc3bcc&operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=---header_actions--23a72bcc3bcc---------------------bookmark_footer------------------] Listen Share In March of 2022 when I was interviewing for a role of an Engineering Manager at Razorpay Engineering [https://medium.com/u/b25ec63c1c9b?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] for the Platform Frontend Infrastructure team, my now peers Kamlesh Chandnani [https://medium.com/u/45305dd0d625?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] & Chaitanya Deorukhkar [https://medium.com/u/6f2098c07e83?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] asked me a simple",
+      "metadata": {
+        "startIndex": 2204,
+        "endIndex": 3202,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ce=post_page---user_mention--23a72bcc3bcc---------------------------------------] asked me a simple question. How will you drive the adoption of our design system? I was amused at the question. I came from a background of having built the UI Toolkit and the foundations of the Design System at Goldman Sachs [https://design.gs.com/home] as an individual contributor. My answer was simple — We will build a good product, ship fast, provide support and our consumers will automatically start using the design system because it will make their lives easy. After 2 years from then I now understand why my interviewers were far from convinced. This single problem has manifested itself as one of the most challenging & mysterious puzzles of my professional experience. We have come a long way since then and I will lay down a few principles based on our experiences on how we navigated through leadership alignment, quantified adoption metrics, org-wide goal settings & consumer delight to unravel the",
+      "metadata": {
+        "startIndex": 3102,
+        "endIndex": 4099,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ip alignment, quantified adoption metrics, org-wide goal settings & consumer delight to unravel the enigma of design system adoption. # Introduction to Blade Razorpay [https://razorpay.com/] is one of India’s largest and fastest-growing financial services companies serving 10 million businesses and providing multiple streams of products across different platforms. The finance industry as a domain can be tricky where user perception & trust are of the utmost importance. A user is more likely to click on a payment button if they can associate it with a brand. We set out on building Razorpay’s design system Blade to solve for many of these problems with some core foundations — design consistency, developer productivity, cross-platform compatibility, code reusability across desktop, mweb & React Native, responsiveness & accessibility. Much has been said about the principles that Blade has been built on which I won’t delve deep into, the focus of this writeup is solely going to be the",
+      "metadata": {
+        "startIndex": 3999,
+        "endIndex": 4994,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "as been built on which I won’t delve deep into, the focus of this writeup is solely going to be the adoption of Blade. However, I will attach a few references in case you are interested to know more about how Blade has been built from ground-up. • Frontend Foundations with a Platform team [/laying-the-frontend-foundations-with-a-platform-team-62c21c37bf9c] • Building reusable UI components while balancing flexibility vs constraints [/lessons-learned-from-building-reusable-ui-components-bb34289cd438] • Organising Design Systems [https://medium.com/razorpay-design/organising-design-systems-3f191c4e00c0] • Designing a Design System component [https://medium.com/razorpay-design/behind-the-scenes-of-designing-a-design-system-component-7969636fabf4] If you are interested in deep diving more into the technical aspects & implementation of Blade, I would recommend the following reads. • Blade’s Storybook documentation [https://blade.razorpay.com/] • Blade’s foundational RFCs",
+      "metadata": {
+        "startIndex": 4894,
+        "endIndex": 5875,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "reads. • Blade’s Storybook documentation [https://blade.razorpay.com/] • Blade’s foundational RFCs [https://github.com/razorpay/blade/tree/master/rfcs] # Adoption Although everyone agrees in principle on the benefits & need of a design system, the quintessential question that arises is “Why is design system adoption so challenging?”. I will try to lay out a few probable reasons. • Product & functional teams often chase business metric goals & are willing to achieve the same without an overhead or restriction on infrastructure. • Developers are set in their own ways when it comes to workflows and are resistant to change. • Designers feel design systems restrict creativity. • Leadership feels the integration of a design system with a project may affect a product’s timeline. • People are lazy. Both developers & designers have a learning curve and would often avoid the friction of understanding a new tool or a system.",
+      "metadata": {
+        "startIndex": 5775,
+        "endIndex": 6704,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "s have a learning curve and would often avoid the friction of understanding a new tool or a system. • Platform teams don’t take additional efforts to market the design system well. Although all of the above reasons are understandable from a consumer perspective, they are short-sighted and result in the accumulation of tech debts. In the long run, adoption of the design system is to solve for developer productivity by accelerating delivery due to standardisation of components, less incoherence between design & development and to aim for brand consistency. The outcomes have far larger perks for the org once we have pushed ourselves beyond the initial hurdles mentioned above. There are no certain rules of the trade to master design system adoption. Each one generally has its own journey depending on the type, size & maturity of the organisation. I will detail out the journey of Blade’s adoption, some of which are accepted standards while others have needed much fine-tuning over the years.",
+      "metadata": {
+        "startIndex": 6604,
+        "endIndex": 7605,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "ion, some of which are accepted standards while others have needed much fine-tuning over the years. ## Documentation I often say documentation is the butter to a developer’s bread. It is the cornerstone on top of which great engineering solutions are built. Design system teams are usually small, it’s physically draining & certainly impractical for a small group of people to keep on supporting multiple teams and products individually throughout the buildout of the system. This is why a good design system documentation keeps consumer support at bay & addresses much of the common queries users might have on foundations, components and patterns. With Blade we structured our documentation in the following ways. Storybook Blade’s developer documentation [https://blade.razorpay.com/] is built on Storybook [https://storybook.js.org/] which is a great tool to document UI component examples in isolation by extracting out data and business logic.",
+      "metadata": {
+        "startIndex": 7505,
+        "endIndex": 8455,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "reat tool to document UI component examples in isolation by extracting out data and business logic. The documentation for Blade includes developer friendly guides on how to install, guides for local development, component status, foundational tokens, utils & components. The team pays extra attention to the component documentation where we mention component descriptions, Figma embeds of component types & usage, live code editors to meddle around with the component, API decisions (read below), API table with prop names, description & defaults, and real world examples of different variants of the component. A real world card body content example from Blade’s card documentation [https://blade.razorpay.com/?path=%2Fdocs%2Fcomponents-card--docs#card-body-content]Blade’s design documentation is hosted on Figma and is quite extensive defining the anatomy of a component, visualisation on light/dark modes, different properties & foundational tokens used, intents & variants, pseudo states of the",
+      "metadata": {
+        "startIndex": 8355,
+        "endIndex": 9355,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "rk modes, different properties & foundational tokens used, intents & variants, pseudo states of the component (hover, focused, active, disabled), guidelines on Do’s and Don’ts, content guidelines, motion and accessibility. Tooltip Tooltip design documentation & usage guidelinesSwitch motion guidelinesComponent API Decisions A foundational principle that Blade is based on is “what you see in design is what you get in code”. To explain that narrative better I would highlight that our ideal future state from Day 1 has been to reduce the designer-developer friction to zero. All the component properties on Figma have a 1:1 mapping to React props for ease of translation, there is no exception to this philosophy. Thus, special attention is paid to how we create component APIs, default values, component naming conventions etc. For alignment the team documents these decisions and provides reasons, and we float it around with all Frontend Leads from different products in the org for a review.",
+      "metadata": {
+        "startIndex": 9255,
+        "endIndex": 10253,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "ns, and we float it around with all Frontend Leads from different products in the org for a review. This is to ensure a collective responsibility on the decisions and to keep a check on if the team missed an edge case for a product. Once we have a sign off from everyone then the team begins the implementation. Take the example of the Cards API decisions where multiple APIs have been discussed and their pros & cons listed out. You can browse through other API decisions [https://github.com/razorpay/blade/tree/master/packages/blade/src/components] in the `component/_decisions` folder. ## blade/packages/blade/src/components/Card/_decisions/decisions.md at master · razorpay/blade ### Design System that powers Razorpay. github.com Announcements As mentioned previously, one of the roadblocks to DS adoption is a Platform team not marketing their system enough. Product teams are often caught up with features, releases, bugs, incidents etc.",
+      "metadata": {
+        "startIndex": 10153,
+        "endIndex": 11098,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "heir system enough. Product teams are often caught up with features, releases, bugs, incidents etc. and might not pay immediate attention to the possibility of an infrastructure enhancement. Hence, it’s imperative for a DS team to over-publish about new upgrades, component additions, DS bug resolutions etc. while making it catchy to be in the spotlight. Take the example of a Blade Progress Bar release here where Chaitanya Deorukhkar [https://medium.com/u/6f2098c07e83?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] highlights the necessary features of the component while the video does its job of getting consumers excited to try out the component. Blade’s Progress Bar [https://blade.razorpay.com/?path=%2Fdocs%2Fcomponents-progressbar--docs] announcementEase of Onboarding As companies scale and a DS consumer base grows, it’s of paramount importance that Platform teams integrate a knowledge transfer workflow into the onboarding of a new employee.",
+      "metadata": {
+        "startIndex": 10998,
+        "endIndex": 11994,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "that Platform teams integrate a knowledge transfer workflow into the onboarding of a new employee. This essentially ensures the chain of information flows from one consumer to another without much burden on the DS team. At Razorpay, we have created a workflow on an internal tool which is a prerequisite for every designer that comes into the firm before they start working on any project. Blade learning modules for new joiners & early adopters ## Internal usage metrics Razorpay as an org follows the OKR methodology [https://en.wikipedia.org/wiki/Objectives_and_key_results], which means that every goal or decision needs to be backed up by a numerical metric to define a success criteria. We wanted to extend the same format for every decision we took on Blade and conclusions were to be drawn through data. The first step towards the idea was for the team to understand how our consumers were using our components via usage instrumentation.",
+      "metadata": {
+        "startIndex": 11894,
+        "endIndex": 12841,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "s for the team to understand how our consumers were using our components via usage instrumentation. We made use of react-scanner [https://www.npmjs.com/package/react-scanner], a nifty utility that helped us understand the total occurrences of a component, usage categorised by projects, widely used vs less used props etc. This helped the team to comprehend the pattern of component usages, demise any prop/token that wasn’t used, invest in the more utilised family of components (input, feedback) etc. Component usage categorised via projects Props usage for the Button component ## Page % coverage During a meeting with our co-founder Shashank Kumar [https://medium.com/u/18d21a11dba1?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , we were brainstorming on his vision for the design system. His questions were simple and valid – “I don’t know how the org is using Blade today.",
+      "metadata": {
+        "startIndex": 12741,
+        "endIndex": 13661,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "esign system. His questions were simple and valid – “I don’t know how the org is using Blade today. If you tell me that 4–5 projects are using the design system I don’t know if that’s a good number or not. How much of Blade are they actually using?” While we had solved for the internal instrumentation of our components, we didn’t exactly know how were our consumers using Blade. I could tell you that Product A used the Button component 100 times (which most design systems enable) but I couldn’t say for sure if all of the Buttons in the product were from Blade or if there were any misses. We wanted to establish a framework for the Design System Adoption OKR, attach a metric to it and follow it up with a goal. However, we soon realised that there is no definite standard to measure the adoption of a design system. We initially thought of taking a dev productivity goal and tried to figure how much less JS and CSS code developers are writing based on the number of component usages, but that",
+      "metadata": {
+        "startIndex": 13561,
+        "endIndex": 14561,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "much less JS and CSS code developers are writing based on the number of component usages, but that turned out to be a dead end. It was impractical to track how much code developers would have written in isolation of business logic in case a component wasn’t present. While brainstorming on multiple solutions the team did finally stumble upon a Eureka moment — what if we could develop a mechanism where we could take an HTML node as a base molecule and calculate the number of nodes that are coming from Blade relative to the total nodes on the page. We could then have a framework for measuring how much % of a page is built using the nodes from the components of Blade! % Page Coverage = Total Blade nodes / Total number of page nodes * 100 Anurag Hazra [https://medium.com/u/bf2e65f6d437?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] translated this simple idea into a small script while ignoring hidden & empty nodes, and nodes that weren’t in the",
+      "metadata": {
+        "startIndex": 14461,
+        "endIndex": 15455,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "simple idea into a small script while ignoring hidden & empty nodes, and nodes that weren’t in the purview of the design system (img, svg, media elements etc.) /** * Checks if DOM node is hidden or not */const isElementHidden = (element) => { if (element.parentElement && isElementHidden(element.parentElement)) { return true; } if (!(element instanceof HTMLElement)) { return false; } if (element.hidden) { return true; } const style = getComputedStyle(element); return style.display === &#x27;none&#x27; || style.visibility === &#x27;hidden&#x27; || style.opacity === &#x27;0&#x27;;};/** * Checks if DOM element is empty or not */const isElementEmpty = (element) => { if (!element) return true; if (!element.childNodes.length) { return true; } return false;};/** * Checks if DOM node is a media element or not */const isMediaElement = (element) => { const mediaTags = [&#x27;img&#x27;, &#x27;video&#x27;, &#x27;audio&#x27;, &#x27;source&#x27;, &#x27;picture&#x27;]; return",
+      "metadata": {
+        "startIndex": 15355,
+        "endIndex": 16331,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "7;img&#x27;, &#x27;video&#x27;, &#x27;audio&#x27;, &#x27;source&#x27;, &#x27;picture&#x27;]; return mediaTags.includes(element.tagName.toLowerCase());};const calculateBladeCoverage = () => { const allDomElements = document.querySelectorAll(&#x27;body *&#x27;); const bladeNodeElements = []; const totalNodeElements = []; allDomElements.forEach((elm) => { if (isElementHidden(elm)) return; if (isElementEmpty(elm)) return; if (isMediaElement(elm)) return; totalNodeElements.push(elm); if (elm.hasAttribute(&#x27;data-blade-component&#x27;)) { bladeNodeElements.push(elm); } else if (elm.closest(&#x27;[data-blade-component]&#x27;)) { bladeNodeElements.push(elm); } }); const totalNodes = totalNodeElements.length; const bladeNodes = bladeNodeElements.length; const bladeCoverage = Number(((bladeNodes / totalNodes) * 100).toFixed(2)); return { bladeCoverage, totalNodes, bladeNodes, bladeNodeElements, };};console.log(calculateBladeCoverage());Tip: You can figure out the Blade % coverage of",
+      "metadata": {
+        "startIndex": 16231,
+        "endIndex": 17222,
+        "chunkIndex": 19,
+        "section": "Introduction",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "Elements, };};console.log(calculateBladeCoverage());Tip: You can figure out the Blade % coverage of razorpay.com [http://razorpay.com] by executing the above snippet in the developer console. Once we had a framework we put our thesis to test and it worked! Many of our current pages that were built using Blade had a meagre coverage of 40–50%. We integrated the script with all our apps to periodically push this data as an instrumentation event & built dashboards for continuous monitoring. Now we had a metric to chase! Overall and page-wise Blade coverage for a couple of our apps The page % coverage metric soon became a standard in the org that new modules and apps were being assessed by. To make it seamless for developers to use the script and for stakeholders (leaders, product managers, designers etc.) to figure which sections of a page were from Blade vs which weren’t Sumit Gupta",
+      "metadata": {
+        "startIndex": 17122,
+        "endIndex": 18015,
+        "chunkIndex": 20,
+        "section": "Introduction",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "rs, designers etc.) to figure which sections of a page were from Blade vs which weren’t Sumit Gupta [https://medium.com/u/5a8116e19715?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] & Anurag Hazra [https://medium.com/u/bf2e65f6d437?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] integrated it with a Chrome extension that provide the % coverage for any page and highlighted non Blade-nodes on the page. Blade Chrome extension displays % coverage & highlights non-Blade nodes Owing to the success of the % page coverage metric in Engineering, we further extended it to Design where it made sense to have a checkpoint so that design handovers are accompanied by adequate Blade coverage before development begins. Kamlesh Chandnani [https://medium.com/u/45305dd0d625?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] created the Figma Blade Coverage plugin",
+      "metadata": {
+        "startIndex": 17915,
+        "endIndex": 18883,
+        "chunkIndex": 21,
+        "section": "Introduction",
+        "globalChunkIndex": 21
+      }
+    },
+    {
+      "id": "chunk-22",
+      "text": "ntion--23a72bcc3bcc---------------------------------------] created the Figma Blade Coverage plugin [https://www.figma.com/community/plugin/1258393250170675750/blade-coverage] to calculate the coverage by evaluating the design layers and attaching a tiny card on top of each design frame before design handover. Chaitanya Deorukhkar [https://medium.com/u/6f2098c07e83?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] explains in details the above implementations of the Internal usage metrics and % page coverage in his talk on Measuring A Design System’s Success. Also, read Dan Mall’s [https://x.com/danmall/status/1513526864320602116?s=46&t=ZLb-Z0xQ9ayWgCYah7b4-g] article on Design System coverage [https://danmall.com/posts/design-system-coverage/] for the United Airlines homepage that was an inspiration to this implementation. ## Central org goals Establishing a framework to measure Blade coverage was laying the groundwork for design system adoption.",
+      "metadata": {
+        "startIndex": 18783,
+        "endIndex": 19781,
+        "chunkIndex": 22,
+        "section": "Introduction",
+        "globalChunkIndex": 22
+      }
+    },
+    {
+      "id": "chunk-23",
+      "text": "lishing a framework to measure Blade coverage was laying the groundwork for design system adoption. The strategy to bifurcate a page into Blade nodes vs non-Blade nodes and the aggregate average of Blade % pages in an app helped us define baselines for each apps as a single metric. Once the baselines were ready, we could then develop and write a strategy on the need of design system adoption, future state, risks and possible org wide goals for design & engineering. While developing and strategising adoption goals, we needed to take care of two things — all new apps should be built using Blade while all older modules of existing apps should also be prioritised to be migrated to Blade to maintain consistency in language. This culminated in the following org goals for Razorpay. O: All the frontend apps have a coverage of at least 20% of Blade components — KR: New modules/apps have coverage > 70% — KR: 90% of traffic pages have at least 50% blade coverage The overall target for all apps",
+      "metadata": {
+        "startIndex": 19681,
+        "endIndex": 20679,
+        "chunkIndex": 23,
+        "section": "Introduction",
+        "globalChunkIndex": 23
+      }
+    },
+    {
+      "id": "chunk-24",
+      "text": "e > 70% — KR: 90% of traffic pages have at least 50% blade coverage The overall target for all apps was set to achieve 20% as an aggregate average of all pages or modules defined uniquely by routes. This was to be achieved by a 70% coverage of all new pages which was a no brainer. However, the trickier bit was to migrate older pages where instead of focusing on a certain count of pages we decided to spotlight only on pages that had heavy traffic to maintain visual consistency from a consumer’s view point. While writing design system strategies it’s also important to detail out the minute details like design strategy, contribution & migration guidelines etc. to iron out any inconsistencies between teams, application owners or new stakeholders, check attached example. ## Support Despite the maturity, completeness or exhaustive documentation, it’s crucial for design system adoption to have a well defined support process to enable or assist consumers during blockers.",
+      "metadata": {
+        "startIndex": 20579,
+        "endIndex": 21557,
+        "chunkIndex": 24,
+        "section": "Introduction",
+        "globalChunkIndex": 24
+      }
+    },
+    {
+      "id": "chunk-25",
+      "text": "stem adoption to have a well defined support process to enable or assist consumers during blockers. For Blade we have aided our consumers in the following ways.- Open office hours for engineers & designers to discuss doubts or new use cases (twice a week)- Github Issues [https://github.com/razorpay/blade/issues] with well defined labels - Ad-hoc support requests on JIRA- Dedicated Slack channels for quick queries A detailed Slack support example for Blade issues on react-nativeOur support structure has not only facilitated our consumers in multitude ways to explore the foundations & components of the design system but also has played a part in enabling the platform team to learn more about new patterns, common usages or enhancements to existing components resulting in the continued improvement of Blade. ## Evangelists We had earlier established that design system teams are small and cannot be the single point of contact to resolve issues or conceptualise on all new product requirements",
+      "metadata": {
+        "startIndex": 21457,
+        "endIndex": 22458,
+        "chunkIndex": 25,
+        "section": "Introduction",
+        "globalChunkIndex": 25
+      }
+    },
+    {
+      "id": "chunk-26",
+      "text": "t be the single point of contact to resolve issues or conceptualise on all new product requirements for the org. Hence, it’s important to have pillars or evangelists across various business units in the org that act as a surface to resolve issues or queries on the design system or float across any new component or variations of a component that may arise during the ideation of a product — we called these folks “Blade Advocates”. Blade Advocates are a group of product designers from different business units across Razorpay who help audit, provide use-cases and inputs and review final outcomes of a Blade component corresponding to each of their products. During the design phase of every Blade component we request the advocates to provide us use-cases from their products and post design completion we review the component with the group, this not only helps us in boosting confidence that the component does cater to the needs of the org but also assists in confirming that the final",
+      "metadata": {
+        "startIndex": 22358,
+        "endIndex": 23350,
+        "chunkIndex": 26,
+        "section": "Introduction",
+        "globalChunkIndex": 26
+      }
+    },
+    {
+      "id": "chunk-27",
+      "text": "that the component does cater to the needs of the org but also assists in confirming that the final component will be eventually adopted if the designers have signed off. Another side-effect of this exercise is that the advocate group is consistently being educated about new components and tokens of the design system bridging the gap between a platform and a product, they in turn are able to dispense the knowledge among their peers. ## FGDs & Surveys In products that are not directly consumer facing it’s arduous to define a success metric. More often than not teams rely on surveys and focussed group discussions (FGDs) to create a NPS (Net Promoter Score) to comprehend the consumer perception of their product. We have actively conducted surveys for both developers and designers with questions pertaining to a wide variety of categories like productivity, developer-designer friction, reduction in UI reiterations, alignment between Figma and code, documentation, efficient communication",
+      "metadata": {
+        "startIndex": 23250,
+        "endIndex": 24247,
+        "chunkIndex": 27,
+        "section": "Introduction",
+        "globalChunkIndex": 27
+      }
+    },
+    {
+      "id": "chunk-28",
+      "text": "uction in UI reiterations, alignment between Figma and code, documentation, efficient communication etc. In addition to these, the team would also participate in FGDs with multiple brackets of people either segregated by business units or type of tooling (React/ReactNative/Svelte) where the questions would often deep dive on themes coming out of the survey like flexibility vs restrictions in Blade, mapping of component/tokens from design to development, onboarding challenges for a new developer, comparisons with other UI libraries, existing components vs custom components etc. On the surface it might seem tedious to conduct these extensive surveys or FGDs, however they result in significant outcomes. • The surveys provide you with a NPS on the overall pulse of what designers and developers feel about working with the design system. This leads to a score that the platform team can chase year on year and try to improve upon.",
+      "metadata": {
+        "startIndex": 24147,
+        "endIndex": 25084,
+        "chunkIndex": 28,
+        "section": "Introduction",
+        "globalChunkIndex": 28
+      }
+    },
+    {
+      "id": "chunk-29",
+      "text": "ystem. This leads to a score that the platform team can chase year on year and try to improve upon. • The survey results are also efficient in presenting a view to leadership justifying the investment in the design system • Speaking to consumers about areas of improvement and adoption challenges can bring good insights on how to persevere, thereby leading to better adoption OKRs. • Providing a platform for consumers to speak their minds out helps enforcing the idea that the platform team cares and reinforces a more collaborating attitude towards the development of the design system. ## Branding Giving personality to any product is important, this is why you remember Brad Pitt more than Edward Norton in Fight Club (no spoilers!). We decided in the same way that it would be easier for the org and the world to associate with Blade if we built a solid brand around it. We set out creating a logo, a typeface in the logo that stood out, a definitive color palette etc.",
+      "metadata": {
+        "startIndex": 24984,
+        "endIndex": 25960,
+        "chunkIndex": 29,
+        "section": "Introduction",
+        "globalChunkIndex": 29
+      }
+    },
+    {
+      "id": "chunk-30",
+      "text": "We set out creating a logo, a typeface in the logo that stood out, a definitive color palette etc. The result was impactful and provided a visual way to relate to the brand (read: too many Slack emoji reactions everywhere). Blade logo Blade logo typeface, colors & visual language ## Merchandise Once the branding was established, we set out to create merchandise around it with a goal to reward our consumers and early adopters while helping in the overall evangelisation of Blade across the org. Blade merchandise ## Rewards & Recognition A successful design system adoption process is often an org wide effort and cannot be only attributed to a platform team, hence it’s imperative to recognise individuals who believe in the objective and go beyond their way to get the system adopted. It provides the whole org an impetus to celebrate these individuals while inspiring others to take up similar initiatives in the future, while indirectly reinforcing the impact of the system.",
+      "metadata": {
+        "startIndex": 25860,
+        "endIndex": 26843,
+        "chunkIndex": 30,
+        "section": "Introduction",
+        "globalChunkIndex": 30
+      }
+    },
+    {
+      "id": "chunk-31",
+      "text": "o take up similar initiatives in the future, while indirectly reinforcing the impact of the system. We celebrated many such individuals while highlighting the team’s achievements & creating a positive cultural impact during the endeavour. Blade awards Blade — Year in review # Conclusion Blade as a design system has a come a long way since its inception to be a consolidated and a mature product catering to around 13 products in Razorpay today. While the org advances in size and operations acquiring other business, having a sophisticated design language helps to bring all products under the same umbrella. Also owing to its strong foundations, Blade was able to go through a visual refresh exercise with ease when the org demanded so while leading to the open sourcing of our Figma library [https://www.figma.com/community/file/1341658976127676210]. Blade open source announcement Over the years Blade has received a lot of fanfare in the industry, however the peak of it was when Figma",
+      "metadata": {
+        "startIndex": 26743,
+        "endIndex": 27735,
+        "chunkIndex": 31,
+        "section": "Introduction",
+        "globalChunkIndex": 31
+      }
+    },
+    {
+      "id": "chunk-32",
+      "text": "he years Blade has received a lot of fanfare in the industry, however the peak of it was when Figma collaborated with us to discourse on Boosting design system adoption, and design-to-dev collaboration [https://www.figma.com/customers/razorpay-boosting-design-system-adoption-and-collaboration/]. They also published many of the above discussed themes in their article titled How Razorpay sharpened developer workflows [https://www.figma.com/blog/how-razorpay-sharpened-developer-workflows/], I would recommend both a read if you have come this far. The adoption of the design system has been a challenging one, however the outcome has been exemplary. Much of the kudos for the achievements goes to the team, however, the sky’s the limit here and we can’t wait to see what the team will build in the future. Design — Saurav Rastogi [https://medium.com/u/59dedb5475d0?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Rama Krushna Behera",
+      "metadata": {
+        "startIndex": 27635,
+        "endIndex": 28610,
+        "chunkIndex": 32,
+        "section": "Introduction",
+        "globalChunkIndex": 32
+      }
+    },
+    {
+      "id": "chunk-33",
+      "text": "ost_page---user_mention--23a72bcc3bcc---------------------------------------] , Rama Krushna Behera [https://medium.com/u/eea360ba3532?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Abhishek Bhardwaj [https://twitter.com/AbhishekB1992], Gopi Bhatnagar [https://medium.com/u/9e02d5d34b47?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Aditi Arora [https://medium.com/u/4f9a0e09a888?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Pingal Kakati [https://medium.com/u/d8a8735ca2ee?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Saurabh Soni [https://medium.com/u/71f6ede820b7?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] Engineering — Kamlesh Chandnani [https://medium.com/u/45305dd0d625?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Chaitanya Deorukhkar",
+      "metadata": {
+        "startIndex": 28510,
+        "endIndex": 29508,
+        "chunkIndex": 33,
+        "section": "Introduction",
+        "globalChunkIndex": 33
+      }
+    },
+    {
+      "id": "chunk-34",
+      "text": "st_page---user_mention--23a72bcc3bcc---------------------------------------] , Chaitanya Deorukhkar [https://medium.com/u/6f2098c07e83?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Anurag Hazra [https://medium.com/u/bf2e65f6d437?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Saurabh Daware [https://medium.com/u/62c4f53d9b8c?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Nitin Kumar [https://medium.com/u/4724904dfddf?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Divyanshu Maithani [https://medium.com/u/d525dfff9e01?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Dhruvdutt Jadhav [https://medium.com/u/7eef925d625b?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Abinash Shaw",
+      "metadata": {
+        "startIndex": 29408,
+        "endIndex": 30335,
+        "chunkIndex": 34,
+        "section": "Introduction",
+        "globalChunkIndex": 34
+      }
+    },
+    {
+      "id": "chunk-35",
+      "text": "ource=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Abinash Shaw [https://medium.com/u/b2798c68b61a?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] , Varun Achar [https://medium.com/u/62da266255c1?source=post_page---user_mention--23a72bcc3bcc---------------------------------------] ## Blade references Figma Library [https://www.figma.com/community/file/1341658976127676210/blade-design-system]GitHub Codebase [https://github.com/razorpay/blade]Documentation [https://blade.razorpay.com/] Design System Blade Design System Adoption Razorpay Ui Platforms -- -- [https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F23a72bcc3bcc&operation=register&redirect=https%3A%2F%2Fengineering.razorpay.com%2Fcutting-deep-through-blade-23a72bcc3bcc&source=---footer_actions--23a72bcc3bcc---------------------bookmark_footer------------------] Follow ## Published in Razorpay Engineering 1.4K followers",
+      "metadata": {
+        "startIndex": 30235,
+        "endIndex": 31229,
+        "chunkIndex": 35,
+        "section": "Introduction",
+        "globalChunkIndex": 35
+      }
+    },
+    {
+      "id": "chunk-36",
+      "text": "------bookmark_footer------------------] Follow ## Published in Razorpay Engineering 1.4K followers [/followers?source=post_page---post_publication_info--23a72bcc3bcc---------------------------------------] ·Last published May 6, 2025 [/streamlining-case-updates-with-real-time-webhooks-at-razorpay-7782113ce57c?source=post_page---post_publication_info--23a72bcc3bcc---------------------------------------] Razorpay’s Engineering blog, decoding how we build India’s Financial Infrastructure backbone Follow ## Written by Abinash Shaw 101 followers [https://medium.com/@nashcheez/followers?source=post_page---post_author_info--23a72bcc3bcc---------------------------------------] ·111 following [https://medium.com/@nashcheez/following?source=post_page---post_author_info--23a72bcc3bcc---------------------------------------] ## No responses yet Help Status About Careers Press Blog Privacy Rules Terms Text to speech",
+      "metadata": {
+        "startIndex": 31129,
+        "endIndex": 32129,
+        "chunkIndex": 36,
+        "section": "Introduction",
+        "globalChunkIndex": 36
+      }
+    },
+    {
+      "id": "chunk-37",
+      "text": "s Text to speech",
+      "metadata": {
+        "startIndex": 32029,
+        "endIndex": 33029,
+        "chunkIndex": 37,
+        "section": "Introduction",
+        "globalChunkIndex": 37
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "adoption;metrics;leadership"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:17.185Z",
+    "system": "Razorpay Engineering",
+    "author": "Abinash Shaw",
+    "version": "1.0",
+    "source_url": "https://engineering.razorpay.com/cutting-deep-through-blade-23a72bcc3bcc"
+  }
+}

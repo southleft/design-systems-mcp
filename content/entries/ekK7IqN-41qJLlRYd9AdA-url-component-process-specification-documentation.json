@@ -1,0 +1,79 @@
+{
+  "id": "ekK7IqN-41qJLlRYd9AdA",
+  "title": "Component Process: Specification Documentation",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/spec-doc",
+    "ingested_at": "2025-06-27T02:59:42.750Z"
+  },
+  "content": "Spec doc - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 3.1 Spec doc. Phase --> Build Type Focus --> Time --> 1 day ## What is it? Detailed specifications on the component and how to build it. ## Why do we do it? So that Developers know precisely how to build the component and all the states required for it. It also helps us best understand how to make this component in Figma. ## How do we do it? Depending on if you’re creating a new component vs. updating an existing one, there are two methods for your spec doc. Create a new spec doc if your component update differs substantially from the original. ### Updating existing Updating existing components can be much simpler to document. Just include a before and after, highlight the changes and give the updated values. ### New components For new components, use a complete spec doc outlining all of the specifications from the ground up. Take each variation in the following list and run the Eightshapes Specs plugin in Figma [https://www.figma.com/community/plugin/1205622541257680763/EightShapes-Specs#:~:text=Automate%20production%20of%20page%20and,work%2C%20and%20critiquing%20with%20teammates.] to break down your designs into full specs. You’ll want to review the results to make sure they line up. You can do all of this manually, but a plugin will save you a lot of time — and this one is great. If you want more information on these variants, head back to the exploration [/component-process/exploration.html] phase. ### Type(s) Include all of the different types available for this component. #### Priority Primary Secondary Tertiary Accent #### State Default Disabled Hover Active Focus #### Platform or screen size Desktop / large Tablet / medium Mobile / small #### Status Positive Negative Warning Default/neutral #### Sizes Small Medium Large or pixel value #### Booleans Any elements that are shown/hidden or on/off Selected — Yes/No Optional Messages — show/hide #### Dynamic text Any text that is override-able What text supports markup/markdown #### Tokens Colours Text styles Spacing Scale — any applicable min/max sizes #### Interaction and animation You’ll need to add the details for these manually. Working prototypes Any tokens or values applicable to this, including animation duration and style #### Accessibility Visual text scaling and how the component changes with larger and smaller fonts Voiceover guidance #### Colour mode examples Provide everything you’ve done above in different colour modes; this should be reasonably straightforward if you have variables [https://help.figma.com/hc/en-us/articles/15343816063383-Modes-for-variables] set up for colour modes. Light Dark Any other colour modes you might need ## Handy links • Eightshapes plugin [https://www.figma.com/community/plugin/1205622541257680763/EightShapes-Specs] • iOS Scaling typography guide [https://developer.apple.com/design/human-interface-guidelines/typography#AX5] ## Outcomes • Alignment of final designs • Figma file with component specs Hot tips If you create a Figma master component file with all of your designs and changes, you’ll always have an up-to-date version of your file. Just be sure to mark the latest spec doc as ready for dev. ## Up next Step 3.3 Spec walkthrough Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Spec doc - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 3.1 Spec doc. Phase --> Build Type Focus --> Time --> 1 day ## What is it? Detailed specifications on the component and how to build it.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 978,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "cus --> Time --> 1 day ## What is it? Detailed specifications on the component and how to build it. ## Why do we do it? So that Developers know precisely how to build the component and all the states required for it. It also helps us best understand how to make this component in Figma. ## How do we do it? Depending on if you’re creating a new component vs. updating an existing one, there are two methods for your spec doc. Create a new spec doc if your component update differs substantially from the original. ### Updating existing Updating existing components can be much simpler to document. Just include a before and after, highlight the changes and give the updated values. ### New components For new components, use a complete spec doc outlining all of the specifications from the ground up. Take each variation in the following list and run the Eightshapes Specs plugin in Figma",
+      "metadata": {
+        "startIndex": 878,
+        "endIndex": 1767,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ground up. Take each variation in the following list and run the Eightshapes Specs plugin in Figma [https://www.figma.com/community/plugin/1205622541257680763/EightShapes-Specs#:~:text=Automate%20production%20of%20page%20and,work%2C%20and%20critiquing%20with%20teammates.] to break down your designs into full specs. You’ll want to review the results to make sure they line up. You can do all of this manually, but a plugin will save you a lot of time — and this one is great. If you want more information on these variants, head back to the exploration [/component-process/exploration.html] phase. ### Type(s) Include all of the different types available for this component. #### Priority Primary Secondary Tertiary Accent #### State Default Disabled Hover Active Focus #### Platform or screen size Desktop / large Tablet / medium Mobile / small #### Status Positive Negative Warning Default/neutral #### Sizes Small Medium Large or pixel value #### Booleans Any elements that are shown/hidden or",
+      "metadata": {
+        "startIndex": 1667,
+        "endIndex": 2666,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "al #### Sizes Small Medium Large or pixel value #### Booleans Any elements that are shown/hidden or on/off Selected — Yes/No Optional Messages — show/hide #### Dynamic text Any text that is override-able What text supports markup/markdown #### Tokens Colours Text styles Spacing Scale — any applicable min/max sizes #### Interaction and animation You’ll need to add the details for these manually. Working prototypes Any tokens or values applicable to this, including animation duration and style #### Accessibility Visual text scaling and how the component changes with larger and smaller fonts Voiceover guidance #### Colour mode examples Provide everything you’ve done above in different colour modes; this should be reasonably straightforward if you have variables [https://help.figma.com/hc/en-us/articles/15343816063383-Modes-for-variables] set up for colour modes. Light Dark Any other colour modes you might need ## Handy links • Eightshapes plugin",
+      "metadata": {
+        "startIndex": 2566,
+        "endIndex": 3523,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "colour modes. Light Dark Any other colour modes you might need ## Handy links • Eightshapes plugin [https://www.figma.com/community/plugin/1205622541257680763/EightShapes-Specs] • iOS Scaling typography guide [https://developer.apple.com/design/human-interface-guidelines/typography#AX5] ## Outcomes • Alignment of final designs • Figma file with component specs Hot tips If you create a Figma master component file with all of your designs and changes, you’ll always have an up-to-date version of your file. Just be sure to mark the latest spec doc as ready for dev. ## Up next Step 3.3 Spec walkthrough Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 3423,
+        "endIndex": 4423,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "specs;documentation;requirements;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:42.750Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/spec-doc"
+  }
+}

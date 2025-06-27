@@ -1,0 +1,90 @@
+{
+  "id": "01_9ms_-HBoqZ_MxsAqMV",
+  "title": "Component Process: Documentation",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/documentation",
+    "ingested_at": "2025-06-27T02:59:43.868Z"
+  },
+  "content": "Documentation - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 4.1 Documentation. Phase --> Release Type Focus --> Time --> 1-5 days ## What is it? Documentation and usage guidance of the component in design and build. It’s a living document that continuously evolves as your System does. ## Why do we do it? Documentation exists to support others when using your Design System. It allows you to define best practices and reduces the load on day-to-day support by enabling users to self-serve. Clear and articulate guidance paired with solid reasoning and rationale makes your documentation an undeniable source of truth and gives your work added visibility. ## How do we do it? This section will cover what to include in your component documentation, not how to set up your documentation site [https://thedesignsystem.guide/documentation]. ### Pair with your Developers Depending on your team setup, if you can, you should be pairing with the Developers on your team to do this work. Implementation and usage in build are just as important as design. ## What to include Try to include relevant visuals in each section to make the content more digestible to users. Be sure to include examples of do’s and don’ts within relevant sections. ### An introduction #### Purpose statement This is one to two sentences explaining the overall purpose of your component. #### Component image A visual of your component type(s). Bonus points if you use a live component and not static images. This way, you’ll be able to showcase it in all its glory. Not to mention, building a documentation site that uses your system is the ultimate dogfooding exercise. ### Type(s) If you have multiple component types, depending on how much they differ in guidance, you may want to break the following up into sections for each. Otherwise, you can showcase all of them under a type section covering each available type and use case. #### When to use Use cases and examples on when to use, as well as when not to use this component. #### How to use Best practice guidance and examples on how to use, as well as how to not use the component. #### Anatomy A visual breakdown of your component with all of the different available props. Be sure to highlight where things are optional. #### Status The different statuses available to the component and when you would use them. #### Accessibility Any accessibility considerations on the component itself, including when the component scales or when screen readers are used. #### Content guidelines Rules on micro-copy on your component. This can include length, tone of voice, and any do’s or don’ts for writing copy on this component. Some components won’t need this, but for copy-heavy components, it is helpful to include a guide. #### Interaction and animation How the user can interact with the component and what happens. It’s handy to use live components here to demonstrate interaction adequately. Any rules on animation, if applicable, and a visual example of how the component animates. #### Placement Where to place the component on the screen or what to pair the component with. This can include other rules, including minimum or maximum height or width. #### Localisation Any specific information or support for different regions. Include copy guidance or even design changes based on region. #### Availability Platform availability and relevant links to all Figma and Developer implementation documentation. If you embed your Developer docs into your usage guidance site, integrate it where relevant. ## Outcomes • Component documentation is available and understandable to others. • A comprehensive guide for others to follow and understand your components. Hot tips If you create a page in your Figma file and write guidance as you go, you’ll save much time at this stage. ## Up next Step 4.1 Release Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Documentation - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 4.1 Documentation. Phase --> Release Type Focus --> Time --> 1-5 days ## What is it?",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 931,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "About [/about] 4.1 Documentation. Phase --> Release Type Focus --> Time --> 1-5 days ## What is it? Documentation and usage guidance of the component in design and build. It’s a living document that continuously evolves as your System does. ## Why do we do it? Documentation exists to support others when using your Design System. It allows you to define best practices and reduces the load on day-to-day support by enabling users to self-serve. Clear and articulate guidance paired with solid reasoning and rationale makes your documentation an undeniable source of truth and gives your work added visibility. ## How do we do it? This section will cover what to include in your component documentation, not how to set up your documentation site [https://thedesignsystem.guide/documentation]. ### Pair with your Developers Depending on your team setup, if you can, you should be pairing with the Developers on your team to do this work.",
+      "metadata": {
+        "startIndex": 831,
+        "endIndex": 1768,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "our team setup, if you can, you should be pairing with the Developers on your team to do this work. Implementation and usage in build are just as important as design. ## What to include Try to include relevant visuals in each section to make the content more digestible to users. Be sure to include examples of do’s and don’ts within relevant sections. ### An introduction #### Purpose statement This is one to two sentences explaining the overall purpose of your component. #### Component image A visual of your component type(s). Bonus points if you use a live component and not static images. This way, you’ll be able to showcase it in all its glory. Not to mention, building a documentation site that uses your system is the ultimate dogfooding exercise. ### Type(s) If you have multiple component types, depending on how much they differ in guidance, you may want to break the following up into sections for each.",
+      "metadata": {
+        "startIndex": 1668,
+        "endIndex": 2587,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "on how much they differ in guidance, you may want to break the following up into sections for each. Otherwise, you can showcase all of them under a type section covering each available type and use case. #### When to use Use cases and examples on when to use, as well as when not to use this component. #### How to use Best practice guidance and examples on how to use, as well as how to not use the component. #### Anatomy A visual breakdown of your component with all of the different available props. Be sure to highlight where things are optional. #### Status The different statuses available to the component and when you would use them. #### Accessibility Any accessibility considerations on the component itself, including when the component scales or when screen readers are used. #### Content guidelines Rules on micro-copy on your component. This can include length, tone of voice, and any do’s or don’ts for writing copy on this component.",
+      "metadata": {
+        "startIndex": 2487,
+        "endIndex": 3438,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "This can include length, tone of voice, and any do’s or don’ts for writing copy on this component. Some components won’t need this, but for copy-heavy components, it is helpful to include a guide. #### Interaction and animation How the user can interact with the component and what happens. It’s handy to use live components here to demonstrate interaction adequately. Any rules on animation, if applicable, and a visual example of how the component animates. #### Placement Where to place the component on the screen or what to pair the component with. This can include other rules, including minimum or maximum height or width. #### Localisation Any specific information or support for different regions. Include copy guidance or even design changes based on region. #### Availability Platform availability and relevant links to all Figma and Developer implementation documentation. If you embed your Developer docs into your usage guidance site, integrate it where relevant.",
+      "metadata": {
+        "startIndex": 3338,
+        "endIndex": 4317,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ation. If you embed your Developer docs into your usage guidance site, integrate it where relevant. ## Outcomes • Component documentation is available and understandable to others. • A comprehensive guide for others to follow and understand your components. Hot tips If you create a page in your Figma file and write guidance as you go, you’ll save much time at this stage. ## Up next Step 4.1 Release Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 4217,
+        "endIndex": 5217,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "documentation;guidelines;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:43.868Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/documentation"
+  }
+}

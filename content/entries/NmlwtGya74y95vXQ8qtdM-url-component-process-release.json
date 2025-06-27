@@ -1,0 +1,68 @@
+{
+  "id": "NmlwtGya74y95vXQ8qtdM",
+  "title": "Component Process: Release",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/release",
+    "ingested_at": "2025-06-27T02:59:43.854Z"
+  },
+  "content": "Release - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 4.2 Release. Phase --> Release Type Focus --> Time --> 1 hour - 1 day ## What is it? An announcement on the readiness of the component and how to use it. ## Why do we do it? Communicate updates to the system so that teams are aware of changes and how to use them. ## How do we do it? ### Small changes For a minor change to a component or a little update to the system. • A post on Slack with a visual to explain the change. • Depending on its minor, you might not need to share any updates. ### Medium changes A new component or noticeable changes to an existing component that people need to know about. • A longer post on Slack with a recorded demo of the update. ### Large changes For larger changes like a breaking change or a big feature For more significant changes like a breaking change or an important feature. For significant updates, ensuring people get as many opportunities as possible to see and understand what they must do is essential. Slack post outlining the changes, as well as a video walkthrough and a demo • Shared on your Design System channel and forwarded to all guild channels • A live demo or presentation of the update at all relevant guild and design meetings; ideally, you would pair with a Developer in the relevant guild sessions. • You may also consider doing a workshop to teach people how to use or action the proposed changes. ## What to include Regardless of the size of the change, be sure to include the difference and why it was done. Be sure to include — #### Visual examples An animated gif or short video demo of the component in action. #### Platform availability Depending on how many platforms you support, you may end up staggering releases between them. It’s important to highlight when the expected date for each of these releases is. #### Relevant links • Build documentation • Usage documentation • Figma component ## Outcomes • Teams know about and how to use the component. • Greater visibility of the system • Higher adoption of your components Hot tips Include justification for the change as part of your release, even if it’s brief. This ensures everyone is on the same page as you and mitigates the risk of heavy pushback on the component. Be ready for feedback at this stage, and be open to it — if no one wants to use your component in the way it is, it’s essential to understand why. If you’ve included ample justification, and people are still pushing back, listen. ## Up next Step 4.3 Metrics Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Release - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 4.2 Release. Phase --> Release Type Focus --> Time --> 1 hour - 1 day ## What is it? An announcement on the readiness of the component and how to use it.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 994,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "1 hour - 1 day ## What is it? An announcement on the readiness of the component and how to use it. ## Why do we do it? Communicate updates to the system so that teams are aware of changes and how to use them. ## How do we do it? ### Small changes For a minor change to a component or a little update to the system. • A post on Slack with a visual to explain the change. • Depending on its minor, you might not need to share any updates. ### Medium changes A new component or noticeable changes to an existing component that people need to know about. • A longer post on Slack with a recorded demo of the update. ### Large changes For larger changes like a breaking change or a big feature For more significant changes like a breaking change or an important feature. For significant updates, ensuring people get as many opportunities as possible to see and understand what they must do is essential. Slack post outlining the changes, as well as a video walkthrough and a demo • Shared on your Design",
+      "metadata": {
+        "startIndex": 894,
+        "endIndex": 1894,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "Slack post outlining the changes, as well as a video walkthrough and a demo • Shared on your Design System channel and forwarded to all guild channels • A live demo or presentation of the update at all relevant guild and design meetings; ideally, you would pair with a Developer in the relevant guild sessions. • You may also consider doing a workshop to teach people how to use or action the proposed changes. ## What to include Regardless of the size of the change, be sure to include the difference and why it was done. Be sure to include — #### Visual examples An animated gif or short video demo of the component in action. #### Platform availability Depending on how many platforms you support, you may end up staggering releases between them. It’s important to highlight when the expected date for each of these releases is. #### Relevant links • Build documentation • Usage documentation • Figma component ## Outcomes • Teams know about and how to use the component.",
+      "metadata": {
+        "startIndex": 1794,
+        "endIndex": 2769,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "Usage documentation • Figma component ## Outcomes • Teams know about and how to use the component. • Greater visibility of the system • Higher adoption of your components Hot tips Include justification for the change as part of your release, even if it’s brief. This ensures everyone is on the same page as you and mitigates the risk of heavy pushback on the component. Be ready for feedback at this stage, and be open to it — if no one wants to use your component in the way it is, it’s essential to understand why. If you’ve included ample justification, and people are still pushing back, listen. ## Up next Step 4.3 Metrics Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 2669,
+        "endIndex": 3669,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "release;deployment;launch;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:43.854Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/release"
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "id": "MbGinsv5e559EaliK_nFm",
+  "title": "Introducing Figma's Dev Mode MCP Server",
+  "source": {
+    "type": "url",
+    "location": "https://www.figma.com/blog/introducing-figmas-dev-mode-mcp-server/",
+    "ingested_at": "2025-06-27T03:10:00.333Z"
+  },
+  "content": "Introducing our Dev Mode MCP server: Bringing Figma into your workflow | Figma Blog Skip to main content Subscribe to Figma’s editorial newsletter [https://www.figma.com/signup] [https://www.figma.com/] [https://www.figma.com/blog/] ##### Categories • Maker Stories [https://www.figma.com/blog/maker-stories/] • Working Well [https://www.figma.com/blog/working-well/] • Inside Figma [https://www.figma.com/blog/inside-figma/] • Insights [https://www.figma.com/blog/insights/] Topics ### Featured Topics ### News Get the latest on all things Figma. ### Design systems ### Explore topics • 3D design [https://www.figma.com/blog/3d-design/] • Accessibility [https://www.figma.com/blog/accessibility/] • AI [https://www.figma.com/blog/ai/] • Behind the scenes [https://www.figma.com/blog/behind-the-scenes/] • Brainstorming [https://www.figma.com/blog/brainstorming/] • Branding [https://www.figma.com/blog/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study [https://www.figma.com/blog/case-study/] • Collaboration [https://www.figma.com/blog/collaboration/] • Config [https://www.figma.com/blog/config/] • Culture [https://www.figma.com/blog/culture/] • Design [https://www.figma.com/blog/design/] • Design thinking [https://www.figma.com/blog/design-thinking/] • Dev Mode [https://www.figma.com/blog/dev-mode/] • Diagramming [https://www.figma.com/blog/diagramming/] • Engineering [https://www.figma.com/blog/engineering/] • Events [https://www.figma.com/blog/events/] • FigJam [https://www.figma.com/blog/figjam/] • Figma Buzz [https://www.figma.com/blog/figma-buzz/] • Figma Design [https://www.figma.com/blog/figma-design/] • Figma Draw [https://www.figma.com/blog/figma-draw/] • Figma Make [https://www.figma.com/blog/figma-make/] • Figma Sites [https://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] • Hiring [https://www.figma.com/blog/hiring/] • Infrastructure [https://www.figma.com/blog/infrastructure/] • Leadership [https://www.figma.com/blog/leadership/] • Localization [https://www.figma.com/blog/localization/] • Marketing [https://www.figma.com/blog/marketing/] • Meetings [https://www.figma.com/blog/meetings/] • Motion [https://www.figma.com/blog/motion/] • Operations [https://www.figma.com/blog/operations/] • Plugins & tooling [https://www.figma.com/blog/plugins-and-tooling/] • Portfolio [https://www.figma.com/blog/portfolio/] • Product management [https://www.figma.com/blog/product-management/] • Product updates [https://www.figma.com/blog/product-updates/] • Productivity [https://www.figma.com/blog/productivity/] • Profiles & interviews [https://www.figma.com/blog/profiles-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance [https://www.figma.com/blog/quality-and-performance/] • React [https://www.figma.com/blog/react/] • Report [https://www.figma.com/blog/report/] • Research [https://www.figma.com/blog/research/] • Security [https://www.figma.com/blog/security/] • Social impact [https://www.figma.com/blog/social-impact/] • Strategy [https://www.figma.com/blog/strategy/] • The Long & Short of It [https://www.figma.com/blog/the-long-and-short-of-it/] • Thought leadership [https://www.figma.com/blog/thought-leadership/] • Tips & inspiration [https://www.figma.com/blog/tips-and-inspiration/] • Typography [https://www.figma.com/blog/typography/] • UI/UX [https://www.figma.com/blog/ui-ux/] • Wireframing [https://www.figma.com/blog/wireframing/] • Writing [https://www.figma.com/blog/writing/] June 4, 2025 # Introducing our Dev Mode MCP server: Bringing Figma into your workflow Jake AlbaughDeveloper Advocate, Figma Inside Figma [https://www.figma.com/blog/inside-figma/]Product updates [https://www.figma.com/blog/product-updates/]Dev Mode [https://www.figma.com/blog/dev-mode/]AI [https://www.figma.com/blog/ai/]Engineering [https://www.figma.com/blog/engineering/]News [https://www.figma.com/blog/news/] Today we’re announcing the beta release of the Dev Mode MCP server, which brings Figma directly into the developer workflow to help LLMs achieve design-informed code generation. Until recently, the only way to provide design context to AI tools was to feed an image of a design or an API response to a chatbot. This has changed with the recent advent of Model Context Protocol [https://docs.anthropic.com/en/docs/agents-and-tools/mcp] (MCP), a standard for how applications provide context to LLMs. We set out to apply this standard with Figma’s Dev Mode MCP server, which allows developers to bring context from Figma into agentic coding tools like Copilot in VS Code, Cursor, Windsurf, and Claude Code. Whether it’s creating new atomic components with the proper variables and stylings or building out multi-layer application flows, we believe this server will provide a more efficient and accurate design-to-code workflow. As a beta, this is only the beginning. Over the coming months, we plan to release a slew of updates, including features like remote server capabilities and deeper codebase integrations. With your feedback, we’ll continue to iterate on and expand our offering. You can provide feedback directly to us through this form [https://form.asana.com/?k=jMdFq_1SBUOyh8_k3q76QA&d=10497086658021]. There’s a lot more to come, but first, let’s take a step back to share how we got here. Watch Jake&#x27;s lightning talk [https://www.youtube.com/watch?v=gj8FlDfvZQI] on how to align code to design intent. ## Context is everything [#context-is-everything] Today, LLMs can create workable code. But if you ask a tool to write code with no other context beyond its training data, its output—while usable—likely won’t match the patterns found in the rest of your codebase. This is because every team approaches their codebase differently—with a different structure, framework, vocabulary, and workflow—and makes decisions that evolve their codebase based on their specific needs. All these differences compound into a unique fingerprint that’s difficult for LLMs to infer. Recognizing and understanding these patterns requires additional context [https://www.figma.com/blog/double-click-what-does-mcp-mean-for-agentic-ai/], and this is where agentic coding tools come into play. They gather context—from reading existing code, examining repository history, accessing documentation, and understanding database schemas—and feed it to LLMs so they can generate code in your IDE that’s precise, informed, and in line with your existing systems. MCP servers like Figma’s Dev Mode MCP server add onto this by bringing outside context from other tools like Figma into that workflow, so your code doesn&#x27;t just match the fingerprint of your codebase, but that of your design, too. Design context is critical for going from design to code. When it comes to understanding design intent, we need to consider a range of information that could be valuable based on what we’re asking an LLM to do. Getting this information right is important because the process of translating design to code is more than detailed inspection. ## How we translate design intent for LLMs [#how-we-translate-design-intent-for-llms] When a developer opens a Figma file, the first thing they probably do is zoom all the way out to get a sense for order and structure. Then, they might process a sequence of screens or inferred logic, thinking about how they could structure the feature across different files in code. They audit as they build, making sure the patterns are right, interpreting placeholder content as something real they need to retrieve from the backend. Throughout the process of implementing a design, they’re generating different types of code and working across different altitudes—from under-the-hood details to higher-level patterns. To ensure that design intent translates to code, LLMs also need this holistic picture. The Figma Dev Mode MCP server paints this picture for LLMs in a few key ways, supplementing visual information with more nuanced details around design intent, while also drawing from existing patterns and systems. Different tasks might require different combinations of these points of context, and often, the context we exclude is just as important as what we provide. This is why MCP servers, like ours, surface tools that represent specific types of context for LLMs. Our server also allows you to configure settings to give you control over what those tools return. Here’s a look at when to consider dialing up and down these points of context—depending on your setup and what you want to prioritize. ### Pattern metadata [#pattern-metadata] Since you have limited space in an LLM’s context window, the more information you can provide, the better. By giving the LLM the context from your designs, the fewer tokens it uses. If you’ve already invested in a design system and leverage patterns like components, variables, and styles that are aligned between design and code, the Dev Mode MCP server is a multiplier—we want to make sure that the LLM can benefit from these patterns, too. Agentic search techniques can take quite a bit of time to locate the right patterns, especially in large codebases. They may also find valid patterns that stray from those referenced in a design. By providing references to specific variables, components, and styles, the Dev Mode MCP server can make generated code more precise, efficient, and reduce LLM token usage. In this video, Jake provides some examples for how to bulk add code syntax to a variable collection with the plugin API. For example, let’s say you’ve created a lot of alignment between design and code. If you only provide a screenshot of a component instance, the AI tool will spend a lot of time searching the codebase—like icon and component libraries—to identify the right component to use. If it doesn’t find a match, it will likely create a new component based on the screenshot. By contrast, if Figma knows which components you’re using, it can share the exact path to the code file the agent needs with Code Connect [https://www.figma.com/code-connect-docs/]. Similarly, if you take a screenshot of a red rectangle and prompt your agentic tool to use tokens, there might be many different tokens with the same red value. Figma knows which specific token is used, and can provide the name of that variable to the LLM via MCP. Even better, if you have provided code syntax in Figma for that variable, the Dev Mode MCP server can provide that exact code to the LLM. An example of the Code Connect and variables code syntax metadata that the Dev Mode MCP server provides for a selection. ### Screenshots [#screenshots] Designers often use imagery to represent a piece of interactive content—like using a picture of a map in a design to represent a live embedded map experience. In these scenarios, metadata may not fully communicate that interactive functionality to an LLM. With a screenshot, the Dev Mode MCP server can provide that design context. Teams build all types of complicated and compelling designs, and it’s often helpful to zoom out and think about the high-level view of a design before diving into the details. For example, when you’re trying to get a sense for the overall context—sequence of screens, sections, mobile and desktop responsive context—a high-level screenshot can provide the LLM information about the relationship between sections and nodes, and capture the overall flow in a way that style details can’t. The value of this kind of visual information is more about what it tells us about design intent than it is a spec for the LLM to replicate one to one. The right code is aligned to design intent [https://www.youtube.com/watch?v=kq_lqeIIkPw&t=388s], not just pixels. We like to think of screenshots as supplemental information for the code response; a screenshot combined with Figma’s code outputs performs better than either on their own. An example of how you can use the get image tool to analyze a design in Figma. In this case, we’re asking Copilot to tell us approximately how many components we’ll need to add to our design system. ### Interactivity [#interactivity] Code examples can describe design behavior already defined in Figma, or already connected to the codebase. Pseudocode, which you can think of as a code prototype, is often a great way to give an LLM context that’s more effective than simply describing properties—especially if the pseudocode is also informed by the codebase, with features like code syntax for variables and Code Connect for components. This sample code can be helpful in a few scenarios, like when you’re looking to describe a fully encapsulated piece of functionality. A psuedo-representation of a stateful component is useful to an LLM in a way that a tree of Figma metadata is not. It’s also useful to represent a sequence of UI—rather than inspecting them independently as metadata—to focus on the differences between them. An example of the React and Tailwind code the MCP server provides by default. In this case, it’s a working React representation of this image gallery. LLMs can make use of this interactive code representation as they incorporate this design into the codebase. ### Content [#content] We want to make sure that we’re getting what’s implied by a design out of Figma, too. Even placeholder content in Figma can be representative of design context and informative for LLMs. Content like text, svg, images, layer names, and annotations can help LLMs derive how to fill the interface with the data model on the code side. Here we can see that the text and layer names for the current Figma selection show up in the MCP server’s React output and allow the LLM to tell us quite a bit of information about the design. ## Design-informed code generation [#design-informed-code-generation] Many developers are already using AI to work more efficiently in their IDEs, and we’re excited to accelerate those workflows while keeping output consistent and at a high fidelity. Today, that starts with three tools in the MCP server that allow you to get context from Figma for the current selection or specific node id: one for code, another for images, and a third for variable definitions. You can change the type of response the code tool returns inside your server settings, which allows for fine tuning based on the task at hand. You can enable the more interactive code representation with React and Tailwind, with more options to come down the line. Code Connect [https://www.figma.com/code-connect-docs/] ensures that generated code aligns with your codebase, allowing you to see component mappings and any code syntax you add for your variables will also be surfaced. As we launch the Dev Mode MCP server in beta, we’re looking for your feedback [https://form.asana.com/?k=jMdFq_1SBUOyh8_k3q76QA&d=10497086658021] on current capabilities, which will inform what we build down the line. Based on early testing, we’re already working on a few improvements, starting with making the MCP experience available without needing the Figma desktop app, so it’s easier for teams to onboard and collaborate from anywhere. We’re also working on a deeper codebase integration and simpler Code Connect experience with a more intuitive setup. Future versions will explore features that support annotations, Grid, and more. This is just the first step in our commitment to building a better design-to-code experience with faster handoff, smarter outputs, and more efficient workflows. You can access Figma’s Dev Mode MCP server [https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Dev-Mode-MCP-Server] with any Dev or Full seat, and look out for more updates as we continue to invest in this space. We can’t wait to hear what you think. ## Subscribe to Figma’s editorial newsletter Enter email* I agree to opt-in to Figma&#x27;s mailing list.* By clicking “Submit” you agree to our TOS [https://www.figma.com/tos/] and Privacy Policy [https://www.figma.com/privacy/]. ## Create and collaborate with Figma Get started for free [https://www.figma.com/signup] [https://www.figma.com/] • [https://x.com/figma] • [https://www.youtube.com/figmadesign] • [https://www.instagram.com/figma] • [https://www.facebook.com/figmadesign] ## Product • Figma Design [https://www.figma.com/design/] • Dev Mode [https://www.figma.com/dev-mode/] • FigJam [https://www.figma.com/figjam/] • Figma Slides [https://www.figma.com/slides/] Figma Draw New Figma Buzz Beta Figma Sites Beta Figma Make Beta • AI [https://www.figma.com/ai/] • Downloads [https://www.figma.com/downloads/] • Release notes [https://www.figma.com/release-notes/] ## Plans • Pricing [https://www.figma.com/pricing/] • Enterprise [https://www.figma.com/enterprise/] • Organization [https://www.figma.com/organization/] • Professional [https://www.figma.com/professional/] ## Use cases • UI design [https://www.figma.com/ui-design-tool/] • UX design [https://www.figma.com/ux-design-tool/] • Wireframing [https://www.figma.com/wireframe-tool/] • Diagramming [https://www.figma.com/figjam/diagramming-tool/] • Prototyping [https://www.figma.com/prototyping/] • Brainstorming [https://www.figma.com/figjam/brainstorming-tool/] • Presentation Maker [https://www.figma.com/presentation-maker/] • Online whiteboard [https://www.figma.com/figjam/online-whiteboard/] • Agile [https://www.figma.com/figjam/agile-workflows/] • Strategic planning [https://www.figma.com/figjam/strategic-planning/] • Mind mapping [https://www.figma.com/figjam/mind-map/] • Online sticky notes [https://www.figma.com/figjam/online-sticky-notes/] • Concept map [https://www.figma.com/figjam/concept-map/] ## Resources • Blog [https://www.figma.com/blog/] • Best practices [https://www.figma.com/best-practices/] • QR code generator [https://www.figma.com/qr-code-generator/] • Color wheel [https://www.figma.com/color-wheel/] • Colors [https://www.figma.com/colors/] • Color picker [https://www.figma.com/color-picker/] • Color palettes [https://www.figma.com/color-palettes/] • Color palette generator [https://www.figma.com/color-palette-generator/] • Color contrast checker [https://www.figma.com/color-contrast-checker/] • Font Library [https://www.figma.com/fonts/] • Templates [https://www.figma.com/templates/] • Developers [https://www.figma.com/developers] • Integrations [https://www.figma.com/product-integrations/] • Affiliate program [https://www.figma.com/affiliate-program/] • Resource library [https://www.figma.com/resource-library/] • Reports and insights [https://www.figma.com/reports/] • Support [https://help.figma.com/hc/en-us] • Status [https://status.figma.com/] • Legal and privacy [https://www.figma.com/legal/] • Modern slavery statement [https://static.figma.com/uploads/1b6f8f613c2cc1e77fe543424bbc631298504d35] • Climate disclosure statement [https://static.figma.com/uploads/d2a204b5cc4d64ff539fcd445d0ddedab7dc00f6] ## Compare • Sketch [https://www.figma.com/figma-vs-sketch/] • Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] • Framer [https://www.figma.com/figma-vs-framer/] • Miro [https://www.figma.com/figjam-vs-miro/] ## Company • Events [https://www.figma.com/events/] • Customers [https://www.figma.com/customers/] • Careers [https://www.figma.com/careers/] • Newsroom [https://www.figma.com/newsroom/] English",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Introducing our Dev Mode MCP server: Bringing Figma into your workflow | Figma Blog Skip to main content Subscribe to Figma’s editorial newsletter [https://www.figma.com/signup] [https://www.figma.com/] [https://www.figma.com/blog/] ##### Categories • Maker Stories [https://www.figma.com/blog/maker-stories/] • Working Well [https://www.figma.com/blog/working-well/] • Inside Figma [https://www.figma.com/blog/inside-figma/] • Insights [https://www.figma.com/blog/insights/] Topics ### Featured Topics ### News Get the latest on all things Figma. ### Design systems ### Explore topics • 3D design [https://www.figma.com/blog/3d-design/] • Accessibility [https://www.figma.com/blog/accessibility/] • AI [https://www.figma.com/blog/ai/] • Behind the scenes [https://www.figma.com/blog/behind-the-scenes/] • Brainstorming [https://www.figma.com/blog/brainstorming/] • Branding [https://www.figma.com/blog/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 999,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "log/branding/] • Career & education [https://www.figma.com/blog/career-and-education/] • Case study [https://www.figma.com/blog/case-study/] • Collaboration [https://www.figma.com/blog/collaboration/] • Config [https://www.figma.com/blog/config/] • Culture [https://www.figma.com/blog/culture/] • Design [https://www.figma.com/blog/design/] • Design thinking [https://www.figma.com/blog/design-thinking/] • Dev Mode [https://www.figma.com/blog/dev-mode/] • Diagramming [https://www.figma.com/blog/diagramming/] • Engineering [https://www.figma.com/blog/engineering/] • Events [https://www.figma.com/blog/events/] • FigJam [https://www.figma.com/blog/figjam/] • Figma Buzz [https://www.figma.com/blog/figma-buzz/] • Figma Design [https://www.figma.com/blog/figma-design/] • Figma Draw [https://www.figma.com/blog/figma-draw/] • Figma Make [https://www.figma.com/blog/figma-make/] • Figma Sites [https://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] •",
+      "metadata": {
+        "startIndex": 899,
+        "endIndex": 1894,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ttps://www.figma.com/blog/figma-sites/] • Figma Slides [https://www.figma.com/blog/figma-slides/] • Hiring [https://www.figma.com/blog/hiring/] • Infrastructure [https://www.figma.com/blog/infrastructure/] • Leadership [https://www.figma.com/blog/leadership/] • Localization [https://www.figma.com/blog/localization/] • Marketing [https://www.figma.com/blog/marketing/] • Meetings [https://www.figma.com/blog/meetings/] • Motion [https://www.figma.com/blog/motion/] • Operations [https://www.figma.com/blog/operations/] • Plugins & tooling [https://www.figma.com/blog/plugins-and-tooling/] • Portfolio [https://www.figma.com/blog/portfolio/] • Product management [https://www.figma.com/blog/product-management/] • Product updates [https://www.figma.com/blog/product-updates/] • Productivity [https://www.figma.com/blog/productivity/] • Profiles & interviews [https://www.figma.com/blog/profiles-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance",
+      "metadata": {
+        "startIndex": 1794,
+        "endIndex": 2786,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "es-and-interviews/] • Prototyping [https://www.figma.com/blog/prototyping/] • Quality & performance [https://www.figma.com/blog/quality-and-performance/] • React [https://www.figma.com/blog/react/] • Report [https://www.figma.com/blog/report/] • Research [https://www.figma.com/blog/research/] • Security [https://www.figma.com/blog/security/] • Social impact [https://www.figma.com/blog/social-impact/] • Strategy [https://www.figma.com/blog/strategy/] • The Long & Short of It [https://www.figma.com/blog/the-long-and-short-of-it/] • Thought leadership [https://www.figma.com/blog/thought-leadership/] • Tips & inspiration [https://www.figma.com/blog/tips-and-inspiration/] • Typography [https://www.figma.com/blog/typography/] • UI/UX [https://www.figma.com/blog/ui-ux/] • Wireframing [https://www.figma.com/blog/wireframing/] • Writing [https://www.figma.com/blog/writing/] June 4, 2025 # Introducing our Dev Mode MCP server: Bringing Figma into your workflow Jake AlbaughDeveloper Advocate,",
+      "metadata": {
+        "startIndex": 2686,
+        "endIndex": 3682,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "roducing our Dev Mode MCP server: Bringing Figma into your workflow Jake AlbaughDeveloper Advocate, Figma Inside Figma [https://www.figma.com/blog/inside-figma/]Product updates [https://www.figma.com/blog/product-updates/]Dev Mode [https://www.figma.com/blog/dev-mode/]AI [https://www.figma.com/blog/ai/]Engineering [https://www.figma.com/blog/engineering/]News [https://www.figma.com/blog/news/] Today we’re announcing the beta release of the Dev Mode MCP server, which brings Figma directly into the developer workflow to help LLMs achieve design-informed code generation. Until recently, the only way to provide design context to AI tools was to feed an image of a design or an API response to a chatbot. This has changed with the recent advent of Model Context Protocol [https://docs.anthropic.com/en/docs/agents-and-tools/mcp] (MCP), a standard for how applications provide context to LLMs. We set out to apply this standard with Figma’s Dev Mode MCP server, which allows developers to bring",
+      "metadata": {
+        "startIndex": 3582,
+        "endIndex": 4579,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "e set out to apply this standard with Figma’s Dev Mode MCP server, which allows developers to bring context from Figma into agentic coding tools like Copilot in VS Code, Cursor, Windsurf, and Claude Code. Whether it’s creating new atomic components with the proper variables and stylings or building out multi-layer application flows, we believe this server will provide a more efficient and accurate design-to-code workflow. As a beta, this is only the beginning. Over the coming months, we plan to release a slew of updates, including features like remote server capabilities and deeper codebase integrations. With your feedback, we’ll continue to iterate on and expand our offering. You can provide feedback directly to us through this form [https://form.asana.com/?k=jMdFq_1SBUOyh8_k3q76QA&d=10497086658021]. There’s a lot more to come, but first, let’s take a step back to share how we got here. Watch Jake&#x27;s lightning talk [https://www.youtube.com/watch?v=gj8FlDfvZQI] on how to align code",
+      "metadata": {
+        "startIndex": 4479,
+        "endIndex": 5480,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "Watch Jake&#x27;s lightning talk [https://www.youtube.com/watch?v=gj8FlDfvZQI] on how to align code to design intent. ## Context is everything [#context-is-everything] Today, LLMs can create workable code. But if you ask a tool to write code with no other context beyond its training data, its output—while usable—likely won’t match the patterns found in the rest of your codebase. This is because every team approaches their codebase differently—with a different structure, framework, vocabulary, and workflow—and makes decisions that evolve their codebase based on their specific needs. All these differences compound into a unique fingerprint that’s difficult for LLMs to infer. Recognizing and understanding these patterns requires additional context [https://www.figma.com/blog/double-click-what-does-mcp-mean-for-agentic-ai/], and this is where agentic coding tools come into play. They gather context—from reading existing code, examining repository history, accessing documentation, and",
+      "metadata": {
+        "startIndex": 5380,
+        "endIndex": 6375,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ther context—from reading existing code, examining repository history, accessing documentation, and understanding database schemas—and feed it to LLMs so they can generate code in your IDE that’s precise, informed, and in line with your existing systems. MCP servers like Figma’s Dev Mode MCP server add onto this by bringing outside context from other tools like Figma into that workflow, so your code doesn&#x27;t just match the fingerprint of your codebase, but that of your design, too. Design context is critical for going from design to code. When it comes to understanding design intent, we need to consider a range of information that could be valuable based on what we’re asking an LLM to do. Getting this information right is important because the process of translating design to code is more than detailed inspection. ## How we translate design intent for LLMs [#how-we-translate-design-intent-for-llms] When a developer opens a Figma file, the first thing they probably do is zoom all",
+      "metadata": {
+        "startIndex": 6275,
+        "endIndex": 7273,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "-intent-for-llms] When a developer opens a Figma file, the first thing they probably do is zoom all the way out to get a sense for order and structure. Then, they might process a sequence of screens or inferred logic, thinking about how they could structure the feature across different files in code. They audit as they build, making sure the patterns are right, interpreting placeholder content as something real they need to retrieve from the backend. Throughout the process of implementing a design, they’re generating different types of code and working across different altitudes—from under-the-hood details to higher-level patterns. To ensure that design intent translates to code, LLMs also need this holistic picture. The Figma Dev Mode MCP server paints this picture for LLMs in a few key ways, supplementing visual information with more nuanced details around design intent, while also drawing from existing patterns and systems.",
+      "metadata": {
+        "startIndex": 7173,
+        "endIndex": 8114,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "h more nuanced details around design intent, while also drawing from existing patterns and systems. Different tasks might require different combinations of these points of context, and often, the context we exclude is just as important as what we provide. This is why MCP servers, like ours, surface tools that represent specific types of context for LLMs. Our server also allows you to configure settings to give you control over what those tools return. Here’s a look at when to consider dialing up and down these points of context—depending on your setup and what you want to prioritize. ### Pattern metadata [#pattern-metadata] Since you have limited space in an LLM’s context window, the more information you can provide, the better. By giving the LLM the context from your designs, the fewer tokens it uses. If you’ve already invested in a design system and leverage patterns like components, variables, and styles that are aligned between design and code, the Dev Mode MCP server is a",
+      "metadata": {
+        "startIndex": 8014,
+        "endIndex": 9006,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "nents, variables, and styles that are aligned between design and code, the Dev Mode MCP server is a multiplier—we want to make sure that the LLM can benefit from these patterns, too. Agentic search techniques can take quite a bit of time to locate the right patterns, especially in large codebases. They may also find valid patterns that stray from those referenced in a design. By providing references to specific variables, components, and styles, the Dev Mode MCP server can make generated code more precise, efficient, and reduce LLM token usage. In this video, Jake provides some examples for how to bulk add code syntax to a variable collection with the plugin API. For example, let’s say you’ve created a lot of alignment between design and code. If you only provide a screenshot of a component instance, the AI tool will spend a lot of time searching the codebase—like icon and component libraries—to identify the right component to use.",
+      "metadata": {
+        "startIndex": 8906,
+        "endIndex": 9852,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "me searching the codebase—like icon and component libraries—to identify the right component to use. If it doesn’t find a match, it will likely create a new component based on the screenshot. By contrast, if Figma knows which components you’re using, it can share the exact path to the code file the agent needs with Code Connect [https://www.figma.com/code-connect-docs/]. Similarly, if you take a screenshot of a red rectangle and prompt your agentic tool to use tokens, there might be many different tokens with the same red value. Figma knows which specific token is used, and can provide the name of that variable to the LLM via MCP. Even better, if you have provided code syntax in Figma for that variable, the Dev Mode MCP server can provide that exact code to the LLM. An example of the Code Connect and variables code syntax metadata that the Dev Mode MCP server provides for a selection. ### Screenshots [#screenshots] Designers often use imagery to represent a piece of interactive",
+      "metadata": {
+        "startIndex": 9752,
+        "endIndex": 10744,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "ion. ### Screenshots [#screenshots] Designers often use imagery to represent a piece of interactive content—like using a picture of a map in a design to represent a live embedded map experience. In these scenarios, metadata may not fully communicate that interactive functionality to an LLM. With a screenshot, the Dev Mode MCP server can provide that design context. Teams build all types of complicated and compelling designs, and it’s often helpful to zoom out and think about the high-level view of a design before diving into the details. For example, when you’re trying to get a sense for the overall context—sequence of screens, sections, mobile and desktop responsive context—a high-level screenshot can provide the LLM information about the relationship between sections and nodes, and capture the overall flow in a way that style details can’t. The value of this kind of visual information is more about what it tells us about design intent than it is a spec for the LLM to replicate one to",
+      "metadata": {
+        "startIndex": 10644,
+        "endIndex": 11645,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "s more about what it tells us about design intent than it is a spec for the LLM to replicate one to one. The right code is aligned to design intent [https://www.youtube.com/watch?v=kq_lqeIIkPw&t=388s], not just pixels. We like to think of screenshots as supplemental information for the code response; a screenshot combined with Figma’s code outputs performs better than either on their own. An example of how you can use the get image tool to analyze a design in Figma. In this case, we’re asking Copilot to tell us approximately how many components we’ll need to add to our design system. ### Interactivity [#interactivity] Code examples can describe design behavior already defined in Figma, or already connected to the codebase. Pseudocode, which you can think of as a code prototype, is often a great way to give an LLM context that’s more effective than simply describing properties—especially if the pseudocode is also informed by the codebase, with features like code syntax for variables and",
+      "metadata": {
+        "startIndex": 11545,
+        "endIndex": 12546,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "f the pseudocode is also informed by the codebase, with features like code syntax for variables and Code Connect for components. This sample code can be helpful in a few scenarios, like when you’re looking to describe a fully encapsulated piece of functionality. A psuedo-representation of a stateful component is useful to an LLM in a way that a tree of Figma metadata is not. It’s also useful to represent a sequence of UI—rather than inspecting them independently as metadata—to focus on the differences between them. An example of the React and Tailwind code the MCP server provides by default. In this case, it’s a working React representation of this image gallery. LLMs can make use of this interactive code representation as they incorporate this design into the codebase. ### Content [#content] We want to make sure that we’re getting what’s implied by a design out of Figma, too. Even placeholder content in Figma can be representative of design context and informative for LLMs.",
+      "metadata": {
+        "startIndex": 12446,
+        "endIndex": 13436,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "Even placeholder content in Figma can be representative of design context and informative for LLMs. Content like text, svg, images, layer names, and annotations can help LLMs derive how to fill the interface with the data model on the code side. Here we can see that the text and layer names for the current Figma selection show up in the MCP server’s React output and allow the LLM to tell us quite a bit of information about the design. ## Design-informed code generation [#design-informed-code-generation] Many developers are already using AI to work more efficiently in their IDEs, and we’re excited to accelerate those workflows while keeping output consistent and at a high fidelity. Today, that starts with three tools in the MCP server that allow you to get context from Figma for the current selection or specific node id: one for code, another for images, and a third for variable definitions.",
+      "metadata": {
+        "startIndex": 13336,
+        "endIndex": 14240,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "ection or specific node id: one for code, another for images, and a third for variable definitions. You can change the type of response the code tool returns inside your server settings, which allows for fine tuning based on the task at hand. You can enable the more interactive code representation with React and Tailwind, with more options to come down the line. Code Connect [https://www.figma.com/code-connect-docs/] ensures that generated code aligns with your codebase, allowing you to see component mappings and any code syntax you add for your variables will also be surfaced. As we launch the Dev Mode MCP server in beta, we’re looking for your feedback [https://form.asana.com/?k=jMdFq_1SBUOyh8_k3q76QA&d=10497086658021] on current capabilities, which will inform what we build down the line. Based on early testing, we’re already working on a few improvements, starting with making the MCP experience available without needing the Figma desktop app, so it’s easier for teams to onboard and",
+      "metadata": {
+        "startIndex": 14140,
+        "endIndex": 15141,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "experience available without needing the Figma desktop app, so it’s easier for teams to onboard and collaborate from anywhere. We’re also working on a deeper codebase integration and simpler Code Connect experience with a more intuitive setup. Future versions will explore features that support annotations, Grid, and more. This is just the first step in our commitment to building a better design-to-code experience with faster handoff, smarter outputs, and more efficient workflows. You can access Figma’s Dev Mode MCP server [https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Dev-Mode-MCP-Server] with any Dev or Full seat, and look out for more updates as we continue to invest in this space. We can’t wait to hear what you think. ## Subscribe to Figma’s editorial newsletter Enter email* I agree to opt-in to Figma&#x27;s mailing list.* By clicking “Submit” you agree to our TOS [https://www.figma.com/tos/] and Privacy Policy [https://www.figma.com/privacy/].",
+      "metadata": {
+        "startIndex": 15041,
+        "endIndex": 16026,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "agree to our TOS [https://www.figma.com/tos/] and Privacy Policy [https://www.figma.com/privacy/]. ## Create and collaborate with Figma Get started for free [https://www.figma.com/signup] [https://www.figma.com/] • [https://x.com/figma] • [https://www.youtube.com/figmadesign] • [https://www.instagram.com/figma] • [https://www.facebook.com/figmadesign] ## Product • Figma Design [https://www.figma.com/design/] • Dev Mode [https://www.figma.com/dev-mode/] • FigJam [https://www.figma.com/figjam/] • Figma Slides [https://www.figma.com/slides/] Figma Draw New Figma Buzz Beta Figma Sites Beta Figma Make Beta • AI [https://www.figma.com/ai/] • Downloads [https://www.figma.com/downloads/] • Release notes [https://www.figma.com/release-notes/] ## Plans • Pricing [https://www.figma.com/pricing/] • Enterprise [https://www.figma.com/enterprise/] • Organization [https://www.figma.com/organization/] • Professional [https://www.figma.com/professional/] ## Use cases • UI design",
+      "metadata": {
+        "startIndex": 15926,
+        "endIndex": 16903,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "ma.com/organization/] • Professional [https://www.figma.com/professional/] ## Use cases • UI design [https://www.figma.com/ui-design-tool/] • UX design [https://www.figma.com/ux-design-tool/] • Wireframing [https://www.figma.com/wireframe-tool/] • Diagramming [https://www.figma.com/figjam/diagramming-tool/] • Prototyping [https://www.figma.com/prototyping/] • Brainstorming [https://www.figma.com/figjam/brainstorming-tool/] • Presentation Maker [https://www.figma.com/presentation-maker/] • Online whiteboard [https://www.figma.com/figjam/online-whiteboard/] • Agile [https://www.figma.com/figjam/agile-workflows/] • Strategic planning [https://www.figma.com/figjam/strategic-planning/] • Mind mapping [https://www.figma.com/figjam/mind-map/] • Online sticky notes [https://www.figma.com/figjam/online-sticky-notes/] • Concept map [https://www.figma.com/figjam/concept-map/] ## Resources • Blog [https://www.figma.com/blog/] • Best practices [https://www.figma.com/best-practices/] • QR code",
+      "metadata": {
+        "startIndex": 16803,
+        "endIndex": 17798,
+        "chunkIndex": 19,
+        "section": "Introduction",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "og [https://www.figma.com/blog/] • Best practices [https://www.figma.com/best-practices/] • QR code generator [https://www.figma.com/qr-code-generator/] • Color wheel [https://www.figma.com/color-wheel/] • Colors [https://www.figma.com/colors/] • Color picker [https://www.figma.com/color-picker/] • Color palettes [https://www.figma.com/color-palettes/] • Color palette generator [https://www.figma.com/color-palette-generator/] • Color contrast checker [https://www.figma.com/color-contrast-checker/] • Font Library [https://www.figma.com/fonts/] • Templates [https://www.figma.com/templates/] • Developers [https://www.figma.com/developers] • Integrations [https://www.figma.com/product-integrations/] • Affiliate program [https://www.figma.com/affiliate-program/] • Resource library [https://www.figma.com/resource-library/] • Reports and insights [https://www.figma.com/reports/] • Support [https://help.figma.com/hc/en-us] • Status [https://status.figma.com/] • Legal and privacy",
+      "metadata": {
+        "startIndex": 17698,
+        "endIndex": 18684,
+        "chunkIndex": 20,
+        "section": "Introduction",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "Support [https://help.figma.com/hc/en-us] • Status [https://status.figma.com/] • Legal and privacy [https://www.figma.com/legal/] • Modern slavery statement [https://static.figma.com/uploads/1b6f8f613c2cc1e77fe543424bbc631298504d35] • Climate disclosure statement [https://static.figma.com/uploads/d2a204b5cc4d64ff539fcd445d0ddedab7dc00f6] ## Compare • Sketch [https://www.figma.com/figma-vs-sketch/] • Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] • Framer [https://www.figma.com/figma-vs-framer/] • Miro [https://www.figma.com/figjam-vs-miro/] ## Company • Events [https://www.figma.com/events/] • Customers [https://www.figma.com/customers/] • Careers [https://www.figma.com/careers/] • Newsroom [https://www.figma.com/newsroom/] English",
+      "metadata": {
+        "startIndex": 18584,
+        "endIndex": 19584,
+        "chunkIndex": 21,
+        "section": "Introduction",
+        "globalChunkIndex": 21
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma;dev-mode;mcp;integration;development"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T03:10:00.333Z",
+    "system": "Figma",
+    "author": "Figma Blog",
+    "version": "1.0",
+    "source_url": "https://www.figma.com/blog/introducing-figmas-dev-mode-mcp-server/"
+  }
+}

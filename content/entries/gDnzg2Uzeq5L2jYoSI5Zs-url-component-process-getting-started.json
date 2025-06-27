@@ -1,0 +1,112 @@
+{
+  "id": "gDnzg2Uzeq5L2jYoSI5Zs",
+  "title": "Component Process: Getting Started",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/getting-started.html",
+    "ingested_at": "2025-06-27T02:59:39.577Z"
+  },
+  "content": "Let's get started - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] Let's get started. Phase --> Type --> Time --> Hold up! Before we begin... Did you know a more comprehensive version of this guide is now available as a book!?! Get the book ### Welcome to the start of your component journey! Whether you’re reskinning an existing UI kit, building a new System, or levelling up your current System, this guide is for you. ## The basics ### What is a component? A component is a reusable interface element, like a text input or a button. They’re the building blocks of our product experiences that make them come to life. In Design Systems, a component typically includes a cross-platform build (including design) and implementation and usage documentation. ## Why should you use this guide? Right now, you might be thinking, I already have a Design System or a UI kit that gives me everything I need, and it’s working just fine. Do I need a process for creating components in my Design System? And, while I could sit here and tell you, yes, your System will fail if you don’t — that’s neither true nor a reason to read on. #### So, here is my why — My first experience building a Design System was in 2016, reskinning a UI kit for a multi-product platform. I had one Developer and six months to get it product ready. Small team, big goal, plus a UI kit, you might be wondering — did I do anything aside from reskin the components to our brand? Not really. Was it widely adopted? Not by choice. Did people know how to use it? Kind of. Could I have done better? Yes, absolutely — and this brings us back to the importance of a component process. While we reached our goal and delivered the System, we didn’t have detailed usage documentation or rationale behind our design choices. Not only that, I had no conviction that each application was the right one for our product, nor if they were truly accessible, and neither did those who had to use it — As a result, every time someone asked me about a component or pushed back on a design decision, which was often, I either had to yield, or get defensive over a decision I didn’t make — and for those of us who have been there, honestly, it’s wasted energy. Your Design System is only ever going to be as good as the effort you put into it — so take the time, take people on the journey, and build something so good that people refuse not to use it. And no, your System isn’t going to fail if you don’t follow this guide, but I can guarantee that it will make it a hell of a lot better, trust me. So, let’s get into it! ## What we’ll cover ### Research In the research phase — you’ll develop a much more robust understanding of the existing component, including usage, issues and potential opportunities. You’ll also look beyond your product and see how other products and Systems solve similar problems and understand usage and best practices for accessibility and design. All the while starting this journey with all the right people to get solid buy-in and adoption from the outset. • 1.1 Product audit [/component-process/product-audit.html] • 1.2 Kickoff [/component-process/kickoff.html] • 1.3 Research [/component-process/research.html] • 1.4 Research sync [/component-process/research-sync.html] ### Design In the design phase, you’ll explore multiple different applications of the component in your product and find avenues to align and improve your product experience. Not only this but you’ll be humbled by feedback from your peers and user experience testing. Finally, you’ll get everyone aligned in your team before pressing on. • 2.1 Exploration [/component-process/exploration.html] • 2.2 Design crit [/component-process/design-crit.html] • 2.3 User testing [/component-process/user-testing.html] • 2.4 Design alignment [/component-process/design-alignment.html] ### Build By the build phase, your Developers should have been on the journey with you from the beginning, but you’ll be working even closer with them to ensure all aspects of your proposed design are documented and tested. In parallel, you’ll look at creating your component in Figma (or another design tool) whilst keeping parity with the other platforms. • 3.1 Spec doc [/component-process/spec-doc.html] • 3.2 Spec walkthrough [/component-process/spec-walkthrough.html] • 3.3 Design QA [/component-process/design-qa.html] • 3.4 Figma build [/component-process/figma-build.html] ### Release Finally, we’ll look at putting together rock-solid usage documentation, the different types of releases, when you should use them, and how to monitor and improve your component in the long term. • 4.1 Documentation [/component-process/documentation.html] • 4.2 Release [/component-process/release.html] • 4.3 Metrics [/component-process/metrics.html] ### Do I need to do every step? Yes and no. I like to think of this guide as a bit of a choose-your-own-adventure book (how great were they!). Not all Systems and components will be the same, and you might already have a rock-solid process. Even if you find one thing helpful in this guide, I’ve done my job! My only advice is to stick to the phases in order — imagine conducting an audit after the build to find a massive flaw in your design?! Sadly, I think many Product Designers have experienced this Nightmare at some point in their career. ## What will you get out of this process? ### Key deliverables • An accessible and well-thought-through component • Research and justification behind design decisions • Foolproof usage documentation • Aligned cross-platform build • Buy-in from your team and external stakeholders = aka guaranteed adoption Hot tips ## Up next Step 1.1 Product audit Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Let's get started - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] Let's get started. Phase --> Type --> Time --> Hold up! Before we begin...",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 925,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Articles About [/about] Let's get started. Phase --> Type --> Time --> Hold up! Before we begin... Did you know a more comprehensive version of this guide is now available as a book!?! Get the book ### Welcome to the start of your component journey! Whether you’re reskinning an existing UI kit, building a new System, or levelling up your current System, this guide is for you. ## The basics ### What is a component? A component is a reusable interface element, like a text input or a button. They’re the building blocks of our product experiences that make them come to life. In Design Systems, a component typically includes a cross-platform build (including design) and implementation and usage documentation. ## Why should you use this guide? Right now, you might be thinking, I already have a Design System or a UI kit that gives me everything I need, and it’s working just fine. Do I need a process for creating components in my Design System?",
+      "metadata": {
+        "startIndex": 825,
+        "endIndex": 1777,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "need, and it’s working just fine. Do I need a process for creating components in my Design System? And, while I could sit here and tell you, yes, your System will fail if you don’t — that’s neither true nor a reason to read on. #### So, here is my why — My first experience building a Design System was in 2016, reskinning a UI kit for a multi-product platform. I had one Developer and six months to get it product ready. Small team, big goal, plus a UI kit, you might be wondering — did I do anything aside from reskin the components to our brand? Not really. Was it widely adopted? Not by choice. Did people know how to use it? Kind of. Could I have done better? Yes, absolutely — and this brings us back to the importance of a component process. While we reached our goal and delivered the System, we didn’t have detailed usage documentation or rationale behind our design choices. Not only that, I had no conviction that each application was the right one for our product, nor if they were truly",
+      "metadata": {
+        "startIndex": 1677,
+        "endIndex": 2678,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "I had no conviction that each application was the right one for our product, nor if they were truly accessible, and neither did those who had to use it — As a result, every time someone asked me about a component or pushed back on a design decision, which was often, I either had to yield, or get defensive over a decision I didn’t make — and for those of us who have been there, honestly, it’s wasted energy. Your Design System is only ever going to be as good as the effort you put into it — so take the time, take people on the journey, and build something so good that people refuse not to use it. And no, your System isn’t going to fail if you don’t follow this guide, but I can guarantee that it will make it a hell of a lot better, trust me. So, let’s get into it! ## What we’ll cover ### Research In the research phase — you’ll develop a much more robust understanding of the existing component, including usage, issues and potential opportunities.",
+      "metadata": {
+        "startIndex": 2578,
+        "endIndex": 3535,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "obust understanding of the existing component, including usage, issues and potential opportunities. You’ll also look beyond your product and see how other products and Systems solve similar problems and understand usage and best practices for accessibility and design. All the while starting this journey with all the right people to get solid buy-in and adoption from the outset. • 1.1 Product audit [/component-process/product-audit.html] • 1.2 Kickoff [/component-process/kickoff.html] • 1.3 Research [/component-process/research.html] • 1.4 Research sync [/component-process/research-sync.html] ### Design In the design phase, you’ll explore multiple different applications of the component in your product and find avenues to align and improve your product experience. Not only this but you’ll be humbled by feedback from your peers and user experience testing. Finally, you’ll get everyone aligned in your team before pressing on.",
+      "metadata": {
+        "startIndex": 3435,
+        "endIndex": 4372,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "and user experience testing. Finally, you’ll get everyone aligned in your team before pressing on. • 2.1 Exploration [/component-process/exploration.html] • 2.2 Design crit [/component-process/design-crit.html] • 2.3 User testing [/component-process/user-testing.html] • 2.4 Design alignment [/component-process/design-alignment.html] ### Build By the build phase, your Developers should have been on the journey with you from the beginning, but you’ll be working even closer with them to ensure all aspects of your proposed design are documented and tested. In parallel, you’ll look at creating your component in Figma (or another design tool) whilst keeping parity with the other platforms. • 3.1 Spec doc [/component-process/spec-doc.html] • 3.2 Spec walkthrough [/component-process/spec-walkthrough.html] • 3.3 Design QA [/component-process/design-qa.html] • 3.4 Figma build [/component-process/figma-build.html] ### Release Finally, we’ll look at putting together rock-solid usage",
+      "metadata": {
+        "startIndex": 4272,
+        "endIndex": 5259,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "nent-process/figma-build.html] ### Release Finally, we’ll look at putting together rock-solid usage documentation, the different types of releases, when you should use them, and how to monitor and improve your component in the long term. • 4.1 Documentation [/component-process/documentation.html] • 4.2 Release [/component-process/release.html] • 4.3 Metrics [/component-process/metrics.html] ### Do I need to do every step? Yes and no. I like to think of this guide as a bit of a choose-your-own-adventure book (how great were they!). Not all Systems and components will be the same, and you might already have a rock-solid process. Even if you find one thing helpful in this guide, I’ve done my job! My only advice is to stick to the phases in order — imagine conducting an audit after the build to find a massive flaw in your design?! Sadly, I think many Product Designers have experienced this Nightmare at some point in their career.",
+      "metadata": {
+        "startIndex": 5159,
+        "endIndex": 6099,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "adly, I think many Product Designers have experienced this Nightmare at some point in their career. ## What will you get out of this process? ### Key deliverables • An accessible and well-thought-through component • Research and justification behind design decisions • Foolproof usage documentation • Aligned cross-platform build • Buy-in from your team and external stakeholders = aka guaranteed adoption Hot tips ## Up next Step 1.1 Product audit Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 5999,
+        "endIndex": 6999,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "process;getting-started;workflow;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:39.577Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/getting-started.html"
+  }
+}

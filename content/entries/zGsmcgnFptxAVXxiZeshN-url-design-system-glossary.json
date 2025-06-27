@@ -1,0 +1,101 @@
+{
+  "id": "zGsmcgnFptxAVXxiZeshN",
+  "title": "Design System Glossary",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/design-system-glossary",
+    "ingested_at": "2025-06-27T02:52:52.667Z"
+  },
+  "content": "Glossary - The Design System Guide Close # Glossary Romina Kavcic ### 📘 Design System Glossary Component - A piece of your interface that you can reuse. Like a light switch in your house. Design Token - Nicknames for your design decisions. Component Library - A box full of your favorite pieces. When you need something, just reach in and grab it. UI (User Interface) - The things people click, tap, and type into. Like the dashboard of a car. UX (User Experience) - How it feels to use your thing. Like a door that opens the way you expect. Atomic Design - Start with tiny bits, then merge. Figma - A digital whiteboard where everyone can draw together. Handoff - When designers give their work to developers, with clear instructions. Documentation - A cookbook that explains how everything works. Accessibility - Making sure everyone can use it, no matter their situation. Version Control - Like saving different drafts of your work, so you can go back if needed. Prototyping - Building a rough version to test your ideas. Like sketching before painting. Responsive Design - Your design adjusts to fit any screen. Grid System - Invisible lines that help keep everything tidy. Branding - The personality of your product. What makes people recognize it's yours. Technical Debt - The price you pay later for taking shortcuts now. Scalability - Building something that can grow without breaking. Consistency - When everything works the same way everywhere. Modularity - Building with pieces that snap together like Lego. Style Dictionary - Turns your design choices into code that developers can use. Usability Testing - Watching real people use your thing to see where they get stuck. Governance - Rules to keep everything running smoothly. Onboarding - Teaching new people how to use your system quickly. Framework - Pre-built pieces that give you a head start. Adaptability - How well your system handles change. Cross-Platform - Works everywhere: phones, computers, tablets. Visual Hierarchy - Arranging things so the important stuff catches your eye first. Next question I need checklists for creating new Figma components Published on: Feb 4, 2025 Updated: Updated: Feb 4, 2025 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Glossary - The Design System Guide Close # Glossary Romina Kavcic ### 📘 Design System Glossary Component - A piece of your interface that you can reuse. Like a light switch in your house. Design Token - Nicknames for your design decisions. Component Library - A box full of your favorite pieces. When you need something, just reach in and grab it. UI (User Interface) - The things people click, tap, and type into. Like the dashboard of a car. UX (User Experience) - How it feels to use your thing. Like a door that opens the way you expect. Atomic Design - Start with tiny bits, then merge. Figma - A digital whiteboard where everyone can draw together. Handoff - When designers give their work to developers, with clear instructions. Documentation - A cookbook that explains how everything works. Accessibility - Making sure everyone can use it, no matter their situation. Version Control - Like saving different drafts of your work, so you can go back if needed.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 967,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "tuation. Version Control - Like saving different drafts of your work, so you can go back if needed. Prototyping - Building a rough version to test your ideas. Like sketching before painting. Responsive Design - Your design adjusts to fit any screen. Grid System - Invisible lines that help keep everything tidy. Branding - The personality of your product. What makes people recognize it's yours. Technical Debt - The price you pay later for taking shortcuts now. Scalability - Building something that can grow without breaking. Consistency - When everything works the same way everywhere. Modularity - Building with pieces that snap together like Lego. Style Dictionary - Turns your design choices into code that developers can use. Usability Testing - Watching real people use your thing to see where they get stuck. Governance - Rules to keep everything running smoothly. Onboarding - Teaching new people how to use your system quickly. Framework - Pre-built pieces that give you a head start.",
+      "metadata": {
+        "startIndex": 867,
+        "endIndex": 1863,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "new people how to use your system quickly. Framework - Pre-built pieces that give you a head start. Adaptability - How well your system handles change. Cross-Platform - Works everywhere: phones, computers, tablets. Visual Hierarchy - Arranging things so the important stuff catches your eye first. Next question I need checklists for creating new Figma components Published on: Feb 4, 2025 Updated: Updated: Feb 4, 2025 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System",
+      "metadata": {
+        "startIndex": 1763,
+        "endIndex": 2757,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ntory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin",
+      "metadata": {
+        "startIndex": 2657,
+        "endIndex": 3657,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin",
+      "metadata": {
+        "startIndex": 3557,
+        "endIndex": 4545,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin",
+      "metadata": {
+        "startIndex": 4445,
+        "endIndex": 5417,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 5317,
+        "endIndex": 6317,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "glossary;terminology;definitions"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:52:52.668Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/design-system-glossary"
+  }
+}

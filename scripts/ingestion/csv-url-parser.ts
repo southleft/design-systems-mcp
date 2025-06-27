@@ -274,6 +274,7 @@ function parseCSVLine(line: string, delimiter: string): string[] {
 
     if (char === '"') {
       inQuotes = !inQuotes;
+      // Don't add the quote character to the current value
     } else if (char === delimiter && !inQuotes) {
       values.push(current);
       current = '';

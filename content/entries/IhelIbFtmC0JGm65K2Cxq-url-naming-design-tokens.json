@@ -1,0 +1,90 @@
+{
+  "id": "IhelIbFtmC0JGm65K2Cxq",
+  "title": "Naming Design Tokens",
+  "source": {
+    "type": "url",
+    "location": "https://thedesignsystem.guide/knowledge-base/naming-design-tokens",
+    "ingested_at": "2025-06-27T02:52:59.604Z"
+  },
+  "content": "Naming design tokens - The Design System Guide Close design tokens # Naming design tokens Romina Kavcic How to name design tokens? What is the best approach to naming tokens? Should token names follow a strict naming convention or be more human-readable? How granular should design token names be? What are the best practices for naming tokens across platforms (e.g., web, iOS, Android)? Should I use primitive or semantic naming? How to name design tokens in multi-brand design systems? 🔗 My guide on naming design tokens [../design-tokens-naming-playbook] 🔗 Simple guide on design tokens [../what-are-design-tokens](so you understand basic structure) 🔗 New Approach To Naming Design Tokens [https://samiamdesigns.substack.com/p/a-new-approach-to-naming-design-tokens] by Samantha Gordashko 🔗 Token Naming Template - V1 [https://www.figma.com/community/file/1373339950396430734] by Samantha Gordashko 🔗 Naming Tokens in Design Systems [https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676] by Nathan Curtis 🔗 Naming Tokens in Design Systems [https://www.figma.com/community/file/1096728307713953219](Figma template) by Marta Conde 🔗 Practical Guide to Naming Design Tokens [https://uxdesign.cc/naming-design-tokens-9454818ed7cb], by Lukas Oppermann 🔗 Design Tokens Generator [https://www.design-tokens.dev/]by Evgeny Khoroshilov 🔗 Flexible Design Token Taxonomy at Intuit [https://medium.com/@NateBaldwin/creating-a-flexible-design-token-taxonomy-for-intuits-design-system-81c8ff55c59b]by Nate Baldwin 🔗 Design tokens glossary [https://continuous-daughter-04a.notion.site/Tokens-glossary-1173d7f00812809c89a7f32797ba4e0e] Next question Prioritizing work for a design system Published on: Oct 17, 2024 Updated: Updated: Oct 17, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Naming design tokens - The Design System Guide Close design tokens # Naming design tokens Romina Kavcic How to name design tokens? What is the best approach to naming tokens? Should token names follow a strict naming convention or be more human-readable? How granular should design token names be? What are the best practices for naming tokens across platforms (e.g., web, iOS, Android)? Should I use primitive or semantic naming? How to name design tokens in multi-brand design systems? 🔗 My guide on naming design tokens [../design-tokens-naming-playbook] 🔗 Simple guide on design tokens [../what-are-design-tokens](so you understand basic structure) 🔗 New Approach To Naming Design Tokens [https://samiamdesigns.substack.com/p/a-new-approach-to-naming-design-tokens] by Samantha Gordashko 🔗 Token Naming Template - V1 [https://www.figma.com/community/file/1373339950396430734] by Samantha Gordashko 🔗 Naming Tokens in Design Systems",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 941,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ma.com/community/file/1373339950396430734] by Samantha Gordashko 🔗 Naming Tokens in Design Systems [https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676] by Nathan Curtis 🔗 Naming Tokens in Design Systems [https://www.figma.com/community/file/1096728307713953219](Figma template) by Marta Conde 🔗 Practical Guide to Naming Design Tokens [https://uxdesign.cc/naming-design-tokens-9454818ed7cb], by Lukas Oppermann 🔗 Design Tokens Generator [https://www.design-tokens.dev/]by Evgeny Khoroshilov 🔗 Flexible Design Token Taxonomy at Intuit [https://medium.com/@NateBaldwin/creating-a-flexible-design-token-taxonomy-for-intuits-design-system-81c8ff55c59b]by Nate Baldwin 🔗 Design tokens glossary [https://continuous-daughter-04a.notion.site/Tokens-glossary-1173d7f00812809c89a7f32797ba4e0e] Next question Prioritizing work for a design system Published on: Oct 17, 2024 Updated: Updated: Oct 17, 2024 ## Latest additions Glossary I need checklists for creating new Figma",
+      "metadata": {
+        "startIndex": 841,
+        "endIndex": 1840,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "pdated: Updated: Oct 17, 2024 ## Latest additions Glossary I need checklists for creating new Figma components Top 15 Design Systems in 2024 Design system podcasts Design systems using Web Components I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. I'm Romina Kavcic. I coach design teams on implementing design systems, optimizing design processes, and developing design strategy. Resources Resources Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Inventory The Ultimate Airtable Guide Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Masters Season 1 and 2 Design System Metrics The list of metrics Design System Metrics The list of metrics Design System Metrics The list of metrics The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 1740,
+        "endIndex": 2739,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The Design System Guide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 2639,
+        "endIndex": 3627,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ide Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina] The DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff.",
+      "metadata": {
+        "startIndex": 3527,
+        "endIndex": 4499,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "DSG Newsletter Get new design system tips, tutorials, and insights in your inbox. No ads, no fluff. Subscribe here Courses Design Tokens Course 🔥 [../design-tokens-course] The Design System Inventory ⭐️ [../airbundle] Learn Build a Design System [../start-here] Knowledge Base [../knowledge-base] Design System Metrics [../design-system-metrics] Design System Research Questions [../design-system-research-interview-questions] DSG Podcast [../design-system-interviews] Resources Resources [../resources] Bookmarks [../bookmarks] Let's connect Work with me [https://romina.design/services] 🙋‍♀️ Linkedin [https://www.linkedin.com/in/rominakavcic/] YouTube [https://www.youtube.com/@designsystemguide] Twitter (X) [https://twitter.com/rominakavcic] Sponsorship [https://www.passionfroot.me/dsg] © 2022 - 2025 The Design System Guide by Romina Kavcic [../about-romina]",
+      "metadata": {
+        "startIndex": 4399,
+        "endIndex": 5399,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tokens",
+    "tags": [
+      "design-tokens;naming;conventions"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:52:59.604Z",
+    "system": "The Design System Guide",
+    "author": "The Design System Guide",
+    "version": "1.0",
+    "source_url": "https://thedesignsystem.guide/knowledge-base/naming-design-tokens"
+  }
+}

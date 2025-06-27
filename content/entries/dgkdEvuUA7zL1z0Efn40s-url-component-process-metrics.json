@@ -1,0 +1,90 @@
+{
+  "id": "dgkdEvuUA7zL1z0Efn40s",
+  "title": "Component Process: Metrics",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/metrics",
+    "ingested_at": "2025-06-27T02:59:44.930Z"
+  },
+  "content": "Metrics - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 4.3 Metrics. Phase --> Release Type Focus --> Time --> Ongoing ## What is it? Ongoing monitoring and maintenance of your component. ## Why do we do it? Without metrics in our System, we have no idea how it performs or how we can improve it. We can better support product teams with necessary component improvements by having metrics. Ensure product teams are using your component in the intended way. Identify any gaps you may have missed in creating your component or documentation. Most importantly, you can evolve and improve your component for users and build strong system adoption. ## How do we do it? Measuring quantitative and qualitative data is essential when looking at metrics. While Designers or Developers might be implementing your system and saying they like it, they might still be customising or detaching components. By measuring these instances and building a stronger understanding, you can improve your system and create better adoption. ### Quantitative Quantitative data is the what; it tells you exactly how people are using or not using your component. It’s essential to follow up any quantitive data with qualitative by speaking with product teams when numbers spike. This will give you valuable insight into the why. It would be best to gather this data cross-platform to measure it against design and build. While there are many things you can monitor, the two main ones are — #### Insertions How many teams/repos are using it, then how many times it’s being inserted into projects. Watch for ongoing growth on this. If you find that it’s plateauing or there is low adoption, it’s worth investigating to understand why. #### Detachments This helps us understand if our base component isn’t performing as it needs for our teams. If you can investigate what’s being changed to the component post-detaching, it’ll make it a lot easier to understand why teams aren’t using your component as intended so that you can re-review. ### Qualitative Qualitative data is the why; it explains why the component isn’t being used as intended. Product teams will likely start making changes to components based on their metrics, whether conversion or UX-focused. This information is gold, as it gives direct end-user insights into your components’ performance. Gathering qualitative data allows you to get this information more freely, allowing you to make meaningful changes to your components. You can gather this information through — Support requests • In office hours, or through your channels or directly to your team members • A quarterly survey • Directly speaking, teams or team members. ## Rinse and repeat This entire design process is cyclical. Your insights should drive your objectives to continuous improvement and adoption. Based on these insights, you can and should go back and redo the process or a smaller subset when required. ## Handy links • Design System metrics collection [https://designstrategy.guide/design-system/design-system-metrics-collection/] ## Outcomes • Stats on how your components are performing • Adoption metrics and the ability to measure the performance of your System • A healthy system that is constantly evolving with your product Hot tips Your product teams are the ones using your system. They will be testing their experiences and have the customer insights you need. Respecting and listening to their feedback will not only improve your system but create promoters, which will improve adoption. ## Up next Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Metrics - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 4.3 Metrics. Phase --> Release Type Focus --> Time --> Ongoing ## What is it? Ongoing monitoring and maintenance of your component.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 972,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ype Focus --> Time --> Ongoing ## What is it? Ongoing monitoring and maintenance of your component. ## Why do we do it? Without metrics in our System, we have no idea how it performs or how we can improve it. We can better support product teams with necessary component improvements by having metrics. Ensure product teams are using your component in the intended way. Identify any gaps you may have missed in creating your component or documentation. Most importantly, you can evolve and improve your component for users and build strong system adoption. ## How do we do it? Measuring quantitative and qualitative data is essential when looking at metrics. While Designers or Developers might be implementing your system and saying they like it, they might still be customising or detaching components. By measuring these instances and building a stronger understanding, you can improve your system and create better adoption.",
+      "metadata": {
+        "startIndex": 872,
+        "endIndex": 1800,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "nces and building a stronger understanding, you can improve your system and create better adoption. ### Quantitative Quantitative data is the what; it tells you exactly how people are using or not using your component. It’s essential to follow up any quantitive data with qualitative by speaking with product teams when numbers spike. This will give you valuable insight into the why. It would be best to gather this data cross-platform to measure it against design and build. While there are many things you can monitor, the two main ones are — #### Insertions How many teams/repos are using it, then how many times it’s being inserted into projects. Watch for ongoing growth on this. If you find that it’s plateauing or there is low adoption, it’s worth investigating to understand why. #### Detachments This helps us understand if our base component isn’t performing as it needs for our teams. If you can investigate what’s being changed to the component post-detaching, it’ll make it a lot easier",
+      "metadata": {
+        "startIndex": 1700,
+        "endIndex": 2701,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ou can investigate what’s being changed to the component post-detaching, it’ll make it a lot easier to understand why teams aren’t using your component as intended so that you can re-review. ### Qualitative Qualitative data is the why; it explains why the component isn’t being used as intended. Product teams will likely start making changes to components based on their metrics, whether conversion or UX-focused. This information is gold, as it gives direct end-user insights into your components’ performance. Gathering qualitative data allows you to get this information more freely, allowing you to make meaningful changes to your components. You can gather this information through — Support requests • In office hours, or through your channels or directly to your team members • A quarterly survey • Directly speaking, teams or team members. ## Rinse and repeat This entire design process is cyclical. Your insights should drive your objectives to continuous improvement and adoption.",
+      "metadata": {
+        "startIndex": 2601,
+        "endIndex": 3593,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ess is cyclical. Your insights should drive your objectives to continuous improvement and adoption. Based on these insights, you can and should go back and redo the process or a smaller subset when required. ## Handy links • Design System metrics collection [https://designstrategy.guide/design-system/design-system-metrics-collection/] ## Outcomes • Stats on how your components are performing • Adoption metrics and the ability to measure the performance of your System • A healthy system that is constantly evolving with your product Hot tips Your product teams are the ones using your system. They will be testing their experiences and have the customer insights you need. Respecting and listening to their feedback will not only improve your system but create promoters, which will improve adoption. ## Up next Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 3493,
+        "endIndex": 4493,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ilable as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 4393,
+        "endIndex": 5393,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "metrics;measurement;success;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:44.930Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/metrics"
+  }
+}

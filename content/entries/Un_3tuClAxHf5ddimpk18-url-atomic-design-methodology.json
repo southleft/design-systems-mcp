@@ -1,0 +1,35 @@
+{
+  "id": "Un_3tuClAxHf5ddimpk18",
+  "title": "Atomic Design Methodology",
+  "source": {
+    "type": "url",
+    "location": "https://atomicdesign.bradfrost.com/",
+    "ingested_at": "2025-06-27T02:45:08.497Z"
+  },
+  "content": "Atomic Design by Brad Frost # Atomic Design by Brad Frost [http://bradfrost.com] We're tasked with making interfaces for more users in more contexts using more browsers on more devices with more screen sizes and more capabilities than ever before. That's a daunting task indeed. Thankfully, design systems are here to help. Atomic Design details all that goes into creating and maintaining robust design systems, allowing you to roll out higher quality, more consistent UIs faster than ever before. This book introduces a methodology for thinking of our UIs as thoughtful hierarchies, discusses the qualities of effective pattern libraries, and showcases techniques to transform your team's design and development workflow. Order the e-book [http://shop.bradfrost.com] Read Now [/table-of-contents]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Atomic Design by Brad Frost # Atomic Design by Brad Frost [http://bradfrost.com] We're tasked with making interfaces for more users in more contexts using more browsers on more devices with more screen sizes and more capabilities than ever before. That's a daunting task indeed. Thankfully, design systems are here to help. Atomic Design details all that goes into creating and maintaining robust design systems, allowing you to roll out higher quality, more consistent UIs faster than ever before. This book introduces a methodology for thinking of our UIs as thoughtful hierarchies, discusses the qualities of effective pattern libraries, and showcases techniques to transform your team's design and development workflow. Order the e-book [http://shop.bradfrost.com] Read Now [/table-of-contents]",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1000,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "atomic-design;methodology;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:45:08.497Z",
+    "system": "Brad Frost",
+    "author": "Brad Frost",
+    "version": "1.0",
+    "source_url": "https://atomicdesign.bradfrost.com/"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "T7A75W0foLA7yG1mw5VkX",
+  "title": "Component Process: Exploration",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/exploration",
+    "ingested_at": "2025-06-27T02:59:40.632Z"
+  },
+  "content": "Exploration - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 2.1 Exploration. Phase --> Design Type Focus --> Time --> 1-2 weeks ## What is it? The design phase, where we experiment and stress test as many options as possible across different use cases. ## Why do we do it? To push the boundaries of the norm and improve our product experiences. ## How do we do it? ### Review your requirements Remember how we gathered requirements back in the product audit [/component-process/product-audit] phase? Now’s the time to review them and connect the dots between your use cases. While each instance may have used a particular UI pattern, is it the right one? This is an opportunity for you to challenge the UI, and better the UX to create something that scales. Of course, sometimes a button is just a button. But, you’ll find instances where maybe, just maybe, there is a better solution or multiple solutions that solve these problems better. Let your requirements be your guide, as this will ensure you get adoption and support. ### Start with a pen and paper Keep it simple. Starting with a pen and paper is the easiest way to get ideas out fast. #### “A computer is a Lite-Brite for bad fucking ideas. — GFDA [https://gfda.co/] Designing on our computers can quickly spiral into perfectionism. We strive to make our designs as high fidelity as possible. It also limits our thinking and exploration, relying on what we already know. ### Get designing Go wild with designs — if you get stuck, try ideating with crazy 8s [https://www.futurelearn.com/info/courses/innovative-teams-with-design-thinking/0/steps/359040] by yourself or with others. • The further you push yourself, the more interesting the ideas get • Explore new UI designs to challenge the existing experience and push your work further. • Consider as many different scenarios and use cases as you can think of • Prototype to explore animation and interaction ## States to design Depending on the component, some of these won’t be applicable. ### Type(s) Type refers to the different variants of your component based on the use case. This will differ per component. #### Priority Priority is the loudness of your component. Accent — optional, typically reserved to create a stronger emphasis to encourage action Primary — where you want users to look first Secondary — where you want users to look second Tertiary — where you want users to look third, usually superfluous information or for things you don’t want them interacting with #### State State refers to the interaction with the component within the experience. Default — the component without any interaction Disabled — when the user is unable to interact with the component Hover — when the user hovers over the component, generally used for web only Active or pressed — when the user is clicking or pressing on the component until the target action has loaded Focus — when the user is tabbing between active states on the screen when using a keyboard #### Status Status is visual feedback given to users to denote levels of urgency. Default/neutral — when there is no status Positive — for positive actions or feedback Negative — for errors in validation or if a user is about to complete a potentially damaging action Warning — for issues that need to be resolved before they move to a negative status #### Platform or screen size For responsive designs or cross-platform experiences. Desktop / large Tablet / medium Mobile / small #### Booleans Togglable elements show or hide on or off true or false #### Interaction and animation How the component behaves when interacted with, including any potential animations. #### Haptics Any tactile feedback when the user is interacting with their mobile. Don’t add these just for the sake of it; consider the context and if it provides effective feedback for the user. ### Accessibility considerations Dynamic type scaling [https://uxdesign.cc/designing-for-scalable-dynamic-type-in-ios-5d3e2ae554eb] and how the component changes with larger and smaller fonts • Be sure to look at how space grows and how the component repositions or swaps to a different experience at specific sizes. • Pair with your Developers on this one in defining your scale. Each platform has different ways of scaling text, and if you have multiple platforms, it helps to align all of them to a % %-based scaling system. • Voice over guidance • WCAG guidelines [https://www.w3.org/WAI/] • APCA [https://www.myndex.com/APCA/] colour contrast ### Colour Modes • Light • Dark • Any other colour modes you might have ## Outcomes • An expansive collection of design exploration across many different scenarios • A design to take to the next phase • A working prototype Hot tips Make notes on usage guidance as you go along — you’ll likely change it as you go, but it helps keep track and will make your life easier come documentation time. Challenge yourself to get to over 100 variations of your design. You might discover something new in the process. ## Up next Step 2.2 Design crit Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Exploration - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 2.1 Exploration. Phase --> Design Type Focus --> Time --> 1-2 weeks ## What is it?",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 927,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "s About [/about] 2.1 Exploration. Phase --> Design Type Focus --> Time --> 1-2 weeks ## What is it? The design phase, where we experiment and stress test as many options as possible across different use cases. ## Why do we do it? To push the boundaries of the norm and improve our product experiences. ## How do we do it? ### Review your requirements Remember how we gathered requirements back in the product audit [/component-process/product-audit] phase? Now’s the time to review them and connect the dots between your use cases. While each instance may have used a particular UI pattern, is it the right one? This is an opportunity for you to challenge the UI, and better the UX to create something that scales. Of course, sometimes a button is just a button. But, you’ll find instances where maybe, just maybe, there is a better solution or multiple solutions that solve these problems better. Let your requirements be your guide, as this will ensure you get adoption and support.",
+      "metadata": {
+        "startIndex": 827,
+        "endIndex": 1812,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "lems better. Let your requirements be your guide, as this will ensure you get adoption and support. ### Start with a pen and paper Keep it simple. Starting with a pen and paper is the easiest way to get ideas out fast. #### “A computer is a Lite-Brite for bad fucking ideas. — GFDA [https://gfda.co/] Designing on our computers can quickly spiral into perfectionism. We strive to make our designs as high fidelity as possible. It also limits our thinking and exploration, relying on what we already know. ### Get designing Go wild with designs — if you get stuck, try ideating with crazy 8s [https://www.futurelearn.com/info/courses/innovative-teams-with-design-thinking/0/steps/359040] by yourself or with others. • The further you push yourself, the more interesting the ideas get • Explore new UI designs to challenge the existing experience and push your work further. • Consider as many different scenarios and use cases as you can think of • Prototype to explore animation and interaction ##",
+      "metadata": {
+        "startIndex": 1712,
+        "endIndex": 2710,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ent scenarios and use cases as you can think of • Prototype to explore animation and interaction ## States to design Depending on the component, some of these won’t be applicable. ### Type(s) Type refers to the different variants of your component based on the use case. This will differ per component. #### Priority Priority is the loudness of your component. Accent — optional, typically reserved to create a stronger emphasis to encourage action Primary — where you want users to look first Secondary — where you want users to look second Tertiary — where you want users to look third, usually superfluous information or for things you don’t want them interacting with #### State State refers to the interaction with the component within the experience. Default — the component without any interaction Disabled — when the user is unable to interact with the component Hover — when the user hovers over the component, generally used for web only Active or pressed — when the user is clicking or",
+      "metadata": {
+        "startIndex": 2610,
+        "endIndex": 3607,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "rs over the component, generally used for web only Active or pressed — when the user is clicking or pressing on the component until the target action has loaded Focus — when the user is tabbing between active states on the screen when using a keyboard #### Status Status is visual feedback given to users to denote levels of urgency. Default/neutral — when there is no status Positive — for positive actions or feedback Negative — for errors in validation or if a user is about to complete a potentially damaging action Warning — for issues that need to be resolved before they move to a negative status #### Platform or screen size For responsive designs or cross-platform experiences. Desktop / large Tablet / medium Mobile / small #### Booleans Togglable elements show or hide on or off true or false #### Interaction and animation How the component behaves when interacted with, including any potential animations. #### Haptics Any tactile feedback when the user is interacting with their mobile.",
+      "metadata": {
+        "startIndex": 3507,
+        "endIndex": 4508,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ntial animations. #### Haptics Any tactile feedback when the user is interacting with their mobile. Don’t add these just for the sake of it; consider the context and if it provides effective feedback for the user. ### Accessibility considerations Dynamic type scaling [https://uxdesign.cc/designing-for-scalable-dynamic-type-in-ios-5d3e2ae554eb] and how the component changes with larger and smaller fonts • Be sure to look at how space grows and how the component repositions or swaps to a different experience at specific sizes. • Pair with your Developers on this one in defining your scale. Each platform has different ways of scaling text, and if you have multiple platforms, it helps to align all of them to a % %-based scaling system. • Voice over guidance • WCAG guidelines [https://www.w3.org/WAI/] • APCA [https://www.myndex.com/APCA/] colour contrast ### Colour Modes • Light • Dark • Any other colour modes you might have ## Outcomes • An expansive collection of design exploration across",
+      "metadata": {
+        "startIndex": 4408,
+        "endIndex": 5409,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ther colour modes you might have ## Outcomes • An expansive collection of design exploration across many different scenarios • A design to take to the next phase • A working prototype Hot tips Make notes on usage guidance as you go along — you’ll likely change it as you go, but it helps keep track and will make your life easier come documentation time. Challenge yourself to get to over 100 variations of your design. You might discover something new in the process. ## Up next Step 2.2 Design crit Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 5309,
+        "endIndex": 6309,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "exploration;ideation;design;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:40.632Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/exploration"
+  }
+}

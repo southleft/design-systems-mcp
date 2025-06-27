@@ -1,0 +1,57 @@
+{
+  "id": "AIuaiG7ASX7mDcTIf7UPF",
+  "title": "Component Process: Research Sync",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/research-sync",
+    "ingested_at": "2025-06-27T02:59:40.638Z"
+  },
+  "content": "Research sync - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 1.4 Research sync. Phase --> Research Type Focus --> Time --> 1 hour ## What is it? A meeting to share your research with everyone and align. ## Why do we do it? This session is to keep everyone on the journey, highlight anything you may have missed in our research, and flag anything we should further explore as part of the research for this component. ## Things to prepare A research findings presentation, with considered explanations on where they do and don’t work in your product context. #### Example presentation External examples • In isolation and product context • Best practices • Accessibility considerations • Next steps ## Who should be there? The same people in as your kickoff [/component-process/kickoff.html]. ## Example agenda • Research presentation • Questions and feedback from the group • Next steps ## Outcomes • Follow-up questions to investigate • Any additional information/ideas that come out of the session • A starting point for design Hot tips Depending on the project size, you might do this work as part of the audit phase and share it all simultaneously. ## Up next Step 2.1 Exploration Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Research sync - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 1.4 Research sync. Phase --> Research Type Focus --> Time --> 1 hour ## What is it? A meeting to share your research with everyone and align.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 988,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Focus --> Time --> 1 hour ## What is it? A meeting to share your research with everyone and align. ## Why do we do it? This session is to keep everyone on the journey, highlight anything you may have missed in our research, and flag anything we should further explore as part of the research for this component. ## Things to prepare A research findings presentation, with considered explanations on where they do and don’t work in your product context. #### Example presentation External examples • In isolation and product context • Best practices • Accessibility considerations • Next steps ## Who should be there? The same people in as your kickoff [/component-process/kickoff.html]. ## Example agenda • Research presentation • Questions and feedback from the group • Next steps ## Outcomes • Follow-up questions to investigate • Any additional information/ideas that come out of the session • A starting point for design Hot tips Depending on the project size, you might do this work as part of",
+      "metadata": {
+        "startIndex": 888,
+        "endIndex": 1888,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "starting point for design Hot tips Depending on the project size, you might do this work as part of the audit phase and share it all simultaneously. ## Up next Step 2.1 Exploration Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 1788,
+        "endIndex": 2788,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "research;sync;collaboration;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:40.638Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/research-sync"
+  }
+}

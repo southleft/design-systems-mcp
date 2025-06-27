@@ -1,0 +1,79 @@
+{
+  "id": "j_FT8xaTGp9zLicpOZuK4",
+  "title": "Component Process: Figma Build",
+  "source": {
+    "type": "url",
+    "location": "https://redesigningdesign.systems/component-process/figma-build",
+    "ingested_at": "2025-06-27T02:59:43.866Z"
+  },
+  "content": "Figma build - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 3.4 Figma build. Phase --> Build Type Focus --> Time --> 1 day ## What is it? The build of your component in Figma for Designers and product teams. ## Why do we do it? So that designers can use branded components that align with the Design System to quickly create and ship experiences. These libraries are designed to save time for our product teams, allowing them to focus on creating better experiences for customers. ## How do we do it? ### Set up Consistency in building components with variants and props is crucial for easier maintenance and understanding by others. Here is an example setup for your components — #### Type Any different variant you might have based on different use cases. #### Priority Primary Secondary Tertiary Accent #### States Default Hover Disabled Active Focus #### Status Postive Negative Warning Default/neutral #### Platform or screen size Desktop / large Tablet / medium Mobile / small #### Sizes Small Medium Large or pixel value #### Booleans For optional attributes or conditional elements. Selected — Yes/No Action button — show/hide Optional Messages — show/hide #### Dynamic text Use for all overridable text in components — allow for dynamic text inputs Field Message ### Fidelity You want to ensure there is a fine balance between discoverability and flexibility. While it might feel easy just to create one state and rely on colour variables to do the rest, it doesn’t tell our Product Designers what states are available — it also gives them more work and an even greater margin of error. Hiding too many options behind switches or configurations can confuse designers. Keep key variants visible. ### Your Figma file #### Layers and pages Keep your Figma layers and pages clean. When someone uses your library, all of your work is put on display. If your files are messy, it can hurt your credibility and make it harder for people to find the components they need. Additionally, it can cause headaches for maintaining the system, both for you and anyone else responsible for it. #### Display To display all available variations of your component in Figma, use Propstar [https://www.figma.com/community/plugin/1116018586739867857/Propstar], a plugin that organises and visualises different variants and options in your master file. This will make it easier for Designers to discover different component variations and uses. ## Handy links • Design System in Figma course by DesignCode [https://designcode.io/figma] ## Outcomes • Figma component that is accessible and understandable to Designers. Hot tips When building components, Figma makes it really easy to make components as configurable as possible. The problem with doing this is it can sometimes make it harder for discoverability. Try to strike a balance between the two. Use the variant and property setup, but be mindful of fidelity and user experience. For more insight, sit with your Designers and watch them use your components first hand — without intervening. ## Up next Step 4.0 Documentation Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Figma build - Redesigning Design Systems Menu Resources [/resources.html] Guides [/guides.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics Tactics [/tactics/all-tactics] Articles About [/about.html] A practical guide to Design System components 1.0 Research Product audit Kickoff Research Research sync 2.0 Design Exploration Design crit User testing Design alignment 3.0 Build Spec doc Spec walkthrough Design QA Figma build 4.0 Release Documentation Release Metrics ©2025 Redesigning Design Systems. All rights reserved. Guides [/guides] Tactics [/tactics/all-tactics] Resources [/resources] Articles About [/about] 3.4 Figma build. Phase --> Build Type Focus --> Time --> 1 day ## What is it? The build of your component in Figma for Designers and product teams.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 992,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Time --> 1 day ## What is it? The build of your component in Figma for Designers and product teams. ## Why do we do it? So that designers can use branded components that align with the Design System to quickly create and ship experiences. These libraries are designed to save time for our product teams, allowing them to focus on creating better experiences for customers. ## How do we do it? ### Set up Consistency in building components with variants and props is crucial for easier maintenance and understanding by others. Here is an example setup for your components — #### Type Any different variant you might have based on different use cases. #### Priority Primary Secondary Tertiary Accent #### States Default Hover Disabled Active Focus #### Status Postive Negative Warning Default/neutral #### Platform or screen size Desktop / large Tablet / medium Mobile / small #### Sizes Small Medium Large or pixel value #### Booleans For optional attributes or conditional elements.",
+      "metadata": {
+        "startIndex": 892,
+        "endIndex": 1875,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "es Small Medium Large or pixel value #### Booleans For optional attributes or conditional elements. Selected — Yes/No Action button — show/hide Optional Messages — show/hide #### Dynamic text Use for all overridable text in components — allow for dynamic text inputs Field Message ### Fidelity You want to ensure there is a fine balance between discoverability and flexibility. While it might feel easy just to create one state and rely on colour variables to do the rest, it doesn’t tell our Product Designers what states are available — it also gives them more work and an even greater margin of error. Hiding too many options behind switches or configurations can confuse designers. Keep key variants visible. ### Your Figma file #### Layers and pages Keep your Figma layers and pages clean. When someone uses your library, all of your work is put on display. If your files are messy, it can hurt your credibility and make it harder for people to find the components they need.",
+      "metadata": {
+        "startIndex": 1775,
+        "endIndex": 2756,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "messy, it can hurt your credibility and make it harder for people to find the components they need. Additionally, it can cause headaches for maintaining the system, both for you and anyone else responsible for it. #### Display To display all available variations of your component in Figma, use Propstar [https://www.figma.com/community/plugin/1116018586739867857/Propstar], a plugin that organises and visualises different variants and options in your master file. This will make it easier for Designers to discover different component variations and uses. ## Handy links • Design System in Figma course by DesignCode [https://designcode.io/figma] ## Outcomes • Figma component that is accessible and understandable to Designers. Hot tips When building components, Figma makes it really easy to make components as configurable as possible. The problem with doing this is it can sometimes make it harder for discoverability. Try to strike a balance between the two.",
+      "metadata": {
+        "startIndex": 2656,
+        "endIndex": 3622,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "is is it can sometimes make it harder for discoverability. Try to strike a balance between the two. Use the variant and property setup, but be mindful of fidelity and user experience. For more insight, sit with your Designers and watch them use your components first hand — without intervening. ## Up next Step 4.0 Documentation Enjoy this guide? Did you know a more comprehensive version of this guide is now available as a book!?! Get the book",
+      "metadata": {
+        "startIndex": 3522,
+        "endIndex": 4522,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma;build;implementation;components"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T02:59:43.866Z",
+    "system": "Redesigning Design Systems",
+    "author": "Redesigning Design Systems",
+    "version": "1.0",
+    "source_url": "https://redesigningdesign.systems/component-process/figma-build"
+  }
+}

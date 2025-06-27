@@ -1,0 +1,233 @@
+{
+  "id": "ocKFNIC3zDGGOZzFExWSZ",
+  "title": "Create Component Sets from Variants",
+  "source": {
+    "type": "url",
+    "location": "https://help.figma.com/hc/en-us/articles/7938814091287",
+    "ingested_at": "2025-06-27T03:09:57.563Z"
+  },
+  "content": "Add descriptions to styles, components, and variables &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Create and share libraries [/hc/en-us/sections/15331757950487-Create-and-share-libraries] Add descriptions to styles, components, and variables Documentation makes sure the people using your design system have the right information and context. It can help guide proper application, variant and state usage, and accessibility and contrast requirements. Documentation is not just for designers, it’s also important to consider other people who will be using your design system. This includes the developers who will be implementing your designs. At the moment, there are a few ways to incorporate design system documentation in your Figma libraries: • Give styles [https://help.figma.com/hc/en-us/articles/360039820134], components [https://help.figma.com/hc/en-us/articles/360038663994], and variables [https://help.figma.com/hc/en-us/articles/15145852043927] meaningful names • Add short descriptions to styles, components, and variables • Add links to external documentation to components • Add descriptions to any library updates Tip! Looking for more guidance around style and component libraries? Check out these best practice guides: • Components, styles, and shared libraries [https://www.figma.com/best-practices/components-styles-and-shared-libraries/] • Component architecture in Figma [https://www.figma.com/best-practices/component-architecture/] ## Components You can attach a short description and a link to your components. This allows you to better communicate a component’s intended use. Figma will look at component descriptions when returning search results. So you can use descriptions to tag components with relevant keywords. It won’t be possible to capture every detail in this description field, so have a think about what information will be most important. If you have design system documentation in an external tool, you can add a link to that documentation. Note: If you combine existing components as a component set, Figma will apply any existing links and descriptions to the individual variants. You can view and edit this description when you have the variant selected. ### Add descriptions and links Add a description and any links to your main components. You’ll need edit access to the library file to add or update descriptions. You can add descriptions and links to: • Main components, including those with component properties • Entire component sets and individual variants in a component set • Open the file where your component library lives. If you have an instance selected, you can select Go to main component in library to view the component in the library file. • Select main component, component set or a specific variant within the component set. Click to open the Component configuration details: • Add a description for this component. Figma will look at this description when searching for components, so you can use this field to tag relevant keywords. • Add a link to external documentation, or another file with further explanations or guidance. • Click or anywhere outside the modal to apply changes. Figma will show descriptions and links in common style and component locations in files. View component descriptions and links ↓ [#view-descriptions] ## Styles There are a few tools you can use to help guide people toward the right styles for their designs. You can use the slash or dash naming process to organize your styles into groups. We recommend giving your styles [https://help.figma.com/hc/en-us/articles/360039238753] names that are relevant to their use case. You can also add descriptions to styles. Descriptions allow you to show extra information about a style’s intended usage. You can view a style’s description [#style-picker] when you hover over the style in the style picker. ### Add style descriptions Add a description to the style definition in the library file. You need to create a style [https://help.figma.com/hc/en-us/articles/360038746534] before you can add a description to it. • Click an empty spot in the canvas. • In the Design panel, view any style definitions in the file. Hover over the style and click when it appears: • In the Edit style menu add a Description using the field. • Click outside the menu or use the to close the menu. Tip! You can find and open the style definition from any layer that uses that style: • Select a layer that supports that style. • Click to open the style picker. • Right-click the style and select Edit style. ## Variables You can use the slash naming process to organize your variables into groups. We recommend giving your variables names that are relevant to their use case. You can also add descriptions to variables. Descriptions allow you to show extra information about a variable's intended usage. • From the file where the variable lives, click an empty spot on the canvas to deselect any objects. • From the right sidebar, find the Local variables section. Click Open variables. • Find the variable from the Variables modal. Hover over the variable row, right-click, and select Edit variable. • Enter your description into the description box. ## Libraries You can also add descriptions when publishing updates to your library. These descriptions show in both the library modal and in the file’s version history and are great for communicating high-level changes to your library. We recommend using these descriptions in addition to component and style descriptions. Style and component descriptions are visible to anyone who interacts with the style or description. Library descriptions are only available at a file and library level, so have much less visibility. Figma will show a notification in any files with styles and components from that library. You can view a list of updated styles and components and the description (if included). Review and accept library updates → [https://help.figma.com/hc/en-us/articles/360039234193] # View descriptions and documentation You can view descriptions and links when interacting with styles and components in these places: • Instance menu in right sidebar [#instance-menu] • Assets panel in left sidebar [#assets-panel] • Style picker from properties in the right sidebar [#style-picker] • Inspect panel in Dev Mode [#inspect] • Properties panel (if you have view only access to the file) [#properties-panel-view] ## Instance menu in right sidebar View component details in the instance section of the Design panel in the right sidebar. You need edit access to the file to access the Design panel. • Figma shows a preview of the description underneath the component / instance name. • Click Show more to view the full description and link in the documentation window. Click outside of the modal or use the button to close. • Collaborators can also click to view the original library file. This is great if you have additional guidance for how to use components. ## Assets panel You can view component names and descriptions in the Assets panel. Figma will also use component descriptions when you search for a component. Hover over the component in the Assets panel of the left sidebar to view the component’s details. You can see both the component name and description from list or grid view. You need to have can edit access to a file to open the Assets panel. You’ll only need view access to the library to use components from that library. ## Libraries picker View the name and description of a style or variable from the Libraries picker. • From the Fill or Stroke section of the right sidebar, click Apply styles and variables to open the Libraries picker. Hover over a style or variable to view its description in a tooltip: ## Dev Mode If you have access to Dev Mode [https://help.figma.com/hc/en-us/sections/15023066873239-Dev-Mode], you can view style and components descriptions in the Inspect panel. View component descriptions in the Component section, underneath the component preview. ## Properties panel (view only access) If you have view access to the file, and don't have access to Dev Mode, you can view component descriptions in the Properties panel of the right sidebar. • View the name of the component or instance. If the component lives in another file, you’ll also see the Go to main component in library icon to view the component in the library file. • View the description. If the component or instance is a variant, you’ll see descriptions for both the component set and the variant. • View other documentation and properties attached to the component. Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Add descriptions to styles, components, and variables &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 959,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "06479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login",
+      "metadata": {
+        "startIndex": 859,
+        "endIndex": 1859,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "om/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video",
+      "metadata": {
+        "startIndex": 1759,
+        "endIndex": 2752,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "s. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma",
+      "metadata": {
+        "startIndex": 2652,
+        "endIndex": 3621,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "a Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions",
+      "metadata": {
+        "startIndex": 3521,
+        "endIndex": 4481,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "00000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Create and share libraries [/hc/en-us/sections/15331757950487-Create-and-share-libraries] Add descriptions to styles, components, and variables Documentation makes sure the people using your design system have the right information and context. It can help guide proper application, variant and state usage, and accessibility and contrast requirements. Documentation is not just for designers, it’s also important to consider other people who will be using your design system. This includes the developers who will be implementing your designs.",
+      "metadata": {
+        "startIndex": 4381,
+        "endIndex": 5313,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ll be using your design system. This includes the developers who will be implementing your designs. At the moment, there are a few ways to incorporate design system documentation in your Figma libraries: • Give styles [https://help.figma.com/hc/en-us/articles/360039820134], components [https://help.figma.com/hc/en-us/articles/360038663994], and variables [https://help.figma.com/hc/en-us/articles/15145852043927] meaningful names • Add short descriptions to styles, components, and variables • Add links to external documentation to components • Add descriptions to any library updates Tip! Looking for more guidance around style and component libraries? Check out these best practice guides: • Components, styles, and shared libraries [https://www.figma.com/best-practices/components-styles-and-shared-libraries/] • Component architecture in Figma [https://www.figma.com/best-practices/component-architecture/] ## Components You can attach a short description and a link to your components.",
+      "metadata": {
+        "startIndex": 5213,
+        "endIndex": 6207,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "nent-architecture/] ## Components You can attach a short description and a link to your components. This allows you to better communicate a component’s intended use. Figma will look at component descriptions when returning search results. So you can use descriptions to tag components with relevant keywords. It won’t be possible to capture every detail in this description field, so have a think about what information will be most important. If you have design system documentation in an external tool, you can add a link to that documentation. Note: If you combine existing components as a component set, Figma will apply any existing links and descriptions to the individual variants. You can view and edit this description when you have the variant selected. ### Add descriptions and links Add a description and any links to your main components. You’ll need edit access to the library file to add or update descriptions.",
+      "metadata": {
+        "startIndex": 6107,
+        "endIndex": 7034,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "to your main components. You’ll need edit access to the library file to add or update descriptions. You can add descriptions and links to: • Main components, including those with component properties • Entire component sets and individual variants in a component set • Open the file where your component library lives. If you have an instance selected, you can select Go to main component in library to view the component in the library file. • Select main component, component set or a specific variant within the component set. Click to open the Component configuration details: • Add a description for this component. Figma will look at this description when searching for components, so you can use this field to tag relevant keywords. • Add a link to external documentation, or another file with further explanations or guidance. • Click or anywhere outside the modal to apply changes. Figma will show descriptions and links in common style and component locations in files.",
+      "metadata": {
+        "startIndex": 6934,
+        "endIndex": 7914,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "y changes. Figma will show descriptions and links in common style and component locations in files. View component descriptions and links ↓ [#view-descriptions] ## Styles There are a few tools you can use to help guide people toward the right styles for their designs. You can use the slash or dash naming process to organize your styles into groups. We recommend giving your styles [https://help.figma.com/hc/en-us/articles/360039238753] names that are relevant to their use case. You can also add descriptions to styles. Descriptions allow you to show extra information about a style’s intended usage. You can view a style’s description [#style-picker] when you hover over the style in the style picker. ### Add style descriptions Add a description to the style definition in the library file. You need to create a style [https://help.figma.com/hc/en-us/articles/360038746534] before you can add a description to it. • Click an empty spot in the canvas.",
+      "metadata": {
+        "startIndex": 7814,
+        "endIndex": 8770,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "articles/360038746534] before you can add a description to it. • Click an empty spot in the canvas. • In the Design panel, view any style definitions in the file. Hover over the style and click when it appears: • In the Edit style menu add a Description using the field. • Click outside the menu or use the to close the menu. Tip! You can find and open the style definition from any layer that uses that style: • Select a layer that supports that style. • Click to open the style picker. • Right-click the style and select Edit style. ## Variables You can use the slash naming process to organize your variables into groups. We recommend giving your variables names that are relevant to their use case. You can also add descriptions to variables. Descriptions allow you to show extra information about a variable's intended usage. • From the file where the variable lives, click an empty spot on the canvas to deselect any objects. • From the right sidebar, find the Local variables section.",
+      "metadata": {
+        "startIndex": 8670,
+        "endIndex": 9662,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "on the canvas to deselect any objects. • From the right sidebar, find the Local variables section. Click Open variables. • Find the variable from the Variables modal. Hover over the variable row, right-click, and select Edit variable. • Enter your description into the description box. ## Libraries You can also add descriptions when publishing updates to your library. These descriptions show in both the library modal and in the file’s version history and are great for communicating high-level changes to your library. We recommend using these descriptions in addition to component and style descriptions. Style and component descriptions are visible to anyone who interacts with the style or description. Library descriptions are only available at a file and library level, so have much less visibility. Figma will show a notification in any files with styles and components from that library. You can view a list of updated styles and components and the description (if included).",
+      "metadata": {
+        "startIndex": 9562,
+        "endIndex": 10549,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "at library. You can view a list of updated styles and components and the description (if included). Review and accept library updates → [https://help.figma.com/hc/en-us/articles/360039234193] # View descriptions and documentation You can view descriptions and links when interacting with styles and components in these places: • Instance menu in right sidebar [#instance-menu] • Assets panel in left sidebar [#assets-panel] • Style picker from properties in the right sidebar [#style-picker] • Inspect panel in Dev Mode [#inspect] • Properties panel (if you have view only access to the file) [#properties-panel-view] ## Instance menu in right sidebar View component details in the instance section of the Design panel in the right sidebar. You need edit access to the file to access the Design panel. • Figma shows a preview of the description underneath the component / instance name. • Click Show more to view the full description and link in the documentation window.",
+      "metadata": {
+        "startIndex": 10449,
+        "endIndex": 11421,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "instance name. • Click Show more to view the full description and link in the documentation window. Click outside of the modal or use the button to close. • Collaborators can also click to view the original library file. This is great if you have additional guidance for how to use components. ## Assets panel You can view component names and descriptions in the Assets panel. Figma will also use component descriptions when you search for a component. Hover over the component in the Assets panel of the left sidebar to view the component’s details. You can see both the component name and description from list or grid view. You need to have can edit access to a file to open the Assets panel. You’ll only need view access to the library to use components from that library. ## Libraries picker View the name and description of a style or variable from the Libraries picker. • From the Fill or Stroke section of the right sidebar, click Apply styles and variables to open the Libraries picker.",
+      "metadata": {
+        "startIndex": 11321,
+        "endIndex": 12317,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "Stroke section of the right sidebar, click Apply styles and variables to open the Libraries picker. Hover over a style or variable to view its description in a tooltip: ## Dev Mode If you have access to Dev Mode [https://help.figma.com/hc/en-us/sections/15023066873239-Dev-Mode], you can view style and components descriptions in the Inspect panel. View component descriptions in the Component section, underneath the component preview. ## Properties panel (view only access) If you have view access to the file, and don't have access to Dev Mode, you can view component descriptions in the Properties panel of the right sidebar. • View the name of the component or instance. If the component lives in another file, you’ll also see the Go to main component in library icon to view the component in the library file. • View the description. If the component or instance is a variant, you’ll see descriptions for both the component set and the variant.",
+      "metadata": {
+        "startIndex": 12217,
+        "endIndex": 13168,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "onent or instance is a variant, you’ll see descriptions for both the component set and the variant. • View other documentation and properties attached to the component. Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new].",
+      "metadata": {
+        "startIndex": 13068,
+        "endIndex": 13996,
+        "chunkIndex": 15,
+        "section": "Introduction",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam",
+      "metadata": {
+        "startIndex": 13896,
+        "endIndex": 14876,
+        "chunkIndex": 16,
+        "section": "Introduction",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/]",
+      "metadata": {
+        "startIndex": 14776,
+        "endIndex": 15770,
+        "chunkIndex": 17,
+        "section": "Introduction",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "t us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+      "metadata": {
+        "startIndex": 15670,
+        "endIndex": 16670,
+        "chunkIndex": 18,
+        "section": "Introduction",
+        "globalChunkIndex": 18
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "figma;components;variants;component-sets"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-06-27T03:09:57.563Z",
+    "system": "Figma",
+    "author": "Figma Help Center",
+    "version": "1.0",
+    "source_url": "https://help.figma.com/hc/en-us/articles/7938814091287"
+  }
+}
