@@ -1189,31 +1189,17 @@ export default {
                             zIndex: 100
                         }}>
                             <Group justify="space-between" align="center">
-                                <Group gap="sm">
-                                    <div style={{
-                                        fontSize: '24px',
-                                        background: 'linear-gradient(135deg, #339af0 0%, #1c7ed6 100%)',
-                                        borderRadius: '8px',
-                                        padding: '4px 8px',
-                                        display: 'flex',
-                                        alignItems: 'center'
-                                    }}>
-                                        🤖
-                                    </div>
-                                    <div>
-                                        <Title order={3} style={{ color: '#c1c2c5', marginBottom: '2px' }}>
-                                            Design Systems Assistant
-                                        </Title>
-                                        <Text size="sm" style={{ color: '#909296' }}>
-                                            Powered by AI • 109 design systems resources
-                                        </Text>
-                                    </div>
-                                </Group>
-                                <Group gap="sm">
-                                    <Badge variant="light" color="green" size="sm">
-                                        Online
-                                    </Badge>
-                                </Group>
+                                <div>
+                                    <Title order={3} style={{ color: '#c1c2c5', marginBottom: '2px', fontWeight: '600' }}>
+                                        Design Systems Assistant
+                                    </Title>
+                                    <Text size="sm" style={{ color: '#909296' }}>
+                                        Powered by AI • 109 design systems resources
+                                    </Text>
+                                </div>
+                                <Badge variant="light" color="green" size="sm">
+                                    Online
+                                </Badge>
                             </Group>
                         </div>
 
@@ -1222,42 +1208,147 @@ export default {
                             flex: 1,
                             display: 'flex',
                             flexDirection: 'column',
-                            maxHeight: 'calc(100vh - 140px)',
                             padding: '0 24px'
                         }}>
-                            <ScrollArea style={{ flex: 1, padding: '24px 0' }}>
+                            <ScrollArea style={{ flex: 1 }}>
                                 {messages.length === 1 && messages[0].type === 'system' ? (
-                                    // Welcome screen when no messages
+                                    // Welcome screen when no messages - centered like ChatGPT
                                     <div style={{
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
                                         justifyContent: 'center',
-                                        height: '100%',
-                                        minHeight: '400px',
-                                        textAlign: 'center'
+                                        minHeight: 'calc(100vh - 200px)',
+                                        textAlign: 'center',
+                                        paddingTop: '60px'
                                     }}>
-                                        <div style={{
-                                            fontSize: '48px',
-                                            marginBottom: '24px',
-                                            opacity: 0.8
-                                        }}>
-                                            💭
+                                        {/* Elegant centered title */}
+                                        <div style={{ marginBottom: '48px' }}>
+                                            <Title
+                                                order={1}
+                                                style={{
+                                                    color: '#c1c2c5',
+                                                    marginBottom: '16px',
+                                                    fontSize: '48px',
+                                                    fontWeight: '300',
+                                                    letterSpacing: '-0.02em'
+                                                }}
+                                            >
+                                                Design Systems Assistant
+                                            </Title>
+                                            <Text
+                                                style={{
+                                                    color: '#909296',
+                                                    fontSize: '18px',
+                                                    fontWeight: '400',
+                                                    maxWidth: '600px',
+                                                    lineHeight: '1.5'
+                                                }}
+                                            >
+                                                Search through your design systems knowledge base to answer questions about components, tokens, patterns, and best practices.
+                                            </Text>
                                         </div>
-                                        <Title order={2} style={{ color: '#c1c2c5', marginBottom: '16px' }}>
-                                            What can I help you with today?
-                                        </Title>
-                                        <Text style={{ color: '#909296', marginBottom: '32px', maxWidth: '500px' }}>
-                                            I can search through your design systems knowledge base to answer questions about components, tokens, patterns, and best practices.
-                                        </Text>
 
-                                        {/* Compact example chips */}
+                                        {/* Centered input area */}
+                                        <div style={{
+                                            width: '100%',
+                                            maxWidth: '700px',
+                                            marginBottom: '32px'
+                                        }}>
+                                            <div style={{
+                                                background: '#25262b',
+                                                border: '1px solid #373a40',
+                                                borderRadius: '12px',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                padding: '0',
+                                                transition: 'border-color 0.2s ease'
+                                            }}
+                                            onFocus={(e) => e.currentTarget.style.borderColor = '#339af0'}
+                                            onBlur={(e) => e.currentTarget.style.borderColor = '#373a40'}
+                                            >
+                                                <textarea
+                                                    placeholder="Ask me anything about design systems..."
+                                                    value={inputValue}
+                                                    onChange={(e) => setInputValue(e.target.value)}
+                                                    onKeyDown={handleKeyPress}
+                                                    rows={1}
+                                                    style={{
+                                                        flex: 1,
+                                                        background: 'transparent',
+                                                        border: 'none',
+                                                        color: '#c1c2c5',
+                                                        fontSize: '16px',
+                                                        fontFamily: 'inherit',
+                                                        resize: 'none',
+                                                        outline: 'none',
+                                                        padding: '16px 20px',
+                                                        lineHeight: '1.5',
+                                                        minHeight: 'auto'
+                                                    }}
+                                                    disabled={isLoading}
+                                                    onFocus={(e) => {
+                                                        e.target.parentElement.style.borderColor = '#339af0';
+                                                    }}
+                                                    onBlur={(e) => {
+                                                        e.target.parentElement.style.borderColor = '#373a40';
+                                                    }}
+                                                />
+                                                <button
+                                                    onClick={() => sendMessage()}
+                                                    disabled={!inputValue.trim() || isLoading}
+                                                    style={{
+                                                        background: inputValue.trim() && !isLoading
+                                                            ? '#339af0'
+                                                            : '#373a40',
+                                                        border: 'none',
+                                                        borderRadius: '8px',
+                                                        padding: '8px',
+                                                        margin: '8px',
+                                                        cursor: inputValue.trim() && !isLoading ? 'pointer' : 'not-allowed',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+                                                        transition: 'all 0.2s ease',
+                                                        minWidth: '32px',
+                                                        height: '32px'
+                                                    }}
+                                                >
+                                                    {isLoading ? (
+                                                        <div style={{
+                                                            width: '16px',
+                                                            height: '16px',
+                                                            border: '2px solid #ffffff40',
+                                                            borderTop: '2px solid #ffffff',
+                                                            borderRadius: '50%',
+                                                            animation: 'spin 1s linear infinite'
+                                                        }} />
+                                                    ) : (
+                                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{
+                                                            color: inputValue.trim() ? 'white' : '#909296'
+                                                        }}>
+                                                            <path
+                                                                d="M7 11L12 6L17 11M12 18V7"
+                                                                stroke="currentColor"
+                                                                strokeWidth="2"
+                                                                strokeLinecap="round"
+                                                                strokeLinejoin="round"
+                                                                transform="rotate(90 12 12)"
+                                                            />
+                                                        </svg>
+                                                    )}
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        {/* Topic suggestions below input */}
                                         <div style={{
                                             display: 'flex',
                                             flexWrap: 'wrap',
                                             gap: '8px',
                                             justifyContent: 'center',
-                                            maxWidth: '600px'
+                                            maxWidth: '600px',
+                                            marginBottom: '32px'
                                         }}>
                                             {[
                                                 'Design tokens',
@@ -1267,141 +1358,152 @@ export default {
                                                 'Accessibility',
                                                 'Available resources'
                                             ].map((topic, index) => (
-                                                <div
+                                                <button
                                                     key={index}
                                                     style={{
-                                                        padding: '6px 12px',
-                                                        background: '#2c2e33',
+                                                        padding: '8px 16px',
+                                                        background: 'transparent',
                                                         border: '1px solid #373a40',
-                                                        borderRadius: '16px',
+                                                        borderRadius: '20px',
                                                         cursor: 'pointer',
-                                                        fontSize: '13px',
+                                                        fontSize: '14px',
                                                         color: '#909296',
-                                                        transition: 'all 0.2s ease'
+                                                        transition: 'all 0.2s ease',
+                                                        fontFamily: 'inherit'
                                                     }}
                                                     onMouseEnter={(e) => {
-                                                        e.target.style.background = '#1e3a5f';
                                                         e.target.style.borderColor = '#339af0';
                                                         e.target.style.color = '#339af0';
                                                     }}
                                                     onMouseLeave={(e) => {
-                                                        e.target.style.background = '#2c2e33';
                                                         e.target.style.borderColor = '#373a40';
                                                         e.target.style.color = '#909296';
                                                     }}
                                                     onClick={() => askQuestion(\`Tell me about \${topic.toLowerCase()}\`)}
                                                 >
                                                     {topic}
-                                                </div>
+                                                </button>
                                             ))}
                                         </div>
+
+                                        {/* Subtle helper text */}
+                                        <Text
+                                            size="sm"
+                                            style={{
+                                                color: '#6c6f75',
+                                                fontSize: '14px'
+                                            }}
+                                        >
+                                            Press Enter to send, Shift+Enter for new line
+                                        </Text>
                                     </div>
                                 ) : (
                                     // Regular chat messages
-                                    <>
+                                    <div style={{ padding: '24px 0' }}>
                                         {messages.map((message) => (
                                             <MessageComponent key={message.id || Math.random()} message={message} />
                                         ))}
                                         <div ref={messagesEndRef} />
-                                    </>
+                                    </div>
                                 )}
                             </ScrollArea>
                         </div>
 
-                        {/* Input Area */}
-                        <div style={{
-                            padding: '16px 24px 24px',
-                            borderTop: '1px solid #373a40',
-                            background: '#1a1b1e'
-                        }}>
+                        {/* Input Area for active conversations */}
+                        {messages.length > 1 || (messages.length === 1 && messages[0].type !== 'system') ? (
                             <div style={{
-                                maxWidth: '800px',
-                                margin: '0 auto',
-                                position: 'relative'
+                                padding: '16px 24px 24px',
+                                borderTop: '1px solid #373a40',
+                                background: '#1a1b1e'
                             }}>
                                 <div style={{
-                                    background: '#25262b',
-                                    border: '1px solid #373a40',
-                                    borderRadius: '12px',
-                                    padding: '12px 16px',
-                                    display: 'flex',
-                                    alignItems: 'flex-end',
-                                    gap: '12px'
+                                    maxWidth: '800px',
+                                    margin: '0 auto',
+                                    position: 'relative'
                                 }}>
-                                    <textarea
-                                        placeholder="Ask me anything about design systems..."
-                                        value={inputValue}
-                                        onChange={(e) => setInputValue(e.target.value)}
-                                        onKeyDown={handleKeyPress}
-                                        rows={1}
-                                        style={{
-                                            flex: 1,
-                                            background: 'transparent',
-                                            border: 'none',
-                                            color: '#c1c2c5',
-                                            fontSize: '14px',
-                                            fontFamily: 'inherit',
-                                            resize: 'none',
-                                            outline: 'none',
-                                            minHeight: '20px',
-                                            maxHeight: '120px',
-                                            lineHeight: '1.4'
-                                        }}
-                                        disabled={isLoading}
-                                    />
-                                    <button
-                                        onClick={() => sendMessage()}
-                                        disabled={!inputValue.trim() || isLoading}
-                                        style={{
-                                            background: inputValue.trim() && !isLoading
-                                                ? 'linear-gradient(135deg, #339af0 0%, #1c7ed6 100%)'
-                                                : '#373a40',
-                                            border: 'none',
-                                            borderRadius: '8px',
-                                            padding: '8px',
-                                            cursor: inputValue.trim() && !isLoading ? 'pointer' : 'not-allowed',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            transition: 'all 0.2s ease',
-                                            minWidth: '32px',
-                                            height: '32px'
-                                        }}
-                                    >
-                                        {isLoading ? (
-                                            <div style={{
-                                                width: '16px',
-                                                height: '16px',
-                                                border: '2px solid #ffffff40',
-                                                borderTop: '2px solid #ffffff',
-                                                borderRadius: '50%',
-                                                animation: 'spin 1s linear infinite'
-                                            }} />
-                                        ) : (
-                                            <span style={{
-                                                color: inputValue.trim() ? 'white' : '#909296',
-                                                fontSize: '16px'
-                                            }}>
-                                                ↗
-                                            </span>
-                                        )}
-                                    </button>
+                                    <div style={{
+                                        background: '#25262b',
+                                        border: '1px solid #373a40',
+                                        borderRadius: '12px',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        transition: 'border-color 0.2s ease'
+                                    }}>
+                                        <textarea
+                                            placeholder="Ask me anything about design systems..."
+                                            value={inputValue}
+                                            onChange={(e) => setInputValue(e.target.value)}
+                                            onKeyDown={handleKeyPress}
+                                            rows={1}
+                                            style={{
+                                                flex: 1,
+                                                background: 'transparent',
+                                                border: 'none',
+                                                color: '#c1c2c5',
+                                                fontSize: '16px',
+                                                fontFamily: 'inherit',
+                                                resize: 'none',
+                                                outline: 'none',
+                                                padding: '16px 20px',
+                                                lineHeight: '1.5',
+                                                minHeight: 'auto'
+                                            }}
+                                            disabled={isLoading}
+                                            onFocus={(e) => {
+                                                e.target.parentElement.style.borderColor = '#339af0';
+                                            }}
+                                            onBlur={(e) => {
+                                                e.target.parentElement.style.borderColor = '#373a40';
+                                            }}
+                                        />
+                                        <button
+                                            onClick={() => sendMessage()}
+                                            disabled={!inputValue.trim() || isLoading}
+                                            style={{
+                                                background: inputValue.trim() && !isLoading
+                                                    ? '#339af0'
+                                                    : '#373a40',
+                                                border: 'none',
+                                                borderRadius: '8px',
+                                                padding: '8px',
+                                                margin: '8px',
+                                                cursor: inputValue.trim() && !isLoading ? 'pointer' : 'not-allowed',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                transition: 'all 0.2s ease',
+                                                minWidth: '32px',
+                                                height: '32px'
+                                            }}
+                                        >
+                                            {isLoading ? (
+                                                <div style={{
+                                                    width: '16px',
+                                                    height: '16px',
+                                                    border: '2px solid #ffffff40',
+                                                    borderTop: '2px solid #ffffff',
+                                                    borderRadius: '50%',
+                                                    animation: 'spin 1s linear infinite'
+                                                }} />
+                                            ) : (
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{
+                                                    color: inputValue.trim() ? 'white' : '#909296'
+                                                }}>
+                                                    <path
+                                                        d="M7 11L12 6L17 11M12 18V7"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        transform="rotate(90 12 12)"
+                                                    />
+                                                </svg>
+                                            )}
+                                        </button>
+                                    </div>
                                 </div>
-
-                                {/* Subtle helper text */}
-                                <Text
-                                    size="xs"
-                                    style={{
-                                        color: '#6c6f75',
-                                        textAlign: 'center',
-                                        marginTop: '8px',
-                                        fontSize: '11px'
-                                    }}
-                                >
-                                    Press Enter to send, Shift+Enter for new line
-                                </Text>
                             </div>
-                        </div>
+                        ) : null}
                     </Container>
                 </div>
             );
