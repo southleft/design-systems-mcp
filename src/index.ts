@@ -743,7 +743,7 @@ export default {
     <meta name="description" content="AI-powered assistant that searches through design systems knowledge base to answer questions about components, tokens, patterns, and best practices.">
 
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚃</text></svg>">
 
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website">
@@ -1378,13 +1378,14 @@ export default {
                                             maxWidth: '600px',
                                             marginBottom: '32px'
                                         }}>
-                                            {[
-                                                'Design tokens',
-                                                'Button components',
-                                                'Design debt',
-                                                'Component architecture',
-                                                'Accessibility',
-                                                'Available resources'
+                                                                                    {[
+                                                'Token architectures',
+                                                'Theming',
+                                                'Figma properties',
+                                                'Figma components',
+                                                'Component variants',
+                                                'Slots',
+                                                'Accessibility'
                                             ].map((topic, index) => (
                                                 <button
                                                     key={index}
