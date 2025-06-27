@@ -78,6 +78,78 @@ export async function loadEntriesFromDisk(): Promise<void> {
 }
 
 /**
+ * Improved search matching that handles chapter references and complex questions
+ */
+export function normalizeSearchTerms(query: string): string[] {
+  const queryLower = query.toLowerCase();
+
+  // Handle chapter number variants
+  let normalizedQuery = queryLower
+    .replace(/\bchapter\s+two\b/g, 'chapter 2')
+    .replace(/\bchapter\s+three\b/g, 'chapter 3')
+    .replace(/\bchapter\s+four\b/g, 'chapter 4')
+    .replace(/\bchapter\s+five\b/g, 'chapter 5')
+    .replace(/\bchapter\s+one\b/g, 'chapter 1');
+
+  const terms: string[] = [];
+
+  // Extract chapter references first
+  const chapterMatch = normalizedQuery.match(/chapter\s+\d+/);
+  if (chapterMatch) {
+    terms.push(chapterMatch[0]);
+    // Also add just the number for alternate matching
+    const numberMatch = chapterMatch[0].match(/\d+/);
+    if (numberMatch) {
+      terms.push(numberMatch[0]);
+    }
+  }
+
+  // Extract key domain terms that should be preserved
+  const importantTerms = [
+    'figma', 'component', 'property', 'properties', 'panel', 'variable', 'variables',
+    'token', 'tokens', 'design', 'system', 'atomic', 'molecule', 'organism',
+    'template', 'page', 'variant', 'boolean', 'text', 'instance', 'swap',
+    'button', 'input', 'form', 'navigation', 'header', 'footer'
+  ];
+
+  // Find important terms in the query
+  for (const term of importantTerms) {
+    if (normalizedQuery.includes(term)) {
+      terms.push(term);
+    }
+  }
+
+  // Handle compound terms like "component properties"
+  const compoundTerms = [
+    'component properties', 'design system', 'atomic design',
+    'design tokens', 'figma panel', 'instance swap'
+  ];
+
+  for (const compound of compoundTerms) {
+    if (normalizedQuery.includes(compound)) {
+      terms.push(compound);
+    }
+  }
+
+  // Remove common question words but preserve meaningful content
+  const cleanedQuery = normalizedQuery
+    .replace(/\b(what|how|when|where|why|which|who|does|do|did|will|would|should|could|can|is|are|was|were|the|a|an|of|for|in|on|at|to|from|with|by|about|could|you|read|me|that|this|these|those)\b/g, ' ')
+    .replace(/[?!.,;]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  // Extract additional meaningful terms
+  const additionalTerms = cleanedQuery.split(/\s+/)
+    .filter(term => term.length > 2)
+    .filter(term => !terms.includes(term)) // Avoid duplicates
+    .filter(term => !['and', 'but', 'not', 'yet', 'nor', 'for', 'so'].includes(term)); // Filter conjunctions
+
+  terms.push(...additionalTerms);
+
+  return terms.filter(term => term.length > 0);
+}
+
+/**
  * Search entries based on query and filters
  */
 export function searchEntries(options: SearchOptions = {}): ContentEntry[] {
@@ -102,19 +174,10 @@ export function searchEntries(options: SearchOptions = {}): ContentEntry[] {
     results = results.filter(entry => entry.metadata.confidence === confidence);
   }
 
-  // Search by query in title and content
+    // Search by query in title and content
   if (query) {
     const queryLower = query.toLowerCase();
-
-    // Extract key terms from questions (remove common question words)
-    const cleanedQuery = queryLower
-      .replace(/^(what|how|when|where|why|which|who|does|do|did|will|would|should|could|can|is|are|was|were)\s+/gi, '')
-      .replace(/\b(are|is|the|a|an|of|for|in|on|at|to|from|with|by|about)\b/gi, '')
-      .replace(/[?!.,;]/g, '')
-      .trim();
-
-    // Split into individual terms for better matching
-    const searchTerms = cleanedQuery.split(/\s+/).filter(term => term.length > 2);
+    const searchTerms = normalizeSearchTerms(query);
 
     // First, calculate scores for all entries
     const scoredResults = results.map(entry => ({
@@ -133,14 +196,13 @@ export function searchEntries(options: SearchOptions = {}): ContentEntry[] {
       results = results.filter(entry => {
         const titleLower = entry.title.toLowerCase();
         const contentLower = entry.content.toLowerCase();
-        const tagsLower = entry.metadata.tags.map(tag => tag.toLowerCase());
 
-        // Check original query first
-        const exactTitleMatch = titleLower.includes(queryLower);
-        const exactContentMatch = contentLower.includes(queryLower);
-        const exactTagMatch = entry.metadata.tags.some(tag => tag.toLowerCase().includes(queryLower));
-
-        return exactTitleMatch || exactContentMatch || exactTagMatch;
+        // Check if any search term matches
+        return searchTerms.some(term =>
+          titleLower.includes(term) ||
+          contentLower.includes(term) ||
+          entry.metadata.tags.some(tag => tag.toLowerCase().includes(term))
+        );
       });
     }
   }
@@ -148,12 +210,7 @@ export function searchEntries(options: SearchOptions = {}): ContentEntry[] {
   // Sort by relevance (simple scoring)
   if (query) {
     const queryLower = query.toLowerCase();
-    const cleanedQuery = queryLower
-      .replace(/^(what|how|when|where|why|which|who|does|do|did|will|would|should|could|can|is|are|was|were)\s+/gi, '')
-      .replace(/\b(are|is|the|a|an|of|for|in|on|at|to|from|with|by|about)\b/gi, '')
-      .replace(/[?!.,;]/g, '')
-      .trim();
-    const searchTerms = cleanedQuery.split(/\s+/).filter(term => term.length > 2);
+    const searchTerms = normalizeSearchTerms(query);
 
     results.sort((a, b) => {
       const scoreA = calculateRelevanceScore(a, queryLower, searchTerms);
@@ -174,14 +231,7 @@ export function searchChunks(query: string, limit: number = 5): Array<{
   score: number;
 }> {
   const queryLower = query.toLowerCase();
-
-  // Extract key terms from questions (same logic as main search)
-  const cleanedQuery = queryLower
-    .replace(/^(what|how|when|where|why|which|who|does|do|did|will|would|should|could|can|is|are|was|were)\s+/gi, '')
-    .replace(/\b(are|is|the|a|an|of|for|in|on|at|to|from|with|by|about)\b/gi, '')
-    .replace(/[?!.,;]/g, '')
-    .trim();
-  const searchTerms = cleanedQuery.split(/\s+/).filter(term => term.length > 2);
+  const searchTerms = normalizeSearchTerms(query);
 
   const results: Array<{ entry: ContentEntry; chunk: ContentChunk; score: number }> = [];
 
@@ -189,12 +239,15 @@ export function searchChunks(query: string, limit: number = 5): Array<{
     for (const chunk of entry.chunks) {
       const chunkTextLower = chunk.text.toLowerCase();
 
-      // Check if chunk matches original query or individual terms
+      // Check if chunk matches any search terms
       const exactMatch = chunkTextLower.includes(queryLower);
       const termMatch = searchTerms.some(term => chunkTextLower.includes(term));
 
-      if (exactMatch || termMatch) {
-        const score = calculateChunkRelevanceScore(chunk, queryLower, searchTerms);
+      // Also check title for chapter references
+      const titleMatch = searchTerms.some(term => entry.title.toLowerCase().includes(term));
+
+      if (exactMatch || termMatch || titleMatch) {
+        const score = calculateChunkRelevanceScore(chunk, queryLower, searchTerms, entry);
         results.push({ entry, chunk, score });
       }
     }
@@ -232,65 +285,150 @@ export function getEntryById(id: string): ContentEntry | undefined {
  */
 function calculateRelevanceScore(entry: ContentEntry, query: string, searchTerms: string[] = []): number {
   let score = 0;
+  const titleLower = entry.title.toLowerCase();
+  const contentLower = entry.content.toLowerCase();
 
-  // Title matches are worth more
-  const titleMatches = (entry.title.toLowerCase().match(new RegExp(query, 'g')) || []).length;
-  score += titleMatches * 3;
+  // HEAVILY prioritize exact title matches
+  if (titleLower.includes(query)) {
+    score += 100;
+  }
 
-  // Content matches
-  const contentMatches = (entry.content.toLowerCase().match(new RegExp(query, 'g')) || []).length;
-  score += contentMatches * 1;
+  // Special semantic matching for common patterns
+  if (query.includes('property') && titleLower.includes('properties')) {
+    score += 80; // Strong semantic match for property/properties
+  }
+  if (query.includes('figma') && titleLower.includes('component') &&
+      (query.includes('property') || query.includes('properties'))) {
+    score += 70; // "figma property" should match "component properties"
+  }
 
-  // Tag matches are worth more
-  const tagMatches = entry.metadata.tags.filter(tag =>
-    tag.toLowerCase().includes(query)
-  ).length;
-  score += tagMatches * 2;
-
-  // Individual term matches
+  // Individual search term matches in title get big bonus
   for (const term of searchTerms) {
-    const titleTermMatches = (entry.title.toLowerCase().match(new RegExp(term, 'g')) || []).length;
-    const contentTermMatches = (entry.content.toLowerCase().match(new RegExp(term, 'g')) || []).length;
+    const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+    // Title matches are extremely important
+    const titleTermMatches = (titleLower.match(new RegExp(escapedTerm, 'g')) || []).length;
+    if (titleTermMatches > 0) {
+      // Give extra weight to important terms
+      if (term.includes('chapter') || /^\d+$/.test(term)) {
+        score += titleTermMatches * 50;
+      } else if (term === 'component' || term === 'properties' || term === 'property') {
+        score += titleTermMatches * 30; // High weight for key Figma terms
+      } else if (term === 'figma') {
+        score += titleTermMatches * 20; // Medium weight for figma
+      } else {
+        score += titleTermMatches * 10;
+      }
+    }
+
+    // Semantic matching - property/properties variants
+    if (term === 'property' && titleLower.includes('properties')) {
+      score += 25; // Bridge singular/plural
+    }
+    if (term === 'properties' && titleLower.includes('property')) {
+      score += 25; // Bridge plural/singular
+    }
+
+    // Content matches are secondary
+    const contentTermMatches = (contentLower.match(new RegExp(escapedTerm, 'g')) || []).length;
+    score += contentTermMatches * 1;
+
+    // Tag matches are also important
     const tagTermMatches = entry.metadata.tags.filter(tag =>
       tag.toLowerCase().includes(term)
     ).length;
-
-    score += titleTermMatches * 2;
-    score += contentTermMatches * 0.5;
-    score += tagTermMatches * 1.5;
+    score += tagTermMatches * 5;
   }
 
+  // Original query exact matches
+  const titleMatches = (titleLower.match(new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length;
+  score += titleMatches * 20;
+
+  const contentMatches = (contentLower.match(new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length;
+  score += contentMatches * 2;
+
+  // Tag exact matches
+  const tagMatches = entry.metadata.tags.filter(tag =>
+    tag.toLowerCase().includes(query)
+  ).length;
+  score += tagMatches * 10;
+
   // Higher confidence entries get a small boost
-  if (entry.metadata.confidence === 'high') score += 0.5;
-  if (entry.metadata.confidence === 'medium') score += 0.2;
+  if (entry.metadata.confidence === 'high') score += 1;
+  if (entry.metadata.confidence === 'medium') score += 0.5;
 
   return score;
 }
 
 /**
- * Calculate relevance score for a chunk
+ * Calculate relevance score for a chunk with proper title prioritization
  */
-function calculateChunkRelevanceScore(chunk: ContentChunk, query: string, searchTerms: string[] = []): number {
+function calculateChunkRelevanceScore(chunk: ContentChunk, query: string, searchTerms: string[] = [], entry?: ContentEntry): number {
   let score = 0;
 
-  // Count occurrences of original query
-  const matches = (chunk.text.toLowerCase().match(new RegExp(query, 'g')) || []).length;
-  score += matches;
+  // HEAVILY prioritize title matches - if the title matches search terms, this should rank very high
+  if (entry) {
+    const titleLower = entry.title.toLowerCase();
 
-  // Count occurrences of individual terms
+    // Exact title phrase matches get massive bonus
+    if (titleLower.includes(query)) {
+      score += 100;
+    }
+
+    // Special semantic matching for common patterns
+    if (query.includes('property') && titleLower.includes('properties')) {
+      score += 80; // Strong semantic match for property/properties
+    }
+    if (query.includes('figma') && titleLower.includes('component') &&
+        (query.includes('property') || query.includes('properties'))) {
+      score += 70; // "figma property" should match "component properties"
+    }
+
+    // Individual search term matches in title get big bonus
+    for (const term of searchTerms) {
+      if (titleLower.includes(term)) {
+        // Give extra weight to important terms
+        if (term.includes('chapter') || /^\d+$/.test(term)) {
+          score += 50;
+        } else if (term === 'component' || term === 'properties' || term === 'property') {
+          score += 30; // High weight for key Figma terms
+        } else if (term === 'figma') {
+          score += 20; // Medium weight for figma
+        } else {
+          score += 10;
+        }
+      }
+
+      // Semantic matching - property/properties variants
+      if (term === 'property' && titleLower.includes('properties')) {
+        score += 25; // Bridge singular/plural
+      }
+      if (term === 'properties' && titleLower.includes('property')) {
+        score += 25; // Bridge plural/singular
+      }
+    }
+  }
+
+  // Count occurrences of original query in content
+  const chunkLower = chunk.text.toLowerCase();
+  const exactMatches = (chunkLower.match(new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length;
+  score += exactMatches * 5;
+
+  // Count occurrences of individual terms in content
   for (const term of searchTerms) {
-    const termMatches = (chunk.text.toLowerCase().match(new RegExp(term, 'g')) || []).length;
-    score += termMatches * 0.5;
+    const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const termMatches = (chunkLower.match(new RegExp(escapedTerm, 'g')) || []).length;
+    score += termMatches * 1;
 
     // Bonus for matches in section headings
     if (chunk.metadata?.section?.toLowerCase().includes(term)) {
-      score += 1;
+      score += 2;
     }
   }
 
   // Bonus for matches in section headings
   if (chunk.metadata?.section?.toLowerCase().includes(query)) {
-    score += 2;
+    score += 5;
   }
 
   return score;

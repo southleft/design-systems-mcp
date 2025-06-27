@@ -160,7 +160,8 @@ const MCP_TOOLS = [
 				required: []
 			}
 		}
-	}
+	},
+
 ];
 
 // Function to call MCP tools
@@ -234,6 +235,8 @@ ${formattedEntries}`;
 		case "get_all_tags":
 			const tags = getAllTags();
 			return `AVAILABLE TAGS (${tags.length}): ${tags.join(", ")}`;
+
+
 
 		default:
 			throw new Error(`Unknown tool: ${toolName}`);
