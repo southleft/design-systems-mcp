@@ -488,7 +488,6 @@ See [CREDITS.md](CREDITS.md) for the complete list of contributors and sources.
 ## 📞 **Support & Community**
 
 - 🐛 **Issues:** [GitHub Issues](../../issues)
-- 💬 **Discussions:** [GitHub Discussions](../../discussions)
 - 📧 **Security:** Report security issues privately to the maintainers
 - 🌐 **Website:** [Live Demo](https://design-systems-mcp.southleft.com)
 
