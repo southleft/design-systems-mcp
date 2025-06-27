@@ -141,12 +141,12 @@ curl -X POST http://localhost:8787/ai-chat \
 **Production Testing:**
 ```bash
 # Test live MCP endpoint
-curl -X POST https://design-systems-mcp.southleft.com/mcp \
+curl -X POST https://design-systems-mcp.southleft-llc.workers.dev/mcp \
   -H "Content-Type: application/json" \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"search_chunks","arguments":{"query":"design tokens"}}}'
 
 # Test live AI integration
-curl -X POST https://design-systems-mcp.southleft.com/ai-chat \
+curl -X POST https://design-systems-mcp.southleft-llc.workers.dev/ai-chat \
   -H "Content-Type: application/json" \
   -d '{"message":"What are design tokens?"}'
 ```
@@ -202,59 +202,72 @@ Required environment variables:
 
 ## Connect to MCP Clients
 
-### Claude Desktop
+### Claude Desktop / Cursor
 
-Add to your Claude Desktop MCP configuration:
+Add to your MCP configuration file (`~/.cursor/mcp.json` for Cursor, or `claude_desktop_config.json` for Claude):
 
-**For Local Development:**
+**Option 1: Use Public Remote Server (Recommended for most users)**
 ```json
 {
   "mcpServers": {
     "design-systems": {
-      "command": "npx",
-      "args": [
-        "mcp-remote",
-        "http://localhost:8787/mcp"
-      ]
+      "url": "https://design-systems-mcp.southleft-llc.workers.dev/mcp"
     }
   }
 }
 ```
 
-**For Production (Live Server):**
+**Option 2: Use Local Development Server (For contributors/customization)**
 ```json
 {
   "mcpServers": {
     "design-systems": {
-      "command": "npx",
-      "args": [
-        "mcp-remote",
-        "https://design-systems-mcp.southleft.com/mcp"
-      ]
+      "url": "http://localhost:8787/mcp"
     }
   }
 }
 ```
+
+**Important Notes:**
+- ✅ Both local and remote servers are fully functional
+- 🌐 Remote server: Always available, no setup required
+- 🔧 Local server: Requires running `npm run dev` first
+- 📝 After updating configuration, restart your MCP client (Cursor/Claude)
 
 ### Cloudflare AI Playground
 
 1. Go to https://playground.ai.cloudflare.com/
-2. Enter your MCP server URL: `design-systems-mcp.southleft.com/mcp`
+2. Enter your MCP server URL: `design-systems-mcp.southleft-llc.workers.dev/mcp`
 3. Start using design systems tools in the playground!
 
 ### External Applications
 
 Any application that supports MCP can connect to the live server:
 
-**Endpoint:** `https://design-systems-mcp.southleft.com/mcp`
+**Endpoint:** `https://design-systems-mcp.southleft-llc.workers.dev/mcp`
 
 **Example API Call:**
 ```bash
-curl -X POST https://design-systems-mcp.southleft.com/mcp \
+# Initialize connection
+curl -X POST https://design-systems-mcp.southleft-llc.workers.dev/mcp \
   -H "Content-Type: application/json" \
   -d '{
     "jsonrpc": "2.0",
     "id": 1,
+    "method": "initialize",
+    "params": {
+      "protocolVersion": "2024-11-05",
+      "capabilities": {"roots": {"listChanged": true}},
+      "clientInfo": {"name": "test", "version": "1.0.0"}
+    }
+  }'
+
+# Search design systems knowledge
+curl -X POST https://design-systems-mcp.southleft-llc.workers.dev/mcp \
+  -H "Content-Type: application/json" \
+  -d '{
+    "jsonrpc": "2.0",
+    "id": 2,
     "method": "tools/call",
     "params": {
       "name": "search_design_knowledge",
@@ -371,6 +384,25 @@ Content is automatically:
 - `npm run ingest:pdf <file>` - Ingest PDF content
 - `npm run ingest:url <url>` - Ingest web content
 - `npm run ingest:csv <file>` - Bulk ingest from CSV file containing URLs
+- `npm run check:duplicates` - Check for duplicate URLs in content entries
+
+### Content Quality Assurance
+
+**Check for Duplicate URLs:**
+```bash
+npm run check:duplicates
+```
+
+This command scans all content entries and identifies any duplicate URLs to maintain content quality. Run this:
+- Before deploying new content
+- After ingesting new articles
+- Periodically to ensure data integrity
+
+The checker will show:
+- Total entries scanned
+- Number of unique URLs found
+- Any duplicates with filenames and titles
+- Suggested cleanup commands
 
 ### Adding New MCP Tools
 

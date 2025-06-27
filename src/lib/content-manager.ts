@@ -361,10 +361,55 @@ function calculateRelevanceScore(entry: ContentEntry, query: string, searchTerms
 }
 
 /**
+ * Detect if a chunk is primarily navigation/header content
+ */
+function isNavigationContent(chunkText: string): boolean {
+  const text = chunkText.toLowerCase();
+
+  // Count link indicators
+  const linkCount = (text.match(/\[https?:\/\/[^\]]+\]/g) || []).length;
+  const totalLength = text.length;
+
+  // If more than 30% of the content is links, it's likely navigation
+  if (linkCount > 5 && (linkCount * 50) / totalLength > 0.3) {
+    return true;
+  }
+
+  // Check for common navigation patterns
+  const navigationPatterns = [
+    /product documentation/,
+    /administration.*courses.*tutorials.*projects/,
+    /help.*enterto select.*navigate.*close/,
+    /get started.*billing.*teams.*organizations/,
+    /developers.*learn design.*downloads.*careers/,
+    /privacy.*status.*compare.*sketch.*adobe xd/,
+    /english.*deutsch.*español.*français.*nederlands/
+  ];
+
+  return navigationPatterns.some(pattern => pattern.test(text));
+}
+
+/**
  * Calculate relevance score for a chunk with proper title prioritization
  */
 function calculateChunkRelevanceScore(chunk: ContentChunk, query: string, searchTerms: string[] = [], entry?: ContentEntry): number {
   let score = 0;
+
+  // First check if this is navigation content - heavily penalize it
+  if (isNavigationContent(chunk.text)) {
+    score -= 50; // Major penalty for navigation content
+  }
+
+  // Boost score for chunks that appear to be instructional content
+  const instructionalPatterns = [
+    /create.*property/i, /apply.*property/i, /component.*properties.*types/i,
+    /boolean.*property/i, /text.*property/i, /variant.*property/i,
+    /instance.*swap/i, /preferred.*values/i, /expose.*nested/i
+  ];
+
+  if (instructionalPatterns.some(pattern => pattern.test(chunk.text))) {
+    score += 20; // Bonus for instructional content
+  }
 
   // HEAVILY prioritize title matches - if the title matches search terms, this should rank very high
   if (entry) {

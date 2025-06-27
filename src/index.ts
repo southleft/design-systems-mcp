@@ -72,15 +72,25 @@ const AI_SYSTEM_PROMPT = `You are a helpful design systems expert with access to
 
 CRITICAL: You MUST ALWAYS search the knowledge base first before answering any question. You have the following MCP tools available:
 1. search_design_knowledge - Search for general design system content
-2. search_chunks - Search for specific detailed information (USE THIS for specific terms, names, or detailed questions)
+2. search_chunks - Search for specific detailed information (BEST for detailed explanations and how-to content)
 3. browse_by_category - Browse content by category (components, tokens, patterns, workflows, guidelines, general)
 4. get_all_tags - Get available tags in the knowledge base
 
 MANDATORY WORKFLOW:
 1. For ANY user question, ALWAYS start by calling search_chunks with relevant keywords from the user's query
-2. If search_chunks doesn't find specific information, try search_design_knowledge with broader terms
-3. Only after searching the knowledge base should you provide your response
-4. Always clearly distinguish between knowledge base findings and general knowledge
+2. If the first search_chunks call returns mostly navigation/header content (links, menus, etc.), call search_chunks again with more specific terms
+3. For questions about specific features (like "figma properties"), try multiple search variations:
+   - "component properties types boolean variant"
+   - "create apply component property"
+   - "instance swap text property"
+4. If search_chunks doesn't find specific information, try search_design_knowledge with broader terms
+5. Only after thorough searching should you provide your response
+
+SEARCH STRATEGY FOR FIGMA PROPERTIES:
+- Use search_chunks with: "component properties boolean instance swap text variant"
+- Look for chunks containing actual explanations, not just navigation
+- If you get navigation content, search again with more specific terms
+- The knowledge base contains detailed information about all Figma property types
 
 IMPORTANT: Structure your responses as follows:
 ## 📚 From the Knowledge Base
@@ -558,6 +568,44 @@ async function handleMcpRequest(request: Request): Promise<Response> {
 				const body = await request.json() as any;
 
 		// Handle MCP JSON-RPC request
+		if (body.method === "initialize") {
+			// Handle MCP initialization
+			return new Response(JSON.stringify({
+				jsonrpc: "2.0",
+				id: body.id,
+				result: {
+					protocolVersion: "2024-11-05",
+					capabilities: {
+						tools: {},
+						resources: {},
+						prompts: {}
+					},
+					serverInfo: {
+						name: "Design Systems Knowledge Base",
+						version: "1.0.0"
+					}
+				}
+			}), {
+				headers: { ...corsHeaders, "Content-Type": "application/json" }
+			});
+		}
+
+		if (body.method === "notifications/initialized") {
+			// Handle MCP initialized notification (doesn't need a response)
+			return new Response(null, { status: 204, headers: corsHeaders });
+		}
+
+		if (body.method === "ping") {
+			// Handle ping requests
+			return new Response(JSON.stringify({
+				jsonrpc: "2.0",
+				id: body.id,
+				result: {}
+			}), {
+				headers: { ...corsHeaders, "Content-Type": "application/json" }
+			});
+		}
+
 		if (body.method === "tools/list") {
 			// Return list of available tools
 			const tools = [

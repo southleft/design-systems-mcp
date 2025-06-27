@@ -1,0 +1,186 @@
+{
+  "id": "PcX0-5CWbjEA1mgYQ7ExH",
+  "title": "Override properties of an instance",
+  "source": {
+    "type": "url",
+    "location": "https://help.figma.com/hc/en-us/articles/360039150733",
+    "ingested_at": "2025-06-27T16:31:02.060Z"
+  },
+  "content": "Apply changes to instances &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Use libraries [/hc/en-us/sections/15331811041175-Use-libraries] Apply changes to instances Before you start Who can use this feature Available on all plans [https://help.figma.com/hc/en-us/articles/360040328273-Choose-a-Figma-Plan]. Publishing components to a library is supported on paid plans. Anyone with `can edit` access to a file can create and use variants and component sets in that file. Component libraries define and outline the ideal implementation of a design system. These components often contain generic information designers need to change, like the text on a button or the contents of a menu. • The main component defines the properties of the element • The instance is a copy of the component you can reuse in your designs You can make changes to any instance of a component you add to your file. These changes allow you to customize an instance to suit its new context, or explore iterations of a design. ## Apply changes To make a change to an instance: • Select the instance. • Edit or adjust the property you’d like to change. For example, to change the fill of a layer [%E2%80%9Chttps://help.figma.com/hc/en-us/articles/360040623954-Add-fills-to-text-and-shape-layers%E2%80%9D], edit the Fill section of the right sidebar. ### Supported properties Figma lets you change text, fill, stroke, and effect properties. You can apply the following changes: • Change text properties, including font, weight, size, line height, letter spacing, and resizing • Change the fill or stroke of any layers, including the fill type, value, and opacity • Add, edit, or remove any shadow or blur effects • Add, edit, or remove layout guides • Swap nested instances of other components, like icons • Add, edit, or remove export settings • Change the layer name It’s not possible to make changes to the underlying structure of an instance. You can’t override: • The order, or z-index, of any layers within the instance • Position of any layers within the component, including items in an auto layout frame • Any constraints applied to the layers • The bounds of any text layers For changes like reordering layers, you must detach the instance [%E2%80%9Chttps://help.figma.com/hc/en-us/articles/360038665754-Detach-an-instance-from-the-component%E2%80%9D], or make the changes directly to the main component ### Change preservation Figma attempts to preserve your changes when you select a different variant or swap between instances. Figma uses the following criteria to determine whether to preserve a change on an instance: • The layer names of the current instance and the variant or instance you’re selecting must match. This applies both when swapping instances and selecting variants. • When selecting variants, Figma also checks if the layer properties you’ve changed originally matched between variants. If so, Figma will preserve your changes. In our example below, Figma preserves the fill change on Step 3, but not on Step 4. This is because the `default primary` button and hover primary button both started with the same fill of `#1BC47D`. Our change was to change the hex code from `#1BC47D` to `#F531B3`. Figma doesn’t preserve our change in Step 4 as the `hover secondary` variant has a fill of `#FFFFFF`, which is different to the fill we applied our original change to (`#1BC47D`). The criteria is less strict for preserving text changes. Figma keeps any changes you’ve made to text layers if the name of the text layer is the same between components. Figma will also check if the text layer’s hierarchy is similar. ## Reset changes Reset the instance to restore the properties of the main component. You can choose to reset the entire instance, or just a specific property. • Select the instance to view changes for the entire instance, or a specific layer to view changes for that layer only. • Click More actions next to the component name in the right panel. Figma opens a menu that lets you view any changes for your selection. Figma only lists properties that have changes applied. • Select Reset > Reset [property] to reset a specific property. • Select Reset > Reset all changes to reset all properties for that layer. • Figma resets the property to match the main component. ## Push changes to main component You can choose to push your changes back to the main component, which updates any other instances of that component. You can only push changes if the main component is in the same file as the instance. It’s not possible to push changes to components in another file, including published libraries. Note: It’s not possible to push changes to a component that’s nested within another component. You need to make those changes to the main component itself. • Select the instance with your changes applied to it. You need to select the instance itself, not a specific layer within it. • Click More actions next to the component name in the right panel. • Select Push changes to main component. Note: If you are working in a published library file, you need to publish your changes [%E2%80%9Chttps://help.figma.com/hc/en-us/articles/360038665934#Publish_changes_to_the_library%E2%80%9D] to allow other instances to receive those updates. Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Apply changes to instances &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 993,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ns/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication",
+      "metadata": {
+        "startIndex": 893,
+        "endIndex": 1851,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "06606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials.",
+      "metadata": {
+        "startIndex": 1751,
+        "endIndex": 2736,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "s Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma",
+      "metadata": {
+        "startIndex": 2636,
+        "endIndex": 3594,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "a Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions",
+      "metadata": {
+        "startIndex": 3494,
+        "endIndex": 4454,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "00000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Use libraries [/hc/en-us/sections/15331811041175-Use-libraries] Apply changes to instances Before you start Who can use this feature Available on all plans [https://help.figma.com/hc/en-us/articles/360040328273-Choose-a-Figma-Plan]. Publishing components to a library is supported on paid plans. Anyone with `can edit` access to a file can create and use variants and component sets in that file. Component libraries define and outline the ideal implementation of a design system. These components often contain generic information designers need to change, like the text on a button or the contents of a menu.",
+      "metadata": {
+        "startIndex": 4354,
+        "endIndex": 5352,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "generic information designers need to change, like the text on a button or the contents of a menu. • The main component defines the properties of the element • The instance is a copy of the component you can reuse in your designs You can make changes to any instance of a component you add to your file. These changes allow you to customize an instance to suit its new context, or explore iterations of a design. ## Apply changes To make a change to an instance: • Select the instance. • Edit or adjust the property you’d like to change. For example, to change the fill of a layer [%E2%80%9Chttps://help.figma.com/hc/en-us/articles/360040623954-Add-fills-to-text-and-shape-layers%E2%80%9D], edit the Fill section of the right sidebar. ### Supported properties Figma lets you change text, fill, stroke, and effect properties. You can apply the following changes: • Change text properties, including font, weight, size, line height, letter spacing, and resizing • Change the fill or stroke of any",
+      "metadata": {
+        "startIndex": 5252,
+        "endIndex": 6248,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ng font, weight, size, line height, letter spacing, and resizing • Change the fill or stroke of any layers, including the fill type, value, and opacity • Add, edit, or remove any shadow or blur effects • Add, edit, or remove layout guides • Swap nested instances of other components, like icons • Add, edit, or remove export settings • Change the layer name It’s not possible to make changes to the underlying structure of an instance. You can’t override: • The order, or z-index, of any layers within the instance • Position of any layers within the component, including items in an auto layout frame • Any constraints applied to the layers • The bounds of any text layers For changes like reordering layers, you must detach the instance [%E2%80%9Chttps://help.figma.com/hc/en-us/articles/360038665754-Detach-an-instance-from-the-component%E2%80%9D], or make the changes directly to the main component ### Change preservation Figma attempts to preserve your changes when you select a different",
+      "metadata": {
+        "startIndex": 6148,
+        "endIndex": 7143,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "mponent ### Change preservation Figma attempts to preserve your changes when you select a different variant or swap between instances. Figma uses the following criteria to determine whether to preserve a change on an instance: • The layer names of the current instance and the variant or instance you’re selecting must match. This applies both when swapping instances and selecting variants. • When selecting variants, Figma also checks if the layer properties you’ve changed originally matched between variants. If so, Figma will preserve your changes. In our example below, Figma preserves the fill change on Step 3, but not on Step 4. This is because the `default primary` button and hover primary button both started with the same fill of `#1BC47D`. Our change was to change the hex code from `#1BC47D` to `#F531B3`. Figma doesn’t preserve our change in Step 4 as the `hover secondary` variant has a fill of `#FFFFFF`, which is different to the fill we applied our original change to (`#1BC47D`).",
+      "metadata": {
+        "startIndex": 7043,
+        "endIndex": 8044,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "a fill of `#FFFFFF`, which is different to the fill we applied our original change to (`#1BC47D`). The criteria is less strict for preserving text changes. Figma keeps any changes you’ve made to text layers if the name of the text layer is the same between components. Figma will also check if the text layer’s hierarchy is similar. ## Reset changes Reset the instance to restore the properties of the main component. You can choose to reset the entire instance, or just a specific property. • Select the instance to view changes for the entire instance, or a specific layer to view changes for that layer only. • Click More actions next to the component name in the right panel. Figma opens a menu that lets you view any changes for your selection. Figma only lists properties that have changes applied. • Select Reset > Reset [property] to reset a specific property. • Select Reset > Reset all changes to reset all properties for that layer. • Figma resets the property to match the main",
+      "metadata": {
+        "startIndex": 7944,
+        "endIndex": 8935,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "t all changes to reset all properties for that layer. • Figma resets the property to match the main component. ## Push changes to main component You can choose to push your changes back to the main component, which updates any other instances of that component. You can only push changes if the main component is in the same file as the instance. It’s not possible to push changes to components in another file, including published libraries. Note: It’s not possible to push changes to a component that’s nested within another component. You need to make those changes to the main component itself. • Select the instance with your changes applied to it. You need to select the instance itself, not a specific layer within it. • Click More actions next to the component name in the right panel. • Select Push changes to main component. Note: If you are working in a published library file, you need to publish your changes",
+      "metadata": {
+        "startIndex": 8835,
+        "endIndex": 9757,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "n component. Note: If you are working in a published library file, you need to publish your changes [%E2%80%9Chttps://help.figma.com/hc/en-us/articles/360038665934#Publish_changes_to_the_library%E2%80%9D] to allow other instances to receive those updates. Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form",
+      "metadata": {
+        "startIndex": 9657,
+        "endIndex": 10624,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features",
+      "metadata": {
+        "startIndex": 10524,
+        "endIndex": 11506,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "rototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners",
+      "metadata": {
+        "startIndex": 11406,
+        "endIndex": 12398,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+      "metadata": {
+        "startIndex": 12298,
+        "endIndex": 13298,
+        "chunkIndex": 14,
+        "section": "Introduction",
+        "globalChunkIndex": 14
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "figma;components;instances;overrides"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-06-27T16:31:02.060Z",
+    "source_url": "https://help.figma.com/hc/en-us/articles/360039150733"
+  }
+}

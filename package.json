@@ -15,6 +15,7 @@
 		"ingest:pdf": "tsx scripts/ingestion/ingest.ts pdf",
 		"ingest:url": "tsx scripts/ingestion/ingest.ts url",
 		"build:manifest": "tsx scripts/build/generate-manifest.ts",
+		"check:duplicates": "tsx scripts/check-duplicates.ts",
 		"prebuild": "npm run build:manifest"
 	},
 	"dependencies": {

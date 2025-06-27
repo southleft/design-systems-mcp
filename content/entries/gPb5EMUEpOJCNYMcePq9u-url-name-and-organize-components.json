@@ -1,0 +1,175 @@
+{
+  "id": "gPb5EMUEpOJCNYMcePq9u",
+  "title": "Name and organize components",
+  "source": {
+    "type": "url",
+    "location": "https://help.figma.com/hc/en-us/articles/360038663994",
+    "ingested_at": "2025-06-27T16:31:00.302Z"
+  },
+  "content": "Name and organize components &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Components [/hc/en-us/sections/4403935997847-Components] Name and organize components Before you Start Who can use this feature Available on any plan [https://www.figma.com/pricing/] Anyone with `can edit` access to a file can rename layers, including components New to components? Check out our Guide to components [https://help.figma.com/hc/en-us/articles/360038662654] and Guide to libraries [https://help.figma.com/hc/en-us/articles/360041051154] articles. Name and organize your components to ensure consistency across your design system, and make them easier to find in the assets tab [https://help.figma.com/hc/articles/360039831974#assets] and when swapping related component instances [https://help.figma.com/hc/en-us/articles/360039150413]. We recommend defining and documenting a component naming structure within your team or company. Tip: Not sure where to start with building a component library? Our Best practices: components, styles, and shared libraries [https://www.figma.com/blog/component-styles-and-shared-library-best-practices/] article has some great suggestions. ## Component organization in the assets tab In the assets tab, the organization of components mirrors the file's structure. You will see this general path: `file > page > frame` You can click on each library file to see its pages. Figma displays pages in alphanumeric order, not the order they are listed in the original file. Then click on a specific page name to explore the components within. When you click on a component, you'll see a fly-out with more details, such as the component's description and properties. ## Component organization in the swap instance menu You can view details about a selected instance at the top of the Design tab in the right sidebar. From here, you can click next to the component's name to open the Swap instance window, which displays related components that you can swap the selected instance to. We determine related components by: How the main component is named. For example, we will display `UI/Button/Active`, `UI/Button/Hover` and `UI/Button/Inactive` together. How the main component is arranged in the original file. For example, components within the same frame or section are considered related. ## Organize components by name To add another layer of organization, you can use naming conventions to categorize your components and add consistency across your files. We recommend you use the slash-separated convention, such as `Component/State` or `Icon/Name`. This might look like: • Button/Active • Button/Hover • Button/Inactive • Icon/Alert • Icon/Profile • Icon/Close Tip: Need to rename multiple components at once? Learn how to rename layers in bulk. [https://help.figma.com/hc/en-us/articles/360039958934] ## Organize components via file structure To illustrate the importance of component organization, the following example will walk through how you can define your file structure and name its pages and frames to determine the location of your components within. • In a file named Figma UI, we'll create components that make up the Figma UI. • In the file, we'll create a page called `Icons`, which houses all of our icon components. • We support two sizes for each icon, 16px and 32px. We'll create two sections for each size, and name them accordingly `16` and `32`, then place the icon components into their corresponding sections. • To make it easier to differentiate between the icon sizes, we'll make sure to include the icon's size in its name. For example, `icon-16-home` and `icon-32-home`. • In another file, we've created a dialog window that needs a close icon. We've already created and published this close icon component in our Figma UI file, so we'll use an instance of that component in our other file. Note: For this approach, you will need to publish your library [https://help.figma.com/hc/en-us/articles/360025508373-Publish-a-library] and add it to the other file [https://help.figma.com/hc/en-us/articles/1500008731201-Add-or-remove-a-library-from-a-design-file]. The ability to publish libraries is only available on our paid plans [https://help.figma.com/hc/en-us/articles/360040328273-Figma-plans-and-features]. • From the other file, we'll go to the assets tab and locate our Figma UI library file. We'll click the file name, open the Icons page, and select either the 16 or 32 section. We need the 32px version of that icon, so we'll select that one and then drag that component from the Assets tab into the file. Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "Name and organize components &ndash; Figma Learn - Help Center Figma Learn Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Administration Courses, tutorials, projects Help enterto select ↑↓to navigate escto close Figma Design Design and prototype in one place Dev Mode Translate designs into code FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figma Draw New Illustrate with advanced vector tools Figma Buzz Beta Produce on-brand assets at scale Figma Sites Beta Publish fully responsive websites Figma Make Beta Prompt to code anything you can imagine AI Explore all Figma AI features Work across Figma Learn how Figma tools work together Developer docs Work with APIs, embeds, and more For everyone Account [https://help.figma.com/hc/sections/360006479433] • Manage settings [https://help.figma.com/hc/sections/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 995,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ns/4403936365591] • Change preferences [https://help.figma.com/hc/sections/4403936364311] Files and projects [https://help.figma.com/hc/sections/360006050633] • Use the file browser [https://help.figma.com/hc/sections/13166486919191] • Manage files and projects [https://help.figma.com/hc/sections/13166489863319] • Sharing and permissions [https://help.figma.com/hc/sections/1500001331382] For administration Billing [https://help.figma.com/hc/sections/4421076253719] • Overview [https://help.figma.com/hc/sections/4403936381463] • Manage seats [https://help.figma.com/hc/sections/20830735292567] • Manage your plan [https://help.figma.com/hc/sections/4403929058327] Pay for Figma Teams [https://help.figma.com/hc/sections/360006457394] • Manage a team [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication",
+      "metadata": {
+        "startIndex": 895,
+        "endIndex": 1853,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "06606913] • Overview [https://help.figma.com/hc/sections/20832795476375] • Login and authentication [https://help.figma.com/hc/sections/4403936348311] • Deploy Figma [https://help.figma.com/hc/sections/4403928836759] • Members and guests [https://help.figma.com/hc/sections/4403928781847] • Teams [https://help.figma.com/hc/sections/20832780119959] • Libraries and resources [https://help.figma.com/hc/sections/4403928823063] Enterprise [https://help.figma.com/hc/sections/20832705104407] • Billing groups [https://help.figma.com/hc/sections/19100866155543] • Workspaces [https://help.figma.com/hc/sections/4419363208855] • Security features [https://help.figma.com/hc/sections/20833164749719] Find out more Courses New Level up your Figma skills with these comprehensive skill-based courses. Projects Get hands-on experience in Figma with these practical bite-sized projects. Tutorials Explore tools and features by watching and following along with these expert-led video tutorials.",
+      "metadata": {
+        "startIndex": 1753,
+        "endIndex": 2738,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "s Explore tools and features by watching and following along with these expert-led video tutorials. Get solutions Troubleshoot Get help with common issues and troubleshoot unexpected behavior. Work with support Submit a bug report, get help collecting log files, and find your system information. Common questions Get answers to frequently asked questions. Figma Community Forum Ask the community, share ideas, and connect with other Figma users. Get started [https://help.figma.com/hc/categories/360002051613-Get-started] Product documentation Products Figma Design [https://help.figma.com/hc/categories/360002042553] Dev Mode [https://help.figma.com/hc/sections/15023066873239] FigJam [https://help.figma.com/hc/categories/360002051633] Figma Slides [https://help.figma.com/hc/categories/24146015318551] Figma Draw New Figma Sites Beta Figma Make Beta Figma Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma",
+      "metadata": {
+        "startIndex": 2638,
+        "endIndex": 3596,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "a Buzz Beta Features AI [https://help.figma.com/hc/en-us/sections/24369548041111] Work across Figma [https://help.figma.com/hc/sections/23691965907223] Developer docs [https://help.figma.com/hc/sections/23691965907223] Administration For everyone Account [https://help.figma.com/hc/sections/360006479433] Files and projects [https://help.figma.com/hc/sections/360006050633] For administration Billing [https://help.figma.com/hc/sections/4421076253719] Teams [https://help.figma.com/hc/sections/360006457394] Organizations [https://help.figma.com/hc/sections/360006606913] Enterprise Courses, tutorials, projects Find out more Courses [https://help.figma.com/hc/sections/23691657321239] Projects [https://help.figma.com/hc/sections/13148624530967] Tutorials [https://www.youtube.com/@Figma] Help Get solutions Troubleshoot [https://help.figma.com/hc/sections/1500000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions",
+      "metadata": {
+        "startIndex": 3496,
+        "endIndex": 4456,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "00000378401] Work with support [https://help.figma.com/hc/sections/19818052690455] Common questions [https://help.figma.com/hc/sections/13148115222551] Figma Community Forum [https://forum.figma.com/] ### ··· Figma Learn - Help Center [/hc/en-us] Figma Design [/hc/en-us/categories/360002042553-Figma-Design] Build design systems [/hc/en-us/sections/23536356509975-Build-design-systems] Components [/hc/en-us/sections/4403935997847-Components] Name and organize components Before you Start Who can use this feature Available on any plan [https://www.figma.com/pricing/] Anyone with `can edit` access to a file can rename layers, including components New to components? Check out our Guide to components [https://help.figma.com/hc/en-us/articles/360038662654] and Guide to libraries [https://help.figma.com/hc/en-us/articles/360041051154] articles. Name and organize your components to ensure consistency across your design system, and make them easier to find in the assets tab",
+      "metadata": {
+        "startIndex": 4356,
+        "endIndex": 5334,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "nts to ensure consistency across your design system, and make them easier to find in the assets tab [https://help.figma.com/hc/articles/360039831974#assets] and when swapping related component instances [https://help.figma.com/hc/en-us/articles/360039150413]. We recommend defining and documenting a component naming structure within your team or company. Tip: Not sure where to start with building a component library? Our Best practices: components, styles, and shared libraries [https://www.figma.com/blog/component-styles-and-shared-library-best-practices/] article has some great suggestions. ## Component organization in the assets tab In the assets tab, the organization of components mirrors the file's structure. You will see this general path: `file > page > frame` You can click on each library file to see its pages. Figma displays pages in alphanumeric order, not the order they are listed in the original file. Then click on a specific page name to explore the components within.",
+      "metadata": {
+        "startIndex": 5234,
+        "endIndex": 6228,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "e listed in the original file. Then click on a specific page name to explore the components within. When you click on a component, you'll see a fly-out with more details, such as the component's description and properties. ## Component organization in the swap instance menu You can view details about a selected instance at the top of the Design tab in the right sidebar. From here, you can click next to the component's name to open the Swap instance window, which displays related components that you can swap the selected instance to. We determine related components by: How the main component is named. For example, we will display `UI/Button/Active`, `UI/Button/Hover` and `UI/Button/Inactive` together. How the main component is arranged in the original file. For example, components within the same frame or section are considered related. ## Organize components by name To add another layer of organization, you can use naming conventions to categorize your components and add consistency",
+      "metadata": {
+        "startIndex": 6128,
+        "endIndex": 7126,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "r of organization, you can use naming conventions to categorize your components and add consistency across your files. We recommend you use the slash-separated convention, such as `Component/State` or `Icon/Name`. This might look like: • Button/Active • Button/Hover • Button/Inactive • Icon/Alert • Icon/Profile • Icon/Close Tip: Need to rename multiple components at once? Learn how to rename layers in bulk. [https://help.figma.com/hc/en-us/articles/360039958934] ## Organize components via file structure To illustrate the importance of component organization, the following example will walk through how you can define your file structure and name its pages and frames to determine the location of your components within. • In a file named Figma UI, we'll create components that make up the Figma UI. • In the file, we'll create a page called `Icons`, which houses all of our icon components. • We support two sizes for each icon, 16px and 32px.",
+      "metadata": {
+        "startIndex": 7026,
+        "endIndex": 7977,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "ons`, which houses all of our icon components. • We support two sizes for each icon, 16px and 32px. We'll create two sections for each size, and name them accordingly `16` and `32`, then place the icon components into their corresponding sections. • To make it easier to differentiate between the icon sizes, we'll make sure to include the icon's size in its name. For example, `icon-16-home` and `icon-32-home`. • In another file, we've created a dialog window that needs a close icon. We've already created and published this close icon component in our Figma UI file, so we'll use an instance of that component in our other file. Note: For this approach, you will need to publish your library [https://help.figma.com/hc/en-us/articles/360025508373-Publish-a-library] and add it to the other file [https://help.figma.com/hc/en-us/articles/1500008731201-Add-or-remove-a-library-from-a-design-file]. The ability to publish libraries is only available on our paid plans",
+      "metadata": {
+        "startIndex": 7877,
+        "endIndex": 8846,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "a-library-from-a-design-file]. The ability to publish libraries is only available on our paid plans [https://help.figma.com/hc/en-us/articles/360040328273-Figma-plans-and-features]. • From the other file, we'll go to the assets tab and locate our Figma UI library file. We'll click the file name, open the Icons page, and select either the 16 or 32 section. We need the 32px version of that icon, so we'll select that one and then drag that component from the Assets tab into the file. Was this article helpful? Yes No Help Center feedback Got a second? Tell us what we’re doing well. Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Help Center feedback Thanks for letting us know! What was the issue? -- Please choose an option -- Incorrect or missing information Hard to understand There are typos or broken links Issues with images, GIFs, or videos I",
+      "metadata": {
+        "startIndex": 8746,
+        "endIndex": 9744,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "nformation Hard to understand There are typos or broken links Issues with images, GIFs, or videos I wish the feature worked a different way Something else Submit article feedback Your feedback helps us improve Figma’s Help Center. To get help from support, submit a request through our contact form [https://help.figma.com/hc/en-us/requests/new]. Thank you for helping us improve Figma’s Help Center! English (US) Deutsch Español (Latinoamérica) Español (España) Français 日本語 한국어 Nederlands (Nederland) Polski (Polska) Português do Brasil ###### Use cases UI design [https://www.figma.com/ui-design-tool/] UX design [https://www.figma.com/ux-design-tool/] Prototyping [https://www.figma.com/prototyping/] Graphic design [https://www.figma.com/graphic-design-tool/] Wireframing [https://www.figma.com/wireframe-tool/] Brainstorming [https://www.figma.com/brainstorming-tool/] Templates [https://www.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design",
+      "metadata": {
+        "startIndex": 9644,
+        "endIndex": 10639,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "ww.figma.com/templates/] Remote design [https://www.figma.com/remote-design/] ###### Explore Design features [https://www.figma.com/design/] Prototyping features [https://www.figma.com/prototyping/] Design systems features [https://www.figma.com/design-systems/] Collaboration features [https://www.figma.com/collaboration/] FigJam [https://www.figma.com/figjam/] Pricing [https://www.figma.com/pricing/] Enterprise [https://www.figma.com/organization/] Students and educators [https://www.figma.com/education/] Customers [https://www.figma.com/customers/] Security [https://www.figma.com/security/] Integrations [https://www.figma.com/product-integrations/] Contact [https://www.figma.com/contact/] ###### Resources Blog [https://www.figma.com/blog/] Best practices [https://www.figma.com/best-practices/] Support [https://help.figma.com/hc/] Developers [https://www.figma.com/developers] Learn design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/]",
+      "metadata": {
+        "startIndex": 10539,
+        "endIndex": 11535,
+        "chunkIndex": 12,
+        "section": "Introduction",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "design [https://www.figma.com/resources/learn-design/] Downloads [https://www.figma.com/downloads/] What's new [https://www.figma.com/whats-new/] Releases [https://releases.figma.com/] Careers [https://www.figma.com/careers/] About us [https://www.figma.com/about/] Agency partners [https://www.figma.com/agency-partner-program/] Privacy [https://www.figma.com/summary-of-policy/] Status [https://status.figma.com/] ###### Compare Sketch [https://www.figma.com/figma-vs-sketch/] Adobe XD [https://www.figma.com/figma-vs-adobe-xd/] Invision Studio [https://www.figma.com/figma-vs-invision-studio/] Framer [https://www.figma.com/figma-vs-framer/] Design on Windows [https://www.figma.com/sketch-alternative/] Miro [https://www.figma.com/figjam-vs-miro/]",
+      "metadata": {
+        "startIndex": 11435,
+        "endIndex": 12435,
+        "chunkIndex": 13,
+        "section": "Introduction",
+        "globalChunkIndex": 13
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "figma;components;organization"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-06-27T16:31:00.302Z",
+    "source_url": "https://help.figma.com/hc/en-us/articles/360038663994"
+  }
+}
