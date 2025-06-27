@@ -1104,27 +1104,27 @@ export default {
             const MessageComponent = ({ message }) => {
                 const getMessageStyle = (type) => {
                     const base = {
-                        padding: '16px',
-                        borderRadius: '12px',
-                        marginBottom: '16px',
-                        maxWidth: '85%',
-                        lineHeight: '1.6'
+                        padding: '24px',
+                        marginBottom: '0',
+                        maxWidth: '100%',
+                        lineHeight: '1.6',
+                        fontSize: '16px'
                     };
 
                     switch (type) {
                         case 'user':
                             return {
                                 ...base,
-                                background: 'linear-gradient(135deg, #339af0 0%, #1c7ed6 100%)',
-                                color: 'white',
-                                marginLeft: 'auto'
+                                background: '#2c2e33',
+                                color: '#c1c2c5',
+                                borderBottom: '1px solid #373a40'
                             };
                         case 'assistant':
                             return {
                                 ...base,
-                                background: '#25262b',
+                                background: '#1a1b1e',
                                 color: '#c1c2c5',
-                                border: '1px solid #373a40'
+                                borderBottom: '1px solid #373a40'
                             };
                         case 'system':
                             return {
@@ -1134,7 +1134,8 @@ export default {
                                 border: '1px solid #339af0',
                                 fontStyle: 'italic',
                                 textAlign: 'center',
-                                maxWidth: '100%'
+                                borderRadius: '12px',
+                                margin: '16px 0'
                             };
                         case 'thinking':
                             return {
@@ -1142,14 +1143,18 @@ export default {
                                 background: '#2d1e00',
                                 color: '#ffd43b',
                                 border: '1px solid #fab005',
-                                fontStyle: 'italic'
+                                fontStyle: 'italic',
+                                borderRadius: '8px',
+                                margin: '16px 0'
                             };
                         case 'error':
                             return {
                                 ...base,
                                 background: '#2d0e0e',
                                 color: '#ff6b6b',
-                                border: '1px solid #e03131'
+                                border: '1px solid #e03131',
+                                borderRadius: '8px',
+                                margin: '16px 0'
                             };
                         default:
                             return base;
@@ -1186,11 +1191,17 @@ export default {
 
                 return (
                     <div style={getMessageStyle(message.type)}>
-                        {message.type === 'assistant' ? (
-                            <div dangerouslySetInnerHTML={renderContent(message.content, message.type)} />
-                        ) : (
-                            renderContent(message.content, message.type)
-                        )}
+                        <div style={{
+                            maxWidth: '800px',
+                            margin: '0 auto',
+                            width: '100%'
+                        }}>
+                            {message.type === 'assistant' ? (
+                                <div dangerouslySetInnerHTML={renderContent(message.content, message.type)} />
+                            ) : (
+                                renderContent(message.content, message.type)
+                            )}
+                        </div>
                     </div>
                 );
             };
