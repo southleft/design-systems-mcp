@@ -546,6 +546,92 @@ async function handleMcpRequest(request: Request): Promise<Response> {
 				const body = await request.json() as any;
 
 		// Handle MCP JSON-RPC request
+		if (body.method === "tools/list") {
+			// Return list of available tools
+			const tools = [
+				{
+					name: "search_design_knowledge",
+					description: "Search through design system knowledge base entries by query, category, or tags",
+					inputSchema: {
+						type: "object",
+						properties: {
+							query: {
+								type: "string",
+								description: "Search query for finding relevant design system knowledge"
+							},
+							category: {
+								type: "string",
+								description: "Filter by category (e.g., 'figma', 'tokens', 'components')",
+								enum: ["figma", "tokens", "components", "documentation", "workflow", "governance", "accessibility", "tools", "case-studies", "foundations"]
+							},
+							tags: {
+								type: "array",
+								items: { type: "string" },
+								description: "Filter by specific tags"
+							},
+							limit: {
+								type: "number",
+								description: "Maximum number of results to return (default: 10)",
+								default: 10
+							}
+						},
+						required: ["query"]
+					}
+				},
+				{
+					name: "search_chunks",
+					description: "Search through specific content chunks for detailed information",
+					inputSchema: {
+						type: "object",
+						properties: {
+							query: {
+								type: "string",
+								description: "Search query for finding specific content chunks"
+							},
+							limit: {
+								type: "number",
+								description: "Maximum number of chunks to return (default: 5)",
+								default: 5
+							}
+						},
+						required: ["query"]
+					}
+				},
+				{
+					name: "browse_by_category",
+					description: "Browse all entries in a specific category",
+					inputSchema: {
+						type: "object",
+						properties: {
+							category: {
+								type: "string",
+								description: "Category to browse",
+								enum: ["figma", "tokens", "components", "documentation", "workflow", "governance", "accessibility", "tools", "case-studies", "foundations"]
+							}
+						},
+						required: ["category"]
+					}
+				},
+				{
+					name: "get_all_tags",
+					description: "Get a list of all available tags in the knowledge base",
+					inputSchema: {
+						type: "object",
+						properties: {},
+						additionalProperties: false
+					}
+				}
+			];
+
+			return new Response(JSON.stringify({
+				jsonrpc: "2.0",
+				id: body.id,
+				result: { tools }
+			}), {
+				headers: { ...corsHeaders, "Content-Type": "application/json" }
+			});
+		}
+
 		if (body.method === "tools/call") {
 			const toolName = body.params?.name;
 			const args = body.params?.arguments || {};
