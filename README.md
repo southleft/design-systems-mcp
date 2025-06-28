@@ -2,7 +2,7 @@
 
 An AI-powered Model Context Protocol (MCP) server that provides intelligent access to design systems knowledge. This server ingests design system documentation (PDFs, web content) and enables AI assistants to provide expert guidance on design systems, components, tokens, and best practices.
 
-🌐 **Live Demo:** [https://design-systems-mcp.southleft-llc.workers.dev](https://design-systems-mcp.southleft-llc.workers.dev)
+🌐 **Live Demo:** [https://design-systems-mcp.southleft.com/](https://design-systems-mcp.southleft.com/)
 
 ## Features
 
@@ -20,7 +20,7 @@ An AI-powered Model Context Protocol (MCP) server that provides intelligent acce
 
 **Workers Domain:** `https://design-systems-mcp.southleft-llc.workers.dev`
 
-- **AI Chat Interface:** [https://design-systems-mcp.southleft-llc.workers.dev](https://design-systems-mcp.southleft-llc.workers.dev)
+- **AI Chat Interface:** [https://design-systems-mcp.southleft.com/](https://design-systems-mcp.southleft.com/)
 - **MCP Endpoint:** `https://design-systems-mcp.southleft-llc.workers.dev/mcp`
 - **Health Check:** `https://design-systems-mcp.southleft-llc.workers.dev/health`
 
