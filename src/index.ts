@@ -70,36 +70,27 @@ async function ensureContentLoaded() {
 // AI System Prompt
 const AI_SYSTEM_PROMPT = `You are a helpful design systems expert with access to a comprehensive design systems knowledge base. Your role is to provide accurate, practical answers about design systems, components, tokens, and best practices.
 
-CRITICAL: You MUST ALWAYS search the knowledge base first before answering any question. You have the following MCP tools available:
-1. search_design_knowledge - Search for general design system content
-2. search_chunks - Search for specific detailed information (BEST for detailed explanations and how-to content)
-3. browse_by_category - Browse content by category (components, tokens, patterns, workflows, guidelines, general)
-4. get_all_tags - Get available tags in the knowledge base
+SEARCH STRATEGY: For any user question, search the knowledge base using these tools:
+1. search_chunks - For specific detailed information (BEST for most questions)
+2. search_design_knowledge - For broader overviews
+3. browse_by_category - When looking for specific categories
+4. get_all_tags - When you need to see available tags
 
-MANDATORY WORKFLOW:
-1. For ANY user question, ALWAYS start by calling search_chunks with relevant keywords from the user's query
-2. If the first search_chunks call returns mostly navigation/header content (links, menus, etc.), call search_chunks again with more specific terms
-3. For questions about specific features (like "figma properties"), try multiple search variations:
-   - "component properties types boolean variant"
-   - "create apply component property"
-   - "instance swap text property"
-4. If search_chunks doesn't find specific information, try search_design_knowledge with broader terms
-5. Only after thorough searching should you provide your response
+WORKFLOW:
+1. For most questions: Call search_chunks with the user's main keywords
+2. If that doesn't find relevant content, try search_design_knowledge with broader terms
+3. Structure your response clearly with sources
 
-SEARCH STRATEGY FOR FIGMA PROPERTIES:
-- Use search_chunks with: "component properties boolean instance swap text variant"
-- Look for chunks containing actual explanations, not just navigation
-- If you get navigation content, search again with more specific terms
-- The knowledge base contains detailed information about all Figma property types
+Be direct and efficient - avoid multiple redundant searches. If the first search finds good content, use it.
 
-IMPORTANT: Structure your responses as follows:
+RESPONSE FORMAT:
 ## 📚 From the Knowledge Base
 [Include any information found via MCP tools, with specific quotes and sources]
 
 ## 🧠 General Design Systems Knowledge
 [Include any additional context from your training data]
 
-You must ALWAYS call at least one search tool before responding, even if you think you know the answer.`;
+Always search the knowledge base first before responding.`;
 
 // Available MCP tools for the AI
 const MCP_TOOLS = [
@@ -201,15 +192,17 @@ async function callMcpTool(toolName: string, args: any): Promise<string> {
 			}
 
 			const formattedResults = searchResults.map((entry, index) =>
-				`**${index + 1}. ${entry.title}**
-Category: ${entry.metadata.category}
-System: ${entry.metadata.system || "N/A"}
-Tags: ${entry.metadata.tags.join(", ")}
-Confidence: ${entry.metadata.confidence}
+				`<strong>🔍 ${index + 1}. ${entry.title}</strong>
+
+<em>📂 Category:</em> ${entry.metadata.category}
+<em>🏷️ System:</em> ${entry.metadata.system || "N/A"}
+<em>🔖 Tags:</em> ${entry.metadata.tags.join(", ")}
+<em>⭐ Confidence:</em> ${entry.metadata.confidence}
+<em>🔗 Source:</em> <a href="${entry.source?.location || entry.metadata?.source_url || "#"}" target="_blank">${entry.source?.location || entry.metadata?.source_url || "N/A"}</a>
 
 ${entry.content.slice(0, 300)}${entry.content.length > 300 ? "..." : ""}
 
----`
+<hr style="border: 1px solid #ddd; margin: 20px 0;">`
 			).join("\n\n");
 
 			return `FOUND ${searchResults.length} RESULT${searchResults.length === 1 ? "" : "S"}:
@@ -224,13 +217,17 @@ ${formattedResults}`;
 			}
 
 			const formattedChunks = chunkResults.map((result, index) =>
-				`**${index + 1}. ${(result.chunk.metadata?.section || "EXCERPT")}**
-From: ${result.entry.title}
-Relevance Score: ${result.score}
+				`<strong>💡 ${index + 1}. ${(result.chunk.metadata?.section || "EXCERPT")}</strong>
 
+<em>📚 From:</em> ${result.entry.title}
+<em>🔗 Source:</em> <a href="${result.entry.source?.location || result.entry.metadata?.source_url || "#"}" target="_blank">${result.entry.source?.location || result.entry.metadata?.source_url || "N/A"}</a>
+<em>⚡ Relevance Score:</em> ${result.score}
+
+<blockquote style="border-left: 3px solid #007acc; padding-left: 16px; margin: 16px 0; color: #333; font-style: italic;">
 "${result.chunk.text}"
+</blockquote>
 
----`
+<hr style="border: 1px solid #ddd; margin: 20px 0;">`
 			).join("\n\n");
 
 			return `FOUND ${chunkResults.length} RELEVANT CHUNK${chunkResults.length === 1 ? "" : "S"}:
@@ -316,7 +313,7 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 				}
 			],
 			tools: MCP_TOOLS,
-			tool_choice: "required",
+			tool_choice: "auto",
 		});
 
 		let response = completion.choices[0].message;
@@ -431,6 +428,7 @@ server.tool(
 <em>🏷️ System:</em> ${entry.metadata.system || "N/A"}
 <em>🔖 Tags:</em> ${entry.metadata.tags.join(", ")}
 <em>⭐ Confidence:</em> ${entry.metadata.confidence}
+<em>🔗 Source:</em> <a href="${entry.source?.location || entry.metadata?.source_url || "#"}" target="_blank">${entry.source?.location || entry.metadata?.source_url || "N/A"}</a>
 
 ${entry.content.slice(0, 300)}${entry.content.length > 300 ? "..." : ""}
 
@@ -471,6 +469,7 @@ server.tool(
 			`<strong>💡 ${index + 1}. ${(result.chunk.metadata?.section || "EXCERPT")}</strong>
 
 <em>📚 From:</em> ${result.entry.title}
+<em>🔗 Source:</em> <a href="${result.entry.source?.location || result.entry.metadata?.source_url || "#"}" target="_blank">${result.entry.source?.location || result.entry.metadata?.source_url || "N/A"}</a>
 <em>⚡ Relevance Score:</em> ${result.score}
 
 <blockquote style="border-left: 3px solid #007acc; padding-left: 16px; margin: 16px 0; color: #333; font-style: italic;">
@@ -511,9 +510,9 @@ server.tool(
 		}
 
 		const formattedEntries = entries.map(entry =>
-			`<strong>📋 ${entry.title}</strong>
-<em>🔖 Tags:</em> ${entry.metadata.tags.join(", ")}
-<em>🏷️ System:</em> ${entry.metadata.system || "N/A"}`
+			`**${entry.title}**
+Tags: ${entry.metadata.tags.join(", ")}
+System: ${entry.metadata.system || "N/A"}`
 		).join("\n\n");
 
 		return {
@@ -725,6 +724,7 @@ async function handleMcpRequest(request: Request): Promise<Response> {
 <em>🏷️ System:</em> ${entry.metadata.system || "N/A"}
 <em>🔖 Tags:</em> ${entry.metadata.tags.join(", ")}
 <em>⭐ Confidence:</em> ${entry.metadata.confidence}
+<em>🔗 Source:</em> <a href="${entry.source?.location || entry.metadata?.source_url || "#"}" target="_blank">${entry.source?.location || entry.metadata?.source_url || "N/A"}</a>
 
 ${entry.content.slice(0, 300)}${entry.content.length > 300 ? "..." : ""}
 
@@ -757,6 +757,7 @@ ${formattedResults}`
 							`<strong>💡 ${index + 1}. ${(result.chunk.metadata?.section || "EXCERPT")}</strong>
 
 <em>📚 From:</em> ${result.entry.title}
+<em>🔗 Source:</em> <a href="${result.entry.source?.location || result.entry.metadata?.source_url || "#"}" target="_blank">${result.entry.source?.location || result.entry.metadata?.source_url || "N/A"}</a>
 <em>⚡ Relevance Score:</em> ${result.score}
 
 <blockquote style="border-left: 3px solid #007acc; padding-left: 16px; margin: 16px 0; color: #333; font-style: italic;">
@@ -1167,12 +1168,13 @@ export default {
 
         // Example questions data
         const EXAMPLE_QUESTIONS = [
-            { icon: '🎨', text: 'What are design tokens and how should I use them?' },
-            { icon: '♿', text: 'How do I create accessible button components?' },
-            { icon: '🔧', text: 'What causes design debt and how can I reduce it?' },
-            { icon: '📚', text: 'What are the best practices for organizing a design system?' },
-            { icon: '🧩', text: 'How do components work in design systems?' },
-            { icon: '🏷️', text: 'What categories and tags are available in the knowledge base?' }
+            { icon: '❓', text: 'Overview' },
+            { icon: '🚀', text: 'Getting Started' },
+            { icon: '🎨', text: 'Theming' },
+            { icon: '🧩', text: 'Tokens' },
+            { icon: '📏', text: 'Consistency' },
+            { icon: '🤝', text: 'Adoption' },
+            { icon: '⚖️', text: 'Strategy' }
         ];
 
         // Chat App Component
@@ -1542,15 +1544,7 @@ export default {
                                             maxWidth: '600px',
                                             marginBottom: '32px'
                                         }}>
-                                                                                    {[
-                                                'Token architectures',
-                                                'Theming',
-                                                'Figma properties',
-                                                'Figma components',
-                                                'Component variants',
-                                                'Slots',
-                                                'Accessibility'
-                                            ].map((topic, index) => (
+                                                                                    {EXAMPLE_QUESTIONS.map((item, index) => (
                                                 <button
                                                     key={index}
                                                     style={{
@@ -1562,7 +1556,10 @@ export default {
                                                         fontSize: '14px',
                                                         color: '#909296',
                                                         transition: 'all 0.2s ease',
-                                                        fontFamily: 'inherit'
+                                                        fontFamily: 'inherit',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        gap: '6px'
                                                     }}
                                                     onMouseEnter={(e) => {
                                                         e.target.style.borderColor = '#339af0';
@@ -1572,9 +1569,21 @@ export default {
                                                         e.target.style.borderColor = '#373a40';
                                                         e.target.style.color = '#909296';
                                                     }}
-                                                    onClick={() => askQuestion(\`Tell me about \${topic.toLowerCase()}\`)}
+                                                    onClick={() => {
+                                                        const queries = {
+                                                            'Overview': 'What is a design system?',
+                                                            'Getting Started': 'How do I get started with design systems?',
+                                                            'Theming': 'Tell me about theming',
+                                                            'Tokens': 'What are design tokens?',
+                                                            'Consistency': 'How do I create consistency across products?',
+                                                            'Adoption': 'How do I get stakeholder buy-in for design systems?',
+                                                            'Strategy': 'How do I balance flexibility and consistency?'
+                                                        };
+                                                        askQuestion(queries[item.text] || item.text);
+                                                    }}
                                                 >
-                                                    {topic}
+                                                    <span>{item.icon}</span>
+                                                    <span>{item.text}</span>
                                                 </button>
                                             ))}
                                         </div>

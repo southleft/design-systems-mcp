@@ -109,7 +109,8 @@ export function normalizeSearchTerms(query: string): string[] {
     'figma', 'component', 'property', 'properties', 'panel', 'variable', 'variables',
     'token', 'tokens', 'design', 'system', 'atomic', 'molecule', 'organism',
     'template', 'page', 'variant', 'boolean', 'text', 'instance', 'swap',
-    'button', 'input', 'form', 'navigation', 'header', 'footer'
+    'button', 'input', 'form', 'navigation', 'header', 'footer',
+    'theme', 'themes', 'theming', 'styling', 'brand', 'branding'
   ];
 
   // Find important terms in the query
@@ -122,12 +123,37 @@ export function normalizeSearchTerms(query: string): string[] {
   // Handle compound terms like "component properties"
   const compoundTerms = [
     'component properties', 'design system', 'atomic design',
-    'design tokens', 'figma panel', 'instance swap'
+    'design tokens', 'figma panel', 'instance swap', 'multi brand',
+    'theme builder', 'color theming'
   ];
 
   for (const compound of compoundTerms) {
     if (normalizedQuery.includes(compound)) {
       terms.push(compound);
+    }
+  }
+
+  // Add word stemming for common variations
+  const stemVariations: { [key: string]: string[] } = {
+    'theme': ['themes', 'theming', 'themed'],
+    'token': ['tokens', 'tokenize', 'tokenized'],
+    'component': ['components'],
+    'style': ['styles', 'styling', 'styled'],
+    'brand': ['brands', 'branding', 'branded'],
+    'variant': ['variants', 'variation', 'variations']
+  };
+
+  // Add stem variations to search terms
+  for (const [root, variations] of Object.entries(stemVariations)) {
+    if (normalizedQuery.includes(root)) {
+      terms.push(root);
+      terms.push(...variations);
+    }
+    for (const variation of variations) {
+      if (normalizedQuery.includes(variation)) {
+        terms.push(root);
+        terms.push(variation);
+      }
     }
   }
 
@@ -332,6 +358,10 @@ function calculateRelevanceScore(entry: ContentEntry, query: string, searchTerms
         score += titleTermMatches * 30; // High weight for key Figma terms
       } else if (term === 'figma') {
         score += titleTermMatches * 20; // Medium weight for figma
+      } else if (term === 'theme' || term === 'theming' || term === 'themes') {
+        score += titleTermMatches * 40; // High weight for theming
+      } else if (term === 'token' || term === 'tokens' || term === 'brand' || term === 'branding') {
+        score += titleTermMatches * 25; // High weight for design system terms
       } else {
         score += titleTermMatches * 10;
       }
@@ -461,6 +491,10 @@ function calculateChunkRelevanceScore(chunk: ContentChunk, query: string, search
           score += 30; // High weight for key Figma terms
         } else if (term === 'figma') {
           score += 20; // Medium weight for figma
+        } else if (term === 'theme' || term === 'theming' || term === 'themes') {
+          score += 40; // High weight for theming
+        } else if (term === 'token' || term === 'tokens' || term === 'brand' || term === 'branding') {
+          score += 25; // High weight for design system terms
         } else {
           score += 10;
         }
