@@ -1,0 +1,153 @@
+{
+  "id": "BlEo5JZ35K5wF_B6p9pBh",
+  "title": "The complete guide about design systems: Engineering | CI&T",
+  "source": {
+    "type": "url",
+    "location": "https://medium.com/ci-t/the-complete-guide-about-design-systems-engineering-cd332cf520f2",
+    "ingested_at": "2025-06-28T12:24:58.115Z"
+  },
+  "content": "The complete guide about design systems: Engineering | CI&T Sitemap [/sitemap/sitemap.xml] Open in app Sign up Sign in [/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2Fci-t%2Fthe-complete-guide-about-design-systems-engineering-cd332cf520f2&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Medium Logo Write Sign up Sign in [/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2Fci-t%2Fthe-complete-guide-about-design-systems-engineering-cd332cf520f2&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] ## CI&T · CI&T combines strategy, design and engineering expertise, working cross-functionally to deliver lasting impact to our clients. # The complete guide about design systems: Engineering Gustavo Ribeiro [/@gstvribs?source=post_page---byline--cd332cf520f2---------------------------------------] 5 min read· Jun 26, 2020 -- [/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fcd332cf520f2&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fci-t%2Fthe-complete-guide-about-design-systems-engineering-cd332cf520f2&source=---header_actions--cd332cf520f2---------------------bookmark_footer------------------] Listen Share 1 of 2 of the series: the complete guide about design systems Engineering | Walkthrough [/ci-t/the-complete-guide-about-design-systems-walkthrough-764f0b866bca] After experiences in different projects and of different sizes, I intend to show in this series my main learnings as a developer in design systems projects from Engineering, Design, and Management aspects, in this blog post, I will cover the main aspects from an engineering perspective and build an entire design system from scratch. Although Design Systems is a relatively new subject, in software development it is already a very old subject. In the past, when open source was a “world not yet explored”, companies and developers that worked with enterprise systems created their libraries to share code between projects, such as ORMs, queue managers, enterprise communication bus, etc. Also, frontend developers already built their “own design systems” a long time ago. The design system, as seen today, is the expression of all this in a unique language shared between design and development. After a long time of popularizing this practice, it was observed that design systems were much more than a “design trend”, but came to show something that happened over a long time and has grown a lot in recent times: the communication gap between designers and developers. [https://diegoeis.com/comentario-design-system-comunicacao-designers-devs/] ## The big picture The first thing that helps us a lot in this type of project is to recognize what’s the big picture, what will be the next step, what’s the limitation of the client infrastructure for security (approval for the usage of new services for example), how many projects are affected by this design system etc. For this, we use a technique called mind maps, and that helps us to recognize what will be the challenges, what’s its potential and to determine people who will be focused on finishing a certain type of activity. Mindmeister sample for design systems ## Migrate your mental model Generally, people who come from “common projects” are on the left side of this picture above. You are responsible for a project that provides user interfaces, and when you need to ship a new feature you don’t care much about versioning. Generally, you have a project that has dependencies and now your project is the dependency. And, in this migration path, you are not used to worrying about certain items that we need to be aware of when we develop a design system, such as package management, package deployment, standardization of commit messages for generating many versions of packages, tags, and versions in SCM, changelogs and massive Documentation-Driven Development [https://opensource.com/article/17/8/doc-driven-development]. Imagine that you fell asleep, woke up, and are part of the Angular core team and need to push a bugfix in production; feels scary, no? haha. Thinking that way, we need to know the good practices used by these teams on a day-to-day basis and bring this to our reality. ## Mono package or multi package One of the hardest decisions at the beginning of your project will be this. The idea behind it is to serve a single package or many packages for projects. The ideal solution is to serve multi-packages by one single monorepo and to do this I recommend using Lerna [https://lerna.js.org/]. This tool will manage all the monorepo structure, also has great documentation and provides two commands that will make your job much easier: Lerna Publish [https://github.com/lerna/lerna/tree/master/commands/publish] and Lerna Version [https://github.com/lerna/lerna/tree/master/commands/version] ## Semantic versioning all the way up! You can read more about semver here [https://semver.org/], but, in summary, semantic versioning is a way to manage package versions in a way to tell the clients (projects) which type of features, bug fixes, or breaking changes they are getting by updating the package. Okay, that’s cool but all that process had to be manual? To solve this, big repositories like Angular [https://github.com/angular/angular] use a standard called conventional commits [https://www.conventionalcommits.org/en/v1.0.0/] which I will explain further in the topic below. ## Conventional Commits As specified on the official website, the conventional commit is a specification for adding human and machine-readable meaning to commit messages. A sample last commit messages at Angular repository.In summary, the commit message has a template like this <type>[optional scope]: <description>[optional body][optional footer]The types available help you to automatically define the next version of your package • major: breaking change • minor: feat • patch: build, chore, ci, fix, improvement, perf, refactor, style, revert, test, docs ## Testing your packages out of the box Before publishing your first component in production, it is interesting to be able to test it in a local proxy to check items such as bundle size, files inserted in the package, and compatibility with real projects. The tool that can help you with this is Verdaccio [https://verdaccio.org/]. It creates a local npm proxy and enables you to publish packages in this repository, even before uploading them to your public or private definitive npm repository. ## Conclusion These are the main aspects of the engineering area that you need to worry about before uploading your first design system, and also I have good news! I have compiled all these good practices in a single boilerplate that provides a monorepo structure for your design system for Angular web apps and design tokens. In the next post, I will detail each tool used in this repository and walk through the project step by step. The repository is here: (the same boilerplate using React is a work in progress) ## gstvribs/monorepo-angular-component-library ### This is a proof of concept of a monorepo structure for serving angular components and design tokens This is a monorepo… github.com The packages are in this organization here: ## npm@thedesignsystem www.npmjs.com You can check the Storybook and Compodoc generated by Netlify in this link [https://thedesignsystem.gustavoribeiro.dev/]. Special thanks to Ivam Luz [https://medium.com/u/8f3c967e1c89?source=post_page---user_mention--cd332cf520f2---------------------------------------] and Marcelo Costa [https://medium.com/u/cefea92fdd20?source=post_page---user_mention--cd332cf520f2---------------------------------------] for reviewing it! Design Design Systems Programming Components Style Guides Some rights reserved [http://creativecommons.org/licenses/by/4.0/] -- -- [/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fcd332cf520f2&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fci-t%2Fthe-complete-guide-about-design-systems-engineering-cd332cf520f2&source=---footer_actions--cd332cf520f2---------------------bookmark_footer------------------] ## Published in CI&T 283 followers [/ci-t/followers?source=post_page---post_publication_info--cd332cf520f2---------------------------------------] ·Last published Apr 21, 2021 [/ci-t/how-to-chain-azure-functions-c11da1048353?source=post_page---post_publication_info--cd332cf520f2---------------------------------------] CI&T combines strategy, design and engineering expertise, working cross-functionally to deliver lasting impact to our clients. ## Written by Gustavo Ribeiro 104 followers [/@gstvribs/followers?source=post_page---post_author_info--cd332cf520f2---------------------------------------] ·203 following [/@gstvribs/following?source=post_page---post_author_info--cd332cf520f2---------------------------------------] Passionate developer, open source enthusiast and currently working as a software engineer at @ciandt ## No responses yet Help Status About Careers Press Blog Privacy Rules Terms Text to speech",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "The complete guide about design systems: Engineering | CI&T Sitemap [/sitemap/sitemap.xml] Open in app Sign up Sign in [/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2Fci-t%2Fthe-complete-guide-about-design-systems-engineering-cd332cf520f2&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] Medium Logo Write Sign up Sign in [/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2Fci-t%2Fthe-complete-guide-about-design-systems-engineering-cd332cf520f2&source=post_page---top_nav_layout_nav-----------------------global_nav------------------] ## CI&T · CI&T combines strategy, design and engineering expertise, working cross-functionally to deliver lasting impact to our clients. # The complete guide about design systems: Engineering Gustavo Ribeiro [/@gstvribs?source=post_page---byline--cd332cf520f2---------------------------------------] 5 min read· Jun 26, 2020 --",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 931,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "clients. # The complete guide about design systems: Engineering Gustavo Ribeiro [/@gstvribs?source=post_page---byline--cd332cf520f2---------------------------------------] 5 min read· Jun 26, 2020 -- [/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fcd332cf520f2&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fci-t%2Fthe-complete-guide-about-design-systems-engineering-cd332cf520f2&source=---header_actions--cd332cf520f2---------------------bookmark_footer------------------] Listen Share 1 of 2 of the series: the complete guide about design systems Engineering | Walkthrough [/ci-t/the-complete-guide-about-design-systems-walkthrough-764f0b866bca] After experiences in different projects and of different sizes, I intend to show in this series my main learnings as a developer in design systems projects from Engineering, Design, and Management aspects, in this blog post, I will cover the main aspects from an engineering perspective and build an entire design system from",
+      "metadata": {
+        "startIndex": 731,
+        "endIndex": 1732,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "er in design systems projects from Engineering, Design, and Management aspects, in this blog post, I will cover the main aspects from an engineering perspective and build an entire design system from scratch. Although Design Systems is a relatively new subject, in software development it is already a very old subject. In the past, when open source was a “world not yet explored”, companies and developers that worked with enterprise systems created their libraries to share code between projects, such as ORMs, queue managers, enterprise communication bus, etc. Also, frontend developers already built their “own design systems” a long time ago. The design system, as seen today, is the expression of all this in a unique language shared between design and development. After a long time of popularizing this practice, it was observed that design systems were much more than a “design trend”, but came to show something that happened over a long time and has grown a lot in recent times: the",
+      "metadata": {
+        "startIndex": 1532,
+        "endIndex": 2526,
+        "chunkIndex": 2,
+        "section": "Introduction",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "opularizing this practice, it was observed that design systems were much more than a “design trend”, but came to show something that happened over a long time and has grown a lot in recent times: the communication gap between designers and developers. [https://diegoeis.com/comentario-design-system-comunicacao-designers-devs/] ## The big picture The first thing that helps us a lot in this type of project is to recognize what’s the big picture, what will be the next step, what’s the limitation of the client infrastructure for security (approval for the usage of new services for example), how many projects are affected by this design system etc. For this, we use a technique called mind maps, and that helps us to recognize what will be the challenges, what’s its potential and to determine people who will be focused on finishing a certain type of activity. Mindmeister sample for design systems ## Migrate your mental model Generally, people who come from “common projects” are on the left",
+      "metadata": {
+        "startIndex": 2326,
+        "endIndex": 3323,
+        "chunkIndex": 3,
+        "section": "Introduction",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "eople who will be focused on finishing a certain type of activity. Mindmeister sample for design systems ## Migrate your mental model Generally, people who come from “common projects” are on the left side of this picture above. You are responsible for a project that provides user interfaces, and when you need to ship a new feature you don’t care much about versioning. Generally, you have a project that has dependencies and now your project is the dependency. And, in this migration path, you are not used to worrying about certain items that we need to be aware of when we develop a design system, such as package management, package deployment, standardization of commit messages for generating many versions of packages, tags, and versions in SCM, changelogs and massive Documentation-Driven Development [https://opensource.com/article/17/8/doc-driven-development]. Imagine that you fell asleep, woke up, and are part of the Angular core team and need to push a bugfix in production; feels",
+      "metadata": {
+        "startIndex": 3123,
+        "endIndex": 4119,
+        "chunkIndex": 4,
+        "section": "Introduction",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "n Development [https://opensource.com/article/17/8/doc-driven-development]. Imagine that you fell asleep, woke up, and are part of the Angular core team and need to push a bugfix in production; feels scary, no? haha. Thinking that way, we need to know the good practices used by these teams on a day-to-day basis and bring this to our reality. ## Mono package or multi package One of the hardest decisions at the beginning of your project will be this. The idea behind it is to serve a single package or many packages for projects. The ideal solution is to serve multi-packages by one single monorepo and to do this I recommend using Lerna [https://lerna.js.org/]. This tool will manage all the monorepo structure, also has great documentation and provides two commands that will make your job much easier: Lerna Publish [https://github.com/lerna/lerna/tree/master/commands/publish] and Lerna Version [https://github.com/lerna/lerna/tree/master/commands/version] ## Semantic versioning all the way",
+      "metadata": {
+        "startIndex": 3919,
+        "endIndex": 4917,
+        "chunkIndex": 5,
+        "section": "Introduction",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "easier: Lerna Publish [https://github.com/lerna/lerna/tree/master/commands/publish] and Lerna Version [https://github.com/lerna/lerna/tree/master/commands/version] ## Semantic versioning all the way up! You can read more about semver here [https://semver.org/], but, in summary, semantic versioning is a way to manage package versions in a way to tell the clients (projects) which type of features, bug fixes, or breaking changes they are getting by updating the package. Okay, that’s cool but all that process had to be manual? To solve this, big repositories like Angular [https://github.com/angular/angular] use a standard called conventional commits [https://www.conventionalcommits.org/en/v1.0.0/] which I will explain further in the topic below. ## Conventional Commits As specified on the official website, the conventional commit is a specification for adding human and machine-readable meaning to commit messages.",
+      "metadata": {
+        "startIndex": 4717,
+        "endIndex": 5641,
+        "chunkIndex": 6,
+        "section": "Introduction",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "further in the topic below. ## Conventional Commits As specified on the official website, the conventional commit is a specification for adding human and machine-readable meaning to commit messages. A sample last commit messages at Angular repository.In summary, the commit message has a template like this <type>[optional scope]: <description>[optional body][optional footer]The types available help you to automatically define the next version of your package • major: breaking change • minor: feat • patch: build, chore, ci, fix, improvement, perf, refactor, style, revert, test, docs ## Testing your packages out of the box Before publishing your first component in production, it is interesting to be able to test it in a local proxy to check items such as bundle size, files inserted in the package, and compatibility with real projects. The tool that can help you with this is Verdaccio [https://verdaccio.org/].",
+      "metadata": {
+        "startIndex": 5441,
+        "endIndex": 6362,
+        "chunkIndex": 7,
+        "section": "Introduction",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "t in a local proxy to check items such as bundle size, files inserted in the package, and compatibility with real projects. The tool that can help you with this is Verdaccio [https://verdaccio.org/]. It creates a local npm proxy and enables you to publish packages in this repository, even before uploading them to your public or private definitive npm repository. ## Conclusion These are the main aspects of the engineering area that you need to worry about before uploading your first design system, and also I have good news! I have compiled all these good practices in a single boilerplate that provides a monorepo structure for your design system for Angular web apps and design tokens. In the next post, I will detail each tool used in this repository and walk through the project step by step. The repository is here: (the same boilerplate using React is a work in progress) ## gstvribs/monorepo-angular-component-library ### This is a proof of concept of a monorepo structure for serving",
+      "metadata": {
+        "startIndex": 6162,
+        "endIndex": 7158,
+        "chunkIndex": 8,
+        "section": "Introduction",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "tep. The repository is here: (the same boilerplate using React is a work in progress) ## gstvribs/monorepo-angular-component-library ### This is a proof of concept of a monorepo structure for serving angular components and design tokens This is a monorepo… github.com The packages are in this organization here: ## npm@thedesignsystem www.npmjs.com You can check the Storybook and Compodoc generated by Netlify in this link [https://thedesignsystem.gustavoribeiro.dev/]. Special thanks to Ivam Luz [https://medium.com/u/8f3c967e1c89?source=post_page---user_mention--cd332cf520f2---------------------------------------] and Marcelo Costa [https://medium.com/u/cefea92fdd20?source=post_page---user_mention--cd332cf520f2---------------------------------------] for reviewing it! Design Design Systems Programming Components Style Guides Some rights reserved [http://creativecommons.org/licenses/by/4.0/] -- --",
+      "metadata": {
+        "startIndex": 6958,
+        "endIndex": 7865,
+        "chunkIndex": 9,
+        "section": "Introduction",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "332cf520f2---------------------------------------] for reviewing it! Design Design Systems Programming Components Style Guides Some rights reserved [http://creativecommons.org/licenses/by/4.0/] -- -- [/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fcd332cf520f2&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fci-t%2Fthe-complete-guide-about-design-systems-engineering-cd332cf520f2&source=---footer_actions--cd332cf520f2---------------------bookmark_footer------------------] ## Published in CI&T 283 followers [/ci-t/followers?source=post_page---post_publication_info--cd332cf520f2---------------------------------------] ·Last published Apr 21, 2021 [/ci-t/how-to-chain-azure-functions-c11da1048353?source=post_page---post_publication_info--cd332cf520f2---------------------------------------] CI&T combines strategy, design and engineering expertise, working cross-functionally to deliver lasting impact to our clients.",
+      "metadata": {
+        "startIndex": 7665,
+        "endIndex": 8613,
+        "chunkIndex": 10,
+        "section": "Introduction",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "t_publication_info--cd332cf520f2---------------------------------------] CI&T combines strategy, design and engineering expertise, working cross-functionally to deliver lasting impact to our clients. ## Written by Gustavo Ribeiro 104 followers [/@gstvribs/followers?source=post_page---post_author_info--cd332cf520f2---------------------------------------] ·203 following [/@gstvribs/following?source=post_page---post_author_info--cd332cf520f2---------------------------------------] Passionate developer, open source enthusiast and currently working as a software engineer at @ciandt ## No responses yet Help Status About Careers Press Blog Privacy Rules Terms Text to speech",
+      "metadata": {
+        "startIndex": 8413,
+        "endIndex": 9413,
+        "chunkIndex": 11,
+        "section": "Introduction",
+        "globalChunkIndex": 11
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "footer"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-06-28T12:24:58.116Z",
+    "source_url": "https://medium.com/ci-t/the-complete-guide-about-design-systems-engineering-cd332cf520f2"
+  }
+}
