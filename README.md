@@ -2,7 +2,7 @@
 
 An AI-powered Model Context Protocol (MCP) server that provides intelligent access to design systems knowledge. This server ingests design system documentation (PDFs, web content) and enables AI assistants to provide expert guidance on design systems, components, tokens, and best practices.
 
-🌐 **Live Demo:** [https://design-systems-mcp.southleft.com](https://design-systems-mcp.southleft.com)
+🌐 **Live Demo:** [https://design-systems-mcp.southleft-llc.workers.dev](https://design-systems-mcp.southleft-llc.workers.dev)
 
 ## Features
 
@@ -18,11 +18,11 @@ An AI-powered Model Context Protocol (MCP) server that provides intelligent acce
 
 ### 🚀 Public Endpoints
 
-**Custom Domain:** `https://design-systems-mcp.southleft.com`
+**Workers Domain:** `https://design-systems-mcp.southleft-llc.workers.dev`
 
-- **AI Chat Interface:** [https://design-systems-mcp.southleft.com](https://design-systems-mcp.southleft.com)
-- **MCP Endpoint:** `https://design-systems-mcp.southleft.com/mcp`
-- **Health Check:** `https://design-systems-mcp.southleft.com/health`
+- **AI Chat Interface:** [https://design-systems-mcp.southleft-llc.workers.dev](https://design-systems-mcp.southleft-llc.workers.dev)
+- **MCP Endpoint:** `https://design-systems-mcp.southleft-llc.workers.dev/mcp`
+- **Health Check:** `https://design-systems-mcp.southleft-llc.workers.dev/health`
 
 ### ✨ Try It Now
 
@@ -165,9 +165,9 @@ curl -X POST https://design-systems-mcp.southleft-llc.workers.dev/ai-chat \
    npx wrangler secret put OPENAI_API_KEY
    # Enter your OpenAI API key when prompted
 
-   # Optional: Set custom model
+   # Optional: Set custom model (current default: gpt-4o)
    npx wrangler secret put OPENAI_MODEL
-   # Enter model name (default: gpt-4o-mini)
+   # Enter model name (default: gpt-4o)
    ```
 
 3. **Deploy**
@@ -197,7 +197,7 @@ To set up a custom domain like `design-systems-mcp.southleft.com`:
 Required environment variables:
 
 - `OPENAI_API_KEY` - Your OpenAI API key
-- `OPENAI_MODEL` - Model to use (default: "gpt-4o-mini")
+- `OPENAI_MODEL` - Model to use (default: "gpt-4o")
 - `AI_SYSTEM_PROMPT` - Custom system prompt (optional)
 
 ## Connect to MCP Clients
@@ -521,7 +521,7 @@ See [CREDITS.md](CREDITS.md) for the complete list of contributors and sources.
 
 - 🐛 **Issues:** [GitHub Issues](../../issues)
 - 📧 **Security:** Report security issues privately to the maintainers
-- 🌐 **Website:** [Live Demo](https://design-systems-mcp.southleft.com)
+- 🌐 **Website:** [Live Demo](https://design-systems-mcp.southleft-llc.workers.dev)
 
 ---
 
