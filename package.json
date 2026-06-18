@@ -44,7 +44,7 @@
 		"dotenv": "^17.2.1",
 		"openai": "^4.67.3",
 		"pdf-parse": "^1.1.1",
-		"uuid": "^11.1.0",
+		"uuid": "^14.0.0",
 		"zod": "^3.23.8"
 	},
 	"devDependencies": {
