@@ -19,7 +19,12 @@ import {
 
 const SUPABASE_TIMEOUT_MS = 10_000;
 const CATALOG_CACHE_TTL_MS = 10 * 60 * 1000;
-const MAX_TEXT_MATCH_ROWS = 200;
+/**
+ * Ceiling on the rank-only pass. Generous on purpose: these rows carry no
+ * `content`, and ranking a truncated match set is how relevant entries get
+ * lost. Raise it if the corpus outgrows it.
+ */
+const MAX_TEXT_MATCH_ROWS = 1000;
 
 /** Columns needed to build a ContentEntry — deliberately excludes `embedding`. */
 const ENTRY_COLUMNS =
@@ -93,11 +98,41 @@ function categoryFilter(category: string): string {
 // ---------------------------------------------------------------------------
 
 /**
+ * Question words carry no signal but dominate an OR match — a query like
+ * "When should I build a web component?" would otherwise match nearly every
+ * row on "should"/"build" and bury the entries that are actually about web
+ * components.
+ */
+const STOPWORDS = new Set([
+  'a', 'about', 'am', 'an', 'and', 'any', 'are', 'as', 'at', 'be', 'been', 'being',
+  'best', 'between', 'but', 'by', 'can', 'did', 'do', 'does', 'for', 'from', 'get',
+  'had', 'has', 'have', 'how', 'i', 'if', 'in', 'into', 'is', 'it', 'its', 'me',
+  'my', 'of', 'on', 'or', 'our', 'out', 'over', 'should', 'so', 'some', 'such',
+  'than', 'that', 'the', 'their', 'them', 'then', 'there', 'these', 'they', 'this',
+  'to', 'us', 'use', 'using', 'want', 'was', 'we', 'were', 'what', 'when', 'where',
+  'which', 'while', 'who', 'why', 'will', 'with', 'would', 'you', 'your'
+]);
+
+/** Query words worth matching on, question scaffolding removed. */
+function contentTerms(query: string): string[] {
+  const terms = query
+    .split(/\s+/)
+    .map((term) => sanitizeTsTerm(term).toLowerCase())
+    .filter((term) => term.length > 1 && !STOPWORDS.has(term));
+  // An all-stopword query ("how do I do this") still deserves an attempt.
+  return terms.length > 0 ? terms : query.split(/\s+/).map(sanitizeTsTerm).filter(Boolean);
+}
+
+/**
  * Full-text search over the real knowledge base, used when vector search is
  * unavailable (no OpenAI quota/key, RPC failure, or zero vector matches).
  *
- * Postgres does the matching via the `search_text` tsvector; ranking is done
- * here because PostgREST cannot order by ts_rank without a dedicated RPC.
+ * Matching happens in Postgres against the `search_text` tsvector. Ranking has
+ * to happen here (PostgREST cannot order by ts_rank without a dedicated RPC),
+ * so this runs in two passes: a wide, cheap pass that fetches only the columns
+ * needed to rank, then a second fetch of full rows for the winners. Ranking a
+ * truncated slice of matches instead would drop good entries purely on the
+ * order Postgres happened to return them in.
  */
 export async function searchSupabaseText(
   env: any,
@@ -110,52 +145,84 @@ export async function searchSupabaseText(
   if (!query) return [];
 
   const limit = Math.min(Math.max(1, options.limit ?? 20), 50);
-  const terms = query.split(/\s+/).filter(Boolean);
+  const terms = contentTerms(query);
 
-  // AND-match first (precise), then OR-match (recall) if nothing came back.
-  const attempts: Array<{ expression: string; type?: 'websearch' }> = [
-    { expression: query, type: 'websearch' },
-  ];
-  if (terms.length > 1) {
-    attempts.push({ expression: terms.map(sanitizeTsTerm).filter(Boolean).join(' | ') });
+  // Two match sets, unioned rather than tried in sequence:
+  //   precision — every word present (AND)
+  //   recall    — any content word present (OR)
+  //
+  // Sequential attempts looked reasonable but ranked badly: on a long question
+  // the AND pass returns only sprawling documents that happen to contain every
+  // word, and returning early on that non-empty set hides the short, on-topic
+  // entry that omits one of them. Both sets are scored together instead, with
+  // AND membership as a bonus rather than a gate.
+  const [precise, wide] = await Promise.all([
+    matchEntries(supabase, options, { expression: query, type: 'websearch' }),
+    terms.length > 1
+      ? matchEntries(supabase, options, { expression: terms.join(' | ') })
+      : Promise.resolve([]),
+  ]);
+
+  const preciseIds = new Set(precise.map((entry) => entry.id));
+  const candidates = [...precise];
+  for (const entry of wide) {
+    if (!preciseIds.has(entry.id)) candidates.push(entry);
+  }
+  if (candidates.length === 0) return [];
+
+  let pool = candidates;
+  if (options.tags && options.tags.length > 0) {
+    const wanted = options.tags.map((tag) => tag.toLowerCase());
+    const filtered = pool.filter((entry) =>
+      entry.metadata.tags.some((tag) => wanted.includes(String(tag).toLowerCase()))
+    );
+    // Tag filters narrow results; don't let them empty out an otherwise
+    // useful result set.
+    if (filtered.length > 0) pool = filtered;
   }
 
-  for (const attempt of attempts) {
-    if (!attempt.expression) continue;
+  const winners = rankByRelevance(pool, terms, preciseIds).slice(0, limit);
+  if (winners.length === 0) return [];
 
-    let builder = supabase
-      .from('content_entries')
-      .select(ENTRY_COLUMNS)
-      .textSearch('search_text', attempt.expression, attempt.type ? { type: attempt.type } : undefined)
-      .limit(MAX_TEXT_MATCH_ROWS);
+  // Second pass: full rows (including content) for the entries we're returning.
+  const { data: full, error: fullError } = await supabase
+    .from('content_entries')
+    .select(ENTRY_COLUMNS)
+    .in('id', winners.map((entry) => entry.id))
+    .abortSignal(AbortSignal.timeout(SUPABASE_TIMEOUT_MS));
 
-    if (options.category) {
-      builder = builder.or(categoryFilter(options.category));
-    }
+  if (fullError) throw new Error(`Supabase entry fetch failed: ${fullError.message}`);
+  if (!full || full.length === 0) return [];
 
-    const { data, error } = await builder.abortSignal(AbortSignal.timeout(SUPABASE_TIMEOUT_MS));
+  // `in` loses the ranking, so restore it.
+  const byId = new Map(full.map((row: any) => [row.id, rowToContentEntry(row)]));
+  return winners.map((entry) => byId.get(entry.id) ?? entry);
+}
 
-    // Surface real failures so the caller can tell "Supabase is down" from
-    // "the knowledge base has nothing on this" — they warrant different answers.
-    if (error) throw new Error(`Supabase text search failed: ${error.message}`);
-    if (!data || data.length === 0) continue;
+/** One rank-only match pass: cheap columns, no `content`. */
+async function matchEntries(
+  supabase: SupabaseClient,
+  options: { category?: string },
+  attempt: { expression: string; type?: 'websearch' }
+): Promise<ContentEntry[]> {
+  if (!attempt.expression) return [];
 
-    let entries = data.map(rowToContentEntry);
+  let builder = supabase
+    .from('content_entries')
+    .select('id,title,category,tags,metadata')
+    .textSearch('search_text', attempt.expression, attempt.type ? { type: attempt.type } : undefined)
+    .limit(MAX_TEXT_MATCH_ROWS);
 
-    if (options.tags && options.tags.length > 0) {
-      const wanted = options.tags.map((tag) => tag.toLowerCase());
-      const filtered = entries.filter((entry) =>
-        entry.metadata.tags.some((tag) => wanted.includes(String(tag).toLowerCase()))
-      );
-      // Tag filters narrow results; don't let them empty out an otherwise
-      // useful result set.
-      if (filtered.length > 0) entries = filtered;
-    }
-
-    return rankByRelevance(entries, terms).slice(0, limit);
+  if (options.category) {
+    builder = builder.or(categoryFilter(options.category));
   }
 
-  return [];
+  const { data, error } = await builder.abortSignal(AbortSignal.timeout(SUPABASE_TIMEOUT_MS));
+
+  // Surface real failures so the caller can tell "Supabase is down" from
+  // "the knowledge base has nothing on this" — they warrant different answers.
+  if (error) throw new Error(`Supabase text search failed: ${error.message}`);
+  return (data ?? []).map(rowToContentEntry);
 }
 
 /** Strips tsquery operators so user input can't produce a syntax error. */
@@ -163,23 +230,54 @@ function sanitizeTsTerm(term: string): string {
   return term.replace(/[^\p{L}\p{N}_-]/gu, '');
 }
 
-function rankByRelevance(entries: ContentEntry[], terms: string[]): ContentEntry[] {
+/**
+ * Postgres stems inside the tsvector, but ranking here compares raw strings —
+ * so "teams" in the query would miss "Team Models for Scaling a Design System"
+ * in the title. Comparing against the singular stem closes that gap without
+ * pulling in a stemmer.
+ */
+function matchesTerm(haystack: string, needle: string): boolean {
+  if (haystack.includes(needle)) return true;
+  if (needle.length > 4 && needle.endsWith('es') && haystack.includes(needle.slice(0, -2))) return true;
+  if (needle.length > 3 && needle.endsWith('s') && haystack.includes(needle.slice(0, -1))) return true;
+  return false;
+}
+
+/**
+ * Scores candidates from the rank-only pass, where `content` is empty by
+ * design — title and tags are the signals that survive, and they are the ones
+ * worth trusting anyway. Postgres has already guaranteed every candidate
+ * matches somewhere in its full text.
+ */
+function rankByRelevance(
+  entries: ContentEntry[],
+  terms: string[],
+  preciseIds: Set<string> = new Set()
+): ContentEntry[] {
   const needles = terms.map((term) => term.toLowerCase()).filter(Boolean);
   if (needles.length === 0) return entries;
 
   const scored = entries.map((entry, index) => {
     const title = entry.title.toLowerCase();
     const tags = entry.metadata.tags.join(' ').toLowerCase();
-    const content = entry.content.toLowerCase();
+    const content = (entry.content || '').toLowerCase();
 
     let score = 0;
     for (const needle of needles) {
-      if (title.includes(needle)) score += 10;
-      if (tags.includes(needle)) score += 4;
-      if (content.includes(needle)) score += 1;
+      if (matchesTerm(title, needle)) score += 10;
+      if (matchesTerm(tags, needle)) score += 4;
+      if (matchesTerm(content, needle)) score += 1;
     }
+    // Covering most of the query beats matching one word loudly.
+    const covered = needles.filter(
+      (needle) => matchesTerm(title, needle) || matchesTerm(tags, needle)
+    ).length;
+    score += Math.round((covered / needles.length) * 12);
     // Whole-phrase hits in the title are the strongest signal available.
     if (needles.length > 1 && title.includes(needles.join(' '))) score += 15;
+    // Matching every word somewhere is worth something, but not enough to
+    // outrank a title that is plainly about the subject.
+    if (preciseIds.has(entry.id)) score += 8;
 
     return { entry, score, index };
   });
