@@ -199,6 +199,126 @@ export async function searchSupabaseText(
   return winners.map((entry) => byId.get(entry.id) ?? entry);
 }
 
+export interface ChunkHit {
+  entryId: string;
+  title: string;
+  sourceLocation: string;
+  chunkIndex: number;
+  section?: string;
+  text: string;
+}
+
+/**
+ * Search the actual `content_chunks` table.
+ *
+ * The `search_chunks` tool never did this: it re-ran an entry-level search and
+ * relabelled each entry as a chunk, printing the entry's `content` — which
+ * begins with the page's flattened heading block. Callers asking for the
+ * specific passage that answers a question got a table of contents, while the
+ * real chunk rows went unread.
+ */
+export async function searchSupabaseChunks(
+  env: any,
+  options: { query?: string; limit?: number } = {}
+): Promise<ChunkHit[]> {
+  const supabase = createSupabaseClient(env);
+  if (!supabase) return [];
+
+  const query = (options.query || '').trim();
+  if (!query) return [];
+
+  const limit = Math.min(Math.max(1, options.limit ?? 8), 25);
+  const terms = contentTerms(query);
+
+  const [precise, wide] = await Promise.all([
+    matchChunks(supabase, { expression: query, type: 'websearch' }),
+    terms.length > 1
+      ? matchChunks(supabase, { expression: terms.join(' | ') })
+      : Promise.resolve([]),
+  ]);
+
+  const seen = new Set(precise.map((row: any) => row.id));
+  const candidates = [...precise];
+  for (const row of wide as any[]) {
+    if (!seen.has(row.id)) candidates.push(row);
+  }
+  if (candidates.length === 0) return [];
+
+  const preciseIds = new Set(precise.map((row: any) => row.id));
+  const needles = terms.map((term) => term.toLowerCase());
+  const ranked = candidates
+    .map((row: any, index: number) => {
+      const raw = row.chunk_text || '';
+      const text = raw.toLowerCase();
+      let score = 0;
+      for (const needle of needles) {
+        if (matchesTerm(text, needle)) score += 3;
+      }
+      const covered = needles.filter((needle) => matchesTerm(text, needle)).length;
+      score += Math.round((covered / Math.max(1, needles.length)) * 10);
+      if (preciseIds.has(row.id)) score += 6;
+      // A page's flattened heading block names every topic on the page, so it
+      // matches almost any query about that page while explaining none of it.
+      // Push it below chunks of actual prose.
+      if (headingDensity(raw) > 0.25) score -= 12;
+      return { row, score, index };
+    })
+    .sort((a, b) => (b.score - a.score) || (a.index - b.index))
+    .slice(0, limit)
+    .map((item) => item.row);
+
+  // Attach the parent entry so results can cite a title and source.
+  const entryIds = [...new Set(ranked.map((row: any) => row.entry_id))];
+  const { data: parents } = await supabase
+    .from('content_entries')
+    .select('id,title,source_location,metadata')
+    .in('id', entryIds)
+    .abortSignal(AbortSignal.timeout(SUPABASE_TIMEOUT_MS));
+
+  const byId = new Map((parents ?? []).map((row: any) => [row.id, row]));
+
+  return ranked.map((row: any) => {
+    const parent: any = byId.get(row.entry_id);
+    return {
+      entryId: row.entry_id,
+      title: parent?.title || 'Untitled',
+      sourceLocation: parent?.source_location || parent?.metadata?.source_url || '',
+      chunkIndex: row.chunk_index ?? 0,
+      section: row.metadata?.section,
+      text: row.chunk_text || '',
+    };
+  });
+}
+
+/**
+ * Rough share of a chunk that is markdown heading markup. Table-of-contents
+ * chunks — the collapsed `# Title ## Section ## Section` block many crawled
+ * pages start with — score high; ordinary prose scores near zero.
+ */
+function headingDensity(text: string): number {
+  if (!text) return 0;
+  const headings = text.match(/#{1,6}\s+\S/g)?.length ?? 0;
+  if (headings === 0) return 0;
+  const words = text.split(/\s+/).length;
+  return (headings * 8) / Math.max(1, words);
+}
+
+async function matchChunks(
+  supabase: SupabaseClient,
+  attempt: { expression: string; type?: 'websearch' }
+): Promise<any[]> {
+  if (!attempt.expression) return [];
+  const { data, error } = await supabase
+    .from('content_chunks')
+    .select('id,entry_id,chunk_index,chunk_text,metadata')
+    .textSearch('chunk_text', attempt.expression, attempt.type ? { type: attempt.type } : undefined)
+    .limit(MAX_TEXT_MATCH_ROWS)
+    .abortSignal(AbortSignal.timeout(SUPABASE_TIMEOUT_MS));
+
+  if (error) throw new Error(`Supabase chunk search failed: ${error.message}`);
+  return data ?? [];
+}
+
 /** One rank-only match pass: cheap columns, no `content`. */
 async function matchEntries(
   supabase: SupabaseClient,

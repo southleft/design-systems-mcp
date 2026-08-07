@@ -23,6 +23,7 @@ import {
 import {
   resolveEntriesByCategory,
   resolveAllTags,
+  searchSupabaseChunks,
 } from "./lib/supabase-catalog.js";
 
 // Type definitions
@@ -287,12 +288,15 @@ export async function handleStreamableHttp(
             }
             else if (toolName === "search_chunks") {
               await ensureContentLoaded();
-              const searchResults = await searchEntries({
+              // Search the real chunk rows. Falling back to entry search here
+              // is what made this tool return each page's heading block
+              // instead of the passage that answers the question.
+              const chunkHits = await searchSupabaseChunks(env, {
                 query: args.query,
                 limit: args.limit || 8,
-              }, env);
+              });
 
-              if (searchResults.length === 0) {
+              if (chunkHits.length === 0) {
                 toolResult = {
                   content: [{
                     type: "text" as const,
@@ -300,14 +304,14 @@ export async function handleStreamableHttp(
                   }],
                 };
               } else {
-                const formattedResults = searchResults.map((entry: any, index: number) =>
-                  `**📄 Chunk ${index + 1}: ${entry.title}**\n\n${entry.content}\n\n🔗 Source: [${entry.source?.location || entry.metadata?.source_url || "N/A"}](${entry.source?.location || entry.metadata?.source_url || "#"})\n\n---`
+                const formattedResults = chunkHits.map((hit, index: number) =>
+                  `**📄 Chunk ${index + 1}: ${hit.title}**${hit.section ? ` — _${hit.section}_` : ""}\n\n${hit.text}\n\n🔗 Source: [${hit.sourceLocation || "N/A"}](${hit.sourceLocation || "#"})\n\n---`
                 ).join("\n\n");
 
                 toolResult = {
                   content: [{
                     type: "text" as const,
-                    text: `Found ${searchResults.length} content chunks:\n\n${formattedResults}`,
+                    text: `Found ${chunkHits.length} content chunks:\n\n${formattedResults}`,
                   }],
                 };
               }

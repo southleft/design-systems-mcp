@@ -17,7 +17,8 @@ import {
 } from "./lib/search-handler.js";
 import {
   resolveEntriesByCategory,
-  resolveAllTags
+  resolveAllTags,
+  searchSupabaseChunks
 } from "./lib/supabase-catalog.js";
 import { formatSourceReference } from "./lib/source-formatter.js";
 import type { Category } from "../types/content";
@@ -482,31 +483,15 @@ ${formattedResults}`
         }
 
         case 'search_chunks': {
-          const entries = await searchEntries({
+          // Search the real chunk rows rather than re-running an entry search
+          // and printing the head of each entry, which returned the page's
+          // heading block instead of the passage that answers the question.
+          const chunkHits = await searchSupabaseChunks(this.env, {
             query: args.query,
             limit: args.limit || 8
-          }, this.env);
+          });
 
-          const chunkResults: Array<{ entry: any; chunk: any }> = [];
-          for (const entry of entries) {
-            if (entry.chunks && entry.chunks.length > 0) {
-              chunkResults.push({
-                entry,
-                chunk: entry.chunks[0]
-              });
-            } else if (entry.content) {
-              chunkResults.push({
-                entry,
-                chunk: {
-                  id: 'content-0',
-                  text: entry.content.substring(0, 1000),
-                  metadata: { section: 'Content', chunkIndex: 0 }
-                }
-              });
-            }
-          }
-
-          if (chunkResults.length === 0) {
+          if (chunkHits.length === 0) {
             result = {
               content: [{
                 type: 'text',
@@ -514,16 +499,16 @@ ${formattedResults}`
               }]
             };
           } else {
-            const formattedChunks = chunkResults.map((item, index) => {
-              const { displayName, url } = formatSourceReference(item.entry);
-              const sourceLink = url ? `[${displayName}](${url})` : displayName;
+            const formattedChunks = chunkHits.map((hit) => {
+              const sourceLink = hit.sourceLocation
+                ? `[${hit.title}](${hit.sourceLocation})`
+                : hit.title;
 
-              const cleanText = item.chunk.text
-                .replace(/^[-*•]\s*/gm, '')
+              const cleanText = hit.text
                 .replace(/\n{3,}/g, '\n\n')
                 .trim();
 
-              return `### ${item.chunk.metadata?.section || 'Insight'}
+              return `### ${hit.section || hit.title}
 *Source: ${sourceLink}*
 
 ${cleanText}
@@ -534,7 +519,7 @@ ${cleanText}
             result = {
               content: [{
                 type: 'text',
-                text: `**🎯 FOUND ${chunkResults.length} RELEVANT CHUNK${chunkResults.length === 1 ? '' : 'S'}**
+                text: `**🎯 FOUND ${chunkHits.length} RELEVANT CHUNK${chunkHits.length === 1 ? '' : 'S'}**
 
 ${formattedChunks}`
               }]

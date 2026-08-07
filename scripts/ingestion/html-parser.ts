@@ -113,25 +113,43 @@ export async function parseHTML(
     }
   });
   
+  // Block-level tags whose presence means a container's text belongs to its
+  // children, not to the container itself.
+  const BLOCK_DESCENDANTS = 'p, div, ul, ol, li, table, tr, td, th, section, article, h1, h2, h3, h4, h5, h6, pre, blockquote';
+
   // Then extract paragraphs and list items
   $('p, li, td, th, div').each((_, elem) => {
     const $elem = $(elem);
     const tagName = elem.tagName.toLowerCase();
-    
-    // Get direct text content (not from children to avoid duplication)
-    const directText = $elem.clone().children().remove().end().text().trim();
-    
+
+    // Take the element's full text, inline descendants included.
+    //
+    // This previously cloned the element, removed ALL children, and kept only
+    // the loose text nodes — meant to stop a <div> duplicating the <p>s inside
+    // it. But on a <p> or <li> the children are inline markup, so it deleted
+    // every linked, bolded, or code-formatted word mid-sentence:
+    //
+    //   <li><strong>Tier-3 tokens</strong> are specific to components</li>
+    //     -> "are specific to components"
+    //
+    // Definitions lost their subject, and the corpus filled with orphaned
+    // predicates. Duplication is instead avoided by skipping containers that
+    // hold block-level children, which is the case the old trick was for.
+    if ($elem.children(BLOCK_DESCENDANTS).length > 0) return;
+
+    const text = $elem.text().replace(/\s+/g, ' ').trim();
+
     // Skip empty, very short, already seen, or numeric-only content
-    if (!directText || directText.length < 3 || seenTexts.has(directText)) return;
-    if (directText.match(/^[0-9.:,\s/-]+$/)) return;
-    
-    seenTexts.add(directText);
-    
+    if (!text || text.length < 3 || seenTexts.has(text)) return;
+    if (text.match(/^[0-9.:,\s/-]+$/)) return;
+
+    seenTexts.add(text);
+
     // Format based on tag type
     if (tagName === 'li') {
-      contentParts.push(`• ${directText}`);
+      contentParts.push(`• ${text}`);
     } else {
-      contentParts.push(directText);
+      contentParts.push(text);
     }
   });
   
