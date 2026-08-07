@@ -70,3 +70,6 @@ scripts/logs/
 # Temporary documentation and analysis
 CRITICAL_ANALYSIS.md
 SETUP_VECTOR_SEARCH.md
+
+# Local DB backups (dedupe/restore snapshots)
+.backups/
