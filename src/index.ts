@@ -704,6 +704,26 @@ export default {
       });
     }
 
+    // Dynamic Client Registration (RFC 7591): also intentionally NOT served.
+    //
+    // 404-ing discovery alone was not enough. When discovery fails, clients
+    // fall back to the conventional endpoint locations, and the catch-all at
+    // the bottom of this handler used to answer *everything* with 200 plus a
+    // line of plain text. Claude's connector POSTed /register, got a 200, tried
+    // to parse a client registration response out of "Design Systems MCP
+    // Server - Use /mcp or /ai-chat endpoints", and reported "Couldn't register
+    // with Design Systems Assistant's sign-in service" — a registration
+    // failure, on a server that has no registration to offer.
+    //
+    // An explicit 404 says "there is no registration here", which is what lets
+    // a client fall through to connecting anonymously.
+    if (url.pathname === "/register" || url.pathname === "/oauth/register") {
+      return new Response("Not Found", {
+        status: 404,
+        headers: { 'Access-Control-Allow-Origin': '*' }
+      });
+    }
+
     // OAuth Authorization Endpoint
     if (url.pathname === "/oauth/authorize") {
       return handleAuthorizeRequest(url, origin);
@@ -2003,8 +2023,14 @@ export default {
       });
     }
 
-    return new Response("Design Systems MCP Server - Use /mcp or /ai-chat endpoints", {
-      status: 200,
+    // Unknown path: 404, not 200.
+    //
+    // Answering every unmatched path with 200 made each one look like a live
+    // endpoint to any client probing for one — which is exactly how the
+    // connector's registration probe turned into a confusing sign-in error
+    // rather than a clean "no auth needed here".
+    return new Response("Not Found - Use /mcp or /ai-chat endpoints", {
+      status: 404,
       headers: {
         "Content-Type": "text/plain",
         "Access-Control-Allow-Origin": "*"
