@@ -1,0 +1,30 @@
+{
+  "id": "docs-batch-windsurf-devin-rules-activation",
+  "title": "Windsurf / Devin Cascade Rules: Activation Modes and Explicit Context Cost",
+  "source": {
+    "type": "url",
+    "location": "https://docs.devin.ai/desktop/cascade/memories",
+    "ingested_at": "2026-08-07T14:19:37.134Z"
+  },
+  "content": "# Windsurf / Devin Cascade: Memories and Rules\n\nNotable for stating the context cost of each activation mode explicitly — the clearest published model of that tradeoff.\n\n## Rules vs memories\n\n\"For knowledge you want Cascade to reliably reuse, write it as a Rule or add it to AGENTS.md in your repo rather than relying on auto-generated Memories. Rules are version-controlled, shareable with your team, and give you explicit control over activation.\"\n\nAuto-generated memories \"live only on your machine,\" are workspace-scoped, and are not committed to the repository.\n\n## Rule scopes\n\n| Scope | Location | Notes |\n|---|---|---|\n| Global | ~/.codeium/windsurf/memories/global_rules.md | Single file, all workspaces, always on. **6,000 character limit.** |\n| Workspace | .devin/rules/*.md (preferred) or .windsurf/rules/*.md (fallback) | One file per rule, each with its own activation mode. **12,000 character limit per file.** |\n| AGENTS.md | Any directory | Root-level = always-on; subdirectory = auto-glob for that directory |\n| System (Enterprise) | /etc/devin/rules/ and OS equivalents | Deployed by IT, read-only for end users |\n\n## Activation modes and their context cost\n\n| Mode | trigger: value | How it reaches the agent | Context cost |\n|---|---|---|---|\n| Always On | always_on | Full rule content in the system prompt on every message | Every message |\n| Model Decision | model_decision | Only the description is shown; agent reads the full file when relevant | Description always; full content on demand |\n| Glob | glob | Applied when the agent reads or edits a file matching globs | Only when matching files are touched |\n| Manual | manual | Not in the system prompt; activated by @rule-name | Only when @mentioned |\n\nExample:\n\n    ---\n    trigger: glob\n    globs: **/*.test.ts\n    ---\n\n    All test files must use describe/it blocks and mock external API calls.\n\nThe global rules file and root-level AGENTS.md do not use frontmatter — they are always on.\n\n## Discovery\n\nRules are discovered from the current workspace and subdirectories, and for git repositories Devin \"also searches up to the git root directory to find rules in parent directories.\" Multiple open folders are deduplicated.\n\n## Best practices\n\n\"Keep rules simple, concise, and specific. Rules that are too long or vague may confuse Cascade. There's no need to add generic rules (e.g. 'write good code'), as these are already baked into Cascade's training data. Format your rules using bullet points, numbered lists, and markdown. These are easier for Cascade to follow compared to a long paragraph.\"\n\nXML tags are suggested as an effective way to group related rules.\n\n## Enterprise distribution\n\n\"Enterprise organizations can deploy system-level rules that apply globally across all workspaces and cannot be modified by end users without administrator permissions. This is ideal for enforcing organization-wide coding standards, security policies, and compliance requirements.\"\n\n\"System-level rules are merged with workspace and global rules, providing additional context to Cascade without overriding user-defined rules. This allows organizations to establish baseline standards while still permitting teams to add project-specific customizations.\"",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "windsurf",
+      "devin",
+      "cascade",
+      "rules",
+      "ai",
+      "agents",
+      "context",
+      "design-systems"
+    ],
+    "confidence": "high",
+    "system": "Windsurf",
+    "source_url": "https://docs.devin.ai/desktop/cascade/memories",
+    "authority": "primary",
+    "research_batch": "ai-tools-docs-2026-08",
+    "last_updated": "2026-08-07T14:19:37.134Z"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "docs-batch-supernova-zeroheight-mcp",
+  "title": "Hosted Documentation MCP Servers: Supernova and zeroheight",
+  "source": {
+    "type": "url",
+    "location": "https://learn.supernova.io/latest/design-systems/features/mcp-for-design-system-LIHAMhjr-LIHAMhjr",
+    "ingested_at": "2026-08-07T14:19:37.134Z"
+  },
+  "content": "# Hosted Documentation MCP Servers: Supernova and zeroheight\n\nThe hosted-platform equivalent of Storybook's manifests — an authenticated remote MCP endpoint over the whole design system record rather than a build artifact off a dev server.\n\n## Supernova MCP\n\nEndpoint: https://mcp.supernova.io/mcp/ds/{ID} — the design system ID comes from the app.supernova.io URL. Authentication via OAuth.\n\n**Two data-processing claims that matter for agent consumption:**\n- \"Documentation is converted into clean Markdown\" with system-aware optimizations\n- **\"Token references are fully resolved (even across deeply nested relationships)\"** — the agent receives a computed value, not an alias chain it must dereference itself\n\n**16 tools**, structured as list + detail pairs across every layer:\n- get_token_list — tokens with values and groupings\n- get_design_system_component_list / get_design_system_component_detail\n- get_figma_component_list / get_figma_component_detail\n- get_documentation_page_list / get_documentation_page_content\n- get_asset_list / get_asset_detail\n- get_code_component_list / get_code_component_detail\n- get_storybook_story_list / get_storybook_story_detail\n- get_me\n\nThe list/detail split is the same token-efficiency pattern Storybook uses.\n\n**Version/brand scoping:** append ?datasetId={dataset-id} to point an agent at a specific version or brand rather than the whole system.\n\nClient config (Cursor, Windsurf, Claude Desktop):\n\n    {\n      \"mcpServers\": {\n        \"supernova\": {\n          \"url\": \"https://mcp.supernova.io/mcp/ds/{ID}\",\n          \"type\": \"http\"\n        }\n      }\n    }\n\n## Supernova's four properties of an AI-ready system\n\n1. **API exposure** — \"Tokens, component structures, and documentation aren't buried in tools or static pages — they're accessible via endpoints or MCP servers.\"\n2. **Rich metadata** — components need \"states, props, accessibility, platform constraints, and rationale.\"\n3. **Atomic documentation** — moving beyond lengthy reference pages toward \"modular, context-rich units of knowledge tied directly to components or patterns.\"\n4. **Cross-layer consistency** — \"Whether you're in Figma, reviewing docs, or shipping code, the naming, structure, and behavior should align.\"\n\n\"Your design system is not just for designers anymore. It's for the machines helping them work.\"\n\n## zeroheight MCP — the counter-positioning\n\nzeroheight states the gap between the three MCP servers a design system team might connect:\n\n\"**Figma's MCP surfaces design properties. Storybook's surfaces code. Neither surfaces your guidelines, usage rules, or validated decisions.** zeroheight aggregates all of it – one source of truth, reviewed by your team, used by every agent.\"\n\nOn governance: \"SOC 2 compliant, SSO supported, and OAuth covered. **Hidden content stays hidden – so agents work only from published, approved guidelines.**\" Plus role-based permissions \"essential for multi-brand and multi-team setups.\"\n\nFour tools: list-pages, get-page, get-page-images (assets as base64), list-releases. Remote HTTPS, with a local MCP available for stricter data requirements.\n\nThe distinction worth noting: Figma MCP and Storybook MCP each expose one surface's structural data. A documentation platform's MCP is the only one positioned to expose the *guidance* layer — the usage rules and decisions that neither the design file nor the component source encodes.",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "supernova",
+      "zeroheight",
+      "mcp",
+      "documentation",
+      "ai",
+      "agents",
+      "design-tokens",
+      "design-systems"
+    ],
+    "confidence": "high",
+    "system": "",
+    "source_url": "https://learn.supernova.io/latest/design-systems/features/mcp-for-design-system-LIHAMhjr-LIHAMhjr",
+    "authority": "primary",
+    "research_batch": "ai-tools-docs-2026-08",
+    "last_updated": "2026-08-07T14:19:37.134Z"
+  }
+}

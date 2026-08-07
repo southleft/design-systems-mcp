@@ -1,6 +1,6 @@
 # Design Systems MCP Server
 
-An AI-powered Model Context Protocol (MCP) server providing intelligent access to authoritative design systems knowledge. 198 curated entries spanning W3C standards, WCAG guidelines, design system practice, and — the part a general-purpose model cannot help you with — the 2025-2026 agent-interface protocols.
+An AI-powered Model Context Protocol (MCP) server providing intelligent access to authoritative design systems knowledge. 241 curated entries spanning W3C standards, WCAG guidelines, design system practice, and — the part a general-purpose model cannot help you with — the 2025-2026 agent-interface protocols.
 
 🌐 **Live Demo:** [https://design-systems-mcp.southleft.com/](https://design-systems-mcp.southleft.com/)
 
@@ -14,7 +14,7 @@ That is what this server is for: dated, cited, extracted primary-source content 
 
 ### Core Capabilities
 - 🎯 **Vector + Keyword Search** - Supabase pgvector with OpenAI embeddings, and a Postgres full-text path that keeps working when embeddings are unavailable
-- 📚 **198 Curated Entries** - W3C standards, WCAG 2.2, ARIA practices, major design systems, and agent-interface protocols
+- 📚 **241 Curated Entries** - W3C standards, WCAG 2.2, ARIA practices, major design systems, and agent-interface protocols
 - 🚦 **Relevance Floor** - IDF-weighted scoring means an uncovered topic returns *nothing* rather than confident, adjacent content
 - 🚀 **Edge-Optimized** - Cloudflare Workers deployment with global distribution
 
@@ -32,7 +32,7 @@ That is what this server is for: dated, cited, extracted primary-source content 
 
 ## Content Library
 
-### 198 Curated Entries Including:
+### 241 Curated Entries Including:
 
 **Agent Interfaces & AI (2025-2026 — the material a general model gets wrong)**
 - A2UI Protocol v1.0 (Google) — adjacency-list components, catalog negotiation, A2A binding
@@ -42,6 +42,10 @@ That is what this server is for: dated, cited, extracted primary-source content 
 - Generative & ephemeral UI — Google Research's generative UI paper, content-vs-chrome
 - Component contracts and components-as-data (Nathan Curtis, Christine Vallaure)
 - AGENTS.md / SKILL.md / DESIGN.md — the agent-facing design system layer
+- How Lovable, v0, Figma Make, and Replit each ingest a design system
+- The source-of-truth debate: three camps, and why "code-led vs design-led" isn't the real vocabulary
+- Context-Based Design Systems, component contracts, and machine-readable documentation
+- How a design system reaches Claude Code, Copilot, Cursor, and Windsurf
 
 **Standards & Specifications**
 - W3C Design Tokens Community Group (DTCG) Specification
@@ -490,7 +494,7 @@ This server uses Supabase for production-grade vector search:
 - **Performance:** Sub-100ms queries with proper indexing
 
 **Statistics:**
-- 198 entries in production database
+- 241 entries in production database
 - 761+ content chunks with embeddings
 - W3C standards, WCAG guidelines, design system documentation
 - Regular updates with new authoritative sources

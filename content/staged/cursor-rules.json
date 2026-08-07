@@ -1,0 +1,29 @@
+{
+  "id": "docs-batch-cursor-rules",
+  "title": "Cursor Rules: .mdc Files, Four Activation Types, and Reference-Don't-Copy",
+  "source": {
+    "type": "url",
+    "location": "https://cursor.com/docs/context/rules",
+    "ingested_at": "2026-08-07T14:19:37.134Z"
+  },
+  "content": "# Cursor Rules\n\n\"Large language models don't retain memory between completions. Rules provide persistent, reusable context at the prompt level. When applied, rule contents are included at the start of the model context.\"\n\n## Four rule scopes\n\nProject Rules (.cursor/rules, version-controlled); User Rules (global to your Cursor environment); Team Rules (dashboard-managed, Team and Enterprise plans); AGENTS.md (markdown alternative to .cursor/rules).\n\n## File format matters\n\n\"Each rule is an .mdc file... Project rules must use the .mdc extension. A plain .md file in .cursor/rules is ignored by the rules system because it has no frontmatter to specify description, globs, and alwaysApply. If you prefer plain markdown, use AGENTS.md instead.\"\n\n## Four activation types\n\n| Type | Behavior |\n|---|---|\n| Always Apply | Apply to every chat session |\n| Apply Intelligently | When Agent decides it's relevant based on description |\n| Apply to Specific Files | When file matches a specified pattern |\n| Apply Manually | When @-mentioned in chat |\n\nFrontmatter interaction:\n\n| alwaysApply | description | globs | Behavior |\n|---|---|---|---|\n| true | — | — | Always included; globs and description ignored |\n| false | — | provided | Auto-attached when a matching file is in context |\n| false | provided | omitted | Agent reads the description and pulls it in when relevant |\n| false | omitted | omitted | Only when @-mentioned |\n\n## A component-scoped rule (from the docs)\n\n    ---\n    globs: src/components/**/*.tsx\n    alwaysApply: false\n    ---\n\n    - Use named exports, not default exports\n    - Co-locate styles in a module CSS file next to the component\n    - Keep components under 200 lines. Extract subcomponents into the same\n      directory when a file grows beyond that\n    - Prefer composition over prop drilling\n\n## Best practices — directly relevant to how much design system detail to inline\n\n\"Keep rules under 500 lines. Split large rules into multiple, composable rules. Provide concrete examples or referenced files. Avoid vague guidance. Write rules like clear internal docs. **Reference files instead of copying their contents — this keeps rules short and prevents them from becoming stale as code changes.**\"\n\n## What to avoid\n\n\"**Copying entire style guides**: Use a linter instead. Agent already knows common style conventions. **Documenting every possible command**: Agent knows common tools like npm, git, and pytest. **Adding instructions for edge cases that rarely apply**. **Duplicating what's already in your codebase**: Point to canonical examples instead of copying code.\"\n\n\"Start simple. Add rules only when you notice Agent making the same mistake repeatedly.\"\n\n## Template referencing\n\nA rule can point at a canonical file with @filename syntax, e.g. \"@component-template.tsx\", so the rule describes the pattern and the file demonstrates it.\n\n## Team Rules\n\n\"Team Rules are free-form text. They do not use the folder structure of Project Rules.\" They support glob patterns for file-scoped application.\n\nPrecedence: \"**Team Rules → Project Rules → User Rules.** All applicable rules are merged; earlier sources take precedence when guidance conflicts.\"\n\nAn \"Enforce this rule\" flag makes a rule required for all team members and undisableable.\n\n## Remote import — the distribution channel for shipping design system rules\n\n\"Import rules directly from any GitHub repository you have access to — public or private... Cursor will scan for all .mdc files in the repo... Rules will be placed in .cursor/rules/imported/REPONAME,\" preserving relative paths.\n\n## AGENTS.md nesting\n\nSupported in project root and subdirectories. \"Instructions from nested AGENTS.md files are combined with parent directories, with more specific instructions taking precedence.\"\n\n## Scope limits\n\nRules do not affect Cursor Tab. User Rules are not applied to Inline Edit (Cmd/Ctrl+K); they are only used by Agent (Chat).",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "cursor",
+      "rules",
+      "ai",
+      "agents",
+      "design-systems",
+      "globs",
+      "agents-md"
+    ],
+    "confidence": "high",
+    "system": "Cursor",
+    "source_url": "https://cursor.com/docs/context/rules",
+    "authority": "primary",
+    "research_batch": "ai-tools-docs-2026-08",
+    "last_updated": "2026-08-07T14:19:37.134Z"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "docs-batch-storybook-mcp-server",
+  "title": "Storybook MCP Server: The Self-Healing Loop for Design-System-Consistent Generation",
+  "source": {
+    "type": "url",
+    "location": "https://storybook.js.org/docs/ai/mcp/overview",
+    "ingested_at": "2026-08-07T14:19:37.134Z"
+  },
+  "content": "# Storybook MCP Server\n\n\"Storybook's MCP server connects your Storybook to AI agents, allowing them to understand your components and documentation, generate stories, run tests, and more. Agents will be equipped to reuse your existing components and follow your documented usage guidelines when generating UI.\"\n\n\"Then they can write stories so you can preview the generated UI and automatically run interaction tests (and accessibility checks) on those stories to validate their work. If any issues are found, the agent can fix them and re-run the tests to confirm they are resolved, **creating a self-healing loop** that helps ensure the quality of the generated UI without requiring you to intervene.\"\n\nPreview limitation: \"currently only supported for React projects.\"\n\n## Setup\n\n    npx storybook add @storybook/addon-mcp\n    npx mcp-add --type http --url \"http://localhost:6006/mcp\" --scope project\n\n## The recommended AGENTS.md / CLAUDE.md text\n\nStorybook publishes the agent instructions to pair with it, and the anti-hallucination framing is worth quoting:\n\n    When working on UI components, always use the MCP tools to access Storybook's\n    component and documentation knowledge before answering or taking any action.\n\n    - CRITICAL: Never hallucinate component properties! Before using ANY property\n      on a component from a design system (including common-sounding ones like\n      shadow, etc.), you MUST use the MCP tools to check if the property is\n      actually documented for that component.\n    - Query list-all-documentation to get a list of all components\n    - Query get-documentation for that component to see all available properties\n    - Only use properties that are explicitly documented or shown in example stories\n    - If a property isn't documented, do not assume properties based on naming\n      conventions or common patterns from other libraries. Check back with the user.\n    - Use get-storybook-story-instructions to fetch the latest conventions.\n    - Check your work by running run-story-tests.\n\n    Remember: A story name might not reflect the property name correctly, so always\n    verify properties through documentation or example stories before using them.\n\n## Three toolsets\n\n**Docs** — helps the agent reuse components rather than reinvent them:\n- list-all-documentation — index of components and unattached docs entries\n- get-documentation — props, first three stories, an index of remaining stories, plus additional documentation\n- get-documentation-for-story — full story and associated documentation, when get-documentation is insufficient\n\n**Development** — for authoring stories and previewing:\n- get-changed-stories — stories changed or possibly affected by local file changes\n- get-storybook-story-instructions — how to write useful stories, which props to capture, how to write interaction tests\n- preview-stories — story previews rendered in the agent's chat interface, if the agent supports MCP Apps\n\n**Testing**:\n- run-story-tests — \"Runs tests for specific stories and returns results, including any accessibility issues (if configured). Also instructs the agent to interpret the results and resolve any issues found.\"\n\n## The worked loop\n\nAsked to build a login form, the agent queries docs to find TextInput and Button, queries again for detail (learning TextInput has a type prop settable to \"password\"), composes a LoginForm, generates stories for its states, runs tests, **finds the submit button fails color contrast**, looks up documented theme colors, fixes it, re-runs tests, and shows previews.\n\n## Composition for multi-repo systems\n\n\"If a composed Storybook has manifests, the MCP server will automatically include the content from those manifests in its responses, allowing your agent to access the combined knowledge from all composed Storybooks.\"\n\nAny MCP-capable agent can connect: Claude Code, OpenAI Codex, Cursor, Gemini CLI, VS Code Copilot.",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "storybook",
+      "mcp",
+      "ai",
+      "agents",
+      "design-systems",
+      "testing",
+      "documentation"
+    ],
+    "confidence": "high",
+    "system": "Storybook",
+    "source_url": "https://storybook.js.org/docs/ai/mcp/overview",
+    "authority": "primary",
+    "research_batch": "ai-tools-docs-2026-08",
+    "last_updated": "2026-08-07T14:19:37.134Z"
+  }
+}

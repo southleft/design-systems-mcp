@@ -1,0 +1,29 @@
+{
+  "id": "docs-batch-claude-code-skills",
+  "title": "Claude Code Skills: SKILL.md, Progressive Disclosure, and the Agent Skills Spec",
+  "source": {
+    "type": "url",
+    "location": "https://code.claude.com/docs/en/skills",
+    "ingested_at": "2026-08-07T14:19:37.133Z"
+  },
+  "content": "# Claude Code Skills\n\n## When a skill beats CLAUDE.md — the load-bearing distinction for design systems\n\n\"Create a skill when you keep pasting the same instructions, checklist, or multi-step procedure into chat, or when a section of CLAUDE.md has grown into a procedure rather than a fact. **Unlike CLAUDE.md content, a skill's body loads only when it's used, so long reference material costs almost nothing until you need it.**\"\n\nToken and component reference material belongs in a skill, not in CLAUDE.md.\n\n## Standard\n\n\"Claude Code skills follow the Agent Skills (agentskills.io) open standard, which works across multiple AI tools. Claude Code extends the standard with additional features like invocation control, subagent execution, and dynamic context injection.\"\n\n## Where skills live\n\n| Location | Path | Applies to |\n|---|---|---|\n| Enterprise | managed settings | All users in the org |\n| Personal | ~/.claude/skills/NAME/SKILL.md | All your projects |\n| Project | .claude/skills/NAME/SKILL.md | This project only |\n| Plugin | PLUGIN/skills/NAME/SKILL.md | Where plugin is enabled |\n\n\"When skills share the same name across levels, enterprise overrides personal, and personal overrides project.\"\n\n## Monorepo behavior — per-package design system rules\n\n\"Skills also load from nested .claude/skills/ directories below your working directory. When Claude reads or edits a file in a subdirectory, skills from that subdirectory's .claude/skills/ become available. This lets a monorepo package provide its own skills that apply when working on that package, even if the session started at the repo root.\"\n\nThe nested variant appears under a directory-qualified name such as \"apps/web:deploy\", and Claude picks the variant matching the files it is working on.\n\n## Anatomy\n\n    my-skill/\n    ├── SKILL.md           # Main instructions (required)\n    ├── template.md\n    ├── examples/\n    │   └── sample.md\n    └── scripts/\n        └── validate.sh\n\n## Two content types\n\n**Reference content** \"adds knowledge Claude applies to your current work. Conventions, patterns, style guides, domain knowledge. This content runs inline so Claude can use it alongside your conversation context.\"\n\n**Task content** \"gives Claude step-by-step instructions for a specific action.\" Add \"disable-model-invocation: true\" to prevent automatic triggering.\n\n\"Keep the body itself concise. Once a skill loads, its content stays in context across turns, so every line is a recurring token cost. State what to do rather than narrating how or why.\"\n\n## Frontmatter\n\nOnly description is recommended; all fields optional. Key ones:\n\n- description — \"What the skill does and when to use it. Claude uses this to decide when to apply the skill... Put the key use case first: the combined description and when_to_use text is truncated at 1,536 characters in the skill listing to reduce context usage.\"\n- when_to_use — trigger phrases or example requests\n- allowed-tools — tools usable without asking permission during the invoking turn\n- paths — \"Glob patterns that limit when this skill is activated... Claude loads the skill automatically only when working with files matching the patterns.\"\n\n## Progressive disclosure\n\n\"Skills can include multiple files in their directory. This keeps SKILL.md focused on the essentials while letting Claude access detailed reference material only when needed. Large reference docs, API specifications, or example collections don't need to load into context every time the skill runs.\"\n\n\"Keep SKILL.md under 500 lines. Move detailed reference material to separate files.\"\n\n## Portability constraint\n\n\"Claude Code accepts every field in the table above. Outside Claude Code, you can use only the fields in the Agent Skills spec.\" For claude.ai uploads and the Skills API the allowed fields are: name, description, license, compatibility, metadata, allowed-tools. Including a disallowed field fails packaging with a hard error rather than being ignored.\n\n\"Claude Code-only body features, such as dynamic context injection, don't function in claude.ai chat or through the API.\"\n\nNote: \"Custom commands have been merged into skills.\"",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "claude-code",
+      "skills",
+      "skill-md",
+      "ai",
+      "agents",
+      "design-systems",
+      "progressive-disclosure"
+    ],
+    "confidence": "high",
+    "system": "Claude Code",
+    "source_url": "https://code.claude.com/docs/en/skills",
+    "authority": "primary",
+    "research_batch": "ai-tools-docs-2026-08",
+    "last_updated": "2026-08-07T14:19:37.133Z"
+  }
+}
