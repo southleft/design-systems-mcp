@@ -7,6 +7,7 @@ import { createClient } from '@supabase/supabase-js';
 import OpenAI from 'openai';
 import { type ContentEntry, type SearchOptions, Category } from '../../types/content';
 import { searchEntries as searchEntriesLocal } from './content-manager';
+import { searchSupabaseText, rowToContentEntry } from './supabase-catalog';
 import {
   getSourceReliability,
   requiresAccessibilityCaveats,
@@ -148,32 +149,10 @@ export async function searchWithSupabase(options: SearchOptions = {}, env?: any)
             console.log(`[Vector Search] Found ${data.length} results`);
           }
 
-          // Convert Supabase results to ContentEntry format and enrich with reliability
-          const results = data.map((row: any) => {
-            const entry: ContentEntry = {
-              id: row.id,
-              title: row.title,
-              content: row.content || '',
-              source: {
-                type: row.source_type || 'database',
-                location: row.source_location || 'supabase',
-                ingested_at: row.ingested_at || new Date().toISOString()
-              },
-              chunks: [],
-              metadata: {
-                category: row.category || 'general',
-                tags: row.tags || [],
-                confidence: row.confidence || confidence || 'medium',
-                system: row.system_name || '',
-                last_updated: row.updated_at || new Date().toISOString(),
-                source_url: row.source_location || ''
-              }
-            };
-            // Enrich with source reliability information
-            return enrichWithReliability(entry);
-          });
-
-          return results;
+          // Convert Supabase results to ContentEntry format and enrich with reliability.
+          // rowToContentEntry reads category/tags from either the dedicated
+          // columns or the metadata JSONB, since both ingestion shapes exist.
+          return data.map((row: any) => enrichWithReliability(rowToContentEntry(row)));
         }
 
         if (error && logPerformance) {
@@ -193,7 +172,36 @@ export async function searchWithSupabase(options: SearchOptions = {}, env?: any)
     }
   }
 
-  // Fallback to local keyword search
+  // Vector search unavailable (no OpenAI quota, missing key, RPC failure, or no
+  // matches). Fall back to Postgres full-text search over the same knowledge
+  // base rather than the in-memory sample entries — degraded relevance is far
+  // better than answering every query with the sample button entry.
+  if (query && supabaseUrl && supabaseKey) {
+    try {
+      const textResults = await searchSupabaseText(env, {
+        query,
+        category,
+        tags: filterTags,
+        limit
+      });
+
+      if (logPerformance) {
+        console.log(`[Search] Supabase keyword fallback returned ${textResults.length} results`);
+      }
+
+      // The knowledge base answered — return what it has, empty included.
+      // Answering "no matches" with the sample button entry is what made every
+      // query look like the database contained a single sample record.
+      return textResults.map(entry => enrichWithReliability(entry));
+    } catch (error: any) {
+      if (logPerformance) {
+        console.error('[Search] Supabase keyword fallback error:', error?.message || 'Unknown error');
+      }
+    }
+  }
+
+  // Last resort: the in-memory sample entries. Only reached when Supabase is
+  // unreachable or genuinely has nothing matching.
   if (logPerformance) {
     console.log('[Search] Using local keyword search');
   }
