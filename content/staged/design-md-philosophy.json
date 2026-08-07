@@ -1,0 +1,29 @@
+{
+  "id": "aids-batch-design-md-philosophy",
+  "title": "DESIGN.md Philosophy: Prose, Not Tokens, Carries the Design Intent (Google Labs)",
+  "source": {
+    "type": "url",
+    "location": "https://github.com/google-labs-code/design.md/blob/main/PHILOSOPHY.md",
+    "ingested_at": "2026-08-07T13:06:30.604Z"
+  },
+  "content": "# DESIGN.md Philosophy (Google Labs)\n\nOfficial philosophy document in Google Labs' open-source DESIGN.md repo. Apache 2.0, alpha, open-sourced April 21 2026, extracted from Stitch.\n\n## The core claim\n\n\"DESIGN.md captures how a design looks, feels, and behaves. The prose is where the design lives. Everything else in the document exists to support it.\"\n\n\"**The quality of a generated design is determined less by the precision of its values than by how clearly the intent is described.**\"\n\n## Prose over tokens\n\n\"DESIGN.md contains two primary aspects: tokens and prose... The prose is the most vital part of the specification.\"\n\n\"The token values serve as context and are not rendering instructions. Generally, we do not accept or recommend token requirements in the specification. This keeps tokens as context that serves as a reference in the prose and focuses DESIGN.md on documenting the nature of the design and not trying to reinvent the decades long work established by languages and tools that came before us.\"\n\nWorked example pairs a YAML block with prose: \"**Paper** {colors.paper} is the canvas — warmed xerox stock, never pure white. **Ink** {colors.ink} is graphite-warm and carries all typography, all rules, all diagram strokes; never pure black. **Vermilion** {colors.vermilion} is the single accent and appears only inside diagrams and chart annotations — never on typography, never on page numerals, never on metadata of any kind.\"\n\n## Specific references beat adjectives\n\n\"A design that references 'A 1970s graduate lecture handout in the tradition of an old and established university' evokes a complete world: the one color of ink, the generous margins, the serif set at a reading size, and the absence of decoration. That single sentence carries more useful information than a dozen metric values. It carries the reasoning behind the values.\"\n\n\"'Modern, clean, trustworthy, premium' evokes nothing specific. A model creates something in the center of what those words describe, creating an output that is typically generic. **Adjectives describe a region. A specific reference describes a point.**\"\n\n## Negative constraints arrive free\n\n\"A clear design reference carries its restrictions automatically. A model knows what a lecture handout is, and it knows what a lecture handout is not. It does not glow or use a gradient. You don't have to list these. Naming the object names them, the same way naming a dog tells the model that dogs don't meow. The negative constraints arrive for free when the reference is specific enough. An intentional list of 'don'ts' is useful. A long rambling list is often a sign the description was too vague to carry them.\"\n\nSample don'ts: \"Don't add a hero moment to the title page... Don't color the page numeral or any other piece of metadata. Vermilion lives in diagrams only... Don't use Bold. Anywhere. Don't introduce dark mode, gradients, glows, glass surfaces, drop shadows, or rounded corners.\"\n\n## The format grows through its users\n\n\"The spec defines the structural minimum that every DESIGN.md shares: a name, and a small set of categories (colors, typography, spacing, rounded, components) that are universal enough to standardize. Everything beyond that minimum is yours to define... The spec standardizes the categories where consistency helps. It leaves open the categories where flexibility helps more: motion, iconography, elevation, text casing, paragraph measure.\"\n\n## Structure (from README)\n\nFront matter YAML holds machine-readable tokens; the markdown body holds rationale in ## sections. \"The tokens are the normative values. The prose provides context for how to apply them.\"\n\nCanonical section order: Overview (alias Brand & Style), Colors, Typography, Layout, Elevation & Depth, Shapes, Components, Do's and Don'ts.\n\nToken types: Color (any CSS color), Dimension (number+unit), Token Reference ({path.to.token}), Typography object.\n\nValid component properties: backgroundColor, textColor, typography, rounded, padding, size, height, width. \"Variants (hover, active, pressed) are expressed as separate component entries with a related key name.\"\n\nConsumer behavior: unknown section heading → preserve, do not error; unknown color token name → accept if value valid; unknown component property → accept with warning; duplicate section heading → error, reject the file.\n\nEleven lint rules: broken-ref (error), missing-primary, contrast-ratio (WCAG AA 4.5:1), orphaned-tokens, token-summary, missing-sections, missing-typography, section-order, unknown-key, token-like-ignored, omitted-rules.\n\nCLI: lint, diff (exit 1 on regression), export --format json-tailwind|css-tailwind|tailwind|dtcg, and spec (\"Output the DESIGN.md format specification, useful for injecting spec context into agent prompts\").",
+  "chunks": [],
+  "metadata": {
+    "category": "guidelines",
+    "tags": [
+      "design-md",
+      "ai",
+      "design-systems",
+      "documentation",
+      "agents",
+      "google",
+      "machine-readable"
+    ],
+    "confidence": "high",
+    "system": "DESIGN.md",
+    "source_url": "https://github.com/google-labs-code/design.md/blob/main/PHILOSOPHY.md",
+    "authority": "primary",
+    "research_batch": "ai-design-systems-2026-08",
+    "last_updated": "2026-08-07T13:06:30.604Z"
+  }
+}

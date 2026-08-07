@@ -1,0 +1,31 @@
+{
+  "id": "aids-batch-code-as-source-of-truth",
+  "title": "Code Is the Source of Truth (Not Figma): Governance Beyond Figma",
+  "source": {
+    "type": "url",
+    "location": "https://www.builder.io/blog/governance-beyond-figma",
+    "ingested_at": "2026-08-07T13:06:30.604Z"
+  },
+  "content": "# Code Is the Source of Truth (Not Figma)\n\nSteve Sewell, CEO of Builder.io, September 8, 2025. The clearest articulation of the code-as-source-of-truth position. Vendor-adjacent (promotes Fusion) but bluntly argued.\n\n## The position\n\n\"Figma is, at best, a set of suggestions. All that matters is what makes it into code.\"\n\n\"Even worse, design systems in Figma are a lie. Pretty, collaborative, and full of backdoors and loopholes. It's too easy to override, detach, and forget what the rules even were. Without something watching the code, drift is inevitable, even if everyone means well.\"\n\n\"At scale, manual redlining is a disaster. Every pixel-perfect mockup turns into a game of telephone, and by the time it reaches production, the details have slipped. You can't hire enough designers to chase down every override or one-off, and without automation in the loop, it's just a matter of when things drift, not if.\"\n\n## Evidence cited\n\n\"Shopify found that after a year, 14% of their admin UI had wandered off the Polaris mainline. This was despite strong adoption and a coverage dashboard watching it. Even at Shopify scale, drift creeps in.\"\n\n\"Even Figma knows this is a thing. They literally added 'detached instance' analytics so you can track how often people break away from the system.\"\n\n\"Jeremy Dizon documented his org's detaches doubling in a year when their library lagged. Uber puts it bluntly, by the time you spot inconsistencies, it could be too late.\"\n\n## How drift spreads\n\n\"One bad override can snowball fast. Manual reviews don't scale. Redlines get skipped when the sprint's on fire. Tokens get forked. 'Just for this use case' turns into three variations nobody remembers making. Components get detached. Now you're fixing bugs in five places instead of one.\"\n\n## The prescription\n\n\"The teams beating drift aren't doing it with more process docs, they're baking adherence into their tools. The goal is to make the right way the path of least resistance. **Governance isn't a PDF. It's a loop baked right into your stack.**\"\n\n- \"One source of truth in code. Shopify uses coverage dashboards and linting tools to keep everything on Polaris mainline.\"\n- \"Guardrails, not unlimited freedom. Uber's CI checks block merges when system rules are broken, automatically filing Jira tickets for fixes.\"\n- \"Observability. Treat adherence like a quality metric: dashboards, counters, alerts.\"\n\n\"GitHub runs an accessibility and token check on every pull request. Any violations get caught before merge. No big meeting, no finger pointing, just 'fixed in PR.'\"\n\n## Intentional vs accidental rule-breaking\n\n\"Governance isn't about locking creativity in a closet. Sometimes you need to break the rules, a marketing splash page, a new homepage hero, a one off experimental UI. The difference is intentional vs accidental. Without guardrails, every deviation is an accident. With them, breaking the system becomes a design choice, and you can flip it off when you're done.\"\n\n\"As one of our designers put it, 'I don't want the freedom to reinvent buttons. I want the freedom to actually design.'... The key is that it's a switch, not a permanent fork.\"\n\n## Note on the wider debate\n\nPractitioners do not generally call this position \"code-led.\" The debate is known as the **single source of truth** question, and as of 2026 it has three articulated positions: code as source of truth (this piece); design tool as source of truth (a position now largely defended by proxy \u2014 no strong 2025-2026 primary essay argues it directly); and the contract position, which crowns neither (Nathan Curtis, Christine Vallaure, the DS Contracts spec).",
+  "chunks": [],
+  "metadata": {
+    "category": "guidelines",
+    "tags": [
+      "source-of-truth",
+      "single-source-of-truth",
+      "code-led",
+      "design-led",
+      "governance",
+      "design-drift",
+      "design-systems",
+      "code-first",
+      "ci"
+    ],
+    "confidence": "high",
+    "system": "",
+    "source_url": "https://www.builder.io/blog/governance-beyond-figma",
+    "authority": "authoritative",
+    "research_batch": "ai-design-systems-2026-08",
+    "last_updated": "2026-08-07T13:06:30.604Z"
+  }
+}

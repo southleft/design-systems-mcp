@@ -1,0 +1,30 @@
+{
+  "id": "a2ui-batch-mcp-apps-sep-1865",
+  "title": "MCP Apps (SEP-1865): Interactive User Interfaces for MCP",
+  "source": {
+    "type": "url",
+    "location": "https://modelcontextprotocol.io/seps/1865-mcp-apps-interactive-user-interfaces-for-mcp",
+    "ingested_at": "2026-08-07T13:06:30.352Z"
+  },
+  "content": "# SEP-1865: MCP Apps — Interactive User Interfaces for MCP\n\nStatus: **Final**. Type: Extensions Track. Created 2025-11-21. Shipped as one of two official extensions in the 2026-07-28 MCP specification release candidate (the other being Tasks, SEP-2663).\n\nAuthors: Ido Salomon, Liad Yosef, Olivier Chafik, Jerome Swannack, Jonathan Hefner, Anton Pidkuiko, Nick Cooper, Bryan Ashley, Alexi Christakis.\n\n## Abstract\n\n\"This SEP proposes an extension to MCP (per SEP-1724) that enables servers to deliver interactive user interfaces to hosts. MCP Apps introduces a standardized pattern for declaring UI resources via the ui:// URI scheme, associating them with tools through metadata, and facilitating bi-directional communication between the UI and the host using MCP's JSON-RPC base protocol.\"\n\n## Motivation\n\n\"MCP lacks a standardized way for servers to deliver rich, interactive user interfaces to hosts. This gap blocks many use cases that require visual presentation and interactivity that go beyond plain text or structured data.\"\n\nProblems named: \"Servers cannot reliably expect UI support via MCP; Each host may implement slightly different behaviors; Security and auditability patterns are inconsistent; Developers must maintain separate implementations or adapters for different hosts (e.g., MCP-UI vs. Apps SDK).\"\n\n## What it introduces\n\n\"**UI Resources:** Predeclared resources using the ui:// URI scheme. **Resource Discovery:** Tools reference UI resources via metadata. **Bi-directional Communication:** UI iframes communicate with hosts using standard MCP JSON-RPC protocol. **Security Model:** Mandatory iframe sandboxing with auditable communication.\"\n\n## Rationale — what was rejected and why\n\n### Predeclared resources vs inline embedding\n\nChosen because it allows \"Hosts to prefetch templates before tool execution, improving performance; Separation of presentation (template) from data (tool results), facilitating caching; Security review of UI resources.\"\n\nRejected: **Embedded resources** (the MCP-UI approach of returning resources in tool results) — \"more convenient for server development, it was deferred due to the gaps in performance optimization and the challenges in the UI review process.\" **Resource links** — deferred for performance reasons.\n\n### Reusing MCP JSON-RPC instead of a custom protocol\n\n\"Reuses existing MCP infrastructure... JSON-RPC offers advanced capabilities (timeouts, errors, etc.).\"\n\nRejected: **Custom message protocol** (MCP-UI's tool/intent/prompt message types). **Global API object** — \"Rejected because it requires host-specific injection and doesn't work with external iframe sources.\"\n\n### HTML-only MVP\n\n\"HTML is universally supported and well-understood; Simplest security model (standard iframe sandbox); Allows screenshot/preview generation; Sufficient for most observed use cases.\"\n\nRejected for MVP: **External URLs** — \"deferred due to concerns around model visibility, inability to screenshot content, and review process.\"\n\n## Lineage\n\n\"MCP-UI has demonstrated the viability and value of MCP apps built on UI resources... MCP-UI's adopters, including hosts and providers such as Postman, HuggingFace, Shopify, Goose, and ElevenLabs, have provided critical insights.\"\n\n\"OpenAI's Apps SDK, launched in November 2025, further validated the demand... The architecture of both the Apps SDK and MCP-UI has significantly informed the design of this specification.\"\n\nmcp-ui is now subordinate to the spec — it self-describes as \"an SDK implementing the MCP Apps standard,\" and its creators are the lead SEP authors.\n\n## Security\n\n\"**Iframe sandboxing**: All UI content runs in sandboxed iframes with restricted permissions. **Predeclared templates**: Hosts can review HTML content before rendering. **Auditable messages**: All UI-to-host communication goes through loggable JSON-RPC. **User consent**: Hosts can require explicit approval for UI-initiated tool calls.\"\n\n## Backward compatibility\n\n\"The proposal is an optional extension to the core protocol. Existing implementations continue working without changes.\"\n\nExtensions are identified by reverse-DNS IDs, negotiated through an extensions map on client and server capabilities, live in their own ext-* repositories, and version independently of the specification.",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "mcp",
+      "mcp-apps",
+      "agent-ui",
+      "protocol",
+      "sep-1865",
+      "specification",
+      "design-systems"
+    ],
+    "confidence": "high",
+    "system": "Model Context Protocol",
+    "source_url": "https://modelcontextprotocol.io/seps/1865-mcp-apps-interactive-user-interfaces-for-mcp",
+    "authority": "primary",
+    "spec_status": "accepted-spec — Final, Extensions Track, created 2025-11-21",
+    "research_batch": "agent-ui-2026-08",
+    "last_updated": "2026-08-07T13:06:30.352Z"
+  }
+}

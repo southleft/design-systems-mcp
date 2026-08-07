@@ -1,0 +1,28 @@
+{
+  "id": "a2ui-batch-radically-adaptive-experiences-patterns",
+  "title": "Radically Adaptive Experiences: Bespoke UI, Intelligent Canvas, Casual Intelligence",
+  "source": {
+    "type": "url",
+    "location": "https://bigmedium.com/ideas/when-interfaces-draw-themselves.html",
+    "ingested_at": "2026-08-07T13:06:30.352Z"
+  },
+  "content": "# When Interfaces Design Themselves: Radically Adaptive Experiences\n\nJosh Clark and Veronika Kindred, Big Medium, September 30, 2025. The fullest published statement of radically adaptive experiences and their named patterns.\n\n## Definition\n\n\"Radically adaptive experiences change content, structure, style, or behavior—sometimes all at once—to provide the right experience for the moment. They're a cornerstone of Sentient Design, a framework for creating intelligent interfaces that have awareness and agency.\"\n\n## Casual intelligence\n\nThe entry-level pattern: \"Drizzle some machine smarts onto everyday content and interface elements. Even small interventions like these add up to a quietly intelligent interface that is aware and adaptive.\"\n\nExample: Google Forms suggesting an answer type from question phrasing — start typing \"How would you rate…\" and the default answer format updates to \"Linear scale.\" \"The interface doesn't decide for you, but it tees up a smart default as an informed suggestion.\"\n\n## Bespoke UI — the design-system-critical pattern\n\n\"Bespoke UIs compose their own layout in direct response to immediate context. This approach relies on a stable set of interface elements that can be remixed to meet the moment.\"\n\nIt is one of **14 Sentient Design experience patterns** spanning the postures of tools, chat, agents, and copilots.\n\nThe Salesforce generative canvas is given as the conservative, reliable implementation: \"The interface elements are chosen on the fly but only from a curated collection of UI patterns from Salesforce's design system. This includes familiar elements like tables, charts, trend indicators, and other data visualization tools. While the layout itself may be radically adaptive, the individual components are templated for visual and functional consistency—just like a design system provides consistent tools for human designers, too.\"\n\nThe constraint that makes it work: \"Successful bespoke UI experiences rely on familiarity and a tightly constrained set of UI and interaction patterns. The Gemini example succeeds because it has a very small number of UI widgets in its design system, and the system was taught to match specific patterns to specific user intent. Experiences like this are open-ended in what they accept for input, but they're constrained in the language they produce.\"\n\n## Intelligent canvas\n\n\"Sentient Design's intelligent canvas experience pattern, where radical adaptability dissolves the boundaries between maker and user.\" Examples cited: iPad Math Notes, tldraw's \"Make Real\", Anthropic's \"Imagine with Claude\" research preview.\n\n\"Taken all the way to its logical conclusion, every canvas (or file or session) could become its own ephemeral application—disposable software manifested when you need it and discarded when you don't.\"\n\n## Other named patterns\n\nBeyond bespoke UI and intelligent canvas, the framework names alchemist agents, sculptor tools, and non-player characters (NPCs), among 14 total.\n\n## The designer's changed role\n\n\"The designer's job shifts from crafting each interaction to system-level design of the rules and guardrails to help AI tailor and deliver these experiences. What are the design patterns and interactions the system can and can't use? How does it choose the right pattern to match context? What is the manner it should adopt? The work is behavior design… not only for the user but for the system itself.\"\n\n\"For designers, creating this system is like being a creative director. You give the system the brief, the constraints, and the design patterns to use.\"\n\n## The risk\n\n\"An interface that constantly changes risks eroding the very consistency and predictability that helps users build mastery and confidence. Unchecked, a radically adaptive experience can quickly become a chaotic and untrustworthy one.\"\n\n\"You have to craft the constraints as carefully as the capabilities; you design for failure as much as for success.\"",
+  "chunks": [],
+  "metadata": {
+    "category": "patterns",
+    "tags": [
+      "radically-adaptive-ui",
+      "bespoke-ui",
+      "generative-ui",
+      "design-systems",
+      "ai",
+      "sentient-design"
+    ],
+    "confidence": "high",
+    "system": "Sentient Design",
+    "source_url": "https://bigmedium.com/ideas/when-interfaces-draw-themselves.html",
+    "authority": "primary",
+    "research_batch": "agent-ui-2026-08",
+    "last_updated": "2026-08-07T13:06:30.352Z"
+  }
+}

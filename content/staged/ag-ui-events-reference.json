@@ -1,0 +1,30 @@
+{
+  "id": "a2ui-batch-ag-ui-events-reference",
+  "title": "AG-UI Protocol: Event Reference for Agent-to-Frontend Streaming",
+  "source": {
+    "type": "url",
+    "location": "https://docs.ag-ui.com/concepts/events",
+    "ingested_at": "2026-08-07T13:06:30.353Z"
+  },
+  "content": "# AG-UI Events Reference (Agent User Interaction Protocol)\n\nCopilotKit's open protocol. A2UI classifies it as a Stable transport binding with \"day-zero A2UI compatibility.\"\n\nAll communication flows through typed events inheriting from BaseEvent, which carries type, optional timestamp, and optional rawEvent. Transport-agnostic: HTTP SSE, an HTTP binary protocol, WebSockets, and webhooks. The standard client HttpAgent \"accepts RunAgentInput parameters and returns Observable<BaseEvent>\".\n\n## Lifecycle events\n\nRunStarted — threadId, runId, parentRunId (optional, for branching), input (optional)\nRunFinished — outcome (discriminated union, type \"success\" or \"interrupt\"), result, interrupts (array of pending human inputs)\nRunError — message, code\nStepStarted / StepFinished — stepName\n\n## Text message events\n\nTextMessageStart — messageId, role (\"assistant\", \"user\", \"tool\")\nTextMessageContent — messageId, delta (text segment to append)\nTextMessageEnd — messageId\nTextMessageChunk — convenience wrapper auto-expanding to Start→Content→End\n\n## Tool call events\n\nToolCallStart — toolCallId, toolCallName, parentMessageId\nToolCallArgs — toolCallId, delta (argument fragment, often JSON)\nToolCallEnd — toolCallId\nToolCallResult — messageId, toolCallId, content, role\nToolCallChunk — convenience wrapper auto-expanding to Start→Args→End\n\nThis streaming tool-call triad is the mechanism most commonly used for generative UI in AG-UI hosts: the frontend renders a component keyed on toolCallName and progressively hydrates it from ToolCallArgs deltas before ToolCallResult arrives. This is why A2UI describes AG-UI as \"the pipe\" and A2UI as \"the content.\"\n\nImportant caveat: AG-UI's own documentation does not describe generative UI as a first-class protocol concept. Its architecture page says nothing about UI rendering. Generative UI in AG-UI is an emergent pattern over these events, not a specified feature.\n\n## State management events\n\nStateSnapshot — snapshot (complete state object)\nStateDelta — delta (RFC 6902 JSON Patch operation array)\nMessagesSnapshot — messages (complete transcript)\n\n## Activity events\n\nActivitySnapshot — messageId, activityType (e.g. \"PLAN\", \"SEARCH\"), content, replace (default true)\nActivityDelta — messageId, activityType, patch (RFC 6902 operations)\n\n## Special events\n\nRaw — event, source (passes external system events through unmodified)\nCustom — name, value (protocol extension escape hatch)\n\n## Architecture\n\nA client-server model: the frontend holds the Application and the AG-UI Client; backends host AI agents plus an optional Secure Proxy. A middleware layer provides compatibility through a flexible event structure and transport flexibility, which \"allows existing agent frameworks to adapt their native event formats with minimal effort.\"",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "ag-ui",
+      "agent-ui",
+      "protocol",
+      "streaming",
+      "copilotkit",
+      "events",
+      "json-patch"
+    ],
+    "confidence": "high",
+    "system": "AG-UI",
+    "source_url": "https://docs.ag-ui.com/concepts/events",
+    "authority": "primary",
+    "spec_status": "open protocol, actively versioned — not a standards-body spec",
+    "research_batch": "agent-ui-2026-08",
+    "last_updated": "2026-08-07T13:06:30.353Z"
+  }
+}

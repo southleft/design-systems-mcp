@@ -1,0 +1,29 @@
+{
+  "id": "a2ui-batch-google-generative-ui-research",
+  "title": "Generative UI: LLMs are Effective UI Generators (Google Research)",
+  "source": {
+    "type": "url",
+    "location": "https://generativeui.github.io/",
+    "ingested_at": "2026-08-07T13:06:30.353Z"
+  },
+  "content": "# Generative UI: LLMs are Effective UI Generators\n\nGoogle Research, November 2025. Authors: Yaniv Leviathan, Dani Valevski, Matan Kalman, Danny Lumen, Eyal Segalis, Eyal Molad, Shlomi Pasternak, Vishnu Natchu, Valerie Nygaard, Srinivasan Venkatachary, James Manyika, Yossi Matias.\n\nShipped as \"dynamic view\" in the Gemini app and in AI Mode in Google Search.\n\n## Definition\n\nGenerative UI names a paradigm in which LLMs produce not only content but the interface itself. The model generates \"not just content, but the entire user experience\" — \"This work represents a first step toward fully AI-generated user experiences, where users automatically get dynamic interfaces tailored to their needs, rather than having to select from an existing catalog of applications.\"\n\n## Architecture — three parts\n\n1. **Server infrastructure** exposing endpoints for key tools — image generation and web search.\n2. **Carefully crafted system instructions** incorporating goals, planning guidelines, examples, and technical specifications.\n3. **Post-processors** addressing common issues that instructions alone do not resolve.\n\nThe third component is the instructive one: even with a four-and-a-half-page system prompt, deterministic post-processing is required to bring model output into acceptable state. Any design system contemplating LLM-generated UI should expect the same shape — prompt, then repair.\n\n## Evaluation\n\nFive output formats compared using 100 prompts drawn from LMArena, with pairwise human ratings: custom human-expert websites; top Google Search results; plain text LLM output; standard markdown LLM output; and the generative UI implementation.\n\nResult: the generative UI implementation achieved an ELO of 1736.2, \"demonstrating strong user preference over all other formats, except human experts.\" Reported ordering: \"The sites designed by human experts had the highest preference rates. These were followed closely by the results from our generative UI implementation, with a substantial gap from all other output methods.\" Generation speed was excluded from the comparison.\n\nThe PAGEN dataset of human expert–made websites was created for this evaluation and is to be released to the research community.\n\n## Calibrating the \"human expert\" baseline\n\nDisclosed on page 15: the human-expert comparison websites were built by highly-rated Upwork freelancers paid $100–130 per site, averaging three to five hours each. The generative UI result should therefore be read as \"approaches a good freelancer on a short brief,\" not \"approaches a mature product team.\"\n\n## The system prompt\n\nThe appendix from page 15 contains the four-and-a-half-page system instruction. It opens with a Core Philosophy demanding an interactive-first approach: \"Even for simple queries that could be answered with static text (e.g., 'What's the time in Tel Aviv?', 'What's the weather?'), your primary goal is to create an interactive application.\" The technical substrate specified is Tailwind CSS, HTML Canvas, and SVG.\n\nA seven-step internal thought process is prescribed: interpret the query and decide whether search is mandatory; plan the application concept; plan content including storylines, scripts and character descriptions; identify data and image needs; perform searches diligently; brainstorm roughly twelve UI components and interactive elements; filter and integrate, discarding weak ideas.\n\n## The design-systems observation\n\nSeven planning steps govern *what to build and what facts to gather*. Exactly one paragraph governs *how it should look*: \"Use Tailwind CSS effectively to create modern, visually appealing interfaces. Consider layout, typography, color schemes including gradients, spacing, and subtle transitions or animations where appropriate.\"\n\nThe resulting visual homogeneity critics observe — a recurring house style of one-sided thick borders, Playfair Display paired with Lato, pill-shaped buttons — is the predictable consequence of leaving aesthetics to model priors rather than to a token system or component catalog.\n\nThis is the strongest available empirical argument for the A2UI / MCP Apps position that the client's design system, not the model, should own presentation.\n\n## Limitations acknowledged\n\n\"Our current implementation can sometimes take a minute or more to generate results, and there are occasional inaccuracies in the outputs.\" The capability is characterized as emerging, with newer models showing substantially improved accuracy.",
+  "chunks": [],
+  "metadata": {
+    "category": "patterns",
+    "tags": [
+      "generative-ui",
+      "ephemeral-ui",
+      "research",
+      "evaluation",
+      "gemini",
+      "ai",
+      "design-systems"
+    ],
+    "confidence": "high",
+    "system": "Google Research",
+    "source_url": "https://generativeui.github.io/",
+    "authority": "primary",
+    "research_batch": "agent-ui-2026-08",
+    "last_updated": "2026-08-07T13:06:30.353Z"
+  }
+}

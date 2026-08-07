@@ -1,0 +1,28 @@
+{
+  "id": "a2ui-batch-sentient-design-definition",
+  "title": "Sentient Design: Definition and Core Attributes (Big Medium)",
+  "source": {
+    "type": "url",
+    "location": "https://bigmedium.com/ideas/hello-sentient-design.html",
+    "ingested_at": "2026-08-07T13:06:30.351Z"
+  },
+  "content": "# Sentient Design: Definition and Core Attributes\n\nBy Josh Clark and Veronika Kindred, Big Medium. The canonical essay that coins and defines the term. Published June 12, 2024.\n\n## Definition\n\n\"Sentient Design is the already-here future of intelligent interfaces: experiences that feel almost self-aware in their response to user needs. Sentient Design moves past static info and presentation to embrace UX as a radically adaptive story. These experiences are conceived and compiled in real time based on your intent in the moment—AI-mediated experiences that adapt to people, instead of forcing the reverse.\"\n\n\"Sentient Design describes not only the form of this new user experience but also a framework and a philosophy for working with machine intelligence as design material.\"\n\n## The two fundamental attributes\n\n\"Sentient Design refers to intelligent interfaces that are aware of context and intent so that they can be radically adaptive to user needs in the moment. Those are the fundamental attributes of Sentient Design experiences: aware and radically adaptive.\"\n\n## The four supporting characteristics\n\nCollaborative — \"The system is an active (often proactive) partner throughout the user journey, often with independent ability to perform tasks on your behalf.\"\n\nMultimodal — \"The system works across channels and media, going beyond traditional interfaces to speech, text, touch, physical gesture, etc.\"\n\nContinuous and ambient — \"The interface is available when it can be helpful and quiet or invisible when it can't.\"\n\nDeferential — \"The system suggests instead of imposing; it defers to user goals and preferences. It offers signals, not answers.\"\n\nNote that generation is deliberately excluded from this list: \"'making stuff' is not included in this list—not explicitly, at least. Writing text, making images, or generating code might all be the means or even the desired outcomes of Sentient Design experiences—but they're not defining characteristics.\"\n\n## What \"sentient\" means here\n\nThe term does not imply consciousness. \"The 'sentient' in Sentient Design describes a combination that is far more modest but still powerful: awareness, interpretation, agency, and adaptation.\"\n\nThis is framed as a continuum: \"Think of it as a dial that you can turn: from simple utilities that add sparks of helpful intelligence to humble web forms to more capable companions like agents or assistants.\"\n\n## Defensive design\n\n\"Instead of designing for success—for the happy path—we have to do more to anticipate failure and uncertainty. Sentient Design experiences allow AI and machine learning to mediate experiences in ways that are new and that sometimes take the designer out of the loop. We have to anticipate how and where the system is unreliable—where the system will be weird and where the human will be weird.\"\n\nThe framing question the authors pose: \"how can Sentient Design experiences engage critical thought, or amplify human judgment and agency, instead of replacing them?\"\n\n## Relationship to AI\n\n\"Sentient Design is about AI… but also not. While AI and machine learning are the enabling technologies, the goal is not to 'make AI products.' Sentient Design lets us deliver meaningful human outcomes in ways that haven't been possible until now.\"",
+  "chunks": [],
+  "metadata": {
+    "category": "patterns",
+    "tags": [
+      "sentient-design",
+      "ai",
+      "intelligent-interfaces",
+      "adaptive-ui",
+      "josh-clark",
+      "ux-framework"
+    ],
+    "confidence": "high",
+    "system": "Sentient Design",
+    "source_url": "https://bigmedium.com/ideas/hello-sentient-design.html",
+    "authority": "primary",
+    "research_batch": "agent-ui-2026-08",
+    "last_updated": "2026-08-07T13:06:30.352Z"
+  }
+}

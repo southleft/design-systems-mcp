@@ -1,24 +1,28 @@
 # Design Systems MCP Server
 
-An AI-powered Model Context Protocol (MCP) server providing intelligent access to authoritative design systems knowledge. Powered by Supabase vector search with 200+ curated entries including W3C standards, WCAG guidelines, and design system best practices.
+An AI-powered Model Context Protocol (MCP) server providing intelligent access to authoritative design systems knowledge. 198 curated entries spanning W3C standards, WCAG guidelines, design system practice, and — the part a general-purpose model cannot help you with — the 2025-2026 agent-interface protocols.
 
 🌐 **Live Demo:** [https://design-systems-mcp.southleft.com/](https://design-systems-mcp.southleft.com/)
+
+## Why this exists
+
+A frontier model already knows Atomic Design, BEM, and the WCAG success criteria. It does not reliably know that MCP Apps moved from `_meta["openai/outputTemplate"]` to `_meta.ui.resourceUri`, or that A2UI reached v1.0 candidate in June 2026. On fast-moving specs, **every model's training is stale in a way it cannot detect** — it answers confidently with last year's field names.
+
+That is what this server is for: dated, cited, extracted primary-source content that beats both a smaller model's guess and a frontier model's expensive live re-research.
 
 ## Features
 
 ### Core Capabilities
-- 🎯 **Production Vector Search** - Supabase pgvector with OpenAI embeddings for semantic understanding
-- 📚 **200+ Curated Entries** - W3C standards, WCAG 2.2, ARIA practices, and 10+ major design systems
-- 🔍 **Hybrid Search Architecture** - Combines vector similarity with keyword matching (0.15 threshold)
+- 🎯 **Vector + Keyword Search** - Supabase pgvector with OpenAI embeddings, and a Postgres full-text path that keeps working when embeddings are unavailable
+- 📚 **198 Curated Entries** - W3C standards, WCAG 2.2, ARIA practices, major design systems, and agent-interface protocols
+- 🚦 **Relevance Floor** - IDF-weighted scoring means an uncovered topic returns *nothing* rather than confident, adjacent content
 - 🚀 **Edge-Optimized** - Cloudflare Workers deployment with global distribution
 
 ### Latest Updates
-- ⚡ **Streaming Responses** - Chat answers stream token-by-token via SSE; first content appears in seconds
-- 🏠 **Refreshed Landing Page** - Hero, MCP endpoint with one-click copy, and a "What's inside" overview
+- 🤖 **Agent-Interface Coverage (Aug 2026)** - A2UI v1.0, MCP Apps SEP-1865, AG-UI, Sentient Design, generative/ephemeral UI, component contracts
+- 🧪 **Eval Harness** - `scripts/eval-mcp.ts` scores retrieval *and* substance across four difficulty tiers
 - 🛡️ **Source Reliability Badges** - Every answer flags Primary / Authoritative / Reference / Example / Community sources
-- ✨ **200+ Curated Entries** - W3C, WCAG 2.2, ARIA APG, and 10+ major design systems
-- 🔧 **Production Vector Search** - Supabase pgvector with OpenAI embeddings, keyword fallback
-- 📖 **Universal MCP Client Support** - Works with any MCP-capable client (Claude Desktop, Cursor, Windsurf, etc.)
+- 📖 **Universal MCP Client Support** - Works with any MCP-capable client (Claude Desktop, Cursor, Windsurf, Codex, etc.)
 
 ### Developer Experience
 - 🌐 **Zero Setup Required** - Public MCP endpoint ready to use
@@ -28,7 +32,16 @@ An AI-powered Model Context Protocol (MCP) server providing intelligent access t
 
 ## Content Library
 
-### 200+ Curated Entries Including:
+### 198 Curated Entries Including:
+
+**Agent Interfaces & AI (2025-2026 — the material a general model gets wrong)**
+- A2UI Protocol v1.0 (Google) — adjacency-list components, catalog negotiation, A2A binding
+- MCP Apps / SEP-1865 — `ui://` resources, CSP metadata, the `ui/` method namespace, host theming variables
+- AG-UI event reference; OpenAI Apps SDK → MCP Apps field-level migration map
+- Sentient Design (Josh Clark) — the framework, the triangle, radically adaptive experiences
+- Generative & ephemeral UI — Google Research's generative UI paper, content-vs-chrome
+- Component contracts and components-as-data (Nathan Curtis, Christine Vallaure)
+- AGENTS.md / SKILL.md / DESIGN.md — the agent-facing design system layer
 
 **Standards & Specifications**
 - W3C Design Tokens Community Group (DTCG) Specification
@@ -477,7 +490,7 @@ This server uses Supabase for production-grade vector search:
 - **Performance:** Sub-100ms queries with proper indexing
 
 **Statistics:**
-- 200+ entries in production database
+- 198 entries in production database
 - 761+ content chunks with embeddings
 - W3C standards, WCAG guidelines, design system documentation
 - Regular updates with new authoritative sources

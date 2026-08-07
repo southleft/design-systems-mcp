@@ -1,0 +1,28 @@
+{
+  "id": "a2ui-batch-airbnb-server-driven-ui",
+  "title": "Airbnb's Server-Driven UI System: Sections, Screens, and the Ghost Platform",
+  "source": {
+    "type": "url",
+    "location": "https://medium.com/airbnb-engineering/a-deep-dive-into-airbnbs-server-driven-ui-system-842244c5f5",
+    "ingested_at": "2026-08-07T13:06:30.352Z"
+  },
+  "content": "# A Deep Dive into Airbnb's Server-Driven UI System\n\nRyan Brooks, Airbnb Tech Blog. The canonical source for server-driven UI vocabulary — the terms every 2025-2026 AI-driven successor (A2UI, MCP Apps) inherits.\n\n## Core premise\n\n\"We pass both the UI and the data together, and the client displays it agnostic of the data it contains.\"\n\nEverything — the screen's layout, how sections are arranged, the data displayed, and the actions taken on interaction — is controlled by a single backend response served identically to web, iOS, and Android.\n\n## The Ghost Platform (GP)\n\nAirbnb's unified SDUI system, named for its focus on \"'Guest' and 'Host' features, the two sides to our Airbnb apps.\" It provides frameworks in each client's native language — \"Typescript, Swift, and Kotlin, respectively\" — and powers search, listing pages, and checkout.\n\nThe backbone is a single shared GraphQL schema across all platforms: \"the same schema for handling responses and generating strongly typed data models across all of our platforms.\" The schema is the contract; clients are generated consumers of it.\n\n## Sections\n\n\"A section is the most primitive building block of GP. A section describes the data of a cohesive group of UI components, containing the exact data to be displayed — already translated, localized, and formatted.\"\n\nThe emphasis on *already translated, localized, and formatted* is the load-bearing decision: no client-side business logic transforms section data before display. Sections are independent of one another and reusable across screens.\n\n## Screens\n\nScreens describe layout and the placement of sections within it. They \"define other metadata, such as how to render sections — e.g., as a popover, modal, or full-screen.\" The screen is the presentation envelope, distinct from the content of its sections.\n\n## Section component mapping\n\nThe SectionComponentType field controls how a section's data renders. One data model can back multiple renderings — the example contrasts TITLE versus PLUS_TITLE, identical backing data producing different visual presentations. A section component maps \"a section data model to **one** unique rendering\" and contains no feature-specific business logic.\n\nThis is the design-system insight: the server names a semantic role, and the client's component library owns the pixels.\n\n## Layouts (ILayout)\n\nILayout implementations enable dynamic layout configuration from the server. Layouts specify \"various placements. Placements contain one or many SectionDetail types that point to sections in the response's outermost sections array.\"\n\nThe indirection matters: sections live in a flat top-level array and layouts reference them by pointer rather than nesting them. This is the same adjacency-list pattern A2UI later adopted explicitly for LLM-generation reasons.\n\n## Actions (IAction)\n\nWhile sections and components are forbidden business logic, actions are the sanctioned escape hatch: features implement custom actions, and because they have \"feature-specific event handlers scoped to the feature, they can contain as much feature-specific business logic as they wish.\"\n\n## The rendering pipeline\n\n1. GP parses the GPResponse and builds sections.\n2. Section components transform section data models into native UI, selected via SectionComponentType.\n3. Layout renderers inflate the ILayout, locating corresponding section components.\n4. The built UI is inserted into declared placements.\n5. Action handlers route user interactions to feature-specific logic.\n\n## The constraint that carries forward\n\nThe set of section components installed in the client binary is the complete universe of what the server can ask for. Any genuinely new visual treatment still requires a client release.\n\nThis \"the server can only reference components the client already has\" property is exactly the constraint A2UI and MCP Apps re-derive for AI-generated UI — where the motivation shifts from release-cycle economics to safety.",
+  "chunks": [],
+  "metadata": {
+    "category": "patterns",
+    "tags": [
+      "server-driven-ui",
+      "sdui",
+      "json-render",
+      "design-systems",
+      "architecture",
+      "airbnb"
+    ],
+    "confidence": "high",
+    "system": "Airbnb",
+    "source_url": "https://medium.com/airbnb-engineering/a-deep-dive-into-airbnbs-server-driven-ui-system-842244c5f5",
+    "authority": "primary",
+    "research_batch": "agent-ui-2026-08",
+    "last_updated": "2026-08-07T13:06:30.352Z"
+  }
+}

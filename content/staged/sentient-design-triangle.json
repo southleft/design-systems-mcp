@@ -1,0 +1,29 @@
+{
+  "id": "a2ui-batch-sentient-design-triangle",
+  "title": "The Sentient Design Triangle: Grounded, Interoperable, Radically Adaptive",
+  "source": {
+    "type": "url",
+    "location": "https://bigmedium.com/ideas/shape-of-sentient-design.html",
+    "ingested_at": "2026-08-07T13:06:30.352Z"
+  },
+  "content": "# The Shape of Sentient Design\n\nJosh Clark, Big Medium, July 28, 2024. Adapts Matt Webb's ternary framework (\"Mapping the landscape of gen-AI product user experience\", interconnected.org, July 19 2024) with relabelled axes.\n\n## The three axes\n\nThe triangle plots AI-mediated experiences by how much each blends three characteristics:\n\nGrounded — \"It has the info it needs to deliver reliable results.\" (Webb's original label: \"RAG or large context.\")\n\nInteroperable — \"It can share data and instructions with other systems.\" (Webb's original: \"structured generation.\")\n\nRadically adaptive — \"It morphs in real time to user needs and context.\" (Webb's original: \"real-time.\")\n\nClark relabelled deliberately: the new labels describe \"how Sentient Design experiences manifest rather than how the underlying tech is implemented.\"\n\n## The four archetypes\n\nPer Matt Webb's original formulation:\n\nTools — \"Users control AI to generate something.\"\nCopilots — \"The AI works alongside the user in an app in multiple ways.\"\nAgents — \"The AI has some autonomy over how it approaches a task.\"\nChat — \"The user talks to the AI as a peer in real time.\"\n\n## The three edges\n\nEach side of the triangle names a quality emerging from the pair of attributes it spans:\n\nCollaborative = Radically adaptive + Interoperable\nAutonomous = Interoperable + Grounded\nIterative = Radically adaptive + Grounded\n\nImportant caveat from the author: \"these edge labels are not meant to suggest opposition to the point across the way. 'Collaborative' is not the opposite of 'grounded,' and 'autonomous' is not the opposite of 'radically adaptive.'\"\n\n## The ternary limitation\n\n\"In so-called ternary diagrams like this one, increasing the level of any two dimensions (grounded and interoperable, for example) necessarily reduces the third (radically adaptive). Mapping 3D attributes in a 2D chart means we lose some depth. That means this map can't plot an AI experience with all three attributes maxed out.\"\n\nThe diagram is therefore \"more of a compass than a map.\" Webb: \"it's not a tool that gives me answers, it's not that kind of map. But it helps me communicate, and it's a decent lens, and it's a helpful framework in a workshop context.\"\n\n## Scope\n\n\"This is a map of features more than products. While some products might be single-feature, many more will include several at once.\"\n\n## NPC pattern\n\nNPC means \"non-player character,\" borrowed from gaming: \"an automated character with pre-determined behaviors. In more general Sentient Design experiences, NPCs might appear as Slack bots, Figma users, or Miro sidekicks; they have a user account and some agency, but the system runs them.\"",
+  "chunks": [],
+  "metadata": {
+    "category": "patterns",
+    "tags": [
+      "sentient-design",
+      "ai",
+      "framework",
+      "ternary-diagram",
+      "agents",
+      "copilots",
+      "adaptive-ui"
+    ],
+    "confidence": "high",
+    "system": "Sentient Design",
+    "source_url": "https://bigmedium.com/ideas/shape-of-sentient-design.html",
+    "authority": "primary",
+    "research_batch": "agent-ui-2026-08",
+    "last_updated": "2026-08-07T13:06:30.352Z"
+  }
+}

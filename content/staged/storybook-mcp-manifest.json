@@ -1,0 +1,29 @@
+{
+  "id": "aids-batch-storybook-mcp-manifest",
+  "title": "Storybook MCP Reads Your Manifest, Not Your Docs Tab",
+  "source": {
+    "type": "url",
+    "location": "https://rachel.fyi/posts/storybook-mcp-reads-your-manifest-not-your-docs-tab",
+    "ingested_at": "2026-08-07T13:06:30.604Z"
+  },
+  "content": "# Storybook MCP Reads Your Manifest, Not Your Docs Tab\n\nRachel Cantor, July 10, 2026. A specific, reproducible failure mode in agent-facing design system tooling.\n\n## The symptom\n\n\"I added Storybook's MCP so my agent would stop rebuilding components I'd already shipped. It rebuilt them anyway.\"\n\n\"I was watching an agent plan out a feature when it proposed building a text input and a select menu from scratch. Both already existed in our design system.\"\n\n## The principle\n\n\"Storybook's MCP serves your agent a manifest built from your stories and components... **documentation an agent can't retrieve might as well not exist.**\"\n\n\"The agent sees the manifest. Not your source, not your Docs tab, not your intentions. The manifest.\"\n\n## Failure one: empty props\n\n\"get-documentation actions-button came back with a complete component and completely empty props. Every prop was there by name. Every description was blank.\"\n\n\"The cause was the docgen extractor. Storybook ships with react-docgen by default, which is fast and does a shallow parse. It couldn't read Button's prop type, an intersection that pulls in ButtonHTMLAttributes plus a [data-${string}] index signature. Faced with a type it couldn't statically resolve, it returned nothing rather than guessing.\"\n\nFix in .storybook/main.ts:\n\n    typescript: {\n      reactDocgen: \"react-docgen-typescript\",\n      reactDocgenTypescriptOptions: {\n        propFilter: prop =>\n          prop.declarations?.some(d => !d.fileName.includes(\"node_modules\")) ?? true,\n      },\n    }\n\n\"react-docgen-typescript runs the TypeScript compiler instead of a shallow parse... The propFilter matters because once you turn the compiler loose, it will happily document all of the HTML attributes Button inherits.\"\n\nCaveat: \"if your components live in a different workspace package than Storybook: the compiler builds its program from the Storybook project's directory, so inherited types from sibling packages won't resolve until you add their source to the include option.\"\n\n## Failure two: the guidance the manifest never carries\n\n\"The props fix solved a question the agent rarely gets wrong: how do I use this component once I've chosen it. It did nothing for the question the agent actually got wrong: **which component do I choose.**\"\n\n\"I had written real guidance for that. Each component's story carried a short note on when to reach for it and when to reach for something else. Select pointed to Segmented for a short exclusive set, to Toggle for a boolean, to TextInput for free text... This is the single most useful thing I can hand an agent that is about to pick a component. It is the difference between a lookup and a guess. **None of it was in the manifest.**\"\n\n\"That guidance lived in each story's parameters.docs.description.component, the prose that renders at the top of the Docs tab. It looks great to a human reading Storybook in a browser. The manifest doesn't carry it. I confirmed this by opening the manifest directly, which you can do at http://localhost:6006/manifests/components.json while Storybook runs. Every component's description field came back as an empty string.\"\n\n\"The fix was not clever. I moved that guidance somewhere the agent reads on every session: our CLAUDE.md.\"\n\n## Failure three: silent staleness\n\n\"The manifest mirrors a running dev server. The first time I listed components, it returned a subset and silently left out several form primitives... A Storybook restart refreshed the index and they appeared. The docgen results can cache the same way. When a result looks wrong, cross-check it against your source or git before you act on it. **The manifest is a live mirror, not a fixed artifact, and a stale mirror fails quietly.**\"\n\n## What worked\n\n\"A standing instruction in CLAUDE.md, never invent props, look them up, plus the MCP itself, made the agent's default behavior resistant to hallucination. It checked before it wrote. The floor was higher than it would have been with no tooling at all. But the floor is not the ceiling.\"\n\n## The lesson\n\n\"An agent only ever sees what your pipeline chooses to surface, and when the pipeline drops something, it drops it silently. Making a codebase legible to an agent is not only about writing good documentation. **It is about writing it where the machine will actually look.**\"\n\n## Storybook manifest reference\n\nPer storybook.js.org/docs/ai/manifests: \"Manifests are JSON objects that describe the contents of your Storybook in a concise, structured way that is easy for AI agents to understand and use.\"\n\nTwo manifests — components (fields: id, name, path, stories[{id,name,snippet}], import, jsDocTags, description, reactDocgen) and docs/MDX (id, name, path, title, content). All stories carry the manifest tag by default; exclude with !manifest. Debugger at /manifests/components.html.",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "storybook",
+      "mcp",
+      "ai",
+      "agents",
+      "documentation",
+      "design-systems",
+      "docgen"
+    ],
+    "confidence": "high",
+    "system": "Storybook",
+    "source_url": "https://rachel.fyi/posts/storybook-mcp-reads-your-manifest-not-your-docs-tab",
+    "authority": "primary",
+    "research_batch": "ai-design-systems-2026-08",
+    "last_updated": "2026-08-07T13:06:30.604Z"
+  }
+}

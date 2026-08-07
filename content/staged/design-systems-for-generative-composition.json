@@ -1,0 +1,28 @@
+{
+  "id": "a2ui-batch-design-systems-for-generative-composition",
+  "title": "Elastic Primitives and Text-to-Hydration: Design Systems for Generative Composition",
+  "source": {
+    "type": "url",
+    "location": "https://www.builder.io/blog/designing-generative-ui-in-an-agent-native-world",
+    "ingested_at": "2026-08-07T13:06:30.353Z"
+  },
+  "content": "# Designing Generative UI in an Agent-Native World\n\nBuilder.io. Vendor blog with commercial interest, but the clearest articulation of what generative UI does to design system documentation practice.\n\n## Text-to-hydration\n\nThe central claim: the dominant generative-UI pattern is not generating UI from scratch but **\"text-to-hydration\"** — AI arranging and filling pre-built components with data. This reframes the design system's job from supplying screens to supplying a composable kit.\n\n## Elastic primitives\n\nThe unit of that kit: \"a modular set of components designed for dynamic composition rather than for placement into predetermined page templates.\" The shift is from page-based design to primitive-based design, where no one authors the arrangement in advance.\n\n## AI as a chaotic user of your design system\n\nThe quotable line: **\"AI really is a chaotic user of your design system.\"**\n\nUnlike human developers, who possess intuitive design sense and unspoken shorthand about what looks acceptable, AI lacks the tacit understanding required to avoid overcrowding layouts or violating visual hierarchy:\n\n\"If you don't give it hyper-explicit rules, it will gladly grab your gorgeous, pixel-perfect primitives and stitch them together into a cluttered, unusable mess\"\n\nThis is the practical rebuttal to the assumption that a good component library is sufficient protection. A component library constrains *what* can appear; it does not constrain *how many*, *in what order*, *at what density*, or *under what conditions*. Those constraints historically lived in designers' heads and in review, and a generative pipeline has neither.\n\n## Machine-legible documentation requirements\n\nDesign systems must transition from \"casual, fluffy prose meant for people\" to **\"highly structured, machine-legible metadata.\"** Three concrete obligations:\n\n1. Defining exact compression thresholds — the point at which a container must collapse rather than continue shrinking.\n2. Specifying conditions for component visibility — for example, an analytics chart appearing only under specific data scenarios rather than whenever the model feels it would be nice.\n3. Encoding design philosophy as programmatic guardrails inside component APIs, rather than as guidance in a docs site the model never reads.\n\nThe third is the structural point: guidance that lives only in prose documentation is guidance a generative system will violate. If a rule matters, it must be expressible as a prop constraint, a type, a validation, or a refusal — something the component enforces at composition time.\n\nThis converges with the catalog-based approach in A2UI and the visibility metadata in MCP Apps: in all three, the design system's authority is exercised through what the schema permits rather than through what the documentation advises.\n\n## Global cascading effects\n\nBecause elastic primitives are composed at runtime rather than assembled into fixed screens, changes to a primitive propagate system-wide instantly, affecting how the AI composes across the entire application ecosystem simultaneously.\n\nThis is a fundamental shift from isolated screen templates, where a component change had a bounded, enumerable blast radius reviewable screen by screen. Under generative composition there is no finite set of screens to review — the surface area of a change is every arrangement the model might produce.\n\nThe governance implication: visual regression testing against a fixed screen inventory stops being a meaningful safety net.",
+  "chunks": [],
+  "metadata": {
+    "category": "guidelines",
+    "tags": [
+      "generative-ui",
+      "design-systems",
+      "documentation",
+      "machine-readable",
+      "governance",
+      "ai"
+    ],
+    "confidence": "high",
+    "system": "",
+    "source_url": "https://www.builder.io/blog/designing-generative-ui-in-an-agent-native-world",
+    "authority": "community",
+    "research_batch": "agent-ui-2026-08",
+    "last_updated": "2026-08-07T13:06:30.353Z"
+  }
+}

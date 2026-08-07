@@ -64,7 +64,10 @@ const CASES: Case[] = [
   { q: 'JSON render server driven UI', tier: 'frontier-gap', expect: /json|render|server.driven/i },
   { q: 'radically adaptive UI', tier: 'frontier-gap', expect: /adaptive/i },
   { q: 'AI and design systems', tier: 'frontier-gap', expect: /\bai\b|artificial intelligence|agent/i },
-  { q: 'code-led versus design-led design systems', tier: 'frontier-gap', expect: /code.led|design.led|code.first/i },
+  // "Code-led" and "design-led" turned out not to be practitioner terminology
+  // (research, Aug 2026). The articulated debate is called "single source of
+  // truth", so that is what a correct answer surfaces.
+  { q: 'code-led versus design-led design systems', tier: 'frontier-gap', expect: /source of truth|code.led|design.led|governance|contract/i },
 ];
 
 const session = { id: null as string | null };
