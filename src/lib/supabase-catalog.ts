@@ -170,6 +170,19 @@ export async function searchSupabaseText(
   }
   if (candidates.length === 0) return [];
 
+  // Relevance floor.
+  //
+  // The OR pass matches any single content word, and in a design-systems
+  // corpus "design" alone matches nearly everything. Asked about a subject the
+  // knowledge base has never heard of, the server would still return three
+  // confident, wholly unrelated entries — worse than an empty answer, because
+  // a model will synthesize from them and attribute the result here. When the
+  // exact phrase found nothing and no candidate covers the meaningful part of
+  // the query, report nothing rather than something adjacent.
+  if (precise.length === 0 && !(await meetsRelevanceFloor(supabase, candidates, terms))) {
+    return [];
+  }
+
   let pool = candidates;
   if (options.tags && options.tags.length > 0) {
     const wanted = options.tags.map((tag) => tag.toLowerCase());
@@ -317,6 +330,72 @@ async function matchChunks(
 
   if (error) throw new Error(`Supabase chunk search failed: ${error.message}`);
   return data ?? [];
+}
+
+const CORPUS_SIZE_FALLBACK = 200;
+const docFrequencyCache = new Map<string, { count: number; expiresAt: number }>();
+
+/**
+ * How many entries contain a term, cached per isolate. Used to tell an
+ * informative query word from a ubiquitous one.
+ */
+async function documentFrequency(supabase: SupabaseClient, term: string): Promise<number> {
+  const cached = docFrequencyCache.get(term);
+  if (cached && cached.expiresAt > Date.now()) return cached.count;
+
+  const { count, error } = await supabase
+    .from('content_entries')
+    .select('id', { count: 'exact', head: true })
+    .textSearch('search_text', term)
+    .abortSignal(AbortSignal.timeout(SUPABASE_TIMEOUT_MS));
+
+  // On error, treat the term as common so it can never veto a result.
+  const frequency = error ? CORPUS_SIZE_FALLBACK : (count ?? 0);
+  docFrequencyCache.set(term, { count: frequency, expiresAt: Date.now() + CATALOG_CACHE_TTL_MS });
+  return frequency;
+}
+
+/**
+ * Is the best candidate actually about the query, or does it merely share the
+ * query's most common words?
+ *
+ * A flat term count cannot tell these apart: in a design-systems corpus
+ * "design" and "system" match nearly every entry, so "radically adaptive UI"
+ * scores respectably against documents with nothing to say about adaptive UI.
+ * Terms are weighted by inverse document frequency instead — ubiquitous words
+ * contribute almost nothing, and a candidate has to match the parts of the
+ * query that carry the meaning.
+ */
+async function meetsRelevanceFloor(
+  supabase: SupabaseClient,
+  candidates: ContentEntry[],
+  terms: string[]
+): Promise<boolean> {
+  if (terms.length === 0 || candidates.length === 0) return true;
+
+  const weights = await Promise.all(
+    terms.map(async (term) => {
+      const frequency = await documentFrequency(supabase, term);
+      // +1 keeps an unseen term finite; a term in every entry lands near zero.
+      return Math.log(CORPUS_SIZE_FALLBACK / (1 + frequency));
+    })
+  );
+
+  const totalWeight = weights.reduce((sum, weight) => sum + Math.max(0, weight), 0);
+  if (totalWeight <= 0) return true;
+
+  // Best coverage achieved by any candidate, measured over title and tags.
+  let best = 0;
+  for (const entry of candidates) {
+    const haystack = `${entry.title} ${entry.metadata.tags.join(' ')}`.toLowerCase();
+    let matched = 0;
+    terms.forEach((term, index) => {
+      if (matchesTerm(haystack, term)) matched += Math.max(0, weights[index]);
+    });
+    if (matched > best) best = matched;
+  }
+
+  return best / totalWeight >= 0.25;
 }
 
 /** One rank-only match pass: cheap columns, no `content`. */
