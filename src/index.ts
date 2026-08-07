@@ -1,9 +1,11 @@
 import {
   loadEntries,
-  getEntriesByCategory,
-  getAllTags,
   SAMPLE_ENTRIES
 } from "./lib/content-manager.js";
+import {
+  resolveEntriesByCategory,
+  resolveAllTags
+} from "./lib/supabase-catalog.js";
 import {
   searchWithSupabase as searchEntries,
   resultsContainAPGContent,
@@ -287,7 +289,7 @@ const MCP_TOOLS = [
           },
           category: {
             type: "string",
-            enum: ["components", "tokens", "patterns", "workflows", "guidelines", "general"],
+            enum: ["accessibility", "components", "general", "guidelines", "patterns", "quality", "tokens", "tools", "variables"],
             description: "Filter by category (optional)"
           },
           limit: {
@@ -330,7 +332,7 @@ const MCP_TOOLS = [
         properties: {
           category: {
             type: "string",
-            enum: ["components", "tokens", "patterns", "workflows", "guidelines", "general"],
+            enum: ["accessibility", "components", "general", "guidelines", "patterns", "quality", "tokens", "tools", "variables"],
             description: "Category to browse"
           }
         },
@@ -427,7 +429,7 @@ ${formattedResults}${accessibilityDisclaimer}`;
     }
 
     case "browse_by_category": {
-      const categoryEntries = getEntriesByCategory(args.category as Category);
+      const categoryEntries = await resolveEntriesByCategory(env, args.category as Category);
 
       if (categoryEntries.length === 0) {
         return `No entries found in category: ${args.category}`;
@@ -445,7 +447,7 @@ ${formattedEntries}`;
     }
 
     case "get_all_tags": {
-      const tags = getAllTags();
+      const tags = await resolveAllTags(env);
       return `AVAILABLE TAGS (${tags.length}): ${tags.join(", ")}`;
     }
 

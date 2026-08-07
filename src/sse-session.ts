@@ -16,9 +16,9 @@ import {
   searchWithSupabase as searchEntries
 } from "./lib/search-handler.js";
 import {
-  getEntriesByCategory,
-  getAllTags
-} from "./lib/content-manager.js";
+  resolveEntriesByCategory,
+  resolveAllTags
+} from "./lib/supabase-catalog.js";
 import { formatSourceReference } from "./lib/source-formatter.js";
 import type { Category } from "../types/content";
 import { validateBearerToken } from "./oauth-handler.js";
@@ -337,7 +337,7 @@ export class SSESessionV2 {
                       category: {
                         type: 'string',
                         description: 'Filter by category',
-                        enum: ['components', 'tokens', 'patterns', 'workflows', 'guidelines', 'general']
+                        enum: ['accessibility', 'components', 'general', 'guidelines', 'patterns', 'quality', 'tokens', 'tools', 'variables']
                       },
                       tags: {
                         type: 'array',
@@ -381,7 +381,7 @@ export class SSESessionV2 {
                       category: {
                         type: 'string',
                         description: 'Category to browse',
-                        enum: ['components', 'tokens', 'patterns', 'workflows', 'guidelines', 'general']
+                        enum: ['accessibility', 'components', 'general', 'guidelines', 'patterns', 'quality', 'tokens', 'tools', 'variables']
                       }
                     },
                     required: ['category']
@@ -544,7 +544,7 @@ ${formattedChunks}`
         }
 
         case 'browse_by_category': {
-          const categoryEntries = getEntriesByCategory(args.category as Category);
+          const categoryEntries = await resolveEntriesByCategory(this.env, args.category as Category);
 
           if (categoryEntries.length === 0) {
             result = {
@@ -573,7 +573,7 @@ ${formattedEntries}`
         }
 
         case 'get_all_tags': {
-          const tags = getAllTags();
+          const tags = await resolveAllTags(this.env);
           result = {
             content: [{
               type: 'text',

@@ -18,10 +18,12 @@ import {
 } from "./lib/search-handler.js";
 import {
   loadEntries,
-  getEntriesByCategory,
-  getAllTags,
   SAMPLE_ENTRIES,
 } from "./lib/content-manager.js";
+import {
+  resolveEntriesByCategory,
+  resolveAllTags,
+} from "./lib/supabase-catalog.js";
 
 // Type definitions
 interface Env {
@@ -176,7 +178,7 @@ export async function handleStreamableHttp(
                   category: {
                     type: "string",
                     description: "Filter by category",
-                    enum: ["figma", "tokens", "components", "documentation", "workflow", "governance", "accessibility", "tools", "case-studies", "foundations"]
+                    enum: ["accessibility", "components", "general", "guidelines", "patterns", "quality", "tokens", "tools", "variables"]
                   },
                   tags: {
                     type: "array",
@@ -220,7 +222,7 @@ export async function handleStreamableHttp(
                   category: {
                     type: "string",
                     description: "Category to browse",
-                    enum: ["figma", "tokens", "components", "documentation", "workflow", "governance", "accessibility", "tools", "case-studies", "foundations"]
+                    enum: ["accessibility", "components", "general", "guidelines", "patterns", "quality", "tokens", "tools", "variables"]
                   }
                 },
                 required: ["category"]
@@ -312,7 +314,7 @@ export async function handleStreamableHttp(
             }
             else if (toolName === "browse_by_category") {
               await ensureContentLoaded();
-              const entries = getEntriesByCategory(args.category as any);
+              const entries = await resolveEntriesByCategory(env, args.category);
 
               if (entries.length === 0) {
                 toolResult = {
@@ -336,8 +338,8 @@ export async function handleStreamableHttp(
             }
             else if (toolName === "get_all_tags") {
               await ensureContentLoaded();
-              const tags = getAllTags();
-              const sortedTags = tags.sort();
+              const tags = await resolveAllTags(env);
+              const sortedTags = [...tags].sort();
 
               toolResult = {
                 content: [{
