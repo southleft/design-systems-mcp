@@ -1,0 +1,29 @@
+{
+  "id": "aitools-batch-v0-shadcn-registry-legacy",
+  "title": "v0 Registry-Based Design Systems: shadcn Registry as AI Context Transport",
+  "source": {
+    "type": "url",
+    "location": "https://v0.app/docs/design-systems-legacy",
+    "ingested_at": "2026-08-07T14:08:49.597Z"
+  },
+  "content": "# v0 Registry-Based Design Systems (legacy)\n\nFlagged as superseded by Design Systems 2.0, but still the best documentation of the registry mechanism — which remains how shadcn-based systems are distributed to *other* agents.\n\n## What a registry is\n\nA registry functions as \"a distribution specification designed to pass context from your design system to AI Models,\" allowing v0 to generate prototypes matching your design system without manual overrides.\n\nThe framing matters: the registry is not a package manager, it is a **context transport aimed at models**.\n\n## shadcn framing\n\n\"shadcn/ui is not a component library but rather a toolkit for building one.\" It provides direct source-code access, which is what makes it tractable for AI-generated customization — the model edits source rather than fighting a compiled component's API.\n\n## Customization\n\n**Colors** — modify src/app/tokens.css following \"the shadcn/ui CSS variables standard.\"\n\n**Fonts** — update src/app/layout.tsx using next/font/google or @font-face. Standard variables are --font-sans, --font-mono, --font-serif.\n\n**Custom components** — add entries to registry.json following the registry-item specification. Entries specify registryDependencies for component references, and a files property with local paths and target deployment locations. The registry must include baseUrl and full route URLs pointing to your deployed instance.\n\n## The load-bearing limitation\n\nStated by Vercel itself: **\"v0 is specifically trained on the default implementations of the shadcn/ui components and may struggle with any customizations.\"**\n\nThis is the single most important caveat in the v0 design-system story. The closer your system is to stock shadcn, the better v0 performs; heavily customized systems degrade generation quality. It is a trained-prior problem, not a config problem, so no amount of registry metadata fully fixes it.\n\n## Tailwind support\n\n\"v0 supports tailwind configs and globals.css files, you can use custom utility classes and CSS variables in your generations.\"\n\n## MCP integration\n\nThe same registry serves v0 and third-party agents — the portability argument for the registry format over proprietary skill formats:\n\n    {\n      \"mcpServers\": {\n        \"shadcn\": {\n          \"command\": \"npx\",\n          \"args\": [\"-y\", \"shadcn@canary\", \"registry:mcp\"],\n          \"env\": {\n            \"REGISTRY_URL\": \"https://registry-starter.vercel.app/r/registry.json\"\n          }\n        }\n      }\n    }\n\nThis provides \"centralized, AI-native context on your design system and components.\"\n\n## Figma integration (Jan 2025 guidance)\n\nv0 extracts context from Figma files to inform generation. The documented recommendation is to break designs into smaller components in separate frames — navigation bars, sidebars, forms, individual landing page sections — and iterate component-by-component before combining into pages.\n\nNote what this implies: Figma import in v0 is a **visual** context channel, not a structured token or component-instance channel. There is no documented mapping from Figma component instances to code components; that is Code Connect's job, and Code Connect is a Figma product, not a v0 one.",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "v0",
+      "shadcn",
+      "registry",
+      "design-tokens",
+      "mcp",
+      "ai-tools",
+      "design-systems"
+    ],
+    "confidence": "high",
+    "system": "v0",
+    "source_url": "https://v0.app/docs/design-systems-legacy",
+    "authority": "primary",
+    "research_batch": "ai-generators-2026-08",
+    "last_updated": "2026-08-07T14:08:49.597Z"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "aitools-batch-replit-skills-scoping",
+  "title": "Replit Agent Skills: SKILL.md Structure and Scoping Discipline",
+  "source": {
+    "type": "url",
+    "location": "https://replit.com/blog/custom-skills",
+    "ingested_at": "2026-08-07T14:08:49.597Z"
+  },
+  "content": "# Customize Replit Agent with Skills and Custom Instructions\n\nPublished June 2026.\n\n## Custom Instructions\n\nAlways-on guidelines automatically injected into the agent's context across all projects. Workspace Settings → Customization. Available to **Pro and Enterprise** users — broader than the Enterprise-only design systems feature, so Pro users can approximate design system constraint through instructions alone.\n\n## Skills\n\nActivate conditionally when relevant tasks arise: \"a skill only kicks in when a relevant task comes up.\"\n\nEach skill is a folder containing SKILL.md plus supporting files. The main file has three components:\n\n1. **Name** — short, lowercase identifier (e.g. api-design)\n2. **Description** — determines when the agent uses the skill; **should specify when *not* to use it**\n3. **Instructions** — rules, patterns, and things to avoid, in any format\n\nThe guidance that a description should state when *not* to fire is directly relevant to design systems: a design-system skill with an overbroad description will load on backend tasks, waste context, or crowd out a more specific skill.\n\n## How skills load\n\n- Automatically based on prompt relevance\n- Manually via /skill-name syntax\n- Selected from the \"+\" menu button\n\nManual /skill-name invocation matters for reliability — practitioners who find the skill isn't auto-firing can force it.\n\n## The scoping principle, verbatim\n\n**\"Small, well-scoped skills combine cleanly. A skill that tries to cover everything tends to crowd out the skills that should have fired instead.\"**\n\nThis argues against one monolithic design-system skill and for splitting by concern — tokens, layout patterns, component APIs, accessibility — consistent with the references/guides/ and references/components/ subdivision in Replit's design system docs.\n\n## Design system skill example\n\nA design-system skill fires when someone builds UI, ensuring consistency across projects. The stated benefit: \"the agent builds UI that fits your product, not a slightly different interpretation every time\" — a concise statement of the drift problem every AI generator is attacking.",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "replit",
+      "skills",
+      "agents",
+      "ai-tools",
+      "context",
+      "design-systems"
+    ],
+    "confidence": "high",
+    "system": "Replit",
+    "source_url": "https://replit.com/blog/custom-skills",
+    "authority": "primary",
+    "research_batch": "ai-generators-2026-08",
+    "last_updated": "2026-08-07T14:08:49.597Z"
+  }
+}

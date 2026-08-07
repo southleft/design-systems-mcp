@@ -1,0 +1,29 @@
+{
+  "id": "aitools-batch-replit-design-systems",
+  "title": "Replit Design Systems: Custom Instructions, Skills, and Pinned Template Distribution",
+  "source": {
+    "type": "url",
+    "location": "https://docs.replit.com/teams/custom-design-system",
+    "ingested_at": "2026-08-07T14:08:49.597Z"
+  },
+  "content": "# Setting Up a Design System in Replit\n\nAn **Enterprise-only** feature configuring Agent with component libraries, brand assets, design tokens, and visual standards. \"A design system gives Agent the knowledge it needs to build on-brand UI across everything your organization creates on Replit.\"\n\n## Three configuration parts\n\n**1. Custom Instructions** — custom_instruction/instructions.md holds high-level rules Agent always references, specifying which component library and design tokens to use. Always-on context.\n\n**2. Skills** — in .agents/skills/, these provide detailed reference material Agent loads **on demand**: \"component API documentation, theming guides, layout pattern libraries, and other deep reference content.\"\n\nThe always-on / on-demand split is Replit's answer to the context-overload problem: keep the instruction file thin, put the bulk behind progressive disclosure.\n\n**3. Brand Assets** — logos, icons, fonts in a dedicated folder (e.g. src/assets/brand/) with Vite path aliases for clean imports like @brand/logo.svg.\n\n## Skill file structure\n\n    .agents/skills/your-design-system/\n    ├── SKILL.md\n    ├── references/\n    │   ├── guides/\n    │   └── components/\n    └── packages/\n\nSKILL.md acts as an **index** with sections for \"General Guidance\" and \"Components,\" linking to individual markdown files documenting each component's props, variants, and usage examples. Note packages/ sits inside the skill directory — the tarball ships alongside its documentation as one unit.\n\n## Ingestion\n\nCreate a Replit app and upload component library **tarfiles**; ask Agent to install packages and display all components; review for accuracy. The tarfile upload is the ingestion mechanism — not a registry connection, not a git source.\n\n## Distribution\n\nTo distribute organization-wide, org admins **pin the design system app** via the three-dot menu, setting member access to **Read-only**.\n\nDistribution is therefore by template app, not by dependency — every new project starts from a pinned app that already has the package installed and the skill present. This carries the same consequence as Lovable's file-copy model: existing projects do not get updates automatically.\n\n## Validation checklist\n\n- custom_instruction/instructions.md points to the skill\n- Design tokens file is included\n- Package is pre-installed in package.json\n\n## Key limitation\n\nDesign systems apply only to \"web apps, mobile apps, slides, and other artifacts\" within the standard **pnpm monorepo structure** — unlike custom templates, which replace the entire stack. If your design system requires a different build setup, the design system feature will not carry it; you would need a custom template instead.\n\n## Maintenance and drift risk\n\nToken files should be updated when the design system ships new colors, spacing, or typography. Skills should be updated when components get new props, variants, or usage patterns. Two separate update surfaces to keep in sync — a built-in drift risk.\n\n## Themes (all users)\n\nBelow the Enterprise tier, Replit offers themes: \"Create and apply themes to your Agent applications. Update once, and watch every component transform instantly.\" Themes manage colors, fonts, and UI properties — token-level theming without component-library replacement. Replit incorporates the open-source TweakCN for customizing shadcn themes, so Replit themes are effectively shadcn CSS-variable theming with a GUI.",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "replit",
+      "ai-generation",
+      "design-systems",
+      "skills",
+      "agents",
+      "ai-tools",
+      "design-tokens"
+    ],
+    "confidence": "high",
+    "system": "Replit",
+    "source_url": "https://docs.replit.com/teams/custom-design-system",
+    "authority": "primary",
+    "research_batch": "ai-generators-2026-08",
+    "last_updated": "2026-08-07T14:08:49.597Z"
+  }
+}
