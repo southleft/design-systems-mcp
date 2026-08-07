@@ -1,0 +1,28 @@
+{
+  "id": "sot-batch-ds-contracts-spec",
+  "title": "DS Contracts Spec: One Arbiter Between Surfaces, With Published Limits",
+  "source": {
+    "type": "url",
+    "location": "https://ds-contracts-spec.pages.dev/",
+    "ingested_at": "2026-08-07T14:12:44.882Z"
+  },
+  "content": "# Design System Contracts — Open Specification\n\nThe most rigorous articulation of the \"neither Figma nor code\" position, and unusual in the genre for publishing adverse numbers about itself.\n\n## Central claim\n\n**\"A design system's truth should live in a machine-readable contract that sits between the surfaces and generates both.\"**\n\n## The diagnosis\n\nTwo organizational starting points converge on an identical failure:\n\n1. Code-side origin: \"the system is an npm package, and the design files are an aging picture of it.\"\n2. Design-side origin: \"the system is a canvas library, and the code is an approximation of the pictures.\"\n\nThe conclusion drawn is that **the choice itself is the bug**: whichever surface is declared canonical, the other necessarily becomes a hand-maintained copy — and \"copies drift. Drift erodes trust.\"\n\n## The governance rule\n\n**\"Surfaces never sync side-to-side.\"**\n\nChanges originating in either surface flow *through* the contract, appear as reviewable diffs, and are regenerated outward. \"One arbiter, version-controlled.\" The explicit purpose is to eliminate bidirectional sync conflicts, the standard failure of every design-tool-to-code sync product.\n\n## Four foundational positions\n\n- **Bidirectional** — generation flows both ways; \"round-trips are proven, not promised.\"\n- **Deterministic** — \"Every artifact is computed from file data and byte-pinned; **no LLM guesses in the pipeline**.\" A deliberate rejection of LLM-in-the-loop translation.\n- **Receipted** — gaps are \"named on screen\" rather than \"papered over with a plausible value.\" The anti-hallucination stance as a product principle: when the contract cannot determine something, surface the gap, do not emit a confident guess.\n- **Open** — \"the schema, the engine, and every instrument that verifies them are in one repository under one permissive license, with no gated tier.\"\n\n## Structure\n\n\"One small, versioned JSON document per component,\" containing: props and their legal values (with enum constraints); anatomy, meaning structure plus token bindings; accessibility semantics; declared events; and bindings to **both** surfaces — Figma VARIANT properties on one side, code prop mappings on the other.\n\nThe worked example is a banner whose `status` prop carries the enum `info | success | warning | error`, with that single enum binding simultaneously to a Figma variant property and a code prop. This makes the \"generates both\" claim concrete rather than rhetorical.\n\n## The measurements — including the adverse one\n\n- 89.6% mean computed-style equality across 54 third-party components, over 379,861 tested cells\n- 92.70% conversion accuracy from Figma to code across 537 variants\n- **Stated limitation: those 54 components represent only 6.0% of the 893 components examined — characterized as \"the tractable ones.\"**\n\nThat admission is the honest counterweight to the spec's own thesis: the contract approach is demonstrated on the tractable 6%, and the hard 94% remains open.\n\n## Operational adoption\n\n51 component contracts in active use; 282 DTCG design tokens shared across surfaces; 188/188 deterministic evaluations passing; 1,618/1,618 enterprise kit sets imported cleanly. The token layer is DTCG-aligned, not proprietary.",
+  "chunks": [],
+  "metadata": {
+    "category": "guidelines",
+    "tags": [
+      "component-contracts",
+      "source-of-truth",
+      "design-systems",
+      "specification",
+      "dtcg",
+      "determinism"
+    ],
+    "confidence": "high",
+    "system": "",
+    "source_url": "https://ds-contracts-spec.pages.dev/",
+    "authority": "primary",
+    "research_batch": "source-of-truth-2026-08",
+    "last_updated": "2026-08-07T14:12:44.882Z"
+  }
+}

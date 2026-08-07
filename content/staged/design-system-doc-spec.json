@@ -1,0 +1,29 @@
+{
+  "id": "sot-batch-design-system-doc-spec",
+  "title": "Design System Doc Spec: Machine-Readable Documentation With an agents Section",
+  "source": {
+    "type": "url",
+    "location": "https://designsystemdocspec.org/",
+    "ingested_at": "2026-08-07T14:12:44.882Z"
+  },
+  "content": "# Design System Doc Spec (v0.15.2)\n\nMaintained by PJ Onori. Draft dated 16 July 2026. The direct structural counter-argument to the Markdown-file approach (DESIGN.md, AGENTS.md, and the general proliferation of agent files).\n\n## Governing principle\n\n**\"Documentation shouldn't have to pick a side. Humans, parsers, and agents all need the same docs.\"**\n\nThe objective: \"one source of truth that feeds your docs, trains your agents, and reaches every touchpoint.\" Note the verb — *trains* your agents, not merely informs them. Documentation is treated as agent training surface, not reference material.\n\n## The durability criterion\n\n**\"A design system's source of truth should survive any rebuild, reorg, or rethink.\"**\n\nThis is a distinct argument from the Figma-vs-code debate: the source of truth should not be *any tool*, because tools are exactly the things that do not survive reorgs.\n\n## Structure\n\n**Entities** map to the recognizable furniture of a design system: components, design tokens, themes, foundations, patterns, and guides.\n\n**Document blocks** are modular content chunks, \"mostly interoperable\" across entity types — so components and tokens share an identical guidance schema rather than each inventing their own. 17 block kinds: guidelines, use-cases, api, states, motion, accessibility, anatomy, checklist, content, design-specifications, interactions, principles, scale, sections, steps, variants.\n\nMetadata fields: aliases, category, governance, last-updated, links, preview, status, summary, tags, thumbnail.\n\n## The agents section — no equivalent in conventional documentation tooling\n\nReserves structured space specifically for machine consumers, with five fields:\n\n- **intent** — the component's core purpose, stated for an agent rather than a designer browsing a site\n- **constraints** — \"must\" and \"must-not\" rules governing appropriate usage\n- **disambiguation** — explicitly distinguishing components an agent will otherwise confuse; canonical example: button vs link\n- **anti-patterns** — named misuse scenarios to warn against\n- **keywords** — discoverability support\n\n**disambiguation** and **anti-patterns** are the notable design decisions. Both encode *negative* knowledge — what a component is not, and what you must not do with it — precisely the class of information prose documentation conveys implicitly to humans and not at all to agents.\n\n## The Markdown critique\n\nFrom the companion post: \"Markdown isn't structured enough to describe a design system. Not by a long shot.\" Google's DESIGN.md is named specifically as the target.\n\nThe objection is strategic rather than aesthetic: reliance on unstructured formats creates dependency on a particular workflow — especially AI-agent-centric ones — and that dependency becomes lock-in preventing teams from reassessing tool choices later. This connects directly to the \"survive any rebuild, reorg, or rethink\" criterion.\n\nHis summary of intent: a spec that works \"for people, agents, and old-fashioned scripts.\" The inclusion of \"old-fashioned scripts\" is deliberate — a real single source of truth cannot privilege the current generation of consumers.",
+  "chunks": [],
+  "metadata": {
+    "category": "documentation",
+    "tags": [
+      "documentation",
+      "specification",
+      "machine-readable",
+      "agents",
+      "design-systems",
+      "schema",
+      "pj-onori"
+    ],
+    "confidence": "high",
+    "system": "",
+    "source_url": "https://designsystemdocspec.org/",
+    "authority": "primary",
+    "research_batch": "source-of-truth-2026-08",
+    "last_updated": "2026-08-07T14:12:44.882Z"
+  }
+}

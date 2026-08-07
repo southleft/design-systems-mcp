@@ -1,0 +1,28 @@
+{
+  "id": "sot-batch-code-generated-figma-components",
+  "title": "When Code Becomes the Source of Truth: Generating Figma Components From Code",
+  "source": {
+    "type": "url",
+    "location": "https://medium.com/design-bootcamp/rethinking-design-systems-when-code-becomes-the-source-of-truth-e535646d01fc",
+    "ingested_at": "2026-08-07T14:12:44.882Z"
+  },
+  "content": "# Rethinking Design Systems: When Code Becomes the Source of Truth\n\nJoshua Hall, Bootcamp, 29 October 2025. The code-as-source-of-truth argument made with a working artifact rather than a manifesto — and candid that the full vision remains unproven.\n\n## The inversion\n\nConventional pipeline: Design → Spec → Code → Figma → Drift.\n\nProposed: Conceptual Design → React Implementation → **Generate Figma Components from Code** → Publish to Library.\n\nThe diagnosis names the root cause as maintaining \"two separate sources of truth\" that inevitably diverge. The symptom is labelled the **\"Design-to-Development Gap\"**: components do not match across systems, and synchronization depends on \"hope and diligence\" rather than mechanism.\n\nThe line that captures the inversion: **\"When a designer uses a button component in Figma, they're using the button component in code, just rendered in a design tool.\"**\n\n## Figma's reassigned role\n\n*Visualization layer* rather than specification source. Design tools remain appropriate for conceptual exploration and product design work. What changes is that *published component libraries* are generated programmatically from production code, and carry embedded metadata identifying their code equivalents.\n\n## The proof of concept\n\nGoogle Material Symbols: roughly 4,000 icons at 504 variants each — approaching two million component variants generated programmatically into Figma.\n\nWhat it demonstrates:\n- Programmatic generation works at scale\n- Git-based synchronization against an external repository keeps the library current\n- Metadata tracking via Figma's plugin API stores the Git commit SHA that produced each component, alongside SVG content hashes per variant\n- **Delta updates** — because hashes permit comparison, only changed icons regenerate. Reported effect: **26+ hours reduced to 1–2 hours** per update cycle. The plugin runs weekly in CI and notifies on upstream changes.\n\n## Operational details\n\nThe library is split across 26 Figma files alphabetically, with icon distribution balanced to avoid memory constraints. Failure handling degrades gracefully — if downloads time out or hit rate limits, icons are created with available variants and backfilled later. Deprecated icons receive a `_deprecated_` prefix rather than being deleted, so existing designs continue to resolve references while new usage is discouraged. A \"preferred icons list\" filters 4,000 down to a per-team subset of roughly 100–300.\n\n## Proposed four-tier component hierarchy\n\n1. **Core components** (future code-generated): buttons, fields, dialogs\n2. **Product-specific components** (mixed generation): specialized variations composed from core\n3. **Product designs** (never generated): actual screens assembling components\n4. **Exploration layer** (conceptual): files testing new component ideas\n\nNaming carries metadata to engineers: underscore-prefixed names indicate private components; angle brackets signal React boundaries.\n\n## Stated limitations — the most useful part\n\nThe larger vision, generating core React components into Figma, **remains untested in production**; only the icon system is proven. The approach requires organizational maturity, and early-stage products iterating rapidly may not benefit, since the overhead of the generation pipeline exceeds the cost of drift when the system is still churning.",
+  "chunks": [],
+  "metadata": {
+    "category": "guidelines",
+    "tags": [
+      "source-of-truth",
+      "code-led",
+      "figma",
+      "automation",
+      "design-systems",
+      "material-symbols"
+    ],
+    "confidence": "high",
+    "system": "",
+    "source_url": "https://medium.com/design-bootcamp/rethinking-design-systems-when-code-becomes-the-source-of-truth-e535646d01fc",
+    "authority": "primary",
+    "research_batch": "source-of-truth-2026-08",
+    "last_updated": "2026-08-07T14:12:44.882Z"
+  }
+}

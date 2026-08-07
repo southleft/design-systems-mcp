@@ -1,0 +1,30 @@
+{
+  "id": "sot-batch-machine-readable-design-systems-aix",
+  "title": "Machine-Readable Design Systems and AIX: Designing for AI as a User",
+  "source": {
+    "type": "url",
+    "location": "https://www.designsystemscollective.com/machine-readable-design-systems-designing-for-ai-as-a-user-28077c9f2144",
+    "ingested_at": "2026-08-07T14:12:44.882Z"
+  },
+  "content": "# Machine-Readable Design Systems: Designing for AI as a User\n\nDiana Wolosin, Design Systems Collective, 5 March 2026. Derived from preparing the Indeed Design System for AI integration. The empirical entry in this literature — arguing from measurement rather than position.\n\n## Definition\n\nMachine-readable design systems express design knowledge \"in structured formats that AI systems can interpret directly,\" explicitly including component APIs, usage rules, **and accessibility constraints**.\n\nAccessibility constraints appearing in that list is notable: a11y requirements must be machine-readable, not merely documented, or agents will generate inaccessible output while nominally using the right components.\n\n## AIX — the coinage\n\n**AIX (AI Experience)**, introduced as a deliberate parallel to UX, on the premise that \"the structure of a design system shapes how AI behaves when generating interfaces.\"\n\nThe move is to treat AI as a *user class* with its own experience quality, rather than as a consumer of an API. That reframing carries real consequences: the design system team owes agents the same considerations — discoverability, disambiguation, error prevention — that it owes human consumers.\n\nShe also frames design systems as **\"context engines\"** — infrastructure enabling auditing, validation, and component generation, rather than static documentation.\n\n## The benchmark\n\nAn MCP benchmark testing multiple representations of the *same* design system knowledge — holding content constant and varying only structure. Better-structured formats produced more consistent AI responses, with token processing cost and reasoning variability differing materially across formats.\n\nFigures reported in secondary coverage of her work (worth verifying against primary before asserting): 8 MCP configurations across 1,056 prompts; 77 components parsed from MDX into JSON metadata; ingestion into a Vectra vector database. Markdown queries consumed roughly 30,000 tokens at 82% coverage with visible hallucinations; JSON delivered higher accuracy at roughly 80% fewer tokens and approximately 5× lower annual cost.\n\nHer rule of thumb: **\"JSON for MCP, Markdown for LLM.\"** Structured component data (APIs, props, variants) belongs in JSON; prose guidance can remain Markdown.\n\n## The most valuable finding is the negative one\n\nEven when models selected the **correct** components, secondary failures persisted: **\"typography tokens were misapplied, spacing became inconsistent, color usage slowly diverged from the system.\"**\n\nHer conclusion: metadata alone is insufficient for comprehensive design system compliance.\n\nThis is an important corrective to the prevailing assumption that exposing a well-structured MCP surface solves agent adherence. It does not. **It solves component *selection*, and leaves token-level fidelity as an open problem.**\n\nThat gap is precisely what the DS Contracts determinism requirement and Klinke's naming discipline each attack from different angles.\n\n## Metadata architecture\n\nFrom her companion piece on AI metadata: a metadata ecosystem spanning behavioral rules (component states and interactions), business intelligence (goals, audience, product nuances), implementation props (React-specific), and visual properties (delegated to the Figma MCP). The migration described is from \"manual metadata in Google spreadsheets\" to \"a dedicated metadata system in GitLab\" with \"custom extractors and webhooks\" for automatic synchronization. The metadata is \"structured schemas, consistent keys, and clear relationships, all expressed in JSON.\"",
+  "chunks": [],
+  "metadata": {
+    "category": "guidelines",
+    "tags": [
+      "machine-readable",
+      "aix",
+      "mcp",
+      "ai",
+      "design-systems",
+      "metadata",
+      "benchmark",
+      "json"
+    ],
+    "confidence": "high",
+    "system": "",
+    "source_url": "https://www.designsystemscollective.com/machine-readable-design-systems-designing-for-ai-as-a-user-28077c9f2144",
+    "authority": "primary",
+    "research_batch": "source-of-truth-2026-08",
+    "last_updated": "2026-08-07T14:12:44.882Z"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "sot-batch-figma-lossy-approximation-critique",
+  "title": "Figma's Format as a Lossy Approximation: The Training-Data Argument",
+  "source": {
+    "type": "url",
+    "location": "https://samhenri.gold/blog/20260418-claude-design/",
+    "ingested_at": "2026-08-07T14:12:44.882Z"
+  },
+  "content": "# Thoughts and Feelings Around Claude Design\n\nSam Henri Gold, 18 April 2026. The most pointed statement of *why* the source of truth is migrating, with an argument that appears nowhere else in this literature.\n\n## The training-data argument\n\nFigma's dominance produced a \"locked-down, largely-undocumented format,\" and that proprietary opacity had an unanticipated consequence in the LLM era: **it excluded Figma from AI training data.**\n\nBecause models were trained on code rather than on Figma's proprietary primitives, they never learned the system. Under this reading, Figma's format moat became a liability the moment the most important consumer of design artifacts became a model rather than a human.\n\nThis is genuinely distinct from the parity and drift arguments made everywhere else.\n\n## On the source of truth\n\nThe canonical location has historically been contested between code and design files. Gold predicts the balance tips back toward code as \"code becomes easier for designers to write and agents keep improving.\" Two separate conditions — one about designer capability, one about agent capability — expected to move in the same direction.\n\n## The supporting example\n\nDrawn from Figma's own house: Figma's internal design system files contain **946 color variables**, with nested aliases, mode overrides, and instance-level exceptions.\n\nThe point is that this produces debugging nightmares — the tool held up as the model of systematized design has, at scale, produced a variable graph genuinely difficult to reason about. The implicit argument: this complexity is not incidental but is what happens when you express a system in a canvas rather than in code, where tooling for managing indirection is mature.\n\n## The rhetorical core\n\n**\"Why fuss around in a lossy approximation of the thing when you can work directly in the medium where it will actually live?\"**\n\nThe cleanest one-line statement of the code-as-source-of-truth position. \"Lossy approximation\" is the operative term — the claim is not that Figma is inaccurate but that it is *structurally* incapable of being complete, because it represents an artifact in a different medium than the one that ships.\n\n## The predicted fork\n\nDesign tooling bifurcates rather than consolidating:\n\n1. **Code-forward** — exemplified by Claude Design, built on HTML and JS, integrating with Claude Code so design and implementation are the same workflow rather than adjacent ones.\n2. **Pure exploration** — an environment deliberately unconstrained by systems thinking, emphasizing high-fidelity compositing and artistic freedom.\n\nThe prediction is that the **middle** — a tool that is simultaneously the systematized production surface and the exploration surface — becomes untenable.\n\nThis directly contradicts Figma's Config 2026 thesis, which is precisely a bid to occupy that middle. The two should be read together.\n\n## The \"Sketch moment\"\n\nGold characterizes Figma as facing the point at which market dominance converts into vulnerability — the transition Sketch underwent when Figma displaced it. His claim is that Figma's infrastructure, built for systematization, now looks baroque relative to agentic workflows generating interfaces directly in code.\n\nThe comparison is pointed because Sketch's displacement was not driven by feature deficit but by a change in the collaboration substrate. Gold argues the substrate is changing again — from multiplayer to agentic.",
+  "chunks": [],
+  "metadata": {
+    "category": "guidelines",
+    "tags": [
+      "source-of-truth",
+      "figma",
+      "code-led",
+      "ai",
+      "design-tools",
+      "training-data"
+    ],
+    "confidence": "high",
+    "system": "",
+    "source_url": "https://samhenri.gold/blog/20260418-claude-design/",
+    "authority": "primary",
+    "research_batch": "source-of-truth-2026-08",
+    "last_updated": "2026-08-07T14:12:44.882Z"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "sot-batch-figma-no-longer-source-of-truth",
+  "title": "Figma Is No Longer the Source of Truth (JumpCloud / Circuit DS)",
+  "source": {
+    "type": "url",
+    "location": "https://medium.com/@jc-design/figma-is-no-longer-the-source-of-truth-adb89feabafb",
+    "ingested_at": "2026-08-07T14:12:44.881Z"
+  },
+  "content": "# Figma Is No Longer the Source of Truth\n\nBurak Başcı, writing as JumpCloud Design, April 7 2026. A report on a workflow that already shipped, not a manifesto.\n\n## Thesis\n\n**\"Figma is upstream now. The system is the truth.\"**\n\nThe dismantled pipeline: \"design → handoff → code rebuild.\" What replaced it: \"design system as truth → AI-generated implementation.\" Two steps vanished outright — the handoff and the rebuild.\n\nFigma is not discarded. It retains three roles: token management, visual exploration, and stakeholder communication. What it loses is canonical status. The distinction is between being an *input to* the system and being *the* system.\n\n## The precondition: exact parity\n\nNot optional decoration but the load-bearing requirement: **\"Every spacing token matches between Figma and implementation. Every component prop maps one-to-one.\"** Colors and typography likewise.\n\nThe enforcement mechanism is **Figma Code Connect**, binding design files directly to their implementation files. The payoff is stated in terms of agent behavior: once Code Connect is in place, the Figma MCP Server can output complete, accurate component data **without interpretation** — the agent is not guessing at a mapping, it is reading a declared one.\n\n## The experiment\n\nThe team assembled a repository containing Circuit DS, Storybook, and real component examples, then prompted Cursor against it. Cursor generated full page layouts using the correct components, tokens, and spacing without manual intervention.\n\nThe framing of the result: this moved the effort \"from exploratory to production-ready.\" The claim is not that AI produced something interesting but that it produced something *shippable*, and that the difference was attributable to how the system was structured rather than to the model.\n\n## Storybook replaces Figma's working layer\n\nThe most easily underweighted point. Storybook replaces not Figma's documentation layer or its exploration layer, but the surface where the team actually works out decisions together.\n\nThe reason is a quality argument, not a tooling preference: in Storybook, **\"design decisions become real constraints.\"** Responsive behavior is genuinely responsive; spacing rules are genuinely enforced. A static Figma artifact permits a designer to fake a behavior that will not survive implementation; a live component does not.\n\nTruth is located where things can fail.\n\n## Cursor as execution layer\n\nIt required teaching, not merely pointing. The team wrote detailed instructions covering component selection, layout patterns, spacing application, and — significantly — where the system's boundaries are and how to respect them.\n\nThe boundary-respect instruction matters: the enforcement problem does not disappear under agentic workflows, it **relocates from lint rules into agent instructions**.\n\n## Where design judgment goes\n\nExplicitly non-declinist. Designers' importance is not diminishing, it is shifting upstream. The named skill that now matters: \"understanding how to structure a design system so AI can execute it reliably.\" Design judgment is encoded into system architecture rather than expressed in individual screens.\n\nNext phase described: attaching business logic scaffolding, moving from \"prompt to page\" toward \"prompt to page to API hooks to logic skeleton.\"",
+  "chunks": [],
+  "metadata": {
+    "category": "guidelines",
+    "tags": [
+      "source-of-truth",
+      "figma",
+      "code-led",
+      "storybook",
+      "cursor",
+      "code-connect",
+      "design-systems"
+    ],
+    "confidence": "high",
+    "system": "JumpCloud",
+    "source_url": "https://medium.com/@jc-design/figma-is-no-longer-the-source-of-truth-adb89feabafb",
+    "authority": "primary",
+    "research_batch": "source-of-truth-2026-08",
+    "last_updated": "2026-08-07T14:12:44.881Z"
+  }
+}

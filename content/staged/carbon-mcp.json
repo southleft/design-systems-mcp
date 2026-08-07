@@ -1,0 +1,29 @@
+{
+  "id": "sot-batch-carbon-mcp",
+  "title": "Carbon MCP: IBM Carbon Design System as a Queryable Source of Truth",
+  "source": {
+    "type": "url",
+    "location": "https://carbondesignsystem.com/developing/carbon-mcp/overview/",
+    "ingested_at": "2026-08-07T14:12:44.882Z"
+  },
+  "content": "# Carbon MCP (IBM Carbon Design System)\n\nThe reference implementation of a major enterprise design system exposing itself to agents. Public preview.\n\n## Framing claim\n\nCarbon MCP makes \"any agentic AI application an instant expert in the Carbon Design System, enabling teams to deliver consistent, high-quality user experiences with greater speed.\"\n\nMCP is defined as \"an open-source standard that enables AI agents or AI applications to securely connect with external tools, data sources, and workflows through a unified integration layer.\"\n\n## Three stated benefits\n\n1. **Direct access** — AI applications query Carbon design standards directly for context: colors, typography, component guidance.\n2. **Code generation** — the server exposes code examples and documentation enabling \"high-fidelity Carbon UI code that conforms to design **and** development best practices.\" Note the conjunction: conformance to both, not translation from one to the other.\n3. **Consistency** — teams get \"consistent answers and examples from a **shared source of truth**, helping reduce drift and rework.\"\n\n## The position this implies\n\nCarbon's implicit answer to \"Figma or code?\" is **neither surface**. The MCP server is the shared source of truth, and its audience is explicitly cross-functional — the documentation states Carbon MCP helps designers, developers, and PMs get consistent answers from that shared source.\n\nThis is a meaningfully different arrangement from either camp: the canonical artifact is the queryable knowledge layer, and Figma and code are both clients of it. It converges on the DS Contracts conclusion — an arbiter between surfaces — by a completely different route, and without a formal schema.\n\n## Tool coverage by library\n\n- `@carbon/react` — components with variants and props\n- `@carbon/web-components` — components with variants and props\n- Carbon for IBM Products — Tearsheets, PageHeader, and others\n- Carbon Icons and Pictograms\n- `@carbon/ai-chat` — chat components with full examples\n- `@carbon/charts` — chart descriptions, demos, and code\n- `@carbon-labs/*` — preview components including AnimatedHeader, Processing, Resizer\n\nMarked \"Support coming soon\": Carbon TanStack and Carbon Patterns.\n\nBeyond components, the server provides knowledge on core Carbon elements, iconography, pictograms, guidelines, and usage documentation — the guidance layer, not only the API surface. This is the distinction Wolosin's benchmark bears on: exposing props solves selection; exposing guidelines is the attempt at token-level and usage-level fidelity.\n\n## Supported environments\n\nIBM Bob, Cursor, Claude Code, Claude Desktop, and VS Code with Copilot Chat.\n\nRepo: https://github.com/carbon-design-system/carbon-mcp",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "carbon",
+      "ibm",
+      "mcp",
+      "design-systems",
+      "ai",
+      "agents",
+      "source-of-truth"
+    ],
+    "confidence": "high",
+    "system": "Carbon",
+    "source_url": "https://carbondesignsystem.com/developing/carbon-mcp/overview/",
+    "authority": "authoritative",
+    "research_batch": "source-of-truth-2026-08",
+    "last_updated": "2026-08-07T14:12:44.882Z"
+  }
+}

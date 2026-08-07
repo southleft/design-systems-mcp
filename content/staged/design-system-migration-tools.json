@@ -1,0 +1,29 @@
+{
+  "id": "sot-batch-design-system-migration-tools",
+  "title": "Design System Migration Tooling: Why Native Token Swap Fails",
+  "source": {
+    "type": "url",
+    "location": "https://www.designsystemscollective.com/design-systems-are-evolving-our-migration-tools-arent-15a2f97a6f06",
+    "ingested_at": "2026-08-07T14:12:44.882Z"
+  },
+  "content": "# Design Systems Are Evolving. Our Migration Tools Aren't.\n\nYogesh Shetty, Design Systems Collective, 4 May 2026. The operational counterpart to the theoretical sources: migration between design systems is the unaddressed bottleneck, and agentic tooling is being applied to greenfield generation while the brownfield problem is ignored.\n\n## The core disconnect\n\nWhen organizations rename tokens during a system upgrade — which is nearly always, since renaming is usually the point — native automation stops working entirely.\n\n## Three named problems\n\n**1. Naming convention mismatches.** \"The native swap only works if the names are identical. Our new system has a completely different naming convention.\" Figma's built-in swap operates on string equality, so any deliberate taxonomy change defeats it. **The better the migration, the less the tooling helps.**\n\n**2. Hidden technical debt.** Tools overlook hardcoded color values, pixel measurements, and radius specifications buried inside nested components. A migration that only remaps bound variables reports success while leaving the actual drift untouched.\n\n**3. Contextual errors.** Indiscriminate token swapping — substituting a background color token for a text color token because their hex values match — produces broken and inaccessible interfaces. **Hex equality is not semantic equality**, and a tool that cannot tell the difference will confidently destroy contrast ratios.\n\n## The tools built in response\n\n**Intent** — detects detached components and locates their original masters. Addresses the problem Vallaure names independently: a detached instance is invisible to both migration tooling and agents.\n\n**Token Map** — described as a \"Design Ops powerhouse,\" resting on three innovations:\n- **Deep token detection** across both variables and hardcoded values — scanning for external variables, local styles, raw hex codes, and manual spacing increments rather than only bound tokens\n- **Weighted scoring** requiring 100% match confirmation before an automatic swap\n- **Scope-awareness filtering** distinguishing fill tokens from radius tokens, addressing the contextual-error problem\n\nReported results: roughly 80% of migration tasks automated, data kept local, human confirmation required only for ambiguous matches.\n\nThe decision to require human confirmation on ambiguity rather than guessing is the same \"receipted\" principle the DS Contracts spec states — surface the gap, do not paper over it with a plausible value.\n\n## \"Vibe Coding\"\n\nShetty's term for how the tools were produced: using AI to bridge designer intent and functional code, so a designer without formal engineering background can build professional-grade tooling. He supplied the architectural logic; AI generated the TypeScript needed to traverse Figma's layer tree.\n\nThe meta-point matters: this is agentic tooling being used to *build* design-system infrastructure, by a design-system practitioner, rather than being consumed as a vendor product.",
+  "chunks": [],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "migration",
+      "design-tokens",
+      "figma",
+      "tooling",
+      "design-systems",
+      "plugins",
+      "drift"
+    ],
+    "confidence": "high",
+    "system": "",
+    "source_url": "https://www.designsystemscollective.com/design-systems-are-evolving-our-migration-tools-arent-15a2f97a6f06",
+    "authority": "primary",
+    "research_batch": "source-of-truth-2026-08",
+    "last_updated": "2026-08-07T14:12:44.882Z"
+  }
+}
