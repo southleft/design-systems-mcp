@@ -26,6 +26,38 @@ const EMBEDDING_CACHE_TTL_MS = 15 * 60 * 1000;
 const EMBEDDING_CACHE_MAX_ENTRIES = 500;
 const embeddingCache = new Map<string, { embedding: number[]; expiresAt: number }>();
 
+/**
+ * Circuit breaker for the embedding endpoint.
+ *
+ * When the OpenAI balance is exhausted every query still paid for a doomed
+ * round-trip — and because the SDK retries a 429 twice with backoff, that cost
+ * roughly two seconds per search against ~0.1s for the keyword path that was
+ * going to answer it anyway. After a run of consecutive failures the breaker
+ * opens and searches skip straight to keyword search. It half-opens after the
+ * cooldown, so restoring credits brings vector search back on its own with no
+ * redeploy.
+ */
+const EMBEDDING_FAILURE_THRESHOLD = 3;
+const EMBEDDING_COOLDOWN_MS = 5 * 60 * 1000;
+const embeddingBreaker = { failures: 0, openedAt: 0 };
+
+function embeddingBreakerOpen(): boolean {
+  if (embeddingBreaker.failures < EMBEDDING_FAILURE_THRESHOLD) return false;
+  if (Date.now() - embeddingBreaker.openedAt >= EMBEDDING_COOLDOWN_MS) {
+    // Half-open: let one attempt through to test whether the key works again.
+    embeddingBreaker.failures = EMBEDDING_FAILURE_THRESHOLD - 1;
+    return false;
+  }
+  return true;
+}
+
+function recordEmbeddingFailure(): void {
+  embeddingBreaker.failures += 1;
+  if (embeddingBreaker.failures >= EMBEDDING_FAILURE_THRESHOLD) {
+    embeddingBreaker.openedAt = Date.now();
+  }
+}
+
 async function getQueryEmbedding(openaiKey: string, query: string): Promise<number[]> {
   const cacheKey = query.slice(0, 8191);
   const cached = embeddingCache.get(cacheKey);
@@ -33,11 +65,24 @@ async function getQueryEmbedding(openaiKey: string, query: string): Promise<numb
     return cached.embedding;
   }
 
-  const openai = new OpenAI({ apiKey: openaiKey, timeout: EMBEDDING_TIMEOUT_MS });
-  const response = await openai.embeddings.create({
-    model: 'text-embedding-3-small',
-    input: cacheKey,
-  });
+  if (embeddingBreakerOpen()) {
+    throw new Error('Embedding circuit breaker open — skipping OpenAI call');
+  }
+
+  // maxRetries: 0 because the failure this most often hits is a quota 429,
+  // which retrying cannot fix and which triples the latency of every search.
+  const openai = new OpenAI({ apiKey: openaiKey, timeout: EMBEDDING_TIMEOUT_MS, maxRetries: 0 });
+  let response;
+  try {
+    response = await openai.embeddings.create({
+      model: 'text-embedding-3-small',
+      input: cacheKey,
+    });
+  } catch (error) {
+    recordEmbeddingFailure();
+    throw error;
+  }
+  embeddingBreaker.failures = 0;
   const embedding = response.data[0].embedding;
 
   // Lazy eviction: drop expired entries, then oldest, before inserting
