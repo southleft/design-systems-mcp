@@ -80,47 +80,30 @@ export async function parseHTML(
     contentRoot = $('body');
   }
   
-  // First, extract all headings to maintain structure
-  $('h1, h2, h3, h4, h5, h6').each((_, elem) => {
-    const $elem = $(elem);
-    const tagName = elem.tagName.toLowerCase();
-    const text = $elem.text().trim();
-    
-    // Skip empty or already seen
-    if (!text || seenTexts.has(text)) return;
-    seenTexts.add(text);
-    
-    // Format based on tag type
-    switch(tagName) {
-      case 'h1':
-        contentParts.push(`\n# ${text}\n`);
-        break;
-      case 'h2':
-        contentParts.push(`\n## ${text}\n`);
-        break;
-      case 'h3':
-        contentParts.push(`\n### ${text}\n`);
-        break;
-      case 'h4':
-        contentParts.push(`\n#### ${text}\n`);
-        break;
-      case 'h5':
-        contentParts.push(`\n##### ${text}\n`);
-        break;
-      case 'h6':
-        contentParts.push(`\n###### ${text}\n`);
-        break;
-    }
-  });
-  
   // Block-level tags whose presence means a container's text belongs to its
   // children, not to the container itself.
   const BLOCK_DESCENDANTS = 'p, div, ul, ol, li, table, tr, td, th, section, article, h1, h2, h3, h4, h5, h6, pre, blockquote';
 
-  // Then extract paragraphs and list items
-  $('p, li, td, th, div').each((_, elem) => {
+  const HEADING_PREFIX: Record<string, string> = {
+    h1: '#', h2: '##', h3: '###', h4: '####', h5: '#####', h6: '######'
+  };
+
+  // Walk headings and body content together, in document order.
+  //
+  // These used to be two passes — every heading on the page, then every
+  // paragraph — which hoisted the whole outline to the top and left the prose
+  // in one undifferentiated run below it. On a glossary that is ruinous: the
+  // terms end up in a table-of-contents block while their definitions sit
+  // further down with nothing naming them, e.g. "A token value that is a
+  // reference to another token" with the word "Alias" nowhere near it. Every
+  // heading-to-body relationship in the corpus was severed that way.
+  //
+  // `.find()` on a single combined selector returns matches in document order,
+  // and scopes them to the extracted content root rather than the whole page.
+  contentRoot.find('h1, h2, h3, h4, h5, h6, p, li, td, th, div, pre, blockquote').each((_, elem) => {
     const $elem = $(elem);
     const tagName = elem.tagName.toLowerCase();
+    const headingPrefix = HEADING_PREFIX[tagName];
 
     // Take the element's full text, inline descendants included.
     //
@@ -135,18 +118,21 @@ export async function parseHTML(
     // Definitions lost their subject, and the corpus filled with orphaned
     // predicates. Duplication is instead avoided by skipping containers that
     // hold block-level children, which is the case the old trick was for.
-    if ($elem.children(BLOCK_DESCENDANTS).length > 0) return;
+    if (!headingPrefix && $elem.children(BLOCK_DESCENDANTS).length > 0) return;
 
     const text = $elem.text().replace(/\s+/g, ' ').trim();
 
     // Skip empty, very short, already seen, or numeric-only content
-    if (!text || text.length < 3 || seenTexts.has(text)) return;
+    if (!text || seenTexts.has(text)) return;
+    if (!headingPrefix && text.length < 3) return;
     if (text.match(/^[0-9.:,\s/-]+$/)) return;
 
     seenTexts.add(text);
 
     // Format based on tag type
-    if (tagName === 'li') {
+    if (headingPrefix) {
+      contentParts.push(`\n${headingPrefix} ${text}\n`);
+    } else if (tagName === 'li') {
       contentParts.push(`• ${text}`);
     } else {
       contentParts.push(text);
