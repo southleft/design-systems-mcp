@@ -257,38 +257,56 @@ export async function searchSupabaseChunks(
   }
   if (candidates.length === 0) return [];
 
+  // Fetch parent titles/systems for ALL candidates up front, so ranking can
+  // reward a chunk whose parent entry is plainly about the query. Without this,
+  // ranking scores chunk_text alone — and a chunk about "layer 01, layer 02"
+  // from the Carbon entry loses to an unrelated chunk that literally repeats
+  // the query words, because the chunk body never says "Carbon".
+  const candidateEntryIds = [...new Set(candidates.map((row: any) => row.entry_id))];
+  const { data: parentRows } = await supabase
+    .from('content_entries')
+    .select('id,title,source_location,system_name,metadata')
+    .in('id', candidateEntryIds)
+    .abortSignal(AbortSignal.timeout(SUPABASE_TIMEOUT_MS));
+  const byId = new Map((parentRows ?? []).map((row: any) => [row.id, row]));
+
   const preciseIds = new Set(precise.map((row: any) => row.id));
   const needles = terms.map((term) => term.toLowerCase());
   const ranked = candidates
     .map((row: any, index: number) => {
       const raw = row.chunk_text || '';
       const text = raw.toLowerCase();
+      const parent: any = byId.get(row.entry_id);
+      const parentContext = `${parent?.title ?? ''} ${parent?.system_name ?? parent?.metadata?.system ?? ''}`.toLowerCase();
+
       let score = 0;
       for (const needle of needles) {
         if (matchesTerm(text, needle)) score += 3;
+        // Parent title/system match: the chunk belongs to an entry that is
+        // plainly about this term, even if the chunk body omits it. Weighted
+        // heavily so a well-titled entry beats a sprawling low-signal document
+        // that happens to repeat the query words in one chunk.
+        if (matchesTerm(parentContext, needle)) score += 6;
       }
-      const covered = needles.filter((needle) => matchesTerm(text, needle)).length;
+      const covered = needles.filter(
+        (needle) => matchesTerm(text, needle) || matchesTerm(parentContext, needle)
+      ).length;
       score += Math.round((covered / Math.max(1, needles.length)) * 10);
       if (preciseIds.has(row.id)) score += 6;
       // A page's flattened heading block names every topic on the page, so it
       // matches almost any query about that page while explaining none of it.
       // Push it below chunks of actual prose.
       if (headingDensity(raw) > 0.25) score -= 12;
+      // The two large OCR'd handbook PDFs are real but low-signal: broad,
+      // unstructured, and damaged. They match nearly any design-systems query
+      // on chunk text alone. Demote so a focused entry wins unless the PDF is
+      // genuinely the only match.
+      if (isBulkPdf(parent)) score -= 8;
       return { row, score, index };
     })
     .sort((a, b) => (b.score - a.score) || (a.index - b.index))
     .slice(0, limit)
     .map((item) => item.row);
-
-  // Attach the parent entry so results can cite a title and source.
-  const entryIds = [...new Set(ranked.map((row: any) => row.entry_id))];
-  const { data: parents } = await supabase
-    .from('content_entries')
-    .select('id,title,source_location,metadata')
-    .in('id', entryIds)
-    .abortSignal(AbortSignal.timeout(SUPABASE_TIMEOUT_MS));
-
-  const byId = new Map((parents ?? []).map((row: any) => [row.id, row]));
 
   return ranked.map((row: any) => {
     const parent: any = byId.get(row.entry_id);
@@ -433,6 +451,12 @@ function sanitizeTsTerm(term: string): string {
 function isGalleryListing(entry: ContentEntry): boolean {
   const location = entry.source?.location || entry.metadata?.source_url || '';
   return location.includes('designsystems.surf');
+}
+
+/** The large OCR'd handbook PDFs — real but low-signal, and they match broadly. */
+function isBulkPdf(parent: any): boolean {
+  const title = (parent?.title ?? '').toLowerCase();
+  return title.startsWith('pdf:') || title.includes('.pdf');
 }
 
 /**
