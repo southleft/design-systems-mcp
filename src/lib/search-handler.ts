@@ -58,6 +58,40 @@ function recordEmbeddingFailure(): void {
   }
 }
 
+/** Model + dimensions for Cloudflare Workers AI embeddings. */
+const CF_EMBEDDING_MODEL = '@cf/baai/bge-m3';
+
+/**
+ * Query embedding via Cloudflare Workers AI — runs at the edge inside the
+ * worker, no external API call and no OpenAI dependency. bge-m3 returns
+ * 1024-dim vectors, matched by the embedding_cf column and search_content_cf
+ * RPC. Cached per isolate like the OpenAI path.
+ */
+async function getCloudflareEmbedding(ai: any, query: string): Promise<number[]> {
+  const cacheKey = 'cf:' + query.slice(0, 8191);
+  const cached = embeddingCache.get(cacheKey);
+  if (cached && cached.expiresAt > Date.now()) return cached.embedding;
+
+  const result = await ai.run(CF_EMBEDDING_MODEL, { text: [query.slice(0, 8191)] });
+  // Workers AI returns { data: [[...floats]] } (or { shape, data }).
+  const embedding: number[] = result?.data?.[0];
+  if (!Array.isArray(embedding)) {
+    throw new Error('Workers AI returned no embedding');
+  }
+
+  if (embeddingCache.size >= EMBEDDING_CACHE_MAX_ENTRIES) {
+    const now = Date.now();
+    for (const [key, value] of embeddingCache) {
+      if (value.expiresAt <= now) embeddingCache.delete(key);
+    }
+    if (embeddingCache.size >= EMBEDDING_CACHE_MAX_ENTRIES) {
+      embeddingCache.delete(embeddingCache.keys().next().value!);
+    }
+  }
+  embeddingCache.set(cacheKey, { embedding, expiresAt: Date.now() + EMBEDDING_CACHE_TTL_MS });
+  return embedding;
+}
+
 async function getQueryEmbedding(openaiKey: string, query: string): Promise<number[]> {
   const cacheKey = query.slice(0, 8191);
   const cached = embeddingCache.get(cacheKey);
@@ -166,8 +200,46 @@ export async function searchWithSupabase(options: SearchOptions = {}, env?: any)
     console.log('[Vector Search] Condition check:', query ? 'query=YES' : 'query=NO', vectorEnabled === 'true' ? 'enabled=YES' : 'enabled=' + vectorEnabled, vectorSearchMode === 'vector' ? 'mode=YES' : 'mode=' + vectorSearchMode);
   }
 
-  // Check if we should use Supabase vector search
-  if (query && vectorEnabled === 'true' && vectorSearchMode === 'vector') {
+  const vectorProvider = env?.VECTOR_SEARCH_PROVIDER || process.env.VECTOR_SEARCH_PROVIDER || 'openai';
+
+  // Cloudflare Workers AI vector search — the edge-native, no-external-API
+  // path. Runs when VECTOR_SEARCH_PROVIDER=cloudflare and the AI binding is
+  // present, searching the embedding_cf column via search_content_cf. Failures
+  // fall through to the keyword path below, exactly like the OpenAI branch.
+  if (
+    query &&
+    vectorEnabled === 'true' &&
+    vectorSearchMode === 'vector' &&
+    vectorProvider === 'cloudflare' &&
+    env?.AI &&
+    supabaseUrl &&
+    supabaseKey
+  ) {
+    try {
+      const supabase = createClient(supabaseUrl, supabaseKey);
+      const queryEmbedding = await getCloudflareEmbedding(env.AI, query);
+      const { data, error } = await supabase.rpc('search_content_cf', {
+        query_embedding: queryEmbedding,
+        query_text: query,
+        match_threshold: 0.15,
+        match_count: limit,
+        filter_category: category,
+        filter_tags: filterTags,
+      }).abortSignal(AbortSignal.timeout(SUPABASE_TIMEOUT_MS));
+
+      if (!error && data && data.length > 0) {
+        if (logPerformance) console.log(`[Vector Search/CF] Found ${data.length} results`);
+        return data.map((row: any) => enrichWithReliability(rowToContentEntry(row)));
+      }
+      if (error && logPerformance) console.error('[Vector Search/CF] Supabase error:', error.message);
+    } catch (error: any) {
+      if (logPerformance) console.error('[Vector Search/CF] Error:', error?.message || 'Unknown error');
+      // Fall through to keyword search below.
+    }
+  }
+
+  // Check if we should use Supabase vector search (OpenAI provider)
+  if (query && vectorEnabled === 'true' && vectorSearchMode === 'vector' && vectorProvider === 'openai') {
     try {
       if (supabaseUrl && supabaseKey && openaiKey) {
         if (logPerformance) {

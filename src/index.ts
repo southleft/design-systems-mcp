@@ -719,6 +719,42 @@ export default {
     const url = new URL(request.url);
     const origin = url.origin;
 
+    // Secret-gated embedding proxy. Maps texts -> Cloudflare Workers AI
+    // embeddings (bge-m3, 1024-dim) so the backfill script can populate the
+    // embedding_cf column without a Cloudflare API token — the AI binding
+    // lives in the worker. Enabled only when EMBED_ADMIN_SECRET is set; the
+    // request must present it as a bearer token. Returns nothing but vectors,
+    // touches no data, and can be disabled by clearing the secret after backfill.
+    if (url.pathname === "/admin/embed" && request.method === "POST") {
+      const secret = (env as any).EMBED_ADMIN_SECRET;
+      const auth = request.headers.get("authorization") || "";
+      if (!secret || auth !== `Bearer ${secret}`) {
+        return new Response("Not Found", { status: 404 });
+      }
+      if (!(env as any).AI) {
+        return new Response(JSON.stringify({ error: "AI binding not available" }), {
+          status: 500, headers: { "Content-Type": "application/json" }
+        });
+      }
+      try {
+        const body = await request.json() as { texts?: string[] };
+        const texts = (body.texts ?? []).map((t) => String(t).slice(0, 8191));
+        if (texts.length === 0 || texts.length > 100) {
+          return new Response(JSON.stringify({ error: "provide 1-100 texts" }), {
+            status: 400, headers: { "Content-Type": "application/json" }
+          });
+        }
+        const result: any = await (env as any).AI.run("@cf/baai/bge-m3", { text: texts });
+        return new Response(JSON.stringify({ embeddings: result?.data ?? [] }), {
+          headers: { "Content-Type": "application/json" }
+        });
+      } catch (error: any) {
+        return new Response(JSON.stringify({ error: error?.message || "embed failed" }), {
+          status: 500, headers: { "Content-Type": "application/json" }
+        });
+      }
+    }
+
     // OAuth discovery: intentionally NOT served.
     //
     // This is a public, no-authentication MCP server. Serving

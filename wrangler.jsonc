@@ -28,6 +28,13 @@
 			}
 		]
 	},
+	// Workers AI: edge-run embeddings (bge-m3, 1024-dim). Free within the
+	// Workers plan's daily Neuron allocation. Replaces the OpenAI embedding
+	// dependency for vector search once embedding_cf is backfilled and
+	// VECTOR_SEARCH_PROVIDER is set to "cloudflare".
+	"ai": {
+		"binding": "AI"
+	},
 	"migrations": [
 		{
 			"tag": "v1",
