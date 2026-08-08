@@ -24,7 +24,14 @@ const APPLY = process.argv.includes('--apply');
 const DO_CHUNKS = process.argv.includes('--chunks');
 const ENDPOINT = process.env.EMBED_ENDPOINT || 'https://design-systems-mcp.southleft.com/admin/embed';
 const SECRET = process.env.CF_EMBED_SECRET;
-const BATCH = 32;
+// bge-m3 caps a request at 60k tokens across the whole batch, and one input at
+// 8192 tokens. Cap each text and keep the batch small so the total stays well
+// under the request limit even for the large handbook PDFs. An entry embedding
+// only needs the title + substantial lead content; chunk-level full-text search
+// covers the rest.
+const BATCH = 10;
+const MAX_TEXT_CHARS = 5000;
+const cap = (t: string) => (t ?? '').slice(0, MAX_TEXT_CHARS);
 
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_SERVICE_KEY;
@@ -76,7 +83,7 @@ async function backfillEntries() {
   let done = 0;
   for (let i = 0; i < rows.length; i += BATCH) {
     const batch = rows.slice(i, i + BATCH);
-    const texts = batch.map((r) => `${r.title}\n\n${r.content ?? ''}`);
+    const texts = batch.map((r) => cap(`${r.title}\n\n${r.content ?? ''}`));
     const vectors = await embedTexts(texts);
     for (let j = 0; j < batch.length; j += 1) {
       const { error } = await supabase
@@ -99,7 +106,7 @@ async function backfillChunks() {
   let done = 0;
   for (let i = 0; i < rows.length; i += BATCH) {
     const batch = rows.slice(i, i + BATCH);
-    const vectors = await embedTexts(batch.map((r) => r.chunk_text ?? ''));
+    const vectors = await embedTexts(batch.map((r) => cap(r.chunk_text ?? '')));
     for (let j = 0; j < batch.length; j += 1) {
       const { error } = await supabase
         .from('content_chunks')
