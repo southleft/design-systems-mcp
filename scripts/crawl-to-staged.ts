@@ -149,15 +149,38 @@ async function main() {
       clearTimeout(timer);
 
       const contentType = response.headers.get('content-type') ?? '';
-      if (!response.ok || !contentType.includes('html')) {
+      const isMarkdown =
+        /\.(mdx?|markdown)(\?|$)/.test(row.url) ||
+        row.url.includes('raw.githubusercontent.com') ||
+        contentType.includes('text/markdown');
+
+      if (!response.ok || (!contentType.includes('html') && !isMarkdown && !contentType.includes('text/plain'))) {
         console.log(`FAIL      ${label} HTTP ${response.status} ${contentType.split(';')[0]}`);
         results.failed++;
         continue;
       }
 
-      const html = await response.text();
-      const parsed: any = await parseHTML(html, row.url);
-      const content = (parsed?.content ?? '').trim();
+      const body = await response.text();
+      let content: string;
+      let parsedTitle: string | undefined;
+
+      if (isMarkdown || (!contentType.includes('html') && contentType.includes('text/plain'))) {
+        // Markdown/MDX source (e.g. design system docs repos): strip frontmatter,
+        // imports/exports, and JSX component tags; keep prose and headings.
+        content = body
+          .replace(/^---\n[\s\S]*?\n---\n/, '')
+          .replace(/^(import|export)\s.*$/gm, '')
+          .replace(/<[A-Z][a-zA-Z]*[^>]*\/>/g, '')
+          .replace(/<\/?[A-Z][a-zA-Z]*[^>]*>/g, '')
+          .replace(/\{\/\*[\s\S]*?\*\/\}/g, '')
+          .replace(/\n{3,}/g, '\n\n')
+          .trim();
+        parsedTitle = content.match(/^#\s+(.+)$/m)?.[1]?.trim();
+      } else {
+        const parsed: any = await parseHTML(body, row.url);
+        content = (parsed?.content ?? '').trim();
+        parsedTitle = parsed?.title;
+      }
 
       if (content.length < MIN_CHARS) {
         console.log(`SKIP-THIN ${label} ${content.length} chars`);
@@ -170,8 +193,8 @@ async function main() {
         continue;
       }
 
-      const title = parsed?.title && parsed.title !== 'Untitled Document'
-        ? parsed.title
+      const title = parsedTitle && parsedTitle !== 'Untitled Document'
+        ? parsedTitle
         : row.description || row.url;
       const slug = slugify(row.url);
       const tags = row.tags.length > 0 ? row.tags : inferTags(row.url, row.system);

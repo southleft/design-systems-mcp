@@ -1,6 +1,6 @@
 # Design Systems MCP Server
 
-An AI-powered Model Context Protocol (MCP) server providing intelligent access to authoritative design systems knowledge. 241 curated entries spanning W3C standards, WCAG guidelines, design system practice, and — the part a general-purpose model cannot help you with — the 2025-2026 agent-interface protocols.
+An AI-powered Model Context Protocol (MCP) server providing intelligent access to authoritative design systems knowledge. 395 curated entries spanning W3C standards, WCAG guidelines, design system practice, and — the part a general-purpose model cannot help you with — the 2025-2026 agent-interface protocols.
 
 🌐 **Live Demo:** [https://design-systems-mcp.southleft.com/](https://design-systems-mcp.southleft.com/)
 
@@ -14,7 +14,7 @@ That is what this server is for: dated, cited, extracted primary-source content 
 
 ### Core Capabilities
 - 🎯 **Vector + Keyword Search** - Supabase pgvector with OpenAI embeddings, and a Postgres full-text path that keeps working when embeddings are unavailable
-- 📚 **241 Curated Entries** - W3C standards, WCAG 2.2, ARIA practices, major design systems, and agent-interface protocols
+- 📚 **395 Curated Entries** - W3C standards, WCAG 2.2, ARIA practices, major design systems, and agent-interface protocols
 - 🚦 **Relevance Floor** - IDF-weighted scoring means an uncovered topic returns *nothing* rather than confident, adjacent content
 - 🚀 **Edge-Optimized** - Cloudflare Workers deployment with global distribution
 
@@ -23,6 +23,7 @@ That is what this server is for: dated, cited, extracted primary-source content 
 - 🧪 **Eval Harness** - `scripts/eval-mcp.ts` scores retrieval *and* substance across four difficulty tiers
 - 🛡️ **Source Reliability Badges** - Every answer flags Primary / Authoritative / Reference / Example / Community sources
 - 📖 **Universal MCP Client Support** - Works with any MCP-capable client (Claude Desktop, Cursor, Windsurf, Codex, etc.)
+- 🏛️ **Major Design Systems, Deeply** - Carbon, Polaris, Atlassian, Material 3, Fluent, Spectrum, Nord, Mantine, shadcn/ui, Radix, Untitled UI — the guidance and token architecture, not just prop tables
 
 ### Developer Experience
 - 🌐 **Zero Setup Required** - Public MCP endpoint ready to use
@@ -32,7 +33,7 @@ That is what this server is for: dated, cited, extracted primary-source content 
 
 ## Content Library
 
-### 241 Curated Entries Including:
+### 395 Curated Entries Including:
 
 **Agent Interfaces & AI (2025-2026 — the material a general model gets wrong)**
 - A2UI Protocol v1.0 (Google) — adjacency-list components, catalog negotiation, A2A binding
@@ -135,6 +136,7 @@ Choose your AI coding tool below for setup instructions:
    - `search_chunks`
    - `browse_by_category`
    - `get_all_tags`
+   - `browse_by_tag`
 
 **That's it!** You can now use the Design Systems Assistant in your Claude Desktop conversations.
 
@@ -494,7 +496,7 @@ This server uses Supabase for production-grade vector search:
 - **Performance:** Sub-100ms queries with proper indexing
 
 **Statistics:**
-- 241 entries in production database
+- 395 entries in production database
 - 761+ content chunks with embeddings
 - W3C standards, WCAG guidelines, design system documentation
 - Regular updates with new authoritative sources

@@ -56,6 +56,26 @@ const CASES: Case[] = [
   { q: 'ARIA authoring practices disclosure pattern', tier: 'deep', expect: /aria|pattern|disclosure/i },
   { q: 'token resolver modifier context', tier: 'deep', expect: /resolver|modifier|context/i },
 
+  // Tier 3b — specific design-system documentation (added Aug 2026 corpus expansion).
+  { q: 'Carbon layering model contextual tokens', tier: 'deep', expect: /carbon|layer|contextual/i },
+  { q: 'Radix Colors 12 step scale semantics', tier: 'deep', expect: /radix|scale|step|color/i },
+  { q: 'Material HCT color space dynamic color', tier: 'deep', expect: /hct|material|dynamic|tone/i },
+  { q: 'shadcn registry item json spec', tier: 'deep', expect: /shadcn|registry/i },
+  { q: 'Spectrum design token naming structure', tier: 'deep', expect: /spectrum|token|naming/i },
+  { q: 'Polaris component lifecycle deprecation', tier: 'deep', expect: /polaris|lifecycle|deprecat/i },
+
+  // Tier 3c — design-system practice periphery.
+  { q: 'design system team half-time capacity model', tier: 'deep', expect: /team|capacity|half-time|systems team/i },
+  { q: 'design system ROI 47 percent faster study', tier: 'deep', expect: /roi|47|faster|sparkbox|value/i },
+  { q: 'semver library versus component versioning', tier: 'deep', expect: /version|semver|library|component/i },
+  { q: 'token naming taxonomy base modifier object namespace', tier: 'deep', expect: /naming|token|taxonomy|namespace/i },
+  { q: 'multi-brand theming token role value', tier: 'deep', expect: /multi-brand|brand|theme|token|role/i },
+  { q: 'inversion of control component API composition', tier: 'deep', expect: /inversion|composition|component|api|slot/i },
+  { q: 'how AI generation drifts from a design system', tier: 'deep', expect: /drift|hallucinat|token|fabricat/i },
+  { q: 'MCP tool poisoning security design system', tier: 'deep', expect: /poisoning|security|mcp|injection/i },
+  { q: 'Bolt design system agents internal storybook', tier: 'frontier-gap', expect: /bolt|storybook|design system/i },
+  { q: 'Claude Design design system import claude code', tier: 'frontier-gap', expect: /claude|design|import/i },
+
   // Tier 4 — the frontier-gap topics this KB should own and currently may not.
   { q: 'sentient design', tier: 'frontier-gap', expect: /sentient/i },
   { q: 'ephemeral UI', tier: 'frontier-gap', expect: /ephemeral/i },

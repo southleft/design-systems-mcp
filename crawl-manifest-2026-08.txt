@@ -1,0 +1,200 @@
+# Master crawl manifest — assembled from research-agent CRAWL_LISTs, Aug 2026.
+# Format: url | description | system | category | tags (comma-sep, optional)
+# Excluded by design: spectrum.adobe.com and m3.material.io (JS-rendered; authored
+# separately), github.com HTML pages, PDFs, video, gallery indexes.
+
+# ---- Carbon (IBM) ----
+https://carbondesignsystem.com/guidelines/accessibility/color/ | Accessibility color and contrast rules | Carbon | accessibility
+https://carbondesignsystem.com/guidelines/accessibility/keyboard/ | Keyboard interaction accessibility guidance | Carbon | accessibility
+https://carbondesignsystem.com/guidelines/accessibility/developers/ | Developer accessibility implementation | Carbon | accessibility
+https://carbondesignsystem.com/guidelines/content/overview/ | Voice and tone overview | Carbon | guidelines
+https://carbondesignsystem.com/guidelines/content/action-labels/ | Canonical action label wording | Carbon | guidelines
+https://carbondesignsystem.com/elements/color/overview/ | Color token anatomy and themes | Carbon | tokens
+https://carbondesignsystem.com/elements/color/tokens/ | Full color token reference | Carbon | tokens
+https://carbondesignsystem.com/elements/themes/overview/ | Theming architecture and tokens | Carbon | tokens
+https://carbondesignsystem.com/elements/typography/style-strategies/ | Productive vs expressive type | Carbon | tokens
+https://carbondesignsystem.com/elements/typography/type-sets/ | Type sets and tokens | Carbon | tokens
+https://carbondesignsystem.com/elements/spacing/overview/ | Spacing scale and tokens | Carbon | tokens
+https://carbondesignsystem.com/patterns/common-actions/ | Standard action naming pattern | Carbon | patterns
+https://carbondesignsystem.com/patterns/dialog-pattern/ | Modal dialog usage pattern | Carbon | patterns
+https://carbondesignsystem.com/patterns/disabled-states/ | Disabled state guidance | Carbon | patterns
+https://carbondesignsystem.com/patterns/filtering/ | Filtering interaction pattern | Carbon | patterns
+https://carbondesignsystem.com/patterns/loading-pattern/ | Loading behavior pattern | Carbon | patterns
+https://carbondesignsystem.com/patterns/login-pattern/ | Login flow pattern | Carbon | patterns
+https://carbondesignsystem.com/patterns/notification-pattern/ | Notifications and error messaging | Carbon | patterns
+https://carbondesignsystem.com/patterns/overflow-content/ | Truncation and overflow rules | Carbon | patterns
+https://carbondesignsystem.com/patterns/search-pattern/ | Search behavior pattern | Carbon | patterns
+https://carbondesignsystem.com/patterns/status-indicator-pattern/ | Status indicator usage rules | Carbon | patterns
+https://carbondesignsystem.com/patterns/disclosures-pattern/ | Disclosure and popover pattern | Carbon | patterns
+https://carbondesignsystem.com/patterns/read-only-states-pattern/ | Read-only states pattern | Carbon | patterns
+https://carbondesignsystem.com/contributing/get-started/overview/ | Contribution model overview | Carbon | guidelines | contribution,governance
+https://carbondesignsystem.com/contributing/component-checklist/ | Component quality checklist | Carbon | guidelines | contribution,quality
+https://carbondesignsystem.com/contributing/product-development-lifecycle/ | Governance development lifecycle | Carbon | guidelines | governance
+
+# ---- Polaris (Shopify) — archived MDX source ----
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/content/fundamentals.mdx | Polaris content design fundamentals | Polaris | guidelines
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/content/error-messages.mdx | Polaris error message writing rules | Polaris | guidelines
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/content/naming.mdx | Polaris product feature naming | Polaris | guidelines
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/content/inclusive-language.mdx | Polaris inclusive language standards | Polaris | guidelines
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/content/alternative-text.mdx | Polaris alt text writing guidance | Polaris | accessibility
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/design/colors/using-color.mdx | Polaris applying color tokens | Polaris | tokens
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/design/colors/color-tokens.mdx | Polaris color token reference | Polaris | tokens
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/design/interaction-states.mdx | Polaris interaction state design | Polaris | patterns
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/design/typography/using-type.mdx | Polaris typography usage | Polaris | tokens
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/design/layout/spacial-organization.mdx | Polaris layout spatial organization | Polaris | guidelines
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/design/motion/using-motion.mdx | Polaris motion usage guidance | Polaris | guidelines
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/design/icons/using-icons.mdx | Polaris icon usage guidance | Polaris | guidelines
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/foundations/information-architecture.mdx | Shopify admin IA principles | Polaris | guidelines
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/foundations/internationalization.mdx | Polaris internationalization design | Polaris | guidelines
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/foundations/experience-values.mdx | Shopify admin experience values | Polaris | guidelines
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/getting-started/designing-with-a-system.mdx | Designing with a system | Polaris | guidelines
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/patterns/common-actions/variants/best-practices.mdx | Common actions best practices | Polaris | patterns
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/patterns/date-picking/index.mdx | Date picking pattern | Polaris | patterns
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/contributing/index.mdx | Polaris contribution model | Polaris | guidelines | contribution,governance
+https://raw.githubusercontent.com/Shopify/polaris-react-archive/main/polaris.shopify.com/content/version-guides/migrating-from-v11-to-v12.mdx | Polaris v12 migration guide | Polaris | guidelines | versioning,migration
+
+# ---- Atlassian ----
+https://atlassian.design/foundations/content/designing-messages | Choosing message types | Atlassian | guidelines
+https://atlassian.design/foundations/content/language-and-grammar | Style grammar punctuation rules | Atlassian | guidelines
+https://atlassian.design/foundations/content/inclusive-writing | Inclusive writing guidance | Atlassian | guidelines
+https://atlassian.design/foundations/content/date-time | Date and time formatting | Atlassian | guidelines
+https://atlassian.design/foundations/color | Color roles and usage | Atlassian | tokens
+https://atlassian.design/foundations/typography | Typography foundation and tokens | Atlassian | tokens
+https://atlassian.design/foundations/spacing | Spacing system guidance | Atlassian | tokens
+https://atlassian.design/foundations/elevation | Elevation surfaces and shadows | Atlassian | tokens
+https://atlassian.design/foundations/grid | Grid and layout foundation | Atlassian | guidelines
+https://atlassian.design/foundations/motion | Motion principles | Atlassian | guidelines
+https://atlassian.design/foundations/iconography | Icon usage guidance | Atlassian | guidelines
+https://atlassian.design/foundations/tokens/use-tokens-in-design | Applying tokens in design | Atlassian | tokens
+https://atlassian.design/foundations/tokens/use-tokens-in-code | Token implementation in code | Atlassian | tokens
+https://atlassian.design/foundations/tokens/migrate-to-tokens | Migrating to token system | Atlassian | tokens | migration
+https://atlassian.design/release-phases | Component release lifecycle governance | Atlassian | guidelines | governance,versioning
+
+# ---- Fluent 2 (Microsoft) ----
+https://fluent2.microsoft.design/color | Fluent palettes and semantics | Fluent | tokens
+https://fluent2.microsoft.design/typography | Fluent type ramp guidance | Fluent | tokens
+https://fluent2.microsoft.design/layout | Grid spacing responsive layout | Fluent | guidelines
+https://fluent2.microsoft.design/elevation | Shadow and elevation usage | Fluent | tokens
+https://fluent2.microsoft.design/motion | Fluent motion principles | Fluent | guidelines
+https://fluent2.microsoft.design/iconography | Fluent icon usage rules | Fluent | guidelines
+https://fluent2.microsoft.design/shapes | Corner radius and shape | Fluent | tokens
+https://fluent2.microsoft.design/content-basics | Fluent content writing basics | Fluent | guidelines
+https://fluent2.microsoft.design/get-started/design | Fluent design getting started | Fluent | guidelines
+
+# ---- Mantine ----
+https://mantine.dev/theming/mantine-provider/ | MantineProvider setup and options | Mantine | tools
+https://mantine.dev/theming/colors/ | Color system and shades | Mantine | tokens
+https://mantine.dev/theming/color-schemes/ | Light dark scheme management | Mantine | tokens
+https://mantine.dev/theming/typography/ | Typography theming | Mantine | tokens
+https://mantine.dev/theming/default-props/ | Component default props override | Mantine | tools
+https://mantine.dev/styles/styles-overview/ | Styling approaches compared | Mantine | tools
+https://mantine.dev/styles/styles-api/ | Styles API selectors system | Mantine | tools
+https://mantine.dev/styles/data-attributes/ | Data attributes for states | Mantine | tools
+https://mantine.dev/styles/variants-sizes/ | Custom variants and sizes | Mantine | tools
+https://mantine.dev/styles/rem/ | rem em units and scaling | Mantine | tools
+
+# ---- Nord ----
+https://nordhealth.design/docs/developer/web-components | Web components usage guide | Nord | components
+https://nordhealth.design/core/tokens/ | Design tokens reference | Nord | tokens
+https://nordhealth.design/design/foundations/principles | Six design principles | Nord | guidelines
+https://nordhealth.design/design/foundations/accessibility-checklist | Working accessibility checklist | Nord | accessibility
+https://nordhealth.design/design/foundations/colors | Color system foundation | Nord | tokens
+https://nordhealth.design/docs/developer/working-with-ai | AI integrations overview | Nord | tools | ai,agents
+https://nordhealth.design/docs/developer/working-with-ai/skills | Agent skills for Nord | Nord | tools | ai,agents,skills
+
+# ---- shadcn/ui ----
+https://ui.shadcn.com/docs | Introduction and philosophy | shadcn | guidelines
+https://ui.shadcn.com/docs/components-json | components.json configuration reference | shadcn | tools
+https://ui.shadcn.com/docs/theming | CSS variable theming | shadcn | tokens
+https://ui.shadcn.com/docs/dark-mode | Dark mode setup | shadcn | tokens
+https://ui.shadcn.com/docs/cli | CLI commands reference | shadcn | tools
+https://ui.shadcn.com/docs/monorepo | Monorepo usage | shadcn | tools
+https://ui.shadcn.com/docs/registry | Registry introduction | shadcn | tools
+https://ui.shadcn.com/docs/registry/getting-started | Build your own registry | shadcn | tools
+https://ui.shadcn.com/docs/registry/registry-json | registry.json schema | shadcn | tools
+https://ui.shadcn.com/docs/registry/registry-item-json | registry-item.json schema | shadcn | tools
+https://ui.shadcn.com/docs/registry/authentication | Private registry auth | shadcn | tools
+https://ui.shadcn.com/docs/registry/mcp | Registry MCP server | shadcn | tools | mcp,ai
+https://ui.shadcn.com/docs/figma | Official Figma kit docs | shadcn | tools
+https://ui.shadcn.com/docs/components/sidebar | Composable sidebar component | shadcn | components
+https://ui.shadcn.com/docs/components/data-table | Data table pattern docs | shadcn | components
+
+# ---- Radix ----
+https://www.radix-ui.com/primitives/docs/overview/introduction | Primitives vision and features | Radix | guidelines
+https://www.radix-ui.com/primitives/docs/overview/accessibility | Accessibility architecture detail | Radix | accessibility
+https://www.radix-ui.com/primitives/docs/guides/styling | Styling unstyled primitives | Radix | tools
+https://www.radix-ui.com/primitives/docs/guides/animation | Animating primitives | Radix | tools
+https://www.radix-ui.com/primitives/docs/guides/composition | asChild composition guide | Radix | components
+https://www.radix-ui.com/primitives/docs/guides/server-side-rendering | SSR guidance | Radix | tools
+https://www.radix-ui.com/primitives/docs/components/dialog | Dialog anatomy and API | Radix | components
+https://www.radix-ui.com/primitives/docs/components/dropdown-menu | Menu keyboard interaction model | Radix | components
+https://www.radix-ui.com/primitives/docs/utilities/slot | Slot merging utility | Radix | components
+https://www.radix-ui.com/colors/docs/overview/usage | Using color scales | Radix | tokens
+https://www.radix-ui.com/colors/docs/overview/aliasing | Semantic aliasing of steps | Radix | tokens
+https://www.radix-ui.com/colors/docs/palette-composition/composing-a-palette | Pairing grays and accents | Radix | tokens
+https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale | 12-step use cases | Radix | tokens
+https://www.radix-ui.com/themes/docs/overview/getting-started | Radix Themes setup | Radix | tools
+
+# ---- Untitled UI ----
+https://www.untitledui.com/blog/figma-color-palettes | Color palette methodology guide | Untitled UI | tokens
+https://www.untitledui.com/blog/figma-ui-kits | UI kit landscape survey | Untitled UI | guidelines
+
+# ---- Periphery: team models, adoption, tokens, versioning, contribution, API design ----
+https://medium.com/eightshapes-llc/designing-a-systems-team-d22f27a2d81d | Systems team models and scaling | EightShapes | guidelines | team-models,governance
+https://danmallteaches.substack.com/p/the-sweet-spot-for-design-system | Sweet spot for DS work | | guidelines | prioritization,dan-mall
+https://sparkbox.com/foundry/design_system_roi_impact_of_design_systems_business_value_carbon_design_system | Design system ROI study 47 percent | Sparkbox | guidelines | roi,research,measurement
+https://medium.com/eightshapes-llc/adopting-design-systems-71e599ff660a | Adoption playbook | EightShapes | guidelines | adoption
+https://clearleft.com/thinking/designing-with-tokens-for-a-flexible-multi-brand-design-system | Multi-brand token architecture | Clearleft | tokens | multi-brand,theming
+https://bradfrost.com/blog/post/the-design-system-ecosystem/ | Layered design system ecosystem | | guidelines | architecture,brad-frost,recipes
+https://www.hypermod.io/blog/7-automating-design-system-evolution | Codemods for DS evolution | | tools | codemods,migration,versioning
+https://medium.com/eightshapes-llc/defining-design-system-contributions-eb48e00e8898 | Contribution types taxonomy | EightShapes | guidelines | contribution,governance
+https://amyhupe.co.uk/articles/5-lessons-on-enabling-design-system-contribution/ | Five contribution lessons | | guidelines | contribution,amy-hupe
+https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676 | Token naming taxonomy | EightShapes | tokens | naming
+https://kentcdodds.com/blog/inversion-of-control | Inversion of control API design | | guidelines | component-api,composition
+https://kentcdodds.com/blog/the-state-reducer-pattern-with-react-hooks | State reducer pattern | | guidelines | component-api,react
+https://medium.com/eightshapes-llc/crafting-ui-component-api-together-81946d140371 | Shared component API across tools | EightShapes | guidelines | component-api,figma
+https://nathanacurtis.substack.com/p/slots-in-design-systems | Slots in design systems | EightShapes | components | slots,composition
+https://medium.com/eightshapes-llc/releasing-design-systems-57fca91a23f6 | Releasing design systems series | EightShapes | guidelines | versioning,releases
+https://medium.com/eightshapes-llc/design-system-release-cadence-2e3e6694ba21 | Release cadence models | EightShapes | guidelines | versioning,releases
+https://medium.com/eightshapes-llc/visual-breaking-change-in-design-systems-1e9109fac9c4 | Visual breaking change | EightShapes | guidelines | versioning
+https://medium.com/eightshapes-llc/principles-of-designing-systems-294ee45dcf81 | Principles of designing systems | EightShapes | guidelines
+https://medium.com/eightshapes-llc/system-features-step-by-step-e69c90982630 | Feature workflow step by step | EightShapes | guidelines
+https://medium.com/eightshapes-llc/defining-design-systems-6dd4b03e0ff6 | Defining design systems | EightShapes | guidelines
+https://medium.com/eightshapes-llc/design-system-tiers-2c827b67eae1 | Design system tiers | EightShapes | guidelines | architecture,governance
+https://medium.com/eightshapes-llc/component-qa-in-design-systems-b18cb4decb9c | Component QA process | EightShapes | quality | qa,testing
+https://medium.com/eightshapes-llc/right-sizing-the-rectangles-936894ca0f99 | Component decomposition sizing | EightShapes | components
+https://amyhupe.co.uk/articles/enabling-contribution-in-the-early-stages-of-the-babylon-design-system/ | Babylon contribution case study | | guidelines | contribution,amy-hupe
+https://amyhupe.co.uk/articles/your-contribution-model-is-doomed/ | Contribution model failure modes | | guidelines | contribution,amy-hupe
+https://mojdigital.blog.gov.uk/2019/10/23/contributing-the-bank-details-pattern-to-the-gov-uk-design-system/ | GOVUK pattern contribution case | GOV.UK | guidelines | contribution,govuk
+https://bradfrost.com/blog/post/a-global-design-system/ | Global design system proposal | | guidelines | brad-frost
+https://frontendmasters.com/blog/exploring-multi-brand-systems-with-tokens-and-composability/ | Multi-brand tokens composability | | tokens | multi-brand,theming
+https://sujeet.pro/articles/design-tokens-and-theming | Three-tier theming architecture | | tokens | theming
+https://www.satellytes.com/blog/post/creating-and-crafting-a-design-token-system/ | Token system creation writeup | | tokens
+https://smart-interface-design-patterns.com/articles/naming-design-tokens/ | Token naming synthesis | | tokens | naming
+https://webflow.com/blog/component-slots | Slots and composability | | components | slots
+https://backstage.orus.eu/react-composition-patterns-at-orus/ | Production composition patterns | | components | composition,react
+https://twitchard.github.io/posts/2024-08-23-breaking-changes.html | Breaking changes as tooling problem | | guidelines | versioning,codemods
+https://spirit.supernova-docs.io/latest/migrations/codemods-Zl2cs4jk | Spirit codemod migration docs | Spirit | tools | codemods,migration
+https://design.morningstar.com/systems/product/get-started/migration | Morningstar migration policy | Morningstar | guidelines | migration,versioning
+https://sparkbox.com/foundry/2021_design_systems_survey | Sparkbox 2021 survey | Sparkbox | guidelines | research,survey
+
+# ---- AI + design systems follow-ups ----
+https://storybook.js.org/blog/storybook-mcp/ | Storybook MCP launch post | Storybook | tools | mcp,ai
+https://www.intodesignsystems.com/agentic-design-systems | Agentic design systems guide | | guidelines | ai,agents
+https://www.designsystemscollective.com/your-design-system-isnt-ai-readable-yet-the-case-for-ai-systematization-ais-3d49ab13a09f | AI systematization case | | guidelines | ai,machine-readable
+https://www.designsystemscollective.com/your-design-system-has-ai-debt-you-just-havent-measured-it-yet-even-if-it-looks-fine-to-humans-545c74152902 | Measuring AI debt | | guidelines | ai,measurement
+https://www.designsystemscollective.com/your-design-system-is-becoming-an-execution-engine-for-ai-8bcf5866b29e | DS as execution engine | | guidelines | ai,agents
+https://www.knapsack.cloud/blog/modernizing-digital-production-the-future-of-design-systems-and-ai | Knapsack DS and AI future | Knapsack | tools | ai,documentation
+https://www.knapsack.cloud/features/dynamic-documentation | Code-connected docs feature | Knapsack | documentation
+https://help.figma.com/hc/en-us/articles/32132100833559 | Dev Mode MCP server guide | Figma | tools | mcp,figma
+https://www.figma.com/blog/introducing-figmas-dev-mode-mcp-server/ | Figma MCP announcement | Figma | tools | mcp,figma
+https://owasp.org/www-community/attacks/MCP_Tool_Poisoning | OWASP MCP tool poisoning | | guidelines | security,mcp
+https://www.descope.com/learn/post/mcp-tool-poisoning | Tool poisoning variants explainer | | guidelines | security,mcp
+https://www.aptible.com/mcp-security/mcp-prompt-injection | MCP prompt injection blast radius | | guidelines | security,mcp
+https://www.practical-devsecops.com/mcp-security-vulnerabilities/ | MCP security prevention guide | | guidelines | security,mcp
+https://arnav.au/2026/07/22/prompt-injection-in-mcp-servers/ | Prompt injection in MCP servers | | guidelines | security,mcp
+https://ministryofprogramming.com/blog/why-ai-generated-ui-fails-in-production | AI UI production failure analysis | | guidelines | ai,failure-modes
+https://brenthaskins.com/blog/dont-let-ai-agents-guess-ui-props-contracts | Prop contracts before generation | | guidelines | ai,contracts
+https://medium.com/design-bootcamp/how-to-build-an-ai-design-system-6d80d7aa200d | Building an AI design system | | guidelines | ai,mcp
+https://southleft.com/insights/design-systems/introducing-story-ui-accelerating-layout-generation-with-ai-mcp/ | Story UI layout generation | Southleft | tools | ai,mcp,story-ui
+https://southleft.com/insights/design-systems/context-based-design-systems-a-new-model-for-the-ai-driven-product-lifecycle/ | Original CBDS article | Southleft | guidelines | cbds,ai
