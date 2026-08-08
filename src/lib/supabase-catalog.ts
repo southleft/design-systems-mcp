@@ -408,7 +408,7 @@ async function matchEntries(
 
   let builder = supabase
     .from('content_entries')
-    .select('id,title,category,tags,metadata')
+    .select('id,title,category,tags,metadata,source_location')
     .textSearch('search_text', attempt.expression, attempt.type ? { type: attempt.type } : undefined)
     .limit(MAX_TEXT_MATCH_ROWS);
 
@@ -427,6 +427,12 @@ async function matchEntries(
 /** Strips tsquery operators so user input can't produce a syntax error. */
 function sanitizeTsTerm(term: string): string {
   return term.replace(/[^\p{L}\p{N}_-]/gu, '');
+}
+
+/** True when an entry is a designsystems.surf directory blurb. */
+function isGalleryListing(entry: ContentEntry): boolean {
+  const location = entry.source?.location || entry.metadata?.source_url || '';
+  return location.includes('designsystems.surf');
 }
 
 /**
@@ -477,6 +483,11 @@ function rankByRelevance(
     // Matching every word somewhere is worth something, but not enough to
     // outrank a title that is plainly about the subject.
     if (preciseIds.has(entry.id)) score += 8;
+    // Gallery listings (designsystems.surf) are ~900-char directory blurbs
+    // that name a system and link out. They matter when the query names that
+    // system — the title bonus above still carries them — but on any general
+    // query they crowd out substantive entries, so they rank below prose.
+    if (isGalleryListing(entry)) score -= 10;
 
     return { entry, score, index };
   });
@@ -561,6 +572,65 @@ export async function resolveAllTags(env: any): Promise<string[]> {
     console.error('[Catalog] get_all_tags fell back to local tags:', error?.message);
   }
   return getAllTagsLocal();
+}
+
+let entryIndexCache: { rows: any[]; expiresAt: number } | null = null;
+
+/** Lightweight index of every entry, cached per isolate for tag browsing. */
+async function getEntryIndex(env: any): Promise<any[]> {
+  if (entryIndexCache && entryIndexCache.expiresAt > Date.now()) return entryIndexCache.rows;
+
+  const supabase = createSupabaseClient(env);
+  if (!supabase) return [];
+
+  // Page past PostgREST's 1000-row response cap.
+  const rows: any[] = [];
+  for (let from = 0; ; from += 1000) {
+    const { data, error } = await supabase
+      .from('content_entries')
+      .select('id,title,category,tags,metadata,source_location,system_name')
+      .range(from, from + 999)
+      .abortSignal(AbortSignal.timeout(SUPABASE_TIMEOUT_MS));
+    if (error || !data || data.length === 0) break;
+    rows.push(...data);
+    if (data.length < 1000) break;
+  }
+
+  if (rows.length > 0) {
+    entryIndexCache = { rows, expiresAt: Date.now() + CATALOG_CACHE_TTL_MS };
+  }
+  return rows;
+}
+
+/**
+ * Entries carrying a tag, matched case-insensitively against both the tags
+ * column and the metadata JSONB (the corpus holds both shapes). Filtering runs
+ * here rather than in PostgREST because the column's array representation has
+ * proven inconsistent across ingestion generations, and the corpus is small
+ * enough that a cached index beats debugging `cs` operator quirks.
+ */
+export async function getEntriesByTag(
+  env: any,
+  tag: string
+): Promise<Array<{ id: string; title: string; category: string; tags: string[]; system: string; sourceLocation: string }>> {
+  const wanted = tag.trim().toLowerCase();
+  if (!wanted) return [];
+
+  const rows = await getEntryIndex(env);
+  return rows
+    .filter((row) => {
+      const tags = firstNonEmptyArray(row.tags, row.metadata?.tags);
+      return tags.some((candidate) => String(candidate).toLowerCase() === wanted);
+    })
+    .map((row) => ({
+      id: row.id,
+      title: row.title,
+      category: row.category || row.metadata?.category || 'general',
+      tags: firstNonEmptyArray(row.tags, row.metadata?.tags),
+      system: row.system_name || row.metadata?.system || '',
+      sourceLocation: row.source_location || row.metadata?.source_url || '',
+    }))
+    .sort((a, b) => a.title.localeCompare(b.title));
 }
 
 let categoryCache: { categories: Array<{ name: string; count: number }>; expiresAt: number } | null = null;

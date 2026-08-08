@@ -4,7 +4,8 @@ import {
 } from "./lib/content-manager.js";
 import {
   resolveEntriesByCategory,
-  resolveAllTags
+  resolveAllTags,
+  getEntriesByTag
 } from "./lib/supabase-catalog.js";
 import {
   searchWithSupabase as searchEntries,
@@ -352,6 +353,23 @@ const MCP_TOOLS = [
       }
     }
   },
+  {
+    type: "function" as const,
+    function: {
+      name: "browse_by_tag",
+      description: "List all knowledge base entries carrying a specific tag",
+      parameters: {
+        type: "object",
+        properties: {
+          tag: {
+            type: "string",
+            description: "Tag to browse, e.g. 'design-tokens' or 'governance'"
+          }
+        },
+        required: ["tag"]
+      }
+    }
+  },
 
 ];
 
@@ -444,6 +462,24 @@ System: ${entry.metadata.system || "N/A"}`
       return `${categoryEntries.length} ENTR${categoryEntries.length === 1 ? "Y" : "IES"} IN "${args.category.toUpperCase()}":
 
 ${formattedEntries}`;
+    }
+
+    case "browse_by_tag": {
+      const tagEntries = await getEntriesByTag(env, String(args.tag ?? ""));
+
+      if (tagEntries.length === 0) {
+        return `No entries found with tag: ${args.tag}. Use get_all_tags to list available tags.`;
+      }
+
+      const formatted = tagEntries.map(entry =>
+        `**${entry.title}**
+Category: ${entry.category}${entry.system ? ` | System: ${entry.system}` : ""}
+Tags: ${entry.tags.join(", ")}`
+      ).join("\n\n");
+
+      return `${tagEntries.length} ENTR${tagEntries.length === 1 ? "Y" : "IES"} TAGGED "${args.tag}":
+
+${formatted}`;
     }
 
     case "get_all_tags": {

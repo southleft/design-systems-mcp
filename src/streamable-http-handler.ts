@@ -24,6 +24,7 @@ import {
   resolveEntriesByCategory,
   resolveAllTags,
   searchSupabaseChunks,
+  getEntriesByTag,
 } from "./lib/supabase-catalog.js";
 
 // Type definitions
@@ -237,6 +238,20 @@ export async function handleStreamableHttp(
                 properties: {},
                 additionalProperties: false
               }
+            },
+            {
+              name: "browse_by_tag",
+              description: "List all entries carrying a specific tag (use get_all_tags to discover tags)",
+              inputSchema: {
+                type: "object",
+                properties: {
+                  tag: {
+                    type: "string",
+                    description: "Tag to browse, e.g. 'design-tokens' or 'governance'"
+                  }
+                },
+                required: ["tag"]
+              }
             }
           ];
 
@@ -336,6 +351,29 @@ export async function handleStreamableHttp(
                   content: [{
                     type: "text" as const,
                     text: `**Category: ${args.category}** (${entries.length} entries)\n\n${formattedEntries}`,
+                  }],
+                };
+              }
+            }
+            else if (toolName === "browse_by_tag") {
+              const tagEntries = await getEntriesByTag(env, String(args.tag ?? ""));
+
+              if (tagEntries.length === 0) {
+                toolResult = {
+                  content: [{
+                    type: "text" as const,
+                    text: `No entries found with tag: ${args.tag}. Use get_all_tags to list available tags.`,
+                  }],
+                };
+              } else {
+                const formatted = tagEntries.map((entry, index) =>
+                  `${index + 1}. **${entry.title}**\n   Category: ${entry.category}${entry.system ? ` | System: ${entry.system}` : ""}\n   Tags: ${entry.tags.join(", ")}\n   Source: ${entry.sourceLocation || "N/A"}`
+                ).join("\n");
+
+                toolResult = {
+                  content: [{
+                    type: "text" as const,
+                    text: `**Tag: ${args.tag}** (${tagEntries.length} entries)\n\n${formatted}`,
                   }],
                 };
               }

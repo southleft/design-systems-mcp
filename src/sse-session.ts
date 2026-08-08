@@ -18,7 +18,8 @@ import {
 import {
   resolveEntriesByCategory,
   resolveAllTags,
-  searchSupabaseChunks
+  searchSupabaseChunks,
+  getEntriesByTag
 } from "./lib/supabase-catalog.js";
 import { formatSourceReference } from "./lib/source-formatter.js";
 import type { Category } from "../types/content";
@@ -396,6 +397,20 @@ export class SSESessionV2 {
                     properties: {},
                     additionalProperties: false
                   }
+                },
+                {
+                  name: 'browse_by_tag',
+                  description: 'List all entries carrying a specific tag (use get_all_tags to discover tags)',
+                  inputSchema: {
+                    type: 'object',
+                    properties: {
+                      tag: {
+                        type: 'string',
+                        description: "Tag to browse, e.g. 'design-tokens' or 'governance'"
+                      }
+                    },
+                    required: ['tag']
+                  }
                 }
               ]
             }
@@ -551,6 +566,35 @@ System: ${entry.metadata.system || 'N/A'}`
                 text: `**📁 ${categoryEntries.length} ENTR${categoryEntries.length === 1 ? 'Y' : 'IES'} IN "${args.category.toUpperCase()}"**
 
 ${formattedEntries}`
+              }]
+            };
+          }
+          break;
+        }
+
+        case 'browse_by_tag': {
+          const tagEntries = await getEntriesByTag(this.env, String(args.tag ?? ''));
+
+          if (tagEntries.length === 0) {
+            result = {
+              content: [{
+                type: 'text',
+                text: `No entries found with tag: ${args.tag}. Use get_all_tags to list available tags.`
+              }]
+            };
+          } else {
+            const formatted = tagEntries.map((entry, index) =>
+              `**${index + 1}. ${entry.title}**
+Category: ${entry.category}${entry.system ? ` | System: ${entry.system}` : ''}
+Tags: ${entry.tags.join(', ')}`
+            ).join('\n\n');
+
+            result = {
+              content: [{
+                type: 'text',
+                text: `**🏷️ TAG "${args.tag}" (${tagEntries.length} ENTR${tagEntries.length === 1 ? 'Y' : 'IES'})**
+
+${formatted}`
               }]
             };
           }

@@ -1,0 +1,45 @@
+# Design Systems Assistant MCP
+
+> A curated, machine-readable design systems knowledge base served over the
+> Model Context Protocol. 240+ vetted entries: W3C/WCAG standards, major
+> design system documentation, practitioner best practices, and — the part
+> most model training lacks — the 2025-2026 agent-interface protocols
+> (A2UI, MCP Apps, AG-UI), component contracts, and AI-and-design-systems
+> practice. Maintained by Southleft (southleft.com).
+
+Connect any MCP client to https://design-systems-mcp.southleft.com/mcp
+(Streamable HTTP, no authentication). An SSE endpoint exists at /sse for
+older clients.
+
+Tools exposed:
+
+- search_design_knowledge: full-text + vector search over entries, with
+  category and tag filters. Returns nothing rather than adjacent content
+  when a topic is not covered.
+- search_chunks: passage-level search for the specific text that answers
+  a question.
+- browse_by_category: list entries in a category (accessibility,
+  components, documentation, general, guidelines, patterns, quality,
+  tokens, tools, variables).
+- browse_by_tag: list entries carrying a tag.
+- get_all_tags: enumerate all tags.
+
+## Content coverage
+
+- Standards: WCAG 2.1/2.2, WCAG 3.0 draft, ARIA APG, DTCG token spec
+- Major design systems: guidance-layer documentation, not prop tables
+- Agent-interface protocols: A2UI v1.0, MCP Apps (SEP-1865), AG-UI,
+  server-driven UI lineage
+- Practice: component contracts, source-of-truth debate, Context-Based
+  Design Systems, naming for agents, machine-readable documentation,
+  design system evals
+- AI tooling: how Lovable, v0, Figma Make, Replit, Claude Code, Copilot,
+  Cursor, and Windsurf each ingest a design system
+
+## Optional
+
+- [Repository](https://github.com/southleft/design-systems-mcp): source,
+  ingestion pipeline, and eval harness
+- [Southleft](https://southleft.com): the agency behind this server
+- [Slot Machine](https://southleft.substack.com): TJ Pitre's writing on
+  AI and design systems, much of it primary source material here
