@@ -13,7 +13,7 @@ That is what this server is for: dated, cited, extracted primary-source content 
 ## Features
 
 ### Core Capabilities
-- 🎯 **Vector + Keyword Search** - Supabase pgvector with OpenAI embeddings, and a Postgres full-text path that keeps working when embeddings are unavailable
+- 🎯 **Vector + Keyword Search** - Supabase pgvector with pluggable embeddings (Cloudflare Workers AI `bge-m3`, edge-native and free within the Workers plan; OpenAI optional), plus a Postgres full-text path that keeps working when embeddings are unavailable
 - 📚 **395 Curated Entries** - W3C standards, WCAG 2.2, ARIA practices, major design systems, and agent-interface protocols
 - 🚦 **Relevance Floor** - IDF-weighted scoring means an uncovered topic returns *nothing* rather than confident, adjacent content
 - 🚀 **Edge-Optimized** - Cloudflare Workers deployment with global distribution
@@ -490,14 +490,14 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
 This server uses Supabase for production-grade vector search:
 
 - **Database:** PostgreSQL with pgvector extension
-- **Embeddings:** OpenAI text-embedding-3-small (1536 dimensions)
+- **Embeddings:** Cloudflare Workers AI `@cf/baai/bge-m3` (1024-dim, edge-native, no API key) via `VECTOR_SEARCH_PROVIDER=cloudflare`; OpenAI `text-embedding-3-small` (1536-dim) also supported
 - **Threshold:** 0.15 for optimal recall
 - **Hybrid Search:** Combines semantic vectors with text matching
 - **Performance:** Sub-100ms queries with proper indexing
 
 **Statistics:**
 - 395 entries in production database
-- 761+ content chunks with embeddings
+- 4,800+ content chunks; entry-level vector search via Cloudflare Workers AI
 - W3C standards, WCAG guidelines, design system documentation
 - Regular updates with new authoritative sources
 
