@@ -495,6 +495,116 @@ ${formatted}`;
 }
 
 // AI Chat Handler
+// Cloudflare Workers AI text-generation model for the chat synthesis.
+const CF_CHAT_MODEL = '@cf/meta/llama-3.3-70b-instruct-fp8-fast';
+
+// Self-contained system prompt for the retrieve-then-synthesize flow. Unlike
+// the OpenAI tool-calling prompt, the knowledge-base content is injected
+// directly, so the model is told to ground the first section in it.
+const CF_CHAT_SYSTEM_PROMPT = `You are a knowledgeable design systems expert answering questions for practitioners.
+
+You are given CURATED KNOWLEDGE BASE CONTENT retrieved for the user's question. Structure every answer with exactly these two sections, in this order:
+
+## 📚 From the Knowledge Base
+Summarize and synthesize ONLY the retrieved content below. Cite sources inline like [Entry Title]. If the retrieved content does not address the question, say so plainly here — do not invent citations. This section must contain only claims supported by the retrieved content.
+
+## 🧠 From General Knowledge
+Add relevant best practices from your own training. NO citations or source links in this section. Keep it complementary to the knowledge-base section, not repetitive.
+
+Be accurate, specific, and practical. Prefer the knowledge base over general knowledge when they overlap.`;
+
+/**
+ * Cloudflare Workers AI chat: retrieve KB context via the (already
+ * Cloudflare-backed) vector search, then stream a grounded synthesis from a
+ * Llama model. Emits the same SSE shape the frontend expects:
+ *   data: {"t":"<piece>"}\n\n  ...  event: done\ndata: {}\n\n
+ */
+async function handleAiChatCloudflare(
+  message: string,
+  env: any,
+  corsHeaders: Record<string, string>
+): Promise<Response> {
+  // Retrieve context. This runs the Cloudflare vector search — no OpenAI.
+  let contextBlock = '';
+  try {
+    const results = await searchEntries({ query: message, limit: 6 }, env);
+    contextBlock = results
+      .map((entry: any, i: number) => {
+        const src = entry.source?.location || entry.metadata?.source_url || '';
+        return `[${entry.title}]${src ? ` (${src})` : ''}\n${(entry.content || '').slice(0, 1200)}`;
+      })
+      .join('\n\n---\n\n');
+  } catch (error: any) {
+    console.error('[AI Chat/CF] retrieval error:', error?.message);
+  }
+  if (!contextBlock) contextBlock = '(No matching knowledge base content was found for this question.)';
+
+  const messages = [
+    { role: 'system', content: CF_CHAT_SYSTEM_PROMPT },
+    {
+      role: 'user',
+      content: `Question: ${message}\n\n===== RETRIEVED KNOWLEDGE BASE CONTENT =====\n${contextBlock}\n===== END RETRIEVED CONTENT =====`,
+    },
+  ];
+
+  // Workers AI returns an SSE ReadableStream of `data: {"response":"..."}` when
+  // stream:true, ending with `data: [DONE]`. Re-emit in the frontend's shape.
+  const cfStream: ReadableStream = await env.AI.run(CF_CHAT_MODEL, {
+    messages,
+    stream: true,
+    max_tokens: 4096,
+  });
+
+  const encoder = new TextEncoder();
+  const decoder = new TextDecoder();
+  const body = new ReadableStream({
+    async start(controller) {
+      const reader = cfStream.getReader();
+      let buffer = '';
+      try {
+        for (;;) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+          // SSE events are separated by a blank line.
+          const events = buffer.split('\n\n');
+          buffer = events.pop() ?? '';
+          for (const evt of events) {
+            const line = evt.split('\n').find((l) => l.startsWith('data:'));
+            if (!line) continue;
+            const data = line.slice(5).trim();
+            if (data === '[DONE]') continue;
+            try {
+              const piece = JSON.parse(data)?.response;
+              if (piece) controller.enqueue(encoder.encode(`data: ${JSON.stringify({ t: piece })}\n\n`));
+            } catch {
+              /* ignore keep-alive / non-JSON frames */
+            }
+          }
+        }
+        controller.enqueue(encoder.encode(`event: done\ndata: {}\n\n`));
+        controller.close();
+      } catch (err: any) {
+        console.error('[AI Chat/CF] stream error:', err);
+        controller.enqueue(encoder.encode(`data: ${JSON.stringify({ t: `\n\n❌ ${err?.message || 'Stream error'}` })}\n\n`));
+        controller.enqueue(encoder.encode(`event: done\ndata: {}\n\n`));
+        controller.close();
+      }
+    },
+  });
+
+  return new Response(body, {
+    headers: {
+      ...corsHeaders,
+      'Content-Type': 'text/event-stream; charset=utf-8',
+      'Cache-Control': 'no-cache, no-store, no-transform',
+      'X-Accel-Buffering': 'no',
+      'X-Content-Type-Options': 'nosniff',
+      'Connection': 'keep-alive',
+    },
+  });
+}
+
 async function handleAiChat(request: Request, env: any): Promise<Response> {
   try {
     const corsHeaders = {
@@ -522,6 +632,16 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
         status: 400,
         headers: { ...corsHeaders, "Content-Type": "application/json" }
       });
+    }
+
+    // Cloudflare Workers AI chat path — edge-native text generation, no OpenAI.
+    // Selected by CHAT_PROVIDER=cloudflare with the AI binding present. Uses a
+    // retrieve-then-synthesize flow: the user's message is the search query
+    // (no LLM-driven tool selection), context is injected into the prompt, and
+    // a Llama model streams the grounded answer.
+    const chatProvider = env?.CHAT_PROVIDER || 'openai';
+    if (chatProvider === 'cloudflare' && env?.AI) {
+      return await handleAiChatCloudflare(message, env, corsHeaders);
     }
 
     // Get OpenAI config from environment variables

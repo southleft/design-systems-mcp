@@ -27,7 +27,7 @@ That is what this server is for: dated, cited, extracted primary-source content 
 
 ### Developer Experience
 - 🌐 **Zero Setup Required** - Public MCP endpoint ready to use
-- 🤖 **AI Chat Interface** - Natural language queries with GPT-4o + streaming responses (SSE) for fast time-to-first-token
+- 🤖 **AI Chat Interface** - Natural-language Q&A grounded in the knowledge base, streamed via Cloudflare Workers AI (Llama 3.3 70B) — no OpenAI, no API credits
 - 🧪 **Local Development** - Complete testing environment with hot reload
 - 📝 **Comprehensive Docs** - Updated setup guides for every major MCP client
 
