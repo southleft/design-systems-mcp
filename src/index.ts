@@ -508,7 +508,7 @@ You are given numbered CURATED KNOWLEDGE BASE SOURCES retrieved for the user's q
 ## 📚 From the Knowledge Base
 Synthesize the retrieved sources into a comprehensive answer. Go into real depth: explain the concepts, name specifics, give concrete examples, and connect ideas across multiple sources. Aim for several rich paragraphs.
 
-CITATION RULE (critical): every time you reference a source, cite it as a markdown link using its EXACT title and EXACT URL from the source list, like this: [Source Title](https://exact-url). Copy the URL verbatim — never invent, shorten, or omit it. Cite generously; most claims in this section should carry a linked citation. If the retrieved sources do not address the question, say so plainly here rather than inventing citations.
+CITATION RULE (critical): every time you reference a source, cite it as a markdown link using its EXACT title and EXACT URL from the source list, like this: [Source Title](https://exact-url). Copy the URL verbatim — never invent, shorten, or omit it. Cite generously; most claims in this section should carry a linked citation. If a source's URL is NONE, cite it by its exact title in plain text WITHOUT a markdown link — never fabricate or guess a URL for it. If the retrieved sources do not address the question, say so plainly here rather than inventing citations.
 
 ## 🧠 From General Knowledge
 Add relevant best practices and context from your own training that complement (do not repeat) the knowledge-base section. This section must contain NO citations and NO links — plain prose only. Still aim for depth: a few substantive paragraphs.
@@ -534,8 +534,14 @@ async function handleAiChatCloudflare(
     const results = await searchEntries({ query: message, limit: 8 }, env);
     contextBlock = results
       .map((entry: any, i: number) => {
-        const src = entry.source?.location || entry.metadata?.source_url || '';
-        return `SOURCE ${i + 1}\nTitle: ${entry.title}\nURL: ${src || 'N/A'}\nContent: ${(entry.content || '').slice(0, 1800)}`;
+        // formatSourceReference maps known local PDFs (the handbooks) to the
+        // real web resource that hosts them and returns a clean display name;
+        // for entries with no resolvable web URL it returns url=null. Only
+        // emit a URL when it's a real http(s) page so citations never link to
+        // a local file path the browser can't open.
+        const { displayName, url } = formatSourceReference(entry);
+        const isWebUrl = !!url && /^https?:\/\//i.test(url);
+        return `SOURCE ${i + 1}\nTitle: ${displayName}\nURL: ${isWebUrl ? url : 'NONE'}\nContent: ${(entry.content || '').slice(0, 1800)}`;
       })
       .join('\n\n');
   } catch (error: any) {
