@@ -501,17 +501,19 @@ const CF_CHAT_MODEL = '@cf/meta/llama-3.3-70b-instruct-fp8-fast';
 // Self-contained system prompt for the retrieve-then-synthesize flow. Unlike
 // the OpenAI tool-calling prompt, the knowledge-base content is injected
 // directly, so the model is told to ground the first section in it.
-const CF_CHAT_SYSTEM_PROMPT = `You are a knowledgeable design systems expert answering questions for practitioners.
+const CF_CHAT_SYSTEM_PROMPT = `You are a knowledgeable design systems expert answering questions for practitioners. Write thorough, substantive, well-organized answers — several detailed paragraphs, not a couple of sentences.
 
-You are given CURATED KNOWLEDGE BASE CONTENT retrieved for the user's question. Structure every answer with exactly these two sections, in this order:
+You are given numbered CURATED KNOWLEDGE BASE SOURCES retrieved for the user's question, each with a Title and a URL. Structure every answer with exactly these two sections, in this order:
 
 ## 📚 From the Knowledge Base
-Summarize and synthesize ONLY the retrieved content below. Cite sources inline like [Entry Title]. If the retrieved content does not address the question, say so plainly here — do not invent citations. This section must contain only claims supported by the retrieved content.
+Synthesize the retrieved sources into a comprehensive answer. Go into real depth: explain the concepts, name specifics, give concrete examples, and connect ideas across multiple sources. Aim for several rich paragraphs.
+
+CITATION RULE (critical): every time you reference a source, cite it as a markdown link using its EXACT title and EXACT URL from the source list, like this: [Source Title](https://exact-url). Copy the URL verbatim — never invent, shorten, or omit it. Cite generously; most claims in this section should carry a linked citation. If the retrieved sources do not address the question, say so plainly here rather than inventing citations.
 
 ## 🧠 From General Knowledge
-Add relevant best practices from your own training. NO citations or source links in this section. Keep it complementary to the knowledge-base section, not repetitive.
+Add relevant best practices and context from your own training that complement (do not repeat) the knowledge-base section. This section must contain NO citations and NO links — plain prose only. Still aim for depth: a few substantive paragraphs.
 
-Be accurate, specific, and practical. Prefer the knowledge base over general knowledge when they overlap.`;
+Prefer the knowledge base over general knowledge when they overlap. Be accurate, specific, and practical.`;
 
 /**
  * Cloudflare Workers AI chat: retrieve KB context via the (already
@@ -525,15 +527,17 @@ async function handleAiChatCloudflare(
   corsHeaders: Record<string, string>
 ): Promise<Response> {
   // Retrieve context. This runs the Cloudflare vector search — no OpenAI.
+  // A numbered, URL-labelled source list so the model can produce accurate
+  // markdown-link citations that the frontend (marked.js) renders clickable.
   let contextBlock = '';
   try {
-    const results = await searchEntries({ query: message, limit: 6 }, env);
+    const results = await searchEntries({ query: message, limit: 8 }, env);
     contextBlock = results
       .map((entry: any, i: number) => {
         const src = entry.source?.location || entry.metadata?.source_url || '';
-        return `[${entry.title}]${src ? ` (${src})` : ''}\n${(entry.content || '').slice(0, 1200)}`;
+        return `SOURCE ${i + 1}\nTitle: ${entry.title}\nURL: ${src || 'N/A'}\nContent: ${(entry.content || '').slice(0, 1800)}`;
       })
-      .join('\n\n---\n\n');
+      .join('\n\n');
   } catch (error: any) {
     console.error('[AI Chat/CF] retrieval error:', error?.message);
   }
@@ -543,7 +547,7 @@ async function handleAiChatCloudflare(
     { role: 'system', content: CF_CHAT_SYSTEM_PROMPT },
     {
       role: 'user',
-      content: `Question: ${message}\n\n===== RETRIEVED KNOWLEDGE BASE CONTENT =====\n${contextBlock}\n===== END RETRIEVED CONTENT =====`,
+      content: `Question: ${message}\n\n===== RETRIEVED KNOWLEDGE BASE SOURCES =====\n${contextBlock}\n===== END SOURCES =====\n\nAnswer the question using the format and citation rules above. When citing, use each source's exact Title and URL as a markdown link.`,
     },
   ];
 
@@ -552,7 +556,7 @@ async function handleAiChatCloudflare(
   const cfStream: ReadableStream = await env.AI.run(CF_CHAT_MODEL, {
     messages,
     stream: true,
-    max_tokens: 4096,
+    max_tokens: 8192,
   });
 
   const encoder = new TextEncoder();
